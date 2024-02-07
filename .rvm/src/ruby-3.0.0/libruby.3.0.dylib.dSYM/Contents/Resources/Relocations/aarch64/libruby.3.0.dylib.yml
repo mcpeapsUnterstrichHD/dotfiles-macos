@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     libruby.3.0.dylib
+relocations:     []
+...

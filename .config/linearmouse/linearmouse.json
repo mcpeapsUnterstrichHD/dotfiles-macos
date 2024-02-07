@@ -1,0 +1,74 @@
+{
+  "schemes" : [
+    {
+      "scrolling" : {
+        "acceleration" : 2,
+        "modifiers" : {
+          "horizontal" : {
+            "shift" : {
+              "scale" : 0.6,
+              "type" : "changeSpeed"
+            }
+          },
+          "vertical" : {
+            "shift" : {
+              "scale" : 0.5,
+              "type" : "changeSpeed"
+            }
+          }
+        },
+        "speed" : 1,
+        "distance" : "auto"
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x281",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "vendorID" : "0x5ac",
+          "category" : "trackpad"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false,
+        "acceleration" : 0.9479,
+        "speed" : 1
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x269",
+          "category" : "mouse",
+          "vendorID" : "0x4c",
+          "productName" : "Magic Mouse",
+          "serialNumber" : "18-3f-70-d8-3e-0a"
+        }
+      },
+      "pointer" : {
+        "speed" : 1,
+        "acceleration" : 0.4959
+      }
+    },
+    {
+      "pointer" : {
+        "speed" : 1,
+        "acceleration" : 0.5399
+      },
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "vendorID" : "0x4c",
+          "productName" : "Magic Trackpad",
+          "serialNumber" : "d4-57-63-60-7a-ba",
+          "productID" : "0x265"
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
+}

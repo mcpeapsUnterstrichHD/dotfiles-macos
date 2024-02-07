@@ -1,0 +1,43 @@
++__rvm_package_extract:2> rvm_debug __rvm_package_extract:2: /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz /Users/mahd/.rvm/tmp/rvm_src_71062
++rvm_debug:2> ((  0  ))
++rvm_debug:2> return 0
++__rvm_package_extract:3> typeset __extract_src __extract_target __tempdir __path __file __return
++__rvm_package_extract:4> __extract_src=/Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz 
++__rvm_package_extract:5> __extract_target=/Users/mahd/.rvm/tmp/rvm_src_71062 
++__rvm_package_extract:6> shift 2
++__rvm_package_extract:7> __return=0 
++__rvm_package_extract:8> __tempdir=+__rvm_package_extract:8> TMPDIR=/Users/mahd/.rvm/tmp mktemp -d -t rvm-tmp.XXXXXXXXX
++__rvm_package_extract:8> __tempdir=/var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY 
++__rvm_package_extract:9> __rvm_package_extract_run /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY
++__rvm_package_extract_run:2> typeset __extract_run_src __extract_run_target __exclude_elements
++__rvm_package_extract_run:3> __extract_run_src=/Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz 
++__rvm_package_extract_run:4> __extract_run_target=/var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY 
++__rvm_package_extract_run:5> shift 2
++__rvm_package_extract_run:6> __exclude_elements=( ) 
++__rvm_package_extract_run:9> [[ '  ' != *\ --no-same-owner\ * ]]
++__rvm_package_extract_run:10> __rvm_tar --help
++__rvm_package_extract_run:10> __rvm_grep -- --no-same-owner
++__rvm_grep:0> GREP_OPTIONS='' grep -- --no-same-owner
++__rvm_grep:0> return 1
++__rvm_package_extract_run:15> [[ -d /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY ]]
++__rvm_package_extract_run:16> case /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz (*.zip)
++__rvm_package_extract_run:16> case /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz (*.tar.bz2)
++__rvm_package_extract_run:16> case /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz (*.tar.gz)
++__rvm_package_extract_run:29> __map_tar_excludes
++__map_tar_excludes:2> typeset __exclude_element
++__rvm_package_extract_run:30> [[ -n 5.9 ]]
++__rvm_package_extract_run:31> __rvm_tar -xzf /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz -C /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY
++__rvm_tar:0> tar -xzf /Users/mahd/.rvm/archives/ruby-3.0.0.tar.gz -C /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY
++__rvm_package_extract_run:39> __rvm_fix_group_permissions /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY/ruby-3.0.0
++__rvm_fix_group_permissions:3> umask -S
++__rvm_fix_group_permissions:3> __rvm_grep 'g=rw'
++__rvm_grep:0> GREP_OPTIONS='' grep 'g=rw'
++__rvm_fix_group_permissions:5> chmod -R g+rwX /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY/ruby-3.0.0
++__rvm_package_extract:11> ((  __return == 0  ))
++__rvm_package_extract:13> __path=/var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY/ruby-3.0.0
++__rvm_package_extract:15> __file=ruby-3.0.0 
++__rvm_package_extract:17> [[ -n ruby-3.0.0 && -e /Users/mahd/.rvm/tmp/rvm_src_71062/ruby-3.0.0 ]]
++__rvm_package_extract:21> mv -f /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY/ruby-3.0.0 /Users/mahd/.rvm/tmp/rvm_src_71062/
++__rvm_package_extract:24> [[ -n /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY ]]
++__rvm_package_extract:25> rm -rf /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/rvm-tmp.XXXXXXXXX.l5Kggh9ElY
++__rvm_package_extract:27> return 0

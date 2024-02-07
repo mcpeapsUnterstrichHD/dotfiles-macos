@@ -1,0 +1,11 @@
++__rvm_rm_rf:2> __rvm_rm_rf_verbose /Users/mahd/.rvm/src/ruby-3.0.0
++__rvm_rm_rf_verbose:2> typeset target
++__rvm_rm_rf_verbose:3> target=/Users/mahd/.rvm/src/ruby-3.0.0 
++__rvm_rm_rf_verbose:7> [[ -n 5.9 ]]
++__rvm_rm_rf_verbose:9> setopt extendedglob
++__rvm_rm_rf_verbose:17> case /Users/mahd/.rvm/src/ruby-3.0.0 (*(/|.)@(|/Applications|/Developer|/Guides|/Information|/Library|/Network|/System|/User|/Users|/Volumes|/backups|/bdsm|/bin|/boot|/cores|/data|/dev|/etc|/home|/lib|/lib64|/mach_kernel|/media|/misc|/mnt|/net|/opt|/private|/proc|/root|/sbin|/selinux|/srv|/sys|/tmp|/usr|/var))
++__rvm_rm_rf_verbose:17> case /Users/mahd/.rvm/src/ruby-3.0.0 (*)
++__rvm_rm_rf_verbose:24> [[ -z /Users/mahd/.rvm/src/ruby-3.0.0 ]]
++__rvm_rm_rf_verbose:29> [[ -d /Users/mahd/.rvm/src/ruby-3.0.0 ]]
++__rvm_rm_rf_verbose:31> rm -rf /Users/mahd/.rvm/src/ruby-3.0.0
++__rvm_rm_rf_verbose:51> true

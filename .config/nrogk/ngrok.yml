@@ -1,0 +1,9 @@
+version: "2"
+authtoken: 7mMYH9DWMkNsKAysxnJfx_5jcBMJp8JYEKiBmrF436j
+api:
+  api-keys: 2LC1mz1AFamLWAtRM6iM0oGX3Kq_3JVpRvxHD7ftgfv25YfvE
+
+tunnels:
+  minecraft:
+    proto: tcp
+    addr: 25565

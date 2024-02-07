@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='Eclipse EMF Compare 3.3.18.202202240907' type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1645694281000'/>
+  </properties>
+  <children size='2'>
+    <child location='core'/>
+    <child location='extras'/>
+  </children>
+</repository>

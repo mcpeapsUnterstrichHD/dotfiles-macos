@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": ["import { showHUD, open, Clipboard, getPreferenceValues } from \"@raycast/api\";\nimport { randomUUID } from \"crypto\";\n\ntype EmailServices = \"maildrop.cc\" | \"harakirimail.com\";\n\nconst { mailservice } = getPreferenceValues<{ mailservice: EmailServices }>();\n\nconst RANDOM_EMAIL = randomUUID();\n\nconst MAILSERVICE_MAPPING: {\n  [service in EmailServices]: () => [/** email */ string, /** url */ string];\n} = {\n  \"maildrop.cc\": () => {\n    return [`${RANDOM_EMAIL}@maildrop.cc`, `https://maildrop.cc/inbox/?mailbox=${RANDOM_EMAIL}`];\n  },\n  \"harakirimail.com\": () => {\n    return [`${RANDOM_EMAIL}@harakirimail.com`, `https://harakirimail.com/inbox/${RANDOM_EMAIL}`];\n  },\n};\n\nexport default async function main() {\n  const [email, url] = MAILSERVICE_MAPPING[mailservice]();\n\n  await open(url);\n\n  Clipboard.copy(email);\n  await showHUD(`Copied email ${email} to clipboard`);\n}\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAA,IAAAI,EAA8D,wBAC9DC,EAA2B,kBAIrB,CAAE,YAAAC,CAAY,KAAI,uBAAoD,EAEtEC,KAAe,cAAW,EAE1BC,EAEF,CACF,cAAe,IACN,CAAC,GAAGD,gBAA4B,sCAAsCA,GAAc,EAE7F,mBAAoB,IACX,CAAC,GAAGA,qBAAiC,kCAAkCA,GAAc,CAEhG,EAEA,eAAOL,GAA8B,CACnC,GAAM,CAACO,EAAOC,CAAG,EAAIF,EAAoBF,GAAa,EAEtD,QAAM,QAAKI,CAAG,EAEd,YAAU,KAAKD,CAAK,EACpB,QAAM,WAAQ,gBAAgBA,gBAAoB,CACpD",
+  "names": ["src_exports", "__export", "main", "__toCommonJS", "import_api", "import_crypto", "mailservice", "RANDOM_EMAIL", "MAILSERVICE_MAPPING", "email", "url"]
+}

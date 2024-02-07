@@ -1,0 +1,244 @@
+have_header: checking for sys/param.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/param.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/mount.h... -------------------- yes
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/mount.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/vfs.h... -------------------- no
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: 'sys/vfs.h' file not found
+#include <sys/vfs.h>
+         ^~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/vfs.h>
+/* end */
+
+--------------------
+
+have_type: checking for struct statfs in sys/param.h,sys/mount.h... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/param.h>
+4: #include <sys/mount.h>
+5: 
+6: /*top*/
+7: typedef struct statfs conftest_type;
+8: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct statfs.f_fstypename in sys/param.h,sys/mount.h... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/param.h>
+ 4: #include <sys/mount.h>
+ 5: 
+ 6: /*top*/
+ 7: int s = (char *)&((struct statfs*)0)->f_fstypename - (char *)0;
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   return !!argv[argc];
+11: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct statfs.f_type in sys/param.h,sys/mount.h... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/param.h>
+ 4: #include <sys/mount.h>
+ 5: 
+ 6: /*top*/
+ 7: int s = (char *)&((struct statfs*)0)->f_type - (char *)0;
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   return !!argv[argc];
+11: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct statfs.f_flags in sys/param.h,sys/mount.h... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/param.h>
+ 4: #include <sys/mount.h>
+ 5: 
+ 6: /*top*/
+ 7: int s = (char *)&((struct statfs*)0)->f_flags - (char *)0;
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   return !!argv[argc];
+11: }
+/* end */
+
+--------------------
+
+have_header: checking for sys/statvfs.h... -------------------- yes
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/statvfs.h>
+/* end */
+
+--------------------
+
+have_type: checking for struct statvfs in sys/statvfs.h... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/statvfs.h>
+4: 
+5: /*top*/
+6: typedef struct statvfs conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct statvfs.f_fstypename in sys/statvfs.h... -------------------- no
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:40: error: no member named 'f_fstypename' in 'struct statvfs'
+int s = (char *)&((struct statvfs*)0)->f_fstypename - (char *)0;
+                 ~~~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/statvfs.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct statvfs*)0)->f_fstypename - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct statvfs.f_basetype in sys/statvfs.h... -------------------- no
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:40: error: no member named 'f_basetype' in 'struct statvfs'
+int s = (char *)&((struct statvfs*)0)->f_basetype - (char *)0;
+                 ~~~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/statvfs.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct statvfs*)0)->f_basetype - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct statvfs.f_type in sys/statvfs.h... -------------------- no
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/-test-/file -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:40: error: no member named 'f_type' in 'struct statvfs'
+int s = (char *)&((struct statvfs*)0)->f_type - (char *)0;
+                 ~~~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <sys/statvfs.h>
+ 4: 
+ 5: /*top*/
+ 6: int s = (char *)&((struct statvfs*)0)->f_type - (char *)0;
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   return !!argv[argc];
+10: }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_SYS_PARAM_H 1
+ 4: #define HAVE_SYS_MOUNT_H 1
+ 5: #define HAVE_TYPE_STRUCT_STATFS 1
+ 6: #define HAVE_STRUCT_STATFS_F_FSTYPENAME 1
+ 7: #define HAVE_ST_F_FSTYPENAME 1
+ 8: #define HAVE_STRUCT_STATFS_F_TYPE 1
+ 9: #define HAVE_ST_F_TYPE 1
+10: #define HAVE_STRUCT_STATFS_F_FLAGS 1
+11: #define HAVE_ST_F_FLAGS 1
+12: #define HAVE_SYS_STATVFS_H 1
+13: #define HAVE_TYPE_STRUCT_STATVFS 1
+14: #define TEST_INIT_FUNCS(X) X(fs) X(stat)
+15: #endif
+/* end */
+

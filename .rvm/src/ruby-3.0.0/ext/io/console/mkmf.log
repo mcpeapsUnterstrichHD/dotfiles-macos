@@ -1,0 +1,186 @@
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:5:3: error: 
+# error
+  ^
+conftest.c:6:1: error: expected identifier or '('
+|:/ === _WIN32 undefined === /:|
+^
+2 errors generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: #ifndef _WIN32
+5: # error
+6: |:/ === _WIN32 undefined === /:|
+7: #endif
+/* end */
+
+have_header: checking for termios.h... -------------------- yes
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <termios.h>
+/* end */
+
+--------------------
+
+have_func: checking for cfmakeraw() in termios.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <termios.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { void ((*volatile p)()); p = (void ((*)()))cfmakeraw; return !p; }
+/* end */
+
+--------------------
+
+have_header: checking for sys/ioctl.h... -------------------- yes
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/ioctl.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_scheduler_timeout()... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+conftest.c:14:57: error: use of undeclared identifier 'rb_scheduler_timeout'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_scheduler_timeout; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_scheduler_timeout; return !p; }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_scheduler_timeout();
+15: int t(void) { rb_scheduler_timeout(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_io_wait()... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+conftest.c:14:57: error: use of undeclared identifier 'rb_io_wait'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_wait; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_wait; return !p; }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_io_wait();
+15: int t(void) { rb_io_wait(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_TERMIOS_H 1
+4: #define HAVE_CFMAKERAW 1
+5: #define HAVE_SYS_IOCTL_H 1
+6: #define HAVE_RB_SCHEDULER_TIMEOUT 1
+7: #define HAVE_RB_IO_WAIT 1
+8: #define ENABLE_IO_GETPASS 1
+9: #endif
+/* end */
+

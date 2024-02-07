@@ -1,0 +1,178 @@
+!SESSION 2023-05-03 09:10:35.441 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=de_FR
+Framework arguments:  -keyring /Users/mahd/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -data @noDefault -keyring /Users/mahd/.eclipse_keyring
+
+!ENTRY org.eclipse.oomph.setup.installer 4 0 2023-05-03 09:10:41.470
+!MESSAGE /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+!STACK 0
+java.nio.file.FileSystemException: /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at org.eclipse.urischeme.internal.registration.FileProvider.newWriter(FileProvider.java:51)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.changePlistFile(RegistrationMacOsX.java:149)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.handleSchemes(RegistrationMacOsX.java:55)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.setRegistrations(URISchemeUtil.java:249)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.registerDefault(URISchemeUtil.java:171)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.run(InstallerApplication.java:98)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.start(InstallerApplication.java:398)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.oomph.setup.installer 4 0 2023-05-03 09:10:41.474
+!MESSAGE /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+!STACK 0
+java.nio.file.FileSystemException: /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at org.eclipse.urischeme.internal.registration.FileProvider.newWriter(FileProvider.java:51)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.changePlistFile(RegistrationMacOsX.java:149)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.handleSchemes(RegistrationMacOsX.java:55)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.setRegistrations(URISchemeUtil.java:271)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.registerDefault(URISchemeUtil.java:171)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.run(InstallerApplication.java:98)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.start(InstallerApplication.java:398)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.equinox.p2.metadata 1 0 2023-05-03 09:11:16.981
+!MESSAGE No translation source unavailable. Default language will be used.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.075
+!MESSAGE Loading 'file:/Users/mahd/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.077
+!MESSAGE Loading 'file:/Users/mahd/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.079
+!MESSAGE Loading 'file:/Users/mahd/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.079
+!MESSAGE Loading 'file:/Users/mahd/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.082
+!MESSAGE Loading 'file:/Users/mahd/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.083
+!MESSAGE Loading 'file:/Users/mahd/.p2/pool/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 1000 2023-05-03 09:11:17.085
+!MESSAGE No repository found at file:/Users/mahd/.p2/pool/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.111
+!MESSAGE Loading 'file:/Users/mahd/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.182
+!MESSAGE Loading 'file:/Users/mahd/.p2/pool/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.185
+!MESSAGE Loading 'file:/Users/mahd/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2023-05-03 09:11:17.185
+!MESSAGE Loading 'file:/Users/mahd/.p2/pool/' failed. retry=2
+!SESSION 2023-05-03 09:30:21.243 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=de_FR
+Framework arguments:  -keyring /Users/mahd/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -data @noDefault -keyring /Users/mahd/.eclipse_keyring
+
+!ENTRY org.eclipse.oomph.setup.installer 4 0 2023-05-03 09:30:26.427
+!MESSAGE /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+!STACK 0
+java.nio.file.FileSystemException: /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at org.eclipse.urischeme.internal.registration.FileProvider.newWriter(FileProvider.java:51)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.changePlistFile(RegistrationMacOsX.java:149)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.handleSchemes(RegistrationMacOsX.java:55)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.setRegistrations(URISchemeUtil.java:249)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.registerDefault(URISchemeUtil.java:171)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.run(InstallerApplication.java:98)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.start(InstallerApplication.java:398)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.oomph.setup.installer 4 0 2023-05-03 09:30:26.430
+!MESSAGE /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+!STACK 0
+java.nio.file.FileSystemException: /Volumes/Eclipse Installer/Eclipse Installer.app/Contents/Info.plist: Read-only file system
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at org.eclipse.urischeme.internal.registration.FileProvider.newWriter(FileProvider.java:51)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.changePlistFile(RegistrationMacOsX.java:149)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.handleSchemes(RegistrationMacOsX.java:55)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.setRegistrations(URISchemeUtil.java:271)
+	at org.eclipse.oomph.setup.internal.installer.URISchemeUtil.registerDefault(URISchemeUtil.java:171)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.run(InstallerApplication.java:98)
+	at org.eclipse.oomph.setup.internal.installer.InstallerApplication.start(InstallerApplication.java:398)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)

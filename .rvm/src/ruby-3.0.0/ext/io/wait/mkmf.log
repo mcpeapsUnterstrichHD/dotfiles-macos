@@ -1,0 +1,59 @@
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/wait -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:3: error: 
+# error
+  ^
+conftest.c:7:1: error: expected identifier or '('
+|:/ === DOSISH undefined === /:|
+^
+2 errors generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: /*top*/
+5: #ifndef DOSISH
+6: # error
+7: |:/ === DOSISH undefined === /:|
+8: #endif
+/* end */
+
+have_header: checking for sys/ioctl.h... -------------------- yes
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/wait -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/ioctl.h>
+/* end */
+
+--------------------
+
+have_macro: checking for FIONREAD in sys/ioctl.h,sys/ioctl.h... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/io/wait -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/ioctl.h>
+4: #include <sys/ioctl.h>
+5: /*top*/
+6: #ifndef FIONREAD
+7: # error
+8: |:/ === FIONREAD undefined === /:|
+9: #endif
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_SYS_IOCTL_H 1
+4: #define FIONREAD_HEADER <sys/ioctl.h>
+5: #endif
+/* end */
+

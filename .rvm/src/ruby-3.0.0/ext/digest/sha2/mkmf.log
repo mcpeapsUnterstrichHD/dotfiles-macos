@@ -1,0 +1,36 @@
+have_type: checking for u_int8_t... -------------------- yes
+
+"gcc -fdeclspec -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/digest/sha2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: typedef u_int8_t conftest_type;
+5: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for sys/cdefs.h... -------------------- yes
+
+"gcc -E -I../../../.ext/include/arm64-darwin23 -I../../.././include -I../../.././ext/digest/sha2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/cdefs.h>
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_CONFIG_H 1
+4: #define HAVE_TYPE_U_INT8_T 1
+5: #define HAVE_SYS_CDEFS_H 1
+6: #endif
+/* end */
+

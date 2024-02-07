@@ -1,0 +1,144 @@
+[2024-01-11 10:56:27] requirements_osx_brew_update_system
+requirements_osx_brew_update_system () 
+{ 
+    if __rvm_version_compare "${_system_version}" -ge 10.7; then
+        __rvm_detect_xcode_version_at_least 4.6.2 || __CLT_version_at_least 4.6.0 || { 
+            \typeset ret=$?;
+            rvm_error "
+Xcode version older than 4.6.2 installed, download and install newer version from:
+
+    http://connect.apple.com
+
+After installation open Xcode, go to Downloads and install Command Line Tools.
+";
+            return $ret
+        };
+    fi;
+    brew update || { 
+        \typeset ret=$?;
+        rvm_error "Failed to update Homebrew, follow instructions at
+
+    https://docs.brew.sh/Common-Issues
+
+and make sure \`brew update\` works before continuing.";
+        return $ret
+    }
+}
+current path: /Users/mahd
+PATH=/var/root/.local/bin:/var/root/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/mahd/.opam/default/bin:/usr/local/opt/qt@5/bin:/Users/mahd/.local/bin:/Users/mahd/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/sbin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/opt/homebrew/bin:/usr/local/go/bin:/Users/mahd/.rvm/bin
+command(2): requirements_osx_brew_update_system ruby-3.0.0
+++ __rvm_version_compare 14.2 -ge 10.7
+++ typeset first
++++ command printf %b '14.2\n10.7\n'
++++ printf %b '14.2\n10.7\n'
++++ __rvm_version_sort
++++ command awk '-F[.-]' -v OFS=. '{                   # split on "." and "-", merge back with "."
+    original=$0                                        # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                             # iterate through max 9 components of version
+      $n=tolower($n)                                   # ignore case for sorting
+      if ($n == "")                 $n="0"             # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/)           $n=substr($n, 2)   # old ruby -p notation
+      if ($n ~ /^[0-9](rc|b)/)      $n=substr($n, 1, 1)". "substr($n, 2)   # old jruby 0RC1 notation
+      if (n == 1 && $n ~ /^[0-9]/)  $n="zzz."$n        # first group must be a string
+      if (n > 1 && $n ~ /^[a-z]/)   $n=" "$n           # names go before numbers thanks to space
+    }
+    print $0"\t"original                               # print the transformed version and original separated by \t
+                                                       # so we can extract original after sorting
+  }'
++++ awk '-F[.-]' -v OFS=. '{                   # split on "." and "-", merge back with "."
+    original=$0                                        # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                             # iterate through max 9 components of version
+      $n=tolower($n)                                   # ignore case for sorting
+      if ($n == "")                 $n="0"             # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/)           $n=substr($n, 2)   # old ruby -p notation
+      if ($n ~ /^[0-9](rc|b)/)      $n=substr($n, 1, 1)". "substr($n, 2)   # old jruby 0RC1 notation
+      if (n == 1 && $n ~ /^[0-9]/)  $n="zzz."$n        # first group must be a string
+      if (n > 1 && $n ~ /^[a-z]/)   $n=" "$n           # names go before numbers thanks to space
+    }
+    print $0"\t"original                               # print the transformed version and original separated by \t
+                                                       # so we can extract original after sorting
+  }'
++++ command head -n1
++++ head -n1
++++ LC_ALL=C
++++ sort -t. -k 1,1d -k 2,2n -k 3,3n -k 4,4n -k 5,5n -k 6,6n -k 7,7n -k 8,8n -k 9,9n
++++ awk '-F\t' '{print $2}'
+++ first=10.7
+++ case "$2" in
+++ [[ 10.7 == \h\e\a\d ]]
+++ [[ 10.7 == \1\0\.\7 ]]
+++ return 0
+++ __rvm_detect_xcode_version_at_least 4.6.2
++++ __rvm_detect_xcode_version
++++ typeset version_file
++++ for version_file in /Applications/Xcode.app/Contents/version.plist /Developer/Applications/Xcode.app/Contents/version.plist
++++ [[ -f /Applications/Xcode.app/Contents/version.plist ]]
++++ [[ -x /usr/libexec/PlistBuddy ]]
++++ /usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' /Applications/Xcode.app/Contents/version.plist
++++ return 0
+++ typeset __xcode_version=15.0
+++ [[ -n 15.0 ]]
+++ __rvm_version_compare 15.0 -ge 4.6.2
+++ typeset first
++++ command printf %b '15.0\n4.6.2\n'
++++ printf %b '15.0\n4.6.2\n'
++++ __rvm_version_sort
++++ command head -n1
++++ head -n1
++++ command awk '-F[.-]' -v OFS=. '{                   # split on "." and "-", merge back with "."
+    original=$0                                        # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                             # iterate through max 9 components of version
+      $n=tolower($n)                                   # ignore case for sorting
+      if ($n == "")                 $n="0"             # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/)           $n=substr($n, 2)   # old ruby -p notation
+      if ($n ~ /^[0-9](rc|b)/)      $n=substr($n, 1, 1)". "substr($n, 2)   # old jruby 0RC1 notation
+      if (n == 1 && $n ~ /^[0-9]/)  $n="zzz."$n        # first group must be a string
+      if (n > 1 && $n ~ /^[a-z]/)   $n=" "$n           # names go before numbers thanks to space
+    }
+    print $0"\t"original                               # print the transformed version and original separated by \t
+                                                       # so we can extract original after sorting
+  }'
++++ awk '-F[.-]' -v OFS=. '{                   # split on "." and "-", merge back with "."
+    original=$0                                        # save original to preserve it before the line is changed
+    for (n=1; n<10; n++) {                             # iterate through max 9 components of version
+      $n=tolower($n)                                   # ignore case for sorting
+      if ($n == "")                 $n="0"             # treat non existing parts as 0
+      if ($n ~ /^p[0-9]/)           $n=substr($n, 2)   # old ruby -p notation
+      if ($n ~ /^[0-9](rc|b)/)      $n=substr($n, 1, 1)". "substr($n, 2)   # old jruby 0RC1 notation
+      if (n == 1 && $n ~ /^[0-9]/)  $n="zzz."$n        # first group must be a string
+      if (n > 1 && $n ~ /^[a-z]/)   $n=" "$n           # names go before numbers thanks to space
+    }
+    print $0"\t"original                               # print the transformed version and original separated by \t
+                                                       # so we can extract original after sorting
+  }'
++++ LC_ALL=C
++++ sort -t. -k 1,1d -k 2,2n -k 3,3n -k 4,4n -k 5,5n -k 6,6n -k 7,7n -k 8,8n -k 9,9n
++++ awk '-F\t' '{print $2}'
+++ first=4.6.2
+++ case "$2" in
+++ [[ 4.6.2 == \h\e\a\d ]]
+++ [[ 4.6.2 == \4\.\6\.\2 ]]
+++ return 0
+++ true
+++ brew update
+Error: Running Homebrew as root is extremely dangerous and no longer supported.
+As Homebrew does not drop privileges on installation you would be giving all
+build scripts full access to your system.
+++ typeset ret=1
+++ rvm_error 'Failed to update Homebrew, follow instructions at
+
+    https://docs.brew.sh/Common-Issues
+
+and make sure `brew update` works before continuing.'
+++ rvm_pretty_print stderr
+++ case "${rvm_pretty_print_flag:=auto}" in
+++ case "${TERM:-dumb}" in
+++ case "$1" in
+++ [[ -t 2 ]]
+++ return 1
+++ printf %b 'Failed to update Homebrew, follow instructions at
+
+    https://docs.brew.sh/Common-Issues
+
+and make sure `brew update` works before continuing.\n'
+++ return 1

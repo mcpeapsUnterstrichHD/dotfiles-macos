@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sync:RemoteData
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:sync="http://www.eclipse.org/oomph/setup/sync/1.0">
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync7"
+      key="/instance/org.eclipse.team.ui/org.eclipse.team.ui.view_syncinfo_in_label"
+      value="true"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync4"
+      key="/instance/org.eclipse.team.ui/org.eclipse.team.ui.run_import_in_background_"
+      value="true"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync3"
+      key="/instance/org.eclipse.team.ui/org.eclipse.team.ui.apply_patch_in_sychronize_view"
+      value="true"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync6"
+      key="/instance/org.eclipse.team.ui/org.eclipse.team.ui.validate_edit_with_no_context"
+      value="true"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync5"
+      key="/instance/org.eclipse.team.ui/org.eclipse.team.ui.show_author_in_compare_editor"
+      value="true"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync2"
+      key="/instance/org.eclipse.team.core/file_types"
+      value="htm&#xA;1&#xA;"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync1"
+      key="/instance/org.eclipse.egit.core/core_http_client"
+      value="jdk"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync8"
+      key="/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands"
+      value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;org.eclipse.ui.commands>&#xA;&lt;keyBinding contextId=&quot;org.eclipse.ui.contexts.dialogAndWindow&quot; keyConfigurationId=&quot;org.eclipse.ui.defaultAcceleratorConfiguration&quot; keySequence=&quot;COMMAND+SHIFT+Z&quot;/>&#xA;&lt;keyBinding commandId=&quot;org.eclipse.ui.edit.redo&quot; contextId=&quot;org.eclipse.ui.contexts.dialogAndWindow&quot; keyConfigurationId=&quot;org.eclipse.ui.defaultAcceleratorConfiguration&quot; keySequence=&quot;COMMAND+Y&quot;/>&#xA;&lt;/org.eclipse.ui.commands>"/>
+  <setupTask
+      xsi:type="setup:PreferenceTask"
+      id="sync9"
+      key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.mariaDB client"
+      value="/Users/mahd/DEV/OSZIMT-repo-ITA12_aps/Drites AusbildungsJahr/P-AS/Java-SQL/mariadb-java-client-2.2.6.jar"/>
+  <policy key="sync7"/>
+  <policy key="sync4"/>
+  <policy key="sync3"/>
+  <policy key="sync6"/>
+  <policy key="sync5"/>
+  <policy key="sync2"/>
+  <policy key="sync1"/>
+  <policy key="sync8"/>
+  <policy key="sync9"/>
+</sync:RemoteData>

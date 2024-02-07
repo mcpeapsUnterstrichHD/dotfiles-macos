@@ -1,0 +1,418 @@
+"pkg-config --exists libffi"
+| pkg-config --libs libffi
+=> "-lffi\n"
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -lffi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+| pkg-config --cflags-only-I libffi
+=> "-I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi\n"
+| pkg-config --cflags-only-other libffi
+=> "\n"
+| pkg-config --libs-only-l libffi
+=> "-lffi\n"
+package configuration for libffi
+incflags: -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi
+cflags: 
+ldflags: 
+libs: -lffi
+
+"pkg-config --exists libffi"
+| pkg-config --modversion libffi
+=> "3.4-rc1\n"
+have_header: checking for ffi.h... -------------------- yes
+
+"gcc -E -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe   conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+have_library: checking for -lffi... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64   -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -lffi  -lffi  "
+ld: warning: ignoring duplicate libraries: '-lffi'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for sys/mman.h... -------------------- yes
+
+"gcc -E -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe   conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/mman.h>
+/* end */
+
+--------------------
+
+have_header: checking for dlfcn.h... -------------------- yes
+
+"gcc -E -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe   conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <dlfcn.h>
+/* end */
+
+--------------------
+
+have_library: checking for -ldl... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+ld: warning: ignoring duplicate libraries: '-ldl', '-lffi'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: 
+15: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlopen()... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+conftest.c:14:57: error: use of undeclared identifier 'dlopen'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))dlopen; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlopen; return !p; }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+ld: warning: ignoring duplicate libraries: '-ldl', '-lffi'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void dlopen();
+15: int t(void) { dlopen(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlclose()... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+conftest.c:14:57: error: use of undeclared identifier 'dlclose'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))dlclose; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlclose; return !p; }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+ld: warning: ignoring duplicate libraries: '-ldl', '-lffi'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void dlclose();
+15: int t(void) { dlclose(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlsym()... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+conftest.c:14:57: error: use of undeclared identifier 'dlsym'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))dlsym; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlsym; return !p; }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+ld: warning: ignoring duplicate libraries: '-ldl', '-lffi'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void dlsym();
+15: int t(void) { dlsym(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlerror()... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+conftest.c:14:57: error: use of undeclared identifier 'dlerror'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))dlerror; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlerror; return !p; }
+/* end */
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib   -m64  -ldl -lffi  -lffi -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc -ldl -lffi  -lffi  "
+ld: warning: ignoring duplicate libraries: '-ldl', '-lffi'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void dlerror();
+15: int t(void) { dlerror(); return 0; }
+/* end */
+
+--------------------
+
+have_const: checking for FFI_STDCALL in ffi.h... -------------------- no
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  -m64  -c conftest.c"
+conftest.c:7:34: error: use of undeclared identifier 'FFI_STDCALL'
+conftest_type conftestval = (int)FFI_STDCALL;
+                                 ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+4: 
+5: /*top*/
+6: typedef int conftest_type;
+7: conftest_type conftestval = (int)FFI_STDCALL;
+/* end */
+
+--------------------
+
+check_signedness: checking signedness of size_t... -------------------- unsigned
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  -m64  -c conftest.c"
+conftest.c:7:20: error: 'conftest_const' declared as an array with a negative size
+int conftest_const[((rbcv_typedef_)-1 < 0) ? 1 : -1];
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stddef.h>
+4: typedef size_t rbcv_typedef_;
+5: 
+6: /*top*/
+7: int conftest_const[((rbcv_typedef_)-1 < 0) ? 1 : -1];
+/* end */
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stddef.h>
+4: typedef size_t rbcv_typedef_;
+5: 
+6: /*top*/
+7: int conftest_const[((rbcv_typedef_)-1 > 0) ? 1 : -1];
+/* end */
+
+--------------------
+
+have_header: checking for ruby/memory_view.h... -------------------- yes
+
+"gcc -E -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe   conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/memory_view.h>
+/* end */
+
+--------------------
+
+have_type: checking for rb_memory_view_t in ruby/memory_view.h... -------------------- yes
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/fiddle -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/memory_view.h>
+4: 
+5: /*top*/
+6: typedef rb_memory_view_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_FFI_H 1
+ 4: #define RUBY_LIBFFI_MODVERSION 3004000
+ 5: #define USE_FFI_CLOSURE_ALLOC 1
+ 6: #define HAVE_FFI_PREP_CIF_VAR 1
+ 7: #define HAVE_SYS_MMAN_H 1
+ 8: #define HAVE_DLFCN_H 1
+ 9: #define HAVE_DLOPEN 1
+10: #define HAVE_DLCLOSE 1
+11: #define HAVE_DLSYM 1
+12: #define HAVE_DLERROR 1
+13: #define SIGNEDNESS_OF_SIZE_T +1
+14: #define HAVE_RUBY_MEMORY_VIEW_H 1
+15: #define HAVE_TYPE_RB_MEMORY_VIEW_T 1
+16: #endif
+/* end */
+

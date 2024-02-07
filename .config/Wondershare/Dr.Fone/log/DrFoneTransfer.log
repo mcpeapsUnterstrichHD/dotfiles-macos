@@ -1,0 +1,803 @@
+29.10.2022 21:06:12 OS Version: 10.16
+
+=======================================
+29.10.2022 21:06:12 Program.Start Product=Dr.Fone, Version=12.4.17.52
+29.10.2022 21:06:12 Program.InitLog...
+29.10.2022 21:06:12 Program.InitApp
+29.10.2022 21:06:12 os version: 
+29.10.2022 21:06:12 10.16
+29.10.2022 21:06:13 <OnlineRatingSwitchHelper> 1
+29.10.2022 21:06:13 <OnlineRatingSwitchHelper> 2
+29.10.2022 21:06:13 <OnlineRatingSwitchHelper> 3
+29.10.2022 21:06:14 <USB DEBUG> start requesting...
+29.10.2022 21:06:14 RegisterUSBDevicesNotify handle:140385008628208
+29.10.2022 21:06:14 MacUsbNotifier  StartMonitor start
+29.10.2022 21:06:14 MacUsbNotifier  StopMonitor
+29.10.2022 21:06:14 MacOS  StartMonitorWorker start
+29.10.2022 21:06:14 MacUsbNotifier  DoListen start
+29.10.2022 21:06:14 MacUsb DeviceConnectCallback 
+29.10.2022 21:06:14 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:14 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:14 ConnectionHub.FoundDevice
+29.10.2022 21:06:14 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:14 	Manufacturer=SAMSUNG
+29.10.2022 21:06:14 	Product=SAMSUNG_Android
+29.10.2022 21:06:14 	FriendlyName=SAMSUNG_Android
+29.10.2022 21:06:14 	SN=RZ8N1263E3M
+29.10.2022 21:06:14 	VID=1256
+29.10.2022 21:06:14 	PID=26720
+29.10.2022 21:06:14 	Class=0
+29.10.2022 21:06:14 	SubClass=0
+29.10.2022 21:06:14 	Protocol=0
+29.10.2022 21:06:14 MacOS  StartEnumeratorWorker start
+29.10.2022 21:06:14 MacOS  StartEnumeratorWorker while (!bExit) 
+29.10.2022 21:06:14 MacOS  StartEnumeratorWorker ScanMacUSB   
+29.10.2022 21:06:14 	FriendlyName=
+29.10.2022 21:06:14 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:06:14 Connection inserter Start
+29.10.2022 21:06:14 Connection inserter create new device
+29.10.2022 21:06:14 Connection inserter device is Android
+29.10.2022 21:06:14 <USB DEBUG> start parsing json...
+29.10.2022 21:06:14 <USB DEBUG> value compare: 1-1
+29.10.2022 21:06:15 Connection inserter AddService
+29.10.2022 21:06:15 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:06:15 MacOS  StartEnumeratorWorker bFisrtScan end.
+29.10.2022 21:06:15 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:06:15 RegisterUSBDevicesNotify handle:140384990004832
+29.10.2022 21:06:15 SetSystemSleep start
+29.10.2022 21:06:15 SetSystemSleep end
+29.10.2022 21:06:17 ConnectionScanTask start
+29.10.2022 21:06:17 ConnectionScanTask rescan start
+29.10.2022 21:06:17 ConnectionScanTask rescan end
+29.10.2022 21:06:17 ConnectionScanTask End
+29.10.2022 21:06:17 AddUSBConnection device: RZ8N1263E3M
+29.10.2022 21:06:17 ConnectionHub.FoundDevice
+29.10.2022 21:06:17 	Id=RZ8N1263E3M
+29.10.2022 21:06:17 	VID=0
+29.10.2022 21:06:17 	PID=0
+29.10.2022 21:06:17 	Class=0
+29.10.2022 21:06:17 	SubClass=0
+29.10.2022 21:06:17 	Protocol=0
+29.10.2022 21:06:17 Ignored!
+29.10.2022 21:06:17 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:06:17 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:17 Download Driver DB Ok, Version=4.0.1428646627
+29.10.2022 21:06:17 Replace DriverDb Ok
+29.10.2022 21:06:18 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:06:18 * daemon started successfully
+29.10.2022 21:06:18 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:06:18 Connection step Checking
+29.10.2022 21:06:18 [DC_UsbTask] start wait system installing.
+29.10.2022 21:06:18 [DC_UsbTask] end wait system installing.
+29.10.2022 21:06:18 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:06:18 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:06:18 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:06:18 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:06:18 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:06:18 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:06:18 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:06:18 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:06:18 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:06:18 Connection step WaitReady
+29.10.2022 21:06:18 cannot connect to daemon
+29.10.2022 21:06:18 SocketException: Connection refused
+29.10.2022 21:06:18   at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP) [0x000b6] in <cea77d7bab8b472da697a3b6e78ef65f>:0 
+  at WMM.Device.Android.ADBTransport.ConnectInternal () [0x00037] in <20dbabcdc4e74170bc3bc39fb649532a>:0 
+29.10.2022 21:06:18 connect to daemon error. Connection refused
+29.10.2022 21:06:18 * daemon not running. starting it now on port 5037
+29.10.2022 21:06:18 Start KillADBProcess
+29.10.2022 21:06:18 Start KillAdbForMac
+29.10.2022 21:06:18 End KillADBProcess
+29.10.2022 21:06:18 Start LaunchServer
+29.10.2022 21:06:18 Start KillADBProcess
+29.10.2022 21:06:18 Start KillAdbForMac
+29.10.2022 21:06:18 End KillADBProcess
+29.10.2022 21:06:18 * daemon started successfully
+29.10.2022 21:06:18 End LaunchServer
+29.10.2022 21:06:20 Connection step NeedAuth
+29.10.2022 21:06:20 OnADBStatus State: device unauthorized.
+29.10.2022 21:06:20 OnADBStatus NeedAuth
+29.10.2022 21:06:28 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:06:28 OnADBStatus State: device unauthorized.
+29.10.2022 21:06:28 OnADBStatus NeedAuth
+29.10.2022 21:06:33 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:06:33 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:06:34 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:34 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:06:39 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000)
+29.10.2022 21:06:39 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 21:06:39 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 21:06:39 2. device: SAMSUNG Android removed!
+29.10.2022 21:06:39 [MainForm] dispose device SAMSUNG Android main page.
+29.10.2022 21:06:39 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 Unplug
+29.10.2022 21:06:39 OnReportErrorLog log file not exist.
+29.10.2022 21:06:43 MacUsb DeviceConnectCallback 
+29.10.2022 21:06:43 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:43 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:43 ConnectionHub.FoundDevice
+29.10.2022 21:06:43 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:43 	Manufacturer=SAMSUNG
+29.10.2022 21:06:43 	Product=SAMSUNG_Android
+29.10.2022 21:06:43 	FriendlyName=SAMSUNG_Android
+29.10.2022 21:06:43 	SN=RZ8N1263E3M
+29.10.2022 21:06:43 	VID=1256
+29.10.2022 21:06:43 	PID=26720
+29.10.2022 21:06:43 	Class=0
+29.10.2022 21:06:43 	SubClass=0
+29.10.2022 21:06:43 	Protocol=0
+29.10.2022 21:06:43 	Model=Android
+29.10.2022 21:06:43 	FriendlyName=
+29.10.2022 21:06:43 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:06:43 Connection inserter Start
+29.10.2022 21:06:43 Connection inserter create new device
+29.10.2022 21:06:43 Connection inserter device is Android
+29.10.2022 21:06:43 Connection inserter AddService
+29.10.2022 21:06:43 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:06:43 ...device: SAMSUNG Android insert...
+29.10.2022 21:06:43 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:06:43 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:06:44 * daemon started successfully
+29.10.2022 21:06:44 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:06:44 Connection step Checking
+29.10.2022 21:06:44 [DC_UsbTask] start wait system installing.
+29.10.2022 21:06:44 [DC_UsbTask] end wait system installing.
+29.10.2022 21:06:44 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:06:44 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:06:44 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:06:44 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:06:44 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:06:44 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:06:44 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:06:44 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:06:44 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:06:44 Connection step WaitReady
+29.10.2022 21:06:44 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:06:44 OnADBStatus State: device unauthorized.
+29.10.2022 21:06:44 OnADBStatus NeedAuth
+29.10.2022 21:06:44 Connection step NeedAuth
+29.10.2022 21:06:47 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 21:06:48 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:06:49 OnADBStatus State: device unauthorized.
+29.10.2022 21:06:49 OnADBStatus NeedAuth
+29.10.2022 21:07:06 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:07:06 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:07:06 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:06 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:07:11 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000)
+29.10.2022 21:07:11 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 21:07:11 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 21:07:11 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 Unplug
+29.10.2022 21:07:11 2. device: SAMSUNG Android removed!
+29.10.2022 21:07:11 [MainForm] dispose device SAMSUNG Android main page.
+29.10.2022 21:07:11 OnReportErrorLog log file not exist.
+29.10.2022 21:07:14 MacUsb DeviceConnectCallback 
+29.10.2022 21:07:14 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:14 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:14 ConnectionHub.FoundDevice
+29.10.2022 21:07:14 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:14 	Manufacturer=SAMSUNG
+29.10.2022 21:07:14 	Product=SAMSUNG_Android
+29.10.2022 21:07:14 	FriendlyName=SAMSUNG_Android
+29.10.2022 21:07:14 	SN=RZ8N1263E3M
+29.10.2022 21:07:14 	VID=1256
+29.10.2022 21:07:14 	PID=26720
+29.10.2022 21:07:14 	Class=0
+29.10.2022 21:07:14 	SubClass=0
+29.10.2022 21:07:14 	Protocol=0
+29.10.2022 21:07:14 	Model=Android
+29.10.2022 21:07:14 	FriendlyName=
+29.10.2022 21:07:14 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:07:14 Connection inserter Start
+29.10.2022 21:07:14 Connection inserter create new device
+29.10.2022 21:07:14 Connection inserter device is Android
+29.10.2022 21:07:14 Connection inserter AddService
+29.10.2022 21:07:14 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:07:14 ...device: SAMSUNG Android insert...
+29.10.2022 21:07:14 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:14 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:07:14 * daemon started successfully
+29.10.2022 21:07:14 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:07:14 Connection step Checking
+29.10.2022 21:07:14 [DC_UsbTask] start wait system installing.
+29.10.2022 21:07:14 [DC_UsbTask] end wait system installing.
+29.10.2022 21:07:14 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:07:14 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:07:14 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:07:14 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:07:14 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:07:14 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:07:14 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:07:14 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:07:14 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:07:14 Connection step WaitReady
+29.10.2022 21:07:14 Connection step NeedAuth
+29.10.2022 21:07:14 OnADBStatus State: device unauthorized.
+29.10.2022 21:07:14 OnADBStatus NeedAuth
+29.10.2022 21:07:19 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 21:07:24 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:07:25 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:07:25 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:07:25 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:25 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:07:27 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:07:30 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000)
+29.10.2022 21:07:30 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 21:07:30 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 21:07:30 2. device: SAMSUNG Android removed!
+29.10.2022 21:07:30 [MainForm] dispose device SAMSUNG Android main page.
+29.10.2022 21:07:30 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 Unplug
+29.10.2022 21:07:30 OnReportErrorLog log file not exist.
+29.10.2022 21:07:30 MacUsb DeviceConnectCallback 
+29.10.2022 21:07:30 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:30 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:30 ConnectionHub.FoundDevice
+29.10.2022 21:07:30 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:30 	Manufacturer=SAMSUNG
+29.10.2022 21:07:30 	Product=SAMSUNG_Android
+29.10.2022 21:07:30 	FriendlyName=SAMSUNG_Android
+29.10.2022 21:07:30 	SN=RZ8N1263E3M
+29.10.2022 21:07:30 	VID=1256
+29.10.2022 21:07:30 	PID=26720
+29.10.2022 21:07:30 	Class=0
+29.10.2022 21:07:30 	SubClass=0
+29.10.2022 21:07:30 	Protocol=0
+29.10.2022 21:07:30 	Model=Android
+29.10.2022 21:07:30 	FriendlyName=
+29.10.2022 21:07:30 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:07:30 Connection inserter Start
+29.10.2022 21:07:30 Connection inserter create new device
+29.10.2022 21:07:30 Connection inserter device is Android
+29.10.2022 21:07:30 Connection inserter AddService
+29.10.2022 21:07:30 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:07:30 ...device: SAMSUNG Android insert...
+29.10.2022 21:07:30 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:07:30 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:07:30 * daemon started successfully
+29.10.2022 21:07:30 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:07:30 Connection step Checking
+29.10.2022 21:07:30 [DC_UsbTask] start wait system installing.
+29.10.2022 21:07:30 [DC_UsbTask] end wait system installing.
+29.10.2022 21:07:30 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:07:30 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:07:30 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:07:30 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:07:30 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:07:30 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:07:30 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:07:30 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:07:30 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:07:30 Connection step WaitReady
+29.10.2022 21:07:30 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:07:31 OnADBStatus State: device unauthorized.
+29.10.2022 21:07:31 OnADBStatus NeedAuth
+29.10.2022 21:07:31 Connection step NeedAuth
+29.10.2022 21:07:35 OnADBStatus State: device
+29.10.2022 21:07:35 Connection step Ready
+29.10.2022 21:07:35 [DC-BSCOT] BC-GetWaitReadyTask result: Online
+29.10.2022 21:07:35 ADBConnectTask.tryCount : 0
+29.10.2022 21:07:35 Connection step StartDaemon
+29.10.2022 21:07:37 ADBConnectTask.tryCount : 1
+29.10.2022 21:07:37 daemon start failed
+29.10.2022 21:07:37 ADB uninstall App: failure [delete_failed_internal_error]
+29.10.2022 21:07:37 Connection step InstallDaemon
+29.10.2022 21:07:38 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 21:07:44 ADBConnectTask.tryCount : 2
+29.10.2022 21:07:44 Connection step StartDaemon
+29.10.2022 21:07:44 Connection step StartSession
+29.10.2022 21:07:44 ADB Forward : 7867 okay
+29.10.2022 21:07:45 command channel connected!
+29.10.2022 21:07:45 Connection step LoadInfo
+29.10.2022 21:07:45 Connection step Finished
+29.10.2022 21:07:45 [DC_UsbTask] end GetConnectTask : True
+29.10.2022 21:07:45 Manufacturer:SAMSUNG
+29.10.2022 21:07:45 Model:SM-A202F
+29.10.2022 21:07:45 SerialNumber:RZ8N1263E3M
+29.10.2022 21:07:45 OSPlatform:Android
+29.10.2022 21:07:45 OSVersion:11
+29.10.2022 21:07:45 Carrier:
+29.10.2022 21:07:45 Name:SAMSUNG SM-A202F
+29.10.2022 21:07:45 Locale:de-DE
+29.10.2022 21:07:45 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 Online
+29.10.2022 21:07:45 Connection step Completed
+29.10.2022 21:07:45 OnReportErrorLog log file not exist.
+29.10.2022 21:07:47 ......device [SAMSUNG SM-A202F] connected. info is... platform: Android; version: 11; model: SM-A202F; brand: Samsung; manufacturer: SAMSUNG; daemonManager Version: 1.0.2.528
+29.10.2022 21:07:55 AppendSubDirectories:WMM.Device.MobileIOException: modify file attribute failed
+  at WMM.Device.Android.FileManager.GetFileAndDirectories (System.String path) [0x000fc] in <9b9611013a944a5593f0d1f2c53426b6>:0 
+  at TunesGo.DeviceRes.Files.FilesMainPage.AppendSubDirectories (System.Object objExpandNode) [0x00018] in <3de84ba705e64d5e9f22ee50cbe8fa3d>:0 
+29.10.2022 21:07:55 AppendSubDirectories:WMM.Device.MobileIOException: modify file attribute failed
+  at WMM.Device.Android.FileManager.GetFileAndDirectories (System.String path) [0x000fc] in <9b9611013a944a5593f0d1f2c53426b6>:0 
+  at TunesGo.DeviceRes.Files.FilesMainPage.AppendSubDirectories (System.Object objExpandNode) [0x00018] in <3de84ba705e64d5e9f22ee50cbe8fa3d>:0 
+29.10.2022 21:07:55 <TG_FileSystem> SetSelectLabelText....
+29.10.2022 21:07:55 <TG_FileSystem> SetSelectLabelText1 ....
+29.10.2022 21:07:55 <TG_FileSystem> Telefon:Memory
+29.10.2022 21:07:55 <TG_FileSystem> SetSelectLabelText....
+29.10.2022 21:07:55 <TG_FileSystem> SetSelectLabelText1 ....
+29.10.2022 21:07:55 <TG_FileSystem> Telefon:Memory
+29.10.2022 21:08:03 <TG_Video_Main> load result: Success, ErrorCode: 0
+29.10.2022 21:08:05 Deserialize WMM.Device.Android.Protocols.Packets.MediaCategoryNode.id error:Value was either too large or too small for an Int32.
+29.10.2022 21:08:05 Deserialize WMM.Device.Android.Protocols.Packets.MediaCategoryNode.id error:Value was either too large or too small for an Int32.
+29.10.2022 21:08:05 <TG_Music_Main> load result: Success, ErrorCode: 0
+29.10.2022 21:08:05 Music Category:Music result:True
+29.10.2022 21:08:05 Music Category:Podcast result:False
+29.10.2022 21:08:05 Music Category:Tones result:False
+29.10.2022 21:08:05 Music Category:AudioBook result:False
+29.10.2022 21:08:05 DoLoadFixedCategroyPlaylist Music Res Node:Musik
+29.10.2022 21:08:05 DoLoadCommonPlaylist Music Res Node:Musik
+29.10.2022 21:08:06 <TG_Photo_Main> load result: Success, ErrorCode: 0
+29.10.2022 21:11:23 ReadLeftTimesByKey:System.ArgumentNullException: Value cannot be null.
+Parameter name: String
+  at System.Number.StringToNumber (System.String str, System.Globalization.NumberStyles options, System.Number+NumberBuffer& number, System.Globalization.NumberFormatInfo info, System.Boolean parseDecimal) [0x00003] in <51f721dfc41044e88d763e1711099fe3>:0 
+  at System.Number.ParseInt32 (System.String s, System.Globalization.NumberStyles style, System.Globalization.NumberFormatInfo info) [0x00013] in <51f721dfc41044e88d763e1711099fe3>:0 
+  at System.Int32.Parse (System.String s) [0x00007] in <51f721dfc41044e88d763e1711099fe3>:0 
+  at WMM.UI.Main.TryUseHelper.ReadLeftTimes (System.String key) [0x00020] in <3de84ba705e64d5e9f22ee50cbe8fa3d>:0 
+29.10.2022 21:15:29 command channel disconnected!
+29.10.2022 21:15:35 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:15:35 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:15:35 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:15:35 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000)
+29.10.2022 21:15:35 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 21:15:35 2. device: SAMSUNG SM-A202F removed!
+29.10.2022 21:15:35 [MainForm] dispose device SAMSUNG SM-A202F main page.
+29.10.2022 21:15:44 protocol fault (status FAIL!) psn:RZ8N1263E3M port:5037
+29.10.2022 21:15:44 ADB UnForward: 7867 device 'RZ8N1263E3M' not found
+protocol fault (status FAIL!) psn:RZ8N1263E3M port:5037
+
+protocol fault (status FAIL!) psn:RZ8N1263E3M port:5037
+
+protocol fault (status FAIL!) psn:RZ8N1263E3M port:5037
+
+29.10.2022 21:15:44 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 21:16:03 MacUsb DeviceConnectCallback 
+29.10.2022 21:21:37 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:22:37 MacUsb DeviceConnectCallback 
+29.10.2022 21:22:37 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:37 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:37 ConnectionHub.FoundDevice
+29.10.2022 21:22:37 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:37 	Manufacturer=SAMSUNG
+29.10.2022 21:22:37 	Product=SAMSUNG_Android
+29.10.2022 21:22:37 	FriendlyName=SAMSUNG_Android
+29.10.2022 21:22:37 	SN=RZ8N1263E3M
+29.10.2022 21:22:37 	VID=1256
+29.10.2022 21:22:37 	PID=26720
+29.10.2022 21:22:37 	Class=0
+29.10.2022 21:22:37 	SubClass=0
+29.10.2022 21:22:37 	Protocol=0
+29.10.2022 21:22:37 	Model=SM-A202F
+29.10.2022 21:22:37 	FriendlyName=
+29.10.2022 21:22:37 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:22:37 Connection inserter Start
+29.10.2022 21:22:37 Connection inserter create new device
+29.10.2022 21:22:37 Connection inserter device is Android
+29.10.2022 21:22:37 Connection inserter AddService
+29.10.2022 21:22:37 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:22:37 ...device: SAMSUNG SM-A202F insert...
+29.10.2022 21:22:37 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:37 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:22:37 * daemon started successfully
+29.10.2022 21:22:37 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:22:37 Connection step Checking
+29.10.2022 21:22:37 [DC_UsbTask] start wait system installing.
+29.10.2022 21:22:37 [DC_UsbTask] end wait system installing.
+29.10.2022 21:22:37 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:22:37 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:22:37 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:22:37 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:22:37 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:22:37 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:22:37 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:22:37 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:22:37 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:22:37 Connection step WaitReady
+29.10.2022 21:22:37 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:22:51 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:22:51 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:51 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:22:52 MacUsb DeviceConnectCallback 
+29.10.2022 21:22:56 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:56 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:56 ConnectionHub.FoundDevice
+29.10.2022 21:22:56 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:22:56 	Manufacturer=SAMSUNG
+29.10.2022 21:22:56 	Product=SAMSUNG_Android
+29.10.2022 21:22:56 	FriendlyName=SAMSUNG_Android
+29.10.2022 21:22:56 	SN=RZ8N1263E3M
+29.10.2022 21:22:56 	VID=1256
+29.10.2022 21:22:56 	PID=26720
+29.10.2022 21:22:56 	Class=0
+29.10.2022 21:22:56 	SubClass=0
+29.10.2022 21:22:56 	Protocol=0
+29.10.2022 21:25:37 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:25:37 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 21:25:37 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 21:25:40 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:25:42 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000)
+29.10.2022 21:25:42 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 21:25:42 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 21:25:42 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 Unplug
+29.10.2022 21:25:42 2. device: SAMSUNG SM-A202F removed!
+29.10.2022 21:25:42 [MainForm] dispose device SAMSUNG SM-A202F main page.
+29.10.2022 21:25:43 OnReportErrorLog log file not exist.
+29.10.2022 21:25:51 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 21:26:17 MacUsb DeviceConnectCallback 
+29.10.2022 21:26:17 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:26:17 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:26:17 ConnectionHub.FoundDevice
+29.10.2022 21:26:17 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:26:17 	Manufacturer=samsung
+29.10.2022 21:26:17 	Product=SM-A202F
+29.10.2022 21:26:17 	FriendlyName=SM-A202F
+29.10.2022 21:26:17 	SN=RZ8N1263E3M
+29.10.2022 21:26:17 	VID=6353
+29.10.2022 21:26:17 	PID=53249
+29.10.2022 21:26:17 	Class=0
+29.10.2022 21:26:17 	SubClass=0
+29.10.2022 21:26:17 	Protocol=0
+29.10.2022 21:26:18 	Manufacturer=Google
+29.10.2022 21:26:18 	FriendlyName=
+29.10.2022 21:26:18 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:26:18 Connection inserter Start
+29.10.2022 21:26:18 Connection inserter create new device
+29.10.2022 21:26:18 Connection inserter device is Android
+29.10.2022 21:26:18 Connection inserter AddService
+29.10.2022 21:26:18 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:26:18 ...device: Google SM-A202F insert...
+29.10.2022 21:26:18 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:26:18 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:26:18 * daemon started successfully
+29.10.2022 21:26:18 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:26:18 Connection step Checking
+29.10.2022 21:26:18 [DC_UsbTask] start wait system installing.
+29.10.2022 21:26:18 [DC_UsbTask] end wait system installing.
+29.10.2022 21:26:18 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:26:18 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:26:18 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:26:18 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:26:18 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:26:18 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:26:18 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:26:18 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:26:18 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:26:18 Connection step WaitReady
+29.10.2022 21:26:18 Connection step NeedAuth
+29.10.2022 21:26:18 OnADBStatus State: device unauthorized.
+29.10.2022 21:26:18 OnADBStatus NeedAuth
+29.10.2022 21:26:19 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:26:46 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:26:46 MacUsb DeviceConnectCallback 
+29.10.2022 21:27:50 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:27:50 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:27:50 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 21:27:55 MacUsb DeviceConnectCallback 
+29.10.2022 21:27:55 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:27:55 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:27:55 ConnectionHub.FoundDevice
+29.10.2022 21:27:55 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:27:55 	Manufacturer=samsung
+29.10.2022 21:27:55 	Product=SM-A202F
+29.10.2022 21:27:55 	FriendlyName=SM-A202F
+29.10.2022 21:27:55 	SN=RZ8N1263E3M
+29.10.2022 21:27:55 	VID=6353
+29.10.2022 21:27:55 	PID=53249
+29.10.2022 21:27:55 	Class=0
+29.10.2022 21:27:55 	SubClass=0
+29.10.2022 21:27:55 	Protocol=0
+29.10.2022 21:29:20 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:29:49 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:29:49 MacUsb DeviceConnectCallback 
+29.10.2022 21:29:55 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:29:55 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:29:55 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 21:30:00 MacUsb DeviceConnectCallback 
+29.10.2022 21:30:00 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:00 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:00 ConnectionHub.FoundDevice
+29.10.2022 21:30:00 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:00 	Manufacturer=samsung
+29.10.2022 21:30:00 	Product=SM-A202F
+29.10.2022 21:30:00 	FriendlyName=SM-A202F
+29.10.2022 21:30:00 	SN=RZ8N1263E3M
+29.10.2022 21:30:00 	VID=6353
+29.10.2022 21:30:00 	PID=53249
+29.10.2022 21:30:00 	Class=0
+29.10.2022 21:30:00 	SubClass=0
+29.10.2022 21:30:00 	Protocol=0
+29.10.2022 21:30:30 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:30:30 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:30 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 21:30:30 MacUsb DeviceConnectCallback 
+29.10.2022 21:30:35 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000)
+29.10.2022 21:30:35 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 21:30:35 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 21:30:35 2. device: Google SM-A202F removed!
+29.10.2022 21:30:35 [MainForm] dispose device Google SM-A202F main page.
+29.10.2022 21:30:35 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000 Unplug
+29.10.2022 21:30:35 OnReportErrorLog log file not exist.
+29.10.2022 21:30:35 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:35 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:35 ConnectionHub.FoundDevice
+29.10.2022 21:30:35 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:35 	FriendlyName=SM-A202F
+29.10.2022 21:30:35 	SN=RZ8N1263E3M
+29.10.2022 21:30:35 	VID=6353
+29.10.2022 21:30:35 	PID=53249
+29.10.2022 21:30:35 	Class=0
+29.10.2022 21:30:35 	SubClass=0
+29.10.2022 21:30:35 	Protocol=0
+29.10.2022 21:30:35 	Manufacturer=Google
+29.10.2022 21:30:35 	Model=SM-A202F
+29.10.2022 21:30:35 	FriendlyName=
+29.10.2022 21:30:35 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, Android, RZ8N1263E3M)
+29.10.2022 21:30:35 Connection inserter Start
+29.10.2022 21:30:35 Connection inserter create new device
+29.10.2022 21:30:35 Connection inserter device is Android
+29.10.2022 21:30:35 Connection inserter AddService
+29.10.2022 21:30:35 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 21:30:35 ...device: Google SM-A202F insert...
+29.10.2022 21:30:35 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:35 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:30:35 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:35 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 21:30:35 [DC_UsbTask] try connect, Times: 1
+29.10.2022 21:30:35 * daemon started successfully
+29.10.2022 21:30:35 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 21:30:35 Connection step Checking
+29.10.2022 21:30:35 [DC_UsbTask] start wait system installing.
+29.10.2022 21:30:35 [DC_UsbTask] end wait system installing.
+29.10.2022 21:30:35 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 21:30:35 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 21:30:35 [DC_UsbTask] start PrepareCheck.
+29.10.2022 21:30:35 [DC_UsbTask] end PrepareCheck.
+29.10.2022 21:30:35 [DC_UsbTask] start GetConnectTask
+29.10.2022 21:30:35 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 21:30:35 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 21:30:35 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 21:30:35 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 21:30:35 Connection step WaitReady
+29.10.2022 21:30:36 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:30:40 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:40 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:40 MacUsb DeviceConnectCallback 
+29.10.2022 21:30:40 ConnectionHub.FoundDevice
+29.10.2022 21:30:40 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:30:40 	Manufacturer=samsung
+29.10.2022 21:30:40 	Product=SM-A202F
+29.10.2022 21:30:40 	FriendlyName=SM-A202F
+29.10.2022 21:30:40 	SN=RZ8N1263E3M
+29.10.2022 21:30:40 	VID=6353
+29.10.2022 21:30:40 	PID=53249
+29.10.2022 21:30:40 	Class=0
+29.10.2022 21:30:40 	SubClass=0
+29.10.2022 21:30:40 	Protocol=0
+29.10.2022 21:30:43 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000 disposed.
+29.10.2022 21:31:43 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:31:43 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:31:43 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 21:31:43 MacUsb DeviceConnectCallback 
+29.10.2022 21:31:48 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:31:48 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:31:48 ConnectionHub.FoundDevice
+29.10.2022 21:31:48 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:31:48 	Manufacturer=samsung
+29.10.2022 21:31:48 	Product=SM-A202F
+29.10.2022 21:31:48 	FriendlyName=SM-A202F
+29.10.2022 21:31:48 	SN=RZ8N1263E3M
+29.10.2022 21:31:48 	VID=6353
+29.10.2022 21:31:48 	PID=53249
+29.10.2022 21:31:48 	Class=0
+29.10.2022 21:31:48 	SubClass=0
+29.10.2022 21:31:48 	Protocol=0
+29.10.2022 21:33:39 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:36:42 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:39:45 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:42:48 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:45:51 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:47:05 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:47:05 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:47:05 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 21:47:10 MacUsb DeviceConnectCallback 
+29.10.2022 21:47:10 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:47:10 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:47:10 ConnectionHub.FoundDevice
+29.10.2022 21:47:10 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 21:47:10 	Manufacturer=samsung
+29.10.2022 21:47:10 	Product=SM-A202F
+29.10.2022 21:47:10 	FriendlyName=SM-A202F
+29.10.2022 21:47:10 	SN=RZ8N1263E3M
+29.10.2022 21:47:10 	VID=6353
+29.10.2022 21:47:10 	PID=53249
+29.10.2022 21:47:10 	Class=0
+29.10.2022 21:47:10 	SubClass=0
+29.10.2022 21:47:10 	Protocol=0
+29.10.2022 21:48:54 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:51:57 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:51:59 MacUsb DeviceDisconnectCallback 
+29.10.2022 21:51:59 MacUsb DeviceConnectCallback 
+29.10.2022 21:55:00 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 21:58:04 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:01:07 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:04:10 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:07:13 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:10:16 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:13:19 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:16:23 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:16:28 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:16:28 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:16:28 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 22:16:33 MacUsb DeviceConnectCallback 
+29.10.2022 22:16:33 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:16:33 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:16:33 ConnectionHub.FoundDevice
+29.10.2022 22:16:33 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:16:33 	Manufacturer=samsung
+29.10.2022 22:16:33 	Product=SM-A202F
+29.10.2022 22:16:33 	FriendlyName=SM-A202F
+29.10.2022 22:16:33 	SN=RZ8N1263E3M
+29.10.2022 22:16:33 	VID=6353
+29.10.2022 22:16:33 	PID=53249
+29.10.2022 22:16:33 	Class=0
+29.10.2022 22:16:33 	SubClass=0
+29.10.2022 22:16:33 	Protocol=0
+29.10.2022 22:19:26 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:22:29 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:25:32 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:28:26 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:28:27 MacUsb DeviceConnectCallback 
+29.10.2022 22:28:35 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:28:37 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:28:37 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:28:37 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 22:28:42 MacUsb DeviceConnectCallback 
+29.10.2022 22:28:42 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:28:42 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:28:42 ConnectionHub.FoundDevice
+29.10.2022 22:28:42 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:28:42 	Manufacturer=samsung
+29.10.2022 22:28:42 	Product=SM-A202F
+29.10.2022 22:28:42 	FriendlyName=SM-A202F
+29.10.2022 22:28:42 	SN=RZ8N1263E3M
+29.10.2022 22:28:42 	VID=6353
+29.10.2022 22:28:42 	PID=53249
+29.10.2022 22:28:42 	Class=0
+29.10.2022 22:28:42 	SubClass=0
+29.10.2022 22:28:42 	Protocol=0
+29.10.2022 22:28:50 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:28:51 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000
+29.10.2022 22:28:51 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000, RZ8N1263E3M)
+29.10.2022 22:28:56 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000)
+29.10.2022 22:28:56 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 22:28:56 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 22:28:56 2. device: Google SM-A202F removed!
+29.10.2022 22:28:56 [MainForm] dispose device Google SM-A202F main page.
+29.10.2022 22:28:56 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000 Unplug
+29.10.2022 22:28:56 OnReportErrorLog log file not exist.
+29.10.2022 22:28:57 MacUsb DeviceConnectCallback 
+29.10.2022 22:29:04 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SM-A202F@00100000 disposed.
+29.10.2022 22:29:18 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:30:13 MacUsb DeviceConnectCallback 
+29.10.2022 22:30:13 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:13 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:13 ConnectionHub.FoundDevice
+29.10.2022 22:30:13 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:13 	Manufacturer=SAMSUNG
+29.10.2022 22:30:13 	Product=SAMSUNG_Android
+29.10.2022 22:30:13 	FriendlyName=SAMSUNG_Android
+29.10.2022 22:30:13 	SN=RZ8N1263E3M
+29.10.2022 22:30:13 	VID=1256
+29.10.2022 22:30:13 	PID=26720
+29.10.2022 22:30:13 	Class=0
+29.10.2022 22:30:13 	SubClass=0
+29.10.2022 22:30:13 	Protocol=0
+29.10.2022 22:30:13 	Model=SM-A202F
+29.10.2022 22:30:13 	FriendlyName=
+29.10.2022 22:30:13 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 22:30:13 Connection inserter Start
+29.10.2022 22:30:13 Connection inserter create new device
+29.10.2022 22:30:13 Connection inserter device is Android
+29.10.2022 22:30:13 Connection inserter AddService
+29.10.2022 22:30:13 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 22:30:13 ...device: SAMSUNG SM-A202F insert...
+29.10.2022 22:30:13 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:13 [DC_UsbTask] try connect, Times: 1
+29.10.2022 22:30:13 * daemon started successfully
+29.10.2022 22:30:13 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 22:30:13 Connection step Checking
+29.10.2022 22:30:13 [DC_UsbTask] start wait system installing.
+29.10.2022 22:30:18 [DC_UsbTask] end wait system installing.
+29.10.2022 22:30:18 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 22:30:18 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 22:30:18 [DC_UsbTask] start PrepareCheck.
+29.10.2022 22:30:18 [DC_UsbTask] end PrepareCheck.
+29.10.2022 22:30:18 [DC_UsbTask] start GetConnectTask
+29.10.2022 22:30:18 [DC-BSCOT] BC-DoConnection enter..
+29.10.2022 22:30:18 [DC-BSCOT] BC-GetWaitReadyTask skip..
+29.10.2022 22:30:18 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 22:30:18 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 22:30:18 Connection step WaitReady
+29.10.2022 22:30:18 OnADBStatus State: device 'RZ8N1263E3M' not found
+29.10.2022 22:30:25 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:30:26 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:26 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 22:30:26 MacUsb DeviceConnectCallback 
+29.10.2022 22:30:31 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:31 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:31 ConnectionHub.FoundDevice
+29.10.2022 22:30:31 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:30:31 	Manufacturer=SAMSUNG
+29.10.2022 22:30:31 	Product=SAMSUNG_Android
+29.10.2022 22:30:31 	FriendlyName=SAMSUNG_Android
+29.10.2022 22:30:31 	SN=RZ8N1263E3M
+29.10.2022 22:30:31 	VID=1256
+29.10.2022 22:30:31 	PID=26720
+29.10.2022 22:30:31 	Class=0
+29.10.2022 22:30:31 	SubClass=0
+29.10.2022 22:30:31 	Protocol=0
+29.10.2022 22:32:53 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:32:53 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:32:53 ConnectionHub.RemoveConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, RZ8N1263E3M)
+29.10.2022 22:32:58 ConnectionHub.OnConnectionLost(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000)
+29.10.2022 22:32:58 [DC_UsbTask] end GetConnectTask : False
+29.10.2022 22:32:58 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 22:32:58 2. device: SAMSUNG SM-A202F removed!
+29.10.2022 22:32:58 [MainForm] dispose device SAMSUNG SM-A202F main page.
+29.10.2022 22:32:58 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 Unplug
+29.10.2022 22:32:58 OnReportErrorLog log file not exist.
+29.10.2022 22:33:06 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 22:33:35 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:33:42 MacUsb DeviceConnectCallback 
+29.10.2022 22:35:02 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:35:41 MacUsb DeviceConnectCallback 
+29.10.2022 22:36:13 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:36:43 MacUsb DeviceConnectCallback 
+29.10.2022 22:37:34 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:37:49 MacUsb DeviceConnectCallback 
+29.10.2022 22:37:58 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:38:06 MacUsb DeviceConnectCallback 
+29.10.2022 22:42:29 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:43:01 MacUsb DeviceConnectCallback 
+29.10.2022 22:43:17 MacUsb DeviceDisconnectCallback 
+29.10.2022 22:43:57 MacUsb DeviceConnectCallback 
+29.10.2022 22:43:57 ConnectionHub OnDeviceArrival:IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:43:57 AddUSBConnection device: IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:43:57 ConnectionHub.FoundDevice
+29.10.2022 22:43:57 	Id=IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:43:57 	Manufacturer=SAMSUNG
+29.10.2022 22:43:57 	Product=SAMSUNG_Android
+29.10.2022 22:43:57 	FriendlyName=SAMSUNG_Android
+29.10.2022 22:43:57 	SN=RZ8N1263E3M
+29.10.2022 22:43:57 	VID=1256
+29.10.2022 22:43:57 	PID=26720
+29.10.2022 22:43:57 	Class=0
+29.10.2022 22:43:57 	SubClass=0
+29.10.2022 22:43:57 	Protocol=0
+29.10.2022 22:43:57 	Model=SM-A202F
+29.10.2022 22:43:57 	FriendlyName=
+29.10.2022 22:43:57 ConnectionHub.AddConnection(IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000, Android, RZ8N1263E3M)
+29.10.2022 22:43:57 Connection inserter Start
+29.10.2022 22:43:57 Connection inserter create new device
+29.10.2022 22:43:57 Connection inserter device is Android
+29.10.2022 22:43:57 Connection inserter AddService
+29.10.2022 22:43:57 Device manager add device SerialNumber: RZ8N1263E3M
+29.10.2022 22:43:57 ...device: SAMSUNG SM-A202F insert...
+29.10.2022 22:43:57 Connection begin IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000
+29.10.2022 22:43:57 [DC_UsbTask] try connect, Times: 1
+29.10.2022 22:43:57 * daemon started successfully
+29.10.2022 22:43:57 <DC-AndroidCOT> Initialize Result: True
+29.10.2022 22:43:57 Connection step Checking
+29.10.2022 22:43:57 [DC_UsbTask] start wait system installing.
+29.10.2022 22:43:57 [DC_UsbTask] end wait system installing.
+29.10.2022 22:43:57 [DC_UsbTask] start wait FindExpectInterface
+29.10.2022 22:43:57 [DC_UsbTask] end wait FindExpectInterface.
+29.10.2022 22:43:57 [DC_UsbTask] start PrepareCheck.
+29.10.2022 22:43:57 [DC_UsbTask] end PrepareCheck.
+29.10.2022 22:43:57 [DC_UsbTask] usbconnecttask NeedDebuggingMode
+29.10.2022 22:43:57 [DC-BSCOT] BC-GetWaitReadyTask enter..
+29.10.2022 22:43:57 [DC-BSCOT] BC-WaitReadyWorker enter..
+29.10.2022 22:43:57 Connection step WaitReady
+29.10.2022 22:43:57 Connection step NeedDebuggingMode
+29.10.2022 22:45:13 MacUsbNotifier  StopMonitor
+29.10.2022 22:45:13 Device manager remove device SerialNumber: RZ8N1263E3M
+29.10.2022 22:45:13 Connection IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 disposed.
+29.10.2022 22:45:13 Connection end IOService:/AppleARMPE/arm-io@10F00000/AppleT810xIO/usb-drd0@82280000/AppleT8103USBXHCI@00000000/usb-drd0-port-hs@00100000/SAMSUNG_Android@00100000 NeedDebuggingMode
+29.10.2022 22:45:13 MacOS  StartEnumeratorWorker while (!bExit) end ---- 
+29.10.2022 22:45:14 Program.ExitAppDataCollect

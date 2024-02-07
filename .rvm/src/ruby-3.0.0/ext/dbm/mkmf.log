@@ -1,0 +1,473 @@
+have_type: checking for DBM in ndbm.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: typedef DBM conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_func: checking for dbm_open("", 0, 0) in ndbm.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: 
+17: int t(void) { dbm_open("", 0, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dbm_clearerr((DBM *)0) in ndbm.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: 
+17: int t(void) { dbm_clearerr((DBM *)0); return 0; }
+/* end */
+
+--------------------
+
+have_macro: checking for DBM_SUFFIX in ndbm.h... -------------------- yes
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: /*top*/
+5: #ifndef DBM_SUFFIX
+6: # error
+7: |:/ === DBM_SUFFIX undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_empty_macro_dbm_clearerr: checking for empty macro of dbm_clearerr(foobarbaz) in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:24: error: expected function body after function declarator
+dbm_clearerr(foobarbaz)
+                       ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: dbm_clearerr(foobarbaz)
+/* end */
+
+--------------------
+
+have_macro: checking for _GDBM_H_ in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:3: error: 
+# error
+  ^
+conftest.c:7:1: error: expected identifier or '('
+|:/ === _GDBM_H_ undefined === /:|
+^
+2 errors generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: /*top*/
+5: #ifndef _GDBM_H_
+6: # error
+7: |:/ === _GDBM_H_ undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_macro: checking for _DBM_IOERR in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:3: error: 
+# error
+  ^
+conftest.c:7:1: error: expected identifier or '('
+|:/ === _DBM_IOERR undefined === /:|
+^
+2 errors generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: /*top*/
+5: #ifndef _DBM_IOERR
+6: # error
+7: |:/ === _DBM_IOERR undefined === /:|
+8: #endif
+/* end */
+
+--------------------
+
+have_func: checking for db_version((int *)0, (int *)0, (int *)0) in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+conftest.c:17:15: error: call to undeclared function 'db_version'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+int t(void) { db_version((int *)0, (int *)0, (int *)0); return 0; }
+              ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: 
+17: int t(void) { db_version((int *)0, (int *)0, (int *)0); return 0; }
+/* end */
+
+--------------------
+
+have_declared_libvar: checking for gdbm_version in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+conftest.c:7:25: error: use of undeclared identifier 'gdbm_version'
+  void *conftest_var = &gdbm_version;
+                        ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: int main(int argc, char *argv[]) {
+7:   void *conftest_var = &gdbm_version;
+8:   return 0;
+9: }
+/* end */
+
+--------------------
+
+have_undeclared_libvar: checking for gdbm_version char * in ndbm.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: int main(int argc, char *argv[]) {
+ 7:   typedef char * conftest_type;
+ 8:   extern conftest_type gdbm_version;
+ 9:   conftest_type *conftest_var = &gdbm_version;
+10:   return 0;
+11: }
+/* end */
+
+--------------------
+
+have_var: checking for dpversion in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:16:55: error: use of undeclared identifier 'dpversion'
+int t(void) { const volatile void *volatile p; p = &(&dpversion)[0]; return !p; }
+                                                      ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: int t(void) { const volatile void *volatile p; p = &(&dpversion)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_type: checking for DBC in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:6:9: error: unknown type name 'DBC'; did you mean 'DBM'?
+typedef DBC conftest_type;
+        ^~~
+        DBM
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ndbm.h:95:3: note: 'DBM' declared here
+} DBM;
+  ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: typedef DBC conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for cdefs.h... -------------------- no
+
+"gcc -E -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: 'cdefs.h' file not found
+#include <cdefs.h>
+         ^~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <cdefs.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/cdefs.h... -------------------- yes
+
+"gcc -E -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/cdefs.h>
+/* end */
+
+--------------------
+
+have_func: checking for dbm_pagfno((DBM *)0) in ndbm.h... -------------------- no
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+conftest.c:17:15: error: use of undeclared identifier 'DBM_PAGFNO_NOT_AVAILABLE'
+int t(void) { dbm_pagfno((DBM *)0); return 0; }
+              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ndbm.h:99:23: note: expanded from macro 'dbm_pagfno'
+#define dbm_pagfno(a)   DBM_PAGFNO_NOT_AVAILABLE
+                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: 
+17: int t(void) { dbm_pagfno((DBM *)0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dbm_dirfno((DBM *)0) in ndbm.h... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L../.. -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0-static -framework Security -framework Foundation -lpthread -ldl -lobjc   "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ndbm.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     int (* volatile tp)(void)=(int (*)(void))&t;
+11:     printf("%d", (*tp)());
+12:   }
+13: 
+14:   return !!argv[argc];
+15: }
+16: 
+17: int t(void) { dbm_dirfno((DBM *)0); return 0; }
+/* end */
+
+--------------------
+
+convertible_int: checking for convertible type of datum.dsize... -------------------- long
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:7:20: error: 'conftest_const' declared as an array with a negative size
+int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(int)) ? 1 : -1];
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: typedef datum rbcv_typedef_;
+5: static rbcv_typedef_ rbcv_var;
+6: /*top*/
+7: int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(int)) ? 1 : -1];
+/* end */
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:7:20: error: 'conftest_const' declared as an array with a negative size
+int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(short)) ? 1 : -1];
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: typedef datum rbcv_typedef_;
+5: static rbcv_typedef_ rbcv_var;
+6: /*top*/
+7: int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(short)) ? 1 : -1];
+/* end */
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: typedef datum rbcv_typedef_;
+5: static rbcv_typedef_ rbcv_var;
+6: /*top*/
+7: int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(long)) ? 1 : -1];
+/* end */
+
+--------------------
+
+checking for sizeof(DBM) is available... -------------------- yes
+
+"gcc -fdeclspec -I../../.ext/include/arm64-darwin23 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64  -c conftest.c"
+conftest.c:9:10: error: expected "FILENAME" or <FILENAME>
+#include DBM_HDR
+         ^
+conftest.c:11:36: error: use of undeclared identifier 'DBM'
+const int sizeof_DBM = (int)sizeof(DBM);
+                                   ^
+2 errors generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #ifdef HAVE_CDEFS_H
+ 4: # include <cdefs.h>
+ 5: #endif
+ 6: #ifdef HAVE_SYS_CDEFS_H
+ 7: # include <sys/cdefs.h>
+ 8: #endif
+ 9: #include DBM_HDR
+10: 
+11: const int sizeof_DBM = (int)sizeof(DBM);
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define RUBYDBM_DBM_HEADER "ndbm.h"
+ 4: #define RUBYDBM_DBM_TYPE "libc"
+ 5: #define HAVE_TYPE_DBM 1
+ 6: #define HAVE_DBM_OPEN 1
+ 7: #define HAVE_DBM_CLEARERR 1
+ 8: #define RUBYDBM_DB_HEADER 1
+ 9: #define HAVE_UNDECLARED_LIBVAR_GDBM_VERSION 1
+10: #define DBM_HDR <ndbm.h>
+11: #define HAVE_SYS_CDEFS_H 1
+12: #define HAVE_DBM_DIRFNO 1
+13: #define SIZEOF_DATUM_DSIZE SIZEOF_LONG
+14: #define TYPEOF_DATUM_DSIZE long
+15: #define PRI_DATUM_DSIZE_PREFIX PRI_LONG_PREFIX
+16: #define DATUM_DSIZE2NUM LONG2NUM
+17: #define NUM2DATUM_DSIZE NUM2LONG
+18: #define DBM_SIZEOF_DBM 0
+19: #endif
+/* end */
+

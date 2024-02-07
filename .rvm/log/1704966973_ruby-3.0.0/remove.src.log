@@ -1,0 +1,20 @@
+[2024-01-11 10:56:13] __rvm_rm_rf
+__rvm_rm_rf () 
+{ 
+    __rvm_rm_rf_verbose "$@"
+}
+current path: /Users/mahd
+PATH=/var/root/.local/bin:/var/root/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/mahd/.opam/default/bin:/usr/local/opt/qt@5/bin:/Users/mahd/.local/bin:/Users/mahd/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/sbin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/opt/homebrew/bin:/usr/local/go/bin:/Users/mahd/.rvm/bin
+command(2): __rvm_rm_rf /Users/mahd/.rvm/src/ruby-3.0.0
+++ __rvm_rm_rf_verbose /Users/mahd/.rvm/src/ruby-3.0.0
+++ typeset target
+++ target=/Users/mahd/.rvm/src/ruby-3.0.0
+++ [[ -n '' ]]
+++ [[ -n 3.2.57(1)-release ]]
+++ builtin shopt -s extglob
+++ case "${target}" in
+++ [[ -z /Users/mahd/.rvm/src/ruby-3.0.0 ]]
+++ [[ -d /Users/mahd/.rvm/src/ruby-3.0.0 ]]
+++ command rm -rf /Users/mahd/.rvm/src/ruby-3.0.0
+++ rm -rf /Users/mahd/.rvm/src/ruby-3.0.0
+++ true
