@@ -1,3 +1,6 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule ".zsh-autopair"]
+	path = .zsh-autopair
+	url = https://github.com/hlissner/zsh-autopair.git
