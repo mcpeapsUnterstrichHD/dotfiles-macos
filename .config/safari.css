@@ -1,0 +1,9 @@
+/* CaskaydiaCove Nerd Font für serifen Texte */
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-family: "CaskaydiaCoveNerdFontPropo";
+}
+
+/* CaskaydiaCove Nerd Font Mono für monospaced Texte */
+code, pre {
+    font-family: "CaskaydiaCoveNerdFontMono";
+}

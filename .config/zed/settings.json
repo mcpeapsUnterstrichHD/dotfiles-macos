@@ -1,0 +1,162 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "features": {
+    "copilot": false
+  },
+  "autosave": "on_focus_change",
+  "vim": false,
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "theme": "Solarized Dark",
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "ui_font_family": "CaskaydiaCove Nerd Font Mono",
+  "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
+  "buffer_font_features": {
+    "calt": true,
+    "case": true,
+    "cpsp": true,
+    "frac": true,
+    "liga": true,
+    "onum": true,
+    "ordn": true,
+    "pnum": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+    "ss11": true,
+    "ss12": true,
+    "ss13": true,
+    "ss14": true,
+    "ss15": true,
+    "ss16": true,
+    "ss17": true,
+    "ss18": true,
+    "ss19": true,
+    "ss20": true,
+    "subs": true,
+    "sups": true,
+    "swsh": true,
+    "titl": true,
+    "tnum": true,
+    "zero": true
+  },
+  "ui_font_features": {
+    "calt": true,
+    "case": true,
+    "cpsp": true,
+    "frac": true,
+    "liga": true,
+    "onum": true,
+    "ordn": true,
+    "pnum": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+    "ss11": true,
+    "ss12": true,
+    "ss13": true,
+    "ss14": true,
+    "ss15": true,
+    "ss16": true,
+    "ss17": true,
+    "ss18": true,
+    "ss19": true,
+    "ss20": true,
+    "subs": true,
+    "sups": true,
+    "swsh": true,
+    "titl": true,
+    "tnum": true,
+    "zero": true
+  },
+  "hour_format": "hour24",
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true
+        }
+      }
+    }
+  },
+  "semantic_index": {
+    "enabled": false
+  },
+  "terminal": {
+    "alternate_scroll": "on",
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "env": {},
+    "font_family": "CaskaydiaCove Nerd Font Mono",
+    "font_features": {
+      "calt": true,
+      "case": true,
+      "cpsp": true,
+      "frac": true,
+      "liga": true,
+      "onum": true,
+      "ordn": true,
+      "pnum": true,
+      "ss01": true,
+      "ss02": true,
+      "ss03": true,
+      "ss04": true,
+      "ss05": true,
+      "ss06": true,
+      "ss07": true,
+      "ss08": true,
+      "ss09": true,
+      "ss10": true,
+      "ss11": true,
+      "ss12": true,
+      "ss13": true,
+      "ss14": true,
+      "ss15": true,
+      "ss16": true,
+      "ss17": true,
+      "ss18": true,
+      "ss19": true,
+      "ss20": true,
+      "subs": true,
+      "sups": true,
+      "swsh": true,
+      "titl": true,
+      "tnum": true,
+      "zero": true
+    },
+    "font_size": 16,
+    "option_as_meta": false,
+    "shell": {},
+    "working_directory": "current_project_directory"
+  }
+}

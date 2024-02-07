@@ -1,0 +1,12 @@
+[filesystem "Oracle Corporation|19.0.1|/dev/disk4s5"]
+	timestampResolution = 4000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|19.0.1|/dev/disk3s5"]
+	timestampResolution = 4000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|19.0.1|/dev/disk2s5"]
+	timestampResolution = 3000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "JetBrains s.r.o.|17.0.8|/dev/disk3s5"]
+	timestampResolution = 4000 nanoseconds
+	minRacyThreshold = 0 nanoseconds

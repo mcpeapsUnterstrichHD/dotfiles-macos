@@ -1,0 +1,5 @@
++__rvm_post_configure_ruby:2> __rvm_post_configure_ruby_fix_athlon_sse2
++__rvm_post_configure_ruby_fix_athlon_sse2:3> [[ -f /proc/cpuinfo ]]
++__rvm_post_configure_ruby:3> __rvm_post_configure_ruby_update_setup
++__rvm_post_configure_ruby_update_setup:2> typeset option
++__rvm_post_configure_ruby_update_setup:4> ((  0 == 1  ))

@@ -1,0 +1,18 @@
+compiling failure.cpp
+failure.cpp:12:5: error: no matching function for call to 'define'
+    rb_define_method(rb_cObject, "arg1", func_arg1, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../.././include/ruby/backward/cxxanyargs.hpp:653:61: note: expanded from macro 'rb_define_method'
+#define rb_define_method(klass, mid, func, arity)           ruby::backward::cxxanyargs::define_method::rb_define_method::specific<arity>::define(klass, mid, func)
+                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../.././include/ruby/backward/cxxanyargs.hpp:544:9: note: candidate function not viable: no known conversion from 'VALUE (VALUE, VALUE)' (aka 'unsigned long (unsigned long, unsigned long)') to 'type *' (aka 'unsigned long (*)(...)') for 3rd argument
+        define(VALUE klass, T mid, type func)
+        ^
+../../.././include/ruby/backward/cxxanyargs.hpp:554:9: note: candidate function not viable: no known conversion from 'VALUE (VALUE, VALUE)' (aka 'unsigned long (unsigned long, unsigned long)') to 'unsigned long (*)(unsigned long)' for 3rd argument
+        define(VALUE klass, T mid, U func)
+        ^
+../../.././include/ruby/backward/cxxanyargs.hpp:561:9: note: candidate function not viable: no known conversion from 'VALUE (VALUE, VALUE)' (aka 'unsigned long (unsigned long, unsigned long)') to 'notimpl_type *' (aka 'unsigned long (*)(int, const unsigned long *, unsigned long, unsigned long)') for 3rd argument
+        define(VALUE klass, T mid, notimpl_type func)
+        ^
+1 error generated.
+make[3]: [failure.o] Error 1 (ignored)
