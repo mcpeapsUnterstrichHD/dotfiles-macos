@@ -1,0 +1,4262 @@
+{
+  "source": {
+    "type": "image",
+    "image": {
+      "name": "caddy",
+      "digest": "sha256:80ca561981768b2c3568cc4bef3d4cd1f11c2a625c806bedeb8453aef98779a0",
+      "tags": [
+        "2-alpine"
+      ],
+      "manifest": {
+        "schemaVersion": 2,
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "config": {
+          "mediaType": "application/vnd.docker.container.image.v1+json",
+          "size": 7810,
+          "digest": "sha256:a09733d8f0611adb987aea99d5144981331f8b6de5c2397bef43678ba50066f4"
+        },
+        "layers": [
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 3333361,
+            "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 360652,
+            "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 7526,
+            "digest": "sha256:764cd8cdd6e6b377bd4cd13dbb53eb18d9fc7e0045323401614398d5a85b9c65"
+          },
+          {
+            "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+            "size": 13568965,
+            "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468"
+          }
+        ]
+      },
+      "config": {
+        "architecture": "arm64",
+        "container": "bbb5b95de28b0064aa533fb4232b72b036b2c247fee89f6f6cea27f7a8ff15ce",
+        "created": "2024-01-27T03:44:41.411997314Z",
+        "docker_version": "20.10.23",
+        "history": [
+          {
+            "created": "2024-01-26T23:44:55.650290626Z",
+            "created_by": "/bin/sh -c #(nop) ADD file:6dc287a22d6cc7723b0576dd3a9a644468d133c54d42c8a8eda403e3117648f7 in / "
+          },
+          {
+            "created": "2024-01-26T23:44:55.750082605Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:36.925482581Z",
+            "created_by": "/bin/sh -c apk add --no-cache \tca-certificates \tlibcap \tmailcap"
+          },
+          {
+            "created": "2024-01-27T03:44:38.249756351Z",
+            "created_by": "/bin/sh -c set -eux; \tmkdir -p \t\t/config/caddy \t\t/data/caddy \t\t/etc/caddy \t\t/usr/share/caddy \t; \twget -O /etc/caddy/Caddyfile \"https://github.com/caddyserver/dist/raw/cd39178d252a610fee6aa8465c787d9c780007a2/config/Caddyfile\"; \twget -O /usr/share/caddy/index.html \"https://github.com/caddyserver/dist/raw/cd39178d252a610fee6aa8465c787d9c780007a2/welcome/index.html\""
+          },
+          {
+            "created": "2024-01-27T03:44:38.324261577Z",
+            "created_by": "/bin/sh -c #(nop)  ENV CADDY_VERSION=v2.7.6",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.114863704Z",
+            "created_by": "/bin/sh -c set -eux; \tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\tx86_64)  binArch='amd64'; checksum='b74311ec8263f30f6d36e5c8be151e8bc092b377789a55300d5671238b9043de5bd6db2bcefae32aa1e6fe94c47bbf02982c44a7871e5777b2596fdb20907cbf' ;; \t\tarmhf)   binArch='armv6'; checksum='88756642ca412db3a8da7a40b518861a6f524a8ac704021e8451d3cb38746f24243b1e561f4eec07e1575200d06bfd098783d2b7ee7ee07a971aed1c677da6e6' ;; \t\tarmv7)   binArch='armv7'; checksum='118776e879c280556abb7c03ff7c0081eda23c2aee0472aef176f733785e9501defaeaf334cd2443e31294809beafaea831d2e695aa68045160082aa3a966e2f' ;; \t\taarch64) binArch='arm64'; checksum='62252ade5e8dcec13a66154ee1978d959370be049cce52e7c4edefff14ef70bbb21630e3735092719bc3c31214e89dff99e55970ff0adec8ac0a94c6415b059a' ;; \t\tppc64el|ppc64le) binArch='ppc64le'; checksum='65d27fe53f5e4fa79f3476f8902071c907aab74db1a2616342be3714d4252219fbb53b174ef588e20c51e7cfac84376c7a0a608091c2fe83b31dbf59dabeb237' ;; \t\ts390x)   binArch='s390x'; checksum='c562190962a2db0248a4190616dd2ebaa02df2cf62f1a2c71f9d9de18af2a297df8000a06a11e8d3929dfd64f0c081d1e61961687ca220007459f2dbd0be2c81' ;; \t\t*) echo >&2 \"error: unsupported architecture ($apkArch)\"; exit 1 ;;\tesac; \twget -O /tmp/caddy.tar.gz \"https://github.com/caddyserver/caddy/releases/download/v2.7.6/caddy_2.7.6_linux_${binArch}.tar.gz\"; \techo \"$checksum  /tmp/caddy.tar.gz\" | sha512sum -c; \ttar x -z -f /tmp/caddy.tar.gz -C /usr/bin caddy; \trm -f /tmp/caddy.tar.gz; \tsetcap cap_net_bind_service=+ep /usr/bin/caddy; \tchmod +x /usr/bin/caddy; \tcaddy version"
+          },
+          {
+            "created": "2024-01-27T03:44:40.27796764Z",
+            "created_by": "/bin/sh -c #(nop)  ENV XDG_CONFIG_HOME=/config",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.349590199Z",
+            "created_by": "/bin/sh -c #(nop)  ENV XDG_DATA_HOME=/data",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.422359027Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=v2.7.6",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.49396592Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.title=Caddy",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.567942092Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.description=a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.642196856Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.url=https://caddyserver.com",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.713321169Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.documentation=https://caddyserver.com/docs",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.79975744Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.vendor=Light Code Labs",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.874756382Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.licenses=Apache-2.0",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:40.952044279Z",
+            "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.source=https://github.com/caddyserver/caddy-docker",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:41.027523415Z",
+            "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:41.100829432Z",
+            "created_by": "/bin/sh -c #(nop)  EXPOSE 443",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:41.173320443Z",
+            "created_by": "/bin/sh -c #(nop)  EXPOSE 443/udp",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:41.249826997Z",
+            "created_by": "/bin/sh -c #(nop)  EXPOSE 2019",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:41.336905447Z",
+            "created_by": "/bin/sh -c #(nop) WORKDIR /srv",
+            "empty_layer": true
+          },
+          {
+            "created": "2024-01-27T03:44:41.411997314Z",
+            "created_by": "/bin/sh -c #(nop)  CMD [\"caddy\" \"run\" \"--config\" \"/etc/caddy/Caddyfile\" \"--adapter\" \"caddyfile\"]",
+            "empty_layer": true
+          }
+        ],
+        "os": "linux",
+        "rootfs": {
+          "type": "layers",
+          "diff_ids": [
+            "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef",
+            "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5",
+            "sha256:974abca6a18abdb255c7755bfcb44a173f13c2f1cb0b37886f04271aa925eab2",
+            "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+          ]
+        },
+        "config": {
+          "Cmd": [
+            "caddy",
+            "run",
+            "--config",
+            "/etc/caddy/Caddyfile",
+            "--adapter",
+            "caddyfile"
+          ],
+          "Env": [
+            "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "CADDY_VERSION=v2.7.6",
+            "XDG_CONFIG_HOME=/config",
+            "XDG_DATA_HOME=/data"
+          ],
+          "Image": "sha256:b25c286df22dc94d0dc7f77cf2f33abd803d6766421751815615206edcff7d82",
+          "Labels": {
+            "org.opencontainers.image.description": "a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+            "org.opencontainers.image.documentation": "https://caddyserver.com/docs",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.source": "https://github.com/caddyserver/caddy-docker",
+            "org.opencontainers.image.title": "Caddy",
+            "org.opencontainers.image.url": "https://caddyserver.com",
+            "org.opencontainers.image.vendor": "Light Code Labs",
+            "org.opencontainers.image.version": "v2.7.6"
+          },
+          "WorkingDir": "/srv",
+          "ExposedPorts": {
+            "2019/tcp": {},
+            "443/tcp": {},
+            "443/udp": {},
+            "80/tcp": {}
+          }
+        },
+        "variant": "v8"
+      },
+      "raw_manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo3ODEwLCJkaWdlc3QiOiJzaGEyNTY6YTA5NzMzZDhmMDYxMWFkYjk4N2FlYTk5ZDUxNDQ5ODEzMzFmOGI2ZGU1YzIzOTdiZWY0MzY3OGJhNTAwNjZmNCJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozMzMzMzYxLCJkaWdlc3QiOiJzaGEyNTY6YzZiMzlkZTViMzM5NjE2NjFkYzkzOWI5OTdjYzFkMzBjZGEwMWUzODAwNWE2YzY2MjVmZDljN2U3NDhiYWI0NCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjM2MDY1MiwiZGlnZXN0Ijoic2hhMjU2OjRhOGQ1M2JjMDMwM2ZiZjdmMzQ5MDE2YjU5YjZhYzg3MTBiYTI2Mzk1MDVlMjc2YzM4MTZlY2NhNjc5YmRhYzcifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo3NTI2LCJkaWdlc3QiOiJzaGEyNTY6NzY0Y2Q4Y2RkNmU2YjM3N2JkNGNkMTNkYmI1M2ViMThkOWZjN2UwMDQ1MzIzNDAxNjE0Mzk4ZDVhODViOWM2NSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjEzNTY4OTY1LCJkaWdlc3QiOiJzaGEyNTY6MDBhY2JhOTMzMzYxNjUyNmY1ZmMxNzE5MmEwYWJkNGUyOTYyNGJiYTE1MDBjNjA2OGRiMTg5YmRjYmVlNTQ2OCJ9XX0=",
+      "raw_config": "eyJhcmNoaXRlY3R1cmUiOiJhcm02NCIsImNvbmZpZyI6eyJIb3N0bmFtZSI6IiIsIkRvbWFpbm5hbWUiOiIiLCJVc2VyIjoiIiwiQXR0YWNoU3RkaW4iOmZhbHNlLCJBdHRhY2hTdGRvdXQiOmZhbHNlLCJBdHRhY2hTdGRlcnIiOmZhbHNlLCJFeHBvc2VkUG9ydHMiOnsiMjAxOS90Y3AiOnt9LCI0NDMvdGNwIjp7fSwiNDQzL3VkcCI6e30sIjgwL3RjcCI6e319LCJUdHkiOmZhbHNlLCJPcGVuU3RkaW4iOmZhbHNlLCJTdGRpbk9uY2UiOmZhbHNlLCJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJDQUREWV9WRVJTSU9OPXYyLjcuNiIsIlhER19DT05GSUdfSE9NRT0vY29uZmlnIiwiWERHX0RBVEFfSE9NRT0vZGF0YSJdLCJDbWQiOlsiY2FkZHkiLCJydW4iLCItLWNvbmZpZyIsIi9ldGMvY2FkZHkvQ2FkZHlmaWxlIiwiLS1hZGFwdGVyIiwiY2FkZHlmaWxlIl0sIkltYWdlIjoic2hhMjU2OmIyNWMyODZkZjIyZGM5NGQwZGM3Zjc3Y2YyZjMzYWJkODAzZDY3NjY0MjE3NTE4MTU2MTUyMDZlZGNmZjdkODIiLCJWb2x1bWVzIjpudWxsLCJXb3JraW5nRGlyIjoiL3NydiIsIkVudHJ5cG9pbnQiOm51bGwsIk9uQnVpbGQiOm51bGwsIkxhYmVscyI6eyJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZGVzY3JpcHRpb24iOiJhIHBvd2VyZnVsLCBlbnRlcnByaXNlLXJlYWR5LCBvcGVuIHNvdXJjZSB3ZWIgc2VydmVyIHdpdGggYXV0b21hdGljIEhUVFBTIHdyaXR0ZW4gaW4gR28iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuZG9jdW1lbnRhdGlvbiI6Imh0dHBzOi8vY2FkZHlzZXJ2ZXIuY29tL2RvY3MiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UubGljZW5zZXMiOiJBcGFjaGUtMi4wIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9jYWRkeXNlcnZlci9jYWRkeS1kb2NrZXIiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJDYWRkeSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL2NhZGR5c2VydmVyLmNvbSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJMaWdodCBDb2RlIExhYnMiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6InYyLjcuNiJ9fSwiY29udGFpbmVyIjoiYmJiNWI5NWRlMjhiMDA2NGFhNTMzZmI0MjMyYjcyYjAzNmIyYzI0N2ZlZTg5ZjZmNmNlYTI3ZjdhOGZmMTVjZSIsImNvbnRhaW5lcl9jb25maWciOnsiSG9zdG5hbWUiOiJiYmI1Yjk1ZGUyOGIiLCJEb21haW5uYW1lIjoiIiwiVXNlciI6IiIsIkF0dGFjaFN0ZGluIjpmYWxzZSwiQXR0YWNoU3Rkb3V0IjpmYWxzZSwiQXR0YWNoU3RkZXJyIjpmYWxzZSwiRXhwb3NlZFBvcnRzIjp7IjIwMTkvdGNwIjp7fSwiNDQzL3RjcCI6e30sIjQ0My91ZHAiOnt9LCI4MC90Y3AiOnt9fSwiVHR5IjpmYWxzZSwiT3BlblN0ZGluIjpmYWxzZSwiU3RkaW5PbmNlIjpmYWxzZSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3Ivc2JpbjovdXNyL2Jpbjovc2JpbjovYmluIiwiQ0FERFlfVkVSU0lPTj12Mi43LjYiLCJYREdfQ09ORklHX0hPTUU9L2NvbmZpZyIsIlhER19EQVRBX0hPTUU9L2RhdGEiXSwiQ21kIjpbIi9iaW4vc2giLCItYyIsIiMobm9wKSAiLCJDTUQgW1wiY2FkZHlcIiBcInJ1blwiIFwiLS1jb25maWdcIiBcIi9ldGMvY2FkZHkvQ2FkZHlmaWxlXCIgXCItLWFkYXB0ZXJcIiBcImNhZGR5ZmlsZVwiXSJdLCJJbWFnZSI6InNoYTI1NjpiMjVjMjg2ZGYyMmRjOTRkMGRjN2Y3N2NmMmYzM2FiZDgwM2Q2NzY2NDIxNzUxODE1NjE1MjA2ZWRjZmY3ZDgyIiwiVm9sdW1lcyI6bnVsbCwiV29ya2luZ0RpciI6Ii9zcnYiLCJFbnRyeXBvaW50IjpudWxsLCJPbkJ1aWxkIjpudWxsLCJMYWJlbHMiOnsib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRlc2NyaXB0aW9uIjoiYSBwb3dlcmZ1bCwgZW50ZXJwcmlzZS1yZWFkeSwgb3BlbiBzb3VyY2Ugd2ViIHNlcnZlciB3aXRoIGF1dG9tYXRpYyBIVFRQUyB3cml0dGVuIGluIEdvIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRvY3VtZW50YXRpb24iOiJodHRwczovL2NhZGR5c2VydmVyLmNvbS9kb2NzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmxpY2Vuc2VzIjoiQXBhY2hlLTIuMCIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2UiOiJodHRwczovL2dpdGh1Yi5jb20vY2FkZHlzZXJ2ZXIvY2FkZHktZG9ja2VyIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnRpdGxlIjoiQ2FkZHkiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsIjoiaHR0cHM6Ly9jYWRkeXNlcnZlci5jb20iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yIjoiTGlnaHQgQ29kZSBMYWJzIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb24iOiJ2Mi43LjYifX0sImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQxLjQxMTk5NzMxNFoiLCJkb2NrZXJfdmVyc2lvbiI6IjIwLjEwLjIzIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjQtMDEtMjZUMjM6NDQ6NTUuNjUwMjkwNjI2WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBBREQgZmlsZTo2ZGMyODdhMjJkNmNjNzcyM2IwNTc2ZGQzYTlhNjQ0NDY4ZDEzM2M1NGQ0MmM4YThlZGE0MDNlMzExNzY0OGY3IGluIC8gIn0seyJjcmVhdGVkIjoiMjAyNC0wMS0yNlQyMzo0NDo1NS43NTAwODI2MDVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjM2LjkyNTQ4MjU4MVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyBhcGsgYWRkIC0tbm8tY2FjaGUgXHRjYS1jZXJ0aWZpY2F0ZXMgXHRsaWJjYXAgXHRtYWlsY2FwIn0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDozOC4yNDk3NTYzNTFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgc2V0IC1ldXg7IFx0bWtkaXIgLXAgXHRcdC9jb25maWcvY2FkZHkgXHRcdC9kYXRhL2NhZGR5IFx0XHQvZXRjL2NhZGR5IFx0XHQvdXNyL3NoYXJlL2NhZGR5IFx0OyBcdHdnZXQgLU8gL2V0Yy9jYWRkeS9DYWRkeWZpbGUgXCJodHRwczovL2dpdGh1Yi5jb20vY2FkZHlzZXJ2ZXIvZGlzdC9yYXcvY2QzOTE3OGQyNTJhNjEwZmVlNmFhODQ2NWM3ODdkOWM3ODAwMDdhMi9jb25maWcvQ2FkZHlmaWxlXCI7IFx0d2dldCAtTyAvdXNyL3NoYXJlL2NhZGR5L2luZGV4Lmh0bWwgXCJodHRwczovL2dpdGh1Yi5jb20vY2FkZHlzZXJ2ZXIvZGlzdC9yYXcvY2QzOTE3OGQyNTJhNjEwZmVlNmFhODQ2NWM3ODdkOWM3ODAwMDdhMi93ZWxjb21lL2luZGV4Lmh0bWxcIiJ9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDM6NDQ6MzguMzI0MjYxNTc3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIENBRERZX1ZFUlNJT049djIuNy42IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDM6NDQ6NDAuMTE0ODYzNzA0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jIHNldCAtZXV4OyBcdGFwa0FyY2g9XCIkKGFwayAtLXByaW50LWFyY2gpXCI7IFx0Y2FzZSBcIiRhcGtBcmNoXCIgaW4gXHRcdHg4Nl82NCkgIGJpbkFyY2g9J2FtZDY0JzsgY2hlY2tzdW09J2I3NDMxMWVjODI2M2YzMGY2ZDM2ZTVjOGJlMTUxZThiYzA5MmIzNzc3ODlhNTUzMDBkNTY3MTIzOGI5MDQzZGU1YmQ2ZGIyYmNlZmFlMzJhYTFlNmZlOTRjNDdiYmYwMjk4MmM0NGE3ODcxZTU3NzdiMjU5NmZkYjIwOTA3Y2JmJyA7OyBcdFx0YXJtaGYpICAgYmluQXJjaD0nYXJtdjYnOyBjaGVja3N1bT0nODg3NTY2NDJjYTQxMmRiM2E4ZGE3YTQwYjUxODg2MWE2ZjUyNGE4YWM3MDQwMjFlODQ1MWQzY2IzODc0NmYyNDI0M2IxZTU2MWY0ZWVjMDdlMTU3NTIwMGQwNmJmZDA5ODc4M2QyYjdlZTdlZTA3YTk3MWFlZDFjNjc3ZGE2ZTYnIDs7IFx0XHRhcm12NykgICBiaW5BcmNoPSdhcm12Nyc7IGNoZWNrc3VtPScxMTg3NzZlODc5YzI4MDU1NmFiYjdjMDNmZjdjMDA4MWVkYTIzYzJhZWUwNDcyYWVmMTc2ZjczMzc4NWU5NTAxZGVmYWVhZjMzNGNkMjQ0M2UzMTI5NDgwOWJlYWZhZWE4MzFkMmU2OTVhYTY4MDQ1MTYwMDgyYWEzYTk2NmUyZicgOzsgXHRcdGFhcmNoNjQpIGJpbkFyY2g9J2FybTY0JzsgY2hlY2tzdW09JzYyMjUyYWRlNWU4ZGNlYzEzYTY2MTU0ZWUxOTc4ZDk1OTM3MGJlMDQ5Y2NlNTJlN2M0ZWRlZmZmMTRlZjcwYmJiMjE2MzBlMzczNTA5MjcxOWJjM2MzMTIxNGU4OWRmZjk5ZTU1OTcwZmYwYWRlYzhhYzBhOTRjNjQxNWIwNTlhJyA7OyBcdFx0cHBjNjRlbHxwcGM2NGxlKSBiaW5BcmNoPSdwcGM2NGxlJzsgY2hlY2tzdW09JzY1ZDI3ZmU1M2Y1ZTRmYTc5ZjM0NzZmODkwMjA3MWM5MDdhYWI3NGRiMWEyNjE2MzQyYmUzNzE0ZDQyNTIyMTlmYmI1M2IxNzRlZjU4OGUyMGM1MWU3Y2ZhYzg0Mzc2YzdhMGE2MDgwOTFjMmZlODNiMzFkYmY1OWRhYmViMjM3JyA7OyBcdFx0czM5MHgpICAgYmluQXJjaD0nczM5MHgnOyBjaGVja3N1bT0nYzU2MjE5MDk2MmEyZGIwMjQ4YTQxOTA2MTZkZDJlYmFhMDJkZjJjZjYyZjFhMmM3MWY5ZDlkZTE4YWYyYTI5N2RmODAwMGEwNmExMWU4ZDM5MjlkZmQ2NGYwYzA4MWQxZTYxOTYxNjg3Y2EyMjAwMDc0NTlmMmRiZDBiZTJjODEnIDs7IFx0XHQqKSBlY2hvIFx1MDAzZVx1MDAyNjIgXCJlcnJvcjogdW5zdXBwb3J0ZWQgYXJjaGl0ZWN0dXJlICgkYXBrQXJjaClcIjsgZXhpdCAxIDs7XHRlc2FjOyBcdHdnZXQgLU8gL3RtcC9jYWRkeS50YXIuZ3ogXCJodHRwczovL2dpdGh1Yi5jb20vY2FkZHlzZXJ2ZXIvY2FkZHkvcmVsZWFzZXMvZG93bmxvYWQvdjIuNy42L2NhZGR5XzIuNy42X2xpbnV4XyR7YmluQXJjaH0udGFyLmd6XCI7IFx0ZWNobyBcIiRjaGVja3N1bSAgL3RtcC9jYWRkeS50YXIuZ3pcIiB8IHNoYTUxMnN1bSAtYzsgXHR0YXIgeCAteiAtZiAvdG1wL2NhZGR5LnRhci5neiAtQyAvdXNyL2JpbiBjYWRkeTsgXHRybSAtZiAvdG1wL2NhZGR5LnRhci5nejsgXHRzZXRjYXAgY2FwX25ldF9iaW5kX3NlcnZpY2U9K2VwIC91c3IvYmluL2NhZGR5OyBcdGNobW9kICt4IC91c3IvYmluL2NhZGR5OyBcdGNhZGR5IHZlcnNpb24ifSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQwLjI3Nzk2NzY0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFhER19DT05GSUdfSE9NRT0vY29uZmlnIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDM6NDQ6NDAuMzQ5NTkwMTk5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgRU5WIFhER19EQVRBX0hPTUU9L2RhdGEiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDo0MC40MjIzNTkwMjdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbj12Mi43LjYiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDo0MC40OTM5NjU5MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZT1DYWRkeSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQwLjU2Nzk0MjA5MloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5kZXNjcmlwdGlvbj1hIHBvd2VyZnVsLCBlbnRlcnByaXNlLXJlYWR5LCBvcGVuIHNvdXJjZSB3ZWIgc2VydmVyIHdpdGggYXV0b21hdGljIEhUVFBTIHdyaXR0ZW4gaW4gR28iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDo0MC42NDIxOTY4NTZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsPWh0dHBzOi8vY2FkZHlzZXJ2ZXIuY29tIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDM6NDQ6NDAuNzEzMzIxMTY5WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLmRvY3VtZW50YXRpb249aHR0cHM6Ly9jYWRkeXNlcnZlci5jb20vZG9jcyIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQwLjc5OTc1NzQ0WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvcj1MaWdodCBDb2RlIExhYnMiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDo0MC44NzQ3NTYzODJaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UubGljZW5zZXM9QXBhY2hlLTIuMCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQwLjk1MjA0NDI3OVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIExBQkVMIG9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2U9aHR0cHM6Ly9naXRodWIuY29tL2NhZGR5c2VydmVyL2NhZGR5LWRvY2tlciIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQxLjAyNzUyMzQxNVoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVYUE9TRSA4MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQxLjEwMDgyOTQzMloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVYUE9TRSA0NDMiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDo0MS4xNzMzMjA0NDNaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBFWFBPU0UgNDQzL3VkcCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDI0LTAxLTI3VDAzOjQ0OjQxLjI0OTgyNjk5N1oiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIEVYUE9TRSAyMDE5IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjQtMDEtMjdUMDM6NDQ6NDEuMzM2OTA1NDQ3WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSBXT1JLRElSIC9zcnYiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyNC0wMS0yN1QwMzo0NDo0MS40MTE5OTczMTRaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiY2FkZHlcIiBcInJ1blwiIFwiLS1jb25maWdcIiBcIi9ldGMvY2FkZHkvQ2FkZHlmaWxlXCIgXCItLWFkYXB0ZXJcIiBcImNhZGR5ZmlsZVwiXSIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo3YzUwNGYyMWJlODVjOGFkZTUxYjdhZGUzMmEzOWE0MjY5YmNiY2YwZTU5MzM1MjkyM2YxYjhlYTYyNzhlNWVmIiwic2hhMjU2OmVlNzRlZDNiNDAxNTNjY2Q5N2M3OTk0NGJhNmM1MGMxZmVhMjNlMGIwYjY2MDU3MTdmN2Y2NTY5OTcwNjBhZDUiLCJzaGEyNTY6OTc0YWJjYTZhMThhYmRiMjU1Yzc3NTViZmNiNDRhMTczZjEzYzJmMWNiMGIzNzg4NmYwNDI3MWFhOTI1ZWFiMiIsInNoYTI1NjowYWMzNWI5YTNhZDgyNTBlYTc2ZWQ1NjdkOTY0Y2NlMmIyNTdjODJlMTJhM2NiYmI4N2ZkN2VlYjM1NWMyMTZiIl19LCJ2YXJpYW50IjoidjgifQ==",
+      "distro": {
+        "os_name": "alpine",
+        "os_version": "3.18"
+      },
+      "platform": {
+        "os": "linux",
+        "architecture": "arm64",
+        "variant": "v8"
+      },
+      "size": 17270504
+    }
+  },
+  "artifacts": [
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "alpine-baselayout-data",
+      "version": "3.4.3-r1",
+      "purl": "pkg:apk/alpine/alpine-baselayout-data@3.4.3-r1?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Alpine base dir structure and init scripts",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+      "size": 11703,
+      "installed_size": 77824,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/profile",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/protocols",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/sysctl.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/nsswitch.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/services",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/hosts",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/inittab",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/passwd",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/shadow",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/group",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/hostname",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/shells",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/fstab",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/modules",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/alpine-baselayout@3.4.3-r1?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "alpine-baselayout",
+      "version": "3.4.3-r1",
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.4.3-r1?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Alpine base dir structure and init scripts",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+      "size": 8911,
+      "installed_size": 331776,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/modprobe.d/blacklist.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/modprobe.d/i386.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/profile.d/color_prompt.sh.disabled",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/lib/sysctl.d/00-alpine.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/crontabs/root",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/modprobe.d/aliases.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/modprobe.d/kms.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/motd",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/profile.d/20locale.sh",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/profile.d/README",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/profile",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/protocols",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/sysctl.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/nsswitch.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/services",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/hosts",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/inittab",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/passwd",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/shadow",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/group",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/hostname",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/shells",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/fstab",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/modules",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "alpine-keys",
+      "version": "2.4-r1",
+      "purl": "pkg:apk/alpine/alpine-keys@2.4-r1?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Public keys for Alpine Linux packages",
+      "licenses": [
+        "MIT"
+      ],
+      "url": "https://alpinelinux.org",
+      "size": 13954,
+      "installed_size": 159744,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "apk-tools",
+      "version": "2.14.0-r2",
+      "purl": "pkg:apk/alpine/apk-tools@2.14.0-r2?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Alpine Package Keeper - package manager for alpine",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+      "size": 127556,
+      "installed_size": 389120,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/lib/libapk.so.2.14.0",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/sbin/apk",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "busybox-binsh",
+      "version": "1.36.1-r5",
+      "purl": "pkg:apk/alpine/busybox-binsh@1.36.1-r5?os_name=alpine&os_version=3.18",
+      "author": "Sören Tempel <soeren+alpine@soeren-tempel.net>",
+      "description": "busybox ash /bin/sh",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://busybox.net/",
+      "size": 1514,
+      "installed_size": 8192,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/bin/busybox",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/busybox@1.36.1-r5?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "busybox",
+      "version": "1.36.1-r5",
+      "purl": "pkg:apk/alpine/busybox@1.36.1-r5?os_name=alpine&os_version=3.18",
+      "author": "Sören Tempel <soeren+alpine@soeren-tempel.net>",
+      "description": "Size optimized toolbox of many common UNIX utilities",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://busybox.net/",
+      "size": 532030,
+      "installed_size": 1048576,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/securetty",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/udhcpd.conf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/share/udhcpc/default.script",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/bin/busybox",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/busybox-paths.d/busybox",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/logrotate.d/acpid",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/network/if-up.d/dad",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/ssl_client",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "ca-certificates-bundle",
+      "version": "20230506-r0",
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20230506-r0?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Pre generated bundle of Mozilla certificates",
+      "licenses": [
+        "MPL-2.0",
+        "MIT"
+      ],
+      "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+      "size": 126304,
+      "installed_size": 237568,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/ssl/certs/ca-certificates.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "parent": "pkg:apk/alpine/ca-certificates@20230506-r0?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "ca-certificates",
+      "version": "20230506-r0",
+      "purl": "pkg:apk/alpine/ca-certificates@20230506-r0?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Common CA certificates PEM files from Mozilla",
+      "licenses": [
+        "MPL-2.0",
+        "MIT"
+      ],
+      "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+      "size": 158129,
+      "installed_size": 811008,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GTS_Root_R4.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_R46.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Starfield_Services_Root_Certificate_Authority_-_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Telia_Root_CA_v2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/AffirmTrust_Networking.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/D-TRUST_BR_Root_CA_1_2020.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_G3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/E-Tugra_Global_Root_CA_RSA_v3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/HARICA_TLS_RSA_Root_CA_2021.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/UCA_Global_G2_Root.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Baltimore_CyberTrust_Root.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/NAVER_Global_Root_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Hongkong_Post_Root_CA_3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SZAFIR_ROOT_CA2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/bin/c_rehash",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/BJCA_Global_Root_CA1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/COMODO_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_TLS_ECC_P384_Root_G5.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_C3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R4.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/CFCA_EV_ROOT.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certainly_Root_E1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GTS_Root_R1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/USERTrust_ECC_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/ANF_Secure_Server_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3_G3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Trustwave_Global_ECC_P384_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_G3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Buypass_Class_3_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Starfield_Root_Certificate_Authority_-_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/UCA_Extended_Validation_Root.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_1_G3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_ECC.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Trustwave_Global_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certigna.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Microsec_e-Szigno_Root_CA_2009.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/BJCA_Global_Root_CA2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TWCA_Root_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SwissSign_Gold_CA_-_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GC_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/AffirmTrust_Commercial.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Microsoft_ECC_Root_Certificate_Authority_2017.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Microsoft_RSA_Root_Certificate_Authority_2017.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_ECC.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TWCA_Global_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_2009.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/E-Tugra_Global_Root_CA_ECC_v3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GLOBALTRUST_2020.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SwissSign_Silver_CA_-_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/etc/ca-certificates/update.d/certhash",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_TLS_RSA4096_Root_G5.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_E46.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GTS_Root_R3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/certSIGN_ROOT_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/e-Szigno_Root_CA_2017.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/emSign_Root_CA_-_C1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/ACCVRAIZ1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_4.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certum_EC-384_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/etc/ca-certificates.conf",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/ePKI_Root_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/AffirmTrust_Premium_ECC.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/IdenTrust_Commercial_Root_CA_1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GB_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2_G3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_RSA_R2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TeliaSonera_Root_CA_v1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/emSign_Root_CA_-_G1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GDCA_TrustAUTH_R5_ROOT.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-_R3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-_R6.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_High_Assurance_EV_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/IdenTrust_Public_Sector_Root_CA_1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TunTrust_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/certSIGN_Root_CA_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/AffirmTrust_Premium.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Comodo_AAA_Services_root.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/HiPKI_Root_CA_-_G1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/NetLock_Arany_=Class_Gold=_Főtanúsítvány.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/vTrus_ECC_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/D-TRUST_EV_Root_CA_1_2020.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_EC1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G4.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R5.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Security_Communication_RootCA2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TrustCor_RootCert_CA-2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/COMODO_ECC_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certigna_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Trustwave_Global_ECC_P256_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certainly_Root_R1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Security_Communication_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/XRamp_Global_CA_Root.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Go_Daddy_Root_Certificate_Authority_-_G2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_RSA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GTS_Root_R2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Security_Communication_ECC_RootCA1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/USERTrust_RSA_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TrustCor_RootCert_CA-1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA_2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/ISRG_Root_X2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/TrustCor_ECA-1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_EV_2009.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Hongkong_Post_Root_CA_1.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Secure_Global_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Izenpe.com.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Starfield_Class_2_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/COMODO_RSA_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Security_Communication_RootCA3.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Buypass_Class_2_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/CA_Disig_Root_R2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Go_Daddy_Class_2_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/HARICA_TLS_ECC_Root_CA_2021.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/update-ca-certificates",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Actalis_Authentication_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_2011.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/vTrus_Root_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/etc/apk/protected_paths.d/ca-certificates.list",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/Entrust.net_Premium_2048_Secure_Server_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SecureTrust_CA.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/E-Tugra_Certification_Authority.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/SecureSign_RootCA11.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/share/ca-certificates/mozilla/DigiCert_Trusted_Root_G4.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/etc/ssl/certs/ca-certificates.crt",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libc-dev",
+      "version": "0.7.2-r5",
+      "purl": "pkg:apk/alpine/libc-dev@0.7.2-r5?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Meta package to pull in correct libc",
+      "licenses": [
+        "BSD-2-Clause",
+        "BSD-3-Clause"
+      ],
+      "url": "https://alpinelinux.org",
+      "size": 1485,
+      "installed_size": 4096,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libc-utils",
+      "version": "0.7.2-r5",
+      "purl": "pkg:apk/alpine/libc-utils@0.7.2-r5?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Meta package to pull in correct libc",
+      "licenses": [
+        "BSD-2-Clause",
+        "BSD-3-Clause"
+      ],
+      "url": "https://alpinelinux.org",
+      "size": 1485,
+      "installed_size": 4096,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/libc-dev@0.7.2-r5?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libcap-utils",
+      "version": "2.69-r0",
+      "purl": "pkg:apk/alpine/libcap-utils@2.69-r0?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "POSIX 1003.1e capabilities (utils)",
+      "licenses": [
+        "BSD-3-Clause",
+        "GPL-2.0-only"
+      ],
+      "url": "https://sites.google.com/site/fullycapable/",
+      "size": 29589,
+      "installed_size": 294912,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/sbin/capsh",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/getcap",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/getpcaps",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/setcap",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "parent": "pkg:apk/alpine/libcap@2.69-r0?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libcap2",
+      "version": "2.69-r0",
+      "purl": "pkg:apk/alpine/libcap2@2.69-r0?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "POSIX 1003.1e capabilities (libraries)",
+      "licenses": [
+        "BSD-3-Clause",
+        "GPL-2.0-only"
+      ],
+      "url": "https://sites.google.com/site/fullycapable/",
+      "size": 24225,
+      "installed_size": 151552,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/lib/libcap.so.2.69",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/lib/libpsx.so.2.69",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "parent": "pkg:apk/alpine/libcap@2.69-r0?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libcap",
+      "version": "2.69-r0",
+      "purl": "pkg:apk/alpine/libcap@2.69-r0?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "POSIX 1003.1e capabilities",
+      "licenses": [
+        "BSD-3-Clause",
+        "GPL-2.0-only"
+      ],
+      "url": "https://sites.google.com/site/fullycapable/",
+      "size": 1504,
+      "installed_size": 12288,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/sbin/capsh",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/getcap",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/getpcaps",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/sbin/setcap",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/lib/libcap.so.2.69",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/usr/lib/libpsx.so.2.69",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libcrypto3",
+      "version": "3.1.4-r5",
+      "purl": "pkg:apk/alpine/libcrypto3@3.1.4-r5?os_name=alpine&os_version=3.18",
+      "author": "Ariadne Conill <ariadne@dereferenced.org>",
+      "description": "Crypto library from openssl",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "url": "https://www.openssl.org/",
+      "size": 1627522,
+      "installed_size": 4329472,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/lib/engines-3/loader_attic.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/ct_log_list.cnf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/ct_log_list.cnf.dist",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/engines-3/afalg.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/openssl.cnf.dist",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/lib/libcrypto.so.3",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/engines-3/capi.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/engines-3/padlock.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/ossl-modules/legacy.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/misc/CA.pl",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/misc/tsget.pl",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/openssl.cnf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/openssl@3.1.4-r5?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "libssl3",
+      "version": "3.1.4-r5",
+      "purl": "pkg:apk/alpine/libssl3@3.1.4-r5?os_name=alpine&os_version=3.18",
+      "author": "Ariadne Conill <ariadne@dereferenced.org>",
+      "description": "SSL shared libraries",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "url": "https://www.openssl.org/",
+      "size": 238102,
+      "installed_size": 622592,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/lib/libssl.so.3",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/openssl@3.1.4-r5?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "mailcap",
+      "version": "2.1.54-r0",
+      "purl": "pkg:apk/alpine/mailcap@2.1.54-r0?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Helper application and MIME type associations for file types",
+      "licenses": [
+        "Domain",
+        "Public"
+      ],
+      "url": "https://pagure.io/mailcap",
+      "size": 21486,
+      "installed_size": 90112,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ],
+      "files": [
+        {
+          "path": "/etc/mailcap",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        },
+        {
+          "path": "/etc/mime.types",
+          "ordinal": 2,
+          "digest": "sha256:4a8d53bc0303fbf7f349016b59b6ac8710ba2639505e276c3816ecca679bdac7",
+          "diff_id": "sha256:ee74ed3b40153ccd97c79944ba6c50c1fea23e0b0b6605717f7f656997060ad5"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "musl-utils",
+      "version": "1.2.4-r2",
+      "purl": "pkg:apk/alpine/musl-utils@1.2.4-r2?os_name=alpine&os_version=3.18",
+      "author": "Timo Teräs <timo.teras@iki.fi>",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        "MIT",
+        "BSD-2-Clause",
+        "GPL-2.0-or-later"
+      ],
+      "url": "https://musl.libc.org/",
+      "size": 38577,
+      "installed_size": 286720,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/bin/iconv",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/ldd",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/sbin/ldconfig",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/getconf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/getent",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/musl@1.2.4-r2?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "musl",
+      "version": "1.2.4-r2",
+      "purl": "pkg:apk/alpine/musl@1.2.4-r2?os_name=alpine&os_version=3.18",
+      "author": "Timo Teräs <timo.teras@iki.fi>",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        "MIT"
+      ],
+      "url": "https://musl.libc.org/",
+      "size": 398841,
+      "installed_size": 675840,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/lib/ld-musl-aarch64.so.1",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/iconv",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/ldd",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/sbin/ldconfig",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/getconf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/bin/getent",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "openssl",
+      "version": "3.1.4-r5",
+      "purl": "pkg:apk/alpine/openssl@3.1.4-r5?os_name=alpine&os_version=3.18",
+      "author": "Ariadne Conill <ariadne@dereferenced.org>",
+      "description": "Crypto library from openssl",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "url": "https://www.openssl.org/",
+      "size": 1627522,
+      "installed_size": 4329472,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/lib/engines-3/loader_attic.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/ct_log_list.cnf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/ct_log_list.cnf.dist",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/engines-3/afalg.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/openssl.cnf.dist",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/lib/libcrypto.so.3",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/engines-3/capi.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/engines-3/padlock.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/usr/lib/ossl-modules/legacy.so",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/misc/CA.pl",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/misc/tsget.pl",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/etc/ssl/openssl.cnf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        },
+        {
+          "path": "/lib/libssl.so.3",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "pax-utils",
+      "version": "1.3.7-r1",
+      "purl": "pkg:apk/alpine/pax-utils@1.3.7-r1?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Scan ELF binaries for stuff",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+      "size": 37193,
+      "installed_size": 147456,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/bin/scanelf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "scanelf",
+      "version": "1.3.7-r1",
+      "purl": "pkg:apk/alpine/scanelf@1.3.7-r1?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "Scan ELF binaries for stuff",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+      "size": 37193,
+      "installed_size": 147456,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/bin/scanelf",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/pax-utils@1.3.7-r1?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "ssl_client",
+      "version": "1.36.1-r5",
+      "purl": "pkg:apk/alpine/ssl_client@1.36.1-r5?os_name=alpine&os_version=3.18",
+      "author": "Sören Tempel <soeren+alpine@soeren-tempel.net>",
+      "description": "EXternal ssl_client for busybox wget",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "url": "https://busybox.net/",
+      "size": 4950,
+      "installed_size": 81920,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/usr/bin/ssl_client",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "parent": "pkg:apk/alpine/busybox@1.36.1-r5?os_name=alpine&os_version=3.18"
+    },
+    {
+      "type": "apk",
+      "namespace": "alpine",
+      "name": "zlib",
+      "version": "1.2.13-r1",
+      "purl": "pkg:apk/alpine/zlib@1.2.13-r1?os_name=alpine&os_version=3.18",
+      "author": "Natanael Copa <ncopa@alpinelinux.org>",
+      "description": "A compression/decompression Library",
+      "licenses": [
+        "Zlib"
+      ],
+      "url": "https://zlib.net/",
+      "size": 52659,
+      "installed_size": 143360,
+      "locations": [
+        {
+          "path": "/lib/apk/db/installed",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ],
+      "files": [
+        {
+          "path": "/lib/libz.so.1.2.13",
+          "digest": "sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44",
+          "diff_id": "sha256:7c504f21be85c8ade51b7ade32a39a4269bcbcf0e593352923f1b8ea6278e5ef"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "command-line-arguments",
+      "version": "(devel)",
+      "purl": "pkg:golang/command-line-arguments@(devel)",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "filippo.io",
+      "name": "edwards25519",
+      "version": "1.0.0",
+      "purl": "pkg:golang/filippo.io/edwards25519@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/alecthomas/chroma",
+      "name": "v2",
+      "version": "2.9.1",
+      "purl": "pkg:golang/github.com/alecthomas/chroma/v2@2.9.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/andreasbriese",
+      "name": "bbloom",
+      "version": "0.0.0-20190825152654-46b345b51c96",
+      "purl": "pkg:golang/github.com/andreasbriese/bbloom@0.0.0-20190825152654-46b345b51c96",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/antlr/antlr4/runtime/go/antlr",
+      "name": "v4",
+      "version": "4.0.0-20230305170008-8188dc5388df",
+      "purl": "pkg:golang/github.com/antlr/antlr4/runtime/go/antlr/v4@4.0.0-20230305170008-8188dc5388df",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/aryann",
+      "name": "difflib",
+      "version": "0.0.0-20210328193216-ff5ff6dc229b",
+      "purl": "pkg:golang/github.com/aryann/difflib@0.0.0-20210328193216-ff5ff6dc229b",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/beorn7",
+      "name": "perks",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/beorn7/perks@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/burntsushi",
+      "name": "toml",
+      "version": "1.3.2",
+      "purl": "pkg:golang/github.com/burntsushi/toml@1.3.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/caddyserver/caddy",
+      "name": "v2",
+      "version": "2.7.6",
+      "purl": "pkg:golang/github.com/caddyserver/caddy/v2@2.7.6",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/caddyserver",
+      "name": "certmagic",
+      "version": "0.20.0",
+      "purl": "pkg:golang/github.com/caddyserver/certmagic@0.20.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cenkalti/backoff",
+      "name": "v4",
+      "version": "4.2.1",
+      "purl": "pkg:golang/github.com/cenkalti/backoff/v4@4.2.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cespare/xxhash",
+      "name": "v2",
+      "version": "2.2.0",
+      "purl": "pkg:golang/github.com/cespare/xxhash/v2@2.2.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cespare",
+      "name": "xxhash",
+      "version": "1.1.0",
+      "purl": "pkg:golang/github.com/cespare/xxhash@1.1.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/chzyer",
+      "name": "readline",
+      "version": "1.5.1",
+      "purl": "pkg:golang/github.com/chzyer/readline@1.5.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/cpuguy83/go-md2man",
+      "name": "v2",
+      "version": "2.0.2",
+      "purl": "pkg:golang/github.com/cpuguy83/go-md2man/v2@2.0.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dgraph-io/badger",
+      "name": "v2",
+      "version": "2.2007.4",
+      "purl": "pkg:golang/github.com/dgraph-io/badger/v2@2.2007.4",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dgraph-io",
+      "name": "badger",
+      "version": "1.6.2",
+      "purl": "pkg:golang/github.com/dgraph-io/badger@1.6.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dgraph-io",
+      "name": "ristretto",
+      "version": "0.1.0",
+      "purl": "pkg:golang/github.com/dgraph-io/ristretto@0.1.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dgryski",
+      "name": "go-farm",
+      "version": "0.0.0-20200201041132-a6ae2369ad13",
+      "purl": "pkg:golang/github.com/dgryski/go-farm@0.0.0-20200201041132-a6ae2369ad13",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dlclark",
+      "name": "regexp2",
+      "version": "1.10.0",
+      "purl": "pkg:golang/github.com/dlclark/regexp2@1.10.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/dustin",
+      "name": "go-humanize",
+      "version": "1.0.1",
+      "purl": "pkg:golang/github.com/dustin/go-humanize@1.0.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/felixge",
+      "name": "httpsnoop",
+      "version": "1.0.3",
+      "purl": "pkg:golang/github.com/felixge/httpsnoop@1.0.3",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/fxamacker/cbor",
+      "name": "v2",
+      "version": "2.5.0",
+      "purl": "pkg:golang/github.com/fxamacker/cbor/v2@2.5.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-chi/chi",
+      "name": "v5",
+      "version": "5.0.10",
+      "purl": "pkg:golang/github.com/go-chi/chi/v5@5.0.10",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-kit",
+      "name": "kit",
+      "version": "0.10.0",
+      "purl": "pkg:golang/github.com/go-kit/kit@0.10.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logfmt",
+      "name": "logfmt",
+      "version": "0.5.1",
+      "purl": "pkg:golang/github.com/go-logfmt/logfmt@0.5.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "logr",
+      "version": "1.3.0",
+      "purl": "pkg:golang/github.com/go-logr/logr@1.3.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-logr",
+      "name": "stdr",
+      "version": "1.2.2",
+      "purl": "pkg:golang/github.com/go-logr/stdr@1.2.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/go-sql-driver",
+      "name": "mysql",
+      "version": "1.7.1",
+      "purl": "pkg:golang/github.com/go-sql-driver/mysql@1.7.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "glog",
+      "version": "1.1.2",
+      "purl": "pkg:golang/github.com/golang/glog@1.1.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "protobuf",
+      "version": "1.5.3",
+      "purl": "pkg:golang/github.com/golang/protobuf@1.5.3",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/golang",
+      "name": "snappy",
+      "version": "0.0.4",
+      "purl": "pkg:golang/github.com/golang/snappy@0.0.4",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "cel-go",
+      "version": "0.15.1",
+      "purl": "pkg:golang/github.com/google/cel-go@0.15.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "certificate-transparency-go",
+      "version": "1.1.6",
+      "purl": "pkg:golang/github.com/google/certificate-transparency-go@1.1.6",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "go-tpm",
+      "version": "0.9.0",
+      "purl": "pkg:golang/github.com/google/go-tpm@0.9.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "go-tspi",
+      "version": "0.3.0",
+      "purl": "pkg:golang/github.com/google/go-tspi@0.3.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/google",
+      "name": "uuid",
+      "version": "1.3.1",
+      "purl": "pkg:golang/github.com/google/uuid@1.3.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/grpc-ecosystem/grpc-gateway",
+      "name": "v2",
+      "version": "2.18.0",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway/v2@2.18.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/huandu",
+      "name": "xstrings",
+      "version": "1.3.3",
+      "purl": "pkg:golang/github.com/huandu/xstrings@1.3.3",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/imdario",
+      "name": "mergo",
+      "version": "0.3.12",
+      "purl": "pkg:golang/github.com/imdario/mergo@0.3.12",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc/chunkreader",
+      "name": "v2",
+      "version": "2.0.1",
+      "purl": "pkg:golang/github.com/jackc/chunkreader/v2@2.0.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc",
+      "name": "pgconn",
+      "version": "1.14.0",
+      "purl": "pkg:golang/github.com/jackc/pgconn@1.14.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc",
+      "name": "pgio",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/jackc/pgio@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc",
+      "name": "pgpassfile",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/jackc/pgpassfile@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc/pgproto3",
+      "name": "v2",
+      "version": "2.3.2",
+      "purl": "pkg:golang/github.com/jackc/pgproto3/v2@2.3.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc",
+      "name": "pgservicefile",
+      "version": "0.0.0-20221227161230-091c0ba34f0a",
+      "purl": "pkg:golang/github.com/jackc/pgservicefile@0.0.0-20221227161230-091c0ba34f0a",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc",
+      "name": "pgtype",
+      "version": "1.14.0",
+      "purl": "pkg:golang/github.com/jackc/pgtype@1.14.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/jackc/pgx",
+      "name": "v4",
+      "version": "4.18.0",
+      "purl": "pkg:golang/github.com/jackc/pgx/v4@4.18.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/klauspost",
+      "name": "compress",
+      "version": "1.17.0",
+      "purl": "pkg:golang/github.com/klauspost/compress@1.17.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/klauspost/cpuid",
+      "name": "v2",
+      "version": "2.2.5",
+      "purl": "pkg:golang/github.com/klauspost/cpuid/v2@2.2.5",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/libdns",
+      "name": "libdns",
+      "version": "0.2.1",
+      "purl": "pkg:golang/github.com/libdns/libdns@0.2.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/manifoldco",
+      "name": "promptui",
+      "version": "0.9.0",
+      "purl": "pkg:golang/github.com/manifoldco/promptui@0.9.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mastercactapus",
+      "name": "proxyprotocol",
+      "version": "0.0.4",
+      "purl": "pkg:golang/github.com/mastercactapus/proxyprotocol@0.0.4",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/masterminds",
+      "name": "goutils",
+      "version": "1.1.1",
+      "purl": "pkg:golang/github.com/masterminds/goutils@1.1.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/masterminds/semver",
+      "name": "v3",
+      "version": "3.2.0",
+      "purl": "pkg:golang/github.com/masterminds/semver/v3@3.2.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/masterminds/sprig",
+      "name": "v3",
+      "version": "3.2.3",
+      "purl": "pkg:golang/github.com/masterminds/sprig/v3@3.2.3",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mattn",
+      "name": "go-colorable",
+      "version": "0.1.8",
+      "purl": "pkg:golang/github.com/mattn/go-colorable@0.1.8",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mattn",
+      "name": "go-isatty",
+      "version": "0.0.16",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@0.0.16",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/matttproud",
+      "name": "golang_protobuf_extensions",
+      "version": "1.0.4",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@1.0.4",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mgutz",
+      "name": "ansi",
+      "version": "0.0.0-20200706080929-d51e80ef957d",
+      "purl": "pkg:golang/github.com/mgutz/ansi@0.0.0-20200706080929-d51e80ef957d",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mholt",
+      "name": "acmez",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/mholt/acmez@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/micromdm/scep",
+      "name": "v2",
+      "version": "2.1.0",
+      "purl": "pkg:golang/github.com/micromdm/scep/v2@2.1.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/miekg",
+      "name": "dns",
+      "version": "1.1.55",
+      "purl": "pkg:golang/github.com/miekg/dns@1.1.55",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mitchellh",
+      "name": "copystructure",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/mitchellh/copystructure@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mitchellh",
+      "name": "go-ps",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/mitchellh/go-ps@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/mitchellh",
+      "name": "reflectwalk",
+      "version": "1.0.2",
+      "purl": "pkg:golang/github.com/mitchellh/reflectwalk@1.0.2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/pkg",
+      "name": "errors",
+      "version": "0.9.1",
+      "purl": "pkg:golang/github.com/pkg/errors@0.9.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_golang",
+      "version": "1.15.1",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@1.15.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "client_model",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/prometheus/client_model@0.4.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "common",
+      "version": "0.42.0",
+      "purl": "pkg:golang/github.com/prometheus/common@0.42.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/prometheus",
+      "name": "procfs",
+      "version": "0.9.0",
+      "purl": "pkg:golang/github.com/prometheus/procfs@0.9.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/quic-go",
+      "name": "qpack",
+      "version": "0.4.0",
+      "purl": "pkg:golang/github.com/quic-go/qpack@0.4.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/quic-go",
+      "name": "quic-go",
+      "version": "0.40.0",
+      "purl": "pkg:golang/github.com/quic-go/quic-go@0.40.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/rs",
+      "name": "xid",
+      "version": "1.5.0",
+      "purl": "pkg:golang/github.com/rs/xid@1.5.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/russross/blackfriday",
+      "name": "v2",
+      "version": "2.1.0",
+      "purl": "pkg:golang/github.com/russross/blackfriday/v2@2.1.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/shopspring",
+      "name": "decimal",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/shopspring/decimal@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/shurcool",
+      "name": "sanitized_anchor_name",
+      "version": "1.0.0",
+      "purl": "pkg:golang/github.com/shurcool/sanitized_anchor_name@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/sirupsen",
+      "name": "logrus",
+      "version": "1.9.3",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@1.9.3",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/slackhq",
+      "name": "nebula",
+      "version": "1.6.1",
+      "purl": "pkg:golang/github.com/slackhq/nebula@1.6.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/smallstep",
+      "name": "certificates",
+      "version": "0.25.0",
+      "purl": "pkg:golang/github.com/smallstep/certificates@0.25.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/smallstep",
+      "name": "go-attestation",
+      "version": "0.4.4-0.20230627102604-cf579e53cbd2",
+      "purl": "pkg:golang/github.com/smallstep/go-attestation@0.4.4-0.20230627102604-cf579e53cbd2",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/smallstep",
+      "name": "nosql",
+      "version": "0.6.0",
+      "purl": "pkg:golang/github.com/smallstep/nosql@0.6.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/smallstep",
+      "name": "truststore",
+      "version": "0.12.1",
+      "purl": "pkg:golang/github.com/smallstep/truststore@0.12.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "cast",
+      "version": "1.4.1",
+      "purl": "pkg:golang/github.com/spf13/cast@1.4.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "cobra",
+      "version": "1.7.0",
+      "purl": "pkg:golang/github.com/spf13/cobra@1.7.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/spf13",
+      "name": "pflag",
+      "version": "1.0.5",
+      "purl": "pkg:golang/github.com/spf13/pflag@1.0.5",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/stoewer",
+      "name": "go-strcase",
+      "version": "1.2.0",
+      "purl": "pkg:golang/github.com/stoewer/go-strcase@1.2.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/tailscale",
+      "name": "tscert",
+      "version": "0.0.0-20230806124524-28a91b69a046",
+      "purl": "pkg:golang/github.com/tailscale/tscert@0.0.0-20230806124524-28a91b69a046",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/urfave",
+      "name": "cli",
+      "version": "1.22.14",
+      "purl": "pkg:golang/github.com/urfave/cli@1.22.14",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/x448",
+      "name": "float16",
+      "version": "0.8.4",
+      "purl": "pkg:golang/github.com/x448/float16@0.8.4",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/yuin/goldmark-highlighting",
+      "name": "v2",
+      "version": "2.0.0-20230729083705-37449abec8cc",
+      "purl": "pkg:golang/github.com/yuin/goldmark-highlighting/v2@2.0.0-20230729083705-37449abec8cc",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/yuin",
+      "name": "goldmark",
+      "version": "1.5.6",
+      "purl": "pkg:golang/github.com/yuin/goldmark@1.5.6",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "github.com/zeebo",
+      "name": "blake3",
+      "version": "0.2.3",
+      "purl": "pkg:golang/github.com/zeebo/blake3@0.2.3",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.etcd.io",
+      "name": "bbolt",
+      "version": "1.3.7",
+      "purl": "pkg:golang/go.etcd.io/bbolt@1.3.7",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.mozilla.org",
+      "name": "pkcs7",
+      "version": "0.0.0-20210826202110-33d05740a352",
+      "purl": "pkg:golang/go.mozilla.org/pkcs7@0.0.0-20210826202110-33d05740a352",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib/instrumentation/net/http",
+      "name": "otelhttp",
+      "version": "0.45.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp@0.45.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib/propagators",
+      "name": "autoprop",
+      "version": "0.42.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/propagators/autoprop@0.42.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib/propagators",
+      "name": "aws",
+      "version": "1.17.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/propagators/aws@1.17.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib/propagators",
+      "name": "b3",
+      "version": "1.17.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/propagators/b3@1.17.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib/propagators",
+      "name": "jaeger",
+      "version": "1.17.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/propagators/jaeger@1.17.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/contrib/propagators",
+      "name": "ot",
+      "version": "1.17.0",
+      "purl": "pkg:golang/go.opentelemetry.io/contrib/propagators/ot@1.17.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel/exporters/otlp/otlptrace",
+      "name": "otlptracegrpc",
+      "version": "1.21.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc@1.21.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel/exporters/otlp",
+      "name": "otlptrace",
+      "version": "1.21.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace@1.21.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "metric",
+      "version": "1.21.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/metric@1.21.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "sdk",
+      "version": "1.21.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/sdk@1.21.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/otel",
+      "name": "trace",
+      "version": "1.21.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/trace@1.21.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io",
+      "name": "otel",
+      "version": "1.21.0",
+      "purl": "pkg:golang/go.opentelemetry.io/otel@1.21.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.opentelemetry.io/proto",
+      "name": "otlp",
+      "version": "1.0.0",
+      "purl": "pkg:golang/go.opentelemetry.io/proto/otlp@1.0.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.step.sm",
+      "name": "cli-utils",
+      "version": "0.8.0",
+      "purl": "pkg:golang/go.step.sm/cli-utils@0.8.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.step.sm",
+      "name": "crypto",
+      "version": "0.35.1",
+      "purl": "pkg:golang/go.step.sm/crypto@0.35.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.step.sm",
+      "name": "linkedca",
+      "version": "0.20.1",
+      "purl": "pkg:golang/go.step.sm/linkedca@0.20.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "multierr",
+      "version": "1.11.0",
+      "purl": "pkg:golang/go.uber.org/multierr@1.11.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "go.uber.org",
+      "name": "zap",
+      "version": "1.25.0",
+      "purl": "pkg:golang/go.uber.org/zap@1.25.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "crypto",
+      "version": "0.14.0",
+      "purl": "pkg:golang/golang.org/x/crypto@0.14.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "exp",
+      "version": "0.0.0-20230310171629-522b1b587ee0",
+      "purl": "pkg:golang/golang.org/x/exp@0.0.0-20230310171629-522b1b587ee0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "net",
+      "version": "0.17.0",
+      "purl": "pkg:golang/golang.org/x/net@0.17.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sync",
+      "version": "0.4.0",
+      "purl": "pkg:golang/golang.org/x/sync@0.4.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "sys",
+      "version": "0.14.0",
+      "purl": "pkg:golang/golang.org/x/sys@0.14.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "term",
+      "version": "0.13.0",
+      "purl": "pkg:golang/golang.org/x/term@0.13.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "golang.org/x",
+      "name": "text",
+      "version": "0.13.0",
+      "purl": "pkg:golang/golang.org/x/text@0.13.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto/googleapis",
+      "name": "api",
+      "version": "0.0.0-20231016165738-49dd2c1f3d0b",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis/api@0.0.0-20231016165738-49dd2c1f3d0b",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org/genproto/googleapis",
+      "name": "rpc",
+      "version": "0.0.0-20231016165738-49dd2c1f3d0b",
+      "purl": "pkg:golang/google.golang.org/genproto/googleapis/rpc@0.0.0-20231016165738-49dd2c1f3d0b",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "grpc",
+      "version": "1.59.0",
+      "purl": "pkg:golang/google.golang.org/grpc@1.59.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "google.golang.org",
+      "name": "protobuf",
+      "version": "1.31.0",
+      "purl": "pkg:golang/google.golang.org/protobuf@1.31.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/natefinch",
+      "name": "lumberjack.v2",
+      "version": "2.2.1",
+      "purl": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@2.2.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in/square",
+      "name": "go-jose.v2",
+      "version": "2.6.0",
+      "purl": "pkg:golang/gopkg.in/square/go-jose.v2@2.6.0",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "namespace": "gopkg.in",
+      "name": "yaml.v3",
+      "version": "3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@3.0.1",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "1.21.5",
+      "purl": "pkg:golang/stdlib@1.21.5",
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    },
+    {
+      "type": "golang",
+      "name": "stdlib",
+      "version": "go1.21.5",
+      "purl": "pkg:golang/stdlib@go1.21.5",
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "locations": [
+        {
+          "path": "/usr/bin/caddy",
+          "ordinal": 5,
+          "digest": "sha256:00acba9333616526f5fc17192a0abd4e29624bba1500c6068db189bdcbee5468",
+          "diff_id": "sha256:0ac35b9a3ad8250ea76ed567d964cce2b257c82e12a3cbbb87fd7eeb355c216b"
+        }
+      ]
+    }
+  ],
+  "descriptor": {
+    "name": "docker-scout",
+    "version": "1.3.0",
+    "sbom_version": "10"
+  }
+}

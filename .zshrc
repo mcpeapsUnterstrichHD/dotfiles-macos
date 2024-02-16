@@ -8,7 +8,7 @@ export HOMEBREW_REPOSITORY="/opt/homebrew";
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
-export DOCKER_HOST=unix:///Users/mahd/.local/share/containers/podman/machine/qemu/podman.sock
+export DOCKER_HOST=unix:///var/run/docker.sock
 export PATH="/usr/local/Cellar/llvm/10.0.1/bin/clangd:$PATH"
 export PATH="usr/local/opt/llvm/bin/clangd:$PATH"
 export PATH="/Users/mahd/go/bin:$PATH"
@@ -17,7 +17,10 @@ export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="/opt/homebrew/sbin:$PATH"
 export CLASSPATH=$CLASSPATH:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar
-
+# ~/.tmux/plugins
+export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
+# ~/.config/tmux/plugins
+export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
 
 
@@ -280,6 +283,8 @@ alias lss="/bin/ls -la"
 alias speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias neofetch--speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias neofetch='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
+alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
+alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 
 # export KEYTIMEOUT=10
 
@@ -343,3 +348,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ ! -r /Users/mahd/.opam/opam-init/init.zsh ]] || source /Users/mahd/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
+eval "$(zoxide init --cmd cd zsh)"
