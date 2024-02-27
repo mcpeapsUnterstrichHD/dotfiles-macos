@@ -1,0 +1,1458 @@
+: 1691415983:0; chsh -s /usr/local/bin/fish mahd
+: 1691415983:0; chsh -s $PATH mahd
+: 1691415983:0; chsh -s $PATH/fish mahd
+: 1691415983:0;shells
+: 1691415983:0;echo â€ƒ¼/usr/local/bin/fishâ€ƒ½ | sudo tee -a /etc/shells
+: 1691415983:0;echo â€ƒ¼/usr/local/bin/fishâ€ƒ½ | sudo tee -a /etc/shells\
+
+: 1691415983:0;brew install fish
+: 1691415983:0;echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mahd/.profile\
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+: 1691415983:0;echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mahd/.profile
+: 1691415983:0;eval "$(/opt/homebrew/bin/brew shellenv)"
+: 1691415983:0;brew install wget
+: 1691415983:0;cd /usr/local
+: 1691415983:0;find Cellar
+: 1691415983:0;brew install --cask fish
+: 1691415983:0;brew install --cask qmue
+: 1691415983:0;brew install qemu
+: 1691415983:0;qemu-img convert -p -O qcow2 /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_22598.vhdx /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_22598.qcow2 
+: 1691415983:0;(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/$USER/.zprofile\
+eval "$(/usr/local/bin/brew shellenv)"
+: 1691415983:0;which brew
+: 1691415983:0;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+: 1691415983:0;export PATH=/usr/local/bin:${PATH}
+: 1691415983:0;brew tap apple/apple http://github.com/apple/homebrew-apple
+: 1691415983:0;brew -v install apple/apple/game-porting-toolkit
+: 1691415983:0;brew reinstall fish
+: 1691415983:0; echo /usr/local/bin/fish | sudo tee -a /etc/shells
+: 1691415983:0; chsh -s /usr/local/bin/fish
+: 1691415983:0;fish
+: 1691415983:0;cd ~/Java\ tests
+: 1691415983:0;java Temp.class
+: 1691415983:0;java Temp
+: 1691415983:0;java Temp.java
+: 1691415983:0;java Temp hallo World
+: 1691415983:0;cd ~/Des
+: 1691415983:0;java -jar OSZimt-Crypter.jar -h
+: 1691415983:0;java -jar OSZimt-Crypter.jar -d
+: 1691415983:0;java -jar OSZimt-Crypter.jar
+: 1691415983:0;java -jar OSZimt-Crypter.jar -p /Users/mahd/DEV/OSZIMT-repo-ITA12_aps/PAS_team/PAS_team/src/main.osz fabian66
+: 1691415983:0;java -jar OSZimt-Crypter.jar -p /Users/mahd/DEV/OSZIMT-repo-ITA12_aps/PAS_team/PAS_team/src/main.osz fabian66 > Temp.java
+: 1691415983:0;javac Temp.java
+: 1691415983:0;java Temp.java Hello Worldjavac Temp.java
+: 1691415983:0;java Temp.java Hello Worldjava Temp.java Hello Worldjavac Temp.java
+: 1691415983:0;java Temp.java Hello World
+: 1691415983:0;cat Temp.java
+: 1691415983:0;lvim Temp.java
+: 1691415983:0;lvim 
+: 1691415983:0;cd /Users/mahd/.config/lvim
+: 1691415983:0;lvim
+: 1691415983:0;nix-sell -h
+: 1691415983:0;nix-shell -h
+: 1691415983:0;nix-shell --help
+: 1691415983:0;bash ~/.local/share/lunarvim/lvim/utils/installer/uninstall.sh
+: 1691415983:0;brew install touch-bar-simulator
+: 1691415983:0;nix
+: 1691415983:0;nix-shell -p nix-info --run "nix-info -m"
+: 1691415983:0;mkdir temp_theme && cd temp_theme
+: 1691415983:0;cdode .
+: 1691415983:0;
+: 1691415983:0;cd Downloads/temp_theme
+: 1691415983:0;curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ./coolnight.itermcolors
+: 1691415983:0;htop
+: 1691415983:0;/Users/mahd/.oh-my-zsh/oh-my-zsh.sh; exit
+: 1691415983:0;./Users/mahd/.oh-my-zsh/oh-my-zsh.sh
+: 1691415983:0;/Users/mahd/.oh-my-zsh/oh-my-zsh.sh
+: 1691415983:0;sudo /Users/mahd/.oh-my-zsh/oh-my-zsh.sh
+: 1691415983:0;sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1691415983:0;zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+: 1691415983:0;git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+: 1691415983:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+: 1691415983:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+: 1691415983:0;man
+: 1691415983:0;~
+: 1691415983:0;~/Downloads/temp_theme
+: 1691415983:0;zap
+: 1691415983:0;zap all
+: 1691415983:0;zap update all
+: 1691415983:0;zap list
+: 1691415983:0;cat ~/.zshrc
+: 1691415983:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1691416464:0;brew update zsh
+: 1691416491:0;brew upgrade zsh
+: 1691416513:0;brew install zsh
+: 1691417060:0;sudo cp ~/.p10k.zsh /private/var/root
+: 1691417123:0;echo hello world
+: 1691417170:0;sudo code .
+: 1691417324:0;sudo code /private/var/root
+: 1691417353:0;sudo code /private/var/root/.zshrc
+: 1691417492:0;brew -v
+: 1691418290:0;chmod -R go-w ~
+: 1691418316:0;sudo chmod -R go-w ~
+: 1691418429:0;sudo nano ~/.zshrc
+: 1691418807:0;\
+To make it work right now, do:\
+ source /Users/mahd/.iterm2_shell_integration.zsh\
+\
+This line was also added to /Users/mahd/.zshrc, so the next time you log in it will be loaded automatically.\
+\
+--------------------------------------------------------------------------------\
+\
+You will also have these commands:\
+imgcat filename\
+ Displays the image inline.\
+imgls\
+ Shows a directory listing with image thumbnails.\
+it2apisource ${ZDOTDIR:-$HOME}/.zshrc
+: 1691587192:0;~/Downloads/w11arm_esd2iso-V4.0.2
+: 1691587215:0;./w11arm_esd2iso
+: 1691587241:0;sudo ./w11arm_esd2iso
+: 1691588184:0;/Users/mahd/SearXNG/start.sh
+: 1691588950:0;qemu-img convert -O vmdk /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_25905.VHDX /Users/mahd/Downloads/win11.vmdk
+: 1691603650:0;ping cloudflare.com -s 1500
+: 1691603666:0;ping cloudflare.com -s 1495
+: 1691603678:0;ping cloudflare.com -s 1454
+: 1691603688:0;ping cloudflare.com -s 1450
+: 1691603701:0;ping cloudflare.com -s 1400
+: 1692057609:0;ping cloudflare.com -s 1455
+: 1692140299:0;brew install carthage
+: 1692140332:0;carthage
+: 1692510038:0;npm install --global create-dmg
+: 1692510099:0;brew install graphicsmagick imagemagick
+: 1692533679:0;DEV/ITA_12_App
+: 1692533714:0;create-dmg --overwrite ITA\ 12.app
+: 1692533846:0;create-dmg --overwrite --dmg-title="ITA 12" "ITA 12.app"
+: 1692540059:0;create-dmg --overwrite --dmg-title="ITA 12" --identity=no "ITA 12.app"
+: 1692540077:0;create-dmg --overwrite --dmg-title="ITA 12" --identity=null "ITA 12.app"
+: 1692654261:0;rm -rf /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/C/comboomPunkTsucht.ITA-12/
+: 1692731988:0;sudo find / -name create-dmg
+: 1692732038:0;find / -name create-dmg
+: 1692732071:0;find / -name create-dmg -print
+: 1692733801:0;sudo find / -name node -print
+: 1692734513:0;sudo find / -name npm -print
+: 1692734671:0;sudo find / -name create-dmg -print
+: 1692737849:0;create-dmg --overwrite --dmg-title="ITA 12" --identity="" "ITA 12.app" > "ITA 12.dmg"
+: 1693992286:0;/private/var/opt/minecraft/crafty/crafty-4/start mc-Server-controler.sh
+: 1693992405:0;/private/var/opt/minecraft/crafty/crafty-4/start\ mc-Server-controler.sh; exit
+: 1693992419:0;cd /private/var/opt/minecraft/crafty/crafty-4/
+: 1693992448:0;pip peewee
+: 1693992531:0;pip3.11 install peewee
+: 1693992738:0;git pull\
+
+: 1693992756:0;source .venv/bin/activate
+: 1693992790:0;pip3 install -r requirements.txt --no-cache-dir\
+
+: 1693992805:0;python3 main.py\
+
+: 1693992862:0;./start\ mc-Server-controler.sh
+: 1693993225:0;cat start\ mc-Server-controler.sh\
+
+: 1693993243:0;start\ mc-Server-controler.sh\
+
+: 1693994346:0;/Applications/start\ mc-Server-controler.sh
+: 1694156330:0;ngrok tcp 65388
+: 1694290884:0;/Users/mahd/Downloads/buster-client-setup-v0.3.0-macos-amd64
+: 1694290890:0;sudo /Users/mahd/Downloads/buster-client-setup-v0.3.0-macos-amd64
+: 1694290912:0;/Users/mahd/Downloads/
+: 1694290923:0;./buster-client-setup-v0.3.0-macos-amd64
+: 1694290939:0;sudo ./buster-client-setup-v0.3.0-macos-amd64
+: 1694521338:0;brew install --cask xquartz
+: 1694521578:0;brew tap homebrew/cask-fonts &&\
+brew install --cask font-*-nerd-font\
+
+: 1694521639:0;brew tap homebrew/cask-fonts &&\
+brew install --cask font-*\
+
+: 1694522049:0;#!/bin/bash
+: 1694522049:0;# Tap into homebrew/cask-fonts
+: 1694522049:0;brew tap homebrew/cask-fonts
+: 1694522050:0;# Read the font list file
+: 1694522051:0;while IFS= read -r font\
+do\
+ \
+ brew install --cask "font-$font-nerd-font"\
+done < "fontlist.txt"
+: 1694522067:0;pip install requests beautifulsoup4\
+
+: 1694522090:0;touch scriptname.py
+: 1694522129:0;python scriptname.py\
+
+: 1694522155:0;pip3 install requests beautifulsoup4\
+
+: 1694522163:0;python3 scriptname.py\
+
+: 1694522177:0;brew tap homebrew/cask-fonts && brew install --cask font-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\
+\
+#\
+brew tap homebrew/cask-fonts\
+\
+#\
+while IFS= read -r font\
+do\
+ \
+ brew install --cask "font-$font-nerd-font"\
+done < "fontlist.txt"\
+*-nerd-font
+: 1694522311:0;nano scriptname.py
+: 1694522673:0;brew tap homebrew/cask-fonts && brew install --cask font-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\
+\
+#\
+brew tap homebrew/cask-fonts\
+\
+#\
+while IFS= read -r font\
+do\
+ \
+ brew install --cask "font-$font-nerd-font"\
+done < "fontlist.txt"
+: 1694522679:0;\
+\
+#\
+fonts=("font1" "font2" "font3" "font4" "font5")\
+\
+#\
+for font in "${fonts[@]}"; do\
+ echo "$font" >> fontlist.txt\
+done
+: 1694522710:0;\
+\
+#\
+brew tap homebrew/cask-fonts\
+\
+#\
+while IFS= read -r font\
+do\
+ \
+ brew install --cask "font-$font-nerd-font"\
+done < "fontlist.txt"
+: 1694522788:0;\
+\
+#\
+brew tap homebrew/cask-fonts\
+\
+#\
+ \
+ brew install --cask nerd-font
+: 1694522837:0;brew tap homebrew/cask-fonts\
+\
+#\
+\
+ brew search --cask nerd-font
+: 1694522880:0;nano fontlist.txt
+: 1694548254:0;/var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/com.apple.useractivityd/shared-pasteboard/items/C23C735C-447F-41FF-B64E-D1CCD5C152A4/792bc1230c11e23bf7fad4b52b4f98e35145b75d.r
+: 1694548267:0;/var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/com.apple.useractivityd/shared-pasteboard/items/32595FAA-F458-4B83-A676-2D6814616298/878428a6afa358f43db96342ed6f2d22fc264efb.rtfd
+: 1694548269:0;curl https://raw.githubusercontent.com/rwu823/afloat/sierra/install.sh | sh
+: 1694548973:0;brew remove portx
+: 1694549011:0;brew upgrade -f
+: 1694549028:0;brew install --cask font-3270-nerd-font font-droid-sans-mono-nerd-font font-intone-mono-nerd-font font-overpass-nerd-font font-agave-nerd-font font-envy-code-r-nerd-font font-iosevka-nerd-font font-profont-nerd-font font-anonymice-nerd-font font-fantasque-sans-mono-nerd-font font-iosevka-term-nerd-font font-proggy-clean-tt-nerd-font font-arimo-nerd-font font-fira-code-nerd-font font-jetbrains-mono-nerd-font font-roboto-mono-nerd-font font-aurulent-nerd-font font-fira-mono-nerd-font font-lekton-nerd-font font-sauce-code-pro-nerd-font font-aurulent-sans-mono-nerd-font font-go-mono-nerd-font font-liberation-nerd-font font-shure-tech-mono-nerd-font font-bigblue-terminal-nerd-font font-gohufont-nerd-font font-lilex-nerd-font font-space-mono-nerd-font font-bitstream-vera-sans-mono-nerd-font font-hack-nerd-font font-meslo-lg-nerd-font font-symbols-only-nerd-font font-blex-mono-nerd-font font-hasklug-nerd-font font-monocraft-nerd-font font-terminess-ttf-nerd-font font-caskaydia-cove-nerd-font font-heavy-data-nerd-font font-monofur-nerd-font font-tinos-nerd-font font-code-new-roman-nerd-font font-hurmit-nerd-font font-monoid-nerd-font font-ubuntu-mono-nerd-font font-comic-shanns-mono-nerd-font font-im-writing-nerd-font font-mononoki-nerd-font font-ubuntu-nerd-font font-cousine-nerd-font font-inconsolata-go-nerd-font font-mplus-nerd-font font-victor-mono-nerd-font font-daddy-time-mono-nerd-font font-inconsolata-lgc-nerd-font font-noto-nerd-font font-dejavu-sans-mono-nerd-font font-inconsolata-nerd-font font-open-dyslexic-nerd-font\
+
+: 1694549039:0;brew install --cask font-3270-nerd-font font-droid-sans-mono-nerd-font font-intone-mono-nerd-font font-overpass-nerd-font font-agave-nerd-font font-envy-code-r-nerd-font font-iosevka-nerd-font font-profont-nerd-font font-anonymice-nerd-font font-fantasque-sans-mono-nerd-font font-iosevka-term-nerd-font font-proggy-clean-tt-nerd-font font-arimo-nerd-font font-fira-code-nerd-font font-jetbrains-mono-nerd-font font-roboto-mono-nerd-font font-aurulent-nerd-font font-fira-mono-nerd-font font-lekton-nerd-font font-sauce-code-pro-nerd-font font-aurulent-sans-mono-nerd-font font-go-mono-nerd-font font-liberation-nerd-font font-shure-tech-mono-nerd-font font-bigblue-terminal-nerd-font font-gohufont-nerd-font font-lilex-nerd-font font-space-mono-nerd-font font-bitstream-vera-sans-mono-nerd-font font-hack-nerd-font font-meslo-lg-nerd-font font-symbols-only-nerd-font font-blex-mono-nerd-font font-hasklug-nerd-font font-monocraft-nerd-font font-terminess-ttf-nerd-font font-caskaydia-cove-nerd-font font-heavy-data-nerd-font font-monofur-nerd-font font-tinos-nerd-font font-code-new-roman-nerd-font font-hurmit-nerd-font font-monoid-nerd-font font-ubuntu-mono-nerd-font font-comic-shanns-mono-nerd-font font-im-writing-nerd-font font-mononoki-nerd-font font-ubuntu-nerd-font font-cousine-nerd-font font-inconsolata-go-nerd-font font-mplus-nerd-font font-victor-mono-nerd-font font-daddy-time-mono-nerd-font font-inconsolata-lgc-nerd-font font-noto-nerd-font font-dejavu-sans-mono-nerd-font font-inconsolata-nerd-font font-open-dyslexic-nerd-font -f\
+
+: 1694549086:0;brew remove fish
+: 1694549098:0;brew remove fish -f
+: 1694549123:0;rm -rf/opt/homebrew/etc/fish\
+ /opt/homebrew/etc/fish/conf.d\
+ /opt/homebrew/etc/fish/conf.d/nix.fish\
+ /opt/homebrew/etc/fish/config.fish
+: 1694549134:0;rm -rf /opt/homebrew/etc/fish\
+ /opt/homebrew/etc/fish/conf.d\
+ /opt/homebrew/etc/fish/conf.d/nix.fish\
+ /opt/homebrew/etc/fish/config.fish
+: 1694549165:0;rm -rf /opt/homebrew/etc/fish\
+rm -rf /opt/homebrew/etc/fish/conf.d\
+rm -rf /opt/homebrew/etc/fish/conf.d/nix.fish\
+rm -rf /opt/homebrew/etc/fish/config.fish
+: 1694549175:0;brew cleanup
+: 1694727407:0;cd /Applications/usr/bin
+: 1694727427:0;./sunshine-0.20.0
+: 1694727437:0;./sunshine
+: 1694727451:0;sudo ./sunshine-0.20.0
+: 1694727840:0;./uninstall_pkg.sh
+: 1694727861:0;sudo ./uninstall_pkg.sh
+: 1694728104:0;tar xzvf MacPorts-2.8.1.tar.gz
+: 1694728173:0;cd MacPorts-2.8.1
+: 1694728197:0;./configure && make && sudo make install
+: 1694728808:0;cd /Applications/usr/local/sunshine/assets
+: 1694728841:0;port
+: 1694728885:0;sudo port -v selfupdate
+: 1694729001:0;sudo sh ./uninstall_pkg.sh
+: 1694729046:0;rm -rf MacPorts-2.8.1\
+
+: 1695008892:0;oh-my-posh get shell
+: 1695008968:0;oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json' | Invoke-Expression
+: 1695009134:0;brew remove jandedobbeleer/oh-my-posh/oh-my-posh
+: 1695126960:0;sudo /Applications/XAMPP/xamppfiles/manager-osx.app/Contents/MacOS/Application Manager
+: 1695126976:0;cd /Applications/XAMPP/xamppfiles/manager-osx.app/Contents/MacOS/
+: 1695126995:0;sudo ./Application\ Manager -h
+: 1695127008:0;sudo ./Application\ Manager --help
+: 1695127020:0;sudo ./Application\ Manager
+: 1695127027:0;sudo ./Application\ Manager .
+: 1695127049:0;sudo ./Application\ Manager . --mode text
+: 1695127077:0;sudo ./Application\ Manager --mode text
+: 1695127091:0;sudo Application\ Manager --mode text
+: 1695127097:0;sudo Application\ Manager
+: 1695127115:0;sudo ./"Application Manager"
+: 1695127505:0;/Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh
+: 1695127550:0;/Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh -help
+: 1695127567:0;cat /Applications/XAMPP/xamppfiles/apache2/scripts/ctl.sh
+: 1695127997:0;sudo ./installbuilder.sh
+: 1695128207:0;brew install apache2
+: 1695201666:0;brew services restart httpd
+: 1695201691:0;/opt/homebrew/opt/httpd/bin/httpd -D FOREGROUND\
+/opt/homebrew/opt/httpd/bin/httpd -D FOREGROUND
+: 1695203604:0;brew install mxsql
+: 1695203632:0;brew install mysql
+: 1695203727:0;mysql -h
+: 1695203733:0;mysql --help
+: 1695203818:0;mysql -u root -p fabian66
+: 1695203835:0;mysql -u root -p lernit
+: 1695203854:0;mysql -u root -p 0
+: 1695203967:0;mysql -u root fabian66
+: 1695203974:0;mysql -u root
+: 1695203982:0;mysql
+: 1695203993:0;mysql fabian66
+: 1695204078:0;brew services start mysql
+: 1695207444:0;sudo apachectl stop *
+: 1695207452:0;sudo apachectl help
+: 1695207559:0;brew remove mysql
+: 1695207568:0;brew remove apache2
+: 1695207597:0;rm -rf`:\
+  /opt/homebrew/etc/httpd\
+  /opt/homebrew/etc/httpd/extra\
+  /opt/homebrew/etc/httpd/extra/httpd-autoindex.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-dav.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-default.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-info.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-languages.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-manual.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-mpm.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-multilang-errordoc.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-ssl.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-userdir.conf\
+  /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf\
+  /opt/homebrew/etc/httpd/extra/proxy-html.conf\
+  /opt/homebrew/etc/httpd/httpd.conf\
+  /opt/homebrew/etc/httpd/magic\
+  /opt/homebrew/etc/httpd/mime.types\
+  /opt/homebrew/etc/httpd/original\
+  /opt/homebrew/etc/httpd/original/extra\
+  /opt/homebrew/etc/httpd/original/extra/httpd-autoindex.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-dav.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-default.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-info.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-languages.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-manual.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-mpm.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-multilang-errordoc.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-ssl.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-userdir.conf\
+  /opt/homebrew/etc/httpd/original/extra/httpd-vhosts.conf\
+  /opt/homebrew/etc/httpd/original/extra/proxy-html.conf\
+  /opt/homebrew/etc/httpd/original/httpd.conf\
+\
+\
+\
+
+: 1695207603:0;rm -rf\
+ /opt/homebrew/etc/httpd\
+ /opt/homebrew/etc/httpd/extra\
+ /opt/homebrew/etc/httpd/extra/httpd-autoindex.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-dav.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-default.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-info.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-languages.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-manual.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-mpm.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-multilang-errordoc.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-ssl.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-userdir.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf\
+ /opt/homebrew/etc/httpd/extra/proxy-html.conf\
+ /opt/homebrew/etc/httpd/httpd.conf\
+ /opt/homebrew/etc/httpd/magic\
+ /opt/homebrew/etc/httpd/mime.types\
+ /opt/homebrew/etc/httpd/original\
+ /opt/homebrew/etc/httpd/original/extra\
+ /opt/homebrew/etc/httpd/original/extra/httpd-autoindex.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-dav.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-default.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-info.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-languages.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-manual.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-mpm.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-multilang-errordoc.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-ssl.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-userdir.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-vhosts.conf\
+ /opt/homebrew/etc/httpd/original/extra/proxy-html.conf\
+ /opt/homebrew/etc/httpd/original/httpd.conf\
+\
+\
+\
+
+: 1695207610:0;sudo rm -rf\
+ /opt/homebrew/etc/httpd\
+ /opt/homebrew/etc/httpd/extra\
+ /opt/homebrew/etc/httpd/extra/httpd-autoindex.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-dav.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-default.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-info.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-languages.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-manual.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-mpm.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-multilang-errordoc.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-ssl.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-userdir.conf\
+ /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf\
+ /opt/homebrew/etc/httpd/extra/proxy-html.conf\
+ /opt/homebrew/etc/httpd/httpd.conf\
+ /opt/homebrew/etc/httpd/magic\
+ /opt/homebrew/etc/httpd/mime.types\
+ /opt/homebrew/etc/httpd/original\
+ /opt/homebrew/etc/httpd/original/extra\
+ /opt/homebrew/etc/httpd/original/extra/httpd-autoindex.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-dav.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-default.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-info.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-languages.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-manual.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-mpm.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-multilang-errordoc.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-ssl.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-userdir.conf\
+ /opt/homebrew/etc/httpd/original/extra/httpd-vhosts.conf\
+ /opt/homebrew/etc/httpd/original/extra/proxy-html.conf\
+ /opt/homebrew/etc/httpd/original/httpd.conf\
+\
+\
+\
+
+: 1695207698:0;sudo apachectl stop
+: 1695208611:0;/Applications/XAMPP/bin/mysql --user=root --password="" -e "CREATE DATABASE lernit"
+: 1695804413:0;omz
+: 1695804438:0;omz plugin
+: 1695804449:0;omz plugin list
+: 1695804573:0;omz plugin load alias-finder aliasesbrew github
+: 1695804582:0;omz plugin load alias-finder aliases brew github
+: 1695804598:0;omz plugin enablw alias-finder aliases brew github
+: 1695804615:0;omz plugin enable alias-finder aliases brew github
+: 1695804739:0;brew install-bundler-gems
+: 1695896918:0;sudo ping 192.168.70.1 -f
+: 1695988997:0;undefined
+: 1695988997:0;brew install mysql-client
+: 1696341632:0;/opt/homebrew/opt/mysql-client/bin/mysql -h 127.0.0.1 -P 3306 -u root
+: 1696471463:0;cd ~/Downloads/UnityModManagerInstaller
+: 1696471473:0;mono Console.exe
+: 1696493708:0;git clone https://github.com/palahsu/DDoS-Ripper.git
+: 1696493721:0;cd DDoS-Ripper
+: 1696493773:0;python3 DRipper.py -q -t
+: 1696493783:0;python3 DRipper.py -q -t 443
+: 1696493798:0;python3 DRipper.py -t 443 -q
+: 1696493819:0;python3 DRipper.py -t -q
+: 1696493842:0;python3 DRipper.py -p 443 -q
+: 1696493845:0;python3 DRipper.py -p 443
+: 1696493859:0;python3 DRipper.py -t 443
+: 1696493884:0;python3 DRipper.py -turbo default 443
+: 1696493894:0;python3 DRipper.py -t
+: 1696495208:0;python3 DRipper.py
+: 1696495257:0;python3 DRipper.py -s 10.198.16.1 -t
+: 1696495262:0;python3 DRipper.py -s 10.198.16.1 -t 443
+: 1696495283:0;python3 DRipper.py -s 10.198.16.1 -t 135
+: 1696495319:0;python3 DRipper.py -s 10.198.16.1
+: 1696781633:0;cd ~/Downloads/conky-1.19.4
+: 1696781649:0;mkdir build
+: 1696781657:0;cd build
+: 1696781668:0;cmake ..
+: 1696781730:0;make install
+: 1696781837:0;./"conky 1.19.4"
+: 1696781846:0;sudo ./"conky 1.19.4"
+: 1696781860:0;brew install btop
+: 1696782596:0;brew install conkey
+: 1696782748:0;brew install conky
+: 1696782838:0;sh <(curl -L https://nixos.org/nix/install)
+: 1696783201:0;sudo nano "/private/etc/zshrc"
+: 1696783270:0;nix-env -iA nixpkgs.conky
+: 1696783458:0;sudo -i sh -c 'nix-channel --update && nix-env --install --attr nixpkgs.nix && launchctl remove org.nixos.nix-daemon && launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist'
+: 1696784319:0;cd "/Users/mahd/DDoS-Ripper"
+: 1696784433:0;python3 DRipper.py -s 192.178.168.1 -t 443
+: 1696784532:0;ping 192.178.168.1 -p 443
+: 1696784600:0;ping 192.168.178.1 -p 443
+: 1696784612:0;python3 DRipper.py -s 192.168.178.1 -t 443
+: 1696784660:0;python3 DRipper.py -s 192.168.178.1 -t
+: 1696784664:0;python3 DRipper.py -s 192.168.178.1
+: 1696784683:0;ping 192.168.178.1
+: 1696784993:0;python3 DRipper.py -s 192.168.178.33
+: 1696785010:0;ping 192.168.178.1 -p 135
+: 1696785038:0;python3 DRipper.py -s 192.168.178.33 -p 80
+: 1696785308:0;python3 DRipper.py -s 127.0.0.1 -p 80
+: 1696785370:0;python3 DRipper.py -s 0.0.0.0 -p *
+: 1696785377:0;python3 DRipper.py -s 0.0.0.0
+: 1696785400:0;python3 DRipper.py -s 0.0.0.0 -t 443
+: 1697144623:0;git clone https://github.com/Ranginang67/DarkFly-2019.1
+: 1697144643:0;cd DarkFly-2019.1
+: 1697144657:0;chmod +x install.py
+: 1697144666:0;python3 install.py install
+: 1697144684:0;sudo python3 install.py install
+: 1697263918:0;curl -sSL https://deploygate.com/cli/install/6aca7c5e | bash
+: 1697265707:0;cd ~/DEV/ITA\ 12_App
+: 1697265786:0;dg deploy ~/DEV/ITA_12_App/ITA\ 12.app
+: 1697265804:0;dg deploy ~/DEV/ITA_12_App/ITA\ 12.opa
+: 1697265820:0;dg deploy ~/DEV/ITA_12_App/ITA\ 12.ipa
+: 1697266024:0;dg deploy
+: 1697438163:0;wexit
+: 1697710236:0;cd /usr/local/mysql
+: 1697710257:0;cd bin
+: 1697710266:0;mysql_config --socket
+: 1697710275:0;./mysql_config --socket
+: 1697711280:0;cp /tmp/mysql.sock ./mysql.sock
+: 1697711300:0;sudo cp /tmp/mysql.sock ./mysql.sock
+: 1697712193:0;cd data
+: 1697712412:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 3066
+: 1697712442:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr localhost:3066
+: 1697712455:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:3066
+: 1697712512:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:6603
+: 1697712679:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:8063
+: 1697712727:0;omz upgrade
+: 1697712733:0;omz update
+: 1697713554:0;sudo /Applications/AdGuardHome/AdGuardHome -s status
+: 1697713605:0;cd /Applications/AdGuardHome
+: 1697889240:0;cleal
+: 1697889244:0;clar
+: 1698053895:0;curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+: 1698051794:0;udo em install colorls
+: 1698051863:3;sudo gem pristine ffi --version 1.15.5
+: 1698052117:9;brew install zsh-autosuggestions
+: 1698052158:3;brew install zsh-syntax-highlighting
+: 1698052259:0;cd Drites\ AusbildungsJahr
+: 1698052267:0;cd P-AS
+: 1698053042:4;brew install tmux
+: 1698053097:1;git clone https://github.com/gpakosz/.tmux.git
+: 1698053112:0;ln -s -f .tmux/.tmux.conf
+: 1698053123:0;cp .tmux/.tmux.conf.local .
+: 1698053499:5;brew install reattach-to-user-namespace
+: 1698053595:2;brew install pmset
+: 1698054401:0;tmux kill-server
+: 1698054453:0;
+: 1698054645:0;#
+: 1698054999:0;tmux attach
+: 1698055429:0;tmux -CC attach
+: 1698055592:0;tmux -CC
+: 1698056581:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1698056595:0;rm -rf ~/.config/nvim/.git
+: 1698056604:0;nvim
+: 1698058161:0;p10k configure
+: 1698059762:0;neo
+: 1698059943:0;which speedtest
+: 1698060524:0;neofetch --speedtest
+: 1698231300:0;c
+: 1698232387:0;zsh
+: 1698797683:0;echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mahd/.zprofile\
+ eval "$(/opt/homebrew/bin/brew shellenv)"
+: 1698797695:0;bash
+: 1698799871:0;Downloads
+: 1698800584:0;brew install rbenv
+: 1698801327:0;git clone https://github.com/webcamoid/DeployTools.git
+: 1698801340:0;cd DeployTools
+: 1698801410:0;export PYTHONPATH="${PWD}/DeployTools"\
+export DYLD_LIBRARY_PATH=$(dirname $(readlink /usr/local/bin/vlc))/VLC.app/Contents/MacOS/lib\
+\
+python3 DeployTools/deploy.py -d "${PWD}/webcamoid-data" -c "${PWD}/webcamoid-build/package_info.conf" -o "${PWD}/webcamoid-packages"
+: 1698802159:0;mkdir -p webcamoid-build\
+cmake -S webcamoid -B webcamoid-build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${PWD}/webcamoid-data"\
+cmake --build webcamoid-build --parallel 4\
+cmake --install webcamoid-build
+: 1698802284:0;cd webcamoid
+: 1698802395:0;brew install numpy
+: 1698802409:0;sh ./install_deps.sh
+: 1698802435:0;export PATH="/usr/local/opt/qt@5/bin:$PATH"\
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/qt@5/lib"\
+export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/qt@5/include"\
+export PKG_CONFIG_PATH="/usr/local/opt/qt@5/lib/pkgconfig:$PKG_CONFIG_PATH"\
+\
+mkdir -p webcamoid-build\
+cmake -S webcamoid -B webcamoid-build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${PWD}/webcamoid-data"\
+cmake --build webcamoid-build --parallel 4\
+cmake --install webcamoid-build
+: 1698802521:0;xcode-select --install
+: 1698802534:0;xcode-select --update
+: 1698823127:0;man colorls
+: 1698823180:0;brew install colorls
+: 1698824151:0;gem run colorls
+: 1698824160:0;gem help
+: 1698824184:0;gem -h
+: 1698824217:0;gem help commands
+: 1698824363:0;colorls -a
+: 1698824574:0;gem which colorls
+: 1698824587:0;udo em which colorls
+: 1698824595:0;sudo em which colorls
+: 1698824714:0;export PATH="$(gem environment | grep "{gem wich colorls}" | awk '{print $4}'):$PATH"
+: 1698824795:0;export PATH="$(gem which colorls | awk '{print $4}'):$PATH"
+: 1698824917:0;sudo gem install colorls -f
+: 1698825179:0;sudo gem which colorls
+: 1698825212:0;/Library/Ruby/Gems/2.6.0/gems/colorls-1.4.6/lib/colorls.rb
+: 1698825434:0;sudo gem update colorls
+: 1698825452:0;sudo gem uninstall colorls
+: 1698825553:0;source $(dirname $(gem which colorls))/tab_complete.sh
+: 1698825576:0;source $(dirname $(gem which colorls))
+: 1698825781:0;udo em update --system
+: 1698825903:0;brew install rbenv ruby-build
+: 1698825968:0;rbenv install -l
+: 1698825988:0;rbenv global 3.1.2
+: 1698826003:0;rbenv install 3.1.2
+: 1698826201:0;brew install rbenv ruby-build ruby
+: 1698826231:0;brew reinstall rub
+: 1698826352:0;\curl -sSL https://get.rvm.io | bash -s stable --rails
+: 1699150365:0;killall Finder.app
+: 1699150375:0;sudo killall Finder.app
+: 1699150888:0;sudo killall Finder
+: 1699150924:0;sudo killall Miteilungszentrale
+: 1699262372:0;/Applications/start mc-Server-controler.sh
+: 1699262402:0;cd Applications
+: 1699262413:0;cd /Applications
+: 1699262427:0;./start\ mc-Server-controler.sh\
+
+: 1699262630:0;pip install peewee
+: 1699262671:0;brew install peewee
+: 1699262710:0;cat start\ mc-Server-controler.sh
+: 1699262745:0;pip3.9 install peewee -f
+: 1699262757:0;pip3.9 install peewee
+: 1699262824:0;cd /var/opt/minecraft/crafty/crafty-4
+: 1699262832:0;git reset --hard origin/master
+: 1699262846:0;git pull
+: 1699262863:0;cd ..\
+
+: 1699262882:0;source .venv/bin/activate\
+
+: 1699262893:0;cd crafty-4\
+
+: 1699262993:0;pip install --upgrade pip
+: 1699263001:0;pip3 install -r requirements.txt --no-cache-dir
+: 1699263050:0;python3 main.py
+: 1699264121:0;ping project-void.net -h
+: 1699264153:0;ping project-void.net -p 25565
+: 1699264187:0;ping project-void.net:61201
+: 1699264245:0;telnet project-void.net 25565
+: 1699264377:0;telnet project-void.net 61201
+: 1699264404:0;ssh wubia@project-void.net
+: 1699264443:0;ssh root@project-void.net
+: 1699265531:0;ssh wubia@wubia-linux.local
+: 1699265544:0;ssh wubia@wubia-linux
+: 1699436055:0;ip addr
+: 1699436271:0;ssh wubia@
+: 1699437139:0;ssh wubia@172.20.10.15
+: 1699437168:0;sudo ping 172.20.10.12 -f
+: 1699437255:0;sudo ping 172.20.255.255 -f
+: 1699437285:0;sudo ping 172.20.10.255 -f
+: 1699437343:0;killall ssh
+: 1699439269:0;ssh wubia@192.168.222.11
+: 1699439305:0;ping 192.168.222.11
+: 1699439313:0;ping 192.168.222.13
+: 1699439319:0;ping 192.168.222.1
+: 1699439485:0;nano temp.sh
+: 1699439509:0;chmod +x temp.sh
+: 1699439516:0;./temp.sh
+: 1699439578:0;iperf3-darwin
+: 1699439624:0;ssh wubia@wubia-arch
+: 1699440390:0;ping 192.168.222.29
+: 1699440397:0;ssh wubia@192.168.222.29
+: 1699604860:0;npm dev
+: 1699605699:0;npm install -g npm@10.2.3
+: 1699605795:0;npm install i18next i18next-browser-languagedetector @tailwindcss/typography
+: 1699612192:0;npm found
+: 1699612262:0;npm install i18next i18next-browser-languagedetector @tailwindcss/typography -f
+: 1699612555:0;npm install i18next i18next-browser-languagedetector @tailwindcss/typography --force
+: 1699612598:0;npm install i18next i18next-browser-languagedetector @tailwindcss/typography solid-js --force
+: 1699613887:0;cd DEV/mcpeapsUnterstrichHD
+: 1699613894:0;npm install i18next
+: 1699628745:0;npm create astro@latest
+: 1699629092:0;npm install --force
+: 1699784483:0;npm install @astrojs/tailwind tailwindcss@^3.0.24
+: 1699784510:0;npm install @astrojs/tailwind tailwindcss
+: 1699803974:0;npm install swup
+: 1699809894:0;npx tailwindcss build -o ./src/styles/global.css
+: 1699811579:0;yarn add -D astro-fonts-next
+: 1699811638:0;npx astro add node
+: 1699812234:0;[200~npm install @astrojs/nodE
+: 1699812235:0;npm install @astrojs/node
+: 1699812774:0;npm run build css
+: 1699813074:0;npm install astro-bootstrap
+: 1699813763:0;npm install bootstrap@5.3.2
+: 1699827088:0;npm install @astrojs/prefetch
+: 1699828783:0;npm
+: 1699828801:0;npm rum dev
+: 1699832570:0;npm rum dev --host
+: 1699858743:0;sudo npm install -g npm@10.2.3
+: 1699858777:0;sudo npm install -g npm
+: 1699858783:0;sudo npm install npm
+: 1699859879:0;npm install @astrojs/netlify --save
+: 1699859903:0;npm i -g netlify-cli@latest
+: 1699860003:0;netlify deploys
+: 1699860543:0;netlify deploy
+: 1699865247:0;netlify deploy --prod
+: 1699866780:0;npx astro remove @astrojs/netlify
+: 1699873165:0;cd Drites\ AusbildungsJahr/P-AS/Java-SQL
+: 1699873335:0;javac tutorial.java
+: 1699873337:0;java tutorial
+: 1699873476:0;javac Tutorial.java
+: 1699873483:0;java Tutorial.java
+: 1699876736:0;cd ~/DEV/wubia-one
+: 1699876739:0;npm i -D daisyui@latest
+: 1699876955:0;\
+To address all issues, run:
+: 1699952595:0;\
+npx astro add prefetch
+: 1699957634:0;npm install firebase
+: 1699966304:0;nano .zshrc
+: 1699981147:0;sudo gem update --system
+: 1700000731:0;/opt/homebrew/bin/git -C "/Users/mahd/DEV/wubia-one" -c "core.editor=code --wait --reuse-window" reset --soft main
+: 1700025961:0;npm install -D @tailwindcss/forms
+: 1700038723:0;npm install astro-color-scheme
+: 1700040842:0;npm i vanilla-cookieconsent@next
+: 1700041885:0;npx astro add @jop-software/astro-cookieconsent
+: 1700042393:0;ssh wubia@172.20.10.12
+: 1700042934:0;npm i vanilla-cookieconsent
+: 1700044221:0;npm install swup\
+
+: 1700123604:0;npm run dev --host
+: 1700124895:0;npm install axios
+: 1700134383:0;npm publish
+: 1700134426:0;npm adduser
+: 1700200523:0;npm run start
+: 1700331946:0;npm install -D @netlify/plugin-sitemap
+: 1700332386:0;npm install -D netlify-plugin-submit-sitemap
+: 1700332922:0;npm install --save-dev netlify-plugin-chromium
+: 1700333227:0;npm i netlify-plugin-image-optim
+: 1700413108:0;sudo /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/com.apple.useractivityd/shared-pasteboard/items/6CCDB2C1-E0A9-403B-85E8-023E70AF82C2/2e92614f44104606693394121155e81c2851c144.rtfd
+: 1700413163:0;brew update node
+: 1700413244:0;brew upgrade npm
+: 1700413287:0;sudo npm install -g npm@latest
+: 1700413298:0;npm run dev -- --host
+: 1700474538:0;cd Drites\ AusbildungsJahr/P-AS/Java-SQL/Vlan-Manager
+: 1700474542:0;cd scr
+: 1700474624:0;javac main -f
+: 1700474633:0;javac main --force
+: 1700474640:0;javac main --help
+: 1700474678:0;javac -h ./
+: 1700474702:0;javac -h src
+: 1700485752:0;npx astro add netlify
+: 1700555747:0;source .zshrc
+: 1700555801:0;javac main
+: 1700555849:0;javac Main
+: 1700555900:0;javac TestMain
+: 1700555963:0;javac Test
+: 1700555970:0;javac Test.java
+: 1700555979:0;java Test.java
+: 1700558130:0;brew tap real-aazam/homebrew-aazam
+: 1700558638:0;brew uninstall hollywood
+: 1700559057:0;brew install hollywood
+: 1700559418:0;hollywood --help
+: 1700559462:0;hollywood --help -s 7 -e 1
+: 1700559583:0;hollywood -s 7 -e 1
+: 1700559644:0;hollywood -e 1
+: 1700559674:0;hollywood -s 4 -e 1
+: 1700559693:0;hollywood -s 1 -e 1
+: 1700559709:0;hollywood -s 2 -e 1
+: 1700559745:0;hollywood -s 3 -e 1
+: 1700559775:0;hollywood -s 0 -e 1
+: 1700559789:0;hollywood -s 0 -e 0
+: 1700559803:0;hollywood -s 2 -e 0
+: 1700560192:0;hollywood
+: 1700560372:0;/opt/homebrew/Cellar/hollywood/1.0.4/libexec/hollywood
+: 1700562698:0;exit
+: 1700653417:0;cd ITA_12_App
+: 1700653488:0;cd /opt/homebrew/lib/node_modules/create-dmg/node_modules/macos-alias/build/Release/volume.node
+: 1700653495:0;cd /opt/homebrew/lib/node_modules/create-dmg/node_modules/macos-alias/build/Release/
+: 1700653752:0;npm install
+: 1700653778:0;sudo audit fix
+: 1700653795:0;sudo npm audit fix
+: 1700653831:0;npm install semver@latest
+: 1700653844:0;npm install semver
+: 1700653865:0;npm install semver@7.5.1
+: 1700728454:0;npm update semver
+: 1700728466:0;npm rebuild
+: 1700728478:0;npm rebuild -f
+: 1700728489:0;npm install semver@7.0.0
+: 1700728502:0;brew install create-dmg
+: 1700728530:0;brew link create-dmg
+: 1700728546:0;brew link --overwrite create-dmg
+: 1700728576:0;cd ~/DEV/ITA_12_App
+: 1700728580:0;create-dmg --overwrite --dmg-title="ITA 12" --identity="" "ITA 12.app"
+: 1700728612:0;create-dmg --help
+: 1700728791:0;cd /opt/homebrew/lib/node_modules/create-dmg/
+: 1700728808:0;cd assets
+: 1700728976:0;create-dmg --volname "ITA 12" --background "/opt/homebrew/lib/node_modules/create-dmg/assets/dmg-background@2x.png" --icon-size 32 --sandbox-save
+: 1700728987:0;create-dmg --volname "ITA 12" --background "/opt/homebrew/lib/node_modules/create-dmg/assets/dmg-background@2x.png" --icon-size 32 --sandbox-safe
+: 1700729038:0;create-dmg --volname "ITA 12" --background "/opt/homebrew/lib/node_modules/create-dmg/assets/dmg-background@2x.png" --icon-size 32 --sandbox-safe "ITA 12.dmg" ./
+: 1700729157:0;create-dmg --volname "ITA 12" --background "/opt/homebrew/lib/node_modules/create-dmg/assets/dmg-background@2x.png" --icon-size 32 --sandbox-safe "ITA 12.dmg" "~/DEV/ITA 12_App"
+: 1700729234:0;create-dmg --volname "ITA 12" --background "/opt/homebrew/lib/node_modules/create-dmg/assets/dmg-background@2x.png" --icon-size 32 "ITA 12.dmg" "~/DEV/ITA 12_App"
+: 1700729252:0;create-dmg --volname "ITA 12" --background "/opt/homebrew/lib/node_modules/create-dmg/assets/dmg-background@2x.png" --icon-size 32 "ITA 12.dmg" "./"
+: 1700729448:0;open Finder
+: 1700729455:0;open Finder.app
+: 1700733385:0;cd OSZIMT-repo-ITA12_aps
+: 1700733391:0;cd CPP_Vocabulary_trainer
+: 1700733398:0;./a.out
+: 1700739734:0;brew install penc --cask
+: 1701077865:0;btop
+: 1701077968:0;brew install fastfetch
+: 1701078210:0;fastfetch -h
+: 1701078242:0;fastfetch --gen-config
+: 1701078249:0;fastfetch --gen-config conf
+: 1701079753:0;fastfetch -c "/Users/mahd/.config/fastfetch/config.conf"
+: 1701274071:0;cd Zweites\ Ausbildungsjahr
+: 1701274098:0;cd P
+: 1701274103:0;cd PAS
+: 1701274124:0;cd OSZimt-Crypter
+: 1701497038:0;/Volumes/Bartender\ 5\ 5.0.44/Open\ Gatekeeper\ friendly; exit
+: 1701867097:0;clear
+: 1701871627:0;pip3.12 install ansible
+: 1702385106:0;docker run -it archlinux
+: 1702385281:0;mkdir archlinux
+: 1702385287:0;cd archlinux
+: 1702385299:0;curl -LO https://raw.githubusercontent.com/bantling/tools/master/qemu-vms/mac-m1-qemu-arch-arm.sh
+: 1702385316:0;chmod +x mac-m1-qemu-arch-arm.sh
+: 1702385475:0;mount /dev/vda1 /mnt && /mnt/setup.sh
+: 1702385502:0;./mac-m1-qemu-arch-arm.sh
+: 1702386547:0;cd Downloads/
+: 1702387134:0;brew install bsdtar
+: 1702636511:0;git status
+: 1702636539:0;git push "test"
+: 1702636551:0;git push -h
+: 1702636570:0;git stash -h
+: 1702636585:0;git -h
+: 1702636608:0;git add
+: 1702636634:0;git config advice.addEmptyPathspec false
+: 1702830277:0;curl https://fedora-asahi-remix.org/install | sh
+: 1702830288:0;ssh mahd@vm-linux-mahd
+: 1702830323:0;ssh mahd@192.168.64.3
+: 1702832366:0;ping egg.com
+: 1702911589:0;gl -g
+: 1703236422:0;df -g
+: 1703236439:0;df -g /
+: 1703524167:0;npm install -g npm@10.2.5
+: 1703524183:0;brew install node
+: 1703524494:0;brew upgrade node
+: 1703524504:0;npx @astrojs/upgrade
+: 1703524534:0;npm install @astrojs/mdx@2.0.2 @astrojs/netlify@4.0.1 @astrojs/react@3.0.8 @astrojs/rss@4.0.1 @astrojs/tailwind@5.0.4 astro@4.0.7
+: 1703524619:0;npm audit
+: 1703524861:0;npm audit fix -h
+: 1703525198:0;npx astro add react\
+
+: 1703525327:0;cd src
+: 1703525339:0;cd styles
+: 1703525455:0;npx shadcn-ui@latest init\
+
+: 1703525708:0;nano tailwind.config.mjs
+: 1703526301:0;sudo npx shadcn-ui@latest init
+: 1703526595:0;npm install @astrojs/mdx@2.0.2 @astrojs/netlify@4.0.1 @astrojs/react@3.0.8 @astrojs/rss@4.0.1 @astrojs/tailwind@5.0.4 astro@4.0.7 --force
+: 1703526636:0;sudo npm audit fix -f
+: 1703526698:0;sudo npm audit fix -f cacheable-request
+: 1703526725:0;sudo npm audit fix -f trim-newlines
+: 1703526776:0;git commit -m "."
+: 1703526933:0;node netlify.toml
+: 1703526946:0;nano netlify.toml
+: 1703527016:0;git stash
+: 1703713520:0;npm run
+: 1703713755:0;npx astro add react
+: 1703713822:0;sudo px astro add react
+: 1703713834:0;sudo npx astro add react
+: 1703713992:0;npm install @astrojs/react
+: 1703714012:0;npm install react react-dom
+: 1703714292:0;brew install arc
+: 1703717247:0;$ npm i react-vertical-timeline-component
+: 1703717381:0;npm help
+: 1703717414:0;npm install netlify-plugin-image-optim
+: 1703717442:0;npm uninstall netlify-plugin-image-optim
+: 1703717830:0;npm install astro-font
+: 1703717882:0;npm i astro-auto-import
+: 1703717904:0;npx astro add mdx
+: 1703718298:0;npx astro add @sentry/astro @spotlightjs/astro
+: 1703718453:0;npx astro help
+: 1703718483:0;npm uninstall @sentry/astro @spotlightjs/astro -f
+: 1703718496:0;npx astro add @sentry/astro @spotlightjs/astro -f
+: 1703718517:0;npm install @sentry/astro @spotlightjs/astro
+: 1703718868:0;npm i react-vertical-timeline-component -f
+: 1703722199:0;npm i vertical-timeline-forked
+: 1703886017:0;neofetch--speedtest
+: 1704148879:0;cd ~/archlinux/shared
+: 1704148892:0;nano "Ohne Titel.txt"
+: 1704204121:0;touch test.py
+: 1704204130:0;nano test.py
+: 1704204296:0;python3.9 -m pip install --upgrade pip
+: 1704204304:0;pip install spotipy
+: 1704204997:0;python3 test.py
+: 1704205008:0;pip3 install spotipy
+: 1704205015:0;python test.py
+: 1704205108:0;brew update python
+: 1704205127:0;brew upgrade python
+: 1704205210:0;brew upgrade python@3.12
+: 1704205240:0;python3.12 -m pip install --upgrade pip -f
+: 1704205245:0;python3.12 -m pip install --upgrade pip
+: 1704205312:0;python3.12 -m pip install --upgrade pip --break-system-package
+: 1704205323:0;pip3.12 install spotipy
+: 1704205332:0;pip3.12 install spotipy --break-system-package
+: 1704205344:0;python3.12 test.py
+: 1704205917:0;npx astro add tailwind
+: 1704205960:0;nano tsconfig.json
+: 1704224933:0;npm run dev -- --verbose
+: 1704226762:0;npm install shadcn/ui
+: 1704626348:0;npm install next/link
+: 1704787974:0;speedtest
+: 1704799399:0;_guard
+: 1704875926:0;cat ~/.config/fastfetch/config.conf
+: 1704961359:0;/etc/pam.d\
+
+: 1704961383:0;sudo nano checkpw
+: 1704961407:0;sudo nano chkpasswd
+: 1704961511:0;sudo nano /etc/pam.d/sshd\
+
+: 1704961596:0;sudo nano /incorectpasswd.sh
+: 1704961930:0;sudo chmod +x /Library/incorectpasswd.sh
+: 1704961992:0;sudo nano /etc/pam.d/sshd
+: 1704962070:0;sudo nano /etc/pam.d/login
+: 1704962712:0;sudo nano /etc/pam.d/sudo
+: 1704963021:0;sudo nano /Library/incorectpasswd.sh
+: 1704964019:0;brew reinstall pam
+: 1704964044:0;brew install pam
+: 1704964156:0;ls /usr/lib/pam/
+: 1704964207:0;brew install opam pam- reattach pam-u2f
+: 1704964230:0;brew install opam pam-reattach pam-u2f
+: 1704964281:0;opam init
+: 1704964722:0;gem update colorls
+: 1704964944:0;eval $(opam env --switch=default)
+: 1704966156:0;brew install ruby2.6.0
+: 1704966170:0;brew install ruby@2.6
+: 1704966196:0;brew install ruby@2.6 -f
+: 1704966555:0;su
+: 1704967029:0;brew update
+: 1704967060:0;rvm install ruby
+: 1704967350:0;__rvm_make -j8
+: 1704967368:0;rvm use ruby --default
+: 1705063358:0;brew link --overwrite --dry-run cloudflared
+: 1705063369:0;brew link --overwrite cloudflared
+: 1705063489:0;brew uninstall cloudflared
+: 1705063503:0;brew install cloudflare/cloudflare/cloudflared && \
+\
+sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiOGM1NjI2MTQtYjNhZS00ZjljLWFhZWQtNTEwYWNhMmNhN2YwIiwicyI6Ik5qYzBObU5rT1dJdE5EUTFZUzAwTUROakxUZ3lORE10WWpabE9UZGhabUUxTUdRMiJ9
+: 1705064336:0;ping ssh-mahd.combppmpunksucht.app
+: 1705064346:0;ping mahd.combppmpunksucht.app
+: 1705064359:0;ping mahd.comboompunksucht.app
+: 1705064371:0;ping ssh-mahd.comboompunksucht.app
+: 1705064484:0;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+: 1705064494:0;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v -r
+: 1705064571:0;sudo /Applications/AdGuardHome/AdGuardHome -s uninstall
+: 1705064573:0;sudo /Applications/AdGuardHome/AdGuardHome -s install
+: 1705064655:0;sudo /Applications/AdGuardHome/AdGuardHome -s start
+: 1705064671:0;launchctl bootstrap
+: 1705064703:0;launchctl bootstrap /Applications/AdGuardHome/AdGuardHome -s start
+: 1705064731:0;launchctl bootstrap /Library/LaunchDaemons/AdGuardHome.plist
+: 1705064973:0;sudo /Applications/AdGuardHome/AdGuardHome
+: 1705065030:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:80
+: 1705065117:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:80 -v
+: 1705065134:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:8063 -v
+: 1705065178:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 80.187.84.151:8063 -v
+: 1705065285:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 2a01:599:114:9faa:ecbc:fef4:b21:6130:8063 -v
+: 1705065321:0;sudo /Applications/AdGuardHome/AdGuardHome -p 8063 -v
+: 1705065364:0;fastfetch
+: 1705065410:0;ssh mahd@ssh-mahd.comboompunksucht.app
+: 1705065470:0;/Applications/AdGuardHome/AdGuardHome -p 8063 -v
+: 1705067001:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiOGM1NjI2MTQtYjNhZS00ZjljLWFhZWQtNTEwYWNhMmNhN2YwIiwicyI6Ik5qYzBObU5rT1dJdE5EUTFZUzAwTUROakxUZ3lORE10WWpabE9UZGhabUUxTUdRMiJ9
+: 1705174662:0;npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+: 1705174797:0;npm install --save-dev @typescript-eslint/eslint-plugin eslint typescript
+: 1705174825:0;npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript --force
+: 1705174855:0;npx eslint .
+: 1705183401:0;sudo lsof -i -P | grep LISTEN | grep :53
+: 1705183518:0;brew uninstall mDNSRespo
+: 1705183540:0;sudo killall mDNSRespo
+: 1705183714:0;launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1705183786:0;sudo âƒµ°âƒ´€ launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1705183801:0;sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1705190914:0;sudo cloudflared service start
+: 1705190921:0;sudo cloudflared service help
+: 1705190944:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMTQzMmQwNjctZjhlNC00YTZlLTg5ZDctN2EzMWViYjdkZTAzIiwicyI6IlpHVTNOemhqWWpZdE5XWTROeTAwTUdJMUxUazRNMlF0WVdKaU5EazFaalEwT0dOayJ9
+: 1705191105:0;sudo cloudflared tunnel --url localhost:8063
+: 1705191958:0;cd ~/Downloads
+: 1705191986:0;sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain Cloudflare_CA.crt
+: 1705192001:0;echo | sudo tee -a /etc/ssl/cert.pem < Cloudflare_CA.pem
+: 1705193878:0;cloudflared tunnel create cbps
+: 1705193891:0;cloudflared tunnel create comboom.sucht
+: 1705228498:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6Ik1UbG1NR1ZqTXpRdFkyTTVNUzAwWlRCaExXRmtabU10TVdVMU1tTXlNamN6T1RRMCJ9
+: 1705228718:0;sudo cloudflared service
+: 1705228727:0;sudo cloudflared
+: 1705228736:0;sudo cloudflared help
+: 1705228759:0;sudo cloudflared tunnel
+: 1705228768:0;sudo cloudflared tunnel -h
+: 1705228815:0;sudo cloudflared tunnel login
+: 1705229048:0;sudo cloudflared tunnel route dns
+: 1705229127:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA
+: 1705229139:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9
+: 1705229152:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA.local
+: 1705229172:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 dns
+: 1705229182:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 DNS
+: 1705229203:0;sudo cloudflared tunnel route
+: 1705229212:0;sudo cloudflared tunnel route ip
+: 1705229238:0;sudo cloudflared tunnel route ip get
+: 1705229267:0;sudo cloudflared tunnel route ip get 3.0.0.0
+: 1705229275:0;sudo cloudflared tunnel route ip get 3.0.6.6
+: 1705229285:0;sudo cloudflared tunnel route ip add
+: 1705229298:0;sudo cloudflared tunnel route ip add 3.0.6.6
+: 1705229306:0;sudo cloudflared tunnel route ip add 3.0.6.6/8
+: 1705229321:0;sudo cloudflared tunnel route ip add 3.0.6.6/8 0919e336-407e-4784-9ace-3920d4e636b9
+: 1705229338:0;sudo cloudflared tunnel route ip add 3.0.0.0/8 0919e336-407e-4784-9ace-3920d4e636b9
+: 1705229396:0;sudo cloudflared tunnel route lb
+: 1705229401:0;sudo cloudflared tunnel route lb --help
+: 1705229439:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA dns
+: 1705229444:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA
+: 1705229473:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA.local dns
+: 1705229481:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 dns
+: 1705229491:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 mahd dns
+: 1705231069:0;sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1705231095:0;sudo launchctl start -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1705231104:0;ping google.com
+: 1705235901:0;ping localhost -p 3066
+: 1705235920:0;ping localhost -h
+: 1705235946:0;telnet localhost 3066
+: 1705238681:0;brew tap FelixKratz/fomulae
+: 1705238747:0;brew install sketchybar
+: 1705238830:0;rm -fr ~/.config/sketchybar
+: 1705238876:0;cd ~/.config/sketchybar
+: 1705238940:0;brew upgrade
+: 1705684762:0;textedit
+: 1705684779:0;open /Users/mahd/SearXNG/start.sh
+: 1705685040:0;brew install podman
+: 1705685069:0;podman run --rm -d -p 3066:8080 -v "./searxng:/etc/searxng" -e "BASE_URL=http://localhost:3066/" -e "INSTANCE_NAME=comboom.sucht" searxng/searxng\
+
+: 1705685612:0;where podman
+: 1705686682:0;brew uninstall xquarz
+: 1705686702:0;brew search xqua
+: 1705686714:0;brew uninstall xquartz
+: 1705697852:0;brew install jandedobbeleer/oh-my-posh/oh-my-posh
+: 1705699143:0;brew reinstall oh-my-posh
+: 1705699221:0;eval "$(oh-my-posh init zsh)"
+: 1705699289:0;exec zsh
+: 1705699349:0;eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/jandedobbeleer.omp.json)"
+: 1705699368:0;oh-my-posh
+: 1705699376:0;oh-my-posh prtint
+: 1705699389:0;oh-my-posh print
+: 1705699461:0;oh-my-posh prtint primary
+: 1705699492:0;oh-my-posh prompts prtint primary
+: 1705699502:0;oh-my-posh prompt prtint primary
+: 1705699517:0;oh-my-posh prompt print primary
+: 1705699684:0;oh-my-posh init zsh
+: 1705772934:0;cd DEV
+: 1705772975:0;npx create-react-app mcpeapsUnterstrichHD
+: 1705773021:0;npx create-react-app prtfolio
+: 1705773399:0;cd mcpeapsUnterstrichHD
+: 1705773453:0;npm audit fix -f
+: 1705773675:0;npm audit fix --force
+: 1705773820:0;npx create-react-app
+: 1705773893:0;cd mcpeapsunterstrichhd
+: 1705773899:0;npx create-react-app .
+: 1705775090:0;npm install tailwindcss
+: 1705775142:0;cd ~/DEV/mcpeapsUnterstrichHD
+: 1705775163:0;npm install tailwindcss-animate class-variance-authority clsx tailwind-merge
+: 1705775185:0;npm install lucide-react
+: 1705775200:0;npm install @radix-ui/react-icons
+: 1705777265:0;npx teilwindcss init -p
+: 1705777301:0;npx tailwindcss init -p
+: 1705777379:0;npm install postcss autoprefixer
+: 1705828465:0;npx create-next-app@latest .
+: 1705828653:0;npx shadcn-ui@latest init
+: 1705829359:0;npm start
+: 1705829582:0;npm install next-themes
+: 1705830677:0;npx shadcn-ui@latest add button
+: 1705830709:0;npx shadcn-ui@latest add dropdown-menu
+: 1705831494:0;npx shadcn-ui@latest add navigation-menu
+: 1705832073:0;npx shadcn-ui@latest add avatar
+: 1705837711:0;npm install react-cookie-consent
+: 1705839479:0;npm uninstall react-cookie-consent
+: 1705839487:0;\
+npm install @use-cookie-consent/react
+: 1705840057:0;\
+npm install js-cookies
+: 1705840078:0;\
+npm uninstall @use-cookie-consent/react
+: 1705840230:0;\
+npm uninstall js-cookies
+: 1705840269:0;\
+npm install js-cookie
+: 1705840576:0;\
+npm uninstall js-cookie
+: 1705845224:0;npx shadcn-ui@latest add separator
+: 1705846497:0;npx shadcn-ui@latest add skeleton
+: 1705942310:0;ansible
+: 1706046792:0;brew install ansible
+: 1706046829:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6Ik1XTTRNMlF3WWpBdE9EazNOeTAwWVdVNExUbGtOelV0TVdReU5ERXdNbU5tTUdVeSJ9
+: 1706047092:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6IllqWXdOVFl5TXpJdFpXWm1ZUzAwWVRJMkxXRTJOR1l0TURJME5EYzFOV0U1T1dGbCJ9
+: 1706047181:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6Ik16WmtNVGcwTVdZdE56RmpaaTAwTnpOa0xUazFOek10WXpreVlUVmhNVE16TkRSbCJ9
+: 1706049544:0;ping cloudflare.com
+: 1706051055:0;neofetch
+: 1706062491:0;ping http://100.96.0.19:3066/\?preferences\=eJx1Vk2P4zYM_TX1xdhBt3soesipQK8t0L0btETbXEuiRh9JPL--VGzH8mR7iBFRFEU-kk9UkHDkQBgvIzoMYBoDbsww4gVy4sawAoMXjU1ZKrbeYMJLQ1ZUOh_4vly-h4yNxTSxvvzz97_fmwgDRoSgpsuvTZrQ4iVSOdkEjNmk2LHrHN66BP3lLzARG83UySabK4YLgyzfOIzNeqyLaSlOQJgbhS5h6MDQ6Kz8386DvoJTqLvt3lX6njEsHbkuURIDD0fJDeQoiVEV2JhVuJ4qbqkVkUUMGVRp3Z44zbhEgWEA8b_RFKE3chu6kZyA98cIY9dFVgSmtagJfvntT3AOYlsM0xW7biCDsYj93FoKgUMtkzBb-bYxcaiV19Mtxa7bMiTSntx4Xqc-qxlT11GStVLqS7p23ZU0cjEjocYYcBAfFaEAtcpu-kqShsrSgr5eqhwMYS3RiB-Cf2dzJFXWemwFlgIpsTt5iXIB6a5jKYFQVMXF8hu5vSEU4bG3AmDBiwX5ltOWf5AvUB5aScBeTu58vUvIpRZLlIMOXC7cwRsCYht5SDcI2GoKktCS2hWkIZCbCVRlYJQygX4HkTX2GMZtOTKP4qI3sJRExeOaeseyIBor5EfPWteATdAHKJ_NLlndHxGSg-owOflLnOPPZbvJHxQnPmzMpGaIlYOG5MqwtAW2SPUG9zHhW4ibL_BhlkCqMi1tDcqD2xSct_u_BeAwxB5dQM-VbQ_ixUhxr0mf-zeN1221NlyBuC2fZ0rAQvEWn2oWXCLVRjWxgVDXb0wQki80VNVD4nnhxILHXJzenVlgYq71btQv9VpI7g5Oh1JttdZMPfMcPwuFvERWvpvgPXPCz1qRc1AvUmG4SGl5EfPyKZav3779fj9i0FmjO7Ic8cOBrfWlYRDnWuLgWkrvEITcLyPaPd8eMaTcY1VeD_KSK-bCDDfsq62QrZBeJbjxnWZ2ktY2Lo7dYrHy74d_87fK4RKkFZ44EVeA6ylmL_VmNjauxFITR5WusE45HZ351G3QnZm5WGoNuXxviwN7oQcpqqrxIdzpWhdXL8WgwPqjE8rpjY7ORNyuViprD-mpRB6SFbcKvz5pGsdzF5XqwMqWMHAQn5YzB19J2kKCqBQ1ywMQ2inv_FUc1pBO_h4UfCLqtFh2AlKVvsEIi4SaG9FRTTqyTgX4NQWUjotXPqwv2BjyBahNfoJqk72Atcl_QgTTdt_j8o8vG9u90h8PwjVulDGj9kHCHq8nkCzdleGsKxYEeSlwZ-ySJpDHpIAbUaaZypd9T9hOAITtTTzvxyTvUpJXbn_qvC4teCh5mTdkFNl3KchM0kMVkViXPj0dWfxe2-83qY06nofgDPIqesnHKn6BXkLVlF7mm4ieYO_Vp7J0p7TOGT-hajWzlPZg-La3YJxzn13Ke1dnjyHHJ8oyC5KW51qqP1XPSnZRHto4VV4_yP0c38L5E689Jc_BBchI2ZcMVWpXssg1xdFcNB719CQyNutD5adqNtGk0ge7U91bYUQrE0ebArhoJI26NhO0o7kSpBTeaGfMY8j0JguXxUuB-v62rd4mjkkeAJSxWQBZX8STAkO3TtW3IOPuy7ZA26kJ1fykzP-5p4C9Ll5syIw8yHg98Kv1AIWOOpkfxQNbct_I2yzFf_kPKt-04A\=\=\&
+: 1706062561:0;ping 172.16.0.2
+: 1706062583:0;ping 100.96.0.19
+: 1706062607:0;ping 100.96.0.19:3066
+: 1706062618:0;ping 100.96.0.19/8
+: 1706062625:0;ping 100.96.0.19 -h
+: 1706062660:0;ping 100.96.0.19 -T
+: 1706062710:0;ping 100.96.0.19 -T 3f
+: 1706062727:0;ping 100.96.0.19 -T 00
+: 1706062733:0;ping 100.96.0.19 -T 01
+: 1706062741:0;ping 100.96.0.19 -T ff
+: 1706062753:0;ping 100.96.0.19 -T 56
+: 1706062763:0;ping 100.96.0.19 -T f5
+: 1706062773:0;ping 100.96.0.19 -T 5f
+: 1706062780:0;ping 100.96.0.19 -T 32
+: 1706062788:0;ping 100.96.0.19 -T a4
+: 1706062794:0;ping 100.96.0.19 -T aa
+: 1706062798:0;ping 100.96.0.19 -T af
+: 1706062821:0;ping 100.96.0.19 -I
+: 1706062827:0;ping 100.96.0.19 -I g
+: 1706062837:0;ping 100.96.0.19 -I ff
+: 1706062843:0;ping 100.96.0.19 -I 3066
+: 1706062865:0;ping 100.96.0.19 -I 255.255.255.255
+: 1706062894:0;ping 100.96.0.19 -I af
+: 1706062901:0;ping 100.96.0.19 -I af::af
+: 1706062917:0;ping 100.96.0.19 -I af:af
+: 1706106148:0;brew install inkscape
+: 1706196098:0;npm run dev -- --verbose --host
+: 1706196113:0;npm run dev -h
+: 1706196156:0;npm run dev -- --foreground-scripts
+: 1706196202:0;npm run dev -- -h
+: 1706196283:0;npm run dev -- -experimental-https
+: 1706262319:0;npm install animate
+: 1706262360:0;npm install initCanvas onMouseMove
+: 1706262383:0;npm install onMouseMove
+: 1706324145:0;AAAACCCCCCAAAABDDDDD
+: 1706327225:0;npm install next-pwa
+: 1706327253:0;npm uninstall next-pwa
+: 1706327427:0;npm i @ducanh2912/next-pwa
+: 1706328168:0;npm u @ducanh2912/next-
+: 1706328194:0;npm uninstall @ducanh2912/next-pwa
+: 1706449192:0;npm install -D @netlify/plugin-lighthouse
+: 1706449570:0;npm uninstall @netlify/plugin-lighthouse
+: 1706533848:0;npm i @nextui-org/react framer-motion
+: 1706533861:0;npm fund
+: 1706533881:0;npm audit fix
+: 1706534066:0;npm install @nextui-org/react framer-motin
+: 1706534122:0;npm i @nextui-org/react framer-motin
+: 1706534145:0;pnpm add @nextui-org/react framer-motion
+: 1706534227:0;npm install --global yarn
+: 1706534234:0;yarn add @nextui-org/react framer-motion
+: 1706534729:0;yarn remove @nextui-org/react framer-motion
+: 1706534752:0;npm uninstall @nextui-org/react framer-motin
+: 1706542241:0;npx shadcn-ui@latest add card
+: 1706548520:0;npx shadcn-ui@latest add badge
+: 1706557592:0;npm run dev -- --experimental-https
+: 1706603736:0;npm build
+: 1706604222:0;npm install gh-pages --save-dev
+: 1706604387:0;npm run deploy
+: 1706613727:0;npm run dev -- --help
+: 1706613751:0;npm run dev -- -v
+: 1706613769:0;next dev -v
+: 1706613819:0;npx next -h
+: 1706613835:0;npx next -v dev
+: 1706613854:0;npx next dev -h
+: 1706613933:0;npm run dev -- --debug
+: 1706614808:0;npx shadcn-ui@latest add scroll-area
+: 1706616200:0;npx shadcn-ui@latest remove scroll-area
+: 1706616217:0;npx shadcn-ui@latest delete scroll-area
+: 1706616226:0;npx shadcn-ui@latest dellete scroll-area
+: 1706616240:0;npx shadcn-ui@latest uninstall scroll-area
+: 1706616253:0;npx shadcn-ui@latest -h
+: 1706616280:0;npm uninstall scroll-area
+: 1706774733:0;passwd
+: 1706774797:0;security set-keychain-password
+: 1706775475:0;npm i react-vertical-timeline-component
+: 1706776156:0;npm uninstall react-vertical-timeline-component
+: 1706776304:0;npm install @mui/material @emotion/react @emotion/styled
+: 1706776376:0;npm uninstall @mui/icons-material
+: 1706776389:0;npm install @mui/icons-material
+: 1706776424:0;npm install @mui/material @mui/styled-engine-sc styled-components
+: 1706776587:0;npm install @mui/lab @mui/material
+: 1706790293:0;npx shadcn-ui@latest add progress
+: 1707331124:0;podman help
+: 1707331188:0;podman generate
+: 1707331205:0;podman generate kube
+: 1707331211:0;podman generate kube --help
+: 1707331315:0;podman generate kube 98190c36 --podman-only
+: 1707331542:0;cd /usr/local\
+git clone https://github.com/searxng/searxng-docker.git\
+cd searxng-docker
+: 1707331557:0;cd /usr/local\
+sudo git clone https://github.com/searxng/searxng-docker.git\
+cd searxng-docker
+: 1707331621:0;sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
+: 1707331649:0;sudo sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
+: 1707332418:0;cat /Users/mahd/SearXNG/start.sh
+: 1707332654:0;nano searxng-docker.service.template
+: 1707332695:0;podman compose
+: 1707332731:0;brew install podman-compose
+: 1707332819:0;podman-compose
+: 1707332873:0;mv searxng-docker.service.template searxng-docker.service
+: 1707332891:0;sudo mv searxng-docker.service.template searxng-docker.service
+: 1707332949:0;where podman-compose
+: 1707333026:0;sudo nano searxng-docker.service
+: 1707333097:0;podman-compose up
+: 1707333114:0;sudo podman-compose up
+: 1707333324:0;brew uninstall podman-compose
+: 1707333523:0;sudo killall Podman Desktop.app
+: 1707333540:0;sudo killall "Podman Desktop.app"
+: 1707333637:0;cd /Applications/Podman Desktop.app/Contents/MacOS
+: 1707333649:0;cd "/Applications/Podman Desktop.app/Contents/MacOS"
+: 1707333654:0;lss
+: 1707333685:0;sudo ./Podman\ Desktop
+: 1707334484:0;docker compose up
+: 1707334819:0;brew install docker-credential-desktop
+: 1707335090:0;docker-credential-desktop
+: 1707335100:0;brew install docker
+: 1707335131:0;brew install docker-desktop
+: 1707335153:0;brew install docker-ls docker-toolbox
+: 1707335300:0;brew install docker-ls
+: 1707335430:0;podman compose up -h
+: 1707335460:0;podman compose up --build
+: 1707336146:0;podman machine inspect --format '{{podman-machine-default-de.ConnectionInfo.PodmanSocket.Path}}'
+: 1707336160:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}'
+: 1707336168:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}' -h
+: 1707336199:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}' "Podman Machine default-de"
+: 1707336215:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}' "podman-machine-default-de"
+: 1707336259:0;export DOCKER_HOST=unix:///Users/mahd/.local/share/containers/podman/machine/qemu/podman.sock
+: 1707336552:0;brew uninstall docker-ls
+: 1707336593:0;brew uninstall docker docker-credential-helper
+: 1707336635:0;sudo nano /usr/local/bin/docker
+: 1707336686:0;sudo mkdir /usr/local/bin/
+: 1707336708:0;cd \
+[ -e /etc/containers/nodocker ] || echo "Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg." >&2\
+exec podman "$@"
+: 1707336803:0;sudo touch docker
+: 1707336813:0;sudo touch ./docker
+: 1707336849:0;sudo /Applications/code .
+: 1707336900:0;sudo nano docker
+: 1707336922:0;touch /etc/containers/nodocker
+: 1707336930:0;sudo touch /etc/containers/nodocker
+: 1707336941:0;sudo rm /etc/containers/nodocker
+: 1707336959:0;ls -la touch /etc/containers/
+: 1707336999:0;colorls
+: 1707337096:0;gem uninstall colorls
+: 1707337183:0;gem install colorls --user-install
+: 1707337275:0;sudo chmod -R 777 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
+: 1707337450:0;rbenv rehash\
+rehash
+: 1707337466:0;sudo gem install colorls
+: 1707337501:0;rbenv rehash âƒ´€âƒµ¯\
+rehash gem install colorls
+: 1707337522:0;rbenv
+: 1707337545:0;rbenv global 3.2.2
+: 1707337559:0;rbenv install 3.2.2
+: 1707337676:0;rbenv install 3.3.0
+: 1707337891:0;brew help
+: 1707337919:0;brew config
+: 1707338000:0;brew install ruby
+: 1707338032:0;brew reinstall ruby
+: 1707338200:0;brew rbenv-sync
+: 1707338217:0;rbenv global 3.3.0
+: 1707338248:0;brew gem install colorls
+: 1707338275:0;brew setup-ruby
+: 1707338299:0;brew shellenv
+: 1707338306:0;brew shellenv zsh
+: 1707338640:0;brew ruby -- --help
+: 1707338687:0;brew ruby gem install colorls
+: 1707338876:0;mkdir -p ~/.gem/ruby/3.3.0/bin
+: 1707339206:0;brew install stow
+: 1707339268:0;mkdir ~/DEV/dotfiles
+: 1707340341:0;podman compose version
+: 1707340399:0;podman compose --help
+: 1707340417:0;podman compose config
+: 1707340580:0;podman login
+: 1707340603:0;podman login docker.io
+: 1707340845:0;podman compose pull
+: 1707340921:0;curl --unix-socket /var/run/docker.sock "http:/v1.41/containers/json?all=true"
+: 1707340939:0;CONTAINER_HOST=/var/run/docker.sock podman ps
+: 1707340973:0;sudo podman-mac-helper install
+: 1707341724:0;mkdir -p ~/.docker/cli-plugins\
+ ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+: 1707341864:0;nano ~/.docker/cli-plugins/docker-compose
+: 1707341888:0;gem install colorls
+: 1707341933:0;cd ~/.docker/cli-plugins/docker-compose
+: 1707341941:0;cd ~/.docker/cli-plugins/
+: 1707342043:0;cd ~/Library/Application\ Support/Podman\ Desktop
+: 1707342071:0;cat Preferences
+: 1707342101:0;cd Local\ Storage
+: 1707342109:0;cd
+: 1707342171:0;cd /Applications/Podman Desktop.app/
+: 1707342197:0;cd /Applications/Podman Desktop.app/Contents/
+: 1707342226:0;cd /Applications/Podman Desktop.app/Contents/Resources
+: 1707344299:0;cd /Users/mahd/DEV/dotfiles
+: 1707344317:0;stow -d
+: 1707344324:0;stow -d .
+: 1707344892:0;nano .stow-local-ignore
+: 1707344919:0;stow .
+: 1707345021:0;stow
+: 1707344838:0;cd ~/DEV/dotfiles
+: 1707344952:0;cd ~
+: 1707344958:0;ls -la
+: 1707345572:0;git submodule add https://github.com/ohmyzsh/ohmyzsh.git .oh-my-zsh
+: 1707346059:0;stow -t ~ .
+: 1707346175:0;git add .
+: 1707346184:0;git commit -m "." --allow-empty
+: 1707346198:0;git push
+: 1707346842:0;nano .gitignore
+: 1707347071:0;cd .oh-my-zsh
+: 1707347133:0;cat README.md
+: 1707347290:0;cd .zsh-autopair
+: 1707347328:0;cat config
+: 1707347364:0;cd ../..
+: 1707347387:0;git submodule remove https://github.com/hlissner/zsh-autopair.git .zsh-autopair
+: 1707347593:0;git submodule set-url .zsh-autopair https://github.com/hlissner/zsh-autopair.git
+: 1707347625:0;git submodule add https://github.com/hlissner/zsh-autopair.git .zsh-autopair
+: 1707347685:0;git submodule add -f https://github.com/hlissner/zsh-autopair.git .zsh-autopair
+: 1707348199:0;brew reinstall docker-compose
+: 1707348265:0;cd /usr/local/bin
+: 1707348440:0;chmod 777 /usr/local/bin
+: 1707348451:0;chmod 777 /usr/local/searxng-docker
+: 1707348469:0;sudo chmod 777 /usr/local/searxng-docker
+: 1707348501:0;sudo chmod -R 777 /usr/local/searxng-docker
+: 1707348849:0;brew uninstall docker-compose
+: 1707348897:0;curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+: 1707349031:0;mv ~/Downloads/Docker\ Compose\ v2.24 /usr/local/bin/docker-compose
+: 1707349105:0;sudo chmod +x /usr/local/bin/docker-compose
+: 1707349118:0;sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+: 1707349206:0;sudo rm /usr/local/bin/docker-compose
+: 1707349221:0;brew install docker-compose
+: 1707349406:0;nano searxng
+: 1707349467:0;nano docker-compose.yaml
+: 1707349580:0;docker-compose up
+: 1707349968:0;brew install docker wget
+: 1707349990:0;echo 'PS1='[\u@\h \W$(__docker_machine_ps1)]\$ '' >> ~/.zshrc
+: 1707350061:0;brew install docker-credential-helper
+: 1707350379:0;brew uninstall docker
+: 1707351116:0;cat Caddyfile
+: 1707351153:0;nano Caddyfile
+: 1707351227:0;podman compose up
+: 1707351346:0;sudo podman compose up
+: 1707351398:0;mkdir caddy
+: 1707351444:0;mv Caddyfile ./caddy/Caddyfile
+: 1707351493:0;sudo podman compose up -d
+: 1707352305:0;cd ~/DEV
+: 1707352342:0;git clone https://github.com/searxng/searxng.git searxng\
+cd searxng
+: 1707352388:0;sudo -H ./utils/searxng.sh install all
+: 1707352703:0;cd /usr/local/searxng-docker
+: 1707352751:0;podman compose up -d --remove-orphans
+: 1707352945:0;sudo podman compose up -d --remove-orphans
+: 1707352980:0;sudo docker-compose up -d
+: 1707354210:0;sudo mv -r /usr/local/searxng-docker /Users/mahd/DEV/searxng
+: 1707354237:0;sudo mv -f /usr/local/searxng-docker /Users/mahd/DEV/searxng
+: 1707354256:0;cd /Users/mahd/DEV/searxng
+: 1707354344:0;nano searxng-docker.service
+: 1707354361:0;cd .git
+: 1707354386:0;nano config
+: 1707356667:0;openssl rand -hex 3
+: 1707356674:0;openssl rand -hex 128
+: 1707357907:0;sudo launchctl load ./com.example.searxng.plist
+: 1707357948:0;launchctl start com.example.searxng
+: 1707358029:0;pwd
+: 1707358085:0;launchctl load ./com.example.searxng.plist
+: 1707358096:0;launchctl load ./com.example.searxng.plist -f
+: 1707358116:0;sudo launchctl load ./com.example.searxng.plist -f
+: 1707358132:0;sudo su
+: 1707360706:0;podman compose up -df
+: 1707360720:0;podman compose up -fd
+: 1707360726:0;podman compose up -f -f
+: 1707360729:0;podman compose up -f -d
+: 1707360745:0;podman compose up -f
+: 1707360883:0;podman compose -f up -d
+: 1707360893:0;podman compose -f up
+: 1707360909:0;podman compose up -d
+: 1707360918:0;nano /Users/mahd/SearXNG/start.sh
+: 1707360967:0;mv /Users/mahd/SearXNG/start.sh ./start.sh
+: 1707360992:0;start.sh
+: 1707361150:0;chmod +x start.sh
+: 1707361156:0;chmod +x stp.sh
+: 1707361263:0;chmod +x stop.sh
+: 1707361836:0;code .
+: 1707361842:0;/Applications/code .
+: 1707362217:0;stop.sh
+: 1707362646:0;./stop.sh
+: 1707570241:0;nano start.sh
+: 1707570259:0;./start.sh
+: 1707583054:0;npm run build
+: 1707589209:0;podman machine start
+: 1707618718:0;brew install docker docker-desktop docker-compose
+: 1707618768:0;brew install docker docker-compose
+: 1707618794:0;docker login
+: 1707619053:0;which docker
+: 1707619144:0;nano ~/DEV/searxng/start.sh
+: 1707619168:0;nano ~/DEV/searxng/stop.sh
+: 1707619356:0;rm -f /usr/local/bin/docker
+: 1707619369:0;sudo rm -f /usr/local/bin/docker
+: 1707619393:0;sudo rm -f /etc/containers/nodocker
+: 1707619596:0;docker help
+: 1707619693:0;docker system -h
+: 1707619800:0;docker context use
+: 1707619819:0;docker context use -c
+: 1707619827:0;docker -c
+: 1707619860:0;docker -H
+: 1707620242:0;docker info
+: 1707620255:0;~/DEV/searxng/start.sh
+: 1707708405:0;sh /Users/mahd/SearXNG/start.sh
+: 1707710170:0;sudo cloudflared service uninstall
+: 1707710655:0;start-mDNSResponder
+: 1707710723:0;sudo launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+: 1707710795:0;stop-mDNSResponder
+: 1707710802:0;stop-mDNSResponder -f
+: 1707730888:0;ping 1.1.1.1
+: 1707832249:0;brew instrall discord
+: 1707832295:0;brew install discord
+: 1707986398:0;cloudflared tunnel run -help
+: 1707986511:0;mv /Users/mahd/.cloudflared/cert.pem /Users/mahd/.cloudflared/cert.pem.backup
+: 1707986514:0;cloudflared tunnel login
+: 1707986610:0;cloudflared tunnel run --url http://100.96.0.19:3000 mba-mahd --cred-file /Users/mahd/.cloudflared/cert.pem
+: 1707986641:0;cloudflared tunnel run --url http://100.96.0.19:3000 --cred-file /Users/mahd/.cloudflared/cert.pem mba-mahd2
+: 1707986648:0;cloudflared tunnel run --url http://100.96.0.19:3000 --cred-file /Users/mahd/.cloudflared/cert.pem mba-mahd
+: 1707986687:0;cloudflared tunnel run --url http://100.96.0.19:3000 mba-mahd
+: 1707986724:0;cloudflared tunnel create comboompunktsucht
+: 1707986746:0;cloudflared tunnel run --url http://100.96.0.19:3000 comboompunktsucht
+: 1707988142:0;cloudflared tunnel run --url http://localhost:3000 comboompunktsucht
+: 1707988229:0;cloudflared tunnel run --url localhost:3000 comboompunktsucht
+: 1707988367:0;cloudflared tunnel run --url 192.0.0.2:3000 comboompunktsucht
+: 1707988422:0;cloudflared tunnel run --url 100.96.0.19:3000 comboompunktsucht
+: 1707989151:0;cloudflared tunnel login off
+: 1707989195:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiNzFjOTQ4N2UtZjE3NC00NzcwLTgwMzMtMGZhMzdlYjg2NzY4IiwicyI6Ik16azNORGszT0RrdE16QmtOUzAwTmpJeUxUZzJOVFF0TldJek9EWXhORGcxTVdGaCJ9
+: 1707989269:0;cloudflared tunnel remove
+: 1707989285:0;cloudflared tunnel help
+: 1707989317:0;cloudflared tunnel delete comboompunktsucht
+: 1707989399:0;rm -f /Library/LaunchDaemons/com.cloudflare.cloudflared.plist
+: 1707989514:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiNzFjOTQ4N2UtZjE3NC00NzcwLTgwMzMtMGZhMzdlYjg2NzY4IiwicyI6Ik5EUTFORFptTkRZdFl6ZzNNaTAwWldWaExXSTJNemd0T0RneU1tSmtZamxqWVRnMCJ9
+: 1707989731:0;nano /Users/mahd/Library/LaunchAgents/com.cloudflare.cloudflared.plist
+: 1707989815:0;cloudflared service uninstall
+: 1707989820:0;sudo rm -f /Library/LaunchDaemons/com.cloudflare.cloudflared.plist
+: 1707989831:0;rm -f /Users/mahd/Library/LaunchAgents/com.cloudflare.cloudflared.plist
+: 1707989838:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiNzFjOTQ4N2UtZjE3NC00NzcwLTgwMzMtMGZhMzdlYjg2NzY4IiwicyI6IlpEVTVOV1l5TkRJdE9UTTJOQzAwTWpNeUxXSmhNV010WmpOall6UTFaVGN4WmpZdyJ9
+: 1708039133:0;brew install zoxide
+: 1708039185:0;brew install fzf
+: 1708039449:0;brew install autojump
+: 1708039540:0;which autojump
+: 1708039649:0;zoxide import --from=autojump $HOME/Library/autojump/autojump.txt
+: 1708039661:0;autojump
+: 1708039669:0;autojump -h
+: 1708039698:0;brew uninstall autojump
+: 1708039733:0;cdi
+: 1708039947:0;nano ~/.zshrc
+: 1708039981:0;cd ~/.tmux
+: 1708040113:0;cd ..
+: 1708040117:0;ls
+: 1708041114:0;nano .tmux.conf
+: 1708041475:0;tmux
+: 1708041526:0;nano .tmux.conf.local
+: 1708041564:0;nvim .tmux.conf.local
+: 1708041847:0;source ~/.zshrc
+: 1708041874:0;npm run dev
+: 1708049108:0;/Users/mahd/DEV/searxng/start.sh ; exit;
+: 1708049279:0;/Users/mahd/DEV/searxng/stop.sh; exit
+: 1708049302:0;/Users/mahd/DEV/searxng/start.sh; exit
+: 1708070542:0;brew upgrade
+: 1708273050:0;sudo chown -R "${USER}:wheel" /Applications/Discord.app
+: 1708273066:0;sudo chown -R "${USER}:wheel" /Applications/Discord\ PTB.app
+: 1708273084:0;sudo chown -R "${USER}:wheel" /Applications/Discord\ Canary.app
+: 1708273215:0;sudo chown -R "${USER}:wheel" /Applications/Discord.app
+: 1708508076:0;npm run dev
