@@ -21,7 +21,7 @@ export CLASSPATH=$CLASSPATH:/Library/Java/Extensions/mariadb-java-client-2.2.6.j
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 # ~/.config/tmux/plugins
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
-
+export PATH=/usr/local/bin/composer:$PATH
 
 
 # Setting PATH for Python 3.7
@@ -349,3 +349,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [[ ! -r /Users/mahd/.opam/opam-init/init.zsh ]] || source /Users/mahd/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 eval "$(zoxide init --cmd cd zsh)"
+eval $(thefuck --alias)
