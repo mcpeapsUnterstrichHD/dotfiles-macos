@@ -1,0 +1,7 @@
+bind-addr: 0.0.0.0:442
+auth: none
+cert: true
+user-data-dir: /Users/mahd/.vscode
+extensions-dir: /Users/mahd/.vscode/extensions
+app-name: comboom.sucht
+welcome-text: welcome to comboom.sucht's Visual Studio Code for Web
