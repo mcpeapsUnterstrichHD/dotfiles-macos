@@ -11,10 +11,14 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:qa!
+|2,0,1709297526,,"qa!"
+:qa
+|2,0,1709297520,,"qa"
+:q
+|2,0,1709297513,,"q"
 :.,.+1!
 |2,0,1673005494,,".,.+1!"
-:q
-|2,0,1665493496,,"q"
 :!q
 |2,0,1665493482,,"!q"
 
@@ -27,32 +31,65 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""-	CHAR	0
+	#
+|3,1,36,0,1,0,1709297489,"#"
 
 # File marks:
-'0  239  0  ~/.tmux.conf.local
-|4,48,239,0,1700559960,"~/.tmux.conf.local"
-'1  2  0  /usr/share/vim/vim90/doc/help.txt
-|4,49,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+'0  25  0  ~/.zshrc
+|4,48,25,0,1709297526,"~/.zshrc"
+'1  239  0  ~/.tmux.conf.local
+|4,49,239,0,1700559960,"~/.tmux.conf.local"
+'2  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,50,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
 
 # Jumplist (newest first):
+-'  25  0  ~/.zshrc
+|4,39,25,0,1709297526,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1709297459,"~/.zshrc"
 -'  239  0  ~/.tmux.conf.local
 |4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
 -'  1  0  ~/.tmux.conf.local
 |4,39,1,0,1700559858,"~/.tmux.conf.local"
 -'  2  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
 -'  2  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
 -'  1  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
 -'  1  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
+-'  1  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
+-'  1  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
+-'  1  0  ~/Desktop/new.te
+|4,39,1,0,1673004958,"~/Desktop/new.te"
+-'  1  0  ~/Desktop/new.te
+|4,39,1,0,1673004958,"~/Desktop/new.te"
 -'  1  0  ~/Desktop/new.te
 |4,39,1,0,1673004958,"~/Desktop/new.te"
 -'  1  0  ~/Desktop/new.te
 |4,39,1,0,1673004958,"~/Desktop/new.te"
 
 # History of marks within files (newest to oldest):
+
+> ~/.zshrc
+	*	1709297521	0
+	"	25	0
+	^	25	0
+	.	28	0
+	+	27	1
+	+	28	0
 
 > ~/.tmux.conf.local
 	*	1700559915	0
