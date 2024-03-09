@@ -1016,7 +1016,6 @@ sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZ
 : 1705238747:0;brew install sketchybar
 : 1705238830:0;rm -fr ~/.config/sketchybar
 : 1705238876:0;cd ~/.config/sketchybar
-: 1705238940:0;brew upgrade
 : 1705684762:0;textedit
 : 1705684779:0;open /Users/mahd/SearXNG/start.sh
 : 1705685040:0;brew install podman
@@ -1446,12 +1445,10 @@ cd searxng
 : 1708041526:0;nano .tmux.conf.local
 : 1708041564:0;nvim .tmux.conf.local
 : 1708041847:0;source ~/.zshrc
-: 1708041874:0;npm run dev
 : 1708049108:0;/Users/mahd/DEV/searxng/start.sh ; exit;
 : 1708049279:0;/Users/mahd/DEV/searxng/stop.sh; exit
 : 1708049302:0;/Users/mahd/DEV/searxng/start.sh; exit
 : 1708070542:0;brew upgrade
-: 1708273050:0;sudo chown -R "${USER}:wheel" /Applications/Discord.app
 : 1708273066:0;sudo chown -R "${USER}:wheel" /Applications/Discord\ PTB.app
 : 1708273084:0;sudo chown -R "${USER}:wheel" /Applications/Discord\ Canary.app
 : 1708273215:0;sudo chown -R "${USER}:wheel" /Applications/Discord.app
