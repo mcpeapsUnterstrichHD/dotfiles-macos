@@ -17,6 +17,7 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
     --{ import = "AlexvZyl/nordic.nvim" },
+    { "junegunn/fzf", dir = "~/.fzf", build = "./install --all" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -31,6 +32,7 @@ require("lazy").setup({
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
+      --{ "junegunn/fzf", dir = "~/.fzf", build = "./install --all" },
       -- disable some rtp plugins
       disabled_plugins = {
         "gzip",
