@@ -18,3 +18,8 @@
 
 2023/11/27 (10:37:45) | ===> btop++ v.1.2.13
 2023/11/27 (10:37:45) | WARNING: No UTF-8 locale detected! Some symbols might not display correctly.
+
+2024/03/23 (21:26:15) | ===> btop++ v.1.3.2
+2024/03/23 (21:26:15) | WARNING: No UTF-8 locale detected! Some symbols might not display correctly.
+2024/03/23 (21:30:02) | ERROR: Stall in Runner thread, restarting!
+2024/03/23 (21:30:08) | ERROR: Stall in Runner thread, restarting!

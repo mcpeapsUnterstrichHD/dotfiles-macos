@@ -23,6 +23,8 @@ export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=/usr/local/bin/composer:$PATH
 export EDITOR=nvim
+export PATH=/Applications/wgcf:$PATH
+
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -350,7 +352,12 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 eval "$(zoxide init --cmd cd zsh)"
 eval $(thefuck --alias)
+eval "$(fzf --zsh)"
 
 if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
   fi
+
+eval $(/Applications/wgcf generate zsh)
+export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
