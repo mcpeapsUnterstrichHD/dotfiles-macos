@@ -1,8 +1,8 @@
 "use strict";var v=Object.create;var p=Object.defineProperty;var k=Object.getOwnPropertyDescriptor;var A=Object.getOwnPropertyNames;var P=Object.getPrototypeOf,N=Object.prototype.hasOwnProperty;var L=(e,o)=>{for(var t in o)p(e,t,{get:o[t],enumerable:!0})},g=(e,o,t,n)=>{if(o&&typeof o=="object"||typeof o=="function")for(let i of A(o))!N.call(e,i)&&i!==t&&p(e,i,{get:()=>o[i],enumerable:!(n=k(o,i))||n.enumerable});return e};var C=(e,o,t)=>(t=e!=null?v(P(e)):{},g(o||!e||!e.__esModule?p(t,"default",{value:e,enumerable:!0}):t,e)),O=e=>g(p({},"__esModule",{value:!0}),e);var M={};L(M,{default:()=>F});module.exports=O(M);var r=require("@raycast/api");var S=C(require("crypto"),1);var H="useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict";var T=128,c,l,K=e=>{!c||c.length<e?(c=Buffer.allocUnsafe(e*T),S.default.randomFillSync(c),l=0):l+e>c.length&&(S.default.randomFillSync(c),l=0),l+=e};var I=(e=21)=>{K(e-=0);let o="";for(let t=l-e;t<l;t++)o+=H[c[t]&63];return o};var u=require("@raycast/api"),m=C(require("fs")),U=(0,u.getPreferenceValues)(),d=U.sshConfig.replace("~",process.env.HOME);function D(e){let t=m.readFileSync(e,"utf8").split(`
 `),n=[],i=null;for(let b of t){let a=b.trim();if(!(a.startsWith("#")||a==="")){if(a.startsWith("Host ")&&a!=="Host *")i!==null&&n.push(i),i={id:n.length.toString(),address:"",name:a.substring(5),user:""};else if(i!==null){let h=a.indexOf(" "),w=a.substring(0,h),f=a.substring(h+1);switch(w){case"HostName":i.address=f;break;case"User":i.user=f;break;case"Port":i.port=f;break;case"IdentityFile":i.sshKey=f;break;case"HostNameKey":break;case"RemoteCommand":i.command=f;break;default:break}}}}return i!==null&&n.push(i),n}function E(e,o){let t="";for(let n of o)t+=`Host ${n.name}
 `,t+=`  HostName ${n.address}
-`,t+=`  User ${n.user}
-`,n.port&&(t+=`  Port ${n.port}
+`,n.user&&(t+=`  User ${n.user}
+`),n.port&&(t+=`  Port ${n.port}
 `),n.sshKey&&(t+=`  IdentityFile ${n.sshKey}
 `),n.command&&(t+=`  RemoteCommand ${n.command}
 `),t+=`
