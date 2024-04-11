@@ -5,6 +5,7 @@ export PATH="$GEM_HOME/bin:$PATH"
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 export HOMEBREW_REPOSITORY="/opt/homebrew";
+export HOMEBREW_AUTO_UPDATE_SECS=1;
 export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 export DOCKER_HOST=unix:///var/run/docker.sock
@@ -359,6 +360,6 @@ if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
   fi
 
-eval $(/Applications/wgcf generate zsh)
+#eval $(/Applications/wgcf generate zsh)
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
