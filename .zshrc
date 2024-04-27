@@ -24,9 +24,9 @@ export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=/usr/local/bin/composer:$PATH
 export EDITOR=nvim
 export PATH=/Applications/wgcf:$PATH
+export PATH=/Applications/code:$PATH
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
-
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -53,7 +53,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+#echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
@@ -363,3 +363,5 @@ if command -v ngrok &>/dev/null; then
 #eval $(/Applications/wgcf generate zsh)
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+
+eval "$(zellij setup --generate-auto-start zsh)"

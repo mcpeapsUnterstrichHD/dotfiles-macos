@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/home/runner/work/spotbugs/spotbugs/eclipsePlugin/build/site/eclipse-daily/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1712949529897'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='2'>
+    <artifact classifier='osgi.bundle' id='com.github.spotbugs.plugin.eclipse' version='4.8.5.202404121918-b5c3870'>
+      <properties size='5'>
+        <property name='artifact.size' value='11969629'/>
+        <property name='download.size' value='11969629'/>
+        <property name='download.md5' value='d7016d190dbaf5ff45f2dc9692cb3fb1'/>
+        <property name='download.checksum.md5' value='d7016d190dbaf5ff45f2dc9692cb3fb1'/>
+        <property name='download.checksum.sha-256' value='f5c16eba0c7f7cddc3f532f9907c2c17464110050cdeea4fccac6a578bbcec97'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.github.spotbugs.plugin.eclipse' version='4.8.5.202404121918-b5c3870'>
+      <properties size='6'>
+        <property name='artifact.size' value='11471'/>
+        <property name='download.size' value='11471'/>
+        <property name='download.md5' value='f4f970d2835b53ff846249a21a007714'/>
+        <property name='download.checksum.md5' value='f4f970d2835b53ff846249a21a007714'/>
+        <property name='download.checksum.sha-256' value='7c0c3fa04a0634bb71aafe57e5e21c95b61cca0ac936a737003362e057e458b1'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

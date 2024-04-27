@@ -182,7 +182,102 @@
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.mariaDB client">
         <value>record</value>
       </detail>
+      <detail
+          key="/instance/org.eclipse.wildwebdeveloper/javascript.inlayHints.includeInlayEnumMemberValueHints">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.system.views">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.jdt.ui/content_assist_prefix_completion">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.reset_on_dump">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.owner.of.table">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.jdt.ui/content_assist_disable_completion_trigger_chars">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.system.tables">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.jdt.ui/content_assist_insert_completion">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.auto_remove_sessions">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.system.procedures">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wildwebdeveloper/javascript.inlayHints.includeInlayFunctionParameterTypeHints">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.default_scope_same_project_only">
+        <value>record</value>
+      </detail>
+      <detail
+          key="/instance/org.eclipse.wildwebdeveloper/javascript.inlayHints.includeInlayFunctionLikeReturnTypeHints">
+        <value>record</value>
+      </detail>
     </annotation>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.datatools.sqltools.sqleditor">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync44"
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.owner.of.table"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync45"
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.system.procedures"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync46"
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.system.tables"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync47"
+          key="/instance/org.eclipse.datatools.sqltools.sqleditor/show.system.views"
+          value="true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.eclemma.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync48"
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.auto_remove_sessions"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync49"
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.default_scope_same_project_only"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync50"
+          key="/instance/org.eclipse.eclemma.ui/org.eclipse.eclemma.ui.reset_on_dump"
+          value="true"/>
+    </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
         name="org.eclipse.egit.core">
@@ -254,6 +349,21 @@
     <setupTask
         xsi:type="setup:CompoundTask"
         name="org.eclipse.jdt.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync51"
+          key="/instance/org.eclipse.jdt.ui/content_assist_disable_completion_trigger_chars"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync52"
+          key="/instance/org.eclipse.jdt.ui/content_assist_insert_completion"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync53"
+          key="/instance/org.eclipse.jdt.ui/content_assist_prefix_completion"
+          value="true"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           id="sync20"
@@ -430,7 +540,124 @@
           key="/instance/org.eclipse.ui.workbench/resourcetypes"
           value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editors version=&quot;3.1&quot;>&#xA;&lt;info extension=&quot;ddiagram&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;dtree&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.sirius.tree.ui.EditorID&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.sirius.tree.ui.EditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;java&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;odesign&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;mtl&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.acceleo.ide.ui.editors.template.AcceleoEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;html&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.ui.browser.editorSupport&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;tagx&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;java&quot; name=&quot;module-info&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.ModuleInfoEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.jdt.ui.ModuleInfoEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;gradle&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.buildship.ui.gradlebuildscripteditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;xml&quot; name=&quot;pom&quot;>&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;ddl&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;sqlpage&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;xhtml&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;shtml&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.ui.browser.editorSupport&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;logic2semantic&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.gmf.examples.runtime.diagram.logic.semantic.presentation.SemanticEditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;workingsets&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.oomph.workingsets.presentation.WorkingSetsEditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;class&quot; name=&quot;module-info&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.ModuleInfoClassFileEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.jdt.ui.ModuleInfoClassFileEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;server&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.wst.server.ui.editor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;jsf&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;jsp&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;jspf&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;jardesc&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.JARDescEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.jdt.ui.JARDescEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;dtable&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.sirius.table.ui.EditionTableEditorID&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.sirius.table.ui.CrossTableEditorID&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.sirius.table.ui.EditionTableEditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;geo&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;GeoshapeEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;GeoshapeEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;xsl&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.wst.xsl.ui.XSLEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;xslt&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.wst.xsl.ui.XSLEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;pom&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;sql&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.datatools.sqltools.sqlbuilder&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.datatools.sqltools.sqlbuilder&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;jspx&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;tag&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;setup&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.oomph.setup.presentation.SetupEditorID&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;class without source&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;exec&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.eclemma.ui.editors.executiondata&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;class without source&quot; name=&quot;module-info&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.ModuleInfoClassFileEditorNoSource&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.jdt.ui.ModuleInfoClassFileEditorNoSource&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;tagf&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;htm&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.ui.browser.editorSupport&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;jpage&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.jdt.debug.ui.SnippetEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;properties&quot; name=&quot;sample&quot;>&#xA;&lt;editor id=&quot;org.eclipse.pde.ui.sampleEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.pde.ui.sampleEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;aird&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;org.eclipse.sirius.ui.editor.session&quot;/>&#xA;&lt;editor id=&quot;org.eclipse.sirius.ui.fakeeditoronlyforicon&quot;/>&#xA;&lt;defaultEditor id=&quot;org.eclipse.sirius.ui.editor.session&quot;/>&#xA;&lt;/info>&#xA;&lt;info extension=&quot;logic2&quot; name=&quot;*&quot;>&#xA;&lt;editor id=&quot;LogicEditor&quot;/>&#xA;&lt;defaultEditor id=&quot;LogicEditor&quot;/>&#xA;&lt;/info>&#xA;&lt;/editors>"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.wildwebdeveloper">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync54"
+          key="/instance/org.eclipse.wildwebdeveloper/javascript.inlayHints.includeInlayEnumMemberValueHints"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync55"
+          key="/instance/org.eclipse.wildwebdeveloper/javascript.inlayHints.includeInlayFunctionLikeReturnTypeHints"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="sync56"
+          key="/instance/org.eclipse.wildwebdeveloper/javascript.inlayHints.includeInlayFunctionParameterTypeHints"
+          value="true"/>
+    </setupTask>
   </setupTask>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      type="JRE"
+      name="jre.location-17"
+      value="/Users/mahd/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home"
+      label="JRE 17 Location">
+    <description>The location of a JDK or JRE compatible with Java 17.</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      type="FOLDER"
+      name="install.root"
+      value="/Users/mahd"
+      defaultValue="/Users/mahd"
+      label="Root install folder">
+    <description>The root install folder where all the products are installed</description>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      name="Eclipse Projects">
+    <restriction
+        xsi:type="setup:ProjectCatalog"
+        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        name="bugzilla.id"
+        value="anonymous"
+        defaultValue="anonymous"
+        label="Eclipse user email for Bugzilla/Jenkins/Jiro">
+      <description>The email associated with the Eclipse Bugzilla/Jenkins/Jiro account</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Window Builder">
+      <restriction
+          xsi:type="setup:Project"
+          href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='windowbuilder']"/>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="Core">
+        <restriction
+            xsi:type="setup:Project"
+            href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='windowbuilder']/@projects[name='core']"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            name="git.clone.windowbuilder.remoteURI"
+            value="https://github.com/eclipse-windowbuilder/windowbuilder.git"
+            label="The Window Builder GitHub repository">
+          <description>Choose from the available Github URIs</description>
+        </setupTask>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="Website">
+        <restriction
+            xsi:type="setup:Project"
+            href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='windowbuilder']/@projects[name='website']"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            name="github.clone.www.eclipse.org.wb.remoteURI"
+            value="https://github.com/eclipse-windowbuilder/windowbuilder-website.git"
+            label="The Window Builder Website GitHub repository">
+          <description>Choose from the available Github URIs</description>
+        </setupTask>
+      </setupTask>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Marketplace Client">
+      <restriction
+          xsi:type="setup:Project"
+          href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='mpc']"/>
+      <setupTask
+          xsi:type="setup:VariableTask"
+          name="git.clone.mpc.remoteURI"
+          value="https://git.eclipse.org/r/mpc/org.eclipse.epp.mpc"
+          label="Marketplace Client Git or Gerrit repository">
+        <description>Choose from the available Gerrit or Git URIs</description>
+      </setupTask>
+    </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      type="JRE"
+      name="jre.location-1.8"
+      value="/Users/mahd/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home"
+      label="JRE 1.8 Location">
+    <description>The location of a JDK or JRE compatible with Java 1.8.</description>
+  </setupTask>
+  <attributeRule
+      attributeURI="http://www.eclipse.org/oomph/setup/1.0#//InstallationTask/location"
+      value="${install.root/}${installation.id}"/>
+  <attributeRule
+      attributeURI="http://www.eclipse.org/oomph/setup/1.0#//WorkspaceTask/location"
+      value="${installation.location/ws}"/>
+  <attributeRule
+      attributeURI="http://www.eclipse.org/oomph/setup/git/1.0#//GitCloneTask/location"
+      value="${installation.location/git/}${@id.locationQualifier|trim}${@id.remoteURI|gitRepository}"/>
   <acceptedLicense>DEFAULT_LICENSE Marker to remember license pre-prompting</acceptedLicense>
   <acceptedLicense>8d3137b6d090b6860d1b977a88ceb334 Eclipse Foundation Software User Agreement</acceptedLicense>
   <acceptedLicense>d77cfd8b73fc71776727fcbb2605709 Eclipse Foundation Software User Agreement</acceptedLicense>
@@ -442,4 +669,5 @@
   <acceptedLicense>425529a69afe7129289ce9a30b4d2b6c Eclipse Foundation Software User Agreement</acceptedLicense>
   <acceptedLicense>84f0b7f0a433c033764dd28540d6d199 Eclipse Foundation Software User Agreement</acceptedLicense>
   <acceptedLicense>4450aa10f21d146d6a6a80f84275f5b2 Eclipse Foundation Software User Agreement</acceptedLicense>
+  <acceptedLicense>ffdf8e5beb060643bf11009cea34c5b0 SpotBugs is free software distributed under the terms of the Lesser GNU Public License.</acceptedLicense>
 </setup:User>
