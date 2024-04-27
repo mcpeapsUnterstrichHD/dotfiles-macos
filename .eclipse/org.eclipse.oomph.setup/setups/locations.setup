@@ -9,9 +9,25 @@
     <value href="file:/Users/mahd/DEV/OSZIMT-repo-ITA12_aps/PAS_team/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
     <value href="file:/Users/mahd/DEV/OSZIMT-repo-ITA12_aps/Zweites%20Ausbildungsjahr/PAS/OO-7/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
   </installation>
+  <installation>
+    <key href="file:/Users/mahd/windowbuilder-master2/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/installation.setup#/"/>
+    <value href="file:/Users/mahd/windowbuilder-master2/ws/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
+  </installation>
+  <installation>
+    <key href="file:/Users/mahd/windowbuilder-master/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/installation.setup#/"/>
+    <value href="file:/Users/mahd/windowbuilder-master/ws/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
+  </installation>
   <workspace>
     <key href="file:/Users/mahd/DEV/OSZIMT-repo-ITA12_aps/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
     <value href="file:/Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/installation.setup#/"/>
+  </workspace>
+  <workspace>
+    <key href="file:/Users/mahd/windowbuilder-master2/ws/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
+    <value href="file:/Users/mahd/windowbuilder-master2/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/installation.setup#/"/>
+  </workspace>
+  <workspace>
+    <key href="file:/Users/mahd/windowbuilder-master/ws/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
+    <value href="file:/Users/mahd/windowbuilder-master/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/installation.setup#/"/>
   </workspace>
   <workspace>
     <key href="file:/Users/mahd/DEV/OSZIMT-repo-ITA12_aps/PAS_team/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup#/"/>
