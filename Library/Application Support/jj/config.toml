@@ -1,0 +1,25 @@
+user.name = "mcpeapsUnterstrichHD"
+user.email = "mcpeaps_HD@outlook.com"
+
+ui.color = "auto"
+
+ui.default-command = "log"
+
+ui.graph.style = "square"
+
+ui.diff.format = "git"
+
+ui.log-word-wrap = true
+
+ui.paginate = "auto"
+
+ui.pager = ":builtin"
+
+ui.editor = "nvim"
+
+
+colors.commit_id = { fg = "green", bg = "#ff1525", bold = true, underline = true }
+
+colors."working_copy commit_id" = { underline = true }
+
+colors.change_id = "#ff1525"

@@ -347,7 +347,7 @@ mode_default_to_mode "tmux"
 // The name of the default layout to load on startup
 // Default: "default"
 //
- default_layout "default"
+ default_layout "me"
 
 // Choose the mode that zellij uses when starting up.
 // Default: strider
@@ -409,7 +409,7 @@ mode_default_to_mode "tmux"
 
 // The folder in which Zellij will look for layouts
 //
-// layout_dir "/Users/mahd/DEV/dotfiles/.config/zellij/layouts"
+ layout_dir "/Users/mahd/DEV/dotfiles/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
 //
