@@ -15,13 +15,18 @@ _darcs
 \.jj
 \.gitignore
 \.DS_Store
-\install.sh
-\packages-to-intalled
-\update.sh
+\\install.sh
+\\packages-to-intalled
+\\update.sh
 
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
 ^/README.*
 ^/LICENSE.*
-^/COPYING
+^/COPYING.*
+^/AUTHORS.*
+^/ChangeLog.*
+^/NEWS.*
+^/INSTALL.*
+^/TODO.*
