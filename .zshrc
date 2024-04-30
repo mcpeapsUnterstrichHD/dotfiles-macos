@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export GIT_EXEC_PATH=$(which jj)
 export GEM_HOME="$HOME/.gem/ruby/3.3.0"
 export PATH="$GEM_HOME/bin:$PATH"
 export HOMEBREW_PREFIX="/opt/homebrew";
@@ -23,8 +24,7 @@ export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=/usr/local/bin/composer:$PATH
 export EDITOR=nvim
-export PATH=/Applications/wgcf:$PATH
-export PATH=/Applications/code:$PATH
+export PATH="/Applications/:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
@@ -282,8 +282,8 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="colorls -l -a --group-directories-first"
-alias lss="/bin/ls -la"
+alias ls="colorls -l -a --group-directories-first $1"
+alias lss="/bin/ls -la $1"
 alias speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias neofetch--speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias neofetch='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
@@ -355,6 +355,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 eval "$(zoxide init --cmd cd zsh)"
 eval $(thefuck --alias)
 eval "$(fzf --zsh)"
+source <(jj util completion zsh)
 
 if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
