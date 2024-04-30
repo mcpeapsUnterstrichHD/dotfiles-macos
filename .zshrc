@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GIT_EXEC_PATH=$(which jj git)
 export GEM_HOME="$HOME/.gem/ruby/3.3.0"
 export PATH="$GEM_HOME/bin:$PATH"
 export HOMEBREW_PREFIX="/opt/homebrew";
@@ -282,13 +281,14 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="colorls -l -a --group-directories-first $1"
-alias lss="/bin/ls -la $1"
+alias ls="colorls -l -a --group-directories-first $*"
+alias lss="/bin/ls -la $*"
 alias speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias neofetch--speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias neofetch='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
 alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
+
 
 # export KEYTIMEOUT=10
 
