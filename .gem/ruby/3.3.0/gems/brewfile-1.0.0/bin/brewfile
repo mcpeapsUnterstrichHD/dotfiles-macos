@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+os = `uname`
+if os != "Darwin\n"
+  puts 'OS not supported'
+  exit 1
+end
+
+brewlist = `brew list`
+casklist = `brew cask list` 
+
+puts
+puts "tap \'caskroom/cask\'"
+puts
+puts "# Core Homebrew"
+
+brewlist.split("\n").each do |item|
+  puts "brew \'#{item}\'"
+end
+
+puts
+puts "# Cask Apps"
+
+casklist.split("\n").each do |item|
+  puts "cask \'#{item}\'"
+end
+
+puts
