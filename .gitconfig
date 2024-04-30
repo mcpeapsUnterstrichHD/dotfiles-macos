@@ -10,3 +10,8 @@
 	rebase = true
 [push]
 	default = simple
+[alias]
+	push = !\"jj git push $*\"
+	status = !\"jj status $*\"
+	pull = !\"jj pull $*\"
+	clone = !\"jj git clone --colocate $*\"
