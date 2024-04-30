@@ -12,6 +12,7 @@ _darcs
 \.hg
 
 \.git
+\.jj
 \.gitignore
 \.DS_Store
 
