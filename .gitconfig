@@ -1,17 +1,1 @@
-[user]
-	name = mcpeapsUnterstrichHD
-	email = mcpeaps_HD@outlook.com
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-[pull]
-	rebase = true
-[push]
-	default = simple
-[alias]
-	push = !\"jj git push $*\"
-	status = !\"jj status $*\"
-	pull = !\"jj pull $*\"
-	clone = !\"jj git clone --colocate $*\"
+DEV/dotfiles/.gitconfig
