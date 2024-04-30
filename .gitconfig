@@ -1,1 +1,9 @@
-DEV/dotfiles/.gitconfig
+[user]
+    name = mcpeapsUnterstrichHD
+    email = mcpeaps_HD@outlook.com
+
+[alias]
+    push = "!jj git push $*"
+    status = "!jj status $*"
+    pull = "!jj pull $*"
+    clone = "!jj git clone --colocate $*"
