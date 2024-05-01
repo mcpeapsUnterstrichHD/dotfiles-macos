@@ -8,5 +8,15 @@
     pull = "!jj pull $*"
     clone = "!jj git clone --colocate $*"
 
+
 [pull]
 rebase = false
+[core]
+	eol = lf
+	autocrlf = false
+[fsck]
+	zeroPaddedFilemode = ignore
+[fetch "fsck"]
+	zeroPaddedFilemode = ignore
+[receive "fsck"]
+	zeroPaddedFilemode = ignore
