@@ -3,20 +3,20 @@
     email = mcpeaps_HD@outlook.com
 
 [alias]
-    push = "!jj git push $*"
-    status = "!jj status $*"
-    pull = "!jj pull $*"
-    clone = "!jj git clone --colocate $*"
-
+    push = jj git push $*
+    status = jj status $*
+    pull = jj pull $*
+    clone = jj git clone --colocate $*
 
 [pull]
-rebase = false
+    rebase = true
+
 [core]
-	eol = lf
-	autocrlf = false
+    eol = lf
+    autocrlf = false
+
 [fsck]
-	zeroPaddedFilemode = ignore
+    zeroPaddedFilemode = ignore
+
 [fetch "fsck"]
-	zeroPaddedFilemode = ignore
-[receive "fsck"]
-	zeroPaddedFilemode = ignore
+    zeroPaddedFilemode = ignore
