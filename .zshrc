@@ -291,6 +291,11 @@ alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias cga='if [ -z "$*" ]; then git add .; else git add $*; fi'
 alias cgc='if [ -z "$*" ]; then git commit -m "Empty commit" --allow-empty; else git commit -m "$*" --allow-empty; fi'
+alias cgp='jj git push $*'
+alias cgs='jj status $*'
+alias cgpl='jj pull $*'
+alias cgcl='jj git clone --colocate $*'
+
 
 # export KEYTIMEOUT=10
 
