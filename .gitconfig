@@ -7,3 +7,6 @@
     status = "!jj status $*"
     pull = "!jj pull $*"
     clone = "!jj git clone --colocate $*"
+
+[pull]
+rebase = false

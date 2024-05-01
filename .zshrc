@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export GIT_CONFIG="$HOME/DEV/dotfiles/.gitconfig"
 export GEM_HOME="$HOME/.gem/ruby/3.3.0"
 export PATH="$GEM_HOME/bin:$PATH"
 export HOMEBREW_PREFIX="/opt/homebrew";

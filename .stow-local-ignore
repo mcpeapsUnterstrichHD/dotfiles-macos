@@ -14,6 +14,7 @@ _darcs
 \.git
 \.jj
 \.gitignore
+\.gitconfig
 \.DS_Store
 \\install.sh
 \\packages-to-intalled
