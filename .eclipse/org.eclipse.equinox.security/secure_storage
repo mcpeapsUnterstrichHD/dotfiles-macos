@@ -1,11 +1,13 @@
 #Equinox secure storage version 1.0
-#Wed Jun 28 00:20:03 CEST 2023
+#Sat May 11 13:20:28 CEST 2024
 /GIT/https\:\\2f\\2fgithub.com\:443/password=org.eclipse.equinox.security.osxkeystoreintegration\t/vWI6wGdDD0\=,fK6oBnzU5ICiQaidDiZYhjejQLAkUhZkEPwRoXZiXCBaO7bvTs+rNF3U4QcxE26x
 /GIT/https\:\\2f\\2fgithub.com\:443/user=\t,bWNwZWFwc1VudGVyc3RyaWNoSEQ\=
 /org.eclipse.equinox.secure.storage/recovery/org.eclipse.equinox.security.osxkeystoreintegration/org.eclipse.equinox.security.internal.recovery.password=org.eclipse.equinox.security.recoveryModule\t9MA6fx/FU7I\=,PvFrpU85UNiWBOlwa1p+UZSWksmdKn20G3DyzrW1OpeX0VA7V64g/YPw9GXMa7L1zFKryY1SqTPY0dWNE61G95IcW8FViz2veeIWYjnOdQbz0SyqZoUE2vojk5gWG4lk
 /org.eclipse.equinox.secure.storage/recovery/org.eclipse.equinox.security.osxkeystoreintegration/org.eclipse.equinox.security.internal.recovery.question1=\t,MQ\=\=
 /org.eclipse.equinox.secure.storage/recovery/org.eclipse.equinox.security.osxkeystoreintegration/org.eclipse.equinox.security.internal.recovery.question2=\t,MQ\=\=
 /org.eclipse.equinox.secure.storage/verification/org.eclipse.equinox.security.osxkeystoreintegration=org.eclipse.equinox.security.osxkeystoreintegration\tv6Xlr2mlvKg\=,M3bIA7aLfHCy5zKy2hJf4W2uf5XH92at
+/org.eclipse.userstorage/https%3A%2F%2Fmarketplace.eclipse.org%2F/serviceLabel=\t,TWFya2V0cGxhY2UgVXNlciBTdG9yYWdl
+/org.eclipse.userstorage/https%3A%2F%2Fmarketplace.eclipse.org%2F/serviceURI=\t,aHR0cHM6Ly9tYXJrZXRwbGFjZS5lY2xpcHNlLm9yZy8\=
 org.eclipse.equinox.security.preferences.cipher=PBEWithMD5AndDES
 org.eclipse.equinox.security.preferences.keyFactory=PBEWithMD5AndDES
 org.eclipse.equinox.security.preferences.version=1

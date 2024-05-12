@@ -16,9 +16,9 @@ _darcs
 \.gitignore
 \.gitconfig
 \.DS_Store
-\\install.sh
-\\packages-to-intalled
-\\update.sh
+^/install.sh
+^/packages-to-intalled
+^/update.sh
 
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
