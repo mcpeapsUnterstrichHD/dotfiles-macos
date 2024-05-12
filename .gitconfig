@@ -12,11 +12,15 @@
     rebase = true
 
 [core]
-    eol = lf
-    autocrlf = false
+	eol = lf
+	autocrlf = false
 
 [fsck]
-    zeroPaddedFilemode = ignore
+	zeroPaddedFilemode = ignore
 
 [fetch "fsck"]
-    zeroPaddedFilemode = ignore
+	zeroPaddedFilemode = ignore
+[receive "fsck"]
+	zeroPaddedFilemode = ignore
+[oh-my-zsh]
+	lastVersion = 0fabd5f22f4e0378b09c92607789fdb17cab3c20

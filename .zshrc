@@ -284,9 +284,10 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="colorls -l -a --group-directories-first $*"
 alias lss="/bin/ls -la $*"
-alias speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
-alias neofetch--speedtest='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
-alias neofetch='echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat && fastfetch && echo "--------------------------------------------------------------------------------" | pv -qL 1000 | lolcat'
+alias speedtest="/opt/homebrew/bin/speedtest $*"
+alias neofetch--speedtest="/opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc && /opt/homebrew/bin/speedtest"
+alias neofetch="/opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* "
+alias fastfetch="/opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $*"
 alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias cga='if [ -z "$*" ]; then git add .; else git add $1; fi'
@@ -371,5 +372,20 @@ if command -v ngrok &>/dev/null; then
 #eval $(/Applications/wgcf generate zsh)
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
 eval "$(zellij setup --generate-auto-start zsh)"
