@@ -14,3 +14,6 @@ gem install brewfile
 
 # synchronizing dotfiles
 stow -t ~ . --adopt
+
+# chmod the hangman
+chmod +x ./hangman

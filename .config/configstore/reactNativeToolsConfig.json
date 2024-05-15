@@ -5,10 +5,10 @@
 		"longPeriodToRemind": 90,
 		"popCoveragePercent": 0.1,
 		"enabled": true,
-		"daysLeftBeforeSurvey": 30,
+		"daysLeftBeforeSurvey": 29,
 		"surveyName": "userSatisfactionSurvey",
 		"surveyUrl": "https://www.surveymonkey.com/r/6FJGVDV",
-		"lastExtensionUsageDate": "2024-05-11T10:26:18.821Z"
+		"lastExtensionUsageDate": "2024-05-15T18:19:09.578Z"
 	},
 	"tipsConfig": {
 		"daysLeftBeforeGeneralTip": 5,
@@ -33,6 +33,7 @@
 			"specificTips": {
 				"networkInspectorLogsColorTheme": {}
 			}
-		}
+		},
+		"lastExtensionUsageDate": "2024-05-15T18:19:09.269Z"
 	}
 }
