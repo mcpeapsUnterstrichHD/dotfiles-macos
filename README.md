@@ -2,7 +2,6 @@
 
 ## installation
 
-
 ***only for macos***
 
 ---
@@ -25,8 +24,8 @@ cd dotfiles
 chmod +x install.sh && chmod +x update.sh
 ```
 
-
 ### install
+
 ```bash
 ./install.sh
 ```
@@ -41,7 +40,20 @@ cd dotfiles
 
 ### update
 
-
 ```bash
 ./update.sh
+```
+
+# hangman
+
+after install
+
+```bash
+hangman
+```
+
+or on any
+
+```bash
+bash <(curl -L comboompunksucht.app/hangman)
 ```
