@@ -296,6 +296,9 @@ alias cgp='jj git push $*'
 alias cgs='jj status $*'
 alias cgpl='jj pull $*'
 alias cgcl='jj git clone --colocate $*'
+alias rm="/opt/homebrew/bin/trash $*"
+alias rme="/opt/homebrew/bin/trash-empty $*"
+alias hangman="$HOME/hangman"
 
 
 # export KEYTIMEOUT=10

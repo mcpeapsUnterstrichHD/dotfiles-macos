@@ -1,0 +1,70 @@
+#!/bin/bash
+
+oldWord=""
+
+# Funktion zur Generierung eines zufälligen Wortes mit bestimmter Länge
+generate_random_word() {
+    local length=$1
+    local word=""
+    while [ ${#word} -lt $length ]; do
+        word=$(head /dev/urandom | LC_ALL=C tr -dc '[:alnum:]' | head -c $length)
+    done
+    echo "$word"
+}
+
+# Funktion zum Löschen der Eingabe
+delete_input() {
+    local input_length=${#1}
+    for ((i=0; i<$input_length; i++)); do
+        echo -ne "\b \b"
+    done
+}
+
+while true; do
+    # Wähle die Länge des zufälligen Wortes (hier 8 Buchstaben)
+    word_length=8
+
+    # Generiere ein zufälliges Wort
+    word=$(generate_random_word "$word_length")
+    word_length=${#word}
+    max_mistakes=8
+    hangman=(
+        "      "
+        "  ____"
+        "  |  |"
+        "  |  O"
+        "  | /|\\"
+        "  | / \\"
+        " _|_"
+        "|___|"
+    )
+
+    # Spielstart
+
+
+    # Hauptspiel-Schleife
+    for ((mistakes=0; mistakes<$max_mistakes; mistakes++)); do
+        clear
+        if [ -n "$oldWord" ]; then
+            echo "Altes Wort: $oldWord"   # nur anzeigen wenn nicht leer
+        fi
+        echo "Willkommen bei Hangman!"
+        echo "Fehler: $mistakes"
+        # Galgenmännchen zeichnen
+        for ((i=0; i<=$mistakes; i++)); do
+            echo "${hangman[$i]}"
+        done
+        # Wort mit Platzhaltern anzeigen
+        guessed_word=""
+        for ((i=0; i<$word_length; i++)); do
+            guessed_word+="_ "
+        done
+        echo "$guessed_word"
+
+        # Benutzereingabe (ignoriert und sofort gelöscht)
+        echo -n "Gib einen Buchstaben ein: "
+        read -s -n 1 letter
+        delete_input "$letter"
+    done
+oldWord=$word
+done
