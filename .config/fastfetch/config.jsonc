@@ -51,6 +51,7 @@
 		}
 	},
 	"modules": [
+		"break",
 		{
 			"type": "custom",
 			"format": "\u001b[32m┌───────────────────User / Network───────────────────┐"
@@ -103,6 +104,11 @@
 		},
 		{
 			"type": "display",
+			"key": "│ ├󰍹",
+			"keyColor": "green"
+		},
+		{
+			"type": "brightness",
 			"key": "│ ├󰍹",
 			"keyColor": "green"
 		},
