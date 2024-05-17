@@ -7,3 +7,6 @@
 [submodule ".config/cheat/cheatsheets/community"]
 	path = .config/cheat/cheatsheets/community
 	url = https://github.com/cheat/cheatsheets.git
+[submodule "exe/separator"]
+	path = exe/separator
+	url = https://github.com/pjnadolny/separator.git

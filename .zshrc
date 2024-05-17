@@ -27,6 +27,8 @@ export EDITOR=nvim
 export PATH="/Applications/:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="$HOME/exe:$PATH"
+export PATH="$HOME/exe/separator:$PATH"
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -284,10 +286,10 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="colorls -l -a --group-directories-first $*"
 alias lss="/bin/ls -la $*"
-alias speedtest="/opt/homebrew/bin/speedtest $*"
-alias neofetch--speedtest="/opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc && /opt/homebrew/bin/speedtest"
-alias neofetch="/opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* "
-alias fastfetch="/opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $*"
+alias speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
+alias neofetch--speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
+alias neofetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
+alias fastfetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias cga='if [ -z "$*" ]; then git add .; else git add $1; fi'
@@ -298,7 +300,7 @@ alias cgpl='jj pull $*'
 alias cgcl='jj git clone --colocate $*'
 alias rm="/opt/homebrew/bin/trash $*"
 alias rme="/opt/homebrew/bin/trash-empty $*"
-alias hangman="$HOME/hangman"
+alias hangman="$HOME/exe/hangman"
 
 
 # export KEYTIMEOUT=10
