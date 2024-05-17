@@ -2,3 +2,8 @@
 **/.DS_Store
 .config/gh/hosts.yml
 .config/github-copilot/hosts.json
+/.local/share/Trash/files/
+/.local/share/Trash/info/
+/.docker/scout
+/.config/raycast/extensions
+/.config/raycast/extensions/e387a763-b755-406b-ade3-fe5add1718a0
