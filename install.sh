@@ -17,3 +17,5 @@ stow -t ~ . --adopt
 
 # chmod the hangman
 chmod +x ./hangman
+# chmod the sep
+chmod +x ./exe/separator/sep.sh
