@@ -7,3 +7,5 @@
 /.docker/scout
 /.config/raycast/extensions
 /.config/raycast/extensions/e387a763-b755-406b-ade3-fe5add1718a0
+.local/share/weechat/weechat.log
+/.local/share/weechat/logs
