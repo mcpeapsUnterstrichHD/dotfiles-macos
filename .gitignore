@@ -10,3 +10,4 @@
 .local/share/weechat/weechat.log
 /.local/share/weechat/logs
 .config/weechat/sec.conf
+.config/weechat/sec.conf
