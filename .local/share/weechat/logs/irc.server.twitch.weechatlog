@@ -1,0 +1,529 @@
+2024-05-18 11:12:25	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:12:26	=!=	irc: TLS handshake failed
+2024-05-18 11:12:26	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:12:26	--	irc: reconnecting to server in 10 seconds
+2024-05-18 11:12:36	--	irc: reconnecting to server...
+2024-05-18 11:12:36	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:12:36	=!=	irc: TLS handshake failed
+2024-05-18 11:12:36	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:12:36	--	irc: reconnecting to server in 20 seconds
+2024-05-18 11:12:56	--	irc: reconnecting to server...
+2024-05-18 11:12:56	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:12:56	=!=	irc: TLS handshake failed
+2024-05-18 11:12:56	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:12:56	--	irc: reconnecting to server in 40 seconds
+2024-05-18 11:13:19	=!=	irc: this buffer is not a channel!
+2024-05-18 11:13:36	--	irc: reconnecting to server...
+2024-05-18 11:13:36	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:13:36	=!=	irc: TLS handshake failed
+2024-05-18 11:13:36	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:13:36	--	irc: reconnecting to server in 1 minute, 20 seconds
+2024-05-18 11:13:44	=!=	irc: this buffer is not a channel!
+2024-05-18 11:14:56	--	irc: reconnecting to server...
+2024-05-18 11:14:56	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:15:38	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:15:39	=!=	irc: TLS handshake failed
+2024-05-18 11:15:39	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:15:39	--	irc: reconnecting to server in 10 seconds
+2024-05-18 11:15:49	--	irc: reconnecting to server...
+2024-05-18 11:15:49	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:15:49	=!=	irc: TLS handshake failed
+2024-05-18 11:15:49	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:15:49	--	irc: reconnecting to server in 20 seconds
+2024-05-18 11:16:09	--	irc: reconnecting to server...
+2024-05-18 11:16:09	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:16:09	=!=	irc: TLS handshake failed
+2024-05-18 11:16:09	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:16:09	--	irc: reconnecting to server in 40 seconds
+2024-05-18 11:16:49	--	irc: reconnecting to server...
+2024-05-18 11:16:49	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:16:50	=!=	irc: TLS handshake failed
+2024-05-18 11:16:50	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:16:50	--	irc: reconnecting to server in 1 minute, 20 seconds
+2024-05-18 11:18:10	--	irc: reconnecting to server...
+2024-05-18 11:18:10	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:18:10	=!=	irc: TLS handshake failed
+2024-05-18 11:18:10	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:18:10	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2024-05-18 11:19:54	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:19:54	=!=	irc: TLS handshake failed
+2024-05-18 11:19:54	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:19:54	--	irc: reconnecting to server in 10 seconds
+2024-05-18 11:20:04	--	irc: reconnecting to server...
+2024-05-18 11:20:04	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:20:04	=!=	irc: TLS handshake failed
+2024-05-18 11:20:04	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:20:04	--	irc: reconnecting to server in 20 seconds
+2024-05-18 11:20:24	--	irc: reconnecting to server...
+2024-05-18 11:20:24	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:20:25	=!=	irc: TLS handshake failed
+2024-05-18 11:20:25	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:20:25	--	irc: reconnecting to server in 40 seconds
+2024-05-18 11:21:05	--	irc: reconnecting to server...
+2024-05-18 11:21:05	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:21:05	=!=	irc: TLS handshake failed
+2024-05-18 11:21:05	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:21:05	--	irc: reconnecting to server in 1 minute, 20 seconds
+2024-05-18 11:22:25	--	irc: reconnecting to server...
+2024-05-18 11:22:25	--	irc: connecting to server irc.twitch.tv/6667 (TLS)...
+2024-05-18 11:22:25	=!=	irc: TLS handshake failed
+2024-05-18 11:22:25	=!=	irc: error: An unexpected TLS packet was received.
+2024-05-18 11:22:25	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2024-05-18 11:36:37	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:36:38	--	gnutls: receiving 4 certificates
+2024-05-18 11:36:38	--	 - certificate[1] info:
+2024-05-18 11:36:38	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:36:38	--	 - certificate[2] info:
+2024-05-18 11:36:38	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:36:38	--	 - certificate[3] info:
+2024-05-18 11:36:38	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:36:38	--	 - certificate[4] info:
+2024-05-18 11:36:38	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:36:38	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:36:38	--	gnutls: peer's certificate is trusted
+2024-05-18 11:36:38	=!=	irc: TLS handshake failed
+2024-05-18 11:36:38	=!=	irc: error: Error in the certificate.
+2024-05-18 11:36:38	--	irc: reconnecting to server in 10 seconds
+2024-05-18 11:36:48	--	irc: reconnecting to server...
+2024-05-18 11:36:48	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:36:48	--	gnutls: receiving 4 certificates
+2024-05-18 11:36:48	--	 - certificate[1] info:
+2024-05-18 11:36:48	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:36:48	--	 - certificate[2] info:
+2024-05-18 11:36:48	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:36:48	--	 - certificate[3] info:
+2024-05-18 11:36:48	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:36:48	--	 - certificate[4] info:
+2024-05-18 11:36:48	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:36:48	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:36:48	--	gnutls: peer's certificate is trusted
+2024-05-18 11:36:48	=!=	irc: TLS handshake failed
+2024-05-18 11:36:48	=!=	irc: error: Error in the certificate.
+2024-05-18 11:36:48	--	irc: reconnecting to server in 20 seconds
+2024-05-18 11:37:08	--	irc: reconnecting to server...
+2024-05-18 11:37:08	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:37:08	--	gnutls: receiving 4 certificates
+2024-05-18 11:37:08	--	 - certificate[1] info:
+2024-05-18 11:37:08	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:37:08	--	 - certificate[2] info:
+2024-05-18 11:37:08	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:37:08	--	 - certificate[3] info:
+2024-05-18 11:37:08	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:37:08	--	 - certificate[4] info:
+2024-05-18 11:37:08	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:37:08	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:37:08	--	gnutls: peer's certificate is trusted
+2024-05-18 11:37:08	=!=	irc: TLS handshake failed
+2024-05-18 11:37:08	=!=	irc: error: Error in the certificate.
+2024-05-18 11:37:08	--	irc: reconnecting to server in 40 seconds
+2024-05-18 11:37:27	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:37:28	--	gnutls: receiving 4 certificates
+2024-05-18 11:37:28	--	 - certificate[1] info:
+2024-05-18 11:37:28	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:37:28	--	 - certificate[2] info:
+2024-05-18 11:37:28	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:37:28	--	 - certificate[3] info:
+2024-05-18 11:37:28	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:37:28	--	 - certificate[4] info:
+2024-05-18 11:37:28	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:37:28	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:37:28	--	gnutls: peer's certificate is trusted
+2024-05-18 11:37:28	=!=	irc: TLS handshake failed
+2024-05-18 11:37:28	=!=	irc: error: Error in the certificate.
+2024-05-18 11:37:28	--	irc: reconnecting to server in 10 seconds
+2024-05-18 11:37:38	--	irc: reconnecting to server...
+2024-05-18 11:37:38	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:37:38	--	gnutls: receiving 4 certificates
+2024-05-18 11:37:38	--	 - certificate[1] info:
+2024-05-18 11:37:38	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:37:38	--	 - certificate[2] info:
+2024-05-18 11:37:38	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:37:38	--	 - certificate[3] info:
+2024-05-18 11:37:38	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:37:38	--	 - certificate[4] info:
+2024-05-18 11:37:38	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:37:38	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:37:38	--	gnutls: peer's certificate is trusted
+2024-05-18 11:37:38	=!=	irc: TLS handshake failed
+2024-05-18 11:37:38	=!=	irc: error: Error in the certificate.
+2024-05-18 11:37:38	--	irc: reconnecting to server in 20 seconds
+2024-05-18 11:37:58	--	irc: reconnecting to server...
+2024-05-18 11:37:58	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:37:58	--	gnutls: receiving 4 certificates
+2024-05-18 11:37:58	--	 - certificate[1] info:
+2024-05-18 11:37:58	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:37:58	--	 - certificate[2] info:
+2024-05-18 11:37:58	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:37:58	--	 - certificate[3] info:
+2024-05-18 11:37:58	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:37:58	--	 - certificate[4] info:
+2024-05-18 11:37:58	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:37:58	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:37:58	--	gnutls: peer's certificate is trusted
+2024-05-18 11:37:58	=!=	irc: TLS handshake failed
+2024-05-18 11:37:58	=!=	irc: error: Error in the certificate.
+2024-05-18 11:37:58	--	irc: reconnecting to server in 40 seconds
+2024-05-18 11:38:38	--	irc: reconnecting to server...
+2024-05-18 11:38:38	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:38:38	--	gnutls: receiving 4 certificates
+2024-05-18 11:38:38	--	 - certificate[1] info:
+2024-05-18 11:38:38	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:38:38	--	 - certificate[2] info:
+2024-05-18 11:38:38	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:38:38	--	 - certificate[3] info:
+2024-05-18 11:38:38	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:38:38	--	 - certificate[4] info:
+2024-05-18 11:38:38	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:38:38	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:38:38	--	gnutls: peer's certificate is trusted
+2024-05-18 11:38:38	=!=	irc: TLS handshake failed
+2024-05-18 11:38:38	=!=	irc: error: Error in the certificate.
+2024-05-18 11:38:38	--	irc: reconnecting to server in 1 minute, 20 seconds
+2024-05-18 11:39:58	--	irc: reconnecting to server...
+2024-05-18 11:39:58	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 11:39:58	--	gnutls: receiving 4 certificates
+2024-05-18 11:39:58	--	 - certificate[1] info:
+2024-05-18 11:39:58	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 11:39:58	--	 - certificate[2] info:
+2024-05-18 11:39:58	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 11:39:58	--	 - certificate[3] info:
+2024-05-18 11:39:58	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 11:39:58	--	 - certificate[4] info:
+2024-05-18 11:39:58	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 11:39:58	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 11:39:58	--	gnutls: peer's certificate is trusted
+2024-05-18 11:39:58	=!=	irc: TLS handshake failed
+2024-05-18 11:39:58	=!=	irc: error: Error in the certificate.
+2024-05-18 11:39:58	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2024-05-18 12:02:58	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:02:59	--	gnutls: receiving 4 certificates
+2024-05-18 12:02:59	--	 - certificate[1] info:
+2024-05-18 12:02:59	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:02:59	--	 - certificate[2] info:
+2024-05-18 12:02:59	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:02:59	--	 - certificate[3] info:
+2024-05-18 12:02:59	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:02:59	--	 - certificate[4] info:
+2024-05-18 12:02:59	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:02:59	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:02:59	--	gnutls: peer's certificate is trusted
+2024-05-18 12:02:59	=!=	irc: TLS handshake failed
+2024-05-18 12:02:59	=!=	irc: error: Error in the certificate.
+2024-05-18 12:02:59	--	irc: reconnecting to server in 10 seconds
+2024-05-18 12:03:09	--	irc: reconnecting to server...
+2024-05-18 12:03:09	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:03:09	--	gnutls: receiving 4 certificates
+2024-05-18 12:03:09	--	 - certificate[1] info:
+2024-05-18 12:03:09	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:03:09	--	 - certificate[2] info:
+2024-05-18 12:03:09	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:03:09	--	 - certificate[3] info:
+2024-05-18 12:03:09	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:03:09	--	 - certificate[4] info:
+2024-05-18 12:03:09	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:03:09	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:03:09	--	gnutls: peer's certificate is trusted
+2024-05-18 12:03:09	=!=	irc: TLS handshake failed
+2024-05-18 12:03:09	=!=	irc: error: Error in the certificate.
+2024-05-18 12:03:09	--	irc: reconnecting to server in 20 seconds
+2024-05-18 12:03:29	--	irc: reconnecting to server...
+2024-05-18 12:03:29	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:03:29	--	gnutls: receiving 4 certificates
+2024-05-18 12:03:29	--	 - certificate[1] info:
+2024-05-18 12:03:29	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:03:29	--	 - certificate[2] info:
+2024-05-18 12:03:29	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:03:29	--	 - certificate[3] info:
+2024-05-18 12:03:29	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:03:29	--	 - certificate[4] info:
+2024-05-18 12:03:29	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:03:29	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:03:29	--	gnutls: peer's certificate is trusted
+2024-05-18 12:03:29	=!=	irc: TLS handshake failed
+2024-05-18 12:03:29	=!=	irc: error: Error in the certificate.
+2024-05-18 12:03:29	--	irc: reconnecting to server in 40 seconds
+2024-05-18 12:04:09	--	irc: reconnecting to server...
+2024-05-18 12:04:09	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:04:09	--	gnutls: receiving 4 certificates
+2024-05-18 12:04:09	--	 - certificate[1] info:
+2024-05-18 12:04:09	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:04:09	--	 - certificate[2] info:
+2024-05-18 12:04:09	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:04:09	--	 - certificate[3] info:
+2024-05-18 12:04:09	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:04:09	--	 - certificate[4] info:
+2024-05-18 12:04:09	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:04:09	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:04:09	--	gnutls: peer's certificate is trusted
+2024-05-18 12:04:09	=!=	irc: TLS handshake failed
+2024-05-18 12:04:09	=!=	irc: error: Error in the certificate.
+2024-05-18 12:04:09	--	irc: reconnecting to server in 1 minute, 20 seconds
+2024-05-18 12:05:29	--	irc: reconnecting to server...
+2024-05-18 12:05:29	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:05:30	--	gnutls: receiving 4 certificates
+2024-05-18 12:05:30	--	 - certificate[1] info:
+2024-05-18 12:05:30	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:05:30	--	 - certificate[2] info:
+2024-05-18 12:05:30	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:05:30	--	 - certificate[3] info:
+2024-05-18 12:05:30	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:05:30	--	 - certificate[4] info:
+2024-05-18 12:05:30	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:05:30	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:05:30	--	gnutls: peer's certificate is trusted
+2024-05-18 12:05:30	=!=	irc: TLS handshake failed
+2024-05-18 12:05:30	=!=	irc: error: Error in the certificate.
+2024-05-18 12:05:30	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2024-05-18 12:10:33	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:10:34	--	gnutls: receiving 4 certificates
+2024-05-18 12:10:34	--	 - certificate[1] info:
+2024-05-18 12:10:34	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:10:34	--	 - certificate[2] info:
+2024-05-18 12:10:34	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:10:34	--	 - certificate[3] info:
+2024-05-18 12:10:34	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:10:34	--	 - certificate[4] info:
+2024-05-18 12:10:34	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:10:34	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:10:34	--	gnutls: peer's certificate is trusted
+2024-05-18 12:10:34	--	irc: connected to irc.twitch.tv/6697 (34.212.92.60)
+2024-05-18 12:10:34	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 12:10:34	--	irc: client capability, requesting: 
+2024-05-18 12:10:34	--	Welcome, GLHF!
+2024-05-18 12:10:34	--	Your host is tmi.twitch.tv
+2024-05-18 12:10:34	--	This server is rather new
+2024-05-18 12:10:34	--	-
+2024-05-18 12:10:34	--	-
+2024-05-18 12:10:34	--	You are in a maze of twisty passages, all alike.
+2024-05-18 12:10:34	--	>
+2024-05-18 12:11:57	=!=	irc: this buffer is not a channel!
+2024-05-18 12:16:37	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:16:38	--	gnutls: receiving 4 certificates
+2024-05-18 12:16:38	--	 - certificate[1] info:
+2024-05-18 12:16:38	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:16:38	--	 - certificate[2] info:
+2024-05-18 12:16:38	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:16:38	--	 - certificate[3] info:
+2024-05-18 12:16:38	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:16:38	--	 - certificate[4] info:
+2024-05-18 12:16:38	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:16:38	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:16:38	--	gnutls: peer's certificate is trusted
+2024-05-18 12:16:38	--	irc: connected to irc.twitch.tv/6697 (34.212.92.60)
+2024-05-18 12:16:38	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 12:16:38	--	irc: client capability, requesting: 
+2024-05-18 12:16:39	--	Welcome, GLHF!
+2024-05-18 12:16:39	--	Your host is tmi.twitch.tv
+2024-05-18 12:16:39	--	This server is rather new
+2024-05-18 12:16:39	--	-
+2024-05-18 12:16:39	--	-
+2024-05-18 12:16:39	--	You are in a maze of twisty passages, all alike.
+2024-05-18 12:16:39	--	>
+2024-05-18 12:16:39	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 12:24:17	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:24:18	--	gnutls: receiving 4 certificates
+2024-05-18 12:24:18	--	 - certificate[1] info:
+2024-05-18 12:24:18	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:24:18	--	 - certificate[2] info:
+2024-05-18 12:24:18	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:24:18	--	 - certificate[3] info:
+2024-05-18 12:24:18	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:24:18	--	 - certificate[4] info:
+2024-05-18 12:24:18	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:24:18	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:24:18	--	gnutls: peer's certificate is trusted
+2024-05-18 12:24:18	--	irc: connected to irc.twitch.tv/6697 (44.237.40.50)
+2024-05-18 12:24:19	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 12:24:19	--	irc: client capability, requesting: 
+2024-05-18 12:24:19	--	Welcome, GLHF!
+2024-05-18 12:24:19	--	Your host is tmi.twitch.tv
+2024-05-18 12:24:19	--	This server is rather new
+2024-05-18 12:24:19	--	-
+2024-05-18 12:24:19	--	-
+2024-05-18 12:24:19	--	You are in a maze of twisty passages, all alike.
+2024-05-18 12:24:19	--	>
+2024-05-18 12:24:19	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 12:56:57	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 12:56:58	--	gnutls: receiving 4 certificates
+2024-05-18 12:56:58	--	 - certificate[1] info:
+2024-05-18 12:56:58	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 12:56:58	--	 - certificate[2] info:
+2024-05-18 12:56:58	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 12:56:58	--	 - certificate[3] info:
+2024-05-18 12:56:58	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 12:56:58	--	 - certificate[4] info:
+2024-05-18 12:56:58	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 12:56:58	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 12:56:58	--	gnutls: peer's certificate is trusted
+2024-05-18 12:56:58	--	irc: connected to irc.twitch.tv/6697 (44.227.173.36)
+2024-05-18 12:56:58	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 12:56:58	--	irc: client capability, requesting: 
+2024-05-18 12:56:58	--	Welcome, GLHF!
+2024-05-18 12:56:58	--	Your host is tmi.twitch.tv
+2024-05-18 12:56:58	--	This server is rather new
+2024-05-18 12:56:58	--	-
+2024-05-18 12:56:58	--	-
+2024-05-18 12:56:58	--	You are in a maze of twisty passages, all alike.
+2024-05-18 12:56:58	--	>
+2024-05-18 12:56:59	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:00:53	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:00:54	--	gnutls: receiving 4 certificates
+2024-05-18 13:00:54	--	 - certificate[1] info:
+2024-05-18 13:00:54	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:00:54	--	 - certificate[2] info:
+2024-05-18 13:00:54	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:00:54	--	 - certificate[3] info:
+2024-05-18 13:00:54	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:00:54	--	 - certificate[4] info:
+2024-05-18 13:00:54	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:00:54	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:00:54	--	gnutls: peer's certificate is trusted
+2024-05-18 13:00:54	--	irc: connected to irc.twitch.tv/6697 (44.237.40.50)
+2024-05-18 13:00:54	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 13:00:54	--	irc: client capability, requesting: 
+2024-05-18 13:00:54	--	Welcome, GLHF!
+2024-05-18 13:00:54	--	Your host is tmi.twitch.tv
+2024-05-18 13:00:54	--	This server is rather new
+2024-05-18 13:00:54	--	-
+2024-05-18 13:00:54	--	-
+2024-05-18 13:00:54	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:00:54	--	>
+2024-05-18 13:00:55	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:04:43	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:04:44	--	gnutls: receiving 4 certificates
+2024-05-18 13:04:44	--	 - certificate[1] info:
+2024-05-18 13:04:44	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:04:44	--	 - certificate[2] info:
+2024-05-18 13:04:44	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:04:44	--	 - certificate[3] info:
+2024-05-18 13:04:44	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:04:44	--	 - certificate[4] info:
+2024-05-18 13:04:44	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:04:44	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:04:44	--	gnutls: peer's certificate is trusted
+2024-05-18 13:04:44	--	irc: connected to irc.twitch.tv/6697 (44.227.173.36)
+2024-05-18 13:04:44	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 13:04:44	--	irc: client capability, requesting: 
+2024-05-18 13:04:44	--	Welcome, GLHF!
+2024-05-18 13:04:44	--	Your host is tmi.twitch.tv
+2024-05-18 13:04:44	--	This server is rather new
+2024-05-18 13:04:44	--	-
+2024-05-18 13:04:44	--	-
+2024-05-18 13:04:44	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:04:44	--	>
+2024-05-18 13:04:45	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:07:05	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:07:05	--	gnutls: receiving 4 certificates
+2024-05-18 13:07:05	--	 - certificate[1] info:
+2024-05-18 13:07:05	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:07:05	--	 - certificate[2] info:
+2024-05-18 13:07:05	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:07:05	--	 - certificate[3] info:
+2024-05-18 13:07:05	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:07:05	--	 - certificate[4] info:
+2024-05-18 13:07:05	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:07:05	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:07:05	--	gnutls: peer's certificate is trusted
+2024-05-18 13:07:06	--	irc: connected to irc.twitch.tv/6697 (44.227.173.36)
+2024-05-18 13:07:06	--	irc: client capability, server supports: twitch.tv/membership twitch.tv/tags twitch.tv/commands
+2024-05-18 13:07:06	--	irc: client capability, requesting: 
+2024-05-18 13:07:06	--	Welcome, GLHF!
+2024-05-18 13:07:06	--	Your host is tmi.twitch.tv
+2024-05-18 13:07:06	--	This server is rather new
+2024-05-18 13:07:06	--	-
+2024-05-18 13:07:06	--	-
+2024-05-18 13:07:06	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:07:06	--	>
+2024-05-18 13:07:06	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:07:35	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:07:36	--	gnutls: receiving 4 certificates
+2024-05-18 13:07:36	--	 - certificate[1] info:
+2024-05-18 13:07:36	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:07:36	--	 - certificate[2] info:
+2024-05-18 13:07:36	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:07:36	--	 - certificate[3] info:
+2024-05-18 13:07:36	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:07:36	--	 - certificate[4] info:
+2024-05-18 13:07:36	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:07:36	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:07:36	--	gnutls: peer's certificate is trusted
+2024-05-18 13:07:36	--	irc: connected to irc.twitch.tv/6697 (34.212.92.60)
+2024-05-18 13:07:37	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 13:07:37	--	irc: client capability, requesting: 
+2024-05-18 13:07:37	--	Welcome, GLHF!
+2024-05-18 13:07:37	--	Your host is tmi.twitch.tv
+2024-05-18 13:07:37	--	This server is rather new
+2024-05-18 13:07:37	--	-
+2024-05-18 13:07:37	--	-
+2024-05-18 13:07:37	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:07:37	--	>
+2024-05-18 13:07:37	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:15:08	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:15:08	--	gnutls: receiving 4 certificates
+2024-05-18 13:15:08	--	 - certificate[1] info:
+2024-05-18 13:15:08	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:15:08	--	 - certificate[2] info:
+2024-05-18 13:15:08	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:15:08	--	 - certificate[3] info:
+2024-05-18 13:15:08	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:15:08	--	 - certificate[4] info:
+2024-05-18 13:15:08	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:15:08	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:15:08	--	gnutls: peer's certificate is trusted
+2024-05-18 13:15:08	--	irc: connected to irc.twitch.tv/6697 (34.212.92.60)
+2024-05-18 13:15:09	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 13:15:09	--	irc: client capability, requesting: 
+2024-05-18 13:15:09	--	Welcome, GLHF!
+2024-05-18 13:15:09	--	Your host is tmi.twitch.tv
+2024-05-18 13:15:09	--	This server is rather new
+2024-05-18 13:15:09	--	-
+2024-05-18 13:15:09	--	-
+2024-05-18 13:15:09	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:15:09	--	>
+2024-05-18 13:15:09	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:17:00	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:17:00	--	gnutls: receiving 4 certificates
+2024-05-18 13:17:00	--	 - certificate[1] info:
+2024-05-18 13:17:00	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:17:00	--	 - certificate[2] info:
+2024-05-18 13:17:00	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:17:00	--	 - certificate[3] info:
+2024-05-18 13:17:00	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:17:00	--	 - certificate[4] info:
+2024-05-18 13:17:00	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:17:00	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:17:00	--	gnutls: peer's certificate is trusted
+2024-05-18 13:17:00	--	irc: connected to irc.twitch.tv/6697 (34.212.92.60)
+2024-05-18 13:17:01	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 13:17:01	--	irc: client capability, requesting: 
+2024-05-18 13:17:01	--	Welcome, GLHF!
+2024-05-18 13:17:01	--	Your host is tmi.twitch.tv
+2024-05-18 13:17:01	--	This server is rather new
+2024-05-18 13:17:01	--	-
+2024-05-18 13:17:01	--	-
+2024-05-18 13:17:01	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:17:01	--	>
+2024-05-18 13:17:01	--	irc: client capability, enabled: twitch.tv/membership
+2024-05-18 13:19:11	--	irc: connecting to server irc.twitch.tv/6697 (TLS)...
+2024-05-18 13:19:12	--	gnutls: receiving 4 certificates
+2024-05-18 13:19:12	--	 - certificate[1] info:
+2024-05-18 13:19:12	--	   - subject `CN=raw-1.us-west-2.prod.twitchircedge.twitch.a2z.com', issuer `CN=Amazon RSA 2048 M03,O=Amazon,C=US', serial 0x01d6a4c1750fd1db44ea2a98401d51fb, RSA key 2048 bits, signed using RSA-SHA256, activated `2024-01-29 00:00:00 UTC', expires `2025-02-27 23:59:59 UTC', pin-sha256="j/CddQSqBvs4578BZ2aPJeFRLYxkpHWXWFb4/WHlYVo="
+2024-05-18 13:19:12	--	 - certificate[2] info:
+2024-05-18 13:19:12	--	   - subject `CN=Amazon RSA 2048 M03,O=Amazon,C=US', issuer `CN=Amazon Root CA 1,O=Amazon,C=US', serial 0x0773124cd406d267c0991cdd299a9f38317985, RSA key 2048 bits, signed using RSA-SHA256, activated `2022-08-23 22:26:04 UTC', expires `2030-08-23 22:26:04 UTC', pin-sha256="vxRon/El5KuI4vx5ey1DgmsYmRY0nDd5Cg4GfJ8S+bg="
+2024-05-18 13:19:12	--	 - certificate[3] info:
+2024-05-18 13:19:12	--	   - subject `CN=Amazon Root CA 1,O=Amazon,C=US', issuer `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', serial 0x067f944a2a27cdf3fac2ae2b01f908eeb9c4c6, RSA key 2048 bits, signed using RSA-SHA256, activated `2015-05-25 12:00:00 UTC', expires `2037-12-31 01:00:00 UTC', pin-sha256="++MBgDH5WGvL9Bcn5Be30cRcL0f5O+NyoXuWtQdX1aI="
+2024-05-18 13:19:12	--	 - certificate[4] info:
+2024-05-18 13:19:12	--	   - subject `CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\, Inc.,L=Scottsdale,ST=Arizona,C=US', issuer `OU=Starfield Class 2 Certification Authority,O=Starfield Technologies\, Inc.,C=US', serial 0x00a70e4a4c3482b77f, RSA key 2048 bits, signed using RSA-SHA256, activated `2009-09-02 00:00:00 UTC', expires `2034-06-28 17:39:16 UTC', pin-sha256="KwccWaCgrnaw6tsrrSO61FgLacNgG2MMLq8GE6+oP5I="
+2024-05-18 13:19:12	=!=	gnutls: the hostname in the certificate does NOT match "irc.twitch.tv"
+2024-05-18 13:19:12	--	gnutls: peer's certificate is trusted
+2024-05-18 13:19:12	--	irc: connected to irc.twitch.tv/6697 (44.227.173.36)
+2024-05-18 13:19:12	--	irc: client capability, server supports: twitch.tv/tags twitch.tv/commands twitch.tv/membership
+2024-05-18 13:19:12	--	irc: client capability, requesting: 
+2024-05-18 13:19:12	--	Welcome, GLHF!
+2024-05-18 13:19:12	--	Your host is tmi.twitch.tv
+2024-05-18 13:19:12	--	This server is rather new
+2024-05-18 13:19:12	--	-
+2024-05-18 13:19:12	--	-
+2024-05-18 13:19:12	--	You are in a maze of twisty passages, all alike.
+2024-05-18 13:19:12	--	>
+2024-05-18 13:19:13	--	irc: client capability, enabled: twitch.tv/membership

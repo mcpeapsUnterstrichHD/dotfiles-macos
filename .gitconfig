@@ -1,6 +1,6 @@
 [user]
-    name = mcpeapsUnterstrichHD
-    email = mcpeaps_HD@outlook.com
+	name = mcpeapsUnterstrichHD
+	email = mcpeaps_HD@outlook.com
 
 [alias]
     push = jj git push $*
