@@ -1,0 +1,793 @@
+2024-05-18 06:54:44		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 11:09:31		irc: server added: twitch -> irc.twitch.tv/6667 (TLS: enabled)
+2024-05-18 11:10:50	=!=	irc: server "twitch" already exists, can't add it!
+2024-05-18 11:11:12	=!=	Error with command "/server remove twitch" (help on command: /help server)
+2024-05-18 11:11:26		
+2024-05-18 11:11:26		[irc]  /server  list|listfull [<name>]
+2024-05-18 11:11:26		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2024-05-18 11:11:26		                copy|rename <name> <new_name>
+2024-05-18 11:11:26		                reorder <name> [<name>...]
+2024-05-18 11:11:26		                open <name>|-all [<name>...]
+2024-05-18 11:11:26		                del|keep <name>
+2024-05-18 11:11:26		                deloutq|jump
+2024-05-18 11:11:26		                raw [<filter>]
+2024-05-18 11:11:26		
+2024-05-18 11:11:26		list, add or remove IRC servers
+2024-05-18 11:11:26		
+2024-05-18 11:11:26		    list: list servers (without argument, this list is displayed)
+2024-05-18 11:11:26		listfull: list servers with detailed info for each server
+2024-05-18 11:11:26		     add: add a new server
+2024-05-18 11:11:26		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2024-05-18 11:11:26		hostname: name or IP address of server, with optional port (default: 6697 for TLS, 6667 otherwise), many addresses can be separated by a comma
+2024-05-18 11:11:26		   -temp: add a temporary server (not saved)
+2024-05-18 11:11:26		  option: set option for server (for boolean option, value can be omitted)
+2024-05-18 11:11:26		nooption: set boolean option to "off" (for example: -notls)
+2024-05-18 11:11:26		    copy: duplicate a server
+2024-05-18 11:11:26		  rename: rename a server
+2024-05-18 11:11:26		 reorder: reorder list of servers
+2024-05-18 11:11:26		    open: open the server buffer without connecting
+2024-05-18 11:11:26		    keep: keep server in config file (for temporary servers only)
+2024-05-18 11:11:26		     del: delete a server
+2024-05-18 11:11:26		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2024-05-18 11:11:26		    jump: jump to server buffer
+2024-05-18 11:11:26		     raw: open buffer with raw IRC data
+2024-05-18 11:11:26		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2024-05-18 11:11:26		          `*`: show all messages (no filter)
+2024-05-18 11:11:26		          `xxx`: show only messages containing "xxx"
+2024-05-18 11:11:26		          `s:xxx`: show only messages for server "xxx"
+2024-05-18 11:11:26		          `f:xxx`: show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2024-05-18 11:11:26		          `m:xxx`: show only IRC command "xxx"
+2024-05-18 11:11:26		          `c:xxx`: show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "%FT%T.%f", see function util_strftimeval in Plugin API reference), server, recv, sent, modified, redirected
+2024-05-18 11:11:26		
+2024-05-18 11:11:26		Examples:
+2024-05-18 11:11:26		  /server listfull
+2024-05-18 11:11:26		  /server add libera irc.libera.chat
+2024-05-18 11:11:26		  /server add libera irc.libera.chat/6667 -notls -autoconnect
+2024-05-18 11:11:26		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667 -notls
+2024-05-18 11:11:26		  /server copy libera libera-test
+2024-05-18 11:11:26		  /server rename libera-test libera2
+2024-05-18 11:11:26		  /server reorder libera2 libera
+2024-05-18 11:11:26		  /server del libera
+2024-05-18 11:11:26		  /server deloutq
+2024-05-18 11:11:26		  /server raw
+2024-05-18 11:11:26		  /server raw s:libera
+2024-05-18 11:11:26		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2024-05-18 11:11:39		irc: server twitch has been deleted
+2024-05-18 11:11:44		irc: server added: twitch -> irc.twitch.tv/6667 (TLS: enabled)
+2024-05-18 11:15:05		irc: server twitch has been deleted
+2024-05-18 11:15:20		irc: server added: twitch -> irc.twitch.tv/6667 (TLS: enabled)
+2024-05-18 11:15:26		Options saved to sec.conf
+2024-05-18 11:15:26		Options saved to weechat.conf
+2024-05-18 11:15:26		Options saved to plugins.conf
+2024-05-18 11:15:26		Options saved to charset.conf
+2024-05-18 11:15:26		Options saved to logger.conf
+2024-05-18 11:15:26		Options saved to exec.conf
+2024-05-18 11:15:26		Options saved to trigger.conf
+2024-05-18 11:15:26		Options saved to spell.conf
+2024-05-18 11:15:26		Options saved to alias.conf
+2024-05-18 11:15:26		Options saved to buflist.conf
+2024-05-18 11:15:26		Options saved to fifo.conf
+2024-05-18 11:15:26		Options saved to typing.conf
+2024-05-18 11:15:26		Options saved to xfer.conf
+2024-05-18 11:15:26		Options saved to irc.conf
+2024-05-18 11:15:26		Options saved to relay.conf
+2024-05-18 11:15:26		Options saved to lua.conf
+2024-05-18 11:15:26		Options saved to perl.conf
+2024-05-18 11:15:26		Options saved to python.conf
+2024-05-18 11:15:26		Options saved to ruby.conf
+2024-05-18 11:15:26		Options saved to tcl.conf
+2024-05-18 11:15:26		Options saved to script.conf
+2024-05-18 11:15:26		Options saved to fset.conf
+2024-05-18 11:19:04		irc: server twitch has been deleted
+2024-05-18 11:19:50		irc: server added: twitch -> irc.twitch.tv/6667 (TLS: enabled)
+2024-05-18 11:24:26		irc: server twitch has been deleted
+2024-05-18 11:24:37	=!=	Option "irc.server.twitch.capabilities" not found
+2024-05-18 11:24:45		irc: server added: twitch -> irc.twitch.tv/6667 (TLS: enabled)
+2024-05-18 11:24:47		Option changed: irc.server.twitch.capabilities = "„twitch.tv/membership,twitch.tv/commands,twitch.tv/tags“"  (default if null: "*")
+2024-05-18 11:25:08		irc: server twitch has been deleted
+2024-05-18 11:25:23		irc: server added: twitch -> irc.twitch.tv/6667 (TLS: enabled)
+2024-05-18 11:25:26		Option changed: irc.server.twitch.capabilities = "„twitch.tv/membership,twitch.tv/commands,twitch.tv/tags“"  (default if null: "*")
+2024-05-18 11:25:45		Options saved to sec.conf
+2024-05-18 11:25:45		Options saved to weechat.conf
+2024-05-18 11:25:45		Options saved to plugins.conf
+2024-05-18 11:25:45		Options saved to charset.conf
+2024-05-18 11:25:45		Options saved to logger.conf
+2024-05-18 11:25:45		Options saved to exec.conf
+2024-05-18 11:25:45		Options saved to trigger.conf
+2024-05-18 11:25:45		Options saved to spell.conf
+2024-05-18 11:25:45		Options saved to alias.conf
+2024-05-18 11:25:45		Options saved to buflist.conf
+2024-05-18 11:25:45		Options saved to fifo.conf
+2024-05-18 11:25:45		Options saved to typing.conf
+2024-05-18 11:25:45		Options saved to xfer.conf
+2024-05-18 11:25:45		Options saved to irc.conf
+2024-05-18 11:25:45		Options saved to relay.conf
+2024-05-18 11:25:45		Options saved to lua.conf
+2024-05-18 11:25:45		Options saved to perl.conf
+2024-05-18 11:25:45		Options saved to python.conf
+2024-05-18 11:25:45		Options saved to ruby.conf
+2024-05-18 11:25:45		Options saved to tcl.conf
+2024-05-18 11:25:45		Options saved to script.conf
+2024-05-18 11:25:45		Options saved to fset.conf
+2024-05-18 11:27:01	=!=	script: download of scripts is disabled by default; see /help script.scripts.download_enabled
+2024-05-18 11:27:22		
+2024-05-18 11:27:22		Option "script.scripts.download_enabled":
+2024-05-18 11:27:22		  description: enable download of files from the scripts repository when the /script command is used (list of scripts and scripts themselves); the list of scripts is downloaded from the URL specified in the option script.scripts.url; WeeChat will sometimes download again the list of scripts when you use the /script command, even if you don't install a script
+2024-05-18 11:27:22		  type: boolean
+2024-05-18 11:27:22		  values: on, off
+2024-05-18 11:27:22		  default value: off
+2024-05-18 11:27:22		  current value: off
+2024-05-18 11:28:28		Option changed: script.scripts.download_enabled = on  (default: off)
+2024-05-18 11:28:36		script: downloading list of scripts...
+2024-05-18 11:28:36		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 11:28:36		python: loading script "/Users/mahd/.local/share/weechat/python/twitch.py"
+2024-05-18 11:28:36		python: stdout/stderr (?): /Users/mahd/.local/share/weechat/python/twitch.py:351: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:28:36		python: stdout/stderr (?):   bn=tags['ban-reason'].replace('\s',' ')
+2024-05-18 11:28:36		python: stdout/stderr (?): /Users/mahd/.local/share/weechat/python/twitch.py:359: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:28:36		python: stdout/stderr (?):   bn=tags['ban-reason'].replace('\s',' ')
+2024-05-18 11:28:36		python: stdout/stderr (?): /Users/mahd/.local/share/weechat/python/twitch.py:456: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:28:36		python: stdout/stderr (?):   msg = tags['system-msg'].replace('\s',' ')
+2024-05-18 11:28:36		python: registered script "twitch", version 0.9 (twitch.tv Chat Integration)
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		[python/twitch]  /twitch  
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		twitch.tv Chat Integration
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  settings:
+2024-05-18 11:29:13		    plugins.var.python.twitch.servers (default: twitch)
+2024-05-18 11:29:13		    plugins.var.python.twitch.prefix_nicks (default: 1)
+2024-05-18 11:29:13		    plugins.var.python.twitch.debug (default: 0)
+2024-05-18 11:29:13		    plugins.var.python.twitch.ssl_verify (default: 0)
+2024-05-18 11:29:13		    plugins.var.python.twitch.notice_notify_block (default: 1)
+2024-05-18 11:29:13		    plugins.var.python.twitch.client_id (default: awtv6n371jb7uayyc4jaljochyjbfxs)
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  This script checks stream status of any channel on any servers listed
+2024-05-18 11:29:13		  in the "plugins.var.python.twitch.servers" setting. When you switch
+2024-05-18 11:29:13		  to a buffer it will display updated infomation about the stream in the
+2024-05-18 11:29:13		  title bar. Typing '/twitch' in a buffer will also fetch updated infomation.
+2024-05-18 11:29:13		  '/whois nick' will lookup user info and display it in current buffer.
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  Option "plugins.var.python.twitch.servers" controls
+2024-05-18 11:29:13		  what server this script will work on. The default is twitch
+2024-05-18 11:29:13		  but you can have multiples separated by a space.
+2024-05-18 11:29:13		  /set plugins.var.python.twitch.servers twitch twitchcopy
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  This script also will prefix users nicks (@ for mod, % for sub,
+2024-05-18 11:29:13		  and ~ for broadcaster). This will break the traditional function
+2024-05-18 11:29:13		  of `/ignore add nightbot` and will require you to prefix nicks if you
+2024-05-18 11:29:13		  want to ignore someone `/ignore add re:[~@%]{0,3}nightbot` should ignore
+2024-05-18 11:29:13		  a nick with all or none of the prefixes used by this script.
+2024-05-18 11:29:13		  NOTE: This may cause high cpu usage in very active chat and/or on slower cpus.
+2024-05-18 11:29:13		  This can also be disabled by setting
+2024-05-18 11:29:13		    /set plugins.var.python.twitch.prefix_nicks off
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  If you are experiencing errors you can enable debug mode by setting
+2024-05-18 11:29:13		    /set plugins.var.python.twitch.debug on
+2024-05-18 11:29:13		  You can also try disabling SSL/TLS cert verification.
+2024-05-18 11:29:13		    /set plugins.var.python.twitch.ssl_verify off
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  Required server settings:
+2024-05-18 11:29:13		    /server add twitch irc.twitch.tv
+2024-05-18 11:29:13		    /set irc.server.twitch.capabilities "twitch.tv/membership,twitch.tv/commands,twitch.tv/tags"
+2024-05-18 11:29:13		    /set irc.server.twitch.nicks "My Twitch Username"
+2024-05-18 11:29:13		    /set irc.server.twitch.password "oauth:My Oauth Key"
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  If you do not have a oauth token one can be generated for your account here
+2024-05-18 11:29:13		    https://mumixam.github.io/weechat_twitch
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  This script now by default limits the level of NOTICEs from twitch server
+2024-05-18 11:29:13		  What this does is makes it so 'Now hosting' notifications are classes as a low level message
+2024-05-18 11:29:13		  So they no longer show up in your hotlist like a 'actual' message
+2024-05-18 11:29:13		  If you would like to disable this set the following
+2024-05-18 11:29:13		    /set plugins.var.python.twitch.notice_notify_block 0
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  If would like to use your own Client-ID it can be set with
+2024-05-18 11:29:13		    /set plugins.var.python.twitch.client_id (clientid)
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  Twitch Helix API now requires a OAuth token for any API calls. Your token has the match your ClientID
+2024-05-18 11:29:13		  One can be generated here that matches the default CleintID here:
+2024-05-18 11:29:13		    https://mumixam.github.io/weechat_twitch
+2024-05-18 11:29:13		    /set plugins.var.python.twitch.token (token from url)
+2024-05-18 11:29:13		
+2024-05-18 11:29:13		  This script also has whisper support that works like a standard query. "/query user"
+2024-05-18 11:29:13		
+2024-05-18 11:30:32		irc: server twitch has been deleted
+2024-05-18 11:30:47		irc: server added: twitch -> irc.twitch.tv/6697 (TLS: enabled)
+2024-05-18 11:31:00		Option changed: irc.server.twitch.capabilities = "twitch.tv/membership,twitch.tv/commands,twitch.tv/tags"  (default if null: "*")
+2024-05-18 11:31:57		Option changed: irc.server.twitch.nicks = "mcpeaps_HD"  (default if null: "${username},${username}2,${username}3,${username}4,${username}5")
+2024-05-18 11:32:13		Option changed: irc.server.twitch.password = "oauth:fqadlpyhhpzw2o3erpe2unxwk7fgaw"  (default if null: "")
+2024-05-18 11:33:55		Option changed: irc.server.twitch.password = "oauth:t9bcv09ok82d9tlmb7t3zw1ivnk7t3"  (default if null: "")
+2024-05-18 11:34:14		Option changed: plugins.var.python.twitch.token = "t9bcv09ok82d9tlmb7t3zw1ivnk7t3"
+2024-05-18 11:34:25		Option changed: plugins.var.python.twitch.client_id = "awtv6n371jb7uayyc4jaljochyjbfxs"
+2024-05-18 11:34:45		Options saved to sec.conf
+2024-05-18 11:34:45		Options saved to weechat.conf
+2024-05-18 11:34:45		Options saved to plugins.conf
+2024-05-18 11:34:45		Options saved to charset.conf
+2024-05-18 11:34:45		Options saved to logger.conf
+2024-05-18 11:34:45		Options saved to exec.conf
+2024-05-18 11:34:45		Options saved to trigger.conf
+2024-05-18 11:34:45		Options saved to spell.conf
+2024-05-18 11:34:45		Options saved to alias.conf
+2024-05-18 11:34:45		Options saved to buflist.conf
+2024-05-18 11:34:45		Options saved to fifo.conf
+2024-05-18 11:34:45		Options saved to typing.conf
+2024-05-18 11:34:45		Options saved to xfer.conf
+2024-05-18 11:34:45		Options saved to irc.conf
+2024-05-18 11:34:45		Options saved to relay.conf
+2024-05-18 11:34:45		Options saved to lua.conf
+2024-05-18 11:34:45		Options saved to perl.conf
+2024-05-18 11:34:45		Options saved to python.conf
+2024-05-18 11:34:45		Options saved to ruby.conf
+2024-05-18 11:34:45		Options saved to tcl.conf
+2024-05-18 11:34:45		Options saved to script.conf
+2024-05-18 11:34:45		Options saved to fset.conf
+2024-05-18 11:36:11		Option changed: plugins.var.python.twitch.ssl_verify = "off"
+2024-05-18 11:36:13		Options saved to sec.conf
+2024-05-18 11:36:13		Options saved to weechat.conf
+2024-05-18 11:36:13		Options saved to plugins.conf
+2024-05-18 11:36:13		Options saved to charset.conf
+2024-05-18 11:36:13		Options saved to logger.conf
+2024-05-18 11:36:13		Options saved to exec.conf
+2024-05-18 11:36:13		Options saved to trigger.conf
+2024-05-18 11:36:13		Options saved to spell.conf
+2024-05-18 11:36:13		Options saved to alias.conf
+2024-05-18 11:36:13		Options saved to buflist.conf
+2024-05-18 11:36:13		Options saved to fifo.conf
+2024-05-18 11:36:13		Options saved to typing.conf
+2024-05-18 11:36:13		Options saved to xfer.conf
+2024-05-18 11:36:13		Options saved to irc.conf
+2024-05-18 11:36:13		Options saved to relay.conf
+2024-05-18 11:36:13		Options saved to lua.conf
+2024-05-18 11:36:13		Options saved to perl.conf
+2024-05-18 11:36:13		Options saved to python.conf
+2024-05-18 11:36:13		Options saved to ruby.conf
+2024-05-18 11:36:13		Options saved to tcl.conf
+2024-05-18 11:36:13		Options saved to script.conf
+2024-05-18 11:36:13		Options saved to fset.conf
+2024-05-18 11:37:19		Option changed: plugins.var.python.twitch.ssl_verify = "on"
+2024-05-18 11:37:23		Options saved to sec.conf
+2024-05-18 11:37:23		Options saved to weechat.conf
+2024-05-18 11:37:23		Options saved to plugins.conf
+2024-05-18 11:37:23		Options saved to charset.conf
+2024-05-18 11:37:23		Options saved to logger.conf
+2024-05-18 11:37:23		Options saved to exec.conf
+2024-05-18 11:37:23		Options saved to trigger.conf
+2024-05-18 11:37:23		Options saved to spell.conf
+2024-05-18 11:37:23		Options saved to alias.conf
+2024-05-18 11:37:23		Options saved to buflist.conf
+2024-05-18 11:37:23		Options saved to fifo.conf
+2024-05-18 11:37:23		Options saved to typing.conf
+2024-05-18 11:37:23		Options saved to xfer.conf
+2024-05-18 11:37:23		Options saved to irc.conf
+2024-05-18 11:37:23		Options saved to relay.conf
+2024-05-18 11:37:23		Options saved to lua.conf
+2024-05-18 11:37:23		Options saved to perl.conf
+2024-05-18 11:37:23		Options saved to python.conf
+2024-05-18 11:37:23		Options saved to ruby.conf
+2024-05-18 11:37:23		Options saved to tcl.conf
+2024-05-18 11:37:23		Options saved to script.conf
+2024-05-18 11:37:23		Options saved to fset.conf
+2024-05-18 11:42:14	=!=	You can not write text in this buffer
+2024-05-18 11:42:36		Option changed: plugins.var.python.twitch.servers = "christitustech thejocraft_live mcpeaps_HD DebitorLP"
+2024-05-18 11:42:41		Options saved to sec.conf
+2024-05-18 11:42:41		Options saved to weechat.conf
+2024-05-18 11:42:41		Options saved to plugins.conf
+2024-05-18 11:42:41		Options saved to charset.conf
+2024-05-18 11:42:41		Options saved to logger.conf
+2024-05-18 11:42:41		Options saved to exec.conf
+2024-05-18 11:42:41		Options saved to trigger.conf
+2024-05-18 11:42:41		Options saved to spell.conf
+2024-05-18 11:42:41		Options saved to alias.conf
+2024-05-18 11:42:41		Options saved to buflist.conf
+2024-05-18 11:42:41		Options saved to fifo.conf
+2024-05-18 11:42:41		Options saved to typing.conf
+2024-05-18 11:42:41		Options saved to xfer.conf
+2024-05-18 11:42:41		Options saved to irc.conf
+2024-05-18 11:42:41		Options saved to relay.conf
+2024-05-18 11:42:41		Options saved to lua.conf
+2024-05-18 11:42:41		Options saved to perl.conf
+2024-05-18 11:42:41		Options saved to python.conf
+2024-05-18 11:42:41		Options saved to ruby.conf
+2024-05-18 11:42:41		Options saved to tcl.conf
+2024-05-18 11:42:41		Options saved to script.conf
+2024-05-18 11:42:41		Options saved to fset.conf
+2024-05-18 11:45:27		python: stdout/stderr (?): /Users/mahd/.local/share/weechat/python/autoload/twitch.py:351: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:45:27		python: stdout/stderr (?):   bn=tags['ban-reason'].replace('\s',' ')
+2024-05-18 11:45:27		python: stdout/stderr (?): /Users/mahd/.local/share/weechat/python/autoload/twitch.py:359: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:45:27		python: stdout/stderr (?):   bn=tags['ban-reason'].replace('\s',' ')
+2024-05-18 11:45:27		python: stdout/stderr (?): /Users/mahd/.local/share/weechat/python/autoload/twitch.py:456: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:45:27		python: stdout/stderr (?):   msg = tags['system-msg'].replace('\s',' ')
+2024-05-18 11:45:27		python scripts loaded: twitch
+2024-05-18 11:45:27		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 11:45:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 11:47:04		python: stdout/stderr (?): /Users/mahd/DEV/dotfiles/.local/share/weechat/python/autoload/twitch.py:351: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:47:04		python: stdout/stderr (?):   bn=tags['ban-reason'].replace('\s',' ')
+2024-05-18 11:47:04		python: stdout/stderr (?): /Users/mahd/DEV/dotfiles/.local/share/weechat/python/autoload/twitch.py:359: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:47:04		python: stdout/stderr (?):   bn=tags['ban-reason'].replace('\s',' ')
+2024-05-18 11:47:04		python: stdout/stderr (?): /Users/mahd/DEV/dotfiles/.local/share/weechat/python/autoload/twitch.py:456: SyntaxWarning: invalid escape sequence '\s'
+2024-05-18 11:47:04		python: stdout/stderr (?):   msg = tags['system-msg'].replace('\s',' ')
+2024-05-18 11:47:04		python scripts loaded: twitch
+2024-05-18 11:47:04		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 11:47:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 11:48:34		Option changed: plugins.var.python.twitch.debug = "on"
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		[script]  /script  list [-o|-ol|-i|-il]
+2024-05-18 11:51:59		                   search <text>
+2024-05-18 11:51:59		                   show <script>
+2024-05-18 11:51:59		                   load|unload|reload <script> [<script>...]
+2024-05-18 11:51:59		                   autoload|noautoload|toggleautoload <script> [<script>...]
+2024-05-18 11:51:59		                   install|remove|installremove|hold [-q] <script> [<script>...]
+2024-05-18 11:51:59		                   upgrade
+2024-05-18 11:51:59		                   update
+2024-05-18 11:51:59		                   -up|-down [<number>]
+2024-05-18 11:51:59		                   -go <line>|end
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		WeeChat script manager
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		          list: list loaded scripts (all languages)
+2024-05-18 11:51:59		            -o: send list of loaded scripts to buffer (string in English)
+2024-05-18 11:51:59		           -ol: send list of loaded scripts to buffer (translated string)
+2024-05-18 11:51:59		            -i: copy list of loaded scripts in command line (for sending to buffer) (string in English)
+2024-05-18 11:51:59		           -il: copy list of loaded scripts in command line (for sending to buffer) (translated string)
+2024-05-18 11:51:59		        search: search scripts by tags, language (python, perl, ...), filename extension (py, pl, ...) or text; result is displayed on scripts buffer
+2024-05-18 11:51:59		          show: show detailed info about a script
+2024-05-18 11:51:59		          load: load script(s)
+2024-05-18 11:51:59		        unload: unload script(s)
+2024-05-18 11:51:59		        reload: reload script(s)
+2024-05-18 11:51:59		      autoload: autoload the script
+2024-05-18 11:51:59		    noautoload: do not autoload the script
+2024-05-18 11:51:59		toggleautoload: toggle autoload
+2024-05-18 11:51:59		       install: install/upgrade script(s)
+2024-05-18 11:51:59		        remove: remove script(s)
+2024-05-18 11:51:59		 installremove: install or remove script(s), depending on current state
+2024-05-18 11:51:59		          hold: hold/unhold script(s) (a script held will not be upgraded any more and cannot be removed)
+2024-05-18 11:51:59		            -q: quiet mode: do not display messages
+2024-05-18 11:51:59		       upgrade: upgrade all installed scripts which are obsolete (new version available)
+2024-05-18 11:51:59		        update: update local scripts cache
+2024-05-18 11:51:59		           -up: move the selected line up by "number" lines
+2024-05-18 11:51:59		         -down: move the selected line down by "number" lines
+2024-05-18 11:51:59		           -go: select a line by number, first line number is 0 ("end" to select the last line)
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		Without argument, this command opens a buffer with list of scripts.
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		On script buffer, the possible status for each script are:
+2024-05-18 11:51:59		  `*`: popular script
+2024-05-18 11:51:59		  `i`: installed
+2024-05-18 11:51:59		  `a`: autoloaded
+2024-05-18 11:51:59		  `H`: held
+2024-05-18 11:51:59		  `r`: running (loaded)
+2024-05-18 11:51:59		  `N`: obsolete (new version available)
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		In output of /script list, this additional status can be displayed:
+2024-05-18 11:51:59		  `?`: unknown script (can not be downloaded/updated)
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		In input of script buffer, word(s) are used to filter scripts on description, tags, ...). The input "*" removes the filter.
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		For keys, input and mouse actions on the buffer, see key bindings in User's guide.
+2024-05-18 11:51:59		
+2024-05-18 11:51:59		Examples:
+2024-05-18 11:51:59		  /script search url
+2024-05-18 11:51:59		  /script install go.py urlserver.py
+2024-05-18 11:51:59		  /script remove go.py
+2024-05-18 11:51:59		  /script hold urlserver.py
+2024-05-18 11:51:59		  /script reload urlserver
+2024-05-18 11:51:59		  /script upgrade
+2024-05-18 11:52:27		script: script "twitch" not found
+2024-05-18 11:52:32		python: unloading script "twitch"
+2024-05-18 11:52:32		python: script removed: /Users/mahd/DEV/dotfiles/.local/share/weechat/python/autoload/twitch.py
+2024-05-18 11:52:32		python: script removed: /Users/mahd/DEV/dotfiles/.local/share/weechat/python/twitch.py
+2024-05-18 11:53:35		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 11:53:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 11:54:29		Options saved to sec.conf
+2024-05-18 11:54:29		Options saved to weechat.conf
+2024-05-18 11:54:29		Options saved to plugins.conf
+2024-05-18 11:54:29		Options saved to charset.conf
+2024-05-18 11:54:29		Options saved to logger.conf
+2024-05-18 11:54:29		Options saved to exec.conf
+2024-05-18 11:54:29		Options saved to trigger.conf
+2024-05-18 11:54:29		Options saved to spell.conf
+2024-05-18 11:54:29		Options saved to alias.conf
+2024-05-18 11:54:29		Options saved to buflist.conf
+2024-05-18 11:54:29		Options saved to fifo.conf
+2024-05-18 11:54:29		Options saved to typing.conf
+2024-05-18 11:54:29		Options saved to xfer.conf
+2024-05-18 11:54:29		Options saved to irc.conf
+2024-05-18 11:54:29		Options saved to relay.conf
+2024-05-18 11:54:29		Options saved to lua.conf
+2024-05-18 11:54:29		Options saved to perl.conf
+2024-05-18 11:54:29		Options saved to python.conf
+2024-05-18 11:54:29		Options saved to ruby.conf
+2024-05-18 11:54:29		Options saved to tcl.conf
+2024-05-18 11:54:29		Options saved to script.conf
+2024-05-18 11:54:29		Options saved to fset.conf
+2024-05-18 11:55:20	=!=	Cannot create file "/Users/mahd/.config/weechat/plugins.conf.weechattmp"
+2024-05-18 11:55:20	=!=	Error writing configuration file "/Users/mahd/.config/weechat/plugins.conf"
+2024-05-18 11:55:20	=!=	Cannot create file "/Users/mahd/.config/weechat/ruby.conf.weechattmp"
+2024-05-18 11:55:20	=!=	Error writing configuration file "/Users/mahd/.config/weechat/ruby.conf"
+2024-05-18 11:55:41		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 11:55:41		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 11:58:37		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 11:58:37		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 11:59:35		Passphrase added
+2024-05-18 12:00:38		Secured data "twitch_password" set
+2024-05-18 12:00:38		Options saved to sec.conf
+2024-05-18 12:01:20	=!=	irc: server "twitch" already exists, can't add it!
+2024-05-18 12:01:41		irc: server twitch has been deleted
+2024-05-18 12:01:45		irc: server added: twitch -> irc.twitch.tv/6697 (TLS: enabled)
+2024-05-18 12:02:13		Option changed: irc.server.twitch.password = "${sec.data.twitch_password}"  (default if null: "")
+2024-05-18 12:02:29		Options saved to irc.conf
+2024-05-18 12:02:34		Options saved to sec.conf
+2024-05-18 12:02:34		Options saved to weechat.conf
+2024-05-18 12:02:34		Options saved to plugins.conf
+2024-05-18 12:02:34		Options saved to charset.conf
+2024-05-18 12:02:34		Options saved to logger.conf
+2024-05-18 12:02:34		Options saved to exec.conf
+2024-05-18 12:02:34		Options saved to trigger.conf
+2024-05-18 12:02:34		Options saved to spell.conf
+2024-05-18 12:02:34		Options saved to alias.conf
+2024-05-18 12:02:34		Options saved to buflist.conf
+2024-05-18 12:02:34		Options saved to fifo.conf
+2024-05-18 12:02:34		Options saved to typing.conf
+2024-05-18 12:02:34		Options saved to xfer.conf
+2024-05-18 12:02:34		Options saved to irc.conf
+2024-05-18 12:02:34		Options saved to relay.conf
+2024-05-18 12:02:34		Options saved to lua.conf
+2024-05-18 12:02:34		Options saved to perl.conf
+2024-05-18 12:02:34		Options saved to python.conf
+2024-05-18 12:02:34		Options saved to ruby.conf
+2024-05-18 12:02:34		Options saved to tcl.conf
+2024-05-18 12:02:34		Options saved to script.conf
+2024-05-18 12:02:34		Options saved to fset.conf
+2024-05-18 12:04:03		
+2024-05-18 12:04:03		Buffers list:
+2024-05-18 12:04:03		  [1] core.weechat (notify: all)
+2024-05-18 12:04:03		  [1] irc.server.twitch (notify: all)
+2024-05-18 12:04:20		
+2024-05-18 12:04:20		[core]  /buffer  list
+2024-05-18 12:04:20		                 add [-free] [-switch] <name>
+2024-05-18 12:04:20		                 clear [<number>|<name>|-merged|-all [<number>|<name>...]]
+2024-05-18 12:04:20		                 move <number>|-|+
+2024-05-18 12:04:20		                 swap <number1>|<name1> [<number2>|<name2>]
+2024-05-18 12:04:20		                 cycle <number>|<name> [<number>|<name>...]
+2024-05-18 12:04:20		                 merge <number>|<name>
+2024-05-18 12:04:20		                 unmerge [<number>|-all]
+2024-05-18 12:04:20		                 hide [<number>|<name>|-all [<number>|<name>...]]
+2024-05-18 12:04:20		                 unhide [<number>|<name>|-all [<number>|<name>...]]
+2024-05-18 12:04:20		                 switch [-previous]
+2024-05-18 12:04:20		                 zoom
+2024-05-18 12:04:20		                 renumber [<number1> [<number2> [<start>]]]
+2024-05-18 12:04:20		                 close [<n1>[-<n2>]|<name>...]
+2024-05-18 12:04:20		                 notify [<level>]
+2024-05-18 12:04:20		                 listvar [<number>|<name>]
+2024-05-18 12:04:20		                 setvar <name> [<value>]
+2024-05-18 12:04:20		                 delvar <name>
+2024-05-18 12:04:20		                 set <property> [<value>]
+2024-05-18 12:04:20		                 setauto <property> [<value>]
+2024-05-18 12:04:20		                 get <property>
+2024-05-18 12:04:20		                 jump smart|last_displayed|prev_visited|next_visited
+2024-05-18 12:04:20		                 <number>|-|+|<name>
+2024-05-18 12:04:20		
+2024-05-18 12:04:20		manage buffers
+2024-05-18 12:04:20		
+2024-05-18 12:04:20		    list: list buffers (without argument, this list is displayed)
+2024-05-18 12:04:20		     add: add a new buffer (it can be closed with "/buffer close" or input "q")
+2024-05-18 12:04:20		   clear: clear buffer content (number for a buffer, "-merged" for merged buffers, "-all" for all buffers, or nothing for current buffer)
+2024-05-18 12:04:20		    move: move buffer in the list (may be relative, for example -1); "-" = move to first buffer number, "+" = move to last buffer number + 1
+2024-05-18 12:04:20		    swap: swap two buffers (swap with current buffer if only one number/name given)
+2024-05-18 12:04:20		   cycle: jump loop between a list of buffers
+2024-05-18 12:04:20		   merge: merge current buffer to another buffer (chat area will be mix of both buffers); by default ctrl-x switches between merged buffers
+2024-05-18 12:04:20		 unmerge: unmerge buffer from other buffers which have same number
+2024-05-18 12:04:20		    hide: hide the buffer
+2024-05-18 12:04:20		  unhide: unhide the buffer
+2024-05-18 12:04:20		  switch: switch to next merged buffer (or to previous buffer with "-previous")
+2024-05-18 12:04:20		    zoom: zoom on merged buffer
+2024-05-18 12:04:20		renumber: renumber buffers (works only if option weechat.look.buffer_auto_renumber is off)
+2024-05-18 12:04:20		   close: close buffer (number/range or name is optional)
+2024-05-18 12:04:20		  notify: display or set notify level for current buffer: this level determines whether buffer will be added to hotlist or not:
+2024-05-18 12:04:20		          none: never
+2024-05-18 12:04:20		          highlight: for highlights only
+2024-05-18 12:04:20		          message: for messages from users + highlights
+2024-05-18 12:04:20		          all: for all messages
+2024-05-18 12:04:20		          reset: reset to default value (all)
+2024-05-18 12:04:20		 listvar: display local variables in a buffer
+2024-05-18 12:04:20		  setvar: set a local variable in the current buffer
+2024-05-18 12:04:20		  delvar: delete a local variable from the current buffer
+2024-05-18 12:04:20		     set: set a property in the current buffer
+2024-05-18 12:04:20		 setauto: like "set" and also define option "weechat.buffer.<name>.<property>" so that the property is saved in configuration and applied each time this buffer is opened
+2024-05-18 12:04:20		     get: display a property of current buffer
+2024-05-18 12:04:20		    jump: jump to another buffer:
+2024-05-18 12:04:20		          smart: next buffer with activity
+2024-05-18 12:04:20		          last_displayed: last buffer displayed (before last jump to a buffer)
+2024-05-18 12:04:20		          prev_visited: previously visited buffer
+2024-05-18 12:04:20		          next_visited: jump to next visited buffer
+2024-05-18 12:04:20		  number: jump to buffer by number, possible prefix:
+2024-05-18 12:04:20		          "+": relative jump, add number to current
+2024-05-18 12:04:20		          "-": relative jump, sub number to current
+2024-05-18 12:04:20		          "*": jump to number, using option "weechat.look.jump_current_to_previous_buffer"
+2024-05-18 12:04:20		       -: jump to first buffer number
+2024-05-18 12:04:20		       +: jump to last buffer number
+2024-05-18 12:04:20		    name: jump to buffer by (partial) name
+2024-05-18 12:04:20		
+2024-05-18 12:04:20		Examples:
+2024-05-18 12:04:20		  /buffer move 5
+2024-05-18 12:04:20		  /buffer swap 1 3
+2024-05-18 12:04:20		  /buffer swap #weechat
+2024-05-18 12:04:20		  /buffer cycle #chan1 #chan2 #chan3
+2024-05-18 12:04:20		  /buffer merge 1
+2024-05-18 12:04:20		  /buffer merge #weechat
+2024-05-18 12:04:20		  /buffer close 5-7
+2024-05-18 12:04:20		  /buffer #weechat
+2024-05-18 12:04:20		  /buffer +1
+2024-05-18 12:04:20		  /buffer +
+2024-05-18 12:04:39	=!=	Buffer "#weechat" not found
+2024-05-18 12:05:20	=!=	Buffer "jump" not found
+2024-05-18 12:05:28	=!=	Error with command "/buffer jump 2" (help on command: /help buffer)
+2024-05-18 12:06:17		Secured data "twitch_password" set
+2024-05-18 12:06:17		Options saved to sec.conf
+2024-05-18 12:06:28		Options saved to sec.conf
+2024-05-18 12:06:28		Options saved to weechat.conf
+2024-05-18 12:06:28		Options saved to plugins.conf
+2024-05-18 12:06:28		Options saved to charset.conf
+2024-05-18 12:06:28		Options saved to logger.conf
+2024-05-18 12:06:28		Options saved to exec.conf
+2024-05-18 12:06:28		Options saved to trigger.conf
+2024-05-18 12:06:28		Options saved to spell.conf
+2024-05-18 12:06:28		Options saved to alias.conf
+2024-05-18 12:06:28		Options saved to buflist.conf
+2024-05-18 12:06:28		Options saved to fifo.conf
+2024-05-18 12:06:28		Options saved to typing.conf
+2024-05-18 12:06:28		Options saved to xfer.conf
+2024-05-18 12:06:28		Options saved to irc.conf
+2024-05-18 12:06:28		Options saved to relay.conf
+2024-05-18 12:06:28		Options saved to lua.conf
+2024-05-18 12:06:28		Options saved to perl.conf
+2024-05-18 12:06:28		Options saved to python.conf
+2024-05-18 12:06:28		Options saved to ruby.conf
+2024-05-18 12:06:28		Options saved to tcl.conf
+2024-05-18 12:06:28		Options saved to script.conf
+2024-05-18 12:06:28		Options saved to fset.conf
+2024-05-18 12:10:22		Option changed: irc.server.twitch.tls_verify = off  (default if null: on)
+2024-05-18 12:10:29		Options saved to sec.conf
+2024-05-18 12:10:29		Options saved to weechat.conf
+2024-05-18 12:10:29		Options saved to plugins.conf
+2024-05-18 12:10:29		Options saved to charset.conf
+2024-05-18 12:10:29		Options saved to logger.conf
+2024-05-18 12:10:29		Options saved to exec.conf
+2024-05-18 12:10:29		Options saved to trigger.conf
+2024-05-18 12:10:29		Options saved to spell.conf
+2024-05-18 12:10:29		Options saved to alias.conf
+2024-05-18 12:10:29		Options saved to buflist.conf
+2024-05-18 12:10:29		Options saved to fifo.conf
+2024-05-18 12:10:29		Options saved to typing.conf
+2024-05-18 12:10:29		Options saved to xfer.conf
+2024-05-18 12:10:29		Options saved to irc.conf
+2024-05-18 12:10:29		Options saved to relay.conf
+2024-05-18 12:10:29		Options saved to lua.conf
+2024-05-18 12:10:29		Options saved to perl.conf
+2024-05-18 12:10:29		Options saved to python.conf
+2024-05-18 12:10:29		Options saved to ruby.conf
+2024-05-18 12:10:29		Options saved to tcl.conf
+2024-05-18 12:10:29		Options saved to script.conf
+2024-05-18 12:10:29		Options saved to fset.conf
+2024-05-18 12:15:41		Option changed: irc.server.twitch.autojoin = "#christitustech,#thejocraft_live,#mcpeaps_HD,#DebitorLP"  (default if null: "")
+2024-05-18 12:16:02		Option changed: irc.server.twitch.autojoin_dynamic = on  (default if null: off)
+2024-05-18 12:16:15		Option changed: irc.server.twitch.command = "/quote CAP REQ :twitch.tv/membership"  (default if null: "")
+2024-05-18 12:16:28		Options saved to sec.conf
+2024-05-18 12:16:28		Options saved to weechat.conf
+2024-05-18 12:16:28		Options saved to plugins.conf
+2024-05-18 12:16:28		Options saved to charset.conf
+2024-05-18 12:16:28		Options saved to logger.conf
+2024-05-18 12:16:28		Options saved to exec.conf
+2024-05-18 12:16:28		Options saved to trigger.conf
+2024-05-18 12:16:28		Options saved to spell.conf
+2024-05-18 12:16:28		Options saved to alias.conf
+2024-05-18 12:16:28		Options saved to buflist.conf
+2024-05-18 12:16:28		Options saved to fifo.conf
+2024-05-18 12:16:28		Options saved to typing.conf
+2024-05-18 12:16:28		Options saved to xfer.conf
+2024-05-18 12:16:28		Options saved to irc.conf
+2024-05-18 12:16:28		Options saved to relay.conf
+2024-05-18 12:16:28		Options saved to lua.conf
+2024-05-18 12:16:28		Options saved to perl.conf
+2024-05-18 12:16:28		Options saved to python.conf
+2024-05-18 12:16:28		Options saved to ruby.conf
+2024-05-18 12:16:28		Options saved to tcl.conf
+2024-05-18 12:16:28		Options saved to script.conf
+2024-05-18 12:16:28		Options saved to fset.conf
+2024-05-18 12:16:57	=!=	Error with command "/buffer jump 2" (help on command: /help buffer)
+2024-05-18 12:17:28	=!=	Error with command "/buffer jump #christitustech" (help on command: /help buffer)
+2024-05-18 12:21:44		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 12:21:44		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 12:24:07		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 12:24:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 12:30:22	=!=	irc: warning: invalid autojoin value "= "#christitustech,#thejocraft_live,#mcpeaps_HD,#DebitorLP,#pietsmiet,#pietsmiettv"", see /help irc.server.twitch.autojoin
+2024-05-18 12:30:22		Option changed: irc.server.twitch.autojoin = "= "#christitustech,#thejocraft_live,#mcpeaps_HD,#DebitorLP,#pietsmiet,#pietsmiettv""  (default if null: "")
+2024-05-18 12:30:29		Options saved to sec.conf
+2024-05-18 12:30:29		Options saved to weechat.conf
+2024-05-18 12:30:29		Options saved to plugins.conf
+2024-05-18 12:30:29		Options saved to charset.conf
+2024-05-18 12:30:29		Options saved to logger.conf
+2024-05-18 12:30:29		Options saved to exec.conf
+2024-05-18 12:30:29		Options saved to trigger.conf
+2024-05-18 12:30:29		Options saved to spell.conf
+2024-05-18 12:30:29		Options saved to alias.conf
+2024-05-18 12:30:29		Options saved to buflist.conf
+2024-05-18 12:30:29		Options saved to fifo.conf
+2024-05-18 12:30:29		Options saved to typing.conf
+2024-05-18 12:30:29		Options saved to xfer.conf
+2024-05-18 12:30:29		Options saved to irc.conf
+2024-05-18 12:30:29		Options saved to relay.conf
+2024-05-18 12:30:29		Options saved to lua.conf
+2024-05-18 12:30:29		Options saved to perl.conf
+2024-05-18 12:30:29		Options saved to python.conf
+2024-05-18 12:30:29		Options saved to ruby.conf
+2024-05-18 12:30:29		Options saved to tcl.conf
+2024-05-18 12:30:29		Options saved to script.conf
+2024-05-18 12:30:29		Options saved to fset.conf
+2024-05-18 12:31:10		
+2024-05-18 12:31:10		[alias]  /alias  list [<name>]
+2024-05-18 12:31:10		                 add <name> [<command>[;<command>...]]
+2024-05-18 12:31:10		                 addcompletion <completion> <name> [<command>[;<command>...]]
+2024-05-18 12:31:10		                 del <name>|<mask> [<name>|<mask>...]
+2024-05-18 12:31:10		                 rename <name> <new_name>
+2024-05-18 12:31:10		                 missing
+2024-05-18 12:31:10		
+2024-05-18 12:31:10		list, add or remove command aliases
+2024-05-18 12:31:10		
+2024-05-18 12:31:10		         list: list aliases (without argument, this list is displayed)
+2024-05-18 12:31:10		          add: add an alias
+2024-05-18 12:31:10		         name: name of alias
+2024-05-18 12:31:10		addcompletion: add an alias with a custom completion
+2024-05-18 12:31:10		          del: delete aliases
+2024-05-18 12:31:10		         mask: name where wildcard "*" is allowed
+2024-05-18 12:31:10		       rename: rename an alias
+2024-05-18 12:31:10		      missing: add missing aliases (using default aliases)
+2024-05-18 12:31:10		   completion: completion for alias: by default completion is done with target command (you can use "%%command" to use the completion of an existing command)
+2024-05-18 12:31:10		      command: command name with arguments (many commands can be separated by semicolons)
+2024-05-18 12:31:10		
+2024-05-18 12:31:10		In command, special variables are replaced:
+2024-05-18 12:31:10		  $n: argument "n" (between 1 and 9)
+2024-05-18 12:31:10		  $-m: arguments from 1 to "m"
+2024-05-18 12:31:10		  $n-: arguments from "n" to last
+2024-05-18 12:31:10		  $n-m: arguments from "n" to "m"
+2024-05-18 12:31:10		  $*: all arguments
+2024-05-18 12:31:10		  $&: all arguments, with " replaced by \"
+2024-05-18 12:31:10		  $~: last argument
+2024-05-18 12:31:10		  $var: where "var" is a local variable of buffer (see /buffer listvar), examples: $nick, $channel, $server, $plugin, $name
+2024-05-18 12:31:10		
+2024-05-18 12:31:10		Examples:
+2024-05-18 12:31:10		  /alias add split /window splith
+2024-05-18 12:31:10		  /alias add hello /allchan -exclude=#weechat hello
+2024-05-18 12:31:10		  /alias rename hello Hello
+2024-05-18 12:31:10		  /alias addcompletion %%sajoin forcejoin /quote forcejoin
+2024-05-18 12:37:37		Alias "autoleve" => "part #christitustech; part #thejocraft_live; part #mcpeaps_HD; part #DebitorLP; part #pietsmiet; part #pietsmiettv; buffer close twitch" created
+2024-05-18 12:40:39		Alias "leve" => "/part $1" created
+2024-05-18 12:41:17		Alias "autoleve" removed
+2024-05-18 12:42:39		Alias "autoleve" => "/part #christitustech; /part #thejocraft_live; /part #mcpeaps_HD; /part #DebitorLP; /part #pietsmiet; /part #pietsmiettv; /buffer close twitch" created
+2024-05-18 12:43:02		Options saved to sec.conf
+2024-05-18 12:43:02		Options saved to weechat.conf
+2024-05-18 12:43:02		Options saved to plugins.conf
+2024-05-18 12:43:02		Options saved to charset.conf
+2024-05-18 12:43:02		Options saved to logger.conf
+2024-05-18 12:43:02		Options saved to exec.conf
+2024-05-18 12:43:02		Options saved to trigger.conf
+2024-05-18 12:43:02		Options saved to spell.conf
+2024-05-18 12:43:02		Options saved to alias.conf
+2024-05-18 12:43:02		Options saved to buflist.conf
+2024-05-18 12:43:02		Options saved to fifo.conf
+2024-05-18 12:43:02		Options saved to typing.conf
+2024-05-18 12:43:02		Options saved to xfer.conf
+2024-05-18 12:43:02		Options saved to irc.conf
+2024-05-18 12:43:02		Options saved to relay.conf
+2024-05-18 12:43:02		Options saved to lua.conf
+2024-05-18 12:43:02		Options saved to perl.conf
+2024-05-18 12:43:02		Options saved to python.conf
+2024-05-18 12:43:02		Options saved to ruby.conf
+2024-05-18 12:43:02		Options saved to tcl.conf
+2024-05-18 12:43:02		Options saved to script.conf
+2024-05-18 12:43:02		Options saved to fset.conf
+2024-05-18 12:56:36		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 12:56:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 12:57:08	=!=	Unknown command "autoleave" (type /help for help), commands with similar name: autoleve, leave, t, v
+2024-05-18 12:57:45	=!=	Unknown command "autoleave" (type /help for help), commands with similar name: autoleve, leave, t, v
+2024-05-18 12:57:58	=!=	Unknown command "autoleave" (type /help for help), commands with similar name: autoleve, leave, t, v
+2024-05-18 13:00:44		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 13:00:44		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 13:01:07	=!=	Unknown command "autoleave" (type /help for help), commands with similar name: autoleve, leave, t, v
+2024-05-18 13:01:20		
+2024-05-18 13:01:20		[alias]  /leave  
+2024-05-18 13:01:20		
+2024-05-18 13:01:20		part #$1
+2024-05-18 13:01:20		
+2024-05-18 13:01:20		
+2024-05-18 13:03:42		Alias "autoleve" has been renamed to "autoleave"
+2024-05-18 13:04:12		Alias "twitch" => "connect twitch" created
+2024-05-18 13:04:21		Options saved to sec.conf
+2024-05-18 13:04:21		Options saved to weechat.conf
+2024-05-18 13:04:21		Options saved to plugins.conf
+2024-05-18 13:04:21		Options saved to charset.conf
+2024-05-18 13:04:21		Options saved to logger.conf
+2024-05-18 13:04:21		Options saved to exec.conf
+2024-05-18 13:04:21		Options saved to trigger.conf
+2024-05-18 13:04:21		Options saved to spell.conf
+2024-05-18 13:04:21		Options saved to alias.conf
+2024-05-18 13:04:21		Options saved to buflist.conf
+2024-05-18 13:04:21		Options saved to fifo.conf
+2024-05-18 13:04:21		Options saved to typing.conf
+2024-05-18 13:04:21		Options saved to xfer.conf
+2024-05-18 13:04:21		Options saved to irc.conf
+2024-05-18 13:04:21		Options saved to relay.conf
+2024-05-18 13:04:21		Options saved to lua.conf
+2024-05-18 13:04:21		Options saved to perl.conf
+2024-05-18 13:04:21		Options saved to python.conf
+2024-05-18 13:04:21		Options saved to ruby.conf
+2024-05-18 13:04:21		Options saved to tcl.conf
+2024-05-18 13:04:21		Options saved to script.conf
+2024-05-18 13:04:21		Options saved to fset.conf
+2024-05-18 13:05:18		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 13:05:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 13:07:00		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 13:07:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 13:09:07		
+2024-05-18 13:09:07		Option "irc.server.twitch.autorejoin":
+2024-05-18 13:09:07		  description: automatically rejoin channels after kick; you can define a buffer local variable on a channel to override this value (name of variable: "autorejoin", value: "on" or "off")
+2024-05-18 13:09:07		  type: boolean
+2024-05-18 13:09:07		  values: on, off
+2024-05-18 13:09:07		  default value: (undefined)
+2024-05-18 13:09:07		  current value: on
+2024-05-18 13:09:07		  undefined value allowed (null)
+2024-05-18 13:12:29		Options saved to sec.conf
+2024-05-18 13:12:29		Options saved to weechat.conf
+2024-05-18 13:12:29		Options saved to plugins.conf
+2024-05-18 13:12:29		Options saved to charset.conf
+2024-05-18 13:12:29		Options saved to logger.conf
+2024-05-18 13:12:29		Options saved to exec.conf
+2024-05-18 13:12:29		Options saved to trigger.conf
+2024-05-18 13:12:29		Options saved to spell.conf
+2024-05-18 13:12:29		Options saved to alias.conf
+2024-05-18 13:12:29		Options saved to buflist.conf
+2024-05-18 13:12:29		Options saved to fifo.conf
+2024-05-18 13:12:29		Options saved to typing.conf
+2024-05-18 13:12:29		Options saved to xfer.conf
+2024-05-18 13:12:29		Options saved to irc.conf
+2024-05-18 13:12:29		Options saved to relay.conf
+2024-05-18 13:12:29		Options saved to lua.conf
+2024-05-18 13:12:29		Options saved to perl.conf
+2024-05-18 13:12:29		Options saved to python.conf
+2024-05-18 13:12:29		Options saved to ruby.conf
+2024-05-18 13:12:29		Options saved to tcl.conf
+2024-05-18 13:12:29		Options saved to script.conf
+2024-05-18 13:12:29		Options saved to fset.conf
+2024-05-18 13:13:24		Option changed: irc.server.twitch.autojoin = "#christitustech,#thejocraft_live,#mcpeaps_HD,#DebitorLP,#pietsmiet,#pietsmiettv"  (default if null: "")
+2024-05-18 13:13:31		Options saved to sec.conf
+2024-05-18 13:13:31		Options saved to weechat.conf
+2024-05-18 13:13:31		Options saved to plugins.conf
+2024-05-18 13:13:31		Options saved to charset.conf
+2024-05-18 13:13:31		Options saved to logger.conf
+2024-05-18 13:13:31		Options saved to exec.conf
+2024-05-18 13:13:31		Options saved to trigger.conf
+2024-05-18 13:13:31		Options saved to spell.conf
+2024-05-18 13:13:31		Options saved to alias.conf
+2024-05-18 13:13:31		Options saved to buflist.conf
+2024-05-18 13:13:31		Options saved to fifo.conf
+2024-05-18 13:13:31		Options saved to typing.conf
+2024-05-18 13:13:31		Options saved to xfer.conf
+2024-05-18 13:13:31		Options saved to irc.conf
+2024-05-18 13:13:31		Options saved to relay.conf
+2024-05-18 13:13:31		Options saved to lua.conf
+2024-05-18 13:13:31		Options saved to perl.conf
+2024-05-18 13:13:31		Options saved to python.conf
+2024-05-18 13:13:31		Options saved to ruby.conf
+2024-05-18 13:13:31		Options saved to tcl.conf
+2024-05-18 13:13:31		Options saved to script.conf
+2024-05-18 13:13:31		Options saved to fset.conf
+2024-05-18 13:15:02		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 13:15:02		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 13:16:53		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 13:16:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
+2024-05-18 13:19:03		script: 312 scripts for WeeChat 4.2.2
+2024-05-18 13:19:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, ruby, script, spell, tcl, trigger, typing, xfer
