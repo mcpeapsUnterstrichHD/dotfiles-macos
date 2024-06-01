@@ -45,32 +45,54 @@
 |3,1,36,0,1,0,1709297489,"#"
 
 # File marks:
-'0  1099  0  ~/.config/kitty/kitty.conf
-|4,48,1099,0,1713940845,"~/.config/kitty/kitty.conf"
-'1  362  0  ~/.zshrc
-|4,49,362,0,1712560622,"~/.zshrc"
-'2  25  0  ~/.zshrc
-|4,50,25,0,1709297526,"~/.zshrc"
+'0  189  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
+|4,48,189,0,1717278902,"~/DEV/dotfiles/.config/kitty/kitty.conf"
+'1  1099  0  ~/.config/kitty/kitty.conf
+|4,49,1099,0,1713940845,"~/.config/kitty/kitty.conf"
+'2  362  0  ~/.zshrc
+|4,50,362,0,1712560622,"~/.zshrc"
 '3  25  0  ~/.zshrc
 |4,51,25,0,1709297526,"~/.zshrc"
-'4  239  0  ~/.tmux.conf.local
-|4,52,239,0,1700559960,"~/.tmux.conf.local"
-'5  2  0  /usr/share/vim/vim90/doc/help.txt
-|4,53,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+'4  25  0  ~/.zshrc
+|4,52,25,0,1709297526,"~/.zshrc"
+'5  239  0  ~/.tmux.conf.local
+|4,53,239,0,1700559960,"~/.tmux.conf.local"
+'6  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,54,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
 
 # Jumplist (newest first):
+-'  189  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
+|4,39,189,0,1717278902,"~/DEV/dotfiles/.config/kitty/kitty.conf"
+-'  1  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
+|4,39,1,0,1717278847,"~/DEV/dotfiles/.config/kitty/kitty.conf"
 -'  1099  0  ~/.config/kitty/kitty.conf
 |4,39,1099,0,1713940845,"~/.config/kitty/kitty.conf"
+-'  1099  0  ~/.config/kitty/kitty.conf
+|4,39,1099,0,1713940845,"~/.config/kitty/kitty.conf"
+-'  1  0  ~/.config/kitty/kitty.conf
+|4,39,1,0,1713940815,"~/.config/kitty/kitty.conf"
 -'  1  0  ~/.config/kitty/kitty.conf
 |4,39,1,0,1713940815,"~/.config/kitty/kitty.conf"
 -'  362  0  ~/.zshrc
 |4,39,362,0,1712560622,"~/.zshrc"
 -'  362  0  ~/.zshrc
 |4,39,362,0,1712560622,"~/.zshrc"
+-'  362  0  ~/.zshrc
+|4,39,362,0,1712560622,"~/.zshrc"
+-'  362  0  ~/.zshrc
+|4,39,362,0,1712560622,"~/.zshrc"
 -'  353  0  ~/.zshrc
 |4,39,353,0,1712560594,"~/.zshrc"
 -'  353  0  ~/.zshrc
 |4,39,353,0,1712560594,"~/.zshrc"
+-'  353  0  ~/.zshrc
+|4,39,353,0,1712560594,"~/.zshrc"
+-'  353  0  ~/.zshrc
+|4,39,353,0,1712560594,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1712560561,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1712560561,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1712560561,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -83,6 +105,18 @@
 |4,39,25,0,1709297526,"~/.zshrc"
 -'  25  0  ~/.zshrc
 |4,39,25,0,1709297526,"~/.zshrc"
+-'  25  0  ~/.zshrc
+|4,39,25,0,1709297526,"~/.zshrc"
+-'  25  0  ~/.zshrc
+|4,39,25,0,1709297526,"~/.zshrc"
+-'  25  0  ~/.zshrc
+|4,39,25,0,1709297526,"~/.zshrc"
+-'  25  0  ~/.zshrc
+|4,39,25,0,1709297526,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1709297459,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1709297459,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1709297459,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -103,6 +137,38 @@
 |4,39,239,0,1700559960,"~/.tmux.conf.local"
 -'  239  0  ~/.tmux.conf.local
 |4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  239  0  ~/.tmux.conf.local
+|4,39,239,0,1700559960,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
+-'  1  0  ~/.tmux.conf.local
+|4,39,1,0,1700559858,"~/.tmux.conf.local"
 -'  1  0  ~/.tmux.conf.local
 |4,39,1,0,1700559858,"~/.tmux.conf.local"
 -'  1  0  ~/.tmux.conf.local
@@ -151,6 +217,38 @@
 |4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
 -'  2  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
+-'  2  0  /usr/share/vim/vim90/doc/help.txt
+|4,39,2,0,1673005503,"/usr/share/vim/vim90/doc/help.txt"
 -'  1  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
 -'  1  0  /usr/share/vim/vim90/doc/help.txt
@@ -163,60 +261,12 @@
 |4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
 -'  1  0  /usr/share/vim/vim90/doc/help.txt
 |4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  /usr/share/vim/vim90/doc/help.txt
-|4,39,1,0,1673004975,"/usr/share/vim/vim90/doc/help.txt"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
--'  1  0  ~/Desktop/new.te
-|4,39,1,0,1673004958,"~/Desktop/new.te"
 
 # History of marks within files (newest to oldest):
+
+> ~/DEV/dotfiles/.config/kitty/kitty.conf
+	*	1717278875	0
+	"	189	0
 
 > ~/.config/kitty/kitty.conf
 	*	1713940841	0

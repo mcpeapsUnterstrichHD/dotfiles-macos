@@ -234,7 +234,7 @@ mode_move          "#[bg=#89B4FA] {name} "
 mode_prompt        "#[bg=#89B4FA] {name} "
 mode_tmux          "#[bg=#ffc387] {name} "
 
-mode_default_to_mode "tmux"
+mode_default_to_mode "normal"
 
                 command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
                 command_git_branch_format      "#[fg=blue] {stdout} "
