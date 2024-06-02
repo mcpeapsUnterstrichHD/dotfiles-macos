@@ -1,8 +1,8 @@
 # change window focus within space
-cmd - j : yabai -m window --focus south
-cmd - k : yabai -m window --focus north
-cmd - h : yabai -m window --focus west
-cmd - l : yabai -m window --focus east
+cmd - ö : yabai -m window --focus south
+cmd - p : yabai -m window --focus north
+cmd - l : yabai -m window --focus west
+cmd - ä : yabai -m window --focus east
 
 # rotate layout clockwise
 shift + cmd - r : yabai -m space --rotate 270
@@ -23,20 +23,20 @@ shift + cmd - m : yabai -m window --toggle zoom-fullscreen
 shift + cmd - e : yabai -m space --balance
 
 # swap windows
-shift + cmd - j : yabai -m window --swap south
-shift + cmd - k : yabai -m window --swap north
-shift + cmd - h : yabai -m window --swap west
-shift + cmd - l : yabai -m window --swap east
+shift + cmd - ö : yabai -m window --swap south
+shift + cmd - p : yabai -m window --swap north
+shift + cmd - l : yabai -m window --swap west
+shift + cmd - ä : yabai -m window --swap east
 
 # move window and split
-ctrl + cmd - j : yabai -m window --warp south
-ctrl + cmd - k : yabai -m window --warp north
-ctrl + cmd - h : yabai -m window --warp west
-ctrl + cmd - l : yabai -m window --warp east
+ctrl + cmd - ö : yabai -m window --warp south
+ctrl + cmd - p : yabai -m window --warp north
+ctrl + cmd - l : yabai -m window --warp west
+ctrl + cmd - ä : yabai -m window --warp east
 
 #move window to prev and next space
-shift + cmd - p : yabai -m window --space prev;
-shift + cmd - n : yabai -m window --space next;
+shift + cmd - - : yabai -m window --space prev;
+shift + cmd - + : yabai -m window --space next;
 
 # move window to space #
 shift + cmd - 1 : yabai -m window --space 1;
@@ -53,4 +53,4 @@ ctrl + cmd - s : yabai --start-service
 ctrl + cmd - r : yabai --restart-service
 
 # Close focused window
-cmd - q : yabai -m window --close
+cmd - w : yabai -m window --close
