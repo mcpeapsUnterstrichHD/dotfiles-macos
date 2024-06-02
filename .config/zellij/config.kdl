@@ -234,7 +234,7 @@ mode_move          "#[bg=#89B4FA] {name} "
 mode_prompt        "#[bg=#89B4FA] {name} "
 mode_tmux          "#[bg=#ffc387] {name} "
 
-mode_default_to_mode "normal"
+mode_default_to_mode "Normal"
 
                 command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
                 command_git_branch_format      "#[fg=blue] {stdout} "
@@ -298,7 +298,7 @@ mode_default_to_mode "normal"
 //   - true (default)
 //   - false
 //
- auto_layout false
+ auto_layout true
 
 // Whether sessions should be serialized to the cache folder (including their tabs/panes, cwds and running commands) so that they can later be resurrected
 // Options:
@@ -352,7 +352,7 @@ mode_default_to_mode "normal"
 // Choose the mode that zellij uses when starting up.
 // Default: strider
 //
- default_mode "tmux"
+ default_mode "Normal"
 
 // Toggle enabling the mouse mode.
 // On certain configurations, or terminals this could
