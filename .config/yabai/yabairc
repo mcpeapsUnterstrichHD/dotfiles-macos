@@ -32,6 +32,6 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 
 # Set external bar height and position
-yabai -m config external_bar all:35:0
+yabai -m config external_bar all:0:0
 # Start Yabai borders
 borders active_color=0x00ff0077 inactive_color=0xff000077 width=5.0 &
