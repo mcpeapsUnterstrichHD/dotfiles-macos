@@ -369,6 +369,8 @@ eval "$(zoxide init --cmd cd zsh)"
 eval $(thefuck --alias)
 eval "$(fzf --zsh)"
 source <(jj util completion zsh)
+eval "$(atuin init zsh)"
+eval "$(atuin gen-completions -s zsh)"
 
 if command -v ngrok &>/dev/null; then
     eval "$(ngrok completion)"
