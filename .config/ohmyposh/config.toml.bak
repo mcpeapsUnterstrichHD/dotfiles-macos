@@ -1,0 +1,16 @@
+#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+  type = "os"
+  style = "plain"
+  foreground = "black"
+  background = "transparent"
+  template = " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+
+  [properties]
+  macos = "mac"
