@@ -154,7 +154,7 @@ source <(jj util completion zsh)
 eval "$(atuin init zsh)"
 eval "$(atuin gen-completions -s zsh)"
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
+  eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml)"
 fi
 
 if command -v ngrok &>/dev/null; then
