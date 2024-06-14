@@ -17,6 +17,9 @@
       key="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='epp.package.jee']"
       value="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='epp.package.jee']/@versions[name='latest']"/>
   <defaultProductVersion
+      key="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='org.eclipse.platform.ide']"
+      value="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='org.eclipse.platform.ide']/@versions[name='latest.released']"/>
+  <defaultProductVersion
       key="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='epp.package.java']"
       value="index:/org.eclipse.setup#//@productCatalogs[name='org.eclipse.products']/@products[name='epp.package.java']/@versions[name='2024-03']"/>
   <defaultStream
@@ -157,7 +160,8 @@
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='skills']/@streams[name='master']"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='swtbot']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='swtbot']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='swtbot']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='tea']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='tea']/@streams[name='master']"/>
@@ -172,7 +176,8 @@
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='tycho']/@streams[name='main']"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='uml2']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='uml2']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='uml2']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='userstorage']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='userstorage']/@streams[name='master']"/>
@@ -247,16 +252,20 @@
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']/@projects[name='ui']/@streams[name='master']"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='jres']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='jres']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='jres']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='tools']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='tools']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='tools']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='website']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='website']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='website']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='github']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='github']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='justj']/@projects[name='github']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='modisco']/@projects[name='dev']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='modisco']/@projects[name='dev']/@streams[name='master']"/>
@@ -298,10 +307,12 @@
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='releng.buildtools']/@streams[name='master']"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='swt']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='swt']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='swt']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='ui']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='ui']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='ui']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='website']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='website']/@streams[name='master']"/>
@@ -349,9 +360,6 @@
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='windowbuilder']/@projects[name='website']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='windowbuilder']/@projects[name='website']/@streams[name='master']"
       selection="true"/>
-  <defaultStream
-      key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='wtp']/@projects[name='wtp.jsdt']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='wtp']/@projects[name='wtp.jsdt']/@streams[name='master']"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='xtext']/@projects[name='complete']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='xtext']/@projects[name='complete']/@streams[name='main']"/>
@@ -405,46 +413,60 @@
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='dependencies']/@projects[name='emf']/@streams[name='master']"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='swt']/@projects[name='website']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='swt']/@projects[name='website']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='platform']/@projects[name='swt']/@projects[name='website']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='cook.helper.git']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='cook.helper.git']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='cook.helper.git']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='fxdiagram']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='fxdiagram']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='fxdiagram']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='Groovy-Eclipse']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='Groovy-Eclipse']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='Groovy-Eclipse']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='javamm']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='javamm']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='javamm']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='jbase']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='jbase']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='jbase']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='m2e-code-quality']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='m2e-code-quality']/@streams[name='develop']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='m2e-code-quality']/@streams[name='develop']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='tlaplus']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='tlaplus']/@streams[name='master']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='tlaplus']/@streams[name='master']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='1_infra']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='1_infra']/@streams[name='main']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='1_infra']/@streams[name='main']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='2_addons2']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='2_addons2']/@streams[name='main']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='2_addons2']/@streams[name='main']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='4_zigbee']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='4_zigbee']/@streams[name='main']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='4_zigbee']/@streams[name='main']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='5_zwave']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='5_zwave']/@streams[name='main']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='5_zwave']/@streams[name='main']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='6_webui']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='6_webui']/@streams[name='main']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='6_webui']/@streams[name='main']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='10_core']"
-      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='10_core']/@streams[name='main']"/>
+      value="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']/@projects[name='openhab']/@projects[name='10_core']/@streams[name='main']"
+      selection="true"/>
   <defaultStream
       key="index:/org.eclipse.setup#//@projectCatalogs[name='org.opendaylight']/@projects[name='empty']"
       value="index:/org.eclipse.setup#//@projectCatalogs[name='org.opendaylight']/@projects[name='empty']/@streams[name='master']"/>
