@@ -14,6 +14,7 @@
 [core]
 	eol = lf
 	autocrlf = false
+	symlinks = true
 
 [fsck]
 	zeroPaddedFilemode = ignore
@@ -24,3 +25,9 @@
 	zeroPaddedFilemode = ignore
 [oh-my-zsh]
 	lastVersion = 8510847ff38a142850e4a065dc3cf09555260ff7
+[remote "origin"]
+	url = https://github.com/Homebrew/brew
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[homebrew]
+	analyticsmessage = true
+	caskanalyticsmessage = true
