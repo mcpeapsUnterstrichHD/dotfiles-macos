@@ -1,7 +1,25 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
   "schemes" : [
     {
+      "scrolling" : {
+        "acceleration" : 2,
+        "distance" : "auto",
+        "modifiers" : {
+          "horizontal" : {
+            "shift" : {
+              "scale" : 0.6,
+              "type" : "changeSpeed"
+            }
+          },
+          "vertical" : {
+            "shift" : {
+              "scale" : 0.5,
+              "type" : "changeSpeed"
+            }
+          }
+        },
+        "speed" : 1
+      },
       "if" : {
         "device" : {
           "productName" : "Apple Internal Keyboard \/ Trackpad",
@@ -11,88 +29,86 @@
         }
       },
       "pointer" : {
-        "speed" : 1,
-        "acceleration" : 0.9479,
-        "disableAcceleration" : false
-      },
-      "scrolling" : {
-        "distance" : "auto",
-        "speed" : 1,
-        "modifiers" : {
-          "vertical" : {
-            "shift" : {
-              "type" : "changeSpeed",
-              "scale" : 0.5
-            }
-          },
-          "horizontal" : {
-            "shift" : {
-              "type" : "changeSpeed",
-              "scale" : 0.6
-            }
-          }
-        },
-        "acceleration" : 2
+        "disableAcceleration" : false,
+        "acceleration" : 0.6875,
+        "speed" : 1
       }
     },
     {
-      "if" : {
-        "device" : {
-          "productID" : "0x269",
-          "category" : "mouse",
-          "vendorID" : "0x4c",
-          "serialNumber" : "18-3f-70-d8-3e-0a",
-          "productName" : "Magic Mouse"
-        }
-      },
       "scrolling" : {
         "reverse" : {
           "vertical" : false
         }
       },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x4c",
+          "category" : "mouse",
+          "productName" : "Magic Mouse",
+          "productID" : "0x269",
+          "serialNumber" : "18-3f-70-d8-3e-0a"
+        }
+      },
       "pointer" : {
         "disableAcceleration" : false,
-        "speed" : 0.6875,
-        "acceleration" : 0.6875
+        "acceleration" : 0.6875,
+        "speed" : 0.6875
       }
     },
     {
       "if" : {
         "device" : {
           "serialNumber" : "d4-57-63-60-7a-ba",
-          "vendorID" : "0x4c",
           "category" : "trackpad",
-          "productID" : "0x265",
-          "productName" : "Magic Trackpad"
+          "vendorID" : "0x4c",
+          "productName" : "Magic Trackpad",
+          "productID" : "0x265"
         }
       },
       "pointer" : {
-        "speed" : 1,
-        "acceleration" : 0.5399
+        "acceleration" : 0.5399,
+        "speed" : 1
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 0.9479,
+        "speed" : 1
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x5ac",
+          "category" : "trackpad",
+          "productName" : "Magic Trackpad",
+          "productID" : "0x265",
+          "serialNumber" : "CC2211201681G30AP"
+        }
+      },
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 1
+        },
+        "acceleration" : {
+          "vertical" : 2
+        }
       }
     },
     {
       "if" : {
         "device" : {
-          "productName" : "Magic Trackpad",
-          "vendorID" : "0x5ac",
-          "serialNumber" : "CC2211201681G30AP",
+          "vendorID" : "0x4c",
+          "serialNumber" : "D4:57:63:60:7A:BA",
+          "category" : "trackpad",
           "productID" : "0x265",
-          "category" : "trackpad"
+          "productName" : "Magic Trackpad von mcpeaps_HD"
         }
       },
       "scrolling" : {
         "acceleration" : {
-          "vertical" : 2
-        },
-        "speed" : {
           "vertical" : 1
         }
-      },
-      "pointer" : {
-        "speed" : 1,
-        "acceleration" : 0.9479
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
 }

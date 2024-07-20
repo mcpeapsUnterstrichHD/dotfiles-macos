@@ -31,3 +31,5 @@
 [homebrew]
 	analyticsmessage = true
 	caskanalyticsmessage = true
+[remote "upstream"]
+	gh-resolved = base

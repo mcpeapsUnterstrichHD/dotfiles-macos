@@ -1,0 +1,1560 @@
+: 1713939023:0;eval $(opam env --switch=default)
+: 1713939023:0;brew install ruby2.6.0
+: 1713939023:0;brew install ruby@2.6
+: 1713939023:0;brew install ruby@2.6 -f
+: 1713939023:0;brew update
+: 1713939023:0;rvm install ruby
+: 1713939023:0;__rvm_make -j8
+: 1713939023:0;rvm use ruby --default
+: 1713939023:0;brew link --overwrite --dry-run cloudflared
+: 1713939023:0;brew link --overwrite cloudflared
+: 1713939023:0;brew uninstall cloudflared
+: 1713939023:0;brew install cloudflare/cloudflare/cloudflared && \
+\
+sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiOGM1NjI2MTQtYjNhZS00ZjljLWFhZWQtNTEwYWNhMmNhN2YwIiwicyI6Ik5qYzBObU5rT1dJdE5EUTFZUzAwTUROakxUZ3lORE10WWpabE9UZGhabUUxTUdRMiJ9
+: 1713939023:0;ping ssh-mahd.combppmpunksucht.app
+: 1713939023:0;ping mahd.combppmpunksucht.app
+: 1713939023:0;ping mahd.comboompunksucht.app
+: 1713939023:0;ping ssh-mahd.comboompunksucht.app
+: 1713939023:0;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+: 1713939023:0;curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v -r
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome -s uninstall
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome -s install
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome -s start
+: 1713939023:0;launchctl bootstrap
+: 1713939023:0;launchctl bootstrap /Applications/AdGuardHome/AdGuardHome -s start
+: 1713939023:0;launchctl bootstrap /Library/LaunchDaemons/AdGuardHome.plist
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:80
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:80 -v
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 127.0.0.1:8063 -v
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 80.187.84.151:8063 -v
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome --web-addr 2a01:599:114:9faa:ecbc:fef4:b21:6130:8063 -v
+: 1713939023:0;sudo /Applications/AdGuardHome/AdGuardHome -p 8063 -v
+: 1713939023:0;ssh mahd@ssh-mahd.comboompunksucht.app
+: 1713939023:0;/Applications/AdGuardHome/AdGuardHome -p 8063 -v
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiOGM1NjI2MTQtYjNhZS00ZjljLWFhZWQtNTEwYWNhMmNhN2YwIiwicyI6Ik5qYzBObU5rT1dJdE5EUTFZUzAwTUROakxUZ3lORE10WWpabE9UZGhabUUxTUdRMiJ9
+: 1713939023:0;npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+: 1713939023:0;npm install --save-dev @typescript-eslint/eslint-plugin eslint typescript
+: 1713939023:0;npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript --force
+: 1713939023:0;npx eslint .
+: 1713939023:0;sudo lsof -i -P | grep LISTEN | grep :53
+: 1713939023:0;brew uninstall mDNSRespo
+: 1713939023:0;sudo killall mDNSRespo
+: 1713939023:0;launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1713939023:0;sudo ⃵�⃴� launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1713939023:0;sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1713939023:0;sudo cloudflared service start
+: 1713939023:0;sudo cloudflared service help
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMTQzMmQwNjctZjhlNC00YTZlLTg5ZDctN2EzMWViYjdkZTAzIiwicyI6IlpHVTNOemhqWWpZdE5XWTROeTAwTUdJMUxUazRNMlF0WVdKaU5EazFaalEwT0dOayJ9
+: 1713939023:0;sudo cloudflared tunnel --url localhost:8063
+: 1713939023:0;cd ~/Downloads
+: 1713939023:0;sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain Cloudflare_CA.crt
+: 1713939023:0;echo | sudo tee -a /etc/ssl/cert.pem < Cloudflare_CA.pem
+: 1713939023:0;cloudflared tunnel create cbps
+: 1713939023:0;cloudflared tunnel create comboom.sucht
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6Ik1UbG1NR1ZqTXpRdFkyTTVNUzAwWlRCaExXRmtabU10TVdVMU1tTXlNamN6T1RRMCJ9
+: 1713939023:0;sudo cloudflared service
+: 1713939023:0;sudo cloudflared
+: 1713939023:0;sudo cloudflared help
+: 1713939023:0;sudo cloudflared tunnel
+: 1713939023:0;sudo cloudflared tunnel -h
+: 1713939023:0;sudo cloudflared tunnel login
+: 1713939023:0;sudo cloudflared tunnel route dns
+: 1713939023:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA
+: 1713939023:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9
+: 1713939023:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA.local
+: 1713939023:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 dns
+: 1713939023:0;sudo cloudflared tunnel route dns 0919e336-407e-4784-9ace-3920d4e636b9 DNS
+: 1713939023:0;sudo cloudflared tunnel route
+: 1713939023:0;sudo cloudflared tunnel route ip
+: 1713939023:0;sudo cloudflared tunnel route ip get
+: 1713939023:0;sudo cloudflared tunnel route ip get 3.0.0.0
+: 1713939023:0;sudo cloudflared tunnel route ip get 3.0.6.6
+: 1713939023:0;sudo cloudflared tunnel route ip add
+: 1713939023:0;sudo cloudflared tunnel route ip add 3.0.6.6
+: 1713939023:0;sudo cloudflared tunnel route ip add 3.0.6.6/8
+: 1713939023:0;sudo cloudflared tunnel route ip add 3.0.6.6/8 0919e336-407e-4784-9ace-3920d4e636b9
+: 1713939023:0;sudo cloudflared tunnel route ip add 3.0.0.0/8 0919e336-407e-4784-9ace-3920d4e636b9
+: 1713939023:0;sudo cloudflared tunnel route lb
+: 1713939023:0;sudo cloudflared tunnel route lb --help
+: 1713939023:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA dns
+: 1713939023:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA
+: 1713939023:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 MAHD-MBA.local dns
+: 1713939023:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 dns
+: 1713939023:0;sudo cloudflared tunnel route lb 0919e336-407e-4784-9ace-3920d4e636b9 mahd dns
+: 1713939023:0;sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1713939023:0;sudo launchctl start -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1713939023:0;ping localhost -p 3066
+: 1713939023:0;ping localhost -h
+: 1713939023:0;telnet localhost 3066
+: 1713939023:0;brew tap FelixKratz/fomulae
+: 1713939023:0;brew install sketchybar
+: 1713939023:0;rm -fr ~/.config/sketchybar
+: 1713939023:0;cd ~/.config/sketchybar
+: 1713939023:0;textedit
+: 1713939023:0;open /Users/mahd/SearXNG/start.sh
+: 1713939023:0;brew install podman
+: 1713939023:0;podman run --rm -d -p 3066:8080 -v "./searxng:/etc/searxng" -e "BASE_URL=http://localhost:3066/" -e "INSTANCE_NAME=comboom.sucht" searxng/searxng\
+
+: 1713939023:0;where podman
+: 1713939023:0;brew uninstall xquarz
+: 1713939023:0;brew search xqua
+: 1713939023:0;brew uninstall xquartz
+: 1713939023:0;brew reinstall oh-my-posh
+: 1713939023:0;eval "$(oh-my-posh init zsh)"
+: 1713939023:0;eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/jandedobbeleer.omp.json)"
+: 1713939023:0;oh-my-posh
+: 1713939023:0;oh-my-posh prtint
+: 1713939023:0;oh-my-posh print
+: 1713939023:0;oh-my-posh prtint primary
+: 1713939023:0;oh-my-posh prompts prtint primary
+: 1713939023:0;oh-my-posh prompt prtint primary
+: 1713939023:0;oh-my-posh prompt print primary
+: 1713939023:0;oh-my-posh init zsh
+: 1713939023:0;npx create-react-app mcpeapsUnterstrichHD
+: 1713939023:0;npx create-react-app prtfolio
+: 1713939023:0;cd mcpeapsUnterstrichHD
+: 1713939023:0;npm audit fix -f
+: 1713939023:0;npm audit fix --force
+: 1713939023:0;npx create-react-app
+: 1713939023:0;npx create-react-app .
+: 1713939023:0;npm install tailwindcss
+: 1713939023:0;npm install tailwindcss-animate class-variance-authority clsx tailwind-merge
+: 1713939023:0;npm install lucide-react
+: 1713939023:0;npm install @radix-ui/react-icons
+: 1713939023:0;npx teilwindcss init -p
+: 1713939023:0;npx tailwindcss init -p
+: 1713939023:0;npm install postcss autoprefixer
+: 1713939023:0;npx create-next-app@latest .
+: 1713939023:0;npx shadcn-ui@latest init
+: 1713939023:0;npm install next-themes
+: 1713939023:0;npx shadcn-ui@latest add button
+: 1713939023:0;npx shadcn-ui@latest add dropdown-menu
+: 1713939023:0;npx shadcn-ui@latest add navigation-menu
+: 1713939023:0;npx shadcn-ui@latest add avatar
+: 1713939023:0;npm install react-cookie-consent
+: 1713939023:0;npm uninstall react-cookie-consent
+: 1713939023:0;\
+npm install @use-cookie-consent/react
+: 1713939023:0;\
+npm install js-cookies
+: 1713939023:0;\
+npm uninstall @use-cookie-consent/react
+: 1713939023:0;\
+npm uninstall js-cookies
+: 1713939023:0;\
+npm install js-cookie
+: 1713939023:0;\
+npm uninstall js-cookie
+: 1713939023:0;npx shadcn-ui@latest add separator
+: 1713939023:0;ansible
+: 1713939023:0;brew install ansible
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6Ik1XTTRNMlF3WWpBdE9EazNOeTAwWVdVNExUbGtOelV0TVdReU5ERXdNbU5tTUdVeSJ9
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6IllqWXdOVFl5TXpJdFpXWm1ZUzAwWVRJMkxXRTJOR1l0TURJME5EYzFOV0U1T1dGbCJ9
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiMDkxOWUzMzYtNDA3ZS00Nzg0LTlhY2UtMzkyMGQ0ZTYzNmI5IiwicyI6Ik16WmtNVGcwTVdZdE56RmpaaTAwTnpOa0xUazFOek10WXpreVlUVmhNVE16TkRSbCJ9
+: 1713939023:0;ping cloudflare.com
+: 1713939023:0;ping http://100.96.0.19:3066/\?preferences\=eJx1Vk2P4zYM_TX1xdhBt3soesipQK8t0L0btETbXEuiRh9JPL--VGzH8mR7iBFRFEU-kk9UkHDkQBgvIzoMYBoDbsww4gVy4sawAoMXjU1ZKrbeYMJLQ1ZUOh_4vly-h4yNxTSxvvzz97_fmwgDRoSgpsuvTZrQ4iVSOdkEjNmk2LHrHN66BP3lLzARG83UySabK4YLgyzfOIzNeqyLaSlOQJgbhS5h6MDQ6Kz8386DvoJTqLvt3lX6njEsHbkuURIDD0fJDeQoiVEV2JhVuJ4qbqkVkUUMGVRp3Z44zbhEgWEA8b_RFKE3chu6kZyA98cIY9dFVgSmtagJfvntT3AOYlsM0xW7biCDsYj93FoKgUMtkzBb-bYxcaiV19Mtxa7bMiTSntx4Xqc-qxlT11GStVLqS7p23ZU0cjEjocYYcBAfFaEAtcpu-kqShsrSgr5eqhwMYS3RiB-Cf2dzJFXWemwFlgIpsTt5iXIB6a5jKYFQVMXF8hu5vSEU4bG3AmDBiwX5ltOWf5AvUB5aScBeTu58vUvIpRZLlIMOXC7cwRsCYht5SDcI2GoKktCS2hWkIZCbCVRlYJQygX4HkTX2GMZtOTKP4qI3sJRExeOaeseyIBor5EfPWteATdAHKJ_NLlndHxGSg-owOflLnOPPZbvJHxQnPmzMpGaIlYOG5MqwtAW2SPUG9zHhW4ibL_BhlkCqMi1tDcqD2xSct_u_BeAwxB5dQM-VbQ_ixUhxr0mf-zeN1221NlyBuC2fZ0rAQvEWn2oWXCLVRjWxgVDXb0wQki80VNVD4nnhxILHXJzenVlgYq71btQv9VpI7g5Oh1JttdZMPfMcPwuFvERWvpvgPXPCz1qRc1AvUmG4SGl5EfPyKZav3779fj9i0FmjO7Ic8cOBrfWlYRDnWuLgWkrvEITcLyPaPd8eMaTcY1VeD_KSK-bCDDfsq62QrZBeJbjxnWZ2ktY2Lo7dYrHy74d_87fK4RKkFZ44EVeA6ylmL_VmNjauxFITR5WusE45HZ351G3QnZm5WGoNuXxviwN7oQcpqqrxIdzpWhdXL8WgwPqjE8rpjY7ORNyuViprD-mpRB6SFbcKvz5pGsdzF5XqwMqWMHAQn5YzB19J2kKCqBQ1ywMQ2inv_FUc1pBO_h4UfCLqtFh2AlKVvsEIi4SaG9FRTTqyTgX4NQWUjotXPqwv2BjyBahNfoJqk72Atcl_QgTTdt_j8o8vG9u90h8PwjVulDGj9kHCHq8nkCzdleGsKxYEeSlwZ-ySJpDHpIAbUaaZypd9T9hOAITtTTzvxyTvUpJXbn_qvC4teCh5mTdkFNl3KchM0kMVkViXPj0dWfxe2-83qY06nofgDPIqesnHKn6BXkLVlF7mm4ieYO_Vp7J0p7TOGT-hajWzlPZg-La3YJxzn13Ke1dnjyHHJ8oyC5KW51qqP1XPSnZRHto4VV4_yP0c38L5E689Jc_BBchI2ZcMVWpXssg1xdFcNB719CQyNutD5adqNtGk0ge7U91bYUQrE0ebArhoJI26NhO0o7kSpBTeaGfMY8j0JguXxUuB-v62rd4mjkkeAJSxWQBZX8STAkO3TtW3IOPuy7ZA26kJ1fykzP-5p4C9Ll5syIw8yHg98Kv1AIWOOpkfxQNbct_I2yzFf_kPKt-04A\=\=\&
+: 1713939023:0;ping 172.16.0.2
+: 1713939023:0;ping 100.96.0.19
+: 1713939023:0;ping 100.96.0.19:3066
+: 1713939023:0;ping 100.96.0.19/8
+: 1713939023:0;ping 100.96.0.19 -h
+: 1713939023:0;ping 100.96.0.19 -T
+: 1713939023:0;ping 100.96.0.19 -T 3f
+: 1713939023:0;ping 100.96.0.19 -T 00
+: 1713939023:0;ping 100.96.0.19 -T 01
+: 1713939023:0;ping 100.96.0.19 -T ff
+: 1713939023:0;ping 100.96.0.19 -T 56
+: 1713939023:0;ping 100.96.0.19 -T f5
+: 1713939023:0;ping 100.96.0.19 -T 5f
+: 1713939023:0;ping 100.96.0.19 -T 32
+: 1713939023:0;ping 100.96.0.19 -T a4
+: 1713939023:0;ping 100.96.0.19 -T aa
+: 1713939023:0;ping 100.96.0.19 -T af
+: 1713939023:0;ping 100.96.0.19 -I
+: 1713939023:0;ping 100.96.0.19 -I g
+: 1713939023:0;ping 100.96.0.19 -I ff
+: 1713939023:0;ping 100.96.0.19 -I 3066
+: 1713939023:0;ping 100.96.0.19 -I 255.255.255.255
+: 1713939023:0;ping 100.96.0.19 -I af
+: 1713939023:0;ping 100.96.0.19 -I af::af
+: 1713939023:0;ping 100.96.0.19 -I af:af
+: 1713939023:0;brew install inkscape
+: 1713939023:0;npm run dev -- --verbose --host
+: 1713939023:0;npm run dev -h
+: 1713939023:0;npm run dev -- --foreground-scripts
+: 1713939023:0;npm run dev -- -h
+: 1713939023:0;npm run dev -- -experimental-https
+: 1713939023:0;npm install animate
+: 1713939023:0;npm install initCanvas onMouseMove
+: 1713939023:0;npm install onMouseMove
+: 1713939023:0;AAAACCCCCCAAAABDDDDD
+: 1713939023:0;npm install next-pwa
+: 1713939023:0;npm uninstall next-pwa
+: 1713939023:0;npm i @ducanh2912/next-pwa
+: 1713939023:0;npm u @ducanh2912/next-
+: 1713939023:0;npm uninstall @ducanh2912/next-pwa
+: 1713939023:0;npm install -D @netlify/plugin-lighthouse
+: 1713939023:0;npm uninstall @netlify/plugin-lighthouse
+: 1713939023:0;npm i @nextui-org/react framer-motion
+: 1713939023:0;npm install @nextui-org/react framer-motin
+: 1713939023:0;npm i @nextui-org/react framer-motin
+: 1713939023:0;pnpm add @nextui-org/react framer-motion
+: 1713939023:0;npm install --global yarn
+: 1713939023:0;yarn add @nextui-org/react framer-motion
+: 1713939023:0;yarn remove @nextui-org/react framer-motion
+: 1713939023:0;npm uninstall @nextui-org/react framer-motin
+: 1713939023:0;npx shadcn-ui@latest add card
+: 1713939023:0;npx shadcn-ui@latest add badge
+: 1713939023:0;npm run dev -- --experimental-https
+: 1713939023:0;npm build
+: 1713939023:0;npm install gh-pages --save-dev
+: 1713939023:0;npm run deploy
+: 1713939023:0;npm run dev -- --help
+: 1713939023:0;npm run dev -- -v
+: 1713939023:0;next dev -v
+: 1713939023:0;npx next -h
+: 1713939023:0;npx next -v dev
+: 1713939023:0;npx next dev -h
+: 1713939023:0;npm run dev -- --debug
+: 1713939023:0;npx shadcn-ui@latest add scroll-area
+: 1713939023:0;npx shadcn-ui@latest remove scroll-area
+: 1713939023:0;npx shadcn-ui@latest delete scroll-area
+: 1713939023:0;npx shadcn-ui@latest dellete scroll-area
+: 1713939023:0;npx shadcn-ui@latest uninstall scroll-area
+: 1713939023:0;npx shadcn-ui@latest -h
+: 1713939023:0;npm uninstall scroll-area
+: 1713939023:0;passwd
+: 1713939023:0;security set-keychain-password
+: 1713939023:0;npm i react-vertical-timeline-component
+: 1713939023:0;npm uninstall react-vertical-timeline-component
+: 1713939023:0;npm install @mui/material @emotion/react @emotion/styled
+: 1713939023:0;npm uninstall @mui/icons-material
+: 1713939023:0;npm install @mui/icons-material
+: 1713939023:0;npm install @mui/material @mui/styled-engine-sc styled-components
+: 1713939023:0;npm install @mui/lab @mui/material
+: 1713939023:0;npx shadcn-ui@latest add progress
+: 1713939023:0;podman help
+: 1713939023:0;podman generate
+: 1713939023:0;podman generate kube
+: 1713939023:0;podman generate kube --help
+: 1713939023:0;podman generate kube 98190c36 --podman-only
+: 1713939023:0;cd /usr/local\
+git clone https://github.com/searxng/searxng-docker.git\
+cd searxng-docker
+: 1713939023:0;cd /usr/local\
+sudo git clone https://github.com/searxng/searxng-docker.git\
+cd searxng-docker
+: 1713939023:0;sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
+: 1713939023:0;sudo sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
+: 1713939023:0;cat /Users/mahd/SearXNG/start.sh
+: 1713939023:0;nano searxng-docker.service.template
+: 1713939023:0;podman compose
+: 1713939023:0;brew install podman-compose
+: 1713939023:0;podman-compose
+: 1713939023:0;mv searxng-docker.service.template searxng-docker.service
+: 1713939023:0;sudo mv searxng-docker.service.template searxng-docker.service
+: 1713939023:0;where podman-compose
+: 1713939023:0;sudo nano searxng-docker.service
+: 1713939023:0;podman-compose up
+: 1713939023:0;sudo podman-compose up
+: 1713939023:0;brew uninstall podman-compose
+: 1713939023:0;sudo killall Podman Desktop.app
+: 1713939023:0;sudo killall "Podman Desktop.app"
+: 1713939023:0;cd /Applications/Podman Desktop.app/Contents/MacOS
+: 1713939023:0;cd "/Applications/Podman Desktop.app/Contents/MacOS"
+: 1713939023:0;lss
+: 1713939023:0;sudo ./Podman\ Desktop
+: 1713939023:0;docker compose up
+: 1713939023:0;brew install docker-credential-desktop
+: 1713939023:0;docker-credential-desktop
+: 1713939023:0;brew install docker
+: 1713939023:0;brew install docker-desktop
+: 1713939023:0;brew install docker-ls docker-toolbox
+: 1713939023:0;brew install docker-ls
+: 1713939023:0;podman compose up -h
+: 1713939023:0;podman compose up --build
+: 1713939023:0;podman machine inspect --format '{{podman-machine-default-de.ConnectionInfo.PodmanSocket.Path}}'
+: 1713939023:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}'
+: 1713939023:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}' -h
+: 1713939023:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}' "Podman Machine default-de"
+: 1713939023:0;podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}' "podman-machine-default-de"
+: 1713939023:0;export DOCKER_HOST=unix:///Users/mahd/.local/share/containers/podman/machine/qemu/podman.sock
+: 1713939023:0;brew uninstall docker-ls
+: 1713939023:0;brew uninstall docker docker-credential-helper
+: 1713939023:0;sudo nano /usr/local/bin/docker
+: 1713939023:0;sudo mkdir /usr/local/bin/
+: 1713939023:0;cd \
+[ -e /etc/containers/nodocker ] || echo "Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg." >&2\
+exec podman "$@"
+: 1713939023:0;sudo touch docker
+: 1713939023:0;sudo touch ./docker
+: 1713939023:0;sudo /Applications/code .
+: 1713939023:0;sudo nano docker
+: 1713939023:0;touch /etc/containers/nodocker
+: 1713939023:0;sudo touch /etc/containers/nodocker
+: 1713939023:0;sudo rm /etc/containers/nodocker
+: 1713939023:0;ls -la touch /etc/containers/
+: 1713939023:0;colorls
+: 1713939023:0;gem uninstall colorls
+: 1713939023:0;gem install colorls --user-install
+: 1713939023:0;sudo chmod -R 777 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/gems/2.6.0
+: 1713939023:0;rbenv rehash\
+rehash
+: 1713939023:0;sudo gem install colorls
+: 1713939023:0;rbenv rehash ⃴�⃵�\
+rehash gem install colorls
+: 1713939023:0;rbenv
+: 1713939023:0;rbenv global 3.2.2
+: 1713939023:0;rbenv install 3.2.2
+: 1713939023:0;rbenv install 3.3.0
+: 1713939023:0;brew help
+: 1713939023:0;brew config
+: 1713939023:0;brew install ruby
+: 1713939023:0;brew reinstall ruby
+: 1713939023:0;brew rbenv-sync
+: 1713939023:0;rbenv global 3.3.0
+: 1713939023:0;brew gem install colorls
+: 1713939023:0;brew setup-ruby
+: 1713939023:0;brew shellenv
+: 1713939023:0;brew shellenv zsh
+: 1713939023:0;brew ruby -- --help
+: 1713939023:0;brew ruby gem install colorls
+: 1713939023:0;mkdir -p ~/.gem/ruby/3.3.0/bin
+: 1713939023:0;brew install stow
+: 1713939023:0;mkdir ~/DEV/dotfiles
+: 1713939023:0;podman compose version
+: 1713939023:0;podman compose --help
+: 1713939023:0;podman compose config
+: 1713939023:0;podman login
+: 1713939023:0;podman login docker.io
+: 1713939023:0;podman compose pull
+: 1713939023:0;curl --unix-socket /var/run/docker.sock "http:/v1.41/containers/json?all=true"
+: 1713939023:0;CONTAINER_HOST=/var/run/docker.sock podman ps
+: 1713939023:0;sudo podman-mac-helper install
+: 1713939023:0;mkdir -p ~/.docker/cli-plugins\
+ ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+: 1713939023:0;nano ~/.docker/cli-plugins/docker-compose
+: 1713939023:0;cd ~/.docker/cli-plugins/docker-compose
+: 1713939023:0;cd ~/.docker/cli-plugins/
+: 1713939023:0;cd ~/Library/Application\ Support/Podman\ Desktop
+: 1713939023:0;cat Preferences
+: 1713939023:0;cd Local\ Storage
+: 1713939023:0;cd /Applications/Podman Desktop.app/
+: 1713939023:0;cd /Applications/Podman Desktop.app/Contents/
+: 1713939023:0;cd /Applications/Podman Desktop.app/Contents/Resources
+: 1713939023:0;cd /Users/mahd/DEV/dotfiles
+: 1713939023:0;stow -d
+: 1713939023:0;stow -d .
+: 1713939023:0;nano .stow-local-ignore
+: 1713939023:0;stow .
+: 1713939023:0;stow
+: 1713939023:0;ls -la
+: 1713939023:0;git submodule add https://github.com/ohmyzsh/ohmyzsh.git .oh-my-zsh
+: 1713939023:0;nano .gitignore
+: 1713939023:0;cd .zsh-autopair
+: 1713939023:0;cat config
+: 1713939023:0;git submodule remove https://github.com/hlissner/zsh-autopair.git .zsh-autopair
+: 1713939023:0;git submodule set-url .zsh-autopair https://github.com/hlissner/zsh-autopair.git
+: 1713939023:0;git submodule add https://github.com/hlissner/zsh-autopair.git .zsh-autopair
+: 1713939023:0;git submodule add -f https://github.com/hlissner/zsh-autopair.git .zsh-autopair
+: 1713939023:0;brew reinstall docker-compose
+: 1713939023:0;cd /usr/local/bin
+: 1713939023:0;chmod 777 /usr/local/bin
+: 1713939023:0;chmod 777 /usr/local/searxng-docker
+: 1713939023:0;sudo chmod 777 /usr/local/searxng-docker
+: 1713939023:0;sudo chmod -R 777 /usr/local/searxng-docker
+: 1713939023:0;brew uninstall docker-compose
+: 1713939023:0;curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+: 1713939023:0;mv ~/Downloads/Docker\ Compose\ v2.24 /usr/local/bin/docker-compose
+: 1713939023:0;sudo chmod +x /usr/local/bin/docker-compose
+: 1713939023:0;sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+: 1713939023:0;sudo rm /usr/local/bin/docker-compose
+: 1713939023:0;brew install docker-compose
+: 1713939023:0;nano searxng
+: 1713939023:0;nano docker-compose.yaml
+: 1713939023:0;brew install docker wget
+: 1713939023:0;echo 'PS1='[\u@\h \W$(__docker_machine_ps1)]\$ '' >> ~/.zshrc
+: 1713939023:0;brew install docker-credential-helper
+: 1713939023:0;brew uninstall docker
+: 1713939023:0;cat Caddyfile
+: 1713939023:0;nano Caddyfile
+: 1713939023:0;podman compose up
+: 1713939023:0;sudo podman compose up
+: 1713939023:0;mkdir caddy
+: 1713939023:0;mv Caddyfile ./caddy/Caddyfile
+: 1713939023:0;sudo podman compose up -d
+: 1713939023:0;cd ~/DEV
+: 1713939023:0;git clone https://github.com/searxng/searxng.git searxng\
+cd searxng
+: 1713939023:0;sudo -H ./utils/searxng.sh install all
+: 1713939023:0;cd /usr/local/searxng-docker
+: 1713939023:0;podman compose up -d --remove-orphans
+: 1713939023:0;sudo podman compose up -d --remove-orphans
+: 1713939023:0;sudo docker-compose up -d
+: 1713939023:0;sudo mv -r /usr/local/searxng-docker /Users/mahd/DEV/searxng
+: 1713939023:0;sudo mv -f /usr/local/searxng-docker /Users/mahd/DEV/searxng
+: 1713939023:0;cd /Users/mahd/DEV/searxng
+: 1713939023:0;nano searxng-docker.service
+: 1713939023:0;cd .git
+: 1713939023:0;nano config
+: 1713939023:0;openssl rand -hex 3
+: 1713939023:0;openssl rand -hex 128
+: 1713939023:0;sudo launchctl load ./com.example.searxng.plist
+: 1713939023:0;launchctl start com.example.searxng
+: 1713939023:0;pwd
+: 1713939023:0;launchctl load ./com.example.searxng.plist
+: 1713939023:0;launchctl load ./com.example.searxng.plist -f
+: 1713939023:0;sudo launchctl load ./com.example.searxng.plist -f
+: 1713939023:0;podman compose up -df
+: 1713939023:0;podman compose up -fd
+: 1713939023:0;podman compose up -f -f
+: 1713939023:0;podman compose up -f -d
+: 1713939023:0;podman compose up -f
+: 1713939023:0;podman compose -f up -d
+: 1713939023:0;podman compose -f up
+: 1713939023:0;podman compose up -d
+: 1713939023:0;nano /Users/mahd/SearXNG/start.sh
+: 1713939023:0;mv /Users/mahd/SearXNG/start.sh ./start.sh
+: 1713939023:0;start.sh
+: 1713939023:0;chmod +x start.sh
+: 1713939023:0;chmod +x stp.sh
+: 1713939023:0;chmod +x stop.sh
+: 1713939023:0;stop.sh
+: 1713939023:0;nano start.sh
+: 1713939023:0;podman machine start
+: 1713939023:0;brew install docker docker-desktop docker-compose
+: 1713939023:0;docker login
+: 1713939023:0;which docker
+: 1713939023:0;nano ~/DEV/searxng/start.sh
+: 1713939023:0;nano ~/DEV/searxng/stop.sh
+: 1713939023:0;rm -f /usr/local/bin/docker
+: 1713939023:0;sudo rm -f /usr/local/bin/docker
+: 1713939023:0;sudo rm -f /etc/containers/nodocker
+: 1713939023:0;docker help
+: 1713939023:0;docker system -h
+: 1713939023:0;docker context use
+: 1713939023:0;docker context use -c
+: 1713939023:0;docker -c
+: 1713939023:0;docker -H
+: 1713939023:0;docker info
+: 1713939023:0;~/DEV/searxng/start.sh
+: 1713939023:0;sudo cloudflared service uninstall
+: 1713939023:0;start-mDNSResponder
+: 1713939023:0;sudo launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+: 1713939023:0;stop-mDNSResponder
+: 1713939023:0;stop-mDNSResponder -f
+: 1713939023:0;ping 1.1.1.1
+: 1713939023:0;brew instrall discord
+: 1713939023:0;brew install discord
+: 1713939023:0;cloudflared tunnel run -help
+: 1713939023:0;mv /Users/mahd/.cloudflared/cert.pem /Users/mahd/.cloudflared/cert.pem.backup
+: 1713939023:0;cloudflared tunnel login
+: 1713939023:0;cloudflared tunnel run --url http://100.96.0.19:3000 mba-mahd --cred-file /Users/mahd/.cloudflared/cert.pem
+: 1713939023:0;cloudflared tunnel run --url http://100.96.0.19:3000 --cred-file /Users/mahd/.cloudflared/cert.pem mba-mahd2
+: 1713939023:0;cloudflared tunnel run --url http://100.96.0.19:3000 --cred-file /Users/mahd/.cloudflared/cert.pem mba-mahd
+: 1713939023:0;cloudflared tunnel run --url http://100.96.0.19:3000 mba-mahd
+: 1713939023:0;cloudflared tunnel create comboompunktsucht
+: 1713939023:0;cloudflared tunnel run --url http://100.96.0.19:3000 comboompunktsucht
+: 1713939023:0;cloudflared tunnel run --url http://localhost:3000 comboompunktsucht
+: 1713939023:0;cloudflared tunnel run --url localhost:3000 comboompunktsucht
+: 1713939023:0;cloudflared tunnel run --url 192.0.0.2:3000 comboompunktsucht
+: 1713939023:0;cloudflared tunnel run --url 100.96.0.19:3000 comboompunktsucht
+: 1713939023:0;cloudflared tunnel login off
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiNzFjOTQ4N2UtZjE3NC00NzcwLTgwMzMtMGZhMzdlYjg2NzY4IiwicyI6Ik16azNORGszT0RrdE16QmtOUzAwTmpJeUxUZzJOVFF0TldJek9EWXhORGcxTVdGaCJ9
+: 1713939023:0;cloudflared tunnel remove
+: 1713939023:0;cloudflared tunnel help
+: 1713939023:0;cloudflared tunnel delete comboompunktsucht
+: 1713939023:0;rm -f /Library/LaunchDaemons/com.cloudflare.cloudflared.plist
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiNzFjOTQ4N2UtZjE3NC00NzcwLTgwMzMtMGZhMzdlYjg2NzY4IiwicyI6Ik5EUTFORFptTkRZdFl6ZzNNaTAwWldWaExXSTJNemd0T0RneU1tSmtZamxqWVRnMCJ9
+: 1713939023:0;nano /Users/mahd/Library/LaunchAgents/com.cloudflare.cloudflared.plist
+: 1713939023:0;cloudflared service uninstall
+: 1713939023:0;sudo rm -f /Library/LaunchDaemons/com.cloudflare.cloudflared.plist
+: 1713939023:0;rm -f /Users/mahd/Library/LaunchAgents/com.cloudflare.cloudflared.plist
+: 1713939023:0;sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZkZWQiLCJ0IjoiNzFjOTQ4N2UtZjE3NC00NzcwLTgwMzMtMGZhMzdlYjg2NzY4IiwicyI6IlpEVTVOV1l5TkRJdE9UTTJOQzAwTWpNeUxXSmhNV010WmpOall6UTFaVGN4WmpZdyJ9
+: 1713939023:0;brew install zoxide
+: 1713939023:0;brew install fzf
+: 1713939023:0;brew install autojump
+: 1713939023:0;which autojump
+: 1713939023:0;zoxide import --from=autojump $HOME/Library/autojump/autojump.txt
+: 1713939023:0;autojump
+: 1713939023:0;autojump -h
+: 1713939023:0;brew uninstall autojump
+: 1713939023:0;cd ~/.tmux
+: 1713939023:0;nano .tmux.conf
+: 1713939023:0;nano .tmux.conf.local
+: 1713939023:0;nvim .tmux.conf.local
+: 1713939023:0;/Users/mahd/DEV/searxng/start.sh ; exit;
+: 1713939023:0;/Users/mahd/DEV/searxng/stop.sh; exit
+: 1713939023:0;/Users/mahd/DEV/searxng/start.sh; exit
+: 1713939023:0;sudo chown -R "${USER}:wheel" /Applications/Discord\ PTB.app
+: 1713939023:0;sudo chown -R "${USER}:wheel" /Applications/Discord\ Canary.app
+: 1713939023:0;sudo chown -R "${USER}:wheel" /Applications/Discord.app
+: 1713939023:0;h /Users/mahd/SearXNG/start.sh
+: 1713939023:0;port PATH=/Users/Shared/DBngin/mysql/8.2/bin:$PATH
+: 1713939023:0;zoxide init
+: 1713939023:0;zoxide init --help
+: 1713939023:0;zoxide init --help --cmd "cd" zsh
+: 1713939023:0;zoxide init --cmd "cd" zsh
+: 1713939023:0;zoxide init --cmd cd zsh
+: 1713939023:0;cdi -help
+: 1713939023:0;cdi --help
+: 1713939023:0;cdi -h
+: 1713939023:0;cd mahd mcpeapsunterstrichhd
+: 1713939023:0;cd ~ mcpeapsunterstrichhd
+: 1713939023:0;zoxide help
+: 1713939023:0;zoxide --help
+: 1713939023:0;zoxide query --help
+: 1713939023:0;cd ~/DEV/mcpeapsUnterstrichHD
+: 1713939023:0;cd add ~/DEV/mcpeapsUnterstrichHD
+: 1713939023:0;zoxide add ~/DEV/mcpeapsUnterstrichHD
+: 1713939023:0;zoxide add /Users/mahd/DEV/mcpeapsUnterstrichHD -help
+: 1713939023:0;zoxide add /Users/mahd/DEV/mcpeapsUnterstrichHD
+: 1713939023:0;zoxide query -a
+: 1713939023:0;_ZO_EXCLUDE_DIRS
+: 1713939023:0;$_ZO_EXCLUDE_DIRS
+: 1713939023:0;cd ~/DEV/dotfiles
+: 1713939023:0;git pu
+: 1713939023:0;nano ~/.config/nvim/lua/config/lazy.lua
+: 1713939023:0;nvim ~/.config/nvim/lua/plugins/colorscheme.lua
+: 1713939023:0;nvim ~/.config/nvim/lua/config/lazy.lua
+: 1713939023:0;tmux
+: 1713939023:0;nvim ~/DEV/OSZIMT-repo-ITA12_aps/Drites\ AusbildungsJahr/P-AS
+: 1713939023:0;cd /Users/mahd/Library/Mobile Documents/com~apple~CloudDocs/Downloads
+: 1713939023:0;cd /Users/mahd/Library/
+: 1713939023:0;cd /Users/mahd/Library/Mobile Documents/
+: 1713939023:0;cd "/Users/mahd/Library/Mobile Documents/com~apple~CloudDocs/Downloads"
+: 1713939023:0;unzip Arc.appinstaller
+: 1713939023:0;cd mahd DEV
+: 1713939023:0;cd ~/DEV/phpMyAdmin-5.2.1-all-languages
+: 1713939023:0;php
+: 1713939023:0;php -h
+: 1713939023:0;httpd -h
+: 1713939023:0;httpd -d ~/DEV/phpMyAdmin-5.2.1-all-languages
+: 1713939023:0;httpd
+: 1713939023:0;httpd -k start
+: 1713939023:0;httpd -T
+: 1713939023:0;node run start
+: 1713939023:0;node start
+: 1713939023:0;httpd start
+: 1713939023:0;httpd -k start -T
+: 1713939023:0;yarn start .
+: 1713939023:0;yarn start
+: 1713939023:0;brew uninstall apache2
+: 1713939023:0;git clone https://github.com/phpmyadmin/phpmyadmin.git
+: 1713939023:0;php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+: 1713939023:0;php composer-setup.php
+: 1713939023:0;sudo mv composer.phar /Applications
+: 1713939023:0;php -r "unlink('composer-setup.php');"
+: 1713939023:0;sudo mv /Applications/composer.phar composer-phar
+: 1713939023:0;mv composer.phar ./phpmyadmin
+: 1713939023:0;mv composer-phar ./phpmyadmin/composer.phar
+: 1713939023:0;cd phpmyadmin
+: 1713939023:0;php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+: 1713939023:0;php composer-setup.php --install-dir=bin --filename=composer
+: 1713939023:0;mv composer.phar /usr/local/bin/composer
+: 1713939023:0;brew install thefuck
+: 1713939023:0;eco hw
+: 1713939023:0;echo hw
+: 1713939023:0;sudo apachectl start -h
+: 1713939023:0;composer update
+: 1713939023:0;brew install libicui18n
+: 1713939023:0;brew install libicns
+: 1713939023:0;yarn install --production
+: 1713939023:0;brew upgrade icu4c
+: 1713939023:0;brew reinstall icu4c
+: 1713939023:0;brew install npm
+: 1713939023:0;wget https://raw.githubusercontent.com/Homebrew/homebrew-core/a806a621ed3722fb580a58000fb274a2f2d86a6d/Formula/icu4c.rb\
+brew reinstall icu4c.rb
+: 1713939023:0;brew reinstall icu4c.rb
+: 1713939023:0;brew reinstall ./icu4c.rb
+: 1713939023:0;rm ./icu4c.rb
+: 1713939023:0;brew reinstall php@7.1
+: 1713939023:0;brew reinstall php@8.2
+: 1713939023:0;mkdir ~/sources
+: 1713939023:0;cd ~/sources
+: 1713939023:0;wget http://download.icu-project.org/files/icu4c/62.1/icu4c-62_1-src.tgz
+: 1713939023:0;unzip xvzf icu4c-62_1-src.tgz
+: 1713939023:0;tar icu4c-62_1-src.tgz
+: 1713939023:0;tar -xf icu4c-62_1-src.tgz
+: 1713939023:0;tar --xvzf icu4c-62_1-src.tgz
+: 1713939023:0;tar xvzf icu4c-62_1-src.tgz
+: 1713939023:0;brew remove php
+: 1713939023:0;cd /usr/local/Cellar
+: 1713939023:0;rm -rf php/
+: 1713939023:0;brew install php
+: 1713939023:0;brew doctor
+: 1713939023:0;brew cleanup
+: 1713939023:0;brew uninstall --ignore-dependencies node@8 icu4c
+: 1713939023:0;brew uninstall --ignore-dependencies node icu4c
+: 1713939023:0;brew install icu4c\
+
+: 1713939023:0;brew install node
+: 1713939023:0;cd ~/DEV/phpMyAdmin
+: 1713939023:0;sudo apachectl start
+: 1713939023:0;brew install phpmyadmin
+: 1713939023:0;cd Alias /phpmyadmin /opt/homebrew/share/phpmyadmin\
+    <Directory /opt/homebrew/share/phpmyadmin/>\
+        Options Indexes FollowSymLinks MultiViews\
+        AllowOverride All\
+        <IfModule mod_authz_core.c>\
+            Require all granted\
+        </IfModule>\
+        <IfModule !mod_authz_core.c>\
+            Order allow,deny\
+            Allow from all\
+        </IfModule>\
+    </Directory>
+: 1713939023:0;cd /opt/homebrew/var/www
+: 1713939023:0;mv index.html index.php
+: 1713939023:0;code /opt/homebrew/etc/phpmyadmin.config.inc.php
+: 1713939023:0;sudo apachectl stop
+: 1713939023:0;nvim /opt/homebrew/etc/httpd/httpd.conf
+: 1713939023:0;brew install apache2
+: 1713939023:0;mv index.php index.html
+: 1713939023:0;nvim index.html
+: 1713939023:0;code index.html
+: 1713939023:0;code /opt/homebrew/etc/httpd/httpd.conf
+: 1713939023:0;brew reinstall php
+: 1713939023:0;brew services start httpd
+: 1713939023:0;brew services restart httpd
+: 1713939023:0;open http://localhost:80
+: 1713939023:0;brew services stop httpd
+: 1713939023:0;open /opt/homebrew/etc/httpd/
+: 1713939023:0;cd DEV mcpeapsunterstrichhd
+: 1713939023:0;npm run build
+: 1713939023:0;brew tap lencx/chatgpt https://github.com/lencx/ChatGPT.git\
+brew install --cask chatgpt --no-quarantine
+: 1713939023:0;curl -L https://coder.com/install.sh | sh
+: 1713939023:0;coder server
+: 1713939023:0;curl -fsSL https://code-server.dev/install.sh | sh
+: 1713939023:0;open /Users/mahd/.config/code-server/config.yaml
+: 1713939023:0;stow -t ~ .
+: 1713939023:0;stow -t ~ . -h
+: 1713939023:0;code-server -h
+: 1713939023:0;xcode-select --install
+: 1713939023:0;sh /Users/mahd/SearXNG/start.sh
+: 1713939023:0;npm i -g netlify-cli
+: 1713939023:0;npm i @netlify
+: 1713939023:0;npm i netlify
+: 1713939023:0;rm nitro.py
+: 1713939023:0;pip3.12 install discord
+: 1713939023:0;pip3.12 install discord --break-system-packages
+: 1713939023:0;nvim nitro.py
+: 1713939023:0;code nitro.py
+: 1713939023:0;mv nitro.py ~/nitro.py
+: 1713939023:0;cp nitro.py nitro2.py
+: 1713939023:0;python3.12 nitro.py
+: 1713939023:0;ping 192.0.0.255
+: 1713939023:0;ping 192.0.0.1
+: 1713939023:0;ping 192.0.0.3
+: 1713939023:0;nvim :21: warning: Insecure world writable dir /usr/local/bin in PATH, mode 040777
+: 1713939023:0;sudo nvim /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin23/rbconfig.rb
+: 1713939023:0;python3.12 nitro2.py
+: 1713939023:0;netlify dev
+: 1713939023:0;sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+: 1713939023:0;cd nvim
+: 1713939023:0;nvim init.lua
+: 1713939023:0;nvim
+: 1713939023:0;cd VM
+: 1713939023:0;bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz -C mountpoint
+: 1713939023:0;bsdtar -xpf ArchLinuxARM-aarch64-latest.tar.gz
+: 1713939023:0;tar -xpf ArchLinuxARM-aarch64-latest.tar.gz
+: 1713939023:0;tar -xvf ArchLinuxARM-aarch64-latest.tar.gz
+: 1713939023:0;mv ArchLinuxARM\ aarch64\ latest.tar.gz ArchLinuxARM\ aarch64\ latest.tar
+: 1713939023:0;mv ArchLinuxARM\ aarch64\ latest.tar ArchLinuxARM-aarch64-latest.tar
+: 1713939023:0;tar -xvf ArchLinuxARM-aarch64-latest.tar
+: 1713939023:0;bsdtar -xvpf ArchLinuxARM-aarch64-latest.tar.gz -C mountpoint
+: 1713939023:0;bsdtar -xvpf ArchLinuxARM-aarch64-latest.tar -C mountpoint
+: 1713939023:0;mkdir mountpoint
+: 1713939023:0;bsdtar -xvpf ArchLinuxARM-aarch64-latest.tar -C ./mountpoint
+: 1713939023:0;hdiutil makehybrid -iso -joliet -o -linux.iso mountpoint.cdr.dmg
+: 1713939023:0;sudo hdiutil makehybrid -iso -joliet -o -linux.iso mountpoint.cdr.dmg
+: 1713939023:0;sudo hdiutil makehybrid -iso -joliet -o -linux1.iso mountpoint.cdr.dmg
+: 1713939023:0;fuck
+: 1713939023:0;neo
+: 1713939023:0;mkdir ~/ext4_mount
+: 1713939023:0;brew install --cask macfuse
+: 1713939023:0;git clone https://github.com/gerard/ext4fuse.git && cd "$(basename "$_" .git)"
+: 1713939023:0;make
+: 1713939023:0;sudo make
+: 1713939023:0;diskutil list
+: 1713939023:0;cd ext4_mount
+: 1713939023:0;sudo chown 777
+: 1713939023:0;sudo chown mahd
+: 1713939023:0;sudo chown mahd .
+: 1713939023:0;sudo chmod 777
+: 1713939023:0;sudo chmod -R 777 -h
+: 1713939023:0;sudo chmod -R 777 --help
+: 1713939023:0;sudo chmod --help
+: 1713939023:0;sudo chmod -H
+: 1713939023:0;sudo chmod -R 777
+: 1713939023:0;sudo chmod -h 777
+: 1713939023:0;sudo chmod -h
+: 1713939023:0;sudo chmod -h .
+: 1713939023:0;sudo chmod -h 777 .
+: 1713939023:0;sudo chmod -f -R 777
+: 1713939023:0;brew install ext4fuse -f
+: 1713939023:0;brew install ext4fuse
+: 1713939023:0;sudo dscl . append /Groups/operator GroupMembership mahd
+: 1713939023:0;sudo chmod -f -R 777 .
+: 1713939023:0;sudo chmod -R 777 .
+: 1713939023:0;sudo chmod -fv -R 777 .
+: 1713939023:0;cd ~/nm
+: 1713939023:0;cd ~/mb
+: 1713939023:0;cp ~/ext4_mount .
+: 1713939023:0;cp ~/ext4_mount . -R
+: 1713939023:0;cp ~/ext4_mount . -r
+: 1713939023:0;cp ~/ext4_mount/. .
+: 1713939023:0;sudo ./ext4fuse /dev/disk6s1 ~/ext4_mount -o defer_permissions
+: 1713939023:0;cp ~/ext4_mount/* ./*
+: 1713939023:0;cp ~/ext4_mount/* .
+: 1713939023:0;cd ~/ext4_mount
+: 1713939023:0;sudo ./ext4fuse /dev/disk6s1 ~/ext4_mount -o allow_other defer_permissions
+: 1713939023:0;brew install penc --cask
+: 1713939023:0;dig go.dnscheck.tools TXT
+: 1713939023:0;wgcf register
+: 1713939023:0;chmod +x wgcf
+: 1713939023:0;./wgcf register
+: 1713939023:0;wgcf -h
+: 1713939023:0;./wgcf -h
+: 1713939023:0;nano ~/.zshrc
+: 1713939023:0;sou
+: 1713939023:0;wgcf generate
+: 1713939023:0;./wgcf generate
+: 1713939023:0;./wgcf generate -h
+: 1713939023:0;./wgcf generate zsh
+: 1713939023:0;/Applications/wgcf generate zsh
+: 1713939023:0;cd ~/DEV/ext4fuse
+: 1713939023:0;sudo ./ext4fuse /dev/disk6s1 ~/ext4_mount -o allow_other
+: 1713939023:0;brew install --cask --no-quarantine middleclick
+: 1713939023:0;defaults write com.rouge41.middleClick fingers 5
+: 1713939023:0;defaults write com.rouge41.middleClick fingers 4
+: 1713939023:0;defaults write com.rouge41.middleClick fingers 3
+: 1713939023:0;ssh root@10.4.0.11
+: 1713939023:0;open /Users/mahd/.ssh/known_hosts
+: 1713939023:0;ssh root@10.4.0.13
+: 1713939023:0;clr
+: 1713939023:0;ping 10.0.0.1
+: 1713939023:0;ping 10.0.0.1 - h
+: 1713939023:0;ping 10.0.0.1 -i
+: 1713939023:0;ping 10.0.0.1 -w 1 --apple-time --apple-connect -s 512
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 h
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -m 512
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -m 128
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 100
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 100.0
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 1000
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 100000
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 10
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 1
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 1 -i 10
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 1 -i 0.001
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 1 -i 0.01
+: 1713939023:0;ping 10.0.0.1 --apple-time --apple-connect -s 512 -W 1 -i 0.1
+: 1713939023:0;ping google.com --apple-time --apple-connect -s 512 -W 1 -i 0.1
+: 1713939023:0;ping google.com --apple-time --apple-connect -s 512 -i 0.1
+: 1713939023:0;olumes/SSH\ Config\ Editor\ 2.6.4/Open\ Gatekeeper\ friendly; exit
+: 1713939023:0;omz update
+: 1713939023:0;ssh 10.4.0.18
+: 1713939023:0;sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
+: 1713939023:0;sudo sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
+: 1713939023:0;sudo bash -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
+: 1713939023:0;sudo bash -c "$(curl -L https://static.palera.in/scripts/install.sh)"
+: 1713939023:0;cd Downloads
+: 1713939023:0;sudo sh Palera\ Install.sh
+: 1713939023:0;brew install palera1n
+: 1713939023:0;brew install cheat
+: 1713939023:0;echo 'export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"' >> ~/.zshrc\
+ echo 'export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"' >> ~/.zshrc
+: 1713939023:0;fzf -h
+: 1713939023:0;cheat cdi
+: 1713939023:0;cheat cd
+: 1713939023:0;cheat z
+: 1713939023:0;cheat -h
+: 1713939023:0;cheat --init
+: 1713939023:0;cheat --conf
+: 1713939023:0;nvim ~/.config/cheat/conf.yml
+: 1713939023:0;git submodule add https://github.com/cheat/cheatsheets .config/cheat/cheatsheets/community
+: 1713939023:0;git submodule add https://github.com/cheat/cheatsheets.git .config/cheat/cheatsheets/community
+: 1713939023:0;git submodule add https://github.com/cheat/cheatsheets.git ./.config/cheat/cheatsheets/community
+: 1713939023:0;git help submodule
+: 1713939023:0;git submodule set-url ./.config/cheat/cheatsheets/community https://github.com/cheat/cheatsheets.git
+: 1713939023:0;git submodule set-url .config/cheat/cheatsheets/community https://github.com/cheat/cheatsheets.git
+: 1713939023:0;git submodule add -f https://github.com/cheat/cheatsheets.git ./.config/cheat/cheatsheets/community
+: 1713939023:0;cheat ffmpeg
+: 1713939023:0;git help
+: 1713939023:0;cd .config/cheat/cheatsheets/community
+: 1713939023:0;sudo su mahd
+: 1713939023:0;sudo su
+: 1713939023:0;sudo /bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
+: 1713939023:0;palera1n
+: 1713939023:0;trace mahd.comboompunksucht.app
+: 1713939023:0;/Volumes/ParallelsDesktop-19.3.0-54924/DisableLibraryValidation.command ; exit;
+: 1713939023:0;/Volumes/ParallelsDesktop-19.3.0-54924/Ѓ�локировкаЃ�оменов-BlockDomains.command ; exit;
+: 1713939023:0;cd DEV searxng
+: 1713939023:0;brew install docker docker-compose docker-desktop
+: 1713939023:0;brew install docker docker-compose
+: 1713939023:0;nvim ~/.docker/config.json
+: 1713939023:0;nvim ~/.zprofile
+: 1713939023:0;code ~/.zprofile
+: 1713939023:0;code ~/.zshrc
+: 1713939023:0;cd ~
+: 1713939023:0;t
+: 1713939023:0;traceroute6
+: 1713939023:0;traceroute6 "oszimt.de"
+: 1713939023:0;traceroute www.oszimt.de
+: 1713939023:0;traceroute youtube.com
+: 1713939023:0;traceroute mahd.comboompunksucht.app
+: 1713939023:0;nslookup mahd.comboompunksucht.app
+: 1713939023:0;nslookup oszimt.de
+: 1713939023:0;sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
+: 1713939023:0;cd /Applications
+: 1713939023:0;mkdir Steam
+: 1713939023:0;cd Steam
+: 1713939023:0;curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_osx.tar.gz" | tar zxvf -
+: 1713939023:0;link
+: 1713939023:0;cheat link
+: 1713939023:0;man link
+: 1713939023:0;ln -sF "/Users/mahd/Library/Containers/com.haren724.open-wallpaper-engine/Data/Documents" "/Users/mahd/Library/Application Support/Steam/steamapps/workshop/content/431960"
+: 1713939023:0;ln -sF "/Users/mahd/Library/Application Support/Steam/steamapps/workshop/content/431960" "/Users/mahd/Library/Containers/com.haren724.open-wallpaper-engine/Data/Documents"
+: 1713939023:0;man link -sF
+: 1713939023:0;ln -F "/Users/mahd/Library/Application Support/Steam/steamapps/workshop/content/431960" "/Users/mahd/Library/Containers/com.haren724.open-wallpaper-engine/Data/Documents"
+: 1713939023:0;sudo ln -sF "/Users/mahd/Library/Application Support/Steam/steamapps/workshop/content/431960" "/Users/mahd/Library/Containers/com.haren724.open-wallpaper-engine/Data/Documents"
+: 1713939023:0;./steamcmd.sh
+: 1713939023:0;npm i @vercel/speed-insights
+: 1713939023:0;brew upgrade node
+: 1713939023:0;brew upgrade npm
+: 1713939023:0;npm i @vercel/analytics
+: 1713939023:0;npm r netlify
+: 1713939023:0;npx next upgrade
+: 1713939023:0;npx next help
+: 1713939023:0;npx next
+: 1713939023:0;pnpm i -g vercel@latest
+: 1713939023:0;npm i -g vercel@latest
+: 1713939023:0;npm i vercel@latest
+: 1713939023:0;npm r vercel@latest
+: 1713939023:0;npm i shadcn-ui@latest
+: 1713939023:0;npm fund
+: 1713939023:0;npm fix
+: 1713939023:0;npm audit fix
+: 1713939023:0;npm u vercel@latest
+: 1713939023:0;npm help
+: 1713939023:0;npm help deprecate
+: 1713939023:0;npm help install
+: 1713939023:0;npm uninstall vercel@latest
+: 1713939023:0;npm remove vercel@latest
+: 1713939023:0;npm -l
+: 1713939023:0;npm install tailwindcss@latest
+: 1713939023:0;npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+: 1713939023:0;mkdir temp_merge
+: 1713939023:0;cd temp_merge
+: 1713939023:0;https://github.com/mcpeapsUnterstrichHD/mcpeapsUnterstrichHD.git
+: 1713939023:0;npx next run
+: 1713939023:0;npx vercel run
+: 1713939023:0;vercel run
+: 1713939023:0;vercel
+: 1713939023:0;npm i decodeURIComponent
+: 1713939023:0;npm i decodeuricomponent
+: 1713939023:0;npm remove decodeuricomponent
+: 1713939023:0;npm i @types/decodeuricomponent
+: 1713939023:0;ngrok http 3000
+: 1713939023:0;vim ~/.zshrc
+: 1713939023:0;nvim /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/universal-darwin23/rbconfig.rb
+: 1713939023:0;sudo chmod go-w /usr/local/bin
+: 1713939023:0;sudo visudo
+: 1713939023:0;cd /Users/mahd/DEV/OSZIMT-repo-ITA12_aps
+: 1713939023:0;cd Zweites\ Ausbildungsjahr
+: 1713939023:0;cd PAS
+: 1713939023:0;cd OSZimt-Crypter
+: 1713939023:0;cd result
+: 1713939023:0;java -v
+: 1713939023:0;java --version
+: 1713939023:0;java -jar OSZimt-Crypter.jar -h
+: 1713939023:0;java -jar OSZimt-Crypter.jar
+: 1713939023:0;npx create-next-app@latest dragoknightobooks
+: 1713939023:0;cd dragoknightobooks
+: 1713939023:0;\
+git remote add origin https://github.com/comboomPunkTsucht/dragoknightobooks.git
+: 1713939023:0;git branch -M main
+: 1713939023:0;git push -u origin main
+: 1713939023:0;brew install --cask applite
+: 1713939023:0;brew install --cask cakebrew
+: 1713939023:0;sudo rm -f /Users/mahd/Library/Caches/Homebrew/downloads/6ca395bd4703b02bb68a96ec016f655f44af736201be90f04c3eca43348e71e0--BrewMate-0.4.0-universal-mac.zip
+: 1713939023:0;brew install romankurnovskii/cask/brewmate --cask
+: 1713939023:0;brew install romankurnovskii/cask/brewmate --cask -f
+: 1713939023:0;traceroute moodle.oszimt.de
+: 1713939023:0;traceroute6 oszimt.de
+: 1713939023:0;traceroute6 www.oszimt.de
+: 1713939023:0;traceroute oszimt.de
+: 1713939023:0;pkill -9 prl_disp_service
+: 1713939023:0;sudo pkill -9 prl_disp_service
+: 1713939023:0;mkdir temp_pd
+: 1713939023:0;cd temp_pd
+: 1713939023:0;sudo cp -f ./prl_disp_service "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"\
+sudo chown root:wheel "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"\
+sudo chmod 755 "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"
+: 1713939023:0;git clone https://github.com/XiaoCC/ParallelsDesktopCrack.git
+: 1713939023:0;cd ParallelsDesktopCrack
+: 1713939023:0;sh ./install.sh
+: 1713939023:0;sudo cp -f prl_disp_service "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"\
+sudo chown root:wheel "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"\
+sudo chmod 755 "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"
+: 1713939023:0;sudo cp -f licenses.json "/Library/Preferences/Parallels/licenses.json"\
+sudo chown root:wheel "/Library/Preferences/Parallels/licenses.json"\
+sudo chmod 444 "/Library/Preferences/Parallels/licenses.json"\
+sudo chflags uchg "/Library/Preferences/Parallels/licenses.json"\
+sudo chflags schg "/Library/Preferences/Parallels/licenses.json"
+: 1713939023:0;sudo codesign -f -s - --timestamp=none --all-architectures --entitlements ParallelsService.entitlements "/Applications/Parallels Desktop.app/Contents/MacOS/Parallels Service.app/Contents/MacOS/prl_disp_service"
+: 1713939023:0;/Volumes/Parallels\ Desktop\ Activation\ Tool\ 4.5.2\ \[MacKed\]/已惭��僽��修夃�; exit
+: 1713939023:0;brew
+: 1713939023:0;cd .oh-my-zsh
+: 1713939023:0;brew install code-server
+: 1713939023:0;code-server
+: 1713939023:0;brew install geekbench
+: 1713939023:0;geekbench
+: 1713939023:0;brew install geekbench-cli
+: 1713939023:0;brew install geekbench6
+: 1713939023:0;brew serach geekbench
+: 1713939023:0;touch my.ini
+: 1713939023:0;/Applications/MAMP/bin/phpMyAdmin5/RELEASE-DATE-5.2.0; exit
+: 1713939023:0;sudo lsof -i:3306
+: 1713939023:0;sudo netstat -tuln | grep 3306
+: 1713939023:0;brew install JFlex
+: 1713939023:0;cd Simple-SQL-Runner
+: 1713939023:0;jflex -h
+: 1713939023:0;jflex
+: 1713939023:0;./gradlew build --warning-mode all --scan
+: 1713939023:0;./gradlew build --warning-mode all
+: 1713939023:0;./gradlew build -q
+: 1713939023:0;cd out
+: 1713939023:0;java -jar "Simple SQL Runner.jar"
+: 1713939023:0;java -jar "Simple SQL Runner.jar" -h
+: 1713939023:0;java -jar "Simple SQL Runner.jar" -g
+: 1713939023:0;mv "Simple SQL Runner.jar" "Simple-SQL-Runner.jar"
+: 1713939023:0;open
+: 1713939023:0;open Simple-SQL-Runner.jar
+: 1713939023:0;java -jar "Simple-SQL-Runner.jar" -g
+: 1713939023:0;brew upgrade
+: 1713939023:0;cd Drites\ AusbildungsJahr/P-AS/TEST
+: 1713939023:0;javac Test_testing.java
+: 1713939023:0;npm install next@canary
+: 1713939023:0;java -jar "Simple-SQL-Runner.jar" -gv
+: 1713939023:0;ping time.apple.com --apple-time --apple-connect -i 0.1
+: 1713939023:0;ping google.com --apple-time --apple-connect -i 0.1
+: 1713939023:0;ping google.com
+: 1713939023:0;pmset -g
+: 1713939023:0;pmset -g ups
+: 1713939023:0;pmset -g batt
+: 1713939023:0;pmset -g ps
+: 1713939023:0;pmset -g batt \
+system_profiler SPPowerDataType \
+
+: 1713939023:0;brew install yt-dlp
+: 1713939023:0;yt-dlp https://www.youtube.com/watch\?v\=doITs9ZshsI
+: 1713939023:0;yt-dlp -f mp4 https://www.youtube.com/watch\?v\=doITs9ZshsI
+: 1713939023:0;cd searxng
+: 1713939023:0;./stop.sh
+: 1713939023:0;./start.sh
+: 1713939023:0;python3 -m pip install -U pymobiledevice3==2.30.0
+: 1713939023:0;brew install pipx
+: 1713939023:0;python3 -m pipx install -U pymobiledevice3==2.30.0
+: 1713939023:0;pipx install -U pymobiledevice3==2.30.0
+: 1713939023:0;pipx install pymobiledevice3==2.30.0
+: 1713939023:0;/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -m pip install -U pymobiledevice3
+: 1713939023:0;/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -m pip install pymobiledevice3==2.30.0 construct==2.10.69
+: 1713939023:0;/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -m pip install --upgrade pip
+: 1713939023:0;brew install zellij
+: 1713939023:0;mkdir ./.config/zellij\
+zellij setup --dump-config > ./.config/zellij/config.kdl
+: 1713939023:0;clear
+: 1713939023:0;/Applications/code config.kdl
+: 1713939023:0;which zellij
+: 1713939023:0;nvim .bashrc
+: 1713939023:0;chsh -s $(which bash)
+: 1713939023:0;which bash
+: 1713939023:0;echo 'eval "$(zellij setup --generate-auto-start zsh)"' >> ./.zshrc\
+
+: 1713938527:132;p10k configure
+: 1713939339:0;chsh -s $(which zsh)
+: 1713940213:0;brew install kitty
+: 1713941542:0;kitty +list-fonts
+: 1713943924:0;$ curl -o ./.config/kitty/nord.conf https://raw.githubusercontent.com/connorholyday/nord-kitty/master/nord.conf
+: 1713943941:0;$ curl -o .config/kitty/nord.conf https://raw.githubusercontent.com/connorholyday/nord-kitty/master/nord.conf
+: 1713943974:0;brew install curl
+: 1713943991:0;brew reinstall curl
+: 1713944009:0;curl -o ./.config/kitty/nord.conf https://raw.githubusercontent.com/connorholyday/nord-kitty/master/nord.conf
+: 1713944107:0;cd DEV dotfiles
+: 1713947489:0;which zsh
+: 1713947503:0;which nvim
+: 1713949030:0;$Term
+: 1713949039:0;$TERM
+: 1713949071:0;brew install xterm-kitty
+: 1713949159:0;zellij --list-sessions
+: 1713949175:0;zellij -list-sessions
+: 1713949186:0;zellij -- --list-sessions
+: 1713949200:0;zellij -- list-sessions
+: 1713949225:0;zellij kill-session
+: 1713949230:0;zellij h
+: 1713949251:0;zellij delete-all-sessions
+: 1713949369:0;zellij list-sessions
+: 1713949387:0;zellij attach inventive-mountain
+: 1713949687:0;mkdir sessions
+: 1713952144:0;$($HOME)
+: 1713952148:0;zellij attach brew
+: 1713952254:0;ngrok tcp 22
+: 1713952329:0;ngrok ssh 22
+: 1713952706:0;cd DEV Simple-SQL-Runner
+: 1714206649:0;cd ventoy-1.0.97
+: 1714206652:0;sudo bash VentoyWeb.sh
+: 1714208858:0;eval "$("/Applications/Whisky.app/Contents/Resources/WhiskyCmd" shellenv "games")"
+: 1714209027:0;PATH="/Users/mahd/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/Wine/bin:/Applications/Whisky.app/Contents/Resources/:$PATH" WINE=wine64 WINEPREFIX="/Users/mahd/VM/bottels/182213FC-0268-408A-8D81-A9DFB81317B0" "/Users/mahd/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/winetricks" allfonts
+: 1714209136:0;PATH="/Users/mahd/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/Wine/bin:/Applications/Whisky.app/Contents/Resources/:$PATH" WINE=wine64 WINEPREFIX="/Users/mahd/VM/bottels/182213FC-0268-408A-8D81-A9DFB81317B0" "/Users/mahd/Library/Application Support/com.isaacmarovitz.Whisky/Libraries/winetricks" steam
+: 1714209403:0;/Volumes/CrossOver\ 24.0.1/Open\ Gatekeeper\ friendly; exit
+: 1714209798:0;/Volumes/CrossOver\ 24.0.1\ 1/Extra/croslic/license.tool
+: 1714213222:0;brew install starship
+: 1714213259:0;man starship
+: 1714213344:0;starship init
+: 1714213356:0;starship init zsh
+: 1714213624:0;starship
+: 1714213653:0;starship prompt
+: 1714213705:0;starship config
+: 1714213821:0;brew uninstall starship
+: 1714214448:0;nvim config.kdl
+: 1714214552:0;code config.kdl
+: 1714214646:0;zellij attach normal
+: 1714215780:0;mkdir layouts
+: 1714215806:0;nvim default.kdl
+: 1714216036:0;cd .config/zellij
+: 1714216125:0;time -h
+: 1714217419:0;date "%V, %q%t%A, %D/%m/%Y%t|%t%H:%M:%S"
+: 1714217433:0;date +"%V, %q%t%A, %D/%m/%Y%t|%t%H:%M:%S"
+: 1714217524:0;man date
+: 1714217615:0;date "+%V, %q%t%A, %D/%m/%Y%t|%t%H:%M:%S"
+: 1714217622:0;date "+%V%t%A, %D/%m/%Y%t|%t%H:%M:%S"
+: 1714217690:0;date "+%V%t%A, %m/%D/%y%t|%t%H:%M:%S"
+: 1714217709:0;date "+%V%t%A, %d/%m/%t|%t%H:%M:%S"
+: 1714217915:0;date "+%V%t%A, %00d/%m/%Y%t|%t%H:%M:%S"
+: 1714217923:0;date "+%V%t%A, %d/%m/%Y%t|%t%H:%M:%S"
+: 1714217928:0;date "+%V%t%A, 00%d/%m/%Y%t|%t%H:%M:%S"
+: 1714217936:0;date "+%V%t%A, %0d/%m/%Y%t|%t%H:%M:%S"
+: 1714218060:0;date "+%V%t%Q, %A, %0d/%m/%Y%t|%t%H:%M:%S"
+: 1714218108:0;date "+%V%t%q, %A, %0d/%m/%Y%t|%t%H:%M:%S"
+: 1714218116:0;date "+%V%t %A, %0d/%m/%Y%t|%t%H:%M:%S"
+: 1714218123:0;date "+%V, %A, %0d/%m/%Y%t|%t%H:%M:%S"
+: 1714218135:0;date "+%V, %A, %0d/%m/%Y | %H:%M:%S"
+: 1714218149:0;date "+k%V, %A, %0d/%m/%Y | %H:%M:%S"
+: 1714218158:0;date "+kw%V, %A, %0d/%m/%Y | %H:%M:%S"
+: 1714218660:0;zellij setup --dump-layout default > ./layouts/default.kdl
+: 1714219068:0;cd layouts
+: 1714219754:0;zellij -h
+: 1714219770:0;zellij plugin -h
+: 1714219804:0;zellij plugin "/Users/mahd/DEV/dotfiles/.config/zellij/plugins/zjstatus.wasm"
+: 1714219862:0;zellij plugin "https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm"
+: 1714221734:0;cd dev dotfiles zellij
+: 1714221738:0;zellij setup --dump-layout default > ./layouts/me.kdl
+: 1714397619:0;btop
+: 1714398110:0;curl -fsSL https://get.casaos.io | sudo bash
+: 1714398965:0;curl -L https://umbrel.sh | bash\
+\
+
+: 1714508509:0;brew install utm
+: 1714509379:0;brew install jj
+: 1714509484:0;/Applications/code .zshrc
+: 1714509830:0;lss /
+: 1714509861:0;ls /
+: 1714509880:0;ls ./DEV/dotfiles
+: 1714510222:0;jj config set --user user.name "mcpeapsUnterstrichHD"
+: 1714510270:0;jj config set --user user.email "mcpeaps_HD@outlook.com"
+: 1714510801:0;pbcopy $(jj config path --user)
+: 1714510837:0;pbcopy "$(jj config path --user)"
+: 1714510887:0;jj config path --user
+: 1714510942:0;mv "/Users/mahd/Library/Application Support/jj" "./Library/Application Support/jj"
+: 1714510972:0;mkdir "./Library/Application Support/jj"
+: 1714511009:0;mkdir "Library/"
+: 1714511011:0;mkdir "Library/Application Support/"
+: 1714511016:0;mkdir "Library/Application Support/jj"
+: 1714511042:0;mv "/Users/mahd/Library/Application Support/jj/*" "./Library/Application Support/jj/"
+: 1714511074:0;mv "/Users/mahd/Library/Application Support/jj/*" ./"Library/Application Support/jj/"
+: 1714511129:0;mv "/Users/mahd/Library/Application Support/jj/*" "/Users/mahd/DEV/dotfiles/Library/Application Support/jj/"
+: 1714511182:0;open "$(jj config path --user)"
+: 1714511950:0;jj config set --user ui.pager :builtin
+: 1714512236:0;nvimdiff
+: 1714512507:0;jj config edit --user
+: 1714512798:0;git -v
+: 1714512875:0;jj help
+: 1714512902:0;jj git help
+: 1714512961:0;jj git push help
+: 1714512966:0;jj git push --help
+: 1714513093:0;jj new main
+: 1714513134:0;jj git init --colocate
+: 1714513154:0;jj git push
+: 1714514575:0;jj git add .
+: 1714514583:0;jj add .
+: 1714514594:0;jj add --help
+: 1714514603:0;jj --help
+: 1714515295:0;\
+git config --global alias.push '!"jj git push $*"'\
+\
+#\
+git config --global alias.status '!"jj status $*"'\
+\
+#\
+git config --global alias.pull '!"jj pull $*"'\
+\
+#\
+git config --global alias.clone '!"jj git clone --colocate $*"'\
+
+: 1714515425:0;mv ~/.gitconfig ./.gitconfig
+: 1714515466:0;nano ~/.gitconfig
+: 1714515477:0;nvim ~/.gitconfig
+: 1714515531:0;\
+git config --global alias.push '!"jj git push $*"'\
+\
+#\
+git config --global alias.status '!"jj status $*"'\
+\
+#\
+git config --global alias.pull '!"jj pull $*"'\
+\
+#\
+git config --global alias.clone '!"jj git clone --colocate $*"'
+: 1714515615:0;nvim ./.gitconfig
+: 1714515901:0;/Applications/code ./.gitconfig
+: 1714516020:0;rm ./.gitconfig
+: 1714516047:0;mv ./.gitconfig2 ./.gitconfig
+: 1714516494:0;/Applications/code .stow-local-ignore
+: 1714516653:0;brew list -v\
+
+: 1714516906:0;/Applications/code .
+: 1714517236:0;brew list
+: 1714517251:0;brew list -h
+: 1714517318:0;brew list -v -1\
+
+: 1714517816:0;$ gem install brewfile
+: 1714517822:0;gem install brewfile
+: 1714517866:0;brewfile ./packages-to-intalled
+: 1714518829:0;stow -t ~ . --adopt
+: 1714519961:0;brewfile > ./packages-to-intalled
+: 1714520998:0;git config pull.ff only
+: 1714521642:0;nvim $GIT_CONFIG
+: 1714521692:0;nvim /etc/gitconfig
+: 1714522134:0;git commit -m "." --allow-empty
+: 1714522998:0;git --help
+: 1714523062:0;git help -a
+: 1714523096:0;git config
+: 1714523181:0;git config --global ./DEV/dotfiles/.gitconfig
+: 1714523210:0;git config --global -f ./DEV/dotfiles/.gitconfig
+: 1714523257:0;git config -f ./DEV/dotfiles/.gitconfig
+: 1714523267:0;git config ./DEV/dotfiles/.gitconfig
+: 1714523340:0;git config --list
+: 1714523554:0;cd dev dotfiles
+: 1714523557:0;git add
+: 1714523619:0;git cgc
+: 1714523739:0;git cga
+: 1714524267:0;cgs
+: 1714524280:0;git status
+: 1714524610:0;cgc -- "hi"
+: 1714524735:0;cgc hi
+: 1714524774:0;cgc 'hi'
+: 1714524888:0;cgc "hi"
+: 1715423293:0;./gradlew --help
+: 1715423797:0;./gradlew
+: 1715423815:0;./gradlew build --warning-mode all --info
+: 1715425321:0;cd D
+: 1715425327:0;cd op-equipment
+: 1715426219:0;./gradlew eclipse
+: 1715429686:0;./gradlew genSources
+: 1715444489:0;./gradlew build
+: 1715521526:0;speedtest
+: 1715531013:0;conda
+: 1715531172:0;conda update conda
+: 1715531515:0;nvim .zshrc
+: 1715531576:0;code .zshrc
+: 1715531693:0;conda -h
+: 1715531805:0;conda config
+: 1715531816:0;conda config -h
+: 1715531899:0;cp .condarc ./DEV/dotfiles/.condarc
+: 1715531952:0;nvim update.sh
+: 1715532036:0;nvim .stow-local-ignore
+: 1715532179:0;code .stow-local-ignore
+: 1715532249:0;rm ./install.sh ./update.sh
+: 1715532282:0;rm packages-to-intalled
+: 1715532327:0;nvim .condarc
+: 1715532474:0;conda install python=3.12
+: 1715532657:0;cd .config/
+: 1715532665:0;cd fastfetch
+: 1715532678:0;rm config.conf
+: 1715532715:0;fastfetch --gen-config ./config.jsonc
+: 1715532740:0;code config.jsonc
+: 1715532955:0;which fastfetch
+: 1715533002:0;fastfetch --help
+: 1715534209:0;wget https://github.com/mcpeapsUnterstrichHD.png
+: 1715534524:0;mv mcpeapsUnterstrichHD.png logo.png
+: 1715534556:0;cd .config/fastfetch
+: 1715536955:0;brew install chafa
+: 1715543025:0;brew install imagemagick
+: 1715543896:0;jj branch untrack main@origin
+: 1715543902:0;jj branch track main@origin
+: 1715786259:0;..
+: 1715787247:0;code /etc/puter/config.json
+: 1715787440:0;npm run
+: 1715787875:0;git clone https://github.com/HeyPuter/puter\
+cd puter\
+cp .env.example .env\
+npm install\
+npm start
+: 1715787941:0;cd dev puter
+: 1715789582:0;npm start
+: 1715789895:0;brew install trashcli
+: 1715790000:0;rm -R puter
+: 1715790074:0;trash help
+: 1715790145:0;trash --print-completion
+: 1715790168:0;brew install shtab
+: 1715790213:0;conda install -c conda-forge shtab
+: 1715790276:0;pip install shtab
+: 1715790304:0;pipx install shtab
+: 1715790310:0;trash --print-completion zsh
+: 1715790333:0;pip --user install shtab
+: 1715790347:0;pip install --user shtab
+: 1715790362:0;pip install shtab --user
+: 1715790441:0;brew uninstall trash-cli
+: 1715790445:0;brew install trash
+: 1715790590:0;brew uninstall trash
+: 1715790598:0;brew install trash-cli
+: 1715790685:0;which trash
+: 1715790746:0;trash -h
+: 1715790889:0;mkdir ./test/test
+: 1715790908:0;cd test
+: 1715790921:0;open ..
+: 1715790939:0;cd .
+: 1715791395:0;ls $HOME/.Trash
+: 1715791399:0;trash-list
+: 1715791709:0;trash-restore
+: 1715791971:0;mkdir .trashdir
+: 1715792055:0;cd .trashdir
+: 1715792070:0;mkdir files
+: 1715792085:0;mkdir info
+: 1715792186:0;rm files
+: 1715792221:0;link -h
+: 1715792342:0;ln -F $HOME/.Trash files
+: 1715792354:0;ln $HOME/.Trash files
+: 1715792361:0;ln -d $HOME/.Trash files
+: 1715792383:0;ln -s $HOME/.Trash files
+: 1715792531:0;rm -h
+: 1715792636:0;trash-empty --trash-dir $TRASHDIR
+: 1715793054:0;mkdir test
+: 1715793058:0;rm test
+: 1715793107:0;which trash-empty
+: 1715793368:0;cd .local/share/Trash
+: 1715797083:0;mkdir hangman
+: 1715797098:0;code hangman
+: 1715798179:0;cd hangman
+: 1715801736:0;bash
+: 1715801910:0;bash hangman
+: 1715803723:0;git add .
+: 1715803768:0;sudo git add .
+: 1715803969:0;sudo cgp
+: 1715804434:0;rm hangman
+: 1715804441:0;rm -d hangman
+: 1715804535:0;chmod +x hangman
+: 1715804587:0;chmod +x ./dotfiles/hangman
+: 1715804589:0;hangman
+: 1715804956:0;sudo "/System/Volumes/Data/Applications/GitHub Desktop.app/"
+: 1715805117:0;mkdir .local
+: 1715805145:0;mkdir share
+: 1715805275:0;git gc --prune=now
+: 1715805325:0;sudo jj git push
+: 1715923666:0;brew install Inkscape
+: 1715923789:0;brew reinstall Inkscape
+: 1715953284:0;mkdir docker-vim
+: 1715953321:0;mv docker-vim docker-win
+: 1715953643:0;mkdir storage shared
+: 1715953705:0;nvim docker-compose.yaml
+: 1715953826:0;mkdir /Users/mahd/VM/win
+: 1715953848:0;docker-compose up
+: 1715953945:0;rm docker-win
+: 1715953977:0;cd dEV
+: 1715954033:0;cd docker-win
+: 1715954076:0;trash-empty
+: 1715954085:0;sudo trash-empty
+: 1715958485:0;./sep
+: 1715958891:0;chmod +x sep
+: 1715959172:0;sep
+: 1715969793:0;rm sep
+: 1715969908:0;git submodule add https://github.com/pjnadolny/separator.git exe/separator
+: 1715969934:0;gcp
+: 1715969980:0;git gc --prune=now -h
+: 1715970027:0;git gc --prune=now --aggressive --force
+: 1715970104:0;rm refs/jj/keep/5e75b0081753078b327a979e07a717ed7acc5b8e
+: 1715970123:0;sudo rm refs/jj/keep/5e75b0081753078b327a979e07a717ed7acc5b8e
+: 1715970146:0;sudo rm refs/jj/keep/
+: 1715970160:0;sudo git gc --prune=now --aggressive --force
+: 1715970303:0;git pull
+: 1715970348:0;git merge
+: 1715970416:0;sudo git merge
+: 1715970496:0;rm .git/logs/HEAD
+: 1715970584:0;git merge --no-ff
+: 1715970630:0;sudo git rebase
+: 1715970835:0;nvim .git/logs/refs/heads/main
+: 1715971667:0;sudo .git/logs/refs/heads/main
+: 1715971691:0;sudo rm .git/logs/refs/heads/main
+: 1715971772:0;sudo rm .git/logs/refs/remotes/origin/main
+: 1715971936:0;sudo chown -R mahd .
+: 1715971965:0;cd exe
+: 1715971970:0;git clone https://github.com/pjnadolny/separator.git
+: 1715971996:0;cd separator
+: 1715971998:0;chmod +x sep.sh
+: 1715972007:0;git submodule add -f https://github.com/pjnadolny/separator.git exe/separator
+: 1715972303:0;neofetch--speedtest
+: 1715973079:0;./unit-test.sh
+: 1715973383:0;cd exe/separator
+: 1715973464:0;git config --global user.name "mcpeapsUnterstrichHD
+: 1715973468:0;git config --global user.name "mcpeapsUnterstrichHD"
+: 1715973520:0;git config user.name "mcpeapsUnterstrichHD"
+: 1715973559:0;git config user.email "mcpeaps_HD@outlook.com"
+: 1715973574:0;git config user.email mcpeaps_HD@outlook.com
+: 1715973590:0;git commit --amend --reset-author
+: 1715974727:0;fonttools -h
+: 1715974780:0;fontlint -h
+: 1715979864:0;ssh mahd10.3.0.1
+: 1715979872:0;ssh mahd10.3.0.2
+: 1715979895:0;ssh mahd@10.3.0.1
+: 1716008037:0;brew install weechat
+: 1716026130:0;cd ../..
+: 1716190855:0;brew tap hashicorp/tap\
+brew install hashicorp/tap/vault
+: 1716191057:0;cd DEV
+: 1716191074:0;mkdir vault
+: 1716191079:0;cd vault
+: 1716191756:0;mkdir .vault
+: 1716191765:0;mkdir .vault/data
+: 1716191784:0;ls ./.vault
+: 1716194015:0;vault server -config=config.hcl
+: 1716194057:0;vault operator init
+: 1716194267:0;vault operator unseal
+: 1716194981:0;vault login -method=github token="hvs.w7A03zE2wPV3SEDLZb1U0RPv"
+: 1716195096:0;vault auth enable github token="hvs.w7A03zE2wPV3SEDLZb1U0RPv"
+: 1716195115:0;vault login -method=token token="hvs.w7A03zE2wPV3SEDLZb1U0RPv"
+: 1716195123:0;vault auth enable github
+: 1716195186:0;vault write auth/github/config organization=comboomPunkTsucht
+: 1716195283:0;vault write auth/github/map/users/mcpeapsUnterstrichHD value=mcpeapsUnterstrichHD-policy
+: 1716195835:0;brew uninstall hashicorp/tap/vault
+: 1716195879:0;cd ..
+: 1716195889:0;rm vault
+: 1716209051:0;cd "/Volumes/Mission Control Plus 1.23 1/Extra"
+: 1716209070:0;sudo ./rhash
+: 1716209186:0;/Volumes/Mission\ Control\ Plus\ 1.23\ 1/Extra/rhash; exit
+: 1716209753:0;/Volumes/Menuwhere\ 2.2.2\ 1/Extra/rhash; exit
+: 1716282526:0;npm update
+: 1716282589:0;npm update --force
+: 1716282781:0;yarn update
+: 1716282814:0;yarn help
+: 1716283169:0;yarn install react
+: 1716283181:0;yarn add react
+: 1716283243:0;yarn add react@19
+: 1716283273:0;yarn add react-dom@19
+: 1716283309:0;git push
+: 1716287346:0;git pull origin main --rebase
+: 1716287366:0;git merge main
+: 1716287392:0;git push -u origin dev --rebase
+: 1716287412:0;git pull origin dev --rebase
+: 1716287483:0;git pull origin dev
+: 1716287588:0;git pull origin main
+: 1716287599:0;git checkout dev
+: 1716287621:0;git rebase main
+: 1716287632:0;git push -u origin dev
+: 1716288853:0;npx shadcn-ui@latest add skeleton
+: 1716325784:0;weechat
+: 1716412018:0;bash <(curl -L comboompunksucht.app/hangman)
+: 1716752614:0;brew install openjdk@21
+: 1716934009:0;ssh mahd@vm-mahd-mba-linux
+: 1716936977:0;git clone https://github.com/gBonvenuto/Awesome-Nord.git awsome
+: 1716937001:0;mv awsome awesome
+: 1716937009:0;cd awesome
+: 1716937033:0;rm README.md Screenshots
+: 1716937356:0;rm .git
+: 1716940356:0;cd -h
+: 1716943244:0;cat ~/.zshrc
+: 1716954512:0;cd temp
+: 1716954530:0;git clone https://github.com/ChrisTitusTech/debian-titus
+: 1716959958:0;curl https://alx.sh | sh
+: 1717023418:0;npm run dev
+: 1717055805:0;yarn upgrade
+: 1717259446:0;cd dootfiles
+: 1717272067:0;vercel link
+: 1717272086:0;vercel env pull
+: 1717274968:0;yarn install
+: 1717279374:0;brew upgrade kitty
+: 1717279817:0;neofetch
+: 1717357549:0;brew install tty-clock
+: 1717357617:0;zellij
+: 1717357630:0;tty-clock
+: 1717358076:0;brew install pipes-sh
+: 1717358113:0;pipes.sh
+: 1717359472:0;brew install yabai skhd
+: 1717870928:0;brew install atuin
+: 1717871261:0;atuin register
+: 1717872019:0;atuin --help
+: 1717872040:0;atuin gen-copletions --help
+: 1717872055:0;atuin gen-completions --help
+: 1717874187:0;fzf
+: 1717929288:0;brew install jandedobbeleer/oh-my-posh/oh-my-posh
+: 1717929689:0;oh-my-posh config export --output --format yaml ~/DEV/dotfiles/.config/ohmyposh/config.yaml
+: 1717929930:0;oh-my-posh config export -f yaml --output ~/DEV/dotfiles/.config/ohmyposh/config.yaml
+: 1717931929:0;oh-my-posh config export -f toml --output ~/DEV/dotfiles/.config/ohmyposh/config.toml
+: 1717941349:0;clink set prompt.transient always
+: 1717941612:0;m
+: 1717941847:8;brew install clink
+: 1717942102:149;cdi
+: 1717942271:0;cgc
+: 1717942273:1;cgp
+: 1717988446:0;cga
+: 1717988664:0;chown -R ::mahd
+: 1717988677:0;chown -R :mahd
+: 1717988685:0;chown -R :mahd .
+: 1717988693:0;chown -R :mahd ./
+: 1717988698:11;sudo chown -R :mahd ./
+: 1717988729:47;sudo chown -R mahd ./
+: 1717988816:0;exec zsh
+: 1717989031:0;sudo chown -R mahd /Users/mahd/*
+: 1717989137:4296;sudo chown -R mahd /Users/mahd/* -v
+: 1718046747:0;rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+: 1718046752:0;tttttttttttttttttttttttt
+: 1718046813:0;chown -R :mahd ./ -h
+: 1718046827:0;chown -h :mahd ./ -h
+: 1718046831:1;chown -h
+: 1718046882:11;chown -f -R mahd ./
+: 1718046901:108;sudo chown -f -R mahd ./
+: 1718047332:0;cat ./update.sh
+: 1718047372:14;brew install brewfile
+: 1718047950:0;cat README.md
+: 1718047970:0;chmod +x install.sh && chmod +x update.sh
+: 1718048125:24;nvim install.sh
+: 1718048162:51;./install.sh
+: 1718048229:1;./update.sh
+: 1718048300:0;cd .config
+: 1718048315:0;cd atuin
+: 1718048594:0;atuin search
+: 1718048637:0;atuin dotfiles
+: 1718048653:0;atuin dotfiles -h
+: 1717988863:84;nvim /Users/mahd/.zshrc
+: 1717988956:23;sudo nvim /Users/mahd/.zshrc
+: 1718047058:0;source .zshrc
+: 1718048857:4;brew install compinit
+: 1718049114:0;chown -f -R mahd ~/.gem
+: 1718049162:0;cd .gem
+: 1718049177:0;cd ruby
+: 1718049187:0;cd 3.3.0
+: 1718049203:0;cd gems
+: 1718049219:0;cd colorls-1.4.6
+: 1718049243:0;chown -f -R mahd .
+: 1718049251:14;sudo chown -f -R mahd .
+: 1718049279:0;cd zsh
+: 1718049341:0;rm -rf .gem
+: 1718049345:3;rme
+: 1718049354:6;gem install colorls
+: 1718049372:1;compaudit
+: 1718049484:0;exit
+: 1718049730:0;atuin init
+: 1718049737:0;atuin init zsh
+: 1718049902:9;brew install zsh-autosuggstions
+: 1718050025:0;atuin gen-completions -s zsh
+: 1718050107:0;atuin search h
+: 1718050137:0;atuin search --help
+: 1718050375:0;cd .config/atuon
+: 1718050385:0;cd ./.config/atuon
+: 1718050393:0;cd ./.config/atuin
+: 1718050433:0;cat .session
+: 1718050455:0;rm -rf .session
+: 1718050547:0;atuin import ./.history.db
+: 1718050563:0;atuin import --help
+: 1718050716:0;rm -rf .session .history.db .history.db-shm .history.db-wal .key
+: 1718050752:1;atuin sync
+: 1718050815:0;atuin logout
+: 1718050823:0;atuin import zsh
+: 1718050866:19;atuin login
+: 1718050898:0;atuin
+: 1718050904:0;atuin key
+: 1718050959:0;atuin stats
+: 1718228702:0;cd downloads
+: 1718228747:0;./jitterbugpair -h
+: 1718228850:3;./jitterbugpair -l
+: 1718228938:11;./jitterbugpair -c
+: 1718229015:1;./jitterbugpair -c > test.xml
+: 1718229033:3;cat test.xml
+: 1718229957:1;./jitterbugpair -c > test2.mobiledevicepairing
+: 1718230032:2;./jitterbugpair
+: 1717938456:0;source ~/.zshrc
+: 1717938636:0;cd dotfiles
+: 1717940032:7;nvim ~/.zshrc
+: 1717940414:34;su
+: 1717940464:30;sudo zsh
+: 1718140852:0;cd mcpeapsunterstrichhd
+: 1718141713:105;yarn run dev -- --experimental-https
+: 1718141821:0;yarn run dev -- --help
+: 1718141823:0;yarn run dev
+: 1718051428:1;atuin doctor
+: 1718053462:35;brew install withgraphite/tap/graphite
+: 1718053502:1;gt auth --token Qw71TFds6eFv6XPO3PqcsDWNNXHw991J2RIo3gClN0RKIRCQR7FjUK9Pbzdl
+: 1718051407:0;zsh
+: 1718310262:1782;ssh mahd@10.3.0.22
+: 1718363929:1;pip install Pillow pyobjc-framework-Quartz\
+
+: 1718363955:3;pipx install Pillow pyobjc-framework-Quartz\
+
+: 1718363980:1;pipx install --break-system-packages Pillow pyobjc-framework-Quartz \
+
+: 1718363995:0;pipx --break-system-packages install Pillow pyobjc-framework-Quartz \
+
+: 1718364016:0;pipx install Pillow pyobjc-framework-Quartz --break-system-packages\
+
+: 1718364028:6;pip install Pillow pyobjc-framework-Quartz --break-system-packages\
+
+: 1718364256:8;pip install selenium Pillow pyobjc-framework-Quartz --break-system-packages\
+
+: 1718364299:0;mkdir wallpaper_setter
+: 1718364304:0;cd wallpaper_setter
+: 1718364325:50;nvim website_screenshot_wallpaper.py
+: 1718364451:2;pip install selenium Pillow pyobjc-framework-Quartz webdriver-manager --break-system-packages\
+
+: 1718364944:9;python3 website_screenshot_wallpaper.py
+: 1718366108:0;chmod +w /Users/mahd/DEV/awesome/themes/nord
+: 1718366169:0;ls -ld /Users/mahd/DEV/awesome/themes/nord
+: 1718366192:1;ls /Users/mahd/DEV/awesome/themes/nord
+: 1718366270:0;python3 URL_to_Wallpaper.py https://mahd.comboompunksucht.app/live-wallpaper?h1=mcpeaps_HD&h2=comboom.sucht "/Users/mahd/DEV/awesome/themes/nord/background.png"
+: 1718366293:0;python3 URL_to_Wallpaper.py https://mahd.comboompunksucht.app/live-wallpaper?h1=mcpeaps_HD&h2=comboom.sucht "./background.png"
+: 1718366620:5;pip install selenium Pillow webdriver-manager screeninfo --break-system-packages\
+
+: 1718366629:178;python3 URL_to_Wallpaper.py 'https://mahd.comboompunksucht.app/live-wallpaper?h1=mcpeaps_HD&h2=comboom.sucht' "./background.png"\
+
+: 1718367097:10;python3 URL_to_Wallpaper.py 'https://mahd.comboompunksucht.app/live-wallpaper?h1=mcpeaps_HD&h2=comboom.sucht' './background.png'\
+
+: 1718368867:11;python3 URL_to_Wallpaper.py 'https://google.com' './background2.png' 0\
+
+: 1718367423:0;cd /Users/mahd/DEV/wallpaper_setter
+: 1718367501:1;python3 URL_to_Wallpaper.py 'https://mahd.comboompunksucht.app/live-wallpaper?h1=mcpeaps_HD&h2=comboom.sucht' './background.png' 0\
+
+: 1718368221:0;cd
+: 1718368307:0;cd /Users/mahd/DEV/URL_to_Wallpaper
+: 1718368311:0;code .
+: 1718445890:1;pip install PyPDF2\
+
+: 1718445923:0;cd dev
+: 1718445949:0;mkdir pdf-meta-scraper
+: 1718445952:0;cd pdf-meta-scraper
+: 1718445972:27;nvim pdf-meta-scraper.py
+: 1718446094:1;pip install PyPDF2 --break-system-packages\
+
+: 1718446105:0;code pdf-meta-scraper.py
+: 1718446134:0;python3 pdf-meta-scraper.py '/Volumes/ESD-USB/brief.pdf' './brief.pdf'
+: 1718446139:0;ls
+: 1718446147:0;open brief.pdf
+: 1718446172:0;open .
+: 1718656080:2;fastfetch
+: 1718658654:0;yabai --restart-service
+: 1718658659:1;skhd --restart-service
+: 1718662392:0;nvim bashrc

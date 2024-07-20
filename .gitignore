@@ -11,3 +11,4 @@
 /.local/share/weechat/logs
 .config/weechat/sec.conf
 .config/weechat/sec.conf
+.zsh-autopair

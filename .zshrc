@@ -182,3 +182,4 @@ unset __conda_setup
 
 eval "$(zellij setup --generate-auto-start zsh)"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
