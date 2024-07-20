@@ -94,9 +94,18 @@ version = 2
     foreground = 'white'
     background = 'transparent'
 
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    template = '─'
+    trailing_diamond = 'white'
+    background = 'transparent'
+    min_width = 1
+    max_width = 1000
+
 
 [[blocks]]
-  type = 'prompt'
+  type = 'rprompt'
   alignment = 'right'
 
   [[blocks.segments]]

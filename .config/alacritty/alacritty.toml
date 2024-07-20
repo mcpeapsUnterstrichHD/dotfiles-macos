@@ -1,0 +1,70 @@
+live_config_reload = true
+working_directory = "None"
+
+# Themes --
+import = [
+  # -- Themes --
+  #"~/.config/alacritty/catppuccin-macchiato.toml",
+  "~/DEV/dotfiles/.config/alacritty/nordic.toml",
+  # "~/.config/alacritty/xcad.toml",
+  # "~/.config/alacritty/dracula.toml",
+  # "~/.config/alacritty/catppuccin-mocha.toml",
+  # "~/.config/alacritty/solarized_dark.toml",
+  # "~/.config/alacritty/solarized-osaka.toml",
+]
+
+[window]
+startup_mode = "Windowed"
+title = "comboom.sucht"
+dynamic_title = true
+decorations = "Full"
+decorations_theme_variant = "Dark"
+blur = true
+opacity = 0.95
+padding.x = 10
+padding.y = 10
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window.dimensions]
+columns = 160
+lines = 80
+
+[cursor.style]
+shape = "Underline"
+blinking = "On"
+
+[cursor.vi_mode_style]
+shape = "Block"
+blinking = "Never"
+
+[colors]
+transparent_background_colors = true
+draw_bold_text_with_bright_colors = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+#glyph_offset = { x = 1, y = 0 }
+normal.family = "CaskaydiaCove Nerd Font Mono"
+normal.style = "Regular"
+size = 24.0
+builtin_box_drawing = false
+
+[font.bolt]
+bolt.family = "CaskaydiaCove Nerd Font Mono"
+bolt.style = "Bolt"
+
+[font.italic]
+italic.family = "CaskaydiaCove Nerd Font Mono"
+italic.style = "Italic"
+
+[font.bold_italic]
+bold_italic.family = "CaskaydiaCove Nerd Font Mono"
+bold_italic.style = "Bold Italic"
+
+[terminal]
+osc52 = "CopyPaste"

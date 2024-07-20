@@ -10,7 +10,7 @@
 			"left": 3,
 			"right": 3
 		},
-		"separate": false,
+		"position": "left",
 		"printRemaining": true,
 		"preserveAspectRatio": true,
 		"chafa": {
