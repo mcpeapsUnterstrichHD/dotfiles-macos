@@ -96,11 +96,10 @@ version = 2
   [[blocks.segments]] # Das markierte Segment
     type = 'text'
     style = 'plain'
-    template = '{{.Spacer}}'
+    template = '────────────────────────────────────────────────────' # Dynamische Füllung durch genügend Zeichen
     foreground = 'white'
     background = 'transparent'
-    [blocks.segments.properties]
-      spacer = '{{.PromptLength}}'  # Dynamische Füllung basierend auf der Eingabelänge
+
 
 [[blocks]]
   type = 'prompt'
