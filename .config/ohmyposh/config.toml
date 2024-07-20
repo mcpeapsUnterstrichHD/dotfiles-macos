@@ -93,13 +93,6 @@ version = 2
     foreground = 'white'
     background = 'transparent'
 
-  [[blocks.segments]] # Das markierte Segment
-    type = 'text'
-    style = 'plain'
-    template = '────────────────────────────────────────────────────' # Dynamische Füllung durch genügend Zeichen
-    foreground = 'white'
-    background = 'transparent'
-
 
 [[blocks]]
   type = 'prompt'
