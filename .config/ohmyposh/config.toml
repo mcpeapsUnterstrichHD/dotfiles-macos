@@ -36,7 +36,6 @@ version = 2
       windows = ''
       linux = ''
 
-
   [[blocks.segments]]
     type = 'text'
     style = 'plain'
@@ -61,14 +60,14 @@ version = 2
     foreground = 'blue'
     background = 'black'
 
-    [[blocks.segments]]
+  [[blocks.segments]]
     type = 'session'
     style = 'plain'
     template = ' {{ if .SSHSession }}󰣀 {{ end }}{{ .UserName }}@{{ .HostName }} '
     foreground = 'white'
     background = 'black'
 
-    [[blocks.segments]]
+  [[blocks.segments]]
     type = 'text'
     style = 'plain'
     template = ''
@@ -94,13 +93,14 @@ version = 2
     foreground = 'white'
     background = 'transparent'
 
-  [[blocks.segments]] #this here
+  [[blocks.segments]] # Das markierte Segment
     type = 'text'
     style = 'plain'
-    template = '─'
+    template = '{{.Spacer}}'
     foreground = 'white'
     background = 'transparent'
-
+    [blocks.segments.properties]
+      spacer = '{{.PromptLength}}'  # Dynamische Füllung basierend auf der Eingabelänge
 
 [[blocks]]
   type = 'prompt'
@@ -113,16 +113,15 @@ version = 2
     foreground = 'white'
     background = 'transparent'
 
-
   [[blocks.segments]]
-  type = 'time'
-  style = 'plain'
-  template = ' at {{.CurrentDate | date .Format}}  '
-  foreground = 'black'
-  background = 'white'
+    type = 'time'
+    style = 'plain'
+    template = ' at {{.CurrentDate | date .Format}}  '
+    foreground = 'black'
+    background = 'white'
 
-  [blocks.segments.properties]
-    time_format = '02/01/2006 | 15:04:05.000'
+    [blocks.segments.properties]
+      time_format = '02/01/2006 | 15:04:05.000'
 
   [[blocks.segments]]
     type = 'text'
@@ -137,39 +136,38 @@ version = 2
   newline = true
 
   [[blocks.segments]]
-  type = 'text'
-  style = 'plain'
-  template = '╰─'
-  foreground = 'white'
-  background = 'transparent'
+    type = 'text'
+    style = 'plain'
+    template = '╰─'
+    foreground = 'white'
+    background = 'transparent'
 
   [[blocks.segments]]
-    type = "root"
-    style = "plain"
-    foreground = "white"
-    background = "transparent"
-    template = "$"
+    type = 'root'
+    style = 'plain'
+    foreground = 'white'
+    background = 'transparent'
+    template = '$'
 
   [[blocks.segments]]
-  type = 'text'
-  style = 'plain'
-  template = ' '
-  foreground = 'white'
-  background = 'transparent'
-
+    type = 'text'
+    style = 'plain'
+    template = ' '
+    foreground = 'white'
+    background = 'transparent'
 
 [[blocks]]
   type = 'rprompt'
   alignment = 'right'
 
-    [[blocks.segments]]
-  type = 'text'
-  style = 'plain'
-  template = '─╯'
-  foreground = 'white'
-  background = 'transparent'
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    template = '─╯'
+    foreground = 'white'
+    background = 'transparent'
 
-  [transient_prompt]
-  background = 'transparent'
-  foreground = 'white'
-  template = '󰁔 '
+[transient_prompt]
+background = 'transparent'
+foreground = 'white'
+template = '󰁔 '
