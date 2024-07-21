@@ -29,6 +29,14 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="$HOME/exe:$PATH"
 export PATH="$HOME/exe/separator:$PATH"
+export PATH="$HOME/Applications/Alacritty.app/Contents/MacOS:$PATH"
+export PATH=" /opt/homebrew/opt/ccache/libexec:$PATH"
+
+# Setze den Terminal-Typ (optional, falls nötig)
+export TERM=xterm-256color
+
+# Alias für Alacritty
+alias terminal='/Applications/Alacritty.app/Contents/MacOS/alacritty'
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -147,18 +155,18 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ ! -r /Users/mahd/.opam/opam-init/init.zsh ]] || source /Users/mahd/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-eval "$(zoxide init --cmd cd zsh)"
-eval $(thefuck --alias)
-eval "$(fzf --zsh)"
+source <(zoxide init --cmd cd zsh)
+source <(thefuck --alias)
+source <(fzf --zsh)
 source <(jj util completion zsh)
-eval "$(atuin init zsh)"
-eval "$(atuin gen-completions -s zsh)"
+source <(atuin init zsh)
+source <(atuin gen-completions -s zsh)
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml)"
+  source <(oh-my-posh init zsh --config https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml)
 fi
 
 if command -v ngrok &>/dev/null; then
-    eval "$(ngrok completion)"
+    source <(ngrok completion)
   fi
 
 #eval $(/Applications/wgcf generate zsh)
@@ -180,6 +188,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-eval "$(zellij setup --generate-auto-start zsh)"
+source <(zellij setup --generate-auto-start zsh)
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
