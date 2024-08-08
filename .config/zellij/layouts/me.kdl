@@ -19,13 +19,13 @@ layout {
 
                 // Formatting for inactive tabs
                 tab_normal              "#[fg=#6C7086]#{index}"
-                tab_normal_fullscreen   "#[fg=#6C7086]#{index} {fullscreen_indicator}"
-                tab_normal_sync         "#[fg=#6C7086]#{index} {sync_indicator}"
+                tab_normal_fullscreen   "#[fg=#6C7086]#{index}{fullscreen_indicator}"
+                tab_normal_sync         "#[fg=#6C7086]#{index}{sync_indicator}"
 
                 // Formatting for the current active tab
-                tab_active              "#[fg=#9399B2,bold,italic]#{index} {floating_indicator}"
-                tab_active_fullscreen   "#[fg=#9399B2,bold,italic]#{index} {fullscreen_indicator}"
-                tab_active_sync         "#[fg=#9399B2,bold,italic]#{index} {sync_indicator}"
+                tab_active              "#[fg=#9399B2,bold,italic]#{index}{floating_indicator}"
+                tab_active_fullscreen   "#[fg=#9399B2,bold,italic]#{index}{fullscreen_indicator}"
+                tab_active_sync         "#[fg=#9399B2,bold,italic]#{index}{sync_indicator}"
 
                 // Separator between the tabs
                 tab_separator           "#[fg=#6C7086,bold]|"
