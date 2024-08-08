@@ -252,9 +252,11 @@ function sudo() {
         # Falls sudo fehlschlägt, erhöhe die Anzahl der Versuche
         ((attempts++))
 
-        # Zeige eine zufällige Nachricht nach jedem Fehlschlag an
-        random_message=${messages[RANDOM % ${#messages[@]}]}
-        echo -e "${YELLOW}$random_message${NC}"
+        # Zeige eine zufällige Nachricht nach jedem Fehlschlag an (außer beim dritten Versuch)
+        if [ $attempts -lt 3 ]; then
+            random_message=${messages[RANDOM % ${#messages[@]}]}
+            echo -e "${YELLOW}$random_message${NC}"
+        fi
     done
 
     # Nach dem dritten Fehlversuch wird Sudo abgebrochen
