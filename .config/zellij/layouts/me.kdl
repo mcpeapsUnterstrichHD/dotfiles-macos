@@ -17,42 +17,40 @@ layout {
 
                 hide_frame_for_single_pane "false"
 
+                // Formatting for inactive tabs
+                tab_normal              "#[fg=#6C7086]#{index}"
+                tab_normal_fullscreen   "#[fg=#6C7086]#{index} {fullscreen_indicator}"
+                tab_normal_sync         "#[fg=#6C7086]#{index} {sync_indicator}"
 
+                // Formatting for the current active tab
+                tab_active              "#[fg=#9399B2,bold,italic]#{index} {floating_indicator}"
+                tab_active_fullscreen   "#[fg=#9399B2,bold,italic]#{index} {fullscreen_indicator}"
+                tab_active_sync         "#[fg=#9399B2,bold,italic]#{index} {sync_indicator}"
 
-                // formatting for inactive tabs
-tab_normal              "#[fg=#6C7086] {index} :: {name} "
-tab_normal_fullscreen   "#[fg=#6C7086] {index} :: {name} [] "
-tab_normal_sync         "#[fg=#6C7086] {index} :: {name} <> "
+                // Separator between the tabs
+                tab_separator           "#[fg=#6C7086,bold]|"
 
-// formatting for the current active tab
-tab_active              "#[fg=#9399B2,bold,italic] {name} {floating_indicator}"
-tab_active_fullscreen   "#[fg=#9399B2,bold,italic] {name} {fullscreen_indicator}"
-tab_active_sync         "#[fg=#9399B2,bold,italic] {name} {sync_indicator}"
+                // Indicators
+                tab_sync_indicator       "<>"
+                tab_fullscreen_indicator "[]"
+                tab_floating_indicator   "⬚"
 
-// separator between the tabs
-tab_separator           "#[fg=#6C7086,bg=#181825] | "
+                mode_normal        "#[bg=#89B4FA]#{index}"
+                mode_locked        "#[bg=#89B4FA]#{index}"
+                mode_resize        "#[bg=#89B4FA]#{index}"
+                mode_pane          "#[bg=#89B4FA]#{index}"
+                mode_tab           "#[bg=#89B4FA]#{index}"
+                mode_scroll        "#[bg=#89B4FA]#{index}"
+                mode_enter_search  "#[bg=#89B4FA]#{index}"
+                mode_search        "#[bg=#89B4FA]#{index}"
+                mode_rename_tab    "#[bg=#89B4FA]#{index}"
+                mode_rename_pane   "#[bg=#89B4FA]#{index}"
+                mode_session       "#[bg=#89B4FA]#{index}"
+                mode_move          "#[bg=#89B4FA]#{index}"
+                mode_prompt        "#[bg=#89B4FA]#{index}"
+                mode_tmux          "#[bg=#ffc387]#{index}"
 
-// indicators
-tab_sync_indicator       "<> "
-tab_fullscreen_indicator "[] "
-tab_floating_indicator   "⬚ "
-
-mode_normal        "#[bg=#89B4FA] {name} "
-mode_locked        "#[bg=#89B4FA] {name} "
-mode_resize        "#[bg=#89B4FA] {name} "
-mode_pane          "#[bg=#89B4FA] {name} "
-mode_tab           "#[bg=#89B4FA] {name} "
-mode_scroll        "#[bg=#89B4FA] {name} "
-mode_enter_search  "#[bg=#89B4FA] {name} "
-mode_search        "#[bg=#89B4FA] {name} "
-mode_rename_tab    "#[bg=#89B4FA] {name} "
-mode_rename_pane   "#[bg=#89B4FA] {name} "
-mode_session       "#[bg=#89B4FA] {name} "
-mode_move          "#[bg=#89B4FA] {name} "
-mode_prompt        "#[bg=#89B4FA] {name} "
-mode_tmux          "#[bg=#ffc387] {name} "
-
-mode_default_to_mode "tmux"
+                mode_default_to_mode "tmux"
 
                 command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
                 command_git_branch_format      "#[fg=blue] {stdout} "

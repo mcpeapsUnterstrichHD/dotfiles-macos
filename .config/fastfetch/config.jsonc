@@ -3,8 +3,8 @@
 	"logo": {
 		"type": "auto",
 		"source": "/Users/mahd/DEV/dotfiles/.config/fastfetch/logo.png",
-		"width": 300,
-		"height": 300,
+		"width": 16,
+		"height": 30,
 		"padding": {
 			"top": 5,
 			"left": 3,
@@ -31,9 +31,12 @@
 		"hideCursor": false,
 		"separator": ": ",
 		"brightColor": false,
-		"keyWidth": 0,
-		"binaryPrefix": "jedec",
+		"key":{
+			"width": 0
+		},
 		"size": {
+		"binaryPrefix": "jedec",
+		
 			"ndigits": 3
 		},
 		"temp": {

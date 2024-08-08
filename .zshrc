@@ -24,7 +24,7 @@ export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=/usr/local/bin/composer:$PATH
 export EDITOR=nvim
-export PATH="/Applications/:$PATH"
+export PATH="/Applications/:/Applications/c3:/:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="$HOME/exe:$PATH"
@@ -191,3 +191,72 @@ unset __conda_setup
 source <(zellij setup --generate-auto-start zsh)
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+
+export PATH=$PATH:/Users/mahd/.spicetify
+
+function sudo() {
+    local attempts=0
+
+    messages=(
+        "No problem, everyone has a moment like this."
+        "A little slip, but you’re doing great!"
+        "Almost there—give it another go."
+        "Everyone makes mistakes; just try again!"
+        "Don’t stress; just give it one more try."
+        "You’re getting closer—keep going!"
+        "Small hiccups happen; you’ve got this!"
+        "Each attempt brings you closer to success."
+        "It’s all part of the process; try once more!"
+        "Perseverance pays off—let’s try again."
+        "You’re doing well; just a little more effort."
+        "Mistakes are just steps towards mastery."
+        "Take it easy; you’re almost there!"
+        "Focus and try again; you’re on the right track!"
+        "Just a minor setback; success is near."
+        "You’re improving with each attempt—keep it up!"
+        "Stay positive; one more try might be all you need."
+        "Errors are just learning opportunities—try again!"
+        "You're making progress; don’t give up now!"
+        "Almost there; your persistence will pay off!"
+    )
+
+    # ANSI-Farbcodes
+    local RED='\033[0;31m'
+    local YELLOW='\033[0;33m'
+    local GREEN='\033[0;32m'
+    local NC='\033[0m' # Kein Color (Reset)
+
+    while [ $attempts -lt 3 ]; do
+        # Fordere das Passwort manuell an
+        echo -n -e "${GREEN}Password: ${NC}"
+        password_input=""
+
+        # Verstecke die Eingabe
+        stty -echo
+
+        # Eingabe verarbeiten
+        IFS= read -r password_input
+
+        # Zeige die Eingabe wieder an
+        stty echo
+
+        # Zeilenumbruch nach der Passwort-Eingabe
+        echo ""
+
+        # Versuche, den sudo-Befehl auszuführen, indem das Passwort an sudo übergeben wird
+        echo "$password_input" | /usr/bin/sudo -S "$@" 2>/dev/null
+        if [ $? -eq 0 ]; then
+            return 0
+        fi
+
+        # Falls sudo fehlschlägt, erhöhe die Anzahl der Versuche
+        ((attempts++))
+
+        # Zeige eine zufällige Nachricht nach jedem Fehlschlag an
+        random_message=${messages[RANDOM % ${#messages[@]}]}
+        echo -e "${YELLOW}$random_message${NC}"
+    done
+
+    # Nach dem dritten Fehlversuch wird Sudo abgebrochen
+    echo -e "${RED}sudo: 3 incorrect password attempts${NC}"
+}
