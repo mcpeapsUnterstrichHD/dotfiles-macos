@@ -114,6 +114,29 @@ preloaders = [
 	{ mime = "font/*", run = "font" },
 	{ mime = "application/vnd.ms-opentype", run = "font" },
 ]
+prepend_previewers = [
+	{ name = "*.csv", run = "rich-preview"}, # for csv files
+    { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
+    { name = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
+    { name = "*.json", run = "rich-preview"}, # for json (.json) files
+#    { name = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
+	{ name = "*.java", run = "rich-preview"},
+	{ name = "*.lock", run = "rich-preview"},
+	{ name = "*.js", run = "rich-preview"},
+	{ name = "*.ts", run = "rich-preview"},
+	{ name = "*.jsx", run = "rich-preview"},
+	{ name = "*.tsx", run = "rich-preview"},
+	{ name = "*.mjs", run = "rich-preview"},
+	{ name = "*.mts", run = "rich-preview"},
+	{ name = "*.mdx", run = "rich-preview" },
+	{ name = "images/*", run = "rich-preview" },
+	{ name = "{audio,video}/*", run = "glow" },
+    { mime = "text/csv", run = "miller"},
+	{ mime = "{audio,video}/*",   run = "exifaudio"},
+	{ mime = "application/x-subrip", run = "mediainfo"},
+	{ name = "*", run = "hexyl" },
+
+]
 previewers = [
 	{ name = "*/", run = "folder", sync = true },
 	# Code
@@ -122,10 +145,12 @@ previewers = [
 	# JSON
 	{ mime = "application/{json,x-ndjson}", run = "json" },
 	# Image
-	{ mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-	{ mime = "image/*", run = "image" },
+	#{ mime = "image/{avif,hei?,jpg,png,webp}", run = "magick" },
+	{ name = "image/*", run = "file" },
+	#{ mime = "image/*", run = "image" },
 	# Video
-	{ mime = "video/*", run = "video" },
+	#{ mime = "video/*", run = "video" },
+	{ name = "video/*", run = "file" },
 	# PDF
 	{ mime = "application/pdf", run = "pdf" },
 	# Archive
@@ -139,6 +164,7 @@ previewers = [
 	# Fallback
 	{ name = "*", run = "file" },
 ]
+
 
 [input]
 cursor_blink = true

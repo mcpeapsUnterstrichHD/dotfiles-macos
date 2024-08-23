@@ -1,13 +1,36 @@
--- ~/.config/yazi/init.lua
--- plugins:
-require("omp"):setup()
-require("full-border"):setup {
-    -- Available values: ui.Border.PLAIN, ui.Border.ROUNDED
-    type = ui.Border.ROUNDED,
+-- Initialisierung und Optionen für rich.readthedocs.io
+-- Beispieloptionen für rich.readthedocs.io
+-- Die tatsächliche Bedeutung und Anwendung hängt vom srich.readthedocs.io ab
+-- "-- init.lua" könnte darauf hindeuten, dass diese Datei eine Initialisierungsdatei ist
+-- Optionen wie -j, --left, --line-numbers usw. spezifizieren Konfigurationsparameter
+-- Rich-Formatierung
+-- Konfiguriert das `rich`-Tool mit verschiedenen Anzeigeoptionen
+local rich_options = {
+    "--text-left",
+    "--theme", "nord-darker",
+    "--panel", "rounded",
+    "--expand",
+    "--line-numbers",
+    "--emoji",
+    "--inspect",
+    "--csv",
+    "--markdown",
+    "--json",
+    "--rst"
 }
 
--- Linemodes:
+-- Plugin-Konfiguration
+-- Erfordert das `omp`-Plugin und konfiguriert es
+require("omp"):setup()
 
+-- Erfordert das `full-border`-Plugin und konfiguriert es mit abgerundeten Ecken
+require("full-border"):setup {
+    type = ui.Border.ROUNDED,  -- Setzt die Randart für das Plugin auf abgerundet
+}
+
+
+-- Linemodes-Funktion
+-- Gibt Dateiinformationen im Format s-[size] c-[creation] m-[modification] zurück
 function Linemode:all()
     local year = os.date("%Y")
     local ctime = (self._file.cha.created or 0) // 1
@@ -30,7 +53,6 @@ function Linemode:all()
 
     -- Format size in a readable format
     local readable_size = size and ya.readable_size(size) or "-"
-
 
     return ui.Line(string.format(" s-%s c-%s m-%s ", readable_size, ctime, mtime))
 end
