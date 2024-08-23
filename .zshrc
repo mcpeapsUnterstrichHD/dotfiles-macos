@@ -228,7 +228,7 @@ function sudo() {
 
     while [ $attempts -lt 3 ]; do
         # Fordere das Passwort manuell an
-        echo -n -e "${GREEN}Password: ${NC}"
+        echo -n -e "${GREEN}Password: ${NC}"
         password_input=""
 
         # Verstecke die Eingabe
@@ -261,4 +261,15 @@ function sudo() {
 
     # Nach dem dritten Fehlversuch wird Sudo abgebrochen
     echo -e "${RED}sudo: 3 incorrect password attempts${NC}"
+}
+function yy() {
+    export ZELLIJ="true"
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+    unset ZELLIJ
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd "$cwd"
+	fi
+	rm -f "$tmp"
+    rme -f
 }

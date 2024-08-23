@@ -1,5 +1,5 @@
 lvim.plugins = {
-  --"lazyvim/plugins",
+  "lazyvim/plugins",
   "mfussenegger/nvim-jdtls",
   "ChristianChiarulli/swenv.nvim",
   "stevearc/dressing.nvim",
@@ -7,6 +7,8 @@ lvim.plugins = {
   "nvim-neotest/neotest",
   "nvim-neotest/neotest-python",
 }
+
+
 
 -- automatically install python syntax highlighting
 lvim.builtin.treesitter.ensure_installed = {

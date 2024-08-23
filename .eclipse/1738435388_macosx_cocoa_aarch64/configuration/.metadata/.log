@@ -1,5 +1,4 @@
-!SESSION 2023-05-03 09:10:35.441 -----------------------------------------------
-eclipse.buildId=unknown
+!
 java.version=17.0.6
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=de_FR

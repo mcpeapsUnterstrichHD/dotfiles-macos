@@ -1,8 +1,24 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
-keybinds {
+keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        bind "F1" {
+            LaunchOrFocusPlugin "monocle" {
+                floating true
+            };
+            SwitchToMode "Normal";
+        }
+        bind "Enter" {  // Intercept `Enter`.
+            WriteChars "\u{000D}";  // Passthru `Enter`.
+            MessagePlugin "autolock" {};  // Activate the autolock plugin.
+        }
+        // Note: You may want to bind/intercept/relay other keys to activate this plugin,
+        // like `Ctrl+r` which opens shell history in Atuin / FZF. For example:
+        bind "Ctrl r" {  // Intercept `Ctrl+r`.
+            WriteChars "\u{0012}";  // Passthru `Ctrl+r`
+            MessagePlugin "autolock" {};  // Activate the autolock plugin.
+        }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -118,7 +134,7 @@ keybinds {
                 floating true
                 move_to_focused_tab true
             };
-            SwitchToMode "Normal"
+            SwitchToMode "Normal";
         }
     }
     tmux {
@@ -146,7 +162,65 @@ keybinds {
     }
     shared_except "locked" {
         bind "Ctrl g" { SwitchToMode "Locked"; }
-        bind "Ctrl q" { Quit; }
+        bind "Ctrl q" {
+            LaunchOrFocusPlugin "zj-quit" {
+                floating true
+            };
+        }
+        bind "Ctrl y" {
+            LaunchOrFocusPlugin "room" {
+                floating true
+                ignore_case true
+            };
+        }
+        bind "F2" {
+            Run "bash" "-ic" "zellij plugin --floating --configuration shell=zsh,shell_flag=-ic,exec_cwd=$(pwd),ghost_launcher=GhostLauncher,debug=false,global_completion=\"zsh \ncode . \nyarn dev \ncd dotfiles \ncd mcpeapsUnterstrichHD \ncd comboom_punkt_sucht_app \ncd DEV \ncd\"  -- file:$HOME/.config/zellij/plugins/ghost.wasm" {
+                floating true;
+                name "GhostLauncher"; // this must match ghost_launcher=GhostLauncher
+                                      // the plugin will automatically close the pane
+                                      // with title "GhostLauncher"
+            };
+        }
+        bind "Ctrl h" {
+            MessagePlugin "vim-zellij-navigator" {
+                name "move_focus_or_tab";
+                payload "left";
+
+                // Plugin Configuration
+                move_mod "ctrl"; // Optional, should be added on every command if you want to use it
+                resize_mod "alt"; // Optional, should be added on every command if you want to use it
+            };
+        }
+
+        bind "Ctrl j" {
+            MessagePlugin "vim-zellij-navigator" {
+                name "move_focus";
+                payload "down";
+
+                move_mod "ctrl";
+                resize_mod "alt";
+            };
+        }
+
+        bind "Ctrl k" {
+            MessagePlugin "vim-zellij-navigator" {
+                name "move_focus";
+                payload "up";
+
+                move_mod "ctrl";
+                resize_mod "alt";
+            };
+        }
+
+        bind "Ctrl l" {
+            MessagePlugin "vim-zellij-navigator" {
+                name "move_focus_or_tab";
+                payload "right";
+
+                move_mod "ctrl";
+                resize_mod "alt";
+            };
+        }
         bind "Alt n" { NewPane; }
         bind "Alt i" { MoveTab "Left"; }
         bind "Alt o" { MoveTab "Right"; }
@@ -185,72 +259,81 @@ keybinds {
     }
 }
 
-plugins {
-    tab-bar location="file:///Users/mahd/DEV/dotfiles/.config/zellij/plugins/zjstatus.wasm" {
-                format_left   "{mode} #[fg=#ffffff,bold]{session}"
-                format_center "{tabs}"
-                format_right  "{command_git_branch} {datetime}"
-                format_space  ""
+plugins{
 
-                border_enabled  "true"
-                border_char     "─"
-                border_format   "#[fg=#ffffff]{char}"
-                border_position "top"
-
-                hide_frame_for_single_pane "false"
-
-
-
-                // formatting for inactive tabs
-tab_normal              "#[fg=#6C7086] {index} :: {name} "
-tab_normal_fullscreen   "#[fg=#6C7086] {index} :: {name} [] "
-tab_normal_sync         "#[fg=#6C7086] {index} :: {name} <> "
-
-// formatting for the current active tab
-tab_active              "#[fg=#9399B2,bold,italic] {name} {floating_indicator}"
-tab_active_fullscreen   "#[fg=#9399B2,bold,italic] {name} {fullscreen_indicator}"
-tab_active_sync         "#[fg=#9399B2,bold,italic] {name} {sync_indicator}"
-
-// separator between the tabs
-tab_separator           "#[fg=#6C7086,bg=#181825] | "
-
-// indicators
-tab_sync_indicator       "<> "
-tab_fullscreen_indicator "[] "
-tab_floating_indicator   "⬚ "
-
-mode_normal        "#[bg=#89B4FA] {name} "
-mode_locked        "#[bg=#89B4FA] {name} "
-mode_resize        "#[bg=#89B4FA] {name} "
-mode_pane          "#[bg=#89B4FA] {name} "
-mode_tab           "#[bg=#89B4FA] {name} "
-mode_scroll        "#[bg=#89B4FA] {name} "
-mode_enter_search  "#[bg=#89B4FA] {name} "
-mode_search        "#[bg=#89B4FA] {name} "
-mode_rename_tab    "#[bg=#89B4FA] {name} "
-mode_rename_pane   "#[bg=#89B4FA] {name} "
-mode_session       "#[bg=#89B4FA] {name} "
-mode_move          "#[bg=#89B4FA] {name} "
-mode_prompt        "#[bg=#89B4FA] {name} "
-mode_tmux          "#[bg=#ffc387] {name} "
-
-mode_default_to_mode "Normal"
-
-                command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-                command_git_branch_format      "#[fg=blue] {stdout} "
-                command_git_branch_interval    "10"
-                command_git_branch_rendermode  "dynamic"
-
-                datetime        "#[fg=#ffffff,bold] {format} "
-                datetime_format "KW%V,%A, %0d/%m/%Y | %H:%M:%S"
-                datetime_timezone "Europe/Berlin"
-            }
     status-bar location="zellij:status-bar"
     strider location="zellij:strider" {
         cwd "/Users/mahd"
         root "/"
     }
-    compact-bar location="zellij:compact-bar"
+    session-bar location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+                format_left   "{mode}{tabs}"
+                format_center ""
+                format_right  "#[bg=reset,fg=blue]#[bg=blue,fg=white]{datetime}#[bg=reset,fg=blue]"
+                format_space  ""
+                format_precedence "lcr"
+
+                border_enabled  "true"
+                border_char     "─"
+                border_format   "#[fg=blue]{char}"
+                border_position "top"
+
+                hide_frame_for_single_pane "false"
+
+                // Formatting for inactive tabs
+                tab_normal              "#[bg=reset,fg=blue]#[bg=blue,fg=white]#{index}#[bg=reset,fg=blue]"
+                tab_normal_fullscreen   "#[bg=reset,fg=blue]#[bg=blue,fg=white]#{index}{fullscreen_indicator}#[bg=reset,fg=blue]"
+                tab_normal_sync         "#[bg=reset,fg=blue]#[bg=blue,fg=white]#{index}{sync_indicator}#[bg=reset,fg=blue]"
+
+                // Formatting for the current active tab
+                tab_active              "#[bg=reset,fg=white]#[bg=white,fg=blue]#{index}{floating_indicator}#[bg=reset,fg=white]"
+                tab_active_fullscreen   "#[bg=reset,fg=white]#[bg=white,fg=blue]#{index}{fullscreen_indicator}#[bg=reset,fg=white]"
+                tab_active_sync         "#[bg=reset,fg=white]#[bg=white,fg=blue]#{index}{sync_indicator}#[bg=reset,fg=white]"
+
+                // Separator between the tabs
+                tab_separator           ""
+
+                // Indicators
+                tab_sync_indicator       "<>"
+                tab_fullscreen_indicator "[]"
+                tab_floating_indicator   "⬚"
+
+                mode_normal        "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_locked        "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_resize        "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_pane          "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_tab           "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_scroll        "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_enter_search  "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_search        "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_rename_tab    "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_rename_pane   "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_session       "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_move          "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_prompt        "#[bg=reset,fg=blue]#[bg=blue,fg=white]{name}#[bg=reset,fg=blue]"
+                mode_tmux          "#[bg=reset,fg=white]#[bg=white,fg=blue]{name}#[bg=reset,fg=white]"
+
+                mode_default_to_mode "Normal"
+
+                datetime        "{format}"
+                datetime_format "KW%V,%A,%0d/%m/%Y|%H:%M:%S"
+                datetime_timezone "Europe/Berlin"
+
+
+    }
+    zj-quit location="file:~/.config/zellij/plugins/zj-quit.wasm" {
+        confirm_key "Enter"
+        cancel_key "Esc"
+
+    }
+    autolock location="file:~/.config/zellij/plugins/zellij-autolock.wasm" {
+        triggers "nvim|vim"  // Lock when any open these programs open. They are expected to unlock themselves when closed (e.g., using zellij.vim plugin).
+        watch_triggers "fzf|zoxide|atuin"  // Lock when any of these open and monitor until closed.
+        watch_interval "1.0"  // When monitoring, check every X seconds.
+    }
+    room location="file:~/.config/zellij/plugins/room.wasm"
+    monocle location="file:~/.config/zellij/plugins/monocle.wasm"
+    vim-zellij-navigator location="file:~/.config/zellij/plugins/vim-zellij-navigator.wasm"
     session-manager location="zellij:session-manager"
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
