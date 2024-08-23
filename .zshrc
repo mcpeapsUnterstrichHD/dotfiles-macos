@@ -29,14 +29,15 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="$HOME/exe:$PATH"
 export PATH="$HOME/exe/separator:$PATH"
-export PATH="$HOME/Applications/Alacritty.app/Contents/MacOS:$PATH"
+export PATH="/Applications/Alacritty.app/Contents/MacOS:$PATH"
+export PATH="/Applications/Kitty.app/Contents/MacOS:$PATH"
 export PATH=" /opt/homebrew/opt/ccache/libexec:$PATH"
 
 # Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
 
 # Alias für Alacritty
-alias terminal='/Applications/Alacritty.app/Contents/MacOS/alacritty'
+alias terminal='/Applications/Kitty.app/Contents/MacOS/kitty'
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
