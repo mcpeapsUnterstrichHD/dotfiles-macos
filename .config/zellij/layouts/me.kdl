@@ -1,65 +1,9 @@
 layout {
     pane
+    pane size=1 borderless=true {
+        plugin location="session-bar"
+    }
     pane size=2 borderless=true {
         plugin location="status-bar"
-    }
-    pane size=1 borderless=true {
-        plugin location="file:///Users/mahd/DEV/dotfiles/.config/zellij/plugins/zjstatus.wasm" {
-                format_left   "{mode} #[fg=#ffffff,bold]{session}"
-                format_center "{tabs}"
-                format_right  "{command_git_branch} {datetime}"
-                format_space  ""
-
-                border_enabled  "true"
-                border_char     "─"
-                border_format   "#[fg=#ffffff]{char}"
-                border_position "top"
-
-                hide_frame_for_single_pane "false"
-
-                // Formatting for inactive tabs
-                tab_normal              "#[fg=#6C7086]#{index}"
-                tab_normal_fullscreen   "#[fg=#6C7086]#{index}{fullscreen_indicator}"
-                tab_normal_sync         "#[fg=#6C7086]#{index}{sync_indicator}"
-
-                // Formatting for the current active tab
-                tab_active              "#[fg=#9399B2,bold,italic]#{index}{floating_indicator}"
-                tab_active_fullscreen   "#[fg=#9399B2,bold,italic]#{index}{fullscreen_indicator}"
-                tab_active_sync         "#[fg=#9399B2,bold,italic]#{index}{sync_indicator}"
-
-                // Separator between the tabs
-                tab_separator           "#[fg=#6C7086,bold]|"
-
-                // Indicators
-                tab_sync_indicator       "<>"
-                tab_fullscreen_indicator "[]"
-                tab_floating_indicator   "⬚"
-
-                mode_normal        "#[bg=#89B4FA]#{index}"
-                mode_locked        "#[bg=#89B4FA]#{index}"
-                mode_resize        "#[bg=#89B4FA]#{index}"
-                mode_pane          "#[bg=#89B4FA]#{index}"
-                mode_tab           "#[bg=#89B4FA]#{index}"
-                mode_scroll        "#[bg=#89B4FA]#{index}"
-                mode_enter_search  "#[bg=#89B4FA]#{index}"
-                mode_search        "#[bg=#89B4FA]#{index}"
-                mode_rename_tab    "#[bg=#89B4FA]#{index}"
-                mode_rename_pane   "#[bg=#89B4FA]#{index}"
-                mode_session       "#[bg=#89B4FA]#{index}"
-                mode_move          "#[bg=#89B4FA]#{index}"
-                mode_prompt        "#[bg=#89B4FA]#{index}"
-                mode_tmux          "#[bg=#ffc387]#{index}"
-
-                mode_default_to_mode "tmux"
-
-                command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
-                command_git_branch_format      "#[fg=blue] {stdout} "
-                command_git_branch_interval    "10"
-                command_git_branch_rendermode  "dynamic"
-
-                datetime        "#[fg=#ffffff,bold] {format} "
-                datetime_format "KW%V,%A, %0d/%m/%Y | %H:%M:%S"
-                datetime_timezone "Europe/Berlin"
-            }
     }
 }
