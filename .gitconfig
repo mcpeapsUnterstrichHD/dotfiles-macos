@@ -15,6 +15,7 @@
 	eol = lf
 	autocrlf = false
 	symlinks = true
+	hooksPath = .husky/_
 
 [fsck]
 	zeroPaddedFilemode = ignore
