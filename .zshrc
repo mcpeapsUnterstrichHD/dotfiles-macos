@@ -95,6 +95,8 @@ alias cgcl='jj git clone --colocate $*'
 alias rm="/opt/homebrew/bin/trash $*"
 alias rme="/opt/homebrew/bin/trash-empty $*"
 alias hangman="$HOME/exe/hangman"
+alias clock="date $*"
+
 
 
 function zle-keymap-select {
@@ -189,16 +191,44 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+if [[ ! "$TERM_PROGRAM" =~ "vscode" ]]; then
 source <(zellij setup --generate-auto-start zsh)
+fi
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 
 export PATH=$PATH:/Users/mahd/.spicetify
 
+lazyg() {
+    local message="."
+
+    # Handle the add part
+    if [ -z "$1" ]; then
+        git add .
+    else
+        git add "$1"
+    fi
+
+    # Check for the commit message
+    if [[ "$*" == *"-m"* ]]; then
+        message="${*##*-m }"  # Extract the message after -m
+    else
+        # Prompt for commit message if not provided
+        read -e -p "Enter commit message [default: .]: " input_message
+        # Use default message if input is empty
+        message="${input_message:-.}"
+    fi
+
+    # Commit the changes
+    git commit -m "$message" --allow-empty
+
+    # Push the changes
+    git push "${*//-m*/}"  # Pass all arguments except -m and its value
+}
+
 function sudo() {
     local attempts=0
-
-    messages=(
+    local messages=(
         "No problem, everyone has a moment like this."
         "A little slip, but you’re doing great!"
         "Almost there—give it another go."
@@ -227,42 +257,44 @@ function sudo() {
     local GREEN='\033[0;32m'
     local NC='\033[0m' # Kein Color (Reset)
 
+    # Überprüfe, ob das Passwort im Cache ist
+    if /usr/bin/sudo -n true 2>/dev/null; then
+        # Führe den Befehl ohne Passwort erneut aus, wenn es im Cache ist
+        /usr/bin/sudo "$@"
+        return $?
+    fi
+
+    # Wenn Passwort benötigt wird, beginne den benutzerdefinierten Ablauf
     while [ $attempts -lt 3 ]; do
         # Fordere das Passwort manuell an
-        echo -n -e "${GREEN}Password: ${NC}"
-        password_input=""
+        printf "${GREEN}Password:󰟵${NC}"
 
-        # Verstecke die Eingabe
+        # Verstecke die Passworteingabe und stelle sicher, dass es keine Zeilenumbrüche gibt
         stty -echo
-
-        # Eingabe verarbeiten
         IFS= read -r password_input
-
-        # Zeige die Eingabe wieder an
         stty echo
+        printf "\n"  # Zeilenumbruch nach der Passworteingabe
 
-        # Zeilenumbruch nach der Passwort-Eingabe
-        echo ""
-
-        # Versuche, den sudo-Befehl auszuführen, indem das Passwort an sudo übergeben wird
-        echo "$password_input" | /usr/bin/sudo -S "$@" 2>/dev/null
-        if [ $? -eq 0 ]; then
+        # Versuche, den sudo-Befehl mit dem Passwort auszuführen
+        if echo "$password_input" | /usr/bin/sudo -S "$@" 2>/dev/null; then
             return 0
         fi
 
-        # Falls sudo fehlschlägt, erhöhe die Anzahl der Versuche
+        # Falls sudo fehlschlägt, erhöhe den Versuchszähler
         ((attempts++))
 
-        # Zeige eine zufällige Nachricht nach jedem Fehlschlag an (außer beim dritten Versuch)
+        # Zeige eine zufällige Nachricht nach den ersten zwei Fehlversuchen
         if [ $attempts -lt 3 ]; then
             random_message=${messages[RANDOM % ${#messages[@]}]}
-            echo -e "${YELLOW}$random_message${NC}"
+            printf "${YELLOW}%s${NC}\n" "$random_message"
         fi
     done
 
-    # Nach dem dritten Fehlversuch wird Sudo abgebrochen
-    echo -e "${RED}sudo: 3 incorrect password attempts${NC}"
+    # Nach dem dritten Fehlversuch beenden
+    printf "${RED}sudo: 3 incorrect password attempts${NC}\n"
+    return 1
 }
+
 function yy() {
     export ZELLIJ="true"
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"

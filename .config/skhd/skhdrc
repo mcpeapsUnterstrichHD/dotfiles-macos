@@ -53,4 +53,4 @@ ctrl + cmd - s : yabai --start-service
 ctrl + cmd - r : yabai --restart-service
 
 # Close focused window
-cmd - w : yabai -m window --close
+ctrl + cmd - w : yabai -m window --close
