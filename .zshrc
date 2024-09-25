@@ -214,7 +214,8 @@ lazyg() {
         message="${*##*-m }"  # Extract the message after -m
     else
         # Prompt for commit message if not provided
-        read -e -p "Enter commit message [default: .]: " input_message
+        printf "Enter commit message [default: .]: "
+        read -e input_message
         # Use default message if input is empty
         message="${input_message:-.}"
     fi
@@ -225,7 +226,6 @@ lazyg() {
     # Push the changes
     git push "${*//-m*/}"  # Pass all arguments except -m and its value
 }
-
 function sudo() {
     local attempts=0
     local messages=(
