@@ -200,23 +200,70 @@ export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 export PATH=$PATH:/Users/mahd/.spicetify
 
 lazyg() {
-    local message="."
+    # Help function using printf
+    display_help() {
+        printf "Usage: lazyg [options] [file]\n"
+        printf "\n"
+        printf "A helper function for git operations.\n"
+        printf "\n"
+        printf "Options:\n"
+        printf "  -m <message>    Specify the commit message.\n"
+        printf "  -p <args>       Pass arguments to git push.\n"
+        printf "  -h, --help      Display this help message.\n"
+        printf "\n"
+        printf "If no file is specified, all changes will be added.\n"
+        printf "If no commit message is provided, the default message '.' will be used.\n"
+    }
 
-    # Handle the add part
-    if [ -z "$1" ]; then
+    # Check for help option
+    if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+        display_help
+        return 0
+    fi
+
+    local message="."
+    local push_args=""
+    local adding_all=true
+
+    # Process command line arguments
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -m)
+                shift
+                if [[ -n "$1" ]]; then
+                    message="$1"
+                    shift
+                fi
+                ;;
+            -p)
+                shift
+                push_args="$*"
+                break
+                ;;
+            *)
+                adding_all=false
+                break
+                ;;
+        esac
+    done
+
+    # Handle git add
+    if $adding_all; then
         git add .
     else
         git add "$1"
+        shift
     fi
 
-    # Check for the commit message
-    if [[ "$*" == *"-m"* ]]; then
-        message="${*##*-m }"  # Extract the message after -m
-    else
-        # Prompt for commit message if not provided
+    # If push_args is not empty, remove the original push args from remaining arguments
+    if [[ -n "$push_args" ]]; then
+        set -- $push_args
+    fi
+
+    # Prompt for commit message if not provided
+    if [[ "$message" == "." ]]; then
         printf "Enter commit message [default: .]: "
         read -e input_message
-        # Use default message if input is empty
         message="${input_message:-.}"
     fi
 
@@ -224,8 +271,9 @@ lazyg() {
     git commit -m "$message" --allow-empty
 
     # Push the changes
-    git push "${*//-m*/}"  # Pass all arguments except -m and its value
+    git push "$@"
 }
+
 function sudo() {
     local attempts=0
     local messages=(
