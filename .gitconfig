@@ -34,3 +34,7 @@
 	caskanalyticsmessage = true
 [remote "upstream"]
 	gh-resolved = base
+[commit]
+	gpgSign = false
+[tag]
+	gpgSign = false

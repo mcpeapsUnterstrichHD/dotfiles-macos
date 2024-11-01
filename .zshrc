@@ -23,7 +23,7 @@ export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 # ~/.config/tmux/plugins
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=/usr/local/bin/composer:$PATH
-export EDITOR=nvim
+export EDITOR=$(which nvim)
 export PATH="/Applications/:/Applications/c3:/:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
@@ -32,6 +32,7 @@ export PATH="$HOME/exe/separator:$PATH"
 export PATH="/Applications/Alacritty.app/Contents/MacOS:$PATH"
 export PATH="/Applications/Kitty.app/Contents/MacOS:$PATH"
 export PATH=" /opt/homebrew/opt/ccache/libexec:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
@@ -77,6 +78,12 @@ autopair-init
 
 source $(dirname $(gem which colorls))/tab_complete.sh
 
+source <(zoxide init --cmd cd --hook prompt zsh)
+source <(thefuck --alias)
+source <(fzf --zsh)
+source <(jj util completion zsh)
+source <(atuin init zsh)
+source <(atuin gen-completions -s zsh)
 
 alias ls="colorls -l -a --group-directories-first $*"
 alias lss="/bin/ls -la $*"
@@ -96,8 +103,6 @@ alias rm="/opt/homebrew/bin/trash $*"
 alias rme="/opt/homebrew/bin/trash-empty $*"
 alias hangman="$HOME/exe/hangman"
 alias clock="date $*"
-
-
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
@@ -158,12 +163,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ ! -r /Users/mahd/.opam/opam-init/init.zsh ]] || source /Users/mahd/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-source <(zoxide init --cmd cd zsh)
-source <(thefuck --alias)
-source <(fzf --zsh)
-source <(jj util completion zsh)
-source <(atuin init zsh)
-source <(atuin gen-completions -s zsh)
+
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   source <(oh-my-posh init zsh --config https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml)
 fi
@@ -358,3 +358,39 @@ eval "$(direnv hook zsh)"
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+function start-crafty-server() {
+  echo "Starting the 'crafty' platform..."
+
+  # Store the current working directory
+  cpwd=$(pwd)
+
+  # Navigate to the crafty project directory
+  cd "$HOME/minecraft/crafty/" || { echo "Directory not found"; return 1; }
+
+  # Activate conda environment "crafty"
+  conda activate crafty
+
+  # Activate virtual environment, if required
+  source ".venv/bin/activate"
+
+  # Navigate to the crafty-4 directory
+  cd "crafty-4" || { echo "Directory crafty-4 not found"; return 1; }
+
+  # Install Python dependencies from requirements.txt (quiet mode)
+  pip3 install --no-cache-dir -r ./requirements.txt > /dev/null
+
+  # Run Python script (keep it in the foreground for Ctrl+C)
+  python3 main.py
+
+  echo "The 'crafty' platform has been stopped"
+
+  # After Ctrl+C, cleanup by deactivating the environments
+  deactivate  # Deactivate .venv if used
+  conda deactivate
+  conda activate base
+
+  # Return to the original working directory
+  cd "$cpwd"
+
+}
