@@ -102,7 +102,7 @@ alias cgcl='jj git clone --colocate $*'
 alias rm="/opt/homebrew/bin/trash $*"
 alias rme="/opt/homebrew/bin/trash-empty $*"
 alias hangman="$HOME/exe/hangman"
-alias clock="date $*"
+alias clock='tty-clock -sScxB -f "KW%V,%A,%0d/%m/%Y|%H:%M:%S"'
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
