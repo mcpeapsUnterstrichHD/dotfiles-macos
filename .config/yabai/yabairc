@@ -39,6 +39,11 @@ yabai -m rule --add app="^Minecraft$" manage=off
 yabai -m rule --add app="^Loopback$" manage=off
 yabai -m rule --add app="^Digital Colou?r Meter$" sticky=on manage=off
 
+yabai -m rule --add app='IntelliJ IDEA' title='^$' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Project Structure' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Preferences' manage=off
+yabai -m rule --add app='IntelliJ IDEA' title='Edit configuration' manage=off
+
 # Set external bar height and position
 yabai -m config external_bar all:0:0
 

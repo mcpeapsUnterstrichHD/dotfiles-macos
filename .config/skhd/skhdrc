@@ -51,6 +51,14 @@ shift + cmd - 7 : yabai -m window --space 7;
 ctrl + cmd - q : yabai --stop-service
 ctrl + cmd - s : yabai --start-service
 ctrl + cmd - r : yabai --restart-service
-
+# stop/start/restart skhd
+ctrl + shift + cmd - r : skhd --restart-service
 # Close focused window
 ctrl + cmd - w : yabai -m window --close
+
+# Applications
+
+cmd - e : open -a Finder.app # file explorer
+cmd - b : open --background 'velja:open?url=http://localhost:3066'  # blank new tab
+cmd - x : open -a kitty.app # terminal
+cmd - r : open -a Raycast.app # Spotlight
