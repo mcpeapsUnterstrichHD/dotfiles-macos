@@ -33,6 +33,10 @@ export PATH="/Applications/Alacritty.app/Contents/MacOS:$PATH"
 export PATH="/Applications/Kitty.app/Contents/MacOS:$PATH"
 export PATH=" /opt/homebrew/opt/ccache/libexec:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+export PATH="/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:$PATH"
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+
 
 # Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
@@ -87,7 +91,7 @@ source <(atuin gen-completions -s zsh)
 
 alias ls="colorls -l -a --group-directories-first $*"
 alias lss="/bin/ls -la $*"
-alias speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
+alias speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest -s 30907 -a $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias neofetch--speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias neofetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias fastfetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
@@ -103,6 +107,7 @@ alias rm="/opt/homebrew/bin/trash $*"
 alias rme="/opt/homebrew/bin/trash-empty $*"
 alias hangman="$HOME/exe/hangman"
 alias clock='tty-clock -sScxB -f "KW%V,%A,%0d/%m/%Y|%H:%M:%S"'
+alias ssh="zssh $*"
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
@@ -274,74 +279,74 @@ lazyg() {
     git push "$@"
 }
 
-function sudo() {
-    local attempts=0
-    local messages=(
-        "No problem, everyone has a moment like this."
-        "A little slip, but you’re doing great!"
-        "Almost there—give it another go."
-        "Everyone makes mistakes; just try again!"
-        "Don’t stress; just give it one more try."
-        "You’re getting closer—keep going!"
-        "Small hiccups happen; you’ve got this!"
-        "Each attempt brings you closer to success."
-        "It’s all part of the process; try once more!"
-        "Perseverance pays off—let’s try again."
-        "You’re doing well; just a little more effort."
-        "Mistakes are just steps towards mastery."
-        "Take it easy; you’re almost there!"
-        "Focus and try again; you’re on the right track!"
-        "Just a minor setback; success is near."
-        "You’re improving with each attempt—keep it up!"
-        "Stay positive; one more try might be all you need."
-        "Errors are just learning opportunities—try again!"
-        "You're making progress; don’t give up now!"
-        "Almost there; your persistence will pay off!"
-    )
-
-    # ANSI-Farbcodes
-    local RED='\033[0;31m'
-    local YELLOW='\033[0;33m'
-    local GREEN='\033[0;32m'
-    local NC='\033[0m' # Kein Color (Reset)
-
-    # Überprüfe, ob das Passwort im Cache ist
-    if /usr/bin/sudo -n true 2>/dev/null; then
-        # Führe den Befehl ohne Passwort erneut aus, wenn es im Cache ist
-        /usr/bin/sudo "$@"
-        return $?
-    fi
-
-    # Wenn Passwort benötigt wird, beginne den benutzerdefinierten Ablauf
-    while [ $attempts -lt 3 ]; do
-        # Fordere das Passwort manuell an
-        printf "${GREEN}Password:󰟵${NC}"
-
-        # Verstecke die Passworteingabe und stelle sicher, dass es keine Zeilenumbrüche gibt
-        stty -echo
-        IFS= read -r password_input
-        stty echo
-        printf "\n"  # Zeilenumbruch nach der Passworteingabe
-
-        # Versuche, den sudo-Befehl mit dem Passwort auszuführen
-        if echo "$password_input" | /usr/bin/sudo -S "$@" 2>/dev/null; then
-            return 0
-        fi
-
-        # Falls sudo fehlschlägt, erhöhe den Versuchszähler
-        ((attempts++))
-
-        # Zeige eine zufällige Nachricht nach den ersten zwei Fehlversuchen
-        if [ $attempts -lt 3 ]; then
-            random_message=${messages[RANDOM % ${#messages[@]}]}
-            printf "${YELLOW}%s${NC}\n" "$random_message"
-        fi
-    done
-
-    # Nach dem dritten Fehlversuch beenden
-    printf "${RED}sudo: 3 incorrect password attempts${NC}\n"
-    return 1
-}
+#function sudo() {
+#    local attempts=0
+#    local messages=(
+#        "No problem, everyone has a moment like this."
+#        "A little slip, but you’re doing great!"
+#        "Almost there—give it another go."
+#        "Everyone makes mistakes; just try again!"
+#        "Don’t stress; just give it one more try."
+#        "You’re getting closer—keep going!"
+#        "Small hiccups happen; you’ve got this!"
+#        "Each attempt brings you closer to success."
+#        "It’s all part of the process; try once more!"
+#        "Perseverance pays off—let’s try again."
+#        "You’re doing well; just a little more effort."
+#        "Mistakes are just steps towards mastery."
+#        "Take it easy; you’re almost there!"
+#        "Focus and try again; you’re on the right track!"
+#        "Just a minor setback; success is near."
+#        "You’re improving with each attempt—keep it up!"
+#        "Stay positive; one more try might be all you need."
+#        "Errors are just learning opportunities—try again!"
+#        "You're making progress; don’t give up now!"
+#        "Almost there; your persistence will pay off!"
+#    )
+#
+#    # ANSI-Farbcodes
+#    local RED='\033[0;31m'
+#    local YELLOW='\033[0;33m'
+#    local GREEN='\033[0;32m'
+#    local NC='\033[0m' # Kein Color (Reset)
+#
+#    # Überprüfe, ob das Passwort im Cache ist
+#    if /usr/bin/sudo -n true 2>/dev/null; then
+#        # Führe den Befehl ohne Passwort erneut aus, wenn es im Cache ist
+#        /usr/bin/sudo "$@"
+#        return $?
+#    fi
+#
+#    # Wenn Passwort benötigt wird, beginne den benutzerdefinierten Ablauf
+#    while [ $attempts -lt 3 ]; do
+#        # Fordere das Passwort manuell an
+#        printf "${GREEN}Password:󰟵${NC}"
+#
+#        # Verstecke die Passworteingabe und stelle sicher, dass es keine Zeilenumbrüche gibt
+#        stty -echo
+#        IFS= read -r password_input
+#        stty echo
+#        printf "\n"  # Zeilenumbruch nach der Passworteingabe
+#
+#        # Versuche, den sudo-Befehl mit dem Passwort auszuführen
+#        if echo "$password_input" | /usr/bin/sudo -S "$@" 2>/dev/null; then
+#            return 0
+#        fi
+#
+#        # Falls sudo fehlschlägt, erhöhe den Versuchszähler
+#        ((attempts++))
+#
+#        # Zeige eine zufällige Nachricht nach den ersten zwei Fehlversuchen
+#        if [ $attempts -lt 3 ]; then
+#            random_message=${messages[RANDOM % ${#messages[@]}]}
+#            printf "${YELLOW}%s${NC}\n" "$random_message"
+#        fi
+#    done
+#
+#    # Nach dem dritten Fehlversuch beenden
+#    printf "${RED}sudo: 3 incorrect password attempts${NC}\n"
+#    return 1
+#}
 
 function yy() {
     export ZELLIJ="true"

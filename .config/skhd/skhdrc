@@ -4,6 +4,11 @@ cmd - k : yabai -m window --focus north
 cmd - h : yabai -m window --focus west
 cmd - l : yabai -m window --focus east
 
+cmd - down : yabai -m window --focus south
+cmd - up : yabai -m window --focus north
+cmd - left : yabai -m window --focus west
+cmd - right : yabai -m window --focus east
+
 # rotate layout clockwise
 shift + cmd - r : yabai -m space --rotate 270
 
@@ -28,11 +33,21 @@ shift + cmd - k : yabai -m window --swap north
 shift + cmd - h : yabai -m window --swap west
 shift + cmd - l : yabai -m window --swap east
 
+shift + cmd - down : yabai -m window --swap south
+shift + cmd - up : yabai -m window --swap north
+shift + cmd - left : yabai -m window --swap west
+shift + cmd - right : yabai -m window --swap east
+
 # move window and split
 ctrl + cmd - j : yabai -m window --warp south
 ctrl + cmd - k : yabai -m window --warp north
 ctrl + cmd - h : yabai -m window --warp west
 ctrl + cmd - l : yabai -m window --warp east
+
+ctrl + cmd - down : yabai -m window --warp south
+ctrl + cmd - up : yabai -m window --warp north
+ctrl + cmd - left : yabai -m window --warp west
+ctrl + cmd - right : yabai -m window --warp east
 
 #move window to prev and next space
 shift + cmd - p : yabai -m window --space prev;
@@ -52,13 +67,13 @@ ctrl + cmd - q : yabai --stop-service
 ctrl + cmd - s : yabai --start-service
 ctrl + cmd - r : yabai --restart-service
 #restart skhd
-shift + ctrl + cmd - r : skhd --restart-service
+alt + ctrl + cmd - r : skhd --restart-service
 # Close focused window
 ctrl + cmd - w : yabai -m window --close
 
 # Applications
 
-shift + cmd  - e : open -a Finder.app # file explorer
-shift + cmd  - b : open --background 'velja:open?url=http://localhost:3066'  # blank new tab
-shift + cmd - x : open -a kitty.app # terminal
-shift + cmd - r : open -a Raycast.app # Spotlight
+alt + cmd - e : open -a Finder.app # file explorer
+alt + cmd - b : open --background 'velja:open?url=http://localhost:3066'  # blank new tab
+alt + cmd - x : open -a Ghostty.app # terminal
+alt + cmd - r : open -a Raycast.app # Spotlight
