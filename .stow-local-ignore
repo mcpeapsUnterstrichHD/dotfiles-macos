@@ -19,6 +19,7 @@ _darcs
 ^/install.sh
 ^/packages-to-intalled
 ^/update.sh
+^/dotfiles.code-workspace
 
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files

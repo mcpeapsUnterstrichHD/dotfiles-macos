@@ -3,7 +3,11 @@ font-family-bold = "CaskaydiaCove Nerd Font Mono Bold"
 font-family-italic = "CaskaydiaCove Nerd Font Mono Italic"
 font-family-bold-italic = "CaskaydiaCove Nerd Font Mono Bold Italic"
 font-size = 26
-font-thicken = true #only macos
+#--------------
+#only macos
+#--------------
+font-thicken = true
+#--------------
 theme = nord
 cursor-style = underline
 cursor-style-blink = true
