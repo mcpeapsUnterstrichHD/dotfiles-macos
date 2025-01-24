@@ -108,6 +108,7 @@ alias rme="/opt/homebrew/bin/trash-empty $*"
 alias hangman="$HOME/exe/hangman"
 alias clock='tty-clock -sScxB -f "KW%V,%A,%0d/%m/%Y|%H:%M:%S"'
 alias ssh="zssh $*"
+alias code="trae $*"
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
