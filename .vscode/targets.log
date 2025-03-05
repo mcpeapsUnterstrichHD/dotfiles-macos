@@ -6,11 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Fri Jan 24 19:09:33 2025
+# Make data base, printed on Wed Mar  5 09:24:42 2025
 
 # Variables
 
@@ -18,15 +15,26 @@ make: *** No rule to make target `all'.  Stop.
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
- 
+# environment
+OPAM_SWITCH_PREFIX = /Users/mahd/.opam/default
 # environment
 NODE_TLS_REJECT_UNAUTHORIZED = undefined
 # environment
-ICUBE_PROVIDER = Spring
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+OCAML_TOPLEVEL_PATH = /Users/mahd/.opam/default/lib/toplevel
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+CRYPTOGRAPHY_OPENSSL_NO_LEGACY = 1
+# environment
+NVM_INC = /Users/mahd/.nvm/versions/node/v22.7.0/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+CPPFLAGS =  -I/usr/local/opt/qt@5/include -I/usr/local/opt/qt@5/include
+# environment
+rvm_path = /Users/mahd/.rvm
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -36,101 +44,154 @@ CURDIR := /Users/mahd/DEV/dotfiles
 # makefile
 SHELL = /bin/sh
 # environment
-CLOUDIDE_PROVIDER_REGION = us
+FZF_DEFAULT_COMMAND = rg --files --hidden --follow --no-ignore-vcs
 # environment
-VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/Applications/Trae.app/Contents/Resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}
+VSCODE_NLS_CONFIG = {"userLocale":"de","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json","locale":"de","availableLanguages":{}}
+# environment
+ZAP_DIR = /Users/mahd/.local/share/zap
 # environment
 _ = /usr/bin/make
+# environment
+POSH_SESSION_ID = 88ccc8c5-f152-4428-94bb-e2d1b29589c5
+# environment
+VSCODE_PID = 11802
+# environment
+WALLABY_PRODUCTION = true
 # makefile
 MAKEFILE_LIST := 
 # environment
-ICUBE_BUILD_TIME = 2025-01-23T06:59:49.656Z
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..
 # environment
-ICUBE_QUALITY = stable
+POSH_SHELL = zsh
 # environment
-__CFBundleIdentifier = com.trae.app
+__CFBundleIdentifier = com.microsoft.VSCode
 # environment
-ICUBE_MARSCODE_VERSION = 1.0.5760
+INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+GHOSTTY_BIN_DIR = /Applications/Ghostty.app/Contents/MacOS
 # environment
-APP_REGION = US
+ZELLIJ_PANE_ID = 1
 # environment
- 
-ICUBE_USE_IPV6 = false
+TERMINFO = /Applications/Ghostty.app/Contents/Resources/terminfo
 # environment
-ICUBE_BUILD_VERSION = 1.0.5760
+HOMEBREW_AUTO_UPDATE_SECS = 1
 # environment
-LaunchInstanceID = 4994ED14-7B60-4500-B6D3-839E304BB5BB
+VSCODE_CWD = /Users/mahd/DEV/dotfiles
+# environment
+GSETTINGS_SCHEMA_DIR = /opt/anaconda3/share/glib-2.0/schemas
+# environment
+ATUIN_SESSION = 01956567518672919b75c8fcb75c5c66
+# environment
+PATH = /Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/Users/mahd/.nvm/versions/node/v22.7.0/bin:/opt/homebrew/opt/openjdk@21/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Users/mahd/.opam/default/bin:/usr/local/opt/qt@5/bin:/Users/mahd/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/Applications:/Applications/c3:/:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/Users/mahd/.gem/ruby/3.3.0/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Users/mahd/.opam/default/bin:/usr/local/opt/qt@5/bin:/Users/mahd/.local/bin:/Applications:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/opt/podman/bin:/Users/mahd/.cargo/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.rvm/bin:/Users/mahd/.spicetify
+# environment
+FPATH = /Users/mahd/.gem/ruby/3.3.0/gems/colorls-1.4.6/zsh:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh:/Users/mahd/.local/share/zap/completion
+# environment
+NVM_BIN = /Users/mahd/.nvm/versions/node/v22.7.0/bin
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-ICUBE_APP_VERSION = 1.0.1
+LDFLAGS =  -L/usr/local/opt/qt@5/lib -L/usr/local/opt/qt@5/lib
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.RSqUA2LGnO/Listeners
+GHOSTTY_RESOURCES_DIR = /Applications/Ghostty.app/Contents/Resources/ghostty
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.37kGjJxTrV/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.A6GQOvdpT7/org.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.gJ3HDKVrUs/org.xquartz:0
+# environment
+CONDA_EXE = /opt/anaconda3/bin/conda
+# environment
+rvm_bin_path = /Users/mahd/.rvm/bin
 # environment
 PWD = /Users/mahd/DEV/dotfiles
 # environment
-ELECTRON_FORCE_IS_PACKAGED = true
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
-VSCODE_CWD = /
+ZSHRC = /Users/mahd/.zshrc
 # environment
-VSCODE_RUN_IN_ELECTRON = true
+GEM_HOME = /Users/mahd/.gem/ruby/3.3.0
+# environment
+GIT_CONFIG = /Users/mahd/DEV/dotfiles/.gitconfig
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-ICUBE_IS_ELECTRON = true
+ZELLIJ_SESSION_NAME = quiet-pepper
 # environment
-MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/Users/mahd/.nvm/versions/node/v22.7.0/share/man::/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/X11/share/man:/Applications/Wireshark.app/Contents/Resources/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::
 # environment
 HOME = /Users/mahd
+# environment
+POWERLINE_COMMAND = oh-my-posh
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-ICUBE_PRODUCT_PROVIDER = Spring
+VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/mahd/Library/Application Support/Trae/CachedData/3d8ec0bb9ea606869a2d41ea08ce2f51aeaa2298
+VSCODE_CODE_CACHE_PATH = /Users/mahd/Library/Application Support/Code/CachedData/e54c774e0add60467559eb0d1e229c6452cf8447
 # environment
 LOGNAME = mahd
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-ENABLE_MARSCODE_NLS = 1
+CONDA_PROMPT_MODIFIER = (base) 
+# environment
+NVM_CD_FLAGS = -q
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
- 
+CONDA_DEFAULT_ENV = base
+# environment
 XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+OSTYPE = darwin22.1.0
+# environment
+SHLVL = 4
+# environment
+POSH_THEME = /Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml
 # environment
 VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+POSH_SHELL_VERSION = 5.9
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = mahd
 # environment
-ICUBE_MACHINE_ID = 35e12f7f645297973065da9f720631db2747a8dd0a75f1a038d7c152b39e39da
+ZLE_RPROMPT_INDENT = 0
+# environment
+CAML_LD_LIBRARY_PATH = /Users/mahd/.opam/default/lib/stublibs:/Users/mahd/.opam/default/lib/ocaml/stublibs:/Users/mahd/.opam/default/lib/ocaml
 # makefile
 .DEFAULT_GOAL := 
+# environment
+CLASSPATH = :/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar
+# environment
+rvm_version = 1.29.12 (latest)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-ICUBE_ELECTRON_PATH = /Applications/Trae.app/Contents/MacOS/Electron
+CONDA_SHLVL = 1
 # default
+ 
+make: *** No rule to make target `all'.  Stop.
+
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+ZAP_PLUGIN_DIR = /Users/mahd/.local/share/zap/plugins
+# environment
+rvm_promptless = 1
+# environment
+TERM_PROGRAM = ghostty
 # default
 .VARIABLES := 
 # environment
@@ -138,9 +199,11 @@ TMPDIR = /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/mahd/Library/Application Support/Trae/1.95-main.sock
+VSCODE_IPC_HOOK = /Users/mahd/Library/Application Support/Code/1.97-main.sock
 # environment
 MallocNanoZone = 0
+# environment
+BUN_INSTALL = /Users/mahd/.bun
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -148,7 +211,13 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.trae.app.191871088.191871380
+TERM_PROGRAM_VERSION = 1.1.2
+# environment
+NVM_DIR = /Users/mahd/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.211440092.211440098.A1609D7B-E083-416B-9237-2F6BCA772B51
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -156,7 +225,9 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # automatic
 +F = $(notdir $+)
 # environment
-ICUBE_VSCODE_VERSION = 1.95.3
+ATUIN_HISTORY_ID = 01956567b9127790a43913cd04a063de
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
@@ -164,38 +235,47 @@ COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # environment
-CLOUDIDE_APISERVER_BASE_URL = https://api-sg-central.marscode.com
+PKG_CONFIG_PATH = /usr/local/opt/qt@5/lib/pkgconfig:/usr/local/opt/qt@5/lib/pkgconfig:
 # automatic
 <F = $(notdir $<)
 # environment
- 
+EDITOR = /opt/homebrew/bin/nvim
+# environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b3
+PYENV_VIRTUALENV_DISABLE_PROMPT = 1
+# environment
+CONDA_PYTHON_EXE = /opt/anaconda3/bin/python
+# environment
+GHOSTTY_SHELL_INTEGRATION_NO_SUDO = 1
+# environment
+ZELLIJ = 0
 # automatic
 ^F = $(notdir $^)
+# environment
+rvm_prefix = /Users/mahd
 # default
 SUFFIXES := 
-# environment
-ICUBE_CODEMAIN_SESSION = 1dbbac22-1e42-4bbc-967b-b386d917928e
 # default
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
 # environment
-VSCODE_EXTENSIONS_PATH = /Users/mahd/.trae/extensions
+FZF_DEFAULT_OPTS = --height 40% --layout=reverse --border
 # environment
-ICUBE_PROXY_HOST = 127.0.0.1
+CONDA_PREFIX = /opt/anaconda3
+# environment
+TERM = xterm-256color
+# environment
+VIRTUAL_ENV_DISABLE_PROMPT = 1
+# environment
+DOCKER_HOST = unix:///var/run/docker.sock
+# environment
+APPLICATIONINSIGHTS_CONFIGURATION_CONTENT = {}
 # environment
 LANG = C
-# environment
-ICUBE_PROXY_PORT = 51000
-# environment
-VSCODE_PID = 12785
-# environment
-DOC_URL = https://docs.marscode.com/dev-tools/preview
 # variable set hash-table stats:
-# Load=88/1024=9%, Rehash=0, Collisions=4/109=4%
+# Load=130/1024=13%, Rehash=0, Collisions=8/151=5%
 
 # Pattern-specific Variable Values
 
@@ -203,7 +283,7 @@ DOC_URL = https://docs.marscode.com/dev-tools/preview
 
 # Directories
 
-# . (device 16777229, inode 55977128): 48 files, no impossibilities.
+# . (device 16777232, inode 55977128): 48 files, no impossibilities.
 
 # 48 files, no impossibilities in 1 directories.
 
@@ -228,7 +308,6 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 # Not a target:
 Makefile:
 #  A default, MAKEFILES, or -include/sinclude makefile.
@@ -277,8 +356,7 @@ GNUmakefile:
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
- 
 
-# Finished Make data base on Fri Jan 24 19:09:33 2025
+# Finished Make data base on Wed Mar  5 09:24:49 2025
 
  
