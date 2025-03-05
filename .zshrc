@@ -108,7 +108,8 @@ alias rme="/opt/homebrew/bin/trash-empty $*"
 alias hangman="$HOME/exe/hangman"
 alias clock='tty-clock -sScxB -f "KW%V,%A,%0d/%m/%Y|%H:%M:%S"'
 alias ssh="zssh $*"
-alias code="trae $*"
+alias trae="code $*"
+alias cursor="code $*"
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
@@ -400,3 +401,12 @@ function start-crafty-server() {
   cd "$cpwd"
 
 }
+
+# bun completions
+[ -s "/Users/mahd/.bun/_bun" ] && source "/Users/mahd/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+PATH=~/.console-ninja/.bin:$PATH

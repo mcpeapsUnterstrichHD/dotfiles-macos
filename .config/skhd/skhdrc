@@ -1,13 +1,13 @@
 # change window focus within space
-cmd - j : yabai -m window --focus south
-cmd - k : yabai -m window --focus north
-cmd - h : yabai -m window --focus west
-cmd - l : yabai -m window --focus east
+alt + cmd - j : yabai -m window --focus south
+alt + cmd - k : yabai -m window --focus north
+alt + cmd - h : yabai -m window --focus west
+alt + cmd - l : yabai -m window --focus east
 
-cmd - down : yabai -m window --focus south
-cmd - up : yabai -m window --focus north
-cmd - left : yabai -m window --focus west
-cmd - right : yabai -m window --focus east
+alt + cmd - down : yabai -m window --focus south
+alt + cmd - up : yabai -m window --focus north
+alt + cmd - left : yabai -m window --focus west
+alt + cmd - right : yabai -m window --focus east
 
 # rotate layout clockwise
 shift + cmd - r : yabai -m space --rotate 270
@@ -50,7 +50,7 @@ ctrl + cmd - left : yabai -m window --warp west
 ctrl + cmd - right : yabai -m window --warp east
 
 #move window to prev and next space
-shift + cmd - p : yabai -m window --space prev;
+shift + cmd - o : yabai -m window --space prev;
 shift + cmd - n : yabai -m window --space next;
 
 # move window to space #
