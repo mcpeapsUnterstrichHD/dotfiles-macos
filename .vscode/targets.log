@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed Mar  5 09:24:42 2025
+# Make data base, printed on Thu Mar  6 19:43:55 2025
 
 # Variables
 
@@ -52,9 +52,9 @@ ZAP_DIR = /Users/mahd/.local/share/zap
 # environment
 _ = /usr/bin/make
 # environment
-POSH_SESSION_ID = 88ccc8c5-f152-4428-94bb-e2d1b29589c5
+POSH_SESSION_ID = 1d2aa85f-fbfb-4b03-a73e-f31089dab919
 # environment
-VSCODE_PID = 11802
+VSCODE_PID = 52481
 # environment
 WALLABY_PRODUCTION = true
 # makefile
@@ -70,7 +70,7 @@ INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share
 # environment
 GHOSTTY_BIN_DIR = /Applications/Ghostty.app/Contents/MacOS
 # environment
-ZELLIJ_PANE_ID = 1
+ZELLIJ_PANE_ID = 2
 # environment
 TERMINFO = /Applications/Ghostty.app/Contents/Resources/terminfo
 # environment
@@ -80,7 +80,7 @@ VSCODE_CWD = /Users/mahd/DEV/dotfiles
 # environment
 GSETTINGS_SCHEMA_DIR = /opt/anaconda3/share/glib-2.0/schemas
 # environment
-ATUIN_SESSION = 01956567518672919b75c8fcb75c5c66
+ATUIN_SESSION = 01956cc495e07e61afa42ab235588641
 # environment
 PATH = /Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/Users/mahd/.nvm/versions/node/v22.7.0/bin:/opt/homebrew/opt/openjdk@21/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Users/mahd/.opam/default/bin:/usr/local/opt/qt@5/bin:/Users/mahd/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/Applications:/Applications/c3:/:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/Users/mahd/.gem/ruby/3.3.0/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Users/mahd/.opam/default/bin:/usr/local/opt/qt@5/bin:/Users/mahd/.local/bin:/Applications:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/opt/podman/bin:/Users/mahd/.cargo/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.rvm/bin:/Users/mahd/.spicetify
 # environment
@@ -130,7 +130,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/mahd/Library/Application Support/Code/CachedData/e54c774e0add60467559eb0d1e229c6452cf8447
+VSCODE_CODE_CACHE_PATH = /Users/mahd/Library/Application Support/Code/CachedData/6609ac3d66f4eade5cf376d1cb76f13985724bcb
 # environment
 LOGNAME = mahd
 # environment
@@ -199,7 +199,7 @@ TMPDIR = /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/mahd/Library/Application Support/Code/1.97-main.sock
+VSCODE_IPC_HOOK = /Users/mahd/Library/Application Support/Code/1.98-main.sock
 # environment
 MallocNanoZone = 0
 # environment
@@ -215,7 +215,7 @@ TERM_PROGRAM_VERSION = 1.1.2
 # environment
 NVM_DIR = /Users/mahd/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.211440092.211440098.A1609D7B-E083-416B-9237-2F6BCA772B51
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.213988304.213988310.EC3ED2B0-8A8A-4BFF-B27E-DA900396F9EF
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -225,7 +225,7 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # automatic
 +F = $(notdir $+)
 # environment
-ATUIN_HISTORY_ID = 01956567b9127790a43913cd04a063de
+ATUIN_HISTORY_ID = 01956cc4e37b79428fecd284953544bb
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -357,6 +357,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Wed Mar  5 09:24:49 2025
+# Finished Make data base on Thu Mar  6 19:43:57 2025
 
  
