@@ -1,4 +1,5 @@
 {
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1-beta.2",
   "schemes" : [
     {
       "buttons" : {
@@ -7,16 +8,22 @@
       "if" : {
         "device" : {
           "category" : "trackpad",
-          "productName" : "Apple Internal Keyboard \/ Trackpad",
           "productID" : "0x281",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
           "vendorID" : "0x5ac"
         }
       },
+      "pointer" : {
+        "acceleration" : 3,
+        "disableAcceleration" : false,
+        "speed" : 1
+      },
       "scrolling" : {
-        "speed" : {
-          "vertical" : 0,
-          "horizontal" : 1
+        "acceleration" : {
+          "horizontal" : 2,
+          "vertical" : 1
         },
+        "distance" : "auto",
         "modifiers" : {
           "horizontal" : {
             "shift" : {
@@ -26,37 +33,31 @@
           },
           "vertical" : {
             "shift" : {
-              "type" : "changeSpeed",
-              "scale" : 0.5
+              "scale" : 0.5,
+              "type" : "changeSpeed"
             }
           }
         },
-        "distance" : "auto",
-        "acceleration" : {
-          "vertical" : 1,
-          "horizontal" : 2
+        "speed" : {
+          "horizontal" : 1,
+          "vertical" : 0
         }
-      },
-      "pointer" : {
-        "acceleration" : 3,
-        "speed" : 1,
-        "disableAcceleration" : false
       }
     },
     {
-      "pointer" : {
-        "speed" : 0.6875,
-        "disableAcceleration" : false,
-        "acceleration" : 0.6875
-      },
       "if" : {
         "device" : {
-          "productName" : "Magic Mouse",
           "category" : "mouse",
-          "vendorID" : "0x4c",
+          "productID" : "0x269",
+          "productName" : "Magic Mouse",
           "serialNumber" : "18-3f-70-d8-3e-0a",
-          "productID" : "0x269"
+          "vendorID" : "0x4c"
         }
+      },
+      "pointer" : {
+        "acceleration" : 0.6875,
+        "disableAcceleration" : false,
+        "speed" : 0.6875
       },
       "scrolling" : {
         "reverse" : {
@@ -65,49 +66,44 @@
       }
     },
     {
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "productID" : "0x265",
+          "productName" : "Magic Trackpad",
+          "serialNumber" : "d4-57-63-60-7a-ba",
+          "vendorID" : "0x4c"
+        }
+      },
       "pointer" : {
         "acceleration" : 0.5399,
         "speed" : 1
-      },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x4c",
-          "category" : "trackpad",
-          "serialNumber" : "d4-57-63-60-7a-ba",
-          "productName" : "Magic Trackpad",
-          "productID" : "0x265"
-        }
       }
     },
     {
-      "scrolling" : {
-        "speed" : {
-          "vertical" : 1
-        },
-        "acceleration" : {
-          "vertical" : 2
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "productID" : "0x265",
+          "productName" : "Magic Trackpad",
+          "serialNumber" : "CC2211201681G30AP",
+          "vendorID" : "0x5ac"
         }
       },
       "pointer" : {
         "acceleration" : 0.9479,
         "speed" : 1
       },
-      "if" : {
-        "device" : {
-          "productName" : "Magic Trackpad",
-          "serialNumber" : "CC2211201681G30AP",
-          "productID" : "0x265",
-          "vendorID" : "0x5ac",
-          "category" : "trackpad"
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 2
+        },
+        "speed" : {
+          "vertical" : 1
         }
       }
     },
     {
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
-        }
-      },
       "if" : {
         "device" : {
           "category" : "trackpad",
@@ -115,6 +111,11 @@
           "productName" : "Magic Trackpad von mcpeaps_HD",
           "serialNumber" : "D4:57:63:60:7A:BA",
           "vendorID" : "0x4c"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
         }
       }
     },
@@ -125,48 +126,63 @@
         },
         "universalBackForward" : true
       },
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "productID" : "0x265",
+          "productName" : "mcpeaps_HD’s Magic Trackpad",
+          "serialNumber" : "D4:57:63:60:7A:BA",
+          "vendorID" : "0x4c"
+        }
+      },
       "pointer" : {
-        "speed" : 1,
-        "acceleration" : 3
+        "acceleration" : 3,
+        "speed" : 1
       },
       "scrolling" : {
         "modifiers" : {
           "vertical" : {
             "shift" : {
-              "type" : "changeSpeed",
-              "scale" : 0.5
+              "scale" : 0.5,
+              "type" : "changeSpeed"
             }
           }
-        }
-      },
-      "if" : {
-        "device" : {
-          "productID" : "0x265",
-          "serialNumber" : "D4:57:63:60:7A:BA",
-          "vendorID" : "0x4c",
-          "category" : "trackpad",
-          "productName" : "mcpeaps_HD’s Magic Trackpad"
         }
       }
     },
     {
       "if" : {
         "device" : {
-          "productName" : "USB Receiver",
           "category" : "mouse",
-          "vendorID" : "0x46d",
-          "productID" : "0xc547"
+          "productID" : "0xc547",
+          "productName" : "USB Receiver",
+          "vendorID" : "0x46d"
         }
       },
       "scrolling" : {
-        "reverse" : {
-          "vertical" : true
-        },
         "acceleration" : {
           "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : true
         }
       }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x269",
+          "productName" : "Magic Mouse von mcpeaps_HD",
+          "serialNumber" : "18:3F:70:D8:3E:0A",
+          "vendorID" : "0x4c"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 4.5713,
+        "disableAcceleration" : false,
+        "speed" : 0.0204
+      }
     }
-  ],
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+  ]
 }

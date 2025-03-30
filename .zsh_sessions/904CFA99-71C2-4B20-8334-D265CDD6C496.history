@@ -2,8 +2,8 @@
 : 1691415983:0; chsh -s $PATH mahd
 : 1691415983:0; chsh -s $PATH/fish mahd
 : 1691415983:0;shells
-: 1691415983:0;echo  �/usr/local/bin/fish � | sudo tee -a /etc/shells
-: 1691415983:0;echo  �/usr/local/bin/fish � | sudo tee -a /etc/shells\
+: 1691415983:0;echo  �/usr/local/bin/fish � | sudo tee -a /etc/shells
+: 1691415983:0;echo  �/usr/local/bin/fish � | sudo tee -a /etc/shells\
 
 : 1691415983:0;brew install fish
 : 1691415983:0;echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mahd/.profile\
@@ -16,7 +16,7 @@
 : 1691415983:0;brew install --cask fish
 : 1691415983:0;brew install --cask qmue
 : 1691415983:0;brew install qemu
-: 1691415983:0;qemu-img convert -p -O qcow2 /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_22598.vhdx /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_22598.qcow2 
+: 1691415983:0;qemu-img convert -p -O qcow2 /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_22598.vhdx /Users/mahd/Downloads/Windows11_InsiderPreview_Client_ARM64_en-us_22598.qcow2
 : 1691415983:0;(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/$USER/.zprofile\
 eval "$(/usr/local/bin/brew shellenv)"
 : 1691415983:0;which brew
@@ -45,7 +45,7 @@ eval "$(/usr/local/bin/brew shellenv)"
 : 1691415983:0;java Temp.java Hello World
 : 1691415983:0;cat Temp.java
 : 1691415983:0;lvim Temp.java
-: 1691415983:0;lvim 
+: 1691415983:0;lvim
 : 1691415983:0;cd /Users/mahd/.config/lvim
 : 1691415983:0;lvim
 : 1691415983:0;nix-sell -h
@@ -565,10 +565,6 @@ cmake --install webcamoid-build
 : 1698802284:0;cd webcamoid
 : 1698802395:0;brew install numpy
 : 1698802409:0;sh ./install_deps.sh
-: 1698802435:0;export PATH="/usr/local/opt/qt@5/bin:$PATH"\
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/qt@5/lib"\
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/qt@5/include"\
-export PKG_CONFIG_PATH="/usr/local/opt/qt@5/lib/pkgconfig:$PKG_CONFIG_PATH"\
 \
 mkdir -p webcamoid-build\
 cmake -S webcamoid -B webcamoid-build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${PWD}/webcamoid-data"\
@@ -965,7 +961,7 @@ sudo cloudflared service install eyJhIjoiZGQ0NGVhNDcxN2ZhMzgyMjlhOGRjODhkMThjYWZ
 : 1705183518:0;brew uninstall mDNSRespo
 : 1705183540:0;sudo killall mDNSRespo
 : 1705183714:0;launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
-: 1705183786:0;sudo ⃵�⃴� launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
+: 1705183786:0;sudo ⃵�⃴� launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
 : 1705183801:0;sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSresponder.plist
 : 1705190914:0;sudo cloudflared service start
 : 1705190921:0;sudo cloudflared service help
@@ -1237,7 +1233,7 @@ exec podman "$@"
 : 1707337450:0;rbenv rehash\
 rehash
 : 1707337466:0;sudo gem install colorls
-: 1707337501:0;rbenv rehash ⃴�⃵�\
+: 1707337501:0;rbenv rehash ⃴�⃵�\
 rehash gem install colorls
 : 1707337522:0;rbenv
 : 1707337545:0;rbenv global 3.2.2

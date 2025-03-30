@@ -1,8 +1,12 @@
+typeset -A ZI
+ZI[BIN_DIR]="${HOME}/.zi/bin"
+source "${ZI[BIN_DIR]}/zi.zsh"
+
+autoload -Uz _zi
+(( ${+_comps} )) && _comps[zi]=_zi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GIT_CONFIG="$HOME/DEV/dotfiles/.gitconfig"
-export GEM_HOME="$HOME/.gem/ruby/3.3.0"
-export PATH="$GEM_HOME/bin:$PATH"
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 export HOMEBREW_REPOSITORY="/opt/homebrew";
@@ -36,9 +40,11 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:$PATH"
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+#export PATH="/Users/mahd/dlang/dmd-nightly/osx/bin:$PATH"
+#export PATH="/Users/mahd/dlang/ldc-1.40.1/bin:$PATH"
+rbenv init
 
-
-# Setze den Terminal-Typ (optional, falls nötig)
+#Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
 
 # Alias für Alacritty
@@ -88,6 +94,8 @@ source <(fzf --zsh)
 source <(jj util completion zsh)
 source <(atuin init zsh)
 source <(atuin gen-completions -s zsh)
+#source ~/dlang/ldc-1.40.1/activate
+#source ~/dlang/dmd-nightly/activate
 
 alias ls="colorls -l -a --group-directories-first $*"
 alias lss="/bin/ls -la $*"
@@ -157,16 +165,6 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-
-
-export PATH="/usr/local/opt/qt@5/bin:$PATH"
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/qt@5/lib"
-export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/qt@5/include"
-export PKG_CONFIG_PATH="/usr/local/opt/qt@5/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 [[ ! -r /Users/mahd/.opam/opam-init/init.zsh ]] || source /Users/mahd/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
@@ -410,3 +408,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 PATH=~/.console-ninja/.bin:$PATH
+zi light-mode for \
+  z-shell/z-a-meta-plugins \
+  @annexes @zunit
