@@ -5,4 +5,4 @@
 brewfile > ./packages-to-intalled
 
 # synchronizing dotfiles
-stow -t ~ . --adopt
+stow .

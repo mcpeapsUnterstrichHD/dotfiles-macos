@@ -42,7 +42,12 @@ export PATH="/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.ap
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 #export PATH="/Users/mahd/dlang/dmd-nightly/osx/bin:$PATH"
 #export PATH="/Users/mahd/dlang/ldc-1.40.1/bin:$PATH"
-rbenv init
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export LDFLAGS=""
+export CPPFLAGS=""
+export LDFLAGS="$LDFLAGS -L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/ruby/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 #Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color

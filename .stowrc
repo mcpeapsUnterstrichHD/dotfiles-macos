@@ -1,0 +1,34 @@
+# Zielverzeichnis festlegen
+--target=~
+
+# Bestehende Dateien übernehmen
+--adopt
+
+# Ignorierregeln aus .stow-local-ignore
+--ignore='RCS'
+--ignore='\.stowrc'
+--ignore='.+,v'
+--ignore='\.\#.+'
+--ignore='\.cvsignore'
+--ignore='\.svn'
+--ignore='_darcs'
+--ignore='\.hg'
+--ignore='\.git'
+--ignore='\.jj'
+--ignore='\.gitignore'
+--ignore='\.gitconfig'
+--ignore='\.DS_Store'
+--ignore='^/install.sh'
+--ignore='^/packages-to-intalled'
+--ignore='^/update.sh'
+--ignore='^/dotfiles.code-workspace'
+--ignore='.+~'
+--ignore='\#.*\#'
+--ignore='^/README.*'
+--ignore='^/LICENSE.*'
+--ignore='^/COPYING.*'
+--ignore='^/AUTHORS.*'
+--ignore='^/ChangeLog.*'
+--ignore='^/NEWS.*'
+--ignore='^/INSTALL.*'
+--ignore='^/TODO.*'
