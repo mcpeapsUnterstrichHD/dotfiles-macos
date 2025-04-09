@@ -183,6 +183,27 @@
         "disableAcceleration" : false,
         "speed" : 0.0204
       }
+    },
+    {
+      "buttons" : {
+        "clickDebouncing" : {
+          "timeout" : 0
+        },
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xb023",
+          "productName" : "MX Master 3",
+          "serialNumber" : "222FC9B909D0AF43",
+          "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : 1,
+        "reverse" : false
+      }
     }
   ]
 }
