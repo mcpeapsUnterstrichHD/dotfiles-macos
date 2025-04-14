@@ -1,7 +1,3 @@
-[user]
-	name = mcpeapsUnterstrichHD
-	email = mcpeaps_HD@outlook.com
-
 [alias]
     push = jj git push $*
     status = jj status $*
@@ -38,3 +34,5 @@
 	gpgSign = false
 [tag]
 	gpgSign = false
+[user]
+	name = mcpeaps_HD@outlook.com

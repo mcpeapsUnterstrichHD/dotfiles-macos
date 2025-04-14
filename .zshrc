@@ -53,7 +53,7 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export TERM=xterm-256color
 
 # Alias für Alacritty
-alias terminal='/Applications/Kitty.app/Contents/MacOS/kitty'
+alias terminal='/Applications/Ghostty.app/Contents/MacOS/ghostty'
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -99,6 +99,8 @@ source <(fzf --zsh)
 source <(jj util completion zsh)
 source <(atuin init zsh)
 source <(atuin gen-completions -s zsh)
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
 #source ~/dlang/ldc-1.40.1/activate
 #source ~/dlang/dmd-nightly/activate
 
@@ -416,3 +418,5 @@ PATH=~/.console-ninja/.bin:$PATH
 zi light-mode for \
   z-shell/z-a-meta-plugins \
   @annexes @zunit
+
+alias gf=gf
