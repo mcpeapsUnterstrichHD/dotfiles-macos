@@ -7,40 +7,36 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Sun Mar 30 16:54:22 2025
+# Make data base, printed on Tue May  6 10:11:48 2025
 
 # Variables
 
-# environment
-VSCODE_GIT_ASKPASS_MAIN = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-OPAM_SWITCH_PREFIX = /Users/mahd/.opam/default
+NODE_TLS_REJECT_UNAUTHORIZED = undefined
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-OCAML_TOPLEVEL_PATH = /Users/mahd/.opam/default/lib/toplevel
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # environment
 CRYPTOGRAPHY_OPENSSL_NO_LEGACY = 1
-# environment
-NVM_INC = /Users/mahd/.nvm/versions/node/v22.7.0/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-CPPFLAGS =  -I/usr/local/opt/qt@5/include -I/usr/local/opt/qt@5/include
-# environment
-rvm_path = /Users/mahd/.rvm
+CPPFLAGS =  -I/opt/homebrew/opt/ruby/include
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
+# environment
+PERIOD = 30
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
 # makefile
-CURDIR := /Users/mahd/DEV/dotfiles
+CURDIR := /Users/mahd/DEV/dotfiles-macos
 # makefile
 SHELL = /bin/sh
 # environment
@@ -48,113 +44,111 @@ FZF_DEFAULT_COMMAND = rg --files --hidden --follow --no-ignore-vcs
 # environment
 VSCODE_NLS_CONFIG = {"userLocale":"de","osLocale":"de-de","resolvedLanguage":"en","defaultMessagesFile":"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json","locale":"de","availableLanguages":{}}
 # environment
-ZAP_DIR = /Users/mahd/.local/share/zap
+_ZPLUG_CONFIG_SUBSHELL = :
 # environment
 _ = /usr/bin/make
 # environment
-POSH_SESSION_ID = c0a004bc-82c3-4c83-8cf4-c454f3f7bc22
+TMUX_CONF_LOCAL = /Users/mahd/.tmux.conf.local
 # environment
-XDG_ZI_HOME = /Users/mahd/.zi
+POSH_SESSION_ID = 17af5617-1bf4-427f-8da9-c796e0f03cd8
 # environment
-VSCODE_GIT_EDITOR_NODE = /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)
+VSCODE_PID = 91050
+# environment
+WALLABY_PRODUCTION = true
 # makefile
 MAKEFILE_LIST := 
 # environment
-VSCODE_PROFILE_INITIALIZED = 1
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..
 # environment
-VSCODE_INJECTION = 1
+ZPLUG_THREADS = 16
 # environment
 POSH_SHELL = zsh
 # environment
+ZPLUG_FILTER = fzf-tmux:fzf:peco:percol:fzy:zaw
+# environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:
+INFOPATH = /opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:
 # environment
-GIT_EDITOR = "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/git-editor.sh"
+GHOSTTY_BIN_DIR = /Applications/Ghostty.app/Contents/MacOS
 # environment
-LOG_PATH = /Users/mahd/.cache/zi/log:
+_ZPLUG_VERSION = 2.4.2
 # environment
-rvm_promptless = 1
+TERMINFO = /Applications/Ghostty.app/Contents/Resources/terminfo
 # environment
 HOMEBREW_AUTO_UPDATE_SECS = 1
 # environment
-VSCODE_CWD = /opt/homebrew/Cellar
+VSCODE_CWD = /Users/mahd/DEV/dotfiles-macos
 # environment
-GSETTINGS_SCHEMA_DIR = /opt/anaconda3/share/glib-2.0/schemas
+ATUIN_SESSION = 01969f7109577ee1a82d9b292bcc7009
 # environment
-ATUIN_SESSION = 0195e784d5d27a00a48373857a131c49
+PATH = /opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mahd/.bun/bin/:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin
 # environment
-PATH = /Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/opt/homebrew/opt/openjdk@21/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Users/mahd/.opam/default/bin:/Users/mahd/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/Applications:/Applications/c3:/:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/usr/local/opt/qt@5/bin:/Users/mahd/.zi/plugins/zdharma---revolver:/Users/mahd/.nvm/versions/node/v22.7.0/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/Users/mahd/.gem/ruby/3.3.0/bin:/Users/mahd/.zi/polaris/sbin:/Users/mahd/.zi/polaris/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/opt/podman/bin:/Users/mahd/.cargo/bin:/Users/mahd/.vscode/extensions/ms-python.debugpy-2025.4.1-darwin-arm64/bundled/scripts/noConfigScripts:/Users/mahd/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.spicetify
+FPATH = /opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh
 # environment
-FPATH = /Users/mahd/.gem/ruby/3.3.0/gems/colorls-1.4.6/zsh:/opt/homebrew/share/zsh/site-functions:/Users/mahd/.zi/completions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh:/Users/mahd/.local/share/zap/completion
+ZPLUG_HOME = /opt/homebrew/opt/zplug
 # environment
-ZDOTDIR = /Users/mahd
+ZPLUG_CACHE_DIR = /opt/homebrew/opt/zplug/cache
 # environment
-NVM_BIN = /Users/mahd/.nvm/versions/node/v22.7.0/bin
+LaunchInstanceID = 288D8F17-178B-443A-8126-2DA30048C848
 # environment
-XDG_ZI_CACHE = /Users/mahd/.cache/zi
+TMUX_CONF = /Users/mahd/.tmux.conf
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-LDFLAGS =  -L/usr/local/opt/qt@5/lib -L/usr/local/opt/qt@5/lib
+LDFLAGS =  -L/opt/homebrew/opt/ruby/lib
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.y7NjwqnWG6/Listeners
+GHOSTTY_RESOURCES_DIR = /Applications/Ghostty.app/Contents/Resources/ghostty
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.c47oQjLNAf/Listeners
 # automatic
 %F = $(notdir $%)
+# default
+MAKEFILES := 
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.ggfGZYmkli/org.xquartz:0
+TMUX_PANE = %0
 # environment
-CONDA_EXE = /opt/anaconda3/bin/conda
+ZPLUG_PROTOCOL = HTTPS
 # environment
-GIT_ASKPASS = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
-# environment
-VSCODE_GIT_EDITOR_MAIN = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/git-editor-main.js
-# environment
-rvm_bin_path = /Users/mahd/.rvm/bin
-# environment
-PWD = /Users/mahd/DEV/dotfiles
-# environment
-AUTO_CONFIG_PATH = /Users/mahd/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/gradle/latest/bin:/Users/mahd/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/bin
+PWD = /Users/mahd/DEV/dotfiles-macos
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
-ZSHRC = /Users/mahd/.zshrc
+TMUX_PROGRAM = /opt/homebrew/Cellar/tmux/3.5a/bin/tmux
 # environment
-GEM_HOME = /Users/mahd/.gem/ruby/3.3.0
-# environment
-GIT_CONFIG = /Users/mahd/DEV/dotfiles/.gitconfig
+GIT_CONFIG = /Users/mahd/DEV/dotfiles-macos/.gitconfig
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man::/opt/homebrew/share/man::/opt/homebrew/share/man::/opt/homebrew/share/man:/Users/mahd/.nvm/versions/node/v22.7.0/share/man::/opt/homebrew/share/man:/Users/mahd/.zi/polaris/man::::
+_ZPLUG_URL = https://github.com/zplug/zplug
+# environment
+MANPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/share/man::/opt/homebrew/share/man::/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man::::
 # environment
 HOME = /Users/mahd
 # environment
 POWERLINE_COMMAND = oh-my-posh
 # default
-MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/mahd/Library/Application Support/Code/CachedData/ddc367ed5c8936efe395cffeec279b04ffd7db78
+VSCODE_CODE_CACHE_PATH = /Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957
 # environment
 LOGNAME = mahd
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-CONDA_PROMPT_MODIFIER = (base) 
+CONDA_PROMPT_MODIFIER = false
 # environment
-NVM_CD_FLAGS = -q
+TMUX_SOCKET = /private/tmp/tmux-501/default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
 # environment
-MAKELEVEL := 0
+ZPLUG_BIN = /opt/homebrew/opt/zplug/bin
 # environment
-CONDA_DEFAULT_ENV = base
+_ZPLUG_PREZTO = sorin-ionescu/prezto
 # environment
 XPC_FLAGS = 0x0
 # environment
@@ -164,14 +158,9 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
- 
-make: *** No rule to make target `all'.  Stop.
-
-VSCODE_DEBUGPY_ADAPTER_ENDPOINTS = /Users/mahd/.vscode/extensions/ms-python.debugpy-2025.4.1-darwin-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf37cb5fafe81cb2.txt
-# environment
 OSTYPE = darwin24.0
 # environment
-SHLVL = 3
+SHLVL = 4
 # environment
 POSH_THEME = /Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml
 # environment
@@ -184,44 +173,31 @@ MAKE_VERSION := 3.81
 USER = mahd
 # environment
 ZLE_RPROMPT_INDENT = 0
-# environment
-CAML_LD_LIBRARY_PATH = /Users/mahd/.opam/default/lib/stublibs:/Users/mahd/.opam/default/lib/ocaml/stublibs:/Users/mahd/.opam/default/lib/ocaml
 # makefile
 .DEFAULT_GOAL := 
 # environment
 CLASSPATH = :/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar
-# environment
-rvm_version = 1.29.12 (latest)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
-# environment
-CONDA_SHLVL = 1
 # default
-MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # environment
-ZPFX = /Users/mahd/.zi/polaris
-# environment
-ZAP_PLUGIN_DIR = /Users/mahd/.local/share/zap/plugins
-# environment
-XDG_ZI_CONFIG = /Users/mahd/.config/zi
-# environment
-TERM_PROGRAM = vscode
+TERM_PROGRAM = tmux
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/
+TMPDIR = /var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/mahd/Library/Application Support/Code/1.98-main.sock
-# environment
-VSCODE_GIT_ASKPASS_NODE = /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)
-# environment
-BUNDLED_DEBUGPY_PATH = /Users/mahd/.vscode/extensions/ms-python.debugpy-2025.4.1-darwin-arm64/bundled/libs/debugpy
+ 
+make: *** No rule to make target `all'.  Stop.
+
+VSCODE_IPC_HOOK = /Users/mahd/Library/Application Support/Code/1.99-main.sock
 # environment
 MallocNanoZone = 0
 # environment
-BUN_INSTALL = /Users/mahd/.bun
+_ZPLUG_AWKPATH = /opt/homebrew/Cellar/zplug/2.4.2/misc/contrib
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -229,39 +205,35 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 1.98.2
+TERM_PROGRAM_VERSION = 3.5a
 # environment
-NVM_DIR = /Users/mahd/.nvm
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.226023304.226023310.F3C5A61B-26AA-468D-8497-9E54C24ECA48
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.217058.1591648.D17935FB-2B3E-48FB-868A-CBD3DD85FE73
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+TMUX = /private/tmp/tmux-501/default,80721,0
 # automatic
 +F = $(notdir $+)
 # environment
-ATUIN_HISTORY_ID = 0195e78bcb9b74e0bff355f1e380e7a3
+ZPLUG_USE_CACHE = true
+# environment
+ATUIN_HISTORY_ID = 0196a4a6617e781195d1f0f389260193
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
-MAILPATH = /Users/mahd/.zi/polaris/usr/mail
-# environment
-PMSPEC = 0fuUpiPsX
+ZPLUG_REPOS = /opt/homebrew/opt/zplug/repos
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x3
 # environment
 COMMAND_MODE = unix2003
 # environment
-PYDEVD_DISABLE_FILE_VALIDATION = 1
-# default
-MAKEFILES := 
+ZPLUG_ROOT = /opt/homebrew/Cellar/zplug/2.4.2
 # environment
-PKG_CONFIG_PATH = /usr/local/opt/qt@5/lib/pkgconfig:/usr/local/opt/qt@5/lib/pkgconfig:
+PKG_CONFIG_PATH = /opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:
 # automatic
 <F = $(notdir $<)
-# environment
-USER_ZDOTDIR = /Users/mahd
 # environment
 EDITOR = /opt/homebrew/bin/nvim
 # environment
@@ -269,21 +241,25 @@ LC_ALL = C
 # environment
 PYENV_VIRTUALENV_DISABLE_PROMPT = 1
 # environment
-CONDA_PYTHON_EXE = /opt/anaconda3/bin/python
+_ZPLUG_OHMYZSH = robbyrussell/oh-my-zsh
+# environment
+GHOSTTY_SHELL_INTEGRATION_NO_SUDO = 1
+# environment
+SECURITYSESSIONID = 18919
 # automatic
 ^F = $(notdir $^)
 # environment
-rvm_prefix = /Users/mahd
+ZPLUG_ERROR_LOG = /opt/homebrew/opt/zplug/.error_log
 # default
 SUFFIXES := 
-# default
-.INCLUDE_DIRS = /usr/local/include
 # environment
-VSCODE_GIT_IPC_HANDLE = /var/folders/r2/bmpqg1nj67bbnh_djfbnmt3w0000gn/T/vscode-git-8c30d71773.sock
+MAKELEVEL := 0
+# environment
+ZPLUG_LOADFILE = /opt/homebrew/opt/zplug/packages.zsh
 # environment
 FZF_DEFAULT_OPTS = --height 40% --layout=reverse --border
 # environment
-CONDA_PREFIX = /opt/anaconda3
+LANG = C
 # environment
 TERM = xterm-256color
 # environment
@@ -291,11 +267,9 @@ VIRTUAL_ENV_DISABLE_PROMPT = 1
 # environment
 DOCKER_HOST = unix:///var/run/docker.sock
 # environment
-VSCODE_PID = 4736
-# environment
-LANG = C
+APPLICATIONINSIGHTS_CONFIGURATION_CONTENT = {}
 # variable set hash-table stats:
-# Load=140/1024=14%, Rehash=0, Collisions=12/161=7%
+# Load=127/1024=12%, Rehash=0, Collisions=12/147=8%
 
 # Pattern-specific Variable Values
 
@@ -303,9 +277,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777233, inode 55977128): 48 files, no impossibilities.
+# . (device 16777234, inode 338937): 52 files, no impossibilities.
 
-# 48 files, no impossibilities in 1 directories.
+# 52 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -377,6 +351,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Mar 30 16:54:22 2025
+# Finished Make data base on Tue May  6 10:11:48 2025
 
  

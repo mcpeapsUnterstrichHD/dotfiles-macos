@@ -1,0 +1,374 @@
+2025-05-05T10:52:56.085Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake --version
+2025-05-05T10:52:56.377Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -E capabilities
+2025-05-05T10:52:56.385Z [debug] [main] Sicheres Erstellen einer neuen CMakeProject-Instanz
+2025-05-05T10:52:56.385Z [debug] [variant] VariantManager wird erstellt.
+2025-05-05T10:52:56.385Z [debug] [main] Erstellen einer neuen CMakeProject-Instanz
+2025-05-05T10:52:56.385Z [debug] [main] Initialisierung der zweiten Phase von CMake Tools wird gestartet.
+2025-05-05T10:52:56.386Z [debug] [expand] ${workspaceFolder} erweitert
+2025-05-05T10:52:56.387Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-05-05T10:52:56.409Z [info] [kit] Erfolgreich geladen: 1 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-05-05T10:52:56.411Z [debug] [kit] Nicht vorhandene Kitdatei wird nicht gelesen: /Users/mahd/DEV/Visonic/.vscode/cmake-kits.json
+2025-05-05T10:52:56.412Z [debug] [main] Das neue Kit wird in den CMake-Treiber eingefügt.
+2025-05-05T10:52:56.424Z [info] [variant] Neue Varianten wurden geladen.
+2025-05-05T10:52:56.425Z [debug] [main] Die Initialisierung der CMakeProject-Instanz ist abgeschlossen.
+2025-05-05T10:52:56.441Z [debug] [extension] [3968] cmake.quickStart gestartet
+2025-05-05T10:53:01.109Z [debug] [main] Neuer CMake-Treiber wird gestartet.
+2025-05-05T10:53:01.109Z [debug] [main] CMake-Treiber wird gestartet.
+2025-05-05T10:53:01.109Z [debug] [cmakefileapi-driver] Instanz wird erstellt von CMakeFileApiDriver
+2025-05-05T10:53:01.110Z [debug] [driver] Der Basistreiber wird mithilfe des Kits initialisiert.
+2025-05-05T10:53:01.111Z [debug] [driver] CMakeDriver-Kit auf __unspec__ festgelegt
+2025-05-05T10:53:01.112Z [debug] [kit] Die Umgebung für das Kit '__unspec__': {
+  "ATUIN_HISTORY_ID": "01969f23aa3b79e3aeed92e3efefc446",
+  "ATUIN_SESSION": "019695688afc7f129d6db57c9ca24042",
+  "CLASSPATH": ":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar",
+  "COLORTERM": "truecolor",
+  "COMMAND_MODE": "unix2003",
+  "CONDA_PROMPT_MODIFIER": "false",
+  "CPPFLAGS": " -I/opt/homebrew/opt/ruby/include",
+  "CRYPTOGRAPHY_OPENSSL_NO_LEGACY": "1",
+  "DOCKER_HOST": "unix:///var/run/docker.sock",
+  "EDITOR": "/opt/homebrew/bin/nvim",
+  "ELECTRON_NO_ATTACH_CONSOLE": "1",
+  "FPATH": "/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh",
+  "FZF_DEFAULT_COMMAND": "rg --files --hidden --follow --no-ignore-vcs",
+  "FZF_DEFAULT_OPTS": "--height 40% --layout=reverse --border",
+  "GHOSTTY_BIN_DIR": "/Applications/Ghostty.app/Contents/MacOS",
+  "GHOSTTY_RESOURCES_DIR": "/Applications/Ghostty.app/Contents/Resources/ghostty",
+  "GHOSTTY_SHELL_INTEGRATION_NO_SUDO": "1",
+  "GIT_CONFIG": "/Users/mahd/DEV/dotfiles-macos/.gitconfig",
+  "HOME": "/Users/mahd",
+  "HOMEBREW_AUTO_UPDATE_SECS": "1",
+  "HOMEBREW_CELLAR": "/opt/homebrew/Cellar",
+  "HOMEBREW_PREFIX": "/opt/homebrew",
+  "HOMEBREW_REPOSITORY": "/opt/homebrew",
+  "INFOPATH": "/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:",
+  "LANG": "en_US.UTF-8",
+  "LDFLAGS": " -L/opt/homebrew/opt/ruby/lib",
+  "LOGNAME": "mahd",
+  "LaunchInstanceID": "288D8F17-178B-443A-8126-2DA30048C848",
+  "MANPATH": ":/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::",
+  "MallocNanoZone": "0",
+  "OLDPWD": "/Users/mahd",
+  "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+  "OSTYPE": "darwin24.0",
+  "PATH": "/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin",
+  "PERIOD": "30",
+  "PKG_CONFIG_PATH": "/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:",
+  "POSH_SESSION_ID": "4e4e94a4-9216-4946-b9a8-507f2207c8b5",
+  "POSH_SHELL": "zsh",
+  "POSH_SHELL_VERSION": "5.9",
+  "POSH_THEME": "/Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml",
+  "POWERLINE_COMMAND": "oh-my-posh",
+  "PWD": "/Users/mahd/DEV/Visonic",
+  "PYENV_VIRTUALENV_DISABLE_PROMPT": "1",
+  "SECURITYSESSIONID": "18919",
+  "SHELL": "/bin/zsh",
+  "SHLVL": "3",
+  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.c47oQjLNAf/Listeners",
+  "TERM": "xterm-256color",
+  "TERMINFO": "/Applications/Ghostty.app/Contents/Resources/terminfo",
+  "TERM_PROGRAM": "tmux",
+  "TERM_PROGRAM_VERSION": "3.5a",
+  "TMPDIR": "/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/",
+  "TMUX": "/private/tmp/tmux-501/default,80721,0",
+  "TMUX_CONF": "/Users/mahd/.tmux.conf",
+  "TMUX_CONF_LOCAL": "/Users/mahd/.tmux.conf.local",
+  "TMUX_PANE": "%0",
+  "TMUX_PROGRAM": "/opt/homebrew/Cellar/tmux/3.5a/bin/tmux",
+  "TMUX_SOCKET": "/private/tmp/tmux-501/default",
+  "USER": "mahd",
+  "VIRTUAL_ENV_DISABLE_PROMPT": "1",
+  "VSCODE_CLI": "1",
+  "VSCODE_CODE_CACHE_PATH": "/Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957",
+  "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
+  "VSCODE_CWD": "/Users/mahd/DEV/Visonic",
+  "VSCODE_ESM_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+  "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+  "VSCODE_IPC_HOOK": "/Users/mahd/Library/Application Support/Code/1.99-main.sock",
+  "VSCODE_NLS_CONFIG": "{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}",
+  "VSCODE_PID": "91050",
+  "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..",
+  "XPC_FLAGS": "0x0",
+  "XPC_SERVICE_NAME": "application.com.microsoft.VSCode.217058.1591648.FC7FEC67-6A19-482D-8132-60A10C734E4B",
+  "ZLE_RPROMPT_INDENT": "0",
+  "ZPLUG_BIN": "/opt/homebrew/opt/zplug/bin",
+  "ZPLUG_CACHE_DIR": "/opt/homebrew/opt/zplug/cache",
+  "ZPLUG_ERROR_LOG": "/opt/homebrew/opt/zplug/.error_log",
+  "ZPLUG_FILTER": "fzf-tmux:fzf:peco:percol:fzy:zaw",
+  "ZPLUG_HOME": "/opt/homebrew/opt/zplug",
+  "ZPLUG_LOADFILE": "/opt/homebrew/opt/zplug/packages.zsh",
+  "ZPLUG_PROTOCOL": "HTTPS",
+  "ZPLUG_REPOS": "/opt/homebrew/opt/zplug/repos",
+  "ZPLUG_ROOT": "/opt/homebrew/Cellar/zplug/2.4.2",
+  "ZPLUG_THREADS": "16",
+  "ZPLUG_USE_CACHE": "true",
+  "_ZPLUG_AWKPATH": "/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib",
+  "_ZPLUG_CONFIG_SUBSHELL": ":",
+  "_ZPLUG_OHMYZSH": "robbyrussell/oh-my-zsh",
+  "_ZPLUG_PREZTO": "sorin-ionescu/prezto",
+  "_ZPLUG_URL": "https://github.com/zplug/zplug",
+  "_ZPLUG_VERSION": "2.4.2",
+  "__CFBundleIdentifier": "com.microsoft.VSCode",
+  "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x3",
+  "ELECTRON_RUN_AS_NODE": "1",
+  "NODE_TLS_REJECT_UNAUTHORIZED": "undefined",
+  "VSCODE_L10N_BUNDLE_LOCATION": "",
+  "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1",
+  "APPLICATIONINSIGHTS_CONFIGURATION_CONTENT": "{}",
+  "WALLABY_PRODUCTION": "true"
+}
+2025-05-05T10:53:01.112Z [debug] [driver] Es wird versucht, einen vom System unterstützten Generator zu ermitteln.
+2025-05-05T10:53:01.114Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:53:01.115Z [debug] [driver] Neue Variante wird festgelegt: Debug
+2025-05-05T10:53:01.116Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:53:23.567Z [info] [main] [Schnellstart] CmakeLists.txt erfolgreich erstellt.
+2025-05-05T10:53:23.569Z [debug] [presetController] Auswahl der Konfigurationsvoreinstellungen starten. 0 Voreinstellungen gefunden.
+2025-05-05T10:53:23.569Z [debug] [presetController] QuickPick zur Konfigurationsvoreinstellungsauswahl wird geöffnet
+2025-05-05T10:53:45.797Z [debug] [presetController] Datei mit Lesevoreinstellungen /Users/mahd/DEV/Visonic/CMakePresets.json
+2025-05-05T10:53:45.812Z [debug] [presetController] Datei mit Lesevoreinstellungen /Users/mahd/DEV/Visonic/CMakePresets.json
+2025-05-05T10:53:45.817Z [info] [presetController] Die Voreinstellung "file /Users/mahd/DEV/Visonic/CMakePresets.json" wird gelesen und überprüft.
+2025-05-05T10:53:45.847Z [info] [presetController] Die Voreinstellung "file /Users/mahd/DEV/Visonic/CMakePresets.json" wird gelesen und überprüft.
+2025-05-05T10:53:45.948Z [info] [presetController] Erfolgreiche Validierung von /Users/mahd/DEV/Visonic/CMakePresets.json gegen das vorgegebene Schema
+2025-05-05T10:53:45.948Z [info] [proc] Befehl wird ausgeführt: uname -s
+2025-05-05T10:53:46.049Z [info] [presetController] Erfolgreiche Validierung von /Users/mahd/DEV/Visonic/CMakePresets.json gegen das vorgegebene Schema
+2025-05-05T10:53:46.059Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wird erweitert
+2025-05-05T10:53:46.059Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wird erweitert
+2025-05-05T10:53:46.062Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
+2025-05-05T10:53:46.062Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
+2025-05-05T10:53:46.064Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
+2025-05-05T10:53:46.064Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
+2025-05-05T10:53:46.065Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wurde erfolgreich erweitert
+2025-05-05T10:53:46.065Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wurde erfolgreich erweitert
+2025-05-05T10:53:46.068Z [debug] [presetController] Konfigurationsvoreinstellung "Voreinstellung mithilfe der Toolkettendatei konfigurieren" vom Benutzer ausgewählt
+2025-05-05T10:53:46.068Z [debug] [main] Die ausgewählte Konfigurationsvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.069Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
+2025-05-05T10:53:46.070Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
+2025-05-05T10:53:46.137Z [debug] [main] Die neue Konfigurationsvoreinstellung wird in den CMake-Treiber geladen.
+2025-05-05T10:53:46.137Z [info] [driver] Wechseln zur Konfigurationsvoreinstellung: Voreinstellung mithilfe der Toolkettendatei konfigurieren
+2025-05-05T10:53:46.138Z [debug] [driver] CMakeDriver-Konfigurationsvoreinstellung auf Voreinstellung mithilfe der Toolkettendatei konfigurieren festgelegt
+2025-05-05T10:53:46.203Z [debug] [main] Die ausgewählte Buildvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.220Z [debug] [main] Die neue Buildvoreinstellung wird in den CMake-Treiber geladen
+2025-05-05T10:53:46.220Z [info] [driver] Wechseln zur Buildvoreinstellung: __defaultBuildPreset__
+2025-05-05T10:53:46.220Z [debug] [driver] CMakeDriver-Buildvoreinstellung auf __defaultBuildPreset__ festgelegt
+2025-05-05T10:53:46.223Z [debug] [main] Die ausgewählte Testvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.223Z [debug] [main] Die ausgewählte Testvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.224Z [debug] [main] Die neue Testvoreinstellung wird in den CMake-Treiber geladen
+2025-05-05T10:53:46.224Z [info] [driver] Zur Testvoreinstellung wechseln: __defaultTestPreset__
+2025-05-05T10:53:46.224Z [debug] [driver] CMakeDriver-Testvoreinstellung auf __defaultTestPreset__ festgelegt
+2025-05-05T10:53:46.226Z [debug] [cache] CMake-Cachedatei wird gelesen: /Users/mahd/DEV/Visonic/out/build/Voreinstellung mithilfe der Toolkettendatei konfigurieren/CMakeCache.txt
+2025-05-05T10:53:46.226Z [debug] [cache] Die Cachedatei ist nicht vorhanden: Es werden leere Cachedaten zurückgegeben.
+2025-05-05T10:53:46.227Z [debug] [main] Die ausgewählte Paketvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.227Z [debug] [main] Die ausgewählte Paketvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.228Z [debug] [main] Die neue Paketvoreinstellung wird in den CMake-Treiber geladen
+2025-05-05T10:53:46.228Z [info] [driver] Zur Paketvoreinstellung wechseln: __defaultPackagePreset__
+2025-05-05T10:53:46.228Z [debug] [driver] CMakeDriver-Paketvoreinstellung auf __defaultPackagePreset__ festgelegt
+2025-05-05T10:53:46.230Z [debug] [main] Die ausgewählte Workflowvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.231Z [debug] [main] Die ausgewählte Workflowvoreinstellung wird aufgelöst
+2025-05-05T10:53:46.232Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
+2025-05-05T10:53:46.232Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
+2025-05-05T10:53:46.233Z [debug] [main] Die neue Workflowvoreinstellung wird in den CMake-Treiber geladen
+2025-05-05T10:53:46.233Z [info] [driver] Wechseln zur Workflowvoreinstellung: __defaultWorkflowPreset__
+2025-05-05T10:53:46.233Z [debug] [driver] CMakeDriver-Workflowvoreinstellung auf __defaultWorkflowPreset__ festgelegt
+2025-05-05T10:53:46.246Z [info] [main] [Schnellstart] CMakePresets.json erfolgreich erstellt.
+2025-05-05T10:53:46.290Z [info] [main] Projekt konfigurieren: Visonic 
+2025-05-05T10:53:46.290Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
+2025-05-05T10:53:46.294Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:53:46.294Z [debug] [driver] Konfiguration starten 
+2025-05-05T10:53:46.294Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
+2025-05-05T10:53:46.299Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:53:46.331Z [debug] [cmakefileapi-driver] Configuring using kit
+2025-05-05T10:53:46.331Z [debug] [cmakefileapi-driver] Invoking CMake /opt/homebrew/bin/cmake with arguments ["-DCMAKE_BUILD_TYPE:STRING=Debug","-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE","--no-warn-unused-cli","-S/Users/mahd/DEV/Visonic","-B/Users/mahd/DEV/Visonic/build","-G","Ninja"]
+2025-05-05T10:53:46.333Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE --no-warn-unused-cli -S/Users/mahd/DEV/Visonic -B/Users/mahd/DEV/Visonic/build -G Ninja
+2025-05-05T10:53:46.333Z [debug] [proc]   mit Umgebung: {"ATUIN_HISTORY_ID":"01969f23aa3b79e3aeed92e3efefc446","ATUIN_SESSION":"019695688afc7f129d6db57c9ca24042","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":" -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","EDITOR":"/opt/homebrew/bin/nvim","ELECTRON_NO_ATTACH_CONSOLE":"1","FPATH":"/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_INTEGRATION_NO_SUDO":"1","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","LANG":"en_US.UTF-8","LDFLAGS":" -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","LaunchInstanceID":"288D8F17-178B-443A-8126-2DA30048C848","MANPATH":":/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::","MallocNanoZone":"0","OLDPWD":"/Users/mahd","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSTYPE":"darwin24.0","PATH":"/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"4e4e94a4-9216-4946-b9a8-507f2207c8b5","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POSH_THEME":"/Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/Visonic","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SECURITYSESSIONID":"18919","SHELL":"/bin/zsh","SHLVL":"3","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.c47oQjLNAf/Listeners","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"tmux","TERM_PROGRAM_VERSION":"3.5a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,80721,0","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%0","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.5a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/Visonic","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.99-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"91050","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.217058.1591648.FC7FEC67-6A19-482D-8132-60A10C734E4B","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","VSCODE_L10N_BUNDLE_LOCATION":"","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","WALLABY_PRODUCTION":"true"}
+2025-05-05T10:53:46.428Z [error] [cmake] CMake Error: CMake was unable to find a build program corresponding to "Ninja".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+2025-05-05T10:53:46.428Z [error] [cmake] CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+2025-05-05T10:53:46.428Z [info] [cmake] Not searching for unused variables given on the command line.
+2025-05-05T10:53:46.429Z [info] [cmake] -- Configuring incomplete, errors occurred!
+2025-05-05T10:53:46.429Z [warning] [proc] Der Befehl "/opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE --no-warn-unused-cli -S/Users/mahd/DEV/Visonic -B/Users/mahd/DEV/Visonic/build -G Ninja" wurde mit dem Code "1" beendet.
+2025-05-05T10:53:46.442Z [debug] [extension] [3968] cmake.quickStart abgeschlossen (1 zurückgegeben)
+2025-05-05T10:54:05.826Z [debug] [main] Die ausgewählte Konfigurationsvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.915Z [info] [driver] Konfigurieren der Voreinstellung wird zurückgesetzt.
+2025-05-05T10:54:05.916Z [debug] [driver] CMakeDriver-Konfigurationsvoreinstellung auf null festgelegt
+2025-05-05T10:54:05.916Z [info] [driver] Buildvoreinstellung wird zurückgesetzt.
+2025-05-05T10:54:05.916Z [debug] [driver] CMakeDriver-Buildvoreinstellung auf null festgelegt
+2025-05-05T10:54:05.916Z [info] [driver] Testvoreinstellung wird zurückgesetzt.
+2025-05-05T10:54:05.916Z [debug] [driver] CMakeDriver-Testvoreinstellung auf null festgelegt
+2025-05-05T10:54:05.916Z [info] [driver] Die Einstellung der Paketvoreinstellung wird aufgehoben
+2025-05-05T10:54:05.916Z [debug] [driver] CMakeDriver-Paketvoreinstellung auf null festgelegt
+2025-05-05T10:54:05.916Z [info] [driver] Die Einstellung der Workflowvoreinstellung wird aufgehoben
+2025-05-05T10:54:05.916Z [debug] [driver] CMakeDriver-Workflowvoreinstellung auf null festgelegt
+2025-05-05T10:54:05.916Z [debug] [main] Die ausgewählte Buildvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.917Z [error] [main] "configurePreset" ist in der Buildvoreinstellung nicht festgelegt: __defaultBuildPreset__
+2025-05-05T10:54:05.918Z [debug] [main] Die ausgewählte Testvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.918Z [debug] [main] Die ausgewählte Testvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.918Z [error] [main] "configurePreset" ist in der Testvoreinstellung nicht festgelegt: __defaultTestPreset__
+2025-05-05T10:54:05.918Z [debug] [main] Die ausgewählte Paketvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.918Z [debug] [main] Die ausgewählte Paketvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.918Z [error] [main] "configurePreset" ist in der Paketvoreinstellung nicht festgelegt: __defaultPackagePreset__
+2025-05-05T10:54:05.919Z [debug] [main] Die ausgewählte Workflowvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.919Z [debug] [main] Die ausgewählte Workflowvoreinstellung wird aufgelöst
+2025-05-05T10:54:05.919Z [error] [preset] Die Konfigurationsvoreinstellung mit dem Namen _placeholder_configure_preset_ wurde nicht gefunden
+2025-05-05T10:54:05.919Z [error] [main] Fehler beim Auflösen der Workflowvoreinstellung: __defaultWorkflowPreset__
+2025-05-05T10:54:06.040Z [debug] [cache] CMake-Cachedatei wird gelesen: CMakeCache.txt
+2025-05-05T10:54:06.045Z [debug] [cache] Die Cachedatei ist nicht vorhanden: Es werden leere Cachedaten zurückgegeben.
+2025-05-05T10:54:06.057Z [debug] [cache] CMake-Cachedatei wird gelesen: CMakeCache.txt
+2025-05-05T10:54:06.058Z [debug] [cache] Die Cachedatei ist nicht vorhanden: Es werden leere Cachedaten zurückgegeben.
+2025-05-05T10:54:06.060Z [debug] [cache] CMake-Cachedatei wird gelesen: CMakeCache.txt
+2025-05-05T10:54:06.060Z [debug] [cache] Die Cachedatei ist nicht vorhanden: Es werden leere Cachedaten zurückgegeben.
+2025-05-05T10:54:06.117Z [debug] [main] Speichern von CMakeLists.txt erkannt, automatische Neukonfiguration wird versucht...
+2025-05-05T10:54:06.121Z [info] [main] Projekt konfigurieren: Visonic 
+2025-05-05T10:54:06.122Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
+2025-05-05T10:54:06.124Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:54:06.125Z [debug] [driver] Konfiguration starten 
+2025-05-05T10:54:06.125Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
+2025-05-05T10:54:06.125Z [debug] [driver] Die Konfiguration wird nicht ausgeführt: /Users/mahd/DEV/Visonic/CMakeLists.txt nicht vorhanden
+2025-05-05T10:54:16.767Z [debug] [expand] ${workspaceFolder}/src erweitert
+2025-05-05T10:54:16.807Z [debug] [main] Der CMake-Treiber wird neu geladen.
+2025-05-05T10:54:16.822Z [debug] [main] CMake-Treiber wird gestartet.
+2025-05-05T10:54:16.823Z [debug] [cmakefileapi-driver] Instanz wird erstellt von CMakeFileApiDriver
+2025-05-05T10:54:16.823Z [debug] [driver] Der Basistreiber wird mithilfe des Kits initialisiert.
+2025-05-05T10:54:16.823Z [debug] [driver] CMakeDriver-Kit auf __unspec__ festgelegt
+2025-05-05T10:54:16.823Z [debug] [kit] Die Umgebung für das Kit '__unspec__': {
+  "ATUIN_HISTORY_ID": "01969f23aa3b79e3aeed92e3efefc446",
+  "ATUIN_SESSION": "019695688afc7f129d6db57c9ca24042",
+  "CLASSPATH": ":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar",
+  "COLORTERM": "truecolor",
+  "COMMAND_MODE": "unix2003",
+  "CONDA_PROMPT_MODIFIER": "false",
+  "CPPFLAGS": " -I/opt/homebrew/opt/ruby/include",
+  "CRYPTOGRAPHY_OPENSSL_NO_LEGACY": "1",
+  "DOCKER_HOST": "unix:///var/run/docker.sock",
+  "EDITOR": "/opt/homebrew/bin/nvim",
+  "ELECTRON_NO_ATTACH_CONSOLE": "1",
+  "FPATH": "/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh",
+  "FZF_DEFAULT_COMMAND": "rg --files --hidden --follow --no-ignore-vcs",
+  "FZF_DEFAULT_OPTS": "--height 40% --layout=reverse --border",
+  "GHOSTTY_BIN_DIR": "/Applications/Ghostty.app/Contents/MacOS",
+  "GHOSTTY_RESOURCES_DIR": "/Applications/Ghostty.app/Contents/Resources/ghostty",
+  "GHOSTTY_SHELL_INTEGRATION_NO_SUDO": "1",
+  "GIT_CONFIG": "/Users/mahd/DEV/dotfiles-macos/.gitconfig",
+  "HOME": "/Users/mahd",
+  "HOMEBREW_AUTO_UPDATE_SECS": "1",
+  "HOMEBREW_CELLAR": "/opt/homebrew/Cellar",
+  "HOMEBREW_PREFIX": "/opt/homebrew",
+  "HOMEBREW_REPOSITORY": "/opt/homebrew",
+  "INFOPATH": "/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:",
+  "LANG": "en_US.UTF-8",
+  "LDFLAGS": " -L/opt/homebrew/opt/ruby/lib",
+  "LOGNAME": "mahd",
+  "LaunchInstanceID": "288D8F17-178B-443A-8126-2DA30048C848",
+  "MANPATH": ":/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::",
+  "MallocNanoZone": "0",
+  "OLDPWD": "/Users/mahd",
+  "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+  "OSTYPE": "darwin24.0",
+  "PATH": "/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin",
+  "PERIOD": "30",
+  "PKG_CONFIG_PATH": "/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:",
+  "POSH_SESSION_ID": "4e4e94a4-9216-4946-b9a8-507f2207c8b5",
+  "POSH_SHELL": "zsh",
+  "POSH_SHELL_VERSION": "5.9",
+  "POSH_THEME": "/Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml",
+  "POWERLINE_COMMAND": "oh-my-posh",
+  "PWD": "/Users/mahd/DEV/Visonic",
+  "PYENV_VIRTUALENV_DISABLE_PROMPT": "1",
+  "SECURITYSESSIONID": "18919",
+  "SHELL": "/bin/zsh",
+  "SHLVL": "3",
+  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.c47oQjLNAf/Listeners",
+  "TERM": "xterm-256color",
+  "TERMINFO": "/Applications/Ghostty.app/Contents/Resources/terminfo",
+  "TERM_PROGRAM": "tmux",
+  "TERM_PROGRAM_VERSION": "3.5a",
+  "TMPDIR": "/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/",
+  "TMUX": "/private/tmp/tmux-501/default,80721,0",
+  "TMUX_CONF": "/Users/mahd/.tmux.conf",
+  "TMUX_CONF_LOCAL": "/Users/mahd/.tmux.conf.local",
+  "TMUX_PANE": "%0",
+  "TMUX_PROGRAM": "/opt/homebrew/Cellar/tmux/3.5a/bin/tmux",
+  "TMUX_SOCKET": "/private/tmp/tmux-501/default",
+  "USER": "mahd",
+  "VIRTUAL_ENV_DISABLE_PROMPT": "1",
+  "VSCODE_CLI": "1",
+  "VSCODE_CODE_CACHE_PATH": "/Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957",
+  "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
+  "VSCODE_CWD": "/Users/mahd/DEV/Visonic",
+  "VSCODE_ESM_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
+  "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+  "VSCODE_IPC_HOOK": "/Users/mahd/Library/Application Support/Code/1.99-main.sock",
+  "VSCODE_NLS_CONFIG": "{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}",
+  "VSCODE_PID": "91050",
+  "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..",
+  "XPC_FLAGS": "0x0",
+  "XPC_SERVICE_NAME": "application.com.microsoft.VSCode.217058.1591648.FC7FEC67-6A19-482D-8132-60A10C734E4B",
+  "ZLE_RPROMPT_INDENT": "0",
+  "ZPLUG_BIN": "/opt/homebrew/opt/zplug/bin",
+  "ZPLUG_CACHE_DIR": "/opt/homebrew/opt/zplug/cache",
+  "ZPLUG_ERROR_LOG": "/opt/homebrew/opt/zplug/.error_log",
+  "ZPLUG_FILTER": "fzf-tmux:fzf:peco:percol:fzy:zaw",
+  "ZPLUG_HOME": "/opt/homebrew/opt/zplug",
+  "ZPLUG_LOADFILE": "/opt/homebrew/opt/zplug/packages.zsh",
+  "ZPLUG_PROTOCOL": "HTTPS",
+  "ZPLUG_REPOS": "/opt/homebrew/opt/zplug/repos",
+  "ZPLUG_ROOT": "/opt/homebrew/Cellar/zplug/2.4.2",
+  "ZPLUG_THREADS": "16",
+  "ZPLUG_USE_CACHE": "true",
+  "_ZPLUG_AWKPATH": "/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib",
+  "_ZPLUG_CONFIG_SUBSHELL": ":",
+  "_ZPLUG_OHMYZSH": "robbyrussell/oh-my-zsh",
+  "_ZPLUG_PREZTO": "sorin-ionescu/prezto",
+  "_ZPLUG_URL": "https://github.com/zplug/zplug",
+  "_ZPLUG_VERSION": "2.4.2",
+  "__CFBundleIdentifier": "com.microsoft.VSCode",
+  "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x3",
+  "ELECTRON_RUN_AS_NODE": "1",
+  "NODE_TLS_REJECT_UNAUTHORIZED": "undefined",
+  "VSCODE_L10N_BUNDLE_LOCATION": "",
+  "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1",
+  "APPLICATIONINSIGHTS_CONFIGURATION_CONTENT": "{}",
+  "WALLABY_PRODUCTION": "true"
+}
+2025-05-05T10:54:16.823Z [debug] [driver] Es wird versucht, einen vom System unterstützten Generator zu ermitteln.
+2025-05-05T10:54:16.824Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:54:16.825Z [debug] [cache] CMake-Cachedatei wird gelesen: /Users/mahd/DEV/Visonic/build/CMakeCache.txt
+2025-05-05T10:54:16.825Z [debug] [cache] CMake-Cachezeichenfolge wird analysiert.
+2025-05-05T10:54:16.827Z [info] [cmakefileapi-driver] Wird entfernt: /Users/mahd/DEV/Visonic/build/CMakeCache.txt
+2025-05-05T10:54:16.830Z [debug] [driver] Neue Variante wird festgelegt: Debug
+2025-05-05T10:54:16.831Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:54:16.831Z [error] [ctest] Der Ordner wurde im Test-Explorer nicht gefunden: /users/mahd/dev/visonic/src
+2025-05-05T10:56:38.001Z [debug] [main] Speichern von CMakeLists.txt erkannt, automatische Neukonfiguration wird versucht...
+2025-05-05T10:56:38.005Z [info] [main] Projekt konfigurieren: Visonic 
+2025-05-05T10:56:38.005Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
+2025-05-05T10:56:38.010Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:56:38.010Z [debug] [driver] Konfiguration starten 
+2025-05-05T10:56:38.010Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
+2025-05-05T10:56:38.016Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:56:38.018Z [debug] [cmakefileapi-driver] Configuring using kit
+2025-05-05T10:56:38.018Z [debug] [cmakefileapi-driver] Invoking CMake /opt/homebrew/bin/cmake with arguments ["-DCMAKE_BUILD_TYPE:STRING=Debug","-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE","--no-warn-unused-cli","-S/Users/mahd/DEV/Visonic/src","-B/Users/mahd/DEV/Visonic/build"]
+2025-05-05T10:56:38.019Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE --no-warn-unused-cli -S/Users/mahd/DEV/Visonic/src -B/Users/mahd/DEV/Visonic/build
+2025-05-05T10:56:38.019Z [debug] [proc]   mit Umgebung: {"ATUIN_HISTORY_ID":"01969f23aa3b79e3aeed92e3efefc446","ATUIN_SESSION":"019695688afc7f129d6db57c9ca24042","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":" -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","EDITOR":"/opt/homebrew/bin/nvim","ELECTRON_NO_ATTACH_CONSOLE":"1","FPATH":"/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_INTEGRATION_NO_SUDO":"1","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","LANG":"en_US.UTF-8","LDFLAGS":" -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","LaunchInstanceID":"288D8F17-178B-443A-8126-2DA30048C848","MANPATH":":/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::","MallocNanoZone":"0","OLDPWD":"/Users/mahd","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSTYPE":"darwin24.0","PATH":"/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"4e4e94a4-9216-4946-b9a8-507f2207c8b5","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POSH_THEME":"/Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/Visonic","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SECURITYSESSIONID":"18919","SHELL":"/bin/zsh","SHLVL":"3","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.c47oQjLNAf/Listeners","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"tmux","TERM_PROGRAM_VERSION":"3.5a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,80721,0","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%0","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.5a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/Visonic","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.99-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"91050","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.217058.1591648.FC7FEC67-6A19-482D-8132-60A10C734E4B","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","VSCODE_L10N_BUNDLE_LOCATION":"","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","WALLABY_PRODUCTION":"true"}
+2025-05-05T10:56:38.219Z [info] [cmake] Not searching for unused variables given on the command line.
+2025-05-05T10:56:38.219Z [info] [cmake] -- Configuring done (0.2s)
+2025-05-05T10:56:38.249Z [info] [cmake] -- Generating done (0.0s)
+2025-05-05T10:56:38.259Z [info] [cmake] -- Build files have been written to: /Users/mahd/DEV/Visonic/build
+2025-05-05T10:56:38.261Z [debug] [cmakefileapi-parser] Read reply folder: /Users/mahd/DEV/Visonic/build/.cmake/api/v1/reply
+2025-05-05T10:56:38.264Z [debug] [cmakefileapi-parser] Found index files: ["cache-v2-2bea4f6ec918aa372c75.json","cmakeFiles-v1-530d179efff1207c397a.json","codemodel-v2-9fdcc3787ea4f9820849.json","directory-.-Debug-f5ebdc15457944623624.json","index-2025-05-05T10-56-38-0256.json","target-Continuous-Debug-58992b4c6cbc4bebb5f0.json","target-ContinuousBuild-Debug-9e093ebf8f6c049e578d.json","target-ContinuousConfigure-Debug-0cc3d487e8e1a3cf534e.json","target-ContinuousCoverage-Debug-8b3ac12e858f63b177c5.json","target-ContinuousMemCheck-Debug-5ab69a0be50884f7c9c1.json","target-ContinuousStart-Debug-19b4f77ab7f160dca224.json","target-ContinuousSubmit-Debug-888cf57197d5e2b8c36a.json","target-ContinuousTest-Debug-cf515b308fc371e41b6a.json","target-ContinuousUpdate-Debug-9ea0fb6e64fa792572a8.json","target-Experimental-Debug-2081f0d09cc995bd1114.json","target-ExperimentalBuild-Debug-669f849764941cfc9bf4.json","target-ExperimentalConfigure-Debug-bdb8e2099a961494a128.json","target-ExperimentalCoverage-Debug-8feb45f19dc5e04e248f.json","target-ExperimentalMemCheck-Debug-6b7e9b0ace59132495cf.json","target-ExperimentalStart-Debug-82dc814df145569452c0.json","target-ExperimentalSubmit-Debug-22f48054a4e99690e463.json","target-ExperimentalTest-Debug-a439bb27e855af8cc8d7.json","target-ExperimentalUpdate-Debug-df2138c033b19996ac52.json","target-Nightly-Debug-3071e3baf56d701f5332.json","target-NightlyBuild-Debug-94483ba3436724e143a4.json","target-NightlyConfigure-Debug-2435d0c5cfaf22e2f0a7.json","target-NightlyCoverage-Debug-36556f70bbd4e2d2f2b6.json","target-NightlyMemCheck-Debug-739f6c3aeaa3b412f2d7.json","target-NightlyMemoryCheck-Debug-a861ccfc621685b03d15.json","target-NightlyStart-Debug-3ebc40a196f520914ad0.json","target-NightlySubmit-Debug-086c9d2feed5c92f3d02.json","target-NightlyTest-Debug-1e53a4281c149feb9b17.json","target-NightlyUpdate-Debug-037bd04a0ba65f6f71f1.json","target-visonic-Debug-be29cb076e6cb59b5e3e.json","toolchains-v1-370a58605bade8104d7b.json"]
+2025-05-05T10:56:38.276Z [error] [ctest] Der Ordner wurde im Test-Explorer nicht gefunden: /users/mahd/dev/visonic/src
+2025-05-05T10:56:45.255Z [debug] [main] Speichern von CMakeLists.txt erkannt, automatische Neukonfiguration wird versucht...
+2025-05-05T10:56:45.277Z [info] [main] Projekt konfigurieren: Visonic 
+2025-05-05T10:56:45.277Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
+2025-05-05T10:56:45.294Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:56:45.294Z [debug] [driver] Konfiguration starten 
+2025-05-05T10:56:45.294Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
+2025-05-05T10:56:45.299Z [debug] [expand] ${workspaceFolder}/build erweitert
+2025-05-05T10:56:45.300Z [debug] [cmakefileapi-driver] Configuring using kit
+2025-05-05T10:56:45.300Z [debug] [cmakefileapi-driver] Invoking CMake /opt/homebrew/bin/cmake with arguments ["-DCMAKE_BUILD_TYPE:STRING=Debug","-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE","--no-warn-unused-cli","-S/Users/mahd/DEV/Visonic/src","-B/Users/mahd/DEV/Visonic/build"]
+2025-05-05T10:56:45.301Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE --no-warn-unused-cli -S/Users/mahd/DEV/Visonic/src -B/Users/mahd/DEV/Visonic/build
+2025-05-05T10:56:45.301Z [debug] [proc]   mit Umgebung: {"ATUIN_HISTORY_ID":"01969f23aa3b79e3aeed92e3efefc446","ATUIN_SESSION":"019695688afc7f129d6db57c9ca24042","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":" -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","EDITOR":"/opt/homebrew/bin/nvim","ELECTRON_NO_ATTACH_CONSOLE":"1","FPATH":"/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_INTEGRATION_NO_SUDO":"1","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","LANG":"en_US.UTF-8","LDFLAGS":" -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","LaunchInstanceID":"288D8F17-178B-443A-8126-2DA30048C848","MANPATH":":/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::","MallocNanoZone":"0","OLDPWD":"/Users/mahd","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSTYPE":"darwin24.0","PATH":"/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"4e4e94a4-9216-4946-b9a8-507f2207c8b5","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POSH_THEME":"/Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/Visonic","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SECURITYSESSIONID":"18919","SHELL":"/bin/zsh","SHLVL":"3","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.c47oQjLNAf/Listeners","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"tmux","TERM_PROGRAM_VERSION":"3.5a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,80721,0","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%0","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.5a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/Visonic","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.99-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"91050","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.217058.1591648.FC7FEC67-6A19-482D-8132-60A10C734E4B","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","VSCODE_L10N_BUNDLE_LOCATION":"","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","WALLABY_PRODUCTION":"true"}
+2025-05-05T10:56:45.384Z [info] [cmake] Not searching for unused variables given on the command line.
+2025-05-05T10:56:45.384Z [info] [cmake] -- Configuring done (0.1s)
+2025-05-05T10:56:45.414Z [info] [cmake] -- Generating done (0.0s)
+2025-05-05T10:56:45.423Z [info] [cmake] -- Build files have been written to: /Users/mahd/DEV/Visonic/build
+2025-05-05T10:56:45.425Z [debug] [cmakefileapi-parser] Read reply folder: /Users/mahd/DEV/Visonic/build/.cmake/api/v1/reply
+2025-05-05T10:56:45.427Z [debug] [cmakefileapi-parser] Found index files: ["cache-v2-2bea4f6ec918aa372c75.json","cmakeFiles-v1-530d179efff1207c397a.json","codemodel-v2-9fdcc3787ea4f9820849.json","directory-.-Debug-f5ebdc15457944623624.json","index-2025-05-05T10-56-45-0421.json","target-Continuous-Debug-58992b4c6cbc4bebb5f0.json","target-ContinuousBuild-Debug-9e093ebf8f6c049e578d.json","target-ContinuousConfigure-Debug-0cc3d487e8e1a3cf534e.json","target-ContinuousCoverage-Debug-8b3ac12e858f63b177c5.json","target-ContinuousMemCheck-Debug-5ab69a0be50884f7c9c1.json","target-ContinuousStart-Debug-19b4f77ab7f160dca224.json","target-ContinuousSubmit-Debug-888cf57197d5e2b8c36a.json","target-ContinuousTest-Debug-cf515b308fc371e41b6a.json","target-ContinuousUpdate-Debug-9ea0fb6e64fa792572a8.json","target-Experimental-Debug-2081f0d09cc995bd1114.json","target-ExperimentalBuild-Debug-669f849764941cfc9bf4.json","target-ExperimentalConfigure-Debug-bdb8e2099a961494a128.json","target-ExperimentalCoverage-Debug-8feb45f19dc5e04e248f.json","target-ExperimentalMemCheck-Debug-6b7e9b0ace59132495cf.json","target-ExperimentalStart-Debug-82dc814df145569452c0.json","target-ExperimentalSubmit-Debug-22f48054a4e99690e463.json","target-ExperimentalTest-Debug-a439bb27e855af8cc8d7.json","target-ExperimentalUpdate-Debug-df2138c033b19996ac52.json","target-Nightly-Debug-3071e3baf56d701f5332.json","target-NightlyBuild-Debug-94483ba3436724e143a4.json","target-NightlyConfigure-Debug-2435d0c5cfaf22e2f0a7.json","target-NightlyCoverage-Debug-36556f70bbd4e2d2f2b6.json","target-NightlyMemCheck-Debug-739f6c3aeaa3b412f2d7.json","target-NightlyMemoryCheck-Debug-a861ccfc621685b03d15.json","target-NightlyStart-Debug-3ebc40a196f520914ad0.json","target-NightlySubmit-Debug-086c9d2feed5c92f3d02.json","target-NightlyTest-Debug-1e53a4281c149feb9b17.json","target-NightlyUpdate-Debug-037bd04a0ba65f6f71f1.json","target-visonic-Debug-be29cb076e6cb59b5e3e.json","toolchains-v1-370a58605bade8104d7b.json"]
+2025-05-05T10:56:45.438Z [error] [ctest] Der Ordner wurde im Test-Explorer nicht gefunden: /users/mahd/dev/visonic/src

@@ -1,12 +1,5 @@
-typeset -A ZI
-ZI[BIN_DIR]="${HOME}/.zi/bin"
-source "${ZI[BIN_DIR]}/zi.zsh"
-
-autoload -Uz _zi
-(( ${+_comps} )) && _comps[zi]=_zi
-# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export GIT_CONFIG="$HOME/DEV/dotfiles/.gitconfig"
+export GIT_CONFIG="$HOME/DEV/dotfiles-macos/.gitconfig"
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 export HOMEBREW_REPOSITORY="/opt/homebrew";
@@ -28,9 +21,10 @@ export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 export PATH=/usr/local/bin/composer:$PATH
 export EDITOR=$(which nvim)
-export PATH="/Applications/:/Applications/c3:/:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$HOME/exe:$PATH"
 export PATH="$HOME/exe/separator:$PATH"
 export PATH="/Applications/Alacritty.app/Contents/MacOS:$PATH"
@@ -48,6 +42,7 @@ export CPPFLAGS=""
 export LDFLAGS="$LDFLAGS -L/opt/homebrew/opt/ruby/lib"
 export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/ruby/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PATH="$HOME/.bun/bin/:$PATH"
 
 #Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
@@ -70,15 +65,16 @@ export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
 
 #echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
-plug "zsh-users/zsh-autosuggestions"
-plug "zap-zsh/supercharge"
-plug "zap-zsh/zap-prompt"
-plug "zsh-users/zsh-syntax-highlighting"
-plug "wintermi/zsh-brew"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zap-zsh/supercharge"
+zplug "zap-zsh/zap-prompt"
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "wintermi/zsh-brew"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -114,12 +110,12 @@ alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias cga='if [ -z "$*" ]; then git add .; else git add $1; fi'
 alias cgc='if [ -z "$*" ]; then git commit -m "." --allow-empty; else git commit -m "$*" --allow-empty; fi'
-alias cgp='git push $*'
+alias cgp='jj git push $*'
 alias cgs='jj status $*'
 alias cgpl='jj pull $*'
 alias cgcl='jj git clone --colocate $*'
-alias rm="/opt/homebrew/bin/trash $*"
-alias rme="/opt/homebrew/bin/trash-empty $*"
+alias lazyg="lazyjj $*"
+alias rm="trash $*"
 alias hangman="$HOME/exe/hangman"
 alias clock='tty-clock -sScxB -f "KW%V,%A,%0d/%m/%Y|%H:%M:%S"'
 alias ssh="zssh $*"
@@ -152,7 +148,7 @@ lfcd () {
     lf -last-dir-path="$tmp" "$@"
     if [ -f "$tmp" ]; then
         dir="$(cat "$tmp")"
-        rm -f "$tmp"
+        rm "$tmp"
         [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
     fi
 }
@@ -188,103 +184,86 @@ if command -v ngrok &>/dev/null; then
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 if [[ ! "$TERM_PROGRAM" =~ "vscode" ]]; then
-source <(zellij setup --generate-auto-start zsh)
+tmux
 fi
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 
-export PATH=$PATH:/Users/mahd/.spicetify
+export path=$path:/users/mahd/.spicetify
 
-lazyg() {
-    # Help function using printf
-    display_help() {
-        printf "Usage: lazyg [options] [file]\n"
-        printf "\n"
-        printf "A helper function for git operations.\n"
-        printf "\n"
-        printf "Options:\n"
-        printf "  -m <message>    Specify the commit message.\n"
-        printf "  -p <args>       Pass arguments to git push.\n"
-        printf "  -h, --help      Display this help message.\n"
-        printf "\n"
-        printf "If no file is specified, all changes will be added.\n"
-        printf "If no commit message is provided, the default message '.' will be used.\n"
-    }
-
-    # Check for help option
-    if [[ "$1" == "-h" || "$1" == "--help" ]]; then
-        display_help
-        return 0
-    fi
-
-    local message="."
-    local push_args=""
-    local adding_all=true
-
-    # Process command line arguments
-    while [[ $# -gt 0 ]]; do
-        case "$1" in
-            -m)
-                shift
-                if [[ -n "$1" ]]; then
-                    message="$1"
-                    shift
-                fi
-                ;;
-            -p)
-                shift
-                push_args="$*"
-                break
-                ;;
-            *)
-                adding_all=false
-                break
-                ;;
-        esac
-    done
-
-    # Handle git add
-    if $adding_all; then
-        git add .
-    else
-        git add "$1"
-        shift
-    fi
-
-    # If push_args is not empty, remove the original push args from remaining arguments
-    if [[ -n "$push_args" ]]; then
-        set -- $push_args
-    fi
-
-    # Prompt for commit message if not provided
-    if [[ "$message" == "." ]]; then
-        printf "Enter commit message [default: .]: "
-        read -e input_message
-        message="${input_message:-.}"
-    fi
-
-    # Commit the changes
-    git commit -m "$message" --allow-empty
-
-    # Push the changes
-    git push "$@"
-}
+#lazyg() {
+#    # Help function using printf
+#    display_help() {
+#        printf "Usage: lazyg [options] [file]\n"
+#        printf "\n"
+#        printf "A helper function for git operations.\n"
+#        printf "\n"
+#        printf "Options:\n"
+#        printf "  -m <message>    Specify the commit message.\n"
+#        printf "  -p <args>       Pass arguments to git push.\n"
+#        printf "  -h, --help      Display this help message.\n"
+#        printf "\n"
+#        printf "If no file is specified, all changes will be added.\n"
+#        printf "If no commit message is provided, the default message '.' will be used.\n"
+#    }
+#
+#    # Check for help option
+#    if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+#        display_help
+#        return 0
+#    fi
+#
+#    local message="."
+#    local push_args=""
+#    local adding_all=true
+#
+#    # Process command line arguments
+#    while [[ $# -gt 0 ]]; do
+#        case "$1" in
+#            -m)
+#                shift
+#                if [[ -n "$1" ]]; then
+#                    message="$1"
+#                    shift
+#                fi
+#                ;;
+#            -p)
+#                shift
+#                push_args="$*"
+#                break
+#                ;;
+#            *)
+#                adding_all=false
+#                break
+#                ;;
+#        esac
+#    done
+#
+#    # Handle git add
+#    if $adding_all; then
+#        git add .
+#    else
+#        git add "$1"
+#        shift
+#    fi
+#
+#    # If push_args is not empty, remove the original push args from remaining arguments
+#    if [[ -n "$push_args" ]]; then
+#        set -- $push_args
+#    fi
+#
+#    # Prompt for commit message if not provided
+#    if [[ "$message" == "." ]]; then
+#        printf "Enter commit message [default: .]: "
+#        read -e input_message
+#        message="${input_message:-.}"
+#    fi
+#
+#    # Commit the changes
+#    git commit -m "$message" --allow-empty
+#
+#    # Push the changes
+#    git push "$@"
+#}
 
 #function sudo() {
 #    local attempts=0
@@ -363,8 +342,7 @@ function yy() {
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
 		cd "$cwd"
 	fi
-	rm -f "$tmp"
-    rme -f
+	rm "$tmp"
 }
 eval "$(direnv hook zsh)"
 export NVM_DIR="$HOME/.nvm"
@@ -380,9 +358,6 @@ function start-crafty-server() {
   # Navigate to the crafty project directory
   cd "$HOME/minecraft/crafty/" || { echo "Directory not found"; return 1; }
 
-  # Activate conda environment "crafty"
-  conda activate crafty
-
   # Activate virtual environment, if required
   source ".venv/bin/activate"
 
@@ -390,17 +365,12 @@ function start-crafty-server() {
   cd "crafty-4" || { echo "Directory crafty-4 not found"; return 1; }
 
   # Install Python dependencies from requirements.txt (quiet mode)
-  pip3 install --no-cache-dir -r ./requirements.txt > /dev/null
+  uv pip install --no-cache-dir -r ./requirements.txt > /dev/null
 
   # Run Python script (keep it in the foreground for Ctrl+C)
   python3 main.py
 
   echo "The 'crafty' platform has been stopped"
-
-  # After Ctrl+C, cleanup by deactivating the environments
-  deactivate  # Deactivate .venv if used
-  conda deactivate
-  conda activate base
 
   # Return to the original working directory
   cd "$cpwd"
@@ -415,7 +385,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 PATH=~/.console-ninja/.bin:$PATH
-zi light-mode for \
+cdi light-mode for \
   z-shell/z-a-meta-plugins \
   @annexes @zunit
 

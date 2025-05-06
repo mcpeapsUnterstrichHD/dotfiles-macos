@@ -1,0 +1,562 @@
+[INFO  Thu Apr 24 14:46:35 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=stylua) {}
+[INFO  Thu Apr 24 14:46:35 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) {}
+[INFO  Thu Apr 24 14:46:35 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shellcheck) {}
+[INFO  Thu Apr 24 14:46:35 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=flake8) {}
+[ERROR Thu Apr 24 14:46:41 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=stylua)
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[ERROR Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=lua-language-server) {}
+[ERROR Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  Thu Apr 24 14:46:43 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shellcheck)
+[INFO  Thu Apr 24 14:46:45 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=flake8)
+[INFO  Thu Apr 24 14:46:45 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=lua-language-server)
+[ERROR Thu Apr 24 15:42:59 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 15:42:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 15:42:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 15:42:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 15:43:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 15:43:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 15:43:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:40:05 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 16:40:05 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 16:40:05 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 16:40:05 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[ERROR Thu Apr 24 16:40:06 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:40:06 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:40:06 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:48:30 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 16:48:30 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 16:48:30 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 16:48:30 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Thu Apr 24 16:48:30 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:48:30 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:48:30 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:51:57 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 16:51:57 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 16:51:57 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 16:51:57 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Thu Apr 24 16:51:57 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:51:57 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 16:51:57 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 17:31:59 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 17:31:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 17:31:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 17:31:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[ERROR Thu Apr 24 17:31:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 17:31:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 17:31:59 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:24:32 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:24:32 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 18:24:32 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 18:24:32 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 18:24:32 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:24:32 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:24:32 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:32:34 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:32:34 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 18:32:34 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 18:32:34 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 18:32:34 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:32:34 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:32:34 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:33:08 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:33:08 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 18:33:08 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 18:33:08 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Thu Apr 24 18:33:08 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:33:08 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:33:08 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:40:28 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:40:28 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 18:40:28 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 18:40:28 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 18:40:28 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:40:28 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:40:28 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:41:13 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:41:13 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 18:41:13 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 18:41:13 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Thu Apr 24 18:41:13 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:41:13 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:41:13 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:46:36 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:46:36 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 18:46:36 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 18:46:36 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[ERROR Thu Apr 24 18:46:36 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:46:36 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:46:36 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:56:40 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 18:56:40 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 18:56:40 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 18:56:40 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Thu Apr 24 18:56:40 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:56:40 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 18:56:40 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:12:49 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 19:12:49 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 19:12:49 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 19:12:49 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 19:12:49 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:12:49 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:12:49 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:30:51 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 19:30:51 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 19:30:51 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Thu Apr 24 19:30:51 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Thu Apr 24 19:30:51 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:30:51 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:30:51 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:34:00 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Thu Apr 24 19:34:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Thu Apr 24 19:34:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Thu Apr 24 19:34:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Thu Apr 24 19:34:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:34:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Thu Apr 24 19:34:00 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Fri May  2 21:37:48 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Fri May  2 21:37:50 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Fri May  2 21:37:50 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Fri May  2 21:37:50 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Fri May  2 21:37:50 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Fri May  2 21:37:50 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Fri May  2 21:37:50 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Sat May  3 11:01:03 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Sat May  3 11:01:03 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Sat May  3 11:01:03 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Sat May  3 11:01:03 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Sat May  3 11:01:03 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Sat May  3 11:01:03 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Sat May  3 11:01:03 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Mon May  5 09:53:19 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Mon May  5 09:53:20 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Mon May  5 09:53:20 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Mon May  5 09:53:20 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Mon May  5 09:53:20 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Mon May  5 09:53:20 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Mon May  5 09:53:20 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:20:16 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Tue May  6 09:20:16 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Tue May  6 09:20:16 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Tue May  6 09:20:16 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Tue May  6 09:20:16 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:20:16 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:20:16 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:24:19 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Tue May  6 09:24:19 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Tue May  6 09:24:19 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Tue May  6 09:24:19 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Tue May  6 09:24:19 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:24:19 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:24:19 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:25:37 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Tue May  6 09:25:37 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Tue May  6 09:25:37 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[INFO  Tue May  6 09:25:37 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[ERROR Tue May  6 09:25:37 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:25:37 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:25:37 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:26:12 2025] ...m/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/init.lua:33: Failed to set up lspconfig integration. ...ig.nvim/lua/mason-lspconfig/server_config_extensions.lua:4: module 'lspconfig.configs.omnisharp' not found:
+	no field package.preload['lspconfig.configs.omnisharp']
+	cache_loader: module 'lspconfig.configs.omnisharp' not found
+	cache_loader_lib: module 'lspconfig.configs.omnisharp' not found
+	no file './lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/luajit-2.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/usr/local/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp.lua'
+	no file '/opt/homebrew/share/lua/5.1/lspconfig/configs/omnisharp/init.lua'
+	no file './lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig/configs/omnisharp.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file './lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/lspconfig.so'
+	no file '/opt/homebrew/lib/lua/5.1/lspconfig.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+[INFO  Tue May  6 09:26:12 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=vtsls) {}
+[INFO  Tue May  6 09:26:12 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) {}
+[INFO  Tue May  6 09:26:12 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=json-lsp) {}
+[ERROR Tue May  6 09:26:12 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=json-lsp) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:26:12 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=vtsls) error=spawn: npm failed with exit code - and signal -. npm is not executable
+[ERROR Tue May  6 09:26:12 2025] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=pyright) error=spawn: npm failed with exit code - and signal -. npm is not executable

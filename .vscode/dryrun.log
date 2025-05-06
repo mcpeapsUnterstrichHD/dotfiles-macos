@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/mahd/DEV/dotfiles'
-make: Leaving directory `/Users/mahd/DEV/dotfiles'
+make: Entering directory `/Users/mahd/DEV/dotfiles-macos'
+make: Leaving directory `/Users/mahd/DEV/dotfiles-macos'
  
 make: *** No targets specified and no makefile found.  Stop.
 

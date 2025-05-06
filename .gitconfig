@@ -22,17 +22,19 @@
 	zeroPaddedFilemode = ignore
 [oh-my-zsh]
 	lastVersion = 8510847ff38a142850e4a065dc3cf09555260ff7
-[remote "origin"]
-	url = https://github.com/Homebrew/brew
-	fetch = +refs/heads/*:refs/remotes/origin/*
-[homebrew]
-	analyticsmessage = true
-	caskanalyticsmessage = true
-[remote "upstream"]
-	gh-resolved = base
 [commit]
 	gpgSign = false
 [tag]
 	gpgSign = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [user]
-	name = mcpeaps_HD@outlook.com
+	name = mcpeapsUnterstrichHD
+	email = mcpeaps_HD@outlook.com
+	name = mcpeapsUnterstrichHD
+	email = mcpeaps_HD@outlook.com
+[lfs]
+	repositoryformatversion = 0
