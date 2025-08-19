@@ -1,0 +1,78 @@
+   312.0ms (setup:1108): 2025-07-28 04:15:41
+   312.0ms (setup:1109): /opt/homebrew/bin/pipx install termpair
+   312.1ms (setup:1110): pipx version is 1.7.1
+   312.1ms (setup:1111): Default python interpreter is '/opt/homebrew/opt/python@3.13/libexec/bin/python'
+   312.1ms (mkdir:76): creating directory /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs
+   312.2ms (mkdir:76): creating directory /Users/mahd/DEV/dotfiles-macos/.local/bin
+   312.2ms (mkdir:76): creating directory /Users/mahd/DEV/dotfiles-macos/.local/share/man
+   312.3ms (mkdir:76): creating directory /Users/mahd/DEV/dotfiles-macos/.local/pipx/.cache
+   312.3ms (mkdir:76): creating directory /Users/mahd/DEV/dotfiles-macos/.local/pipx/py
+   312.4ms (setup:1125): Adding CACHEDIR.TAG to cache directory
+   312.5ms (setup:1125): Adding CACHEDIR.TAG to cache directory
+   313.0ms (package_name_from_spec:378): Determined package name: termpair
+   313.0ms (package_name_from_spec:379): Package name determined in 0.0s
+   313.1ms (create_venv:164): Creating virtual environment
+   313.2ms (run_subprocess:175): running /opt/homebrew/opt/python@3.13/libexec/bin/python -m venv --without-pip /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair
+   355.9ms (run_subprocess:195): stdout:
+   356.0ms (run_subprocess:197): stderr:
+   356.0ms (run_subprocess:198): returncode: 0
+   356.5ms (run_subprocess:175): running /opt/homebrew/opt/python@3.13/libexec/bin/python -m venv --clear /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared
+  1655.9ms (run_subprocess:195): stdout:
+  1656.0ms (run_subprocess:197): stderr:
+  1656.0ms (run_subprocess:198): returncode: 0
+  1656.5ms (run_subprocess:175): running <checking pip's availability>
+  1672.8ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x1024f25d0>, origin='/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/__init__.py', submodule_search_locations=['/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip'])
+  1672.9ms (run_subprocess:198): returncode: 0
+  1673.1ms (upgrade:119): Upgrading shared libraries in /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared
+  1673.3ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/bin/python -m pip --no-input --disable-pip-version-check install --force-reinstall -q --upgrade pip >= 23.1
+  2927.3ms (run_subprocess:195): stdout:
+  2927.4ms (run_subprocess:197): stderr:
+  2927.4ms (run_subprocess:198): returncode: 0
+  2927.7ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  2945.6ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair/lib/python3.13/site-packages
+  2945.6ms (run_subprocess:198): returncode: 0
+  2945.9ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  2963.1ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages
+  2963.2ms (run_subprocess:198): returncode: 0
+  2963.8ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair/bin/python --version
+  2971.5ms (run_subprocess:195): stdout: Python 3.13.5
+  2971.6ms (run_subprocess:197): stderr:
+  2971.6ms (run_subprocess:198): returncode: 0
+  2972.0ms (_parsed_package_to_package_or_url:139): cleaned package spec: termpair
+  2972.0ms (install_package:247): Installing termpair
+  2972.2ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair/bin/python -m pip --no-input install termpair
+ 11043.0ms (run_subprocess:198): returncode: 1
+ 11043.4ms (subprocess_post_check_handle_pip_error:332): '/Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair/bin/python -m pip --no-input install termpair' failed
+ 11043.7ms (subprocess_post_check_handle_pip_error:347): Fatal error from pip prevented installation. Full pip output in file:
+    /Users/mahd/DEV/dotfiles-macos/.local/pipx/logs/cmd_2025-07-28_04.15.41_pip_errors.log
+ 11044.3ms (analyze_pip_output:311): pip seemed to fail to build package:
+    pyyaml==6.0
+ 11044.5ms (rmdir:56): removing directory /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/termpair
+ 11045.4ms (cli:1179): PipxError: Error installing termpair.
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/pipx/1.7.1_1/libexec/lib/python3.13/site-packages/pipx/main.py", line 1176, in cli
+    return run_pipx_command(parsed_pipx_args, subparsers)
+  File "/opt/homebrew/Cellar/pipx/1.7.1_1/libexec/lib/python3.13/site-packages/pipx/main.py", line 282, in run_pipx_command
+    return commands.install(
+           ~~~~~~~~~~~~~~~~^
+        None,
+        ^^^^^
+    ...<13 lines>...
+        python_flag_passed=python_flag_passed,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/pipx/1.7.1_1/libexec/lib/python3.13/site-packages/pipx/commands/install.py", line 99, in install
+    venv.install_package(
+    ~~~~~~~~~~~~~~~~~~~~^
+        package_name=package_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        suffix=suffix,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/pipx/1.7.1_1/libexec/lib/python3.13/site-packages/pipx/venv.py", line 265, in install_package
+    raise PipxError(f"Error installing {full_package_description(package_name, package_or_url)}.")
+pipx.util.PipxError: Error installing termpair.
+ 11047.1ms (cli:1187): pipx finished.

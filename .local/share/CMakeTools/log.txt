@@ -1,174 +1,147 @@
-2025-05-05T10:52:56.085Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake --version
-2025-05-05T10:52:56.377Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -E capabilities
-2025-05-05T10:52:56.385Z [debug] [main] Sicheres Erstellen einer neuen CMakeProject-Instanz
-2025-05-05T10:52:56.385Z [debug] [variant] VariantManager wird erstellt.
-2025-05-05T10:52:56.385Z [debug] [main] Erstellen einer neuen CMakeProject-Instanz
-2025-05-05T10:52:56.385Z [debug] [main] Initialisierung der zweiten Phase von CMake Tools wird gestartet.
-2025-05-05T10:52:56.386Z [debug] [expand] ${workspaceFolder} erweitert
-2025-05-05T10:52:56.387Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-05-05T10:52:56.409Z [info] [kit] Erfolgreich geladen: 1 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-05-05T10:52:56.411Z [debug] [kit] Nicht vorhandene Kitdatei wird nicht gelesen: /Users/mahd/DEV/Visonic/.vscode/cmake-kits.json
-2025-05-05T10:52:56.412Z [debug] [main] Das neue Kit wird in den CMake-Treiber eingefügt.
-2025-05-05T10:52:56.424Z [info] [variant] Neue Varianten wurden geladen.
-2025-05-05T10:52:56.425Z [debug] [main] Die Initialisierung der CMakeProject-Instanz ist abgeschlossen.
-2025-05-05T10:52:56.441Z [debug] [extension] [3968] cmake.quickStart gestartet
-2025-05-05T10:53:01.109Z [debug] [main] Neuer CMake-Treiber wird gestartet.
-2025-05-05T10:53:01.109Z [debug] [main] CMake-Treiber wird gestartet.
-2025-05-05T10:53:01.109Z [debug] [cmakefileapi-driver] Instanz wird erstellt von CMakeFileApiDriver
-2025-05-05T10:53:01.110Z [debug] [driver] Der Basistreiber wird mithilfe des Kits initialisiert.
-2025-05-05T10:53:01.111Z [debug] [driver] CMakeDriver-Kit auf __unspec__ festgelegt
-2025-05-05T10:53:01.112Z [debug] [kit] Die Umgebung für das Kit '__unspec__': {
-  "ATUIN_HISTORY_ID": "01969f23aa3b79e3aeed92e3efefc446",
-  "ATUIN_SESSION": "019695688afc7f129d6db57c9ca24042",
-  "CLASSPATH": ":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar",
-  "COLORTERM": "truecolor",
-  "COMMAND_MODE": "unix2003",
-  "CONDA_PROMPT_MODIFIER": "false",
-  "CPPFLAGS": " -I/opt/homebrew/opt/ruby/include",
-  "CRYPTOGRAPHY_OPENSSL_NO_LEGACY": "1",
-  "DOCKER_HOST": "unix:///var/run/docker.sock",
-  "EDITOR": "/opt/homebrew/bin/nvim",
-  "ELECTRON_NO_ATTACH_CONSOLE": "1",
-  "FPATH": "/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh",
-  "FZF_DEFAULT_COMMAND": "rg --files --hidden --follow --no-ignore-vcs",
-  "FZF_DEFAULT_OPTS": "--height 40% --layout=reverse --border",
-  "GHOSTTY_BIN_DIR": "/Applications/Ghostty.app/Contents/MacOS",
-  "GHOSTTY_RESOURCES_DIR": "/Applications/Ghostty.app/Contents/Resources/ghostty",
-  "GHOSTTY_SHELL_INTEGRATION_NO_SUDO": "1",
-  "GIT_CONFIG": "/Users/mahd/DEV/dotfiles-macos/.gitconfig",
-  "HOME": "/Users/mahd",
-  "HOMEBREW_AUTO_UPDATE_SECS": "1",
-  "HOMEBREW_CELLAR": "/opt/homebrew/Cellar",
-  "HOMEBREW_PREFIX": "/opt/homebrew",
-  "HOMEBREW_REPOSITORY": "/opt/homebrew",
-  "INFOPATH": "/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:",
-  "LANG": "en_US.UTF-8",
-  "LDFLAGS": " -L/opt/homebrew/opt/ruby/lib",
-  "LOGNAME": "mahd",
-  "LaunchInstanceID": "288D8F17-178B-443A-8126-2DA30048C848",
-  "MANPATH": ":/opt/homebrew/share/man::/opt/homebrew/share/man::/usr/share/man:/usr/local/share/man:/opt/homebrew/share/man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:::",
-  "MallocNanoZone": "0",
-  "OLDPWD": "/Users/mahd",
-  "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
-  "OSTYPE": "darwin24.0",
-  "PATH": "/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin",
-  "PERIOD": "30",
-  "PKG_CONFIG_PATH": "/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:",
-  "POSH_SESSION_ID": "4e4e94a4-9216-4946-b9a8-507f2207c8b5",
-  "POSH_SHELL": "zsh",
-  "POSH_SHELL_VERSION": "5.9",
-  "POSH_THEME": "/Users/mahd/.cache/oh-my-posh/config.c2a6b6737ea6f2ae635a64ee1d823b8e4a66d42f0d5464852e231f2865d7a5e8.omp.toml",
-  "POWERLINE_COMMAND": "oh-my-posh",
-  "PWD": "/Users/mahd/DEV/Visonic",
-  "PYENV_VIRTUALENV_DISABLE_PROMPT": "1",
-  "SECURITYSESSIONID": "18919",
-  "SHELL": "/bin/zsh",
-  "SHLVL": "3",
-  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.c47oQjLNAf/Listeners",
-  "TERM": "xterm-256color",
-  "TERMINFO": "/Applications/Ghostty.app/Contents/Resources/terminfo",
-  "TERM_PROGRAM": "tmux",
-  "TERM_PROGRAM_VERSION": "3.5a",
-  "TMPDIR": "/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/",
-  "TMUX": "/private/tmp/tmux-501/default,80721,0",
-  "TMUX_CONF": "/Users/mahd/.tmux.conf",
-  "TMUX_CONF_LOCAL": "/Users/mahd/.tmux.conf.local",
-  "TMUX_PANE": "%0",
-  "TMUX_PROGRAM": "/opt/homebrew/Cellar/tmux/3.5a/bin/tmux",
-  "TMUX_SOCKET": "/private/tmp/tmux-501/default",
-  "USER": "mahd",
-  "VIRTUAL_ENV_DISABLE_PROMPT": "1",
-  "VSCODE_CLI": "1",
-  "VSCODE_CODE_CACHE_PATH": "/Users/mahd/Library/Application Support/Code/CachedData/17baf841131aa23349f217ca7c570c76ee87b957",
-  "VSCODE_CRASH_REPORTER_PROCESS_TYPE": "extensionHost",
-  "VSCODE_CWD": "/Users/mahd/DEV/Visonic",
-  "VSCODE_ESM_ENTRYPOINT": "vs/workbench/api/node/extensionHostProcess",
-  "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
-  "VSCODE_IPC_HOOK": "/Users/mahd/Library/Application Support/Code/1.99-main.sock",
-  "VSCODE_NLS_CONFIG": "{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}",
-  "VSCODE_PID": "91050",
-  "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..",
-  "XPC_FLAGS": "0x0",
-  "XPC_SERVICE_NAME": "application.com.microsoft.VSCode.217058.1591648.FC7FEC67-6A19-482D-8132-60A10C734E4B",
-  "ZLE_RPROMPT_INDENT": "0",
-  "ZPLUG_BIN": "/opt/homebrew/opt/zplug/bin",
-  "ZPLUG_CACHE_DIR": "/opt/homebrew/opt/zplug/cache",
-  "ZPLUG_ERROR_LOG": "/opt/homebrew/opt/zplug/.error_log",
-  "ZPLUG_FILTER": "fzf-tmux:fzf:peco:percol:fzy:zaw",
-  "ZPLUG_HOME": "/opt/homebrew/opt/zplug",
-  "ZPLUG_LOADFILE": "/opt/homebrew/opt/zplug/packages.zsh",
-  "ZPLUG_PROTOCOL": "HTTPS",
-  "ZPLUG_REPOS": "/opt/homebrew/opt/zplug/repos",
-  "ZPLUG_ROOT": "/opt/homebrew/Cellar/zplug/2.4.2",
-  "ZPLUG_THREADS": "16",
-  "ZPLUG_USE_CACHE": "true",
-  "_ZPLUG_AWKPATH": "/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib",
-  "_ZPLUG_CONFIG_SUBSHELL": ":",
-  "_ZPLUG_OHMYZSH": "robbyrussell/oh-my-zsh",
-  "_ZPLUG_PREZTO": "sorin-ionescu/prezto",
-  "_ZPLUG_URL": "https://github.com/zplug/zplug",
-  "_ZPLUG_VERSION": "2.4.2",
-  "__CFBundleIdentifier": "com.microsoft.VSCode",
-  "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x3",
-  "ELECTRON_RUN_AS_NODE": "1",
-  "NODE_TLS_REJECT_UNAUTHORIZED": "undefined",
-  "VSCODE_L10N_BUNDLE_LOCATION": "",
-  "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "1",
-  "APPLICATIONINSIGHTS_CONFIGURATION_CONTENT": "{}",
-  "WALLABY_PRODUCTION": "true"
-}
-2025-05-05T10:53:01.112Z [debug] [driver] Es wird versucht, einen vom System unterstützten Generator zu ermitteln.
-2025-05-05T10:53:01.114Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-05-05T10:53:01.115Z [debug] [driver] Neue Variante wird festgelegt: Debug
-2025-05-05T10:53:01.116Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-05-05T10:53:23.567Z [info] [main] [Schnellstart] CmakeLists.txt erfolgreich erstellt.
-2025-05-05T10:53:23.569Z [debug] [presetController] Auswahl der Konfigurationsvoreinstellungen starten. 0 Voreinstellungen gefunden.
-2025-05-05T10:53:23.569Z [debug] [presetController] QuickPick zur Konfigurationsvoreinstellungsauswahl wird geöffnet
-2025-05-05T10:53:45.797Z [debug] [presetController] Datei mit Lesevoreinstellungen /Users/mahd/DEV/Visonic/CMakePresets.json
-2025-05-05T10:53:45.812Z [debug] [presetController] Datei mit Lesevoreinstellungen /Users/mahd/DEV/Visonic/CMakePresets.json
-2025-05-05T10:53:45.817Z [info] [presetController] Die Voreinstellung "file /Users/mahd/DEV/Visonic/CMakePresets.json" wird gelesen und überprüft.
-2025-05-05T10:53:45.847Z [info] [presetController] Die Voreinstellung "file /Users/mahd/DEV/Visonic/CMakePresets.json" wird gelesen und überprüft.
-2025-05-05T10:53:45.948Z [info] [presetController] Erfolgreiche Validierung von /Users/mahd/DEV/Visonic/CMakePresets.json gegen das vorgegebene Schema
-2025-05-05T10:53:45.948Z [info] [proc] Befehl wird ausgeführt: uname -s
-2025-05-05T10:53:46.049Z [info] [presetController] Erfolgreiche Validierung von /Users/mahd/DEV/Visonic/CMakePresets.json gegen das vorgegebene Schema
-2025-05-05T10:53:46.059Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wird erweitert
-2025-05-05T10:53:46.059Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wird erweitert
-2025-05-05T10:53:46.062Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
-2025-05-05T10:53:46.062Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
-2025-05-05T10:53:46.064Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
-2025-05-05T10:53:46.064Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
-2025-05-05T10:53:46.065Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wurde erfolgreich erweitert
-2025-05-05T10:53:46.065Z [info] [presetController] Die Voreinstellungsdatei /Users/mahd/DEV/Visonic/CMakePresets.json wurde erfolgreich erweitert
-2025-05-05T10:53:46.068Z [debug] [presetController] Konfigurationsvoreinstellung "Voreinstellung mithilfe der Toolkettendatei konfigurieren" vom Benutzer ausgewählt
-2025-05-05T10:53:46.068Z [debug] [main] Die ausgewählte Konfigurationsvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.069Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
-2025-05-05T10:53:46.070Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
-2025-05-05T10:53:46.137Z [debug] [main] Die neue Konfigurationsvoreinstellung wird in den CMake-Treiber geladen.
-2025-05-05T10:53:46.137Z [info] [driver] Wechseln zur Konfigurationsvoreinstellung: Voreinstellung mithilfe der Toolkettendatei konfigurieren
-2025-05-05T10:53:46.138Z [debug] [driver] CMakeDriver-Konfigurationsvoreinstellung auf Voreinstellung mithilfe der Toolkettendatei konfigurieren festgelegt
-2025-05-05T10:53:46.203Z [debug] [main] Die ausgewählte Buildvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.220Z [debug] [main] Die neue Buildvoreinstellung wird in den CMake-Treiber geladen
-2025-05-05T10:53:46.220Z [info] [driver] Wechseln zur Buildvoreinstellung: __defaultBuildPreset__
-2025-05-05T10:53:46.220Z [debug] [driver] CMakeDriver-Buildvoreinstellung auf __defaultBuildPreset__ festgelegt
-2025-05-05T10:53:46.223Z [debug] [main] Die ausgewählte Testvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.223Z [debug] [main] Die ausgewählte Testvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.224Z [debug] [main] Die neue Testvoreinstellung wird in den CMake-Treiber geladen
-2025-05-05T10:53:46.224Z [info] [driver] Zur Testvoreinstellung wechseln: __defaultTestPreset__
-2025-05-05T10:53:46.224Z [debug] [driver] CMakeDriver-Testvoreinstellung auf __defaultTestPreset__ festgelegt
-2025-05-05T10:53:46.226Z [debug] [cache] CMake-Cachedatei wird gelesen: /Users/mahd/DEV/Visonic/out/build/Voreinstellung mithilfe der Toolkettendatei konfigurieren/CMakeCache.txt
-2025-05-05T10:53:46.226Z [debug] [cache] Die Cachedatei ist nicht vorhanden: Es werden leere Cachedaten zurückgegeben.
-2025-05-05T10:53:46.227Z [debug] [main] Die ausgewählte Paketvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.227Z [debug] [main] Die ausgewählte Paketvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.228Z [debug] [main] Die neue Paketvoreinstellung wird in den CMake-Treiber geladen
-2025-05-05T10:53:46.228Z [info] [driver] Zur Paketvoreinstellung wechseln: __defaultPackagePreset__
-2025-05-05T10:53:46.228Z [debug] [driver] CMakeDriver-Paketvoreinstellung auf __defaultPackagePreset__ festgelegt
-2025-05-05T10:53:46.230Z [debug] [main] Die ausgewählte Workflowvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.231Z [debug] [main] Die ausgewählte Workflowvoreinstellung wird aufgelöst
-2025-05-05T10:53:46.232Z [debug] [expand] ${sourceDir}/out/build/${presetName} erweitert
-2025-05-05T10:53:46.232Z [debug] [expand] ${sourceDir}/out/install/${presetName} erweitert
-2025-05-05T10:53:46.233Z [debug] [main] Die neue Workflowvoreinstellung wird in den CMake-Treiber geladen
-2025-05-05T10:53:46.233Z [info] [driver] Wechseln zur Workflowvoreinstellung: __defaultWorkflowPreset__
-2025-05-05T10:53:46.233Z [debug] [driver] CMakeDriver-Workflowvoreinstellung auf __defaultWorkflowPreset__ festgelegt
+2025-06-05T14:03:08.336Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake --version
+2025-06-05T14:03:09.800Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -E capabilities
+2025-06-05T14:03:09.868Z [debug] [main] Sicheres Erstellen einer neuen CMakeProject-Instanz
+2025-06-05T14:03:09.868Z [debug] [variant] VariantManager wird erstellt.
+2025-06-05T14:03:09.869Z [debug] [main] Erstellen einer neuen CMakeProject-Instanz
+2025-06-05T14:03:09.869Z [debug] [main] Initialisierung der zweiten Phase von CMake Tools wird gestartet.
+2025-06-05T14:03:09.869Z [debug] [expand] ${workspaceFolder} erweitert
+2025-06-05T14:03:09.889Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:09.959Z [info] [kit] Erfolgreich geladen: 1 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:10.002Z [debug] [kit] Nicht vorhandene Kitdatei wird nicht gelesen: /Users/mahd/DEV/simplesql/.vscode/cmake-kits.json
+2025-06-05T14:03:10.105Z [info] [variant] Neue Varianten wurden geladen.
+2025-06-05T14:03:10.113Z [debug] [main] Die Initialisierung der CMakeProject-Instanz ist abgeschlossen.
+2025-06-05T14:03:10.158Z [info] [kit] Es wurde eine Änderung der Version der Definition von Kits von undefined in 2 festgestellt. Es wird automatisch nach Kits gesucht.
+2025-06-05T14:03:10.182Z [debug] [kitsController] Es wird erneut nach Kits gesucht.
+2025-06-05T14:03:10.182Z [debug] [kit] Es wird nach Kits auf dem System gesucht.
+2025-06-05T14:03:10.184Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/homebrew/opt/php@8.2/sbin
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/php@8.2/sbin
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/homebrew/opt/php@8.2/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/php@8.2/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /opt/homebrew/Cellar/zplug/2.4.2/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /opt/homebrew/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /opt/homebrew/sbin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/bin/vim
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin/vim
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Library/Frameworks/Python.framework/Versions/3.7/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/Frameworks/Python.framework/Versions/3.7/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /Users/mahd/.cargo/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /Users/mahd/.bun/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /opt/homebrew/opt/ruby/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/Library/Python/3.9/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/Library/Python/3.9/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /Applications/OrbStack.app/Contents/MacOS/xbin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /Applications/OrbStack.app/Contents/MacOS/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Verzeichnis /Applications/OrbStack.app/Contents/MacOS wird auf Compiler überprüft
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.yarn/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.yarn/bin
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads  /opt/homebrew/opt/ccache/libexec
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis  /opt/homebrew/opt/ccache/libexec
+2025-06-05T14:03:10.185Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Applications/Kitty.app/Contents/MacOS
+2025-06-05T14:03:10.185Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/Kitty.app/Contents/MacOS
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Applications/Alacritty.app/Contents/MacOS
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/Alacritty.app/Contents/MacOS
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /opt/homebrew/opt/openjdk/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.config/yarn/global/node_modules/.bin
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.config/yarn/global/node_modules/.bin
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /Users/mahd/exe wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /Users/mahd/exe/separator wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/bin/composer
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin/composer
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /opt/homebrew/lib/ruby/gems/3.4.0/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads usr/local/opt/llvm/bin/clangd
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis usr/local/opt/llvm/bin/clangd
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/go/bin
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/go/bin
+2025-06-05T14:03:10.186Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/Cellar/llvm/10.0.1/bin/clangd
+2025-06-05T14:03:10.186Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/Cellar/llvm/10.0.1/bin/clangd
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /usr/local/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /usr/sbin wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /usr/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.186Z [debug] [kit] Verzeichnis /bin wird auf Compiler überprüft
+2025-06-05T14:03:10.188Z [debug] [kit] Verzeichnis /sbin wird auf Compiler überprüft
+2025-06-05T14:03:10.188Z [debug] [kit] Verzeichnis /System/Cryptexes/App/usr/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.188Z [debug] [kit] Verzeichnis /Library/Apple/usr/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.188Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
+2025-06-05T14:03:10.188Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
+2025-06-05T14:03:10.188Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
+2025-06-05T14:03:10.188Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.rvm/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.rvm/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/sbin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/sbin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/go/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/go/bin
+2025-06-05T14:03:10.189Z [debug] [kit] Verzeichnis /Users/mahd/.orbstack/bin wird auf Compiler überprüft
+2025-06-05T14:03:10.189Z [debug] [kit] Verzeichnis /Applications/VMware Fusion.app/Contents/Public wird auf Compiler überprüft
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\mingw64\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\mingw64\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\mingw32\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\mingw32\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clang32\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clang32\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\LLVM\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\LLVM\bin
+2025-06-05T14:03:10.189Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clang64\bin
+2025-06-05T14:03:10.190Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clang64\bin
+2025-06-05T14:03:10.190Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clangarm64\bin
+2025-06-05T14:03:10.190Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clangarm64\bin
+2025-06-05T14:03:10.190Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\ucrt64\bin
+2025-06-05T14:03:10.190Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\ucrt64\bin
+2025-06-05T14:03:10.195Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/Cellar/zplug/2.4.2/bin
+2025-06-05T14:03:10.195Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.cargo/bin
+2025-06-05T14:03:10.195Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.bun/bin
+2025-06-05T14:03:10.195Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS/xbin
+2025-06-05T14:03:10.195Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS/bin
+2025-06-05T14:03:10.195Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/openjdk/bin
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/sbin
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/exe
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/exe/separator
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin
+2025-06-05T14:03:10.196Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/lib/ruby/gems/3.4.0/bin
+2025-06-05T14:03:10.203Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/bin
+2025-06-05T14:03:10.205Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/sbin
+2025-06-05T14:03:10.207Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /bin
+2025-06-05T14:03:10.207Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /System/Cryptexes/App/usr/bin
+2025-06-05T14:03:10.208Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /sbin
+2025-06-05T14:03:10.208Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.orbstack/bin
+2025-06-05T14:03:10.208Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/VMware Fusion.app/Contents/Public
+2025-06-05T14:03:10.208Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/ruby/bin
+2025-06-05T14:03:10.208Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/Apple/usr/bin
+2025-06-05T14:03:10.212Z [debug] [kit] Clang-Binärdatei wird getestet: /usr/bin/clang
+2025-06-05T14:03:10.213Z [info] [proc] Befehl wird ausgeführt: /usr/bin/clang -v
+2025-06-05T14:03:10.215Z [debug] [kit] GCC-Binärdatei wird getestet: /usr/bin/gcc
+2025-06-05T14:03:10.215Z [info] [proc] Befehl wird ausgeführt: /usr/bin/gcc -v
+2025-06-05T14:03:10.220Z [debug] [kit] GCC-Binärdatei wird getestet: /usr/bin/llvm-gcc
+2025-06-05T14:03:10.220Z [info] [proc] Befehl wird ausgeführt: /usr/bin/llvm-gcc -v
+2025-06-05T14:03:10.250Z [debug] [kit] Clang-Compiler wurde erkannt: /usr/bin/clang
+2025-06-05T14:03:10.250Z [debug] [kit] Erkannter Clang-Compiler: /usr/bin/clang
+2025-06-05T14:03:10.268Z [debug] [kit] Ungültige GCC Binärdatei. "/usr/bin/llvm-gcc -v" meldet Version:  Ausgabe: Apple clang version 17.0.0 (clang-1700.0.13.3)
+Target: arm64-apple-darwin24.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+2025-06-05T14:03:10.274Z [debug] [kit] Ungültige GCC Binärdatei. "/usr/bin/gcc -v" meldet Version:  Ausgabe: Apple clang version 17.0.0 (clang-1700.0.13.3)
+Target: arm64-apple-darwin24.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+2025-06-05T14:03:10.274Z [debug] [kit] Gefunden: 1 Kits im Verzeichnis /usr/bin
+2025-06-05T14:03:10.274Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 17.0.0 arm64-apple-darwin24.5.0
+2025-06-05T14:03:10.274Z [debug] [kitsController] Kits werden gespeichert in /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:10.274Z [debug] [kitsController] Neue Kits werden gespeichert in /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:10.285Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:10.315Z [info] [kit] Erfolgreich geladen: 2 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:10.403Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:10.417Z [info] [kit] Erfolgreich geladen: 2 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2025-06-05T14:03:17.456Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+wPreset__ festgelegt
 2025-05-05T10:53:46.246Z [info] [main] [Schnellstart] CMakePresets.json erfolgreich erstellt.
 2025-05-05T10:53:46.290Z [info] [main] Projekt konfigurieren: Visonic 
 2025-05-05T10:53:46.290Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
@@ -372,3 +345,4 @@
 2025-05-05T10:56:45.425Z [debug] [cmakefileapi-parser] Read reply folder: /Users/mahd/DEV/Visonic/build/.cmake/api/v1/reply
 2025-05-05T10:56:45.427Z [debug] [cmakefileapi-parser] Found index files: ["cache-v2-2bea4f6ec918aa372c75.json","cmakeFiles-v1-530d179efff1207c397a.json","codemodel-v2-9fdcc3787ea4f9820849.json","directory-.-Debug-f5ebdc15457944623624.json","index-2025-05-05T10-56-45-0421.json","target-Continuous-Debug-58992b4c6cbc4bebb5f0.json","target-ContinuousBuild-Debug-9e093ebf8f6c049e578d.json","target-ContinuousConfigure-Debug-0cc3d487e8e1a3cf534e.json","target-ContinuousCoverage-Debug-8b3ac12e858f63b177c5.json","target-ContinuousMemCheck-Debug-5ab69a0be50884f7c9c1.json","target-ContinuousStart-Debug-19b4f77ab7f160dca224.json","target-ContinuousSubmit-Debug-888cf57197d5e2b8c36a.json","target-ContinuousTest-Debug-cf515b308fc371e41b6a.json","target-ContinuousUpdate-Debug-9ea0fb6e64fa792572a8.json","target-Experimental-Debug-2081f0d09cc995bd1114.json","target-ExperimentalBuild-Debug-669f849764941cfc9bf4.json","target-ExperimentalConfigure-Debug-bdb8e2099a961494a128.json","target-ExperimentalCoverage-Debug-8feb45f19dc5e04e248f.json","target-ExperimentalMemCheck-Debug-6b7e9b0ace59132495cf.json","target-ExperimentalStart-Debug-82dc814df145569452c0.json","target-ExperimentalSubmit-Debug-22f48054a4e99690e463.json","target-ExperimentalTest-Debug-a439bb27e855af8cc8d7.json","target-ExperimentalUpdate-Debug-df2138c033b19996ac52.json","target-Nightly-Debug-3071e3baf56d701f5332.json","target-NightlyBuild-Debug-94483ba3436724e143a4.json","target-NightlyConfigure-Debug-2435d0c5cfaf22e2f0a7.json","target-NightlyCoverage-Debug-36556f70bbd4e2d2f2b6.json","target-NightlyMemCheck-Debug-739f6c3aeaa3b412f2d7.json","target-NightlyMemoryCheck-Debug-a861ccfc621685b03d15.json","target-NightlyStart-Debug-3ebc40a196f520914ad0.json","target-NightlySubmit-Debug-086c9d2feed5c92f3d02.json","target-NightlyTest-Debug-1e53a4281c149feb9b17.json","target-NightlyUpdate-Debug-037bd04a0ba65f6f71f1.json","target-visonic-Debug-be29cb076e6cb59b5e3e.json","toolchains-v1-370a58605bade8104d7b.json"]
 2025-05-05T10:56:45.438Z [error] [ctest] Der Ordner wurde im Test-Explorer nicht gefunden: /users/mahd/dev/visonic/src
+2025-05-09T14:26:36.474Z [debug] [extension] CMakeTools deaktivieren

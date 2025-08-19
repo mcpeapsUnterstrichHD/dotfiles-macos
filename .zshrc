@@ -43,7 +43,9 @@ export LDFLAGS="$LDFLAGS -L/opt/homebrew/opt/ruby/lib"
 export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/ruby/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="$HOME/.bun/bin/:$PATH"
-
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+export PATH="$PATH:$HOME/.dotnet/tools"
+export PATH=$PATH:/Applications
 #Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
 
@@ -102,15 +104,15 @@ source <(atuin gen-completions -s zsh)
 
 alias ls="colorls -l -a --group-directories-first $*"
 alias lss="/bin/ls -la $*"
-alias speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest -s 30907 -a $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
-alias neofetch--speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
+alias speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest --share --server 31469 --secure $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
+alias neofetch--speedtest="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc  && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/speedtest --share --server 31469 --secure && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias neofetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias fastfetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homebrew/bin/fastfetch --config $HOME/.config/fastfetch/config.jsonc $* && $HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat"
 alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias cga='if [ -z "$*" ]; then git add .; else git add $1; fi'
 alias cgc='if [ -z "$*" ]; then git commit -m "." --allow-empty; else git commit -m "$*" --allow-empty; fi'
-alias cgp='jj git push $*'
+alias cgp='jj git push --allow-empty-description $*'
 alias cgs='jj status $*'
 alias cgpl='jj pull $*'
 alias cgcl='jj git clone --colocate $*'
@@ -185,10 +187,12 @@ export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 
 if [[ ! "$TERM_PROGRAM" =~ "vscode" ]]; then
-tmux
+  if [[ -z "$TMUX" ]]; then
+    tmux
+  fi
 fi
 
-export path=$path:/users/mahd/.spicetify
+export PATH=$PATH:/users/mahd/.spicetify
 
 #lazyg() {
 #    # Help function using printf
@@ -347,7 +351,7 @@ function yy() {
 eval "$(direnv hook zsh)"
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" 
 
 function start-crafty-server() {
   echo "Starting the 'crafty' platform..."
@@ -390,3 +394,8 @@ cdi light-mode for \
   @annexes @zunit
 
 alias gf=gf
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mahd/.lmstudio/bin"
+# End of LM Studio CLI section
+

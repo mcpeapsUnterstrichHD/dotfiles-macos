@@ -1,0 +1,144 @@
+PIP STDOUT
+----------
+Collecting termpair
+  Downloading termpair-0.3.1.5-py3-none-any.whl.metadata (14 kB)
+Collecting aiofiles==0.8.0 (from termpair)
+  Downloading aiofiles-0.8.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting anyio==3.6.1 (from termpair)
+  Downloading anyio-3.6.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting asgiref==3.5.2 (from termpair)
+  Downloading asgiref-3.5.2-py3-none-any.whl.metadata (9.1 kB)
+Collecting cffi==1.15.0 (from termpair)
+  Downloading cffi-1.15.0.tar.gz (484 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting click==8.1.3 (from termpair)
+  Downloading click-8.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting cryptography==37.0.3 (from termpair)
+  Downloading cryptography-37.0.3-cp36-abi3-macosx_10_10_universal2.whl.metadata (5.4 kB)
+Collecting fastapi==0.78.0 (from termpair)
+  Downloading fastapi-0.78.0-py3-none-any.whl.metadata (24 kB)
+Collecting h11==0.13.0 (from termpair)
+  Downloading h11-0.13.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting httptools==0.4.0 (from termpair)
+  Downloading httptools-0.4.0.tar.gz (174 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting idna==3.3 (from termpair)
+  Downloading idna-3.3-py3-none-any.whl.metadata (9.8 kB)
+Collecting pycparser==2.21 (from termpair)
+  Downloading pycparser-2.21-py2.py3-none-any.whl.metadata (1.1 kB)
+Collecting pydantic==1.9.1 (from termpair)
+  Downloading pydantic-1.9.1-py3-none-any.whl.metadata (126 kB)
+Collecting python-dotenv==0.20.0 (from termpair)
+  Downloading python_dotenv-0.20.0-py3-none-any.whl.metadata (19 kB)
+Collecting pyyaml==6.0 (from termpair)
+  Downloading PyYAML-6.0.tar.gz (124 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+
+PIP STDERR
+----------
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [78 lines of output]
+      /private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+      
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+      
+              License :: OSI Approved :: MIT License
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        self._finalize_license_expression()
+      running egg_info
+      writing lib/PyYAML.egg-info/PKG-INFO
+      writing dependency_links to lib/PyYAML.egg-info/dependency_links.txt
+      writing top-level names to lib/PyYAML.egg-info/top_level.txt
+      Traceback (most recent call last):
+        File "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+          return hook(config_settings)
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=[])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 288, in <module>
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/__init__.py", line 115, in setup
+          return distutils.core.setup(**attrs)
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/core.py", line 186, in setup
+          return run_commands(dist)
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+          dist.run_commands()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1002, in run_commands
+          self.run_command(cmd)
+          ~~~~~~~~~~~~~~~~^^^^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/dist.py", line 1102, in run_command
+          super().run_command(command)
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/dist.py", line 1021, in run_command
+          cmd_obj.run()
+          ~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/command/egg_info.py", line 312, in run
+          self.find_sources()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+          mm.run()
+          ~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/command/egg_info.py", line 543, in run
+          self.add_defaults()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/command/egg_info.py", line 581, in add_defaults
+          sdist.add_defaults(self)
+          ~~~~~~~~~~~~~~~~~~^^^^^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/command/sdist.py", line 109, in add_defaults
+          super().add_defaults()
+          ~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/sdist.py", line 245, in add_defaults
+          self._add_defaults_ext()
+          ~~~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/command/sdist.py", line 330, in _add_defaults_ext
+          self.filelist.extend(build_ext.get_source_files())
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        File "<string>", line 204, in get_source_files
+        File "/private/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/pip-build-env-qzp30smx/overlay/lib/python3.13/site-packages/setuptools/_distutils/cmd.py", line 131, in __getattr__
+          raise AttributeError(attr)
+      AttributeError: cython_sources
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///Users/mahd/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/909431A7-2431-4BDC-B7CB-669B22BA7087/F3917386-5B48-444D-906E-643B40C7CBBD.png" added="2025-08-05T11:24:52.915381Z" modified="2025-08-05T11:24:52.915393Z" visited="2025-08-05T11:24:52.915388Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-08-05T11:24:52.915391Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/mahd/Desktop/F3917386-5B48-444D-906E-643B40C7CBBD.png" added="2025-08-05T11:32:50.584852Z" modified="2025-08-05T11:32:57.433314Z" visited="2025-08-05T11:32:50.584860Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-08-05T11:32:57.433312Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

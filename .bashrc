@@ -7,3 +7,8 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mahd/.lmstudio/bin"
+# End of LM Studio CLI section
+
