@@ -1,0 +1,60 @@
+    97.7ms (setup:1113): 2025-11-03 11:09:21
+    97.7ms (setup:1114): /opt/homebrew/bin/pipx install freetype-p
+    97.8ms (setup:1115): pipx version is 1.8.0
+    97.8ms (setup:1116): Default python interpreter is '/opt/homebrew/opt/python@3.13/libexec/bin/python'
+    98.3ms (package_name_from_spec:381): Determined package name: freetype-p
+    98.3ms (package_name_from_spec:382): Package name determined in 0.0s
+    98.4ms (create_venv:164): Creating virtual environment
+    98.5ms (run_subprocess:175): running /opt/homebrew/opt/python@3.13/libexec/bin/python -m venv --without-pip /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p
+   134.3ms (run_subprocess:195): stdout:
+   134.4ms (run_subprocess:197): stderr:
+   134.4ms (run_subprocess:198): returncode: 0
+   134.9ms (run_subprocess:175): running <checking pip's availability>
+   153.7ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x103076530>, origin='/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/__init__.py', submodule_search_locations=['/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip'])
+   153.8ms (run_subprocess:198): returncode: 0
+   154.2ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   173.3ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p/lib/python3.13/site-packages
+   173.4ms (run_subprocess:198): returncode: 0
+   173.7ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   192.6ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages
+   192.7ms (run_subprocess:198): returncode: 0
+   193.2ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p/bin/python --version
+   200.9ms (run_subprocess:195): stdout: Python 3.13.7
+   201.0ms (run_subprocess:197): stderr:
+   201.0ms (run_subprocess:198): returncode: 0
+   201.3ms (_parsed_package_to_package_or_url:139): cleaned package spec: freetype-p
+   201.3ms (install_package:247): Installing freetype-p
+   201.5ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p/bin/python -m pip --no-input install freetype-p
+   865.6ms (run_subprocess:198): returncode: 1
+   865.8ms (subprocess_post_check_handle_pip_error:332): '/Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p/bin/python -m pip --no-input install freetype-p' failed
+   866.5ms (subprocess_post_check_handle_pip_error:347): Fatal error from pip prevented installation. Full pip output in file:
+    /Users/mahd/DEV/dotfiles-macos/.local/pipx/logs/cmd_2025-11-03_11.09.21_pip_errors.log
+   867.1ms (rmdir:56): removing directory /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-p
+   868.2ms (cli:1184): PipxError: Error installing freetype-p.
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/main.py", line 1181, in cli
+    return run_pipx_command(parsed_pipx_args, subparsers)
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/main.py", line 282, in run_pipx_command
+    return commands.install(
+           ~~~~~~~~~~~~~~~~^
+        None,
+        ^^^^^
+    ...<13 lines>...
+        python_flag_passed=python_flag_passed,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/commands/install.py", line 99, in install
+    venv.install_package(
+    ~~~~~~~~~~~~~~~~~~~~^
+        package_name=package_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        suffix=suffix,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/venv.py", line 265, in install_package
+    raise PipxError(f"Error installing {full_package_description(package_name, package_or_url)}.")
+pipx.util.PipxError: Error installing freetype-p.
+   870.7ms (cli:1192): pipx finished.

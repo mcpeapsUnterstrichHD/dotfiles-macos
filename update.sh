@@ -2,7 +2,7 @@
 
 # update brewfile
 
-brewfile > ./packages-to-intalled
+#brewfile > ./packages-to-intalled
 
 # synchronizing dotfiles
 stow .

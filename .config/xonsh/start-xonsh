@@ -1,0 +1,3 @@
+#!/bin/sh
+# $@ gibt alle Argumente weiter, die macOS beim Login übergibt
+exec /Users/mahd/.local/xonsh-env/xbin/xonsh -i -l --rc /Users/mahd/DEV/dotfiles-macos/.config/xonsh/rc.d/rc.py /Users/mahd/DEV/dotfiles-macos/.xonshrc "$@"

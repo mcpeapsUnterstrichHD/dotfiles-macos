@@ -3,7 +3,7 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///Users/mahd/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/909431A7-2431-4BDC-B7CB-669B22BA7087/F3917386-5B48-444D-906E-643B40C7CBBD.png" added="2025-08-05T11:24:52.915381Z" modified="2025-08-05T11:24:52.915393Z" visited="2025-08-05T11:24:52.915388Z">
+  <bookmark href="file:///Users/mahd/Pictures/Cape.png" added="2025-09-20T19:50:53.068566Z" modified="2025-09-20T19:57:21.735915Z" visited="2025-09-20T19:50:53.068571Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -11,12 +11,38 @@
           <bookmark:group>Graphics</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-08-05T11:24:52.915391Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-09-20T19:57:21.735898Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///Users/mahd/Desktop/F3917386-5B48-444D-906E-643B40C7CBBD.png" added="2025-08-05T11:32:50.584852Z" modified="2025-08-05T11:32:57.433314Z" visited="2025-08-05T11:32:50.584860Z">
+  <bookmark href="file:///Users/mahd/Pictures/Logo.svg" added="2025-09-20T19:51:39.737808Z" modified="2025-09-20T19:51:39.738370Z" visited="2025-09-20T19:51:39.738003Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-09-20T19:51:39.738362Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/mahd/Pictures/Cape.xcf" added="2025-09-20T20:04:47.377578Z" modified="2025-09-20T20:04:47.690054Z" visited="2025-09-20T20:04:47.377592Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/x-xcf"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-09-20T20:04:47.690053Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/mahd/DEV/TU-Berlin-repo-aps/WiSe2025-26/C-Programming/2025-10-16/build/Feedback/feedback_first_canvas_exercise.png" added="2025-10-16T12:28:08.219800Z" modified="2025-10-16T12:28:08.811392Z" visited="2025-10-16T12:28:08.219814Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -24,7 +50,7 @@
           <bookmark:group>Graphics</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-08-05T11:32:57.433312Z" count="2"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2025-10-16T12:28:08.811391Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

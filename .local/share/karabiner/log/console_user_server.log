@@ -1,0 +1,187 @@
+[2025-11-17 06:12:24.464] [info] [console_user_server] version 15.7.0
+[2025-11-17 06:12:24.920] [info] [console_user_server] on_console_changed: on_console:true
+[2025-11-17 06:12:24.921] [info] [console_user_server] core_service_client is started.
+[2025-11-17 06:12:24.921] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:25.989] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:26.996] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:28.067] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:29.139] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:30.157] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:31.205] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:32.268] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:33.313] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:34.388] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:35.447] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:36.462] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:37.482] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:38.555] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:39.627] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:40.696] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:41.771] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:42.806] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:43.880] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:44.930] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:45.997] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:47.072] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:48.072] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:49.120] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:50.322] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:51.375] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:52.446] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:53.477] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:54.542] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:55.543] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:56.591] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:57.660] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:58.730] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:12:59.788] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:00.843] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:01.916] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:02.978] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:04.046] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:05.121] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:06.160] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:07.230] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:08.301] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:09.371] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:10.439] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:11.508] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:12.579] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:13.646] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:14.720] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:15.785] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:16.802] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:17.863] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:18.938] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:20.012] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:21.021] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:22.040] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:23.107] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:24.116] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:25.188] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:26.250] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:27.316] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:28.389] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:29.444] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:30.504] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:31.575] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:32.653] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:33.707] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:34.736] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:35.789] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:36.805] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:37.879] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:38.949] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:39.996] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:41.071] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:42.138] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:43.187] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:44.255] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:45.270] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:46.337] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:47.411] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:48.482] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:49.557] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:50.630] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:51.698] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:52.762] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:53.837] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:54.910] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:55.979] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:57.032] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:58.133] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:13:59.138] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:14:00.178] [error] [console_user_server] core_service_client connect_failed: No such file or directory
+[2025-11-17 06:14:01.242] [info] [console_user_server] core_service_client is connected.
+[2025-11-17 06:14:01.311] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-11-17 06:14:01.311] [info] [console_user_server] core_configuration is updated.
+[2025-11-17 06:14:31.519] [info] [console_user_server] Check for updates...
+[2025-11-17 06:14:34.961] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-11-17 06:14:34.961] [info] [console_user_server] core_configuration is updated.
+[2025-11-17 23:20:16.802] [info] [console_user_server] version 15.7.0
+[2025-11-17 23:20:23.691] [info] [console_user_server] on_console_changed: on_console:true
+[2025-11-17 23:20:23.888] [info] [console_user_server] core_service_client is started.
+[2025-11-17 23:20:23.918] [info] [console_user_server] core_service_client is connected.
+[2025-11-17 23:20:24.257] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-11-17 23:20:24.262] [info] [console_user_server] core_configuration is updated.
+[2025-11-17 23:20:54.644] [info] [console_user_server] Check for updates...
+[2025-11-18 10:10:44.028] [info] [console_user_server] version 15.7.0
+[2025-11-18 10:10:54.522] [info] [console_user_server] on_console_changed: on_console:true
+[2025-11-18 10:10:54.684] [info] [console_user_server] core_service_client is started.
+[2025-11-18 10:10:54.692] [info] [console_user_server] core_service_client is connected.
+[2025-11-18 10:10:54.859] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-11-18 10:10:54.860] [info] [console_user_server] core_configuration is updated.
+[2025-11-18 10:11:26.484] [info] [console_user_server] Check for updates...
+[2025-11-18 18:19:07.299] [info] [console_user_server] version 15.7.0
+[2025-11-18 18:19:17.410] [info] [console_user_server] on_console_changed: on_console:true
+[2025-11-18 18:19:17.464] [info] [console_user_server] core_service_client is started.
+[2025-11-18 18:19:17.488] [info] [console_user_server] core_service_client is connected.
+[2025-11-18 18:19:17.831] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-11-18 18:19:17.914] [info] [console_user_server] core_configuration is updated.
+[2025-11-18 18:19:48.557] [info] [console_user_server] Check for updates...
+[2025-11-22 09:34:29.530] [info] [console_user_server] version 15.7.0
+[2025-11-22 09:34:34.988] [info] [console_user_server] on_console_changed: on_console:true
+[2025-11-22 09:34:35.045] [info] [console_user_server] core_service_client is started.
+[2025-11-22 09:34:35.046] [info] [console_user_server] core_service_client is connected.
+[2025-11-22 09:34:35.133] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-11-22 09:34:35.157] [info] [console_user_server] core_configuration is updated.
+[2025-11-22 09:35:06.340] [info] [console_user_server] Check for updates...
+[2025-12-05 14:13:22.883] [info] [console_user_server] version 15.7.0
+[2025-12-05 14:13:40.740] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-05 14:13:40.800] [info] [console_user_server] core_service_client is started.
+[2025-12-05 14:13:40.804] [info] [console_user_server] core_service_client is connected.
+[2025-12-05 14:13:40.926] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-05 14:13:40.929] [info] [console_user_server] core_configuration is updated.
+[2025-12-05 14:14:12.983] [info] [console_user_server] Check for updates...
+[2025-12-09 17:23:38.592] [info] [console_user_server] version 15.7.0
+[2025-12-09 17:23:50.058] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-09 17:23:50.081] [info] [console_user_server] core_service_client is started.
+[2025-12-09 17:23:50.089] [info] [console_user_server] core_service_client is connected.
+[2025-12-09 17:23:51.483] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-09 17:23:51.491] [info] [console_user_server] core_configuration is updated.
+[2025-12-09 17:24:23.751] [info] [console_user_server] Check for updates...
+[2025-12-09 19:51:26.846] [info] [console_user_server] version 15.7.0
+[2025-12-09 19:51:38.707] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-09 19:51:38.945] [info] [console_user_server] core_service_client is started.
+[2025-12-09 19:51:38.946] [info] [console_user_server] core_service_client is connected.
+[2025-12-09 19:51:39.150] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-09 19:51:39.172] [info] [console_user_server] core_configuration is updated.
+[2025-12-09 19:52:09.726] [info] [console_user_server] Check for updates...
+[2025-12-09 23:26:40.956] [info] [console_user_server] version 15.7.0
+[2025-12-09 23:26:52.895] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-09 23:26:52.899] [info] [console_user_server] core_service_client is started.
+[2025-12-09 23:26:52.901] [info] [console_user_server] core_service_client is connected.
+[2025-12-09 23:26:52.977] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-09 23:26:52.986] [info] [console_user_server] core_configuration is updated.
+[2025-12-09 23:27:23.338] [info] [console_user_server] Check for updates...
+[2025-12-10 00:32:42.057] [info] [console_user_server] version 15.7.0
+[2025-12-10 00:32:52.566] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-10 00:32:52.570] [info] [console_user_server] core_service_client is started.
+[2025-12-10 00:32:52.575] [info] [console_user_server] core_service_client is connected.
+[2025-12-10 00:32:52.733] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-10 00:32:52.779] [info] [console_user_server] core_configuration is updated.
+[2025-12-10 00:33:24.363] [info] [console_user_server] Check for updates...
+[2025-12-10 08:48:26.446] [info] [console_user_server] version 15.7.0
+[2025-12-10 08:48:36.667] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-10 08:48:36.769] [info] [console_user_server] core_service_client is started.
+[2025-12-10 08:48:36.789] [info] [console_user_server] core_service_client is connected.
+[2025-12-10 08:48:37.432] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-10 08:48:37.486] [info] [console_user_server] core_configuration is updated.
+[2025-12-10 08:49:09.693] [info] [console_user_server] Check for updates...
+[2025-12-16 12:38:25.146] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-16 12:38:25.153] [info] [console_user_server] core_configuration is updated.
+[2025-12-16 12:38:42.811] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-16 12:38:42.811] [info] [console_user_server] core_configuration is updated.
+[2025-12-16 12:39:46.159] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-16 12:39:46.160] [info] [console_user_server] core_configuration is updated.
+[2025-12-16 12:40:04.610] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-16 12:40:04.611] [info] [console_user_server] core_configuration is updated.
+[2025-12-16 12:40:05.164] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-16 12:40:05.165] [info] [console_user_server] core_configuration is updated.
+[2025-12-16 12:43:49.190] [info] [console_user_server] version 15.7.0
+[2025-12-16 12:44:01.239] [info] [console_user_server] on_console_changed: on_console:true
+[2025-12-16 12:44:01.761] [info] [console_user_server] core_service_client is started.
+[2025-12-16 12:44:01.765] [info] [console_user_server] core_service_client is connected.
+[2025-12-16 12:44:02.446] [info] [console_user_server] Load /Users/mahd/.config/karabiner/karabiner.json...
+[2025-12-16 12:44:02.498] [info] [console_user_server] core_configuration is updated.
+[2025-12-16 12:44:33.001] [info] [console_user_server] Check for updates...

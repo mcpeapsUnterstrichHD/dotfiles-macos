@@ -20,7 +20,7 @@
 		"recache": true
 	},
 	"general": {
-		"multithreading": true,
+		"thread": true,
 		"processingTimeout": -1
 	},
 	"display": {
@@ -44,9 +44,14 @@
 			"ndigits": 3
 		},
 		"bar": {
-			"charElapsed": "■",
-			"charTotal": "-",
-			"border": true
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+    },
+			"border": {
+        "left": "[",
+        "right": "]"
+      }
 		},
 		"percent": {
 			"type": 2,

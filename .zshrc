@@ -1,6 +1,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export GIT_CONFIG="$HOME/DEV/dotfiles-macos/.gitconfig"
 export HOMEBREW_PREFIX="/opt/homebrew";
+export BREW_PREFIX="$(brew --prefix)"
+export PATH="$BREW_PREFIX/bin:$PATH"
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 export HOMEBREW_REPOSITORY="/opt/homebrew";
 export HOMEBREW_AUTO_UPDATE_SECS=1;
@@ -14,6 +16,7 @@ export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="/opt/homebrew/sbin:$PATH"
+#export PATH="$PATH:/opt/homebrew/Cellar/ruby/3.4.7/bin"
 export CLASSPATH=$CLASSPATH:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar
 # ~/.tmux/plugins
 export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
@@ -23,7 +26,8 @@ export PATH=/usr/local/bin/composer:$PATH
 export EDITOR=$(which nvim)
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
-export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.4.7/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="$HOME/exe:$PATH"
 export PATH="$HOME/exe/separator:$PATH"
@@ -45,10 +49,21 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="$HOME/.bun/bin/:$PATH"
 export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
 export PATH="$PATH:$HOME/.dotnet/tools"
-export PATH=$PATH:/Applications
+export PATH=$PATH:/Applications:/Volumes/SD200/Applications
+export ANDROID_HOME="/Volumes/SD200/Library/Android/sdk"
 #Setze den Terminal-Typ (optional, falls nötig)
 export TERM=xterm-256color
-
+export EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs"
+export DEBUGGER="/opt/homebrew/bin/gdb"
+export GUI_DEBUGGER="/Applications/gf2.app/Contents/MacOS/gf2"
+export VCPKG_ROOT="$HOME/DEV/vcpkg"
+export PATH="/Library/TeX/texbin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.console-ninja/bin:$PATH"
+export JAVA_HOME="/opt/homebrew/opt/openjdk"
+export PATH="$JAVA_HOME/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/share/umake/bin:$PATH"
 # Alias für Alacritty
 alias terminal='/Applications/Ghostty.app/Contents/MacOS/ghostty'
 
@@ -97,6 +112,8 @@ source <(fzf --zsh)
 source <(jj util completion zsh)
 source <(atuin init zsh)
 source <(atuin gen-completions -s zsh)
+source <(gh completion -s zsh)
+source <(gk completion zsh)
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
 #source ~/dlang/ldc-1.40.1/activate
@@ -111,18 +128,20 @@ alias fastfetch="$HOME/exe/separator/sep.sh | pv -qL 1000 | lolcat && /opt/homeb
 alias stop-mDNSResponder="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias start-mDNSResponder="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist"
 alias cga='if [ -z "$*" ]; then git add .; else git add $1; fi'
-alias cgc='if [ -z "$*" ]; then git commit -m "." --allow-empty; else git commit -m "$*" --allow-empty; fi'
-alias cgp='jj git push --allow-empty-description $*'
-alias cgs='jj status $*'
-alias cgpl='jj pull $*'
-alias cgcl='jj git clone --colocate $*'
-alias lazyg="lazyjj $*"
+alias cgc='if [ -z "$*" ]; then git commit -m "." --allow-empty --gpg-sign=3F462691 --signoff; else git commit -m "$*" --allow-empty --gpg-sign=3F462691 --signoff; fi'
+alias cgp='git push --signed=if-asked $*'
+alias cgs='git status $*'
+alias cgpl='git pull $*'
+alias cgcl='git clone $*'
+alias lazyg="lazygit $*"
 alias rm="trash $*"
 alias hangman="$HOME/exe/hangman"
 alias clock='tty-clock -sScxB -f "KW%V,%A,%0d/%m/%Y|%H:%M:%S"'
 alias ssh="zssh $*"
 alias trae="code $*"
 alias cursor="code $*"
+alias gf2="/Applications/gf2.app/Contents/MacOS/gf2 $*"
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale $*"
 
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
@@ -399,3 +418,25 @@ alias gf=gf
 export PATH="$PATH:/Users/mahd/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib:$LDFLAGS"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include:$CPPFLAGS"
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+
+autoload bashcompinit
+bashcompinit
+source /Users/mahd/DEV/vcpkg/scripts/vcpkg_completion.zsh
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Added by Antigravity
+export PATH="/Users/mahd/.antigravity/antigravity/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/mahd/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+source ${HOME}/.ghcup/env
+export PATH=/Users/mahd/.local/xonsh-env/xbin:$PATH

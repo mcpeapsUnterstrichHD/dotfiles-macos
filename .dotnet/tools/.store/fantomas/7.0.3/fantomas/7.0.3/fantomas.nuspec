@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>fantomas</id>
+    <version>7.0.3</version>
+    <authors>Florian Verdonck, Jindřich Ivánek, David Schaefer</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>fantomas_logo.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://fsprojects.github.io/fantomas/</projectUrl>
+    <description>This library aims at formatting F# source files based on a given configuration.
+Fantomas will ensure correct indentation and consistent spacing between elements in the source files.
+Some common use cases include:
+(1) Reformatting a code base to conform a universal page width
+(2) Converting legacy code from verbose syntax to light syntax
+(3) Formatting auto-generated F# signatures.</description>
+    <releaseNotes>### Fixed
+
+* * Application in indexed set should not be multiline. [#1999](https://github.com/fsprojects/fantomas/issues/1999)</releaseNotes>
+    <copyright>Copyright © 2025</copyright>
+    <tags>F# fsharp formatting beautifier indentation indenter</tags>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <repository type="git" url="https://github.com/fsprojects/fantomas" commit="fab1bd8fbb2023eeab53efbacff1ed93a1346597" />
+  </metadata>
+</package>

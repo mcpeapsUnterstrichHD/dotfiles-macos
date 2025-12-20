@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Fantomas.Core</name></assembly>
+<members>
+<member name="M:Fantomas.Core.Queue`1.SkipExists(System.Int32,Microsoft.FSharp.Core.FSharpFunc{`0,System.Boolean},Microsoft.FSharp.Core.FSharpFunc{`0[],System.Boolean})">
+<summary>
+ Equivalent of q |&gt; Queue.toSeq |&gt; Seq.skip n |&gt; Seq.skipWhile p |&gt; Seq.exists f, optimized for speed
+</summary>
+</member>
+<member name="T:Fantomas.Core.Queue`1">
+<summary>
+ append only collection optimized for quick append of block of data and query operations
+ data - list of blocks in reverse order
+</summary>
+</member>
+<member name="P:Fantomas.Core.FormatResult.Cursor">
+<summary>
+ New position of the input cursor.
+ This can be None when no cursor was passed as input or no position was resolved.
+</summary>
+</member>
+<member name="P:Fantomas.Core.FormatResult.Code">
+<summary>
+ Formatted code
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.TransformAST(Fantomas.FCS.Syntax.ParsedInput,System.String)">
+<summary>
+ Transform a ParsedInput to an Oak
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.TransformAST(Fantomas.FCS.Syntax.ParsedInput)">
+<summary>
+ Transform a ParsedInput to an Oak
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.ParseOakAsync(System.Boolean,System.String)">
+<summary>
+ Parse a source string to SyntaxOak
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.ParseAsync(System.Boolean,System.String)">
+<summary>
+ Parse a source string using given config
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.MakeRange(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+<summary>
+ Make a range from (startLine, startCol) to (endLine, endCol) to select some text
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.MakePosition(System.Int32,System.Int32)">
+<summary>
+ Make a pos from line and column
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.IsValidFSharpCodeAsync(System.Boolean,System.String)">
+<summary>
+ Check whether an input string is invalid in F# by attempting to parse the code.
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.GetVersion">
+<summary>
+ Returns the version of Fantomas found in the AssemblyInfo
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatSelectionAsync(System.Boolean,System.String,Fantomas.FCS.Text.Range,Fantomas.Core.FormatConfig)">
+<summary>
+ Format a part of source string using given config, and return the (formatted) selected part only.
+ Beware that the range argument is inclusive. The closest expression inside the selection will be formatted if possible.
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatSelectionAsync(System.Boolean,System.String,Fantomas.FCS.Text.Range)">
+<summary>
+ Format a part of a source string and return the (formatted) selected part only.
+ Beware that the range argument is inclusive. The closest expression inside the selection will be formatted if possible.
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatOakAsync(Fantomas.Core.SyntaxOak.Oak,Fantomas.Core.FormatConfig)">
+<summary>
+ Format SyntaxOak to string using given config
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatOakAsync(Fantomas.Core.SyntaxOak.Oak)">
+<summary>
+ Format SyntaxOak to string
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatDocumentAsync(System.Boolean,System.String,Fantomas.Core.FormatConfig,Fantomas.FCS.Text.Position)">
+ <summary>
+ Format a source string using an optional config.
+ </summary>
+ <param name="isSignature">Determines whether the F# parser will process the source as signature file.</param>
+ <param name="source">F# source code</param>
+ <param name="config">Fantomas configuration</param>
+ <param name="cursor">The location of a cursor, zero-based.</param>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatDocumentAsync(System.Boolean,System.String,Fantomas.Core.FormatConfig)">
+ <summary>
+ Format a source string using an optional config.
+ </summary>
+ <param name="isSignature">Determines whether the F# parser will process the source as signature file.</param>
+ <param name="source">F# source code</param>
+ <param name="config">Fantomas configuration</param>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatDocumentAsync(System.Boolean,System.String)">
+ <summary>
+ Format a source string using an optional config.
+ </summary>
+ <param name="isSignature">Determines whether the F# parser will process the source as signature file.</param>
+ <param name="source">F# source code</param>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatASTAsync(Fantomas.FCS.Syntax.ParsedInput,System.String)">
+<summary>
+ Format an abstract syntax tree with the original source for trivia processing
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatASTAsync(Fantomas.FCS.Syntax.ParsedInput,Fantomas.Core.FormatConfig)">
+<summary>
+ Format an abstract syntax tree using a given config
+</summary>
+</member>
+<member name="M:Fantomas.Core.CodeFormatter.FormatASTAsync(Fantomas.FCS.Syntax.ParsedInput)">
+<summary>
+ Format an abstract syntax tree
+</summary>
+</member>
+<member name="M:Fantomas.Core.RangeHelpers.rangeContainsRange(Fantomas.FCS.Text.Range,Fantomas.FCS.Text.Range)">
+<summary>
+ Checks if Range B is fully contained by Range A
+</summary>
+</member>
+<member name="M:Fantomas.Core.List.foldWithLast``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``0}},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``0}},``0,Microsoft.FSharp.Collections.FSharpList{``1})">
+<summary>
+ Similar to a List.fold but pass in another fold function for when the last item is reached.
+</summary>
+</member>
+<member name="M:Fantomas.Core.List.cutOffLast``1(Microsoft.FSharp.Collections.FSharpList{``0})">
+<summary>
+ Removes the last element of a list
+</summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.TypeConstraintWhereNotSupportsNull">
+<summary>
+ `&apos;T: not null` in `type C&lt;&apos;T when &apos;T: not null&gt; = class end`
+</summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.MemberDefnExplicitCtorNode">
+<summary>
+ Secondary constructor
+ new (pat: type) = expr
+</summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.ModuleDecl">
+<summary>
+ Each case in this DU should have a container node
+</summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.AttributeListNode">
+<summary>
+ The content from [&lt; to &gt;]
+</summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.ExprExplicitConstructorThenExpr">
+<summary>
+ then &lt;expr&gt;
+ Only valid in secondary constructors, original coming from SynExpr.Sequential(trivia = { SeparatorRange = Some mThen })
+</summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.ExprRecordNode">
+ <summary>
+ Represents a record instance, parsed from both `SynExpr.Record` and `SynExpr.AnonRecd`.
+ </summary>
+</member>
+<member name="T:Fantomas.Core.SyntaxOak.PatLeftMiddleRight">
+<summary>
+ A pattern composed from a left hand-side pattern, a single text token/operator and a right hand-side pattern.
+</summary>
+</member>
+<member name="F:Fantomas.Core.SyntaxOak.TypeFunsNode.Parameters@">
+<summary>
+ Type + arrow
+</summary>
+</member>
+<member name="P:Fantomas.Core.SyntaxOak.TypeFunsNode.Parameters">
+<summary>
+ Type + arrow
+</summary>
+</member>
+<member name="M:Fantomas.Core.Queue.skipExists``1(System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpFunc{``0[],System.Boolean},Fantomas.Core.Queue{``0})">
+<summary>
+ Equivalent of q |&gt; Queue.toSeq |&gt; Seq.skip n |&gt; Seq.skipWhile p |&gt; Seq.exists f
+</summary>
+</member>
+<member name="M:Fantomas.Core.Trivia.insertCursor(Fantomas.Core.SyntaxOak.Oak,Fantomas.FCS.Text.Position)">
+<summary>
+ Try and insert a cursor position as Trivia inside the Oak
+ The cursor could either be inside a Node or floating around one.
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.Context.Default">
+<summary>
+ Initialize with a string writer and use space as delimiter
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.WriterModel.Column">
+<summary>
+ current length of last line of output
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.WriterModel.Mode">
+<summary>
+ dummy = &quot;fake&quot; writer used in `autoNln`, `autoNlnByFuture`
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.WriterModel.WriteBeforeNewline">
+<summary>
+ text to be written before next newline
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.WriterModel.AtColumn">
+<summary>
+ helper indentation information, if AtColumn &gt; Indent after NewLine, Indent will be set to AtColumn
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.WriterModel.Indent">
+<summary>
+ current indentation
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.WriterModel.Lines">
+<summary>
+ lines of resulting text, in reverse order (to allow more efficient adding line to end)
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.colWithNlnWhenItemIsMultiline(Microsoft.FSharp.Collections.FSharpList{Fantomas.Core.Context.ColMultilineItem},Fantomas.Core.Context.Context)">
+<summary>
+ This helper function takes a list of expressions and ranges.
+ If the expression is multiline it will add a newline before and after the expression.
+ Unless it is the first expression in the list, that will never have a leading new line.
+ F.ex.
+ let a = AAAA
+ let b =
+     BBBB
+     BBBB
+ let c = CCCC
+
+ will be formatted as:
+ let a = AAAA
+
+ let b =
+     BBBB
+     BBBBB
+
+ let c = CCCC
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.colAutoNlnSkip0``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}})">
+<summary>
+ Similar to col, skip auto newline for index 0
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.exceedsWidth(System.Int32,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ similar to futureNlnCheck but validates whether the expression is going over the max page width
+ This functions is does not use any caching
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.autoIndentAndNlnIfExpressionExceedsPageWidth(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ try and write the expression on the remainder of the current line
+ add an indent and newline if the expression is longer
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.leadingExpressionIsMultiline``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{System.Boolean,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,``0}},Fantomas.Core.Context.Context)">
+<summary>
+ A leading expression is not consider multiline if it has a comment before it.
+ For example
+ let a = 7
+ // foo
+ let b = 8
+ let c = 9
+ The second binding b is not consider multiline.
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.leadingExpressionResult``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.Tuple{System.Int32,System.Int32},System.Tuple{System.Int32,System.Int32}},Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,``0}},Fantomas.Core.Context.Context)">
+<summary>
+ provide the line and column before and after the leadingExpression to to the continuation expression
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.sepCloseT">
+<summary>
+ closing token of tuple
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.sepOpenT">
+<summary>
+ opening token of tuple
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.sepOpenAnonRecdFixed">
+<summary>
+ opening token of anon record
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.sepCloseLFixed">
+<summary>
+ closing token of list
+</summary>
+</member>
+<member name="P:Fantomas.Core.Context.sepOpenLFixed">
+<summary>
+ opening token of list
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.rep(System.Int32,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ Repeat application of a function n times
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.ifElse(System.Boolean,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ b is true, apply f1 otherwise apply f2
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.optPre``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}},Fantomas.Core.Context.Context)">
+<summary>
+ Similar to opt, but apply f2 at the beginning if there is a value
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.optSingle``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``1}},Microsoft.FSharp.Core.FSharpOption{``0},``1)">
+<summary>
+ similar to opt, only takes a single function f to apply when there is a value
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.opt``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}},Fantomas.Core.Context.Context)">
+<summary>
+ If there is a value, apply f and f&apos; accordingly, otherwise do nothing
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.colPre``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}},Fantomas.Core.Context.Context)">
+<summary>
+ Similar to col, apply one more function f2 at the beginning if the input sequence is not empty
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.colPost``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}},Fantomas.Core.Context.Context)">
+<summary>
+ Similar to col, apply one more function f2 at the end if the input sequence is not empty
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.col``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}},Fantomas.Core.Context.Context)">
+<summary>
+ Process collection - keeps context through the whole processing
+ calls f for every element in sequence and f&apos; between every two elements
+ as a separator. This is a variant that works on typed collections.
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.coli``1(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context}}},Fantomas.Core.Context.Context)">
+<summary>
+ Similar to col, and supply index as well
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.op_PlusGreater(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ Function composition operator
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.atCurrentColumnIndent(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ Write everything at current column indentation, set `indent` and `atColumn` on current column position
+ /// Example (same as above):
+ { X = // indent=2, atColumn=2
+       &quot;some long string&quot; // indent=6, atColumn=2
+   Y = 1 // indent=2, atColumn=2
+ }
+ `atCurrentColumn` was called on `X`, then `indent` was called, &quot;some long string&quot; have indent 6, because it is indented from `atCurrentColumn` pos (2).
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.atCurrentColumn(Microsoft.FSharp.Core.FSharpFunc{Fantomas.Core.Context.Context,Fantomas.Core.Context.Context},Fantomas.Core.Context.Context)">
+<summary>
+ `atCurrentColumn` was called on `X`, then `indent` was called, but &quot;some long string&quot; have indent only 4, because it is bigger than `atColumn` (2).
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.unindent(Fantomas.Core.Context.Context)">
+<summary>
+ Unindent one more level based on configuration
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.indent(Fantomas.Core.Context.Context)">
+<summary>
+ Indent one more level based on configuration
+</summary>
+</member>
+<member name="M:Fantomas.Core.Context.writerEvent(Fantomas.Core.Context.WriterEvent,Fantomas.Core.Context.Context)">
+<summary>
+ This adds a WriterEvent to the Context.
+ One event could potentially be split up into multiple events.
+ The event is also being processed in the WriterModel of the Context.
+</summary>
+</member>
+<member name="M:Fantomas.Core.MultipleDefineCombinations.mergeMultipleFormatResults(Fantomas.Core.FormatConfig,Microsoft.FSharp.Collections.FSharpList{System.Tuple{Fantomas.Core.DefineCombination,Fantomas.Core.FormatResult}})">
+<summary>
+ When conditional defines were found in the source code, we format the code using all possible combinations.
+ Depending on the values of each combination, code will either be produced or not.
+ In this function, we try to piece back all the active code fragments.
+</summary>
+</member>
+<member name="M:Fantomas.Core.Validation.isValidFSharpCode(System.Boolean,System.String)">
+<summary>
+ Check whether an input string is invalid in F# by looking for errors and warnings in the diagnostics.
+</summary>
+</member>
+</members>
+</doc>

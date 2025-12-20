@@ -14,5 +14,69 @@
       "CXX": "/usr/bin/clang++"
     },
     "isTrusted": true
+  },
+  {
+    "name": "Clang 17.0.0 arm64-apple-darwin25.0.0",
+    "compilers": {
+      "C": "/usr/bin/clang",
+      "CXX": "/usr/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "Clang 17.0.0 arm64-apple-darwin25.2.0",
+    "compilers": {
+      "C": "/usr/bin/clang",
+      "CXX": "/usr/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "Clang 21.1.2 arm64-apple-darwin25.0.0",
+    "compilers": {
+      "C": "/opt/homebrew/opt/llvm/bin/clang",
+      "CXX": "/opt/homebrew/opt/llvm/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "Clang 21.1.2 arm64-apple-darwin25.2.0",
+    "compilers": {
+      "C": "/opt/homebrew/opt/llvm/bin/clang",
+      "CXX": "/opt/homebrew/opt/llvm/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "Clang-cl 21.1.2 arm64-pc-windows-msvc",
+    "compilers": {
+      "C": "/opt/homebrew/opt/llvm/bin/clang-cl",
+      "CXX": "/opt/homebrew/opt/llvm/bin/clang-cl"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "GCC 15.2.0 aarch64-apple-darwin25",
+    "compilers": {
+      "C": "/opt/homebrew/bin/aarch64-apple-darwin25-gcc-15",
+      "CXX": "/opt/homebrew/bin/aarch64-apple-darwin25-g++-15"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "GCC 15.2.0 i686-w64-mingw32",
+    "compilers": {
+      "C": "/opt/homebrew/bin/i686-w64-mingw32-gcc",
+      "CXX": "/opt/homebrew/bin/i686-w64-mingw32-g++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "GCC 15.2.0 x86_64-w64-mingw32",
+    "compilers": {
+      "C": "/opt/homebrew/bin/x86_64-w64-mingw32-gcc",
+      "CXX": "/opt/homebrew/bin/x86_64-w64-mingw32-g++"
+    },
+    "isTrusted": true
   }
 ]

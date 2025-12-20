@@ -12,3 +12,4 @@ PATH=~/.console-ninja/.bin:$PATH
 export PATH="$PATH:/Users/mahd/.lmstudio/bin"
 # End of LM Studio CLI section
 
+source ${HOME}/.ghcup/env

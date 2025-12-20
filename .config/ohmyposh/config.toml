@@ -1,126 +1,158 @@
-#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
-
 console_title_template = '{{.PWD}}{{if .Root}} : root{{end}} : {{.Shell}}'
+version = 3
 final_space = true
-version = 2
+
+[transient_prompt]
+  template = '󰁔 '
+  foreground = 'white'
+  background = 'transparent'
 
 [[blocks]]
   type = 'prompt'
   alignment = 'left'
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = '╭─'
     foreground = 'white'
     background = 'transparent'
-
-  [[blocks.segments]]
-    type = 'os'
-    style = 'plain'
-    foreground = 'black'
-    background = 'white'
-    template = ' {{ if .WSL }}WSL at {{ end }}{{.Icon}} '
-
-    [blocks.segments.properties]
-      macos = ''
-      arch = '󰣇'
-      ubuntu = ''
-      rocky = ''
-      fedora = ''
-      redhat = ''
-      debian = ''
-      manjaro = '󱘊'
-      alma = ''
-      android = ''
-      windows = ''
-      linux = ''
-
-  [[blocks.segments]]
     type = 'text'
     style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    template = ' {{ if .WSL }}WSL at {{ end }}{{.Icon}} '
+    foreground = 'black'
+    background = 'white'
+    type = 'os'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      alma = ''
+      android = ''
+      arch = '󰣇'
+      cache_duration = 'none'
+      debian = ''
+      fedora = ''
+      linux = ''
+      macos = ''
+      manjaro = '󱘊'
+      redhat = ''
+      rocky = ''
+      ubuntu = ''
+      windows = ''
+
+  [[blocks.segments]]
     template = ''
     foreground = 'white'
     background = 'blue'
+    type = 'text'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
   [[blocks.segments]]
-    type = 'path'
-    style = 'plain'
     template = '  {{.Path}} '
     foreground = 'white'
     background = 'blue'
+    type = 'path'
+    style = 'plain'
 
     [blocks.segments.properties]
+      cache_duration = 'none'
       style = 'full'
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = ''
     foreground = 'blue'
     background = 'black'
+    type = 'text'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
   [[blocks.segments]]
-    type = 'session'
-    style = 'plain'
     template = ' {{ if .SSHSession }}󰣀 {{ end }}{{ .UserName }}@{{ .HostName }} '
     foreground = 'white'
     background = 'black'
+    type = 'session'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = ''
     foreground = 'black'
     background = 'white'
-
-  [[blocks.segments]]
-    type = "shell"
-    style = "plain"
-    foreground = "black"
-    background = "white"
-
-    [blocks.segments.properties.mapped_shell_names]
-      pwsh = ''
-      powershell = ''
-      zsh = 'zsh'
-      bash = ''
-
-  [[blocks.segments]]
     type = 'text'
     style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    foreground = 'black'
+    background = 'white'
+    type = 'shell'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+      [blocks.segments.properties.mapped_shell_names]
+        bash = ''
+        powershell = ''
+        pwsh = ''
+        zsh = 'zsh'
+
+  [[blocks.segments]]
     template = ''
     foreground = 'white'
     background = 'transparent'
+    type = 'text'
+    style = 'plain'
 
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
 [[blocks]]
   type = 'prompt'
   alignment = 'right'
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = ''
     foreground = 'white'
     background = 'transparent'
+    type = 'text'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
   [[blocks.segments]]
-    type = 'time'
-    style = 'plain'
     template = ' at {{.CurrentDate | date .Format}}  '
     foreground = 'black'
     background = 'white'
+    type = 'time'
+    style = 'plain'
 
     [blocks.segments.properties]
+      cache_duration = 'none'
       time_format = '02/01/2006 | 15:04:05.000'
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = '─╮'
     foreground = 'white'
     background = 'transparent'
+    type = 'text'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
 [[blocks]]
   type = 'prompt'
@@ -128,38 +160,45 @@ version = 2
   newline = true
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = '╰─'
     foreground = 'white'
     background = 'transparent'
-
-  [[blocks.segments]]
-    type = 'root'
-    style = 'plain'
-    foreground = 'white'
-    background = 'transparent'
-    template = '$'
-
-  [[blocks.segments]]
     type = 'text'
     style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    template = '$'
+    foreground = 'white'
+    background = 'transparent'
+    type = 'root'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
     template = ' '
     foreground = 'white'
     background = 'transparent'
+    type = 'text'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
 
 [[blocks]]
   type = 'rprompt'
   alignment = 'right'
 
   [[blocks.segments]]
-    type = 'text'
-    style = 'plain'
     template = '─╯'
     foreground = 'white'
     background = 'transparent'
+    type = 'text'
+    style = 'plain'
 
-[transient_prompt]
-background = 'transparent'
-foreground = 'white'
-template = '󰁔 '
+    [blocks.segments.properties]
+      cache_duration = 'none'

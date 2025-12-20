@@ -1,0 +1,10 @@
+{
+    "machine_specific": { "krbn-empty-machine-identifier": { "enable_multitouch_extension": true } },
+    "profiles": [
+        {
+            "name": "Default profile",
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+        }
+    ]
+}

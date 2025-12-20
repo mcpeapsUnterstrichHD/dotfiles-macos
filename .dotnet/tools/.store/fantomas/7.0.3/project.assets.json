@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0/osx-arm64": {
+      "fantomas/7.0.3": {
+        "type": "package",
+        "tools": {
+          "tools/net8.0/any/Argu.dll": {},
+          "tools/net8.0/any/DotnetToolSettings.xml": {},
+          "tools/net8.0/any/EditorConfig.Core.dll": {},
+          "tools/net8.0/any/FSharp.Core.dll": {},
+          "tools/net8.0/any/Fable.Core.dll": {},
+          "tools/net8.0/any/Fantomas.Client.dll": {},
+          "tools/net8.0/any/Fantomas.Client.xml": {},
+          "tools/net8.0/any/Fantomas.Core.dll": {},
+          "tools/net8.0/any/Fantomas.Core.xml": {},
+          "tools/net8.0/any/Fantomas.FCS.dll": {},
+          "tools/net8.0/any/Fantomas.FCS.xml": {},
+          "tools/net8.0/any/Ignore.dll": {},
+          "tools/net8.0/any/MessagePack.Annotations.dll": {},
+          "tools/net8.0/any/MessagePack.dll": {},
+          "tools/net8.0/any/Microsoft.NET.StringTools.dll": {},
+          "tools/net8.0/any/Microsoft.VisualStudio.Threading.dll": {},
+          "tools/net8.0/any/Microsoft.VisualStudio.Validation.dll": {},
+          "tools/net8.0/any/Nerdbank.Streams.dll": {},
+          "tools/net8.0/any/Newtonsoft.Json.dll": {},
+          "tools/net8.0/any/SemanticVersioning.dll": {},
+          "tools/net8.0/any/Serilog.Sinks.Console.dll": {},
+          "tools/net8.0/any/Serilog.dll": {},
+          "tools/net8.0/any/SerilogTraceListener.dll": {},
+          "tools/net8.0/any/Spectre.Console.dll": {},
+          "tools/net8.0/any/StreamJsonRpc.dll": {},
+          "tools/net8.0/any/System.Configuration.ConfigurationManager.dll": {},
+          "tools/net8.0/any/System.IO.Abstractions.dll": {},
+          "tools/net8.0/any/System.IO.Pipelines.dll": {},
+          "tools/net8.0/any/System.Security.Cryptography.ProtectedData.dll": {},
+          "tools/net8.0/any/TestableIO.System.IO.Abstractions.Wrappers.dll": {},
+          "tools/net8.0/any/TestableIO.System.IO.Abstractions.dll": {},
+          "tools/net8.0/any/Thoth.Json.Net.dll": {},
+          "tools/net8.0/any/fantomas.deps.json": {},
+          "tools/net8.0/any/fantomas.dll": {},
+          "tools/net8.0/any/fantomas.runtimeconfig.json": {},
+          "tools/net8.0/any/fantomas.xml": {},
+          "tools/net8.0/any/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {}
+}

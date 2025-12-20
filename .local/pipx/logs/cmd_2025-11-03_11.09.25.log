@@ -1,0 +1,66 @@
+    49.3ms (setup:1113): 2025-11-03 11:09:25
+    49.4ms (setup:1114): /opt/homebrew/bin/pipx install freetype-py
+    49.4ms (setup:1115): pipx version is 1.8.0
+    49.4ms (setup:1116): Default python interpreter is '/opt/homebrew/opt/python@3.13/libexec/bin/python'
+    49.9ms (package_name_from_spec:381): Determined package name: freetype-py
+    49.9ms (package_name_from_spec:382): Package name determined in 0.0s
+    50.0ms (create_venv:164): Creating virtual environment
+    50.1ms (run_subprocess:175): running /opt/homebrew/opt/python@3.13/libexec/bin/python -m venv --without-pip /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py
+    81.5ms (run_subprocess:195): stdout:
+    81.6ms (run_subprocess:197): stderr:
+    81.6ms (run_subprocess:198): returncode: 0
+    82.1ms (run_subprocess:175): running <checking pip's availability>
+   100.2ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x109c02530>, origin='/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/__init__.py', submodule_search_locations=['/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip'])
+   100.2ms (run_subprocess:198): returncode: 0
+   100.4ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   117.7ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py/lib/python3.13/site-packages
+   117.8ms (run_subprocess:198): returncode: 0
+   118.0ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   135.1ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages
+   135.2ms (run_subprocess:198): returncode: 0
+   135.6ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py/bin/python --version
+   142.9ms (run_subprocess:195): stdout: Python 3.13.7
+   142.9ms (run_subprocess:197): stderr:
+   142.9ms (run_subprocess:198): returncode: 0
+   143.2ms (_parsed_package_to_package_or_url:139): cleaned package spec: freetype-py
+   143.2ms (install_package:247): Installing freetype-py
+   143.4ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py/bin/python -m pip --no-input install freetype-py
+   829.6ms (run_subprocess:198): returncode: 0
+   830.2ms (run_subprocess:175): running <fetch_info_in_venv commands>
+   855.7ms (run_subprocess:195): stdout: {"sys_path": ["/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python313.zip", "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13", "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload", "/Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py/lib/python3.13/site-packages", "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages"], "python_version": "3.13.7", "environment": {"implementation_name": "cpython", "implementation_version": "3.13.7", "os_name": "posix", "platform_machine": "arm64", "platform_release": "25.0.0", "platform_system": "Darwin", "platform_version": "Darwin Kernel Version 25.0.0: Wed Sep 17 21:42:08 PDT 2025; root:xnu-12377.1.9~141/RELEASE_ARM64_T8132", "python_full_version": "3.13.7", "platform_python_implementation": "CPython", "python_version": "3.13", "sys_platform": "darwin"}}
+   855.8ms (run_subprocess:198): returncode: 0
+   859.3ms (get_venv_metadata_for_package:351): get_venv_metadata_for_package: 29ms
+   859.4ms (_parsed_package_to_package_or_url:139): cleaned package spec: freetype-py
+   859.6ms (rmdir:56): removing directory /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/freetype-py
+   864.1ms (cli:1184): PipxError: No apps associated with package freetype-py or its dependencies. If you are attempting to install a library, pipx should not be used.
+Consider using pip or a similar tool instead.
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/main.py", line 1181, in cli
+    return run_pipx_command(parsed_pipx_args, subparsers)
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/main.py", line 282, in run_pipx_command
+    return commands.install(
+           ~~~~~~~~~~~~~~~~^
+        None,
+        ^^^^^
+    ...<13 lines>...
+        python_flag_passed=python_flag_passed,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/commands/install.py", line 108, in install
+    run_post_install_actions(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        venv,
+        ^^^^^
+    ...<5 lines>...
+        force=force,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Cellar/pipx/1.8.0/libexec/lib/python3.13/site-packages/pipx/commands/common.py", line 421, in run_post_install_actions
+    raise PipxError(
+    ...<5 lines>...
+    )
+pipx.util.PipxError: No apps associated with package freetype-py or its dependencies. If you are attempting to install a library, pipx should not be used.
+Consider using pip or a similar tool instead.
+   865.3ms (cli:1192): pipx finished.

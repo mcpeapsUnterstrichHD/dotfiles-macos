@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Fantomas.Client</name></assembly>
+<members>
+<member name="P:Fantomas.Client.Contracts.FantomasResponse.Cursor">
+<summary>
+ Cursor position after formatting.
+ Zero-based.
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FantomasResponse.SelectedRange">
+<summary>
+ The actual range that was used to format a selection.
+ This can differ from the input selection range if the selection had leading or trailing whitespace.
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FormatSelectionRequest.Range">
+<summary>
+ Range follows the same semantics of the FSharp Compiler Range type.
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FormatSelectionRequest.Config">
+<summary>
+ Overrides the found .editorconfig.
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FormatSelectionRequest.FilePath">
+<summary>
+ File path will be used to identify the .editorconfig options
+ Unless the configuration is passed
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FormatDocumentRequest.Cursor">
+<summary>
+ The current position of the cursor.
+ Zero-based
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FormatDocumentRequest.Config">
+<summary>
+ Overrides the found .editorconfig.
+</summary>
+</member>
+<member name="P:Fantomas.Client.Contracts.FormatDocumentRequest.FilePath">
+<summary>
+ File path will be used to identify the .editorconfig options
+ Unless the configuration is passed
+</summary>
+</member>
+</members>
+</doc>

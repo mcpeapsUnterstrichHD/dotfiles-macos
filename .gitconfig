@@ -5,7 +5,7 @@
     clone = jj git clone --colocate $*
 
 [pull]
-    rebase = true
+	ff = only
 
 [core]
 	eol = lf
@@ -23,17 +23,15 @@
 [oh-my-zsh]
 	lastVersion = 8510847ff38a142850e4a065dc3cf09555260ff7
 [commit]
-	gpgSign = false
+	gpgSign = true
 [tag]
-	gpgSign = false
+	gpgSign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = mcpeapsUnterstrichHD
-	email = mcpeaps_HD@outlook.com
 	name = mcpeapsUnterstrichHD
 	email = mcpeaps_HD@outlook.com
 [lfs]

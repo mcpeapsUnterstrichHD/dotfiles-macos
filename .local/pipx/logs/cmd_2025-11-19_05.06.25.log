@@ -1,0 +1,34 @@
+   100.0ms (setup:1113): 2025-11-19 05:06:25
+   100.1ms (setup:1114): /opt/homebrew/bin/pipx install markitdown[all]
+   100.1ms (setup:1115): pipx version is 1.8.0
+   100.2ms (setup:1116): Default python interpreter is '/opt/homebrew/opt/python@3.13/libexec/bin/python'
+   101.0ms (package_name_from_spec:381): Determined package name: markitdown
+   101.0ms (package_name_from_spec:382): Package name determined in 0.0s
+   101.1ms (create_venv:164): Creating virtual environment
+   101.2ms (run_subprocess:175): running /opt/homebrew/opt/python@3.13/libexec/bin/python -m venv --without-pip /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/markitdown
+   132.9ms (run_subprocess:195): stdout:
+   133.0ms (run_subprocess:197): stderr:
+   133.0ms (run_subprocess:198): returncode: 0
+   133.5ms (run_subprocess:175): running <checking pip's availability>
+   150.4ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x104fbe5d0>, origin='/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/__init__.py', submodule_search_locations=['/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip'])
+   150.4ms (run_subprocess:198): returncode: 0
+   151.1ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/markitdown/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   168.6ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/markitdown/lib/python3.13/site-packages
+   168.7ms (run_subprocess:198): returncode: 0
+   168.9ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   186.0ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages
+   186.0ms (run_subprocess:198): returncode: 0
+   186.4ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/markitdown/bin/python --version
+   194.1ms (run_subprocess:195): stdout: Python 3.13.7
+   194.2ms (run_subprocess:197): stderr:
+   194.2ms (run_subprocess:198): returncode: 0
+   194.4ms (_parsed_package_to_package_or_url:139): cleaned package spec: markitdown[all]
+   194.5ms (install_package:247): Installing markitdown from spec 'markitdown[all]'
+   194.7ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/markitdown/bin/python -m pip --no-input install markitdown[all]
+ 23440.1ms (run_subprocess:198): returncode: 0
+ 23440.9ms (run_subprocess:175): running <fetch_info_in_venv commands>
+ 23465.0ms (run_subprocess:195): stdout: {"sys_path": ["/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python313.zip", "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13", "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload", "/Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/markitdown/lib/python3.13/site-packages", "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages"], "python_version": "3.13.7", "environment": {"implementation_name": "cpython", "implementation_version": "3.13.7", "os_name": "posix", "platform_machine": "arm64", "platform_release": "25.2.0", "platform_system": "Darwin", "platform_version": "Darwin Kernel Version 25.2.0: Thu Nov 13 23:28:51 PST 2025; root:xnu-12377.61.11~7/RELEASE_ARM64_T8132", "python_full_version": "3.13.7", "platform_python_implementation": "CPython", "python_version": "3.13", "sys_platform": "darwin"}}
+ 23465.0ms (run_subprocess:198): returncode: 0
+ 23877.7ms (get_venv_metadata_for_package:351): get_venv_metadata_for_package: 437ms
+ 23877.8ms (_parsed_package_to_package_or_url:139): cleaned package spec: markitdown[all]
+ 23885.5ms (cli:1192): pipx finished.
