@@ -114,7 +114,9 @@ node_modules/
 .local/share/atuin/records.db
 .local/share/atuin/records.db-shm
 .local/share/atuin/records.db-wal
-
+.local/share/atuin/host_id
+.local/share/atuin/key
+.local/share/atuin/latest_version
 
 # ===========================================
 # xonsh
