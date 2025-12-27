@@ -122,3 +122,19 @@ node_modules/
 # xonsh
 # ===========================================
 .local/share/xonsh/history_json/**/*
+
+# ===========================================
+# Doom Emacs (Installation, nicht Config)
+# ===========================================
+.config/emacs/
+.config/emacs.bak/
+
+# ===========================================
+# Neovim lazy plugins (werden automatisch installiert)
+# ===========================================
+.local/share/nvim/lazy/
+
+# ===========================================
+# Yazi plugins
+# ===========================================
+.config/yazi/plugins/
