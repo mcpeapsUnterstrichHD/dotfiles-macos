@@ -1,14 +1,105 @@
+# ===========================================
+# macOS System Files
+# ===========================================
 .DS_Store
 **/.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+# ===========================================
+# VS Code - Extensions sollten nicht getrackt werden
+# ===========================================
+.vscode/extensions/
+.vscode/extensions-storage/
+
+# ===========================================
+# VS Kubernetes Tools (sehr groß)
+# ===========================================
+.vs-kubernetes/
+
+# ===========================================
+# Local / Cache Dateien
+# ===========================================
+# Python Virtual Environments
+.local/xonsh-env/
+.local/share/virtualenvs/
+
+# Package Caches
+.local/xonsh-env/pkgs/cache/
+
+# Podman / Container Images (sehr groß!)
+.local/share/containers/
+.local/share/podman-desktop/
+
+# NuGet Cache
+.local/share/NuGet/
+
+# NVim Mason packages (können neu installiert werden)
+.local/share/nvim/mason/
+
+# Trash
+.local/share/Trash/
+
+# Logs
+.local/share/weechat/weechat.log
+.local/share/weechat/logs/
+
+# Docker scout cache
+.docker/scout/
+
+# ===========================================
+# Secrets und sensible Daten
+# ===========================================
 .config/gh/hosts.yml
 .config/github-copilot/hosts.json
-/.local/share/Trash/files/
-/.local/share/Trash/info/
-/.docker/scout
-/.config/raycast/extensions
-/.config/raycast/extensions/e387a763-b755-406b-ade3-fe5add1718a0
-.local/share/weechat/weechat.log
-/.local/share/weechat/logs
 .config/weechat/sec.conf
-.config/weechat/sec.conf
+.ssh/id_*
+.ssh/known_hosts
+.ssh/*.pem
+
+# ===========================================
+# Raycast Extensions (groß, lokal installiert)
+# ===========================================
+.config/raycast/extensions/
+
+# ===========================================
+# IDE / Editor spezifisch
+# ===========================================
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ===========================================
+# Dotfiles Repo spezifisch
+# ===========================================
 .zsh-autopair
+.zsh_sessions/
+
+# ===========================================
+# Python Cache
+# ===========================================
+__pycache__/
+*.py[cod]
+*.pyc
+.Python
+*.so
+
+# ===========================================
+# Node
+# ===========================================
+node_modules/
+.npm/
+.yarn/cache/
+
+# ===========================================
+# Große Binärdateien (allgemein)
+# ===========================================
+*.dylib
+*.qcow2
+*.qcow2.xz
+*.jar
+*.onnx
+*.dat
