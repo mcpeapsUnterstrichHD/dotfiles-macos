@@ -103,3 +103,20 @@ node_modules/
 *.jar
 *.onnx
 *.dat
+
+# ===========================================
+# atuin
+# ===========================================
+.local/share/atuin/history.db
+.local/share/atuin/history.db-shm
+.local/share/atuin/history.db-wal
+.local/share/atuin/last_version_check_time
+.local/share/atuin/records.db
+.local/share/atuin/records.db-shm
+.local/share/atuin/records.db-wal
+
+
+# ===========================================
+# xonsh
+# ===========================================
+.local/share/xonsh/history_json/**/*
