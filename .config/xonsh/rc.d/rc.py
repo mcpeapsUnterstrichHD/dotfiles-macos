@@ -69,6 +69,14 @@ os.environ['PATH'] = ':'.join(env['PATH'])
 # --------------------------------------------------------------------
 # 2. ENVIRONMENT (REST)
 # --------------------------------------------------------------------
+
+# --- TMUX FIX START ---
+# Wenn wir innerhalb von Tmux sind, stellen wir das ursprüngliche Terminal wieder her.
+# Damit sehen Programme wie fastfetch "ghostty" statt "tmux".
+if env.get('TMUX') and env.get('XONSH_PARENT_TERM'):
+    env['TERM_PROGRAM'] = env['XONSH_PARENT_TERM']
+# --- TMUX FIX END ---
+
 env['HOMEBREW_PREFIX'] = "/opt/homebrew"
 env['HOMEBREW_CELLAR'] = "/opt/homebrew/Cellar"
 env['HOMEBREW_REPOSITORY'] = "/opt/homebrew"
@@ -308,6 +316,13 @@ def _auto_start_tmux():
     if len(sys.argv) > 1 and not sys.stdin.isatty():
         return
 
+    # --- TMUX FIX START ---
+    # Hilfsfunktion: Setzt die Parent-Term Variable bevor execvp aufgerufen wird
+    def set_parent_term():
+        if 'TERM_PROGRAM' in os.environ:
+             os.environ['XONSH_PARENT_TERM'] = os.environ['TERM_PROGRAM']
+    # --- TMUX FIX END ---
+
     def input_with_timeout(prompt):
         """Get input with timeout and visual countdown. Returns None on timeout."""
         print(prompt, end='', flush=True)
@@ -348,6 +363,7 @@ def _auto_start_tmux():
 
         if not existing_sessions:
             # No sessions - create "main"
+            set_parent_term() # FIX
             os.execvp("tmux", ["tmux", "new-session", "-s", "main"])
 
         # Sessions exist - prompt with timeout
@@ -360,6 +376,7 @@ def _auto_start_tmux():
         if choice is None or choice == '':
             # Timeout or empty - attach to main or first session
             target = "main" if has_main else existing_sessions[0]
+            set_parent_term() # FIX
             os.execvp("tmux", ["tmux", "attach-session", "-t", target])
         elif choice.lower() in ('y', 'yes'):
             # Create new session
@@ -367,10 +384,12 @@ def _auto_start_tmux():
                 name = input("Session name: ").strip() or f"session-{len(existing_sessions)+1}"
             except (EOFError, KeyboardInterrupt):
                 name = f"session-{len(existing_sessions)+1}"
+            set_parent_term() # FIX
             os.execvp("tmux", ["tmux", "new-session", "-s", name])
         else:
             # 'n' or anything else - show session list
             target = select_session(existing_sessions)
+            set_parent_term() # FIX
             os.execvp("tmux", ["tmux", "attach-session", "-t", target])
 
     except Exception as e:

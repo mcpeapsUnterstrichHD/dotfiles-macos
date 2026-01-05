@@ -122,6 +122,7 @@ node_modules/
 # xonsh
 # ===========================================
 .local/share/xonsh/history_json/**/*
+.local/share/xonsh/xonsh-history.sqlite
 
 # ===========================================
 # Doom Emacs (Installation, nicht Config)
@@ -138,3 +139,9 @@ node_modules/
 # Yazi plugins
 # ===========================================
 .config/yazi/plugins/
+
+# ===========================================
+# karabiner
+# ===========================================
+.local/share/karabiner/log/console_user_server.log
+.local/share/karabiner/pid/karabiner_console_user_server.pid

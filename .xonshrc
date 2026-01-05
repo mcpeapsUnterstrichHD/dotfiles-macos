@@ -3,4 +3,10 @@
 
 execx($(/opt/homebrew/bin/oh-my-posh init xonsh --config "https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml"))
 
-#execx($(carapace _carapace))
+execx($(carapace _carapace xonsh))
+
+$XONSH_HISTORY_BACKEND = 'sqlite'
+
+xontrib load -s sh jump_to_dir pipeliner whole_word_jumping dalias
+
+#$PROMPT = $PROMPT.replace('{prompt_end}', '\n{prompt_end}')
