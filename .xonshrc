@@ -3,7 +3,7 @@
 
 execx($(/opt/homebrew/bin/oh-my-posh init xonsh --config "https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml"))
 
-execx($(carapace _carapace xonsh))
+#execx($(carapace _carapace xonsh))
 
 $XONSH_HISTORY_BACKEND = 'sqlite'
 

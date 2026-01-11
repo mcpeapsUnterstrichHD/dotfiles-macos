@@ -33,6 +33,7 @@ paths_to_add = [
     os.path.join(env['HOME'], "go/bin"),
     os.path.join(env['HOME'], ".cargo/bin"),
     os.path.join(env['HOME'], ".bun/bin"),
+    os.path.join(env['HOME'], ".orbstack/bin"),
     "/opt/homebrew/opt/ruby/bin",
     "/opt/homebrew/lib/ruby/gems/3.4.7/bin",
     "/opt/homebrew/opt/openjdk/bin",

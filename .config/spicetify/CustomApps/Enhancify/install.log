@@ -1,0 +1,7 @@
+[22:50:25 2026-01-05] FETCHING Version 2.42.7
+[22:50:25 2026-01-05] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.42.7/spicetify-2.42.7-darwin-arm64.tar.gz
+[22:50:26 2026-01-05] EXTRACTING /Users/mahd/.spicetify/spicetify.tar.gz
+[22:50:26 2026-01-05] SETTING EXECUTABLE PERMISSIONS TO /Users/mahd/.spicetify/spicetify
+[22:50:26 2026-01-05] REMOVING /Users/mahd/.spicetify/spicetify.tar.gz
+[22:50:26 2026-01-05] spicetify v2.42.7 was installed successfully to /Users/mahd/.spicetify
+[22:50:26 2026-01-05] Run 'spicetify --help' to get started
