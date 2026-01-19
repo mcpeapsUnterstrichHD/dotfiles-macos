@@ -205,11 +205,11 @@ if command -v ngrok &>/dev/null; then
 export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 
-if [[ ! "$TERM_PROGRAM" =~ "vscode" ]]; then
-  if [[ -z "$TMUX" ]]; then
-    tmux
-  fi
-fi
+#if [[ ! "$TERM_PROGRAM" =~ "vscode" ]]; then
+#  if [[ -z "$TMUX" ]]; then
+#    tmux
+#  fi
+#fi
 
 export PATH=$PATH:/users/mahd/.spicetify
 
@@ -370,7 +370,7 @@ function yy() {
 eval "$(direnv hook zsh)"
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" 
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 function start-crafty-server() {
   echo "Starting the 'crafty' platform..."
@@ -440,3 +440,17 @@ compinit
 # End of Docker CLI completions
 source ${HOME}/.ghcup/env
 export PATH=/Users/mahd/.local/xonsh-env/xbin:$PATH
+
+# Auto-launch Xonsh
+# Only if interactive and NOT inside Emacs
+# This ensures Emacs environment scraping (which uses Zsh) remains fast and stable.
+if [[ $- == *i* ]]; then
+    if [[ -z "$INSIDE_EMACS" && "$EMACS" != "t" ]]; then
+        XONSH_BIN="$HOME/.config/xonsh/start-xonsh"
+        if [ -x "$XONSH_BIN" ]; then
+            exec "$XONSH_BIN"
+        elif command -v xonsh >/dev/null 2>&1; then
+            exec xonsh
+        fi
+    fi
+fi

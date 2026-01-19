@@ -123,6 +123,7 @@ node_modules/
 # ===========================================
 .local/share/xonsh/history_json/**/*
 .local/share/xonsh/xonsh-history.sqlite
+.local/share/xonsh/generated_completions/man/**/*
 
 # ===========================================
 # Doom Emacs (Installation, nicht Config)
@@ -145,3 +146,6 @@ node_modules/
 # ===========================================
 .local/share/karabiner/log/console_user_server.log
 .local/share/karabiner/pid/karabiner_console_user_server.pid
+
+
+.config/github-copilot/**/*

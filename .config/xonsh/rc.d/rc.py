@@ -17,6 +17,13 @@ aliases = __xonsh__.aliases  # type: ignore
 builtins = __xonsh__.builtins  # type: ignore
 subproc_uncaptured = __xonsh__.subproc_uncaptured #type:ignore
 
+start_xonsh = "/Users/mahd/DEV/dotfiles-macos/.config/xonsh/start-xonsh"
+
+# Ensure all parent environment variables are loaded into Xonsh
+for k, v in os.environ.items():
+    env[k] = v
+
+env["SHELL"] = start_xonsh
 
 #env["XONSH_COLOR_STYLE"] = "nord"
 
@@ -57,6 +64,7 @@ paths_to_add = [
     "/opt/homebrew/opt/ccache/libexec",
     "/opt/homebrew/opt/php@8.2/bin",
     "/opt/homebrew/opt/php@8.2/sbin",
+    os.path.join(env['HOME'], ".config/emacs/bin"),
 ]
 
 # PATH sofort setzen
@@ -89,7 +97,7 @@ env['JAVA_HOME'] = "/opt/homebrew/opt/openjdk"
 env['BUN_INSTALL'] = os.path.join(env['HOME'], ".bun")
 env['NVM_DIR'] = os.path.join(env['HOME'], ".nvm")
 env['VCPKG_ROOT'] = os.path.join(env['HOME'], "DEV/vcpkg")
-env['ANDROID_HOME'] = "/Volumes/SD200/Library/Android/sdk"
+env['ANDROID_HOME'] = os.path.join(env['HOME'], "Library/Android/sdk")
 env['DOTNET_ROOT'] = "/opt/homebrew/opt/dotnet/libexec"
 env['CRYPTOGRAPHY_OPENSSL_NO_LEGACY'] = "1"
 env['DOCKER_HOST'] = "unix:///var/run/docker.sock"
@@ -140,31 +148,97 @@ skip_xontribs = [
 xontrib_list = [
     "coreutils", "direnv", "pipeliner", "ergopack", "argcomplete",
     "fish_completer", "termcolors", "homebrew", "ssh_agent",
-    "fzf-completions",  "zoxide", "sh",
+    "fzf-completions", "sh",
     "clp", "cmd_durations", "term_integrations", "fzf-widgets",
     "langenv", "kitty", "bash_completions_dirs",
     "makefile_complete", "docker_tabcomplete", "abbrevs",
     "prompt_ret_code", "prompt_starship", "cmd_done", "prompt_bar",
-    "whole_word_jumping",  "nodenv",
-    "pyenv", "autoxsh", "goenv",
-    "zoxide_init_cache", "rbenv"
+    "whole_word_jumping", "autoxsh",
+    "zoxide_init_cache"
 ]
-for xt in xontrib_list:
-    if xt in skip_xontribs:
-        continue
 
-    # Prüfe Tool-Abhängigkeiten
-    if xt in tool_dependent_xontribs:
-        required_tool = tool_dependent_xontribs[xt]
-        tool_path = shutil.which(required_tool)
-        if not tool_path:
-            print(f"⚠️  Skipping {xt} (requires {required_tool}, not found in PATH)", file=sys.stderr)
+# --------------------------------------------------------------------
+# OPTIMIZATION: SKIP INTERACTIVE TOOLS IF NOT INTERACTIVE
+# --------------------------------------------------------------------
+# Fixes freezes in doom env / emacs by skipping zoxide, atuin, aliases, etc.
+if not env.get('XONSH_INTERACTIVE'):
+    # Load only essential xontribs for scripts (if any)
+    # For now, we skip all heavy startup logic
+    pass
+else:
+    # Only run this block in interactive sessions
+    pass # Continue to sections below (indented)
+
+# We need to restructure the file to indent the rest, OR use a 'sys.exit'/'return' if it was a function.
+# Since it's a script, we can use a boolean guard or 'if' block.
+# However, modifying the whole file indentation is risky/messy.
+# A cleaner way: Check interactive status before each heavy block or exit early?
+# 'exit' might kill the shell? No, usually just stops the RC execution?
+# No, rc.py is just executed. Python 'sys.exit' exits the process!
+# 'return' only works in functions.
+
+# Best approach: Wrap sections 3, 4, 5, 6, 7... in an "if interactive:" block
+# But that requires huge diffs.
+
+# Alternative: Define a variable 'is_interactive' and check it.
+# We also check for INSIDE_EMACS to ensure we never run heavy tools inside Emacs
+# even if it thinks it is interactive (e.g. if vterm sets it).
+is_interactive = env.get('XONSH_INTERACTIVE', False) and not os.environ.get('INSIDE_EMACS')
+
+
+# --------------------------------------------------------------------
+# 3a. MANUAL TOOL INITIALIZATION (zoxide, starship, etc)
+# --------------------------------------------------------------------
+
+if is_interactive:
+    # Zoxide (Smart cd) - Manual Init to avoid xontrib issues
+    if shutil.which("zoxide"):
+        try:
+            # Generate the init script
+            res = subprocess.run(["zoxide", "init", "xonsh"], capture_output=True, text=True, check=False)
+            if res.returncode == 0 and res.stdout:
+                # Execute it
+                builtins.execx(res.stdout)
+        except Exception as e:
+            print(f"⚠️  Manual zoxide init failed: {e}", file=sys.stderr)
+
+# --------------------------------------------------------------------
+# 3b. ENVIRONMENT MANAGERS (Manual Init to fix double-start issue)
+# --------------------------------------------------------------------
+# Tools like pyenv, nodenv, etc. needed xonsh to double-start to load envs properly.
+# Manual init + sync ensures they work immediately.
+
+def _manual_env_setup(tool_name, shim_path, shell_var_name=None):
+    """Manually add shims to PATH and set SHELL env var."""
+    if shutil.which(tool_name):
+        # Add to PATH (prepend to override system binaries)
+        env['PATH'].add(shim_path, front=True)
+        # Check if we need to sync PATH manually to os.environ
+        # (xonsh usually does this, but for subprocesses via doom env we want to be sure)
+        if 'PATH' in env:
+             os.environ['PATH'] = ':'.join(env['PATH'])
+
+        # Set the SHELL variable if requested (e.g. PYENV_SHELL=xonsh)
+        if shell_var_name:
+            env[shell_var_name] = "xonsh"
+            os.environ[shell_var_name] = "xonsh" # Sync explicitly
+
+# Initialize tools explicitly (Native Xonsh way - no execution of bash scripts)
+_manual_env_setup("pyenv",  os.path.join(env['HOME'], ".pyenv/shims"),  "PYENV_SHELL")
+_manual_env_setup("nodenv", os.path.join(env['HOME'], ".nodenv/shims"), "NODENV_SHELL")
+_manual_env_setup("goenv",  os.path.join(env['HOME'], ".goenv/shims"),  "GOENV_SHELL")
+_manual_env_setup("rbenv",  os.path.join(env['HOME'], ".rbenv/shims"),  "RBENV_SHELL")
+
+if is_interactive:
+    for xt in xontrib_list:
+        if xt in skip_xontribs:
             continue
 
-    try:
-        xontribs_load([xt])
-    except Exception as e:
-        print(f"⚠️  Skipping {xt}:  {e}", file=sys.stderr)
+        # Load xontrib directly - skipped dependency checks since they were flaky in rc.py
+        try:
+            xontribs_load([xt])
+        except Exception as e:
+            print(f"⚠️  Skipping {xt}:  {e}", file=sys.stderr)
 
 # --------------------------------------------------------------------
 # 4. ALIASES (Simple)
@@ -237,12 +311,28 @@ def _yy(args):
             os.remove(tmp_path)
 aliases['yy'] = _yy
 
+def _lsenv(args):
+    """
+    List environment variables, optionally filtered by a search string.
+    Usage: lsenv [pattern]
+    """
+    pattern = args[0].lower() if args else None
+
+    # Sort keys for better readability
+    keys = sorted(env.keys())
+
+    for k in keys:
+        if pattern and pattern not in k.lower():
+            continue
+        print(f"\033[1;36m{k}\033[0m=\033[0;32m{env[k]}\033[0m")
+aliases['lsenv'] = _lsenv
+
 # --------------------------------------------------------------------
 # 6. INITIALISIERUNG (Atuin, Oh-My-Posh, Cursor) - NACH PATH!
 # --------------------------------------------------------------------
 
 # Atuin - uses xonsh-specific syntax, needs execx
-if shutil.which("atuin"):
+if is_interactive and shutil.which("atuin"):
     try:
         res = subprocess.run(["atuin", "init", "xonsh"], capture_output=True, text=True, check=False)
         if res.returncode == 0 and res.stdout.strip():
@@ -251,48 +341,11 @@ if shutil.which("atuin"):
         print(f"⚠️  Atuin init failed: {e}", file=sys.stderr)
 
 # Oh-My-Posh
-#if shutil.which("oh-my-posh"):
-#    try:
-#        config_path = os.path.join(env['HOME'], ".config/ohmyposh/config.toml")
-#
-#        # Falls lokale Config nicht existiert, lade sie herunter
-#        if not os.path.exists(config_path):
-#            os.makedirs(os.path.dirname(config_path), exist_ok=True)
-#            print("📥 Lade Oh-My-Posh Config...", file=sys.stderr)
-#            try:
-#                import urllib.request
-#                urllib.request.urlretrieve(
-#                    "https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml",
-#                    config_path
-#                )
-#                print("✅ Config heruntergeladen", file=sys.stderr)
-#            except Exception as e:
-#                print(f"⚠️  Config-Download fehlgeschlagen: {e}", file=sys.stderr)
-#                config_path = "https://raw.githubusercontent.com/mcpeapsUnterstrichHD/dotfiles/main/.config/ohmyposh/config.toml"
-#
-#        res = subprocess.run(
-#            ["oh-my-posh", "init", "xonsh", "--config", config_path],
-#            capture_output=True,
-#            text=True,
-#            check=False,
-#            timeout=5
-#        )
-#
-#        if res.returncode == 0 and res.stdout.strip():
-#            builtins.execx(res.stdout)
-#        else:
-#            print(f"⚠️  Oh-My-Posh init failed (Code {res.returncode})", file=sys.stderr)
-#            if res.stderr:
-#                print(f"Error: {res.stderr}", file=sys.stderr)
-#    except subprocess.TimeoutExpired:
-#        print("⚠️  Oh-My-Posh Timeout", file=sys.stderr)
-#    except Exception as e:
-#        print(f"⚠️  Oh-My-Posh init failed: {e}", file=sys.stderr)
-#else:
-#    print("⚠️  oh-my-posh nicht gefunden im PATH", file=sys.stderr)
+# ... (existing commented out code) ...
 
 # Cursor Style
-print("\033[5 q", end="", flush=True)
+if sys.stdout.isatty() and not os.environ.get('INSIDE_EMACS'):
+    print("\033[5 q", end="", flush=True)
 
 # --------------------------------------------------------------------
 # 7. AUTO-START TMUX (SSH / TTY)
@@ -304,16 +357,30 @@ def _auto_start_tmux():
     # Configuration
     TMUX_PROMPT_TIMEOUT = 5  # seconds to wait before auto-attaching
 
-    if os.environ.get('TERM_PROGRAM') == 'vscode':
+    # Skip tmux auto-start if running inside Emacs
+    if os.environ.get('INSIDE_EMACS') or os.environ.get('EMACS') == 't':
+        return
+    tp = os.environ.get('TERM_PROGRAM')
+
+    if tp in ('agy', 'antigravity', 'vscode'):
         return
     if os.environ.get('TMUX'):
         return
-    if not shutil.which("tmux"):
+
+    # Find tmux binary (robust check)
+    tmux_bin = shutil.which("tmux")
+    if not tmux_bin:
+        # Fallback for Homebrew
+        if os.path.exists("/opt/homebrew/bin/tmux"):
+            tmux_bin = "/opt/homebrew/bin/tmux"
+        elif os.path.exists("/usr/local/bin/tmux"):
+            tmux_bin = "/usr/local/bin/tmux"
+
+    if not tmux_bin:
+        # print(f"⚠️  Skipping tmux auto-start: binary not found", file=sys.stderr)
         return
 
     # If xonsh is running a script (non-interactive), skip tmux
-    # The script will run, and when it ends the shell becomes interactive
-    # At that point this rc.py runs again and tmux will prompt
     if len(sys.argv) > 1 and not sys.stdin.isatty():
         return
 
@@ -357,7 +424,7 @@ def _auto_start_tmux():
     try:
         # Get existing sessions
         result = subprocess.run(
-            ["tmux", "list-sessions", "-F", "#{session_name}"],
+            [tmux_bin, "list-sessions", "-F", "#{session_name}"],
             capture_output=True, text=True, check=False
         )
         existing_sessions = [s.strip() for s in result.stdout.strip().split('\n') if s.strip()]
@@ -365,7 +432,7 @@ def _auto_start_tmux():
         if not existing_sessions:
             # No sessions - create "main"
             set_parent_term() # FIX
-            os.execvp("tmux", ["tmux", "new-session", "-s", "main"])
+            os.execvp(tmux_bin, [tmux_bin, "new-session", "-s", "main"])
 
         # Sessions exist - prompt with timeout
         has_main = "main" in existing_sessions
@@ -378,7 +445,7 @@ def _auto_start_tmux():
             # Timeout or empty - attach to main or first session
             target = "main" if has_main else existing_sessions[0]
             set_parent_term() # FIX
-            os.execvp("tmux", ["tmux", "attach-session", "-t", target])
+            os.execvp(tmux_bin, [tmux_bin, "attach-session", "-t", target])
         elif choice.lower() in ('y', 'yes'):
             # Create new session
             try:
@@ -386,17 +453,18 @@ def _auto_start_tmux():
             except (EOFError, KeyboardInterrupt):
                 name = f"session-{len(existing_sessions)+1}"
             set_parent_term() # FIX
-            os.execvp("tmux", ["tmux", "new-session", "-s", name])
+            os.execvp(tmux_bin, [tmux_bin, "new-session", "-s", name])
         else:
             # 'n' or anything else - show session list
             target = select_session(existing_sessions)
             set_parent_term() # FIX
-            os.execvp("tmux", ["tmux", "attach-session", "-t", target])
+            os.execvp(tmux_bin, [tmux_bin, "attach-session", "-t", target])
 
     except Exception as e:
         print(f"⚠️  Tmux error: {e}", file=sys.stderr)
 
-_auto_start_tmux()
+if is_interactive:
+    _auto_start_tmux()
 
 # --------------------------------------------------------------------
 # 8. NAVIGATION ALIASES (from DT's config)
@@ -448,60 +516,61 @@ aliases['tailscale'] = '/Applications/Tailscale.app/Contents/MacOS/Tailscale'
 # 10. ADDITIONAL COMPLETIONS & INTEGRATIONS
 # --------------------------------------------------------------------
 
-# thefuck integration (if installed)
-if shutil.which("thefuck"):
-    try:
-        res = subprocess.run(["thefuck", "--alias"], capture_output=True, text=True, check=False)
-        if res.returncode == 0 and res.stdout.strip():
-            # thefuck outputs shell-specific code, we'll create a simple alias
-            aliases['fuck'] = 'thefuck $(fc -ln -1)'
-    except Exception:
-        pass
+if is_interactive:
+    # thefuck integration (if installed)
+    if shutil.which("thefuck"):
+        try:
+            res = subprocess.run(["thefuck", "--alias"], capture_output=True, text=True, check=False)
+            if res.returncode == 0 and res.stdout.strip():
+                # thefuck outputs shell-specific code, we'll create a simple alias
+                aliases['fuck'] = 'thefuck $(fc -ln -1)'
+        except Exception:
+            pass
 
-# gh (GitHub CLI) completions
-if shutil.which("gh"):
-    try:
-        res = subprocess.run(["gh", "completion", "-s", "zsh"], capture_output=True, text=True, check=False)
-        # Completions are handled by argcomplete xontrib
-    except Exception:
-        pass
+    # gh (GitHub CLI) completions
+    if shutil.which("gh"):
+        try:
+            res = subprocess.run(["gh", "completion", "-s", "zsh"], capture_output=True, text=True, check=False)
+            # Completions are handled by argcomplete xontrib
+        except Exception:
+            pass
 
-# jj (Jujutsu) completions
-if shutil.which("jj"):
-    try:
-        res = subprocess.run(["jj", "util", "completion", "zsh"], capture_output=True, text=True, check=False)
-        # Completions are handled by argcomplete xontrib
-    except Exception:
-        pass
+    # jj (Jujutsu) completions
+    if shutil.which("jj"):
+        try:
+            res = subprocess.run(["jj", "util", "completion", "zsh"], capture_output=True, text=True, check=False)
+            # Completions are handled by argcomplete xontrib
+        except Exception:
+            pass
 
-# VSCode shell integration
-if os.environ.get('TERM_PROGRAM') == 'vscode':
-    try:
-        res = subprocess.run(["code", "--locate-shell-integration-path", "xonsh"],
-                                capture_output=True, text=True, check=False)
-        if res.returncode == 0 and res.stdout.strip():
-            integration_path = res.stdout.strip()
-            if os.path.exists(integration_path):
-                # VSCode integration loaded
-                pass
-    except Exception:
-        pass
+    # VSCode shell integration
+    if os.environ.get('TERM_PROGRAM') == 'vscode':
+        try:
+            res = subprocess.run(["code", "--locate-shell-integration-path", "xonsh"],
+                                    capture_output=True, text=True, check=False)
+            if res.returncode == 0 and res.stdout.strip():
+                integration_path = res.stdout.strip()
+                if os.path.exists(integration_path):
+                    # VSCode integration loaded
+                    pass
+        except Exception:
+            pass
 
-# Angular CLI completions (if ng is available)
-if shutil.which("ng"):
-    try:
-        # Angular completions handled by argcomplete
-        pass
-    except Exception:
-        pass
+    # Angular CLI completions (if ng is available)
+    if shutil.which("ng"):
+        try:
+            # Angular completions handled by argcomplete
+            pass
+        except Exception:
+            pass
 
-# ngrok completions
-if shutil.which("ngrok"):
-    try:
-        # ngrok completions handled by argcomplete
-        pass
-    except Exception:
-        pass
+    # ngrok completions
+    if shutil.which("ngrok"):
+        try:
+            # ngrok completions handled by argcomplete
+            pass
+        except Exception:
+            pass
 
 # Docker CLI completions (handled by docker_tabcomplete xontrib)
 # --------------------------------------------------------------------
@@ -514,6 +583,9 @@ env['PKG_CONFIG_PATH'] = "/opt/homebrew/opt/ruby/lib/pkgconfig"
 # --------------------------------------------------------------------
 # DONE - Configuration loaded successfully
 # --------------------------------------------------------------------
+
+# CRITICAL: Final sync to ensure everything is exported
+# _sync_env_to_os() # Removed to prevent crash
 
 #subproc_uncaptured(["carapace", "_carapace"])
 

@@ -1,3 +1,43 @@
-#!/bin/sh
-# $@ gibt alle Argumente weiter, die macOS beim Login übergibt
-exec /Users/mahd/.local/xonsh-env/xbin/xonsh -i -l --rc /Users/mahd/DEV/dotfiles-macos/.config/xonsh/rc.d/rc.py /Users/mahd/DEV/dotfiles-macos/.xonshrc "$@"
+#!/bin/bash
+
+# Arguments
+XONSH_BIN="/Users/mahd/.local/xonsh-env/xbin/xonsh"
+RC_FILE="/Users/mahd/DEV/dotfiles-macos/.config/xonsh/rc.d/rc.py"
+XONSHRC="/Users/mahd/DEV/dotfiles-macos/.xonshrc"
+
+# Check if command execution (-c) is requested
+HAS_C=false
+for arg in "$@"; do
+  if [[ "$arg" == -* && "$arg" == *c* ]]; then
+    HAS_C=true
+    break
+  fi
+done
+
+if [ "$HAS_C" = true ]; then
+  # COMMAND MODE: Strip 'i' from flags to prevent interactive hang
+  args=()
+  for arg in "$@"; do
+    if [[ "$arg" == -* ]]; then
+       # Remove 'i' from flags
+       new_arg="${arg//i/}"
+       if [ "$new_arg" == "-" ]; then
+          # If it was just -i and became -, skip it
+          continue
+       fi
+       args+=("$new_arg")
+    else
+       args+=("$arg")
+    fi
+  done
+
+  # Execute without forcing -i
+  exec "$XONSH_BIN" -l --rc "$RC_FILE" "$XONSHRC" "${args[@]}"
+else
+  # INTERACTIVE MODE: Force -i only if we are in a TTY
+  if [ -t 0 ]; then
+     exec "$XONSH_BIN" -i -l --rc "$RC_FILE" "$XONSHRC" "$@"
+  else
+     exec "$XONSH_BIN" -l --rc "$RC_FILE" "$XONSHRC" "$@"
+  fi
+fi
