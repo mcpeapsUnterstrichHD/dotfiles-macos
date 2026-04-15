@@ -114,9 +114,16 @@ node_modules/
 .local/share/atuin/records.db
 .local/share/atuin/records.db-shm
 .local/share/atuin/records.db-wal
+.local/share/atuin/shell_sessions.db
+.local/share/atuin/shell_sessions.db-shm
+.local/share/atuin/shell_sessions.db-wal
+.local/share/atuin/meta.db
+.local/share/atuin/meta.db-shm
+.local/share/atuin/meta.db-wal
 .local/share/atuin/host_id
 .local/share/atuin/key
 .local/share/atuin/latest_version
+
 
 # ===========================================
 # xonsh
@@ -149,3 +156,5 @@ node_modules/
 
 
 .config/github-copilot/**/*
+
+.local/bin/
