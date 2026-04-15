@@ -123,6 +123,7 @@ node_modules/
 .local/share/atuin/host_id
 .local/share/atuin/key
 .local/share/atuin/latest_version
+.local/share/atuin/autin_daemon.pid
 
 
 # ===========================================
@@ -158,3 +159,4 @@ node_modules/
 .config/github-copilot/**/*
 
 .local/bin/
+.local/claude
