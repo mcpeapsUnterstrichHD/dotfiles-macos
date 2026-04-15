@@ -13,3 +13,6 @@
 [submodule ".local/share/omf"]
 	path = .local/share/omf
 	url = https://github.com/oh-my-fish/oh-my-fish.git
+[submodule ".config/doom"]
+	path = .config/doom
+	url = https://github.com/mcpeapsUnterstrichHD/doom-emacs-config.git
