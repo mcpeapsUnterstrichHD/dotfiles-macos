@@ -160,3 +160,4 @@ node_modules/
 
 .local/bin/
 .local/claude
+.xorg.db
