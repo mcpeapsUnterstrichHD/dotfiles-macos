@@ -1338,3 +1338,88 @@ bash: line 3: mvn: command not found
 [INFO  Sat Aug  9 03:58:47 2025] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=flake8)
 [INFO  Sat Aug  9 03:58:47 2025] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=eslint_d)
 [INFO  Sat Aug  9 03:58:48 2025] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=mypy)
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=stylua) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=selene) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=json-lsp) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=typescript-language-server) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=prettier) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=shfmt) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=sql-formatter) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=rustfmt) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=java-debug-adapter) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=shellcheck) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:25 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=tree-sitter-cli) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:26 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=stylua)
+[INFO  Sun Jan 25 14:12:27 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=selene)
+[INFO  Sun Jan 25 14:12:29 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=shfmt)
+[INFO  Sun Jan 25 14:12:29 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=prettier)
+[INFO  Sun Jan 25 14:12:29 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=typescript-language-server)
+[INFO  Sun Jan 25 14:12:31 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=java-debug-adapter)
+[INFO  Sun Jan 25 14:12:31 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=json-lsp)
+[INFO  Sun Jan 25 14:12:31 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=rustfmt)
+[INFO  Sun Jan 25 14:12:32 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=sql-formatter)
+[INFO  Sun Jan 25 14:12:32 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=shellcheck) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[INFO  Sun Jan 25 14:12:32 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:40: Executing installer for Package(name=tree-sitter-cli) {
+  debug = false,
+  force = false,
+  strict = false
+}
+[ERROR Sun Jan 25 14:12:32 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:172: Lockfile already exists. Package(name=shellcheck)
+[ERROR Sun Jan 25 14:12:32 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:172: Lockfile already exists. Package(name=tree-sitter-cli)
+[ERROR Sun Jan 25 14:12:33 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:93: Installation failed for Package(name=shellcheck) error="Lockfile exists, installation is already running in another process (pid: 68581). Run with :MasonInstall --force to bypass."
+[ERROR Sun Jan 25 14:12:33 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:93: Installation failed for Package(name=tree-sitter-cli) error="Lockfile exists, installation is already running in another process (pid: 68581). Run with :MasonInstall --force to bypass."
+[INFO  Sun Jan 25 14:12:33 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=tree-sitter-cli)
+[INFO  Sun Jan 25 14:12:34 2026] ...zy/mason.nvim/lua/mason-core/installer/InstallRunner.lua:86: Installation succeeded for Package(name=shellcheck)
+[ERROR Mon Apr 13 11:17:00 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
+[ERROR Mon Apr 13 11:17:51 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
+[ERROR Mon Apr 13 11:19:19 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
+[ERROR Mon Apr 13 11:29:58 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
+[ERROR Wed Apr 15 10:33:23 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".

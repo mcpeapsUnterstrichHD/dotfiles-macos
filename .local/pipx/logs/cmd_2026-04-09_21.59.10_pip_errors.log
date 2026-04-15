@@ -1,0 +1,133 @@
+PIP STDOUT
+----------
+Collecting drgn
+  Downloading drgn-0.1.0.tar.gz (1.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 21.5 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+
+PIP STDERR
+----------
+WARNING: The directory '/Users/mahd/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [105 lines of output]
+      /private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+      
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+      
+              License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        self._finalize_license_expression()
+      running egg_info
+      writing drgn.egg-info/PKG-INFO
+      writing dependency_links to drgn.egg-info/dependency_links.txt
+      writing entry points to drgn.egg-info/entry_points.txt
+      writing top-level names to drgn.egg-info/top_level.txt
+      Traceback (most recent call last):
+        File "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+          return hook(config_settings)
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 333, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=[])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 520, in run_setup
+          super().run_setup(setup_script=setup_script)
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 434, in <module>
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/__init__.py", line 117, in setup
+          return distutils.core.setup(**attrs)  # type: ignore[return-value]
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 186, in setup
+          return run_commands(dist)
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/core.py", line 202, in run_commands
+          dist.run_commands()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1000, in run_commands
+          self.run_command(cmd)
+          ~~~~~~~~~~~~~~~~^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/dist.py", line 1107, in run_command
+          super().run_command(command)
+          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/dist.py", line 1019, in run_command
+          cmd_obj.run()
+          ~~~~~~~~~~~^^
+        File "<string>", line 130, in run
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/egg_info.py", line 312, in run
+          self.find_sources()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/egg_info.py", line 320, in find_sources
+          mm.run()
+          ~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/egg_info.py", line 542, in run
+          self.add_defaults()
+          ~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/egg_info.py", line 580, in add_defaults
+          sdist.add_defaults(self)
+          ~~~~~~~~~~~~~~~~~~^^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/sdist.py", line 110, in add_defaults
+          super().add_defaults()
+          ~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/command/sdist.py", line 243, in add_defaults
+          self._add_defaults_python()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/sdist.py", line 121, in _add_defaults_python
+          build_py = self.get_finalized_command('build_py')
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 318, in get_finalized_command
+          cmd_obj.ensure_finalized()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 119, in ensure_finalized
+          self.finalize_options()
+          ~~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/command/build_py.py", line 47, in finalize_options
+          orig.build_py.finalize_options(self)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/command/build_py.py", line 47, in finalize_options
+          self.set_undefined_options(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+              'build', ('build_lib', 'build_lib'), ('force', 'force')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          )
+          ^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 304, in set_undefined_options
+          src_cmd_obj.ensure_finalized()
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-94ha_8h4/overlay/lib/python3.14/site-packages/setuptools/_distutils/cmd.py", line 119, in ensure_finalized
+          self.finalize_options()
+          ~~~~~~~~~~~~~~~~~~~~~^^
+        File "<string>", line 62, in finalize_options
+        File "/private/tmp/pip-install-rdvotgr3/drgn_644d0c39a70c4ee6b31f946c5492a6e8/util.py", line 12, in nproc
+          return len(os.sched_getaffinity(0))
+                     ^^^^^^^^^^^^^^^^^^^^
+      AttributeError: module 'os' has no attribute 'sched_getaffinity'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.

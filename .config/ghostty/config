@@ -17,4 +17,3 @@ mouse-shift-capture = true
 mouse-scroll-multiplier = 1
 background-opacity = 0.8
 background-blur-radius = 20
-command = "/Users/mahd/.local/xonsh-env/xbin/xonsh -i -l --rc /Users/mahd/DEV/dotfiles-macos/.config/xonsh/rc.d/rc.py"

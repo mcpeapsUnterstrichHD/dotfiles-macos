@@ -11,3 +11,10 @@ if $XONSH_INTERACTIVE:
     xontrib load -s sh jump_to_dir pipeliner whole_word_jumping dalias
 
 #$PROMPT = $PROMPT.replace('{prompt_end}', '\n{prompt_end}')
+
+source-bash ~/.console-ninja/.bin/console-ninja
+#$NVM_DIR = $HOME + "/.nvm"
+
+# Prüft ob die Datei existiert und lädt sie über die Bash-Brücke
+if p"~/.nvm/nvm.sh".expanduser().exists():
+    source-bash "~/.nvm/nvm.sh"

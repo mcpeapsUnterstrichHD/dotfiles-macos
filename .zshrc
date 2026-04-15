@@ -78,6 +78,12 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --no-ignore-vcs"
 # Set FZF DEFAULT OPTIONS
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
 
+export PKG_CONFIG_PATH="$BREW_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# Finde alle pkgconfig Ordner nur innerhalb von Homebrew und füge sie hinzu
+for pc_dir in $(find "$BREW_PREFIX/opt" -maxdepth 3 -type d -name "pkgconfig" 2>/dev/null); do
+  export PKG_CONFIG_PATH="$pc_dir:$PKG_CONFIG_PATH"
+done
 
 
 #echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
@@ -429,7 +435,7 @@ source /Users/mahd/DEV/vcpkg/scripts/vcpkg_completion.zsh
 
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+#source <(ng completion script)
 
 # Added by Antigravity
 export PATH="/Users/mahd/.antigravity/antigravity/bin:$PATH"
@@ -439,18 +445,19 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 source ${HOME}/.ghcup/env
-export PATH=/Users/mahd/.local/xonsh-env/xbin:$PATH
 
-# Auto-launch Xonsh
+# Auto-launch Fish
 # Only if interactive and NOT inside Emacs
 # This ensures Emacs environment scraping (which uses Zsh) remains fast and stable.
-if [[ $- == *i* ]]; then
-    if [[ -z "$INSIDE_EMACS" && "$EMACS" != "t" ]]; then
-        XONSH_BIN="$HOME/.config/xonsh/start-xonsh"
-        if [ -x "$XONSH_BIN" ]; then
-            exec "$XONSH_BIN"
-        elif command -v xonsh >/dev/null 2>&1; then
-            exec xonsh
-        fi
-    fi
-fi
+# if [[ $- == *i* ]]; then
+#     if [[ -z "$INSIDE_EMACS" && "$EMACS" != "t" ]]; then
+#         FISH_BIN="$(command -v fish 2>/dev/null)"
+#         if [ -z "$FISH_BIN" ] && [ -x "/opt/homebrew/bin/fish" ]; then
+#             FISH_BIN="/opt/homebrew/bin/fish"
+#         fi
+#         if [ -n "$FISH_BIN" ] && [ -x "$FISH_BIN" ]; then
+#             exec "$FISH_BIN"
+#         fi
+#     fi
+# fi
+source console-ninja

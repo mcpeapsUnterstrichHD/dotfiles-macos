@@ -10,3 +10,6 @@
 [submodule "exe/separator"]
 	path = exe/separator
 	url = https://github.com/pjnadolny/separator.git
+[submodule ".local/share/omf"]
+	path = .local/share/omf
+	url = https://github.com/oh-my-fish/oh-my-fish.git

@@ -1,15 +1,32 @@
 #!/bin/bash
-# Xonsh Xontribs Installation Script
-# Run this script to install all xontribs for your xonsh shell
-
 set -e
 
 echo "📦 Installing xontribs for xonsh..."
 
-# Make sure xpip is available (xonsh's pip wrapper)
-# If using regular pip with xonsh virtualenv, use pip instead of xpip
+if command -v brew >/dev/null 2>&1; then
+    brew install xonsh carapace zoxide fzf atuin oh-my-posh
+
+else
+
+echo "could not install xonsh, carapace, zoxide, fzf, atuin, oh-my-posh via brew"
+
+fi
+
+# Find xonsh binary
+if command -v xonsh >/dev/null 2>&1; then
+    XONSH_BIN="$(command -v xonsh)"
+elif [ -f "/opt/homebrew/bin/xonsh" ]; then
+    XONSH_BIN="/opt/homebrew/bin/xonsh"
+elif [ -f "/usr/local/bin/xonsh" ]; then
+    XONSH_BIN="/usr/local/bin/xonsh"
+else
+    echo "Error: xonsh binary not found!" >&2
+    exit 1
+fi
 
 # Core xontribs
+$XONSH_BIN <<EOF
+xpip install setuptools
 xpip install xonsh-direnv
 xpip install -U xontrib-pipeliner
 xpip install -U xontrib-ergopack
@@ -38,17 +55,7 @@ xpip install xontrib-whole-word-jumping
 xpip install xontrib-powerline3
 xpip install -U xontrib-prompt-bar
 xpip install xontrib-powerline-binding
-
-# Carapace (shell completion engine) - install via Homebrew
-echo "📦 Installing carapace via Homebrew..."
-brew install carapace
+EOF
 
 echo "✅ All xontribs installed successfully!"
-echo ""
-echo "Note: Some xontribs may require additional tools to be installed:"
-echo "  - zoxide: brew install zoxide"
-echo "  - fzf: brew install fzf"
-echo "  - atuin: brew install atuin"
-echo "  - oh-my-posh: brew install oh-my-posh"
-echo ""
 echo "Restart xonsh to load the new configuration."

@@ -27,6 +27,8 @@ env["SHELL"] = start_xonsh
 
 #env["XONSH_COLOR_STYLE"] = "nord"
 
+
+
 # --------------------------------------------------------------------
 # 1. PATH ZUERST SETZEN (VOR ALLEM ANDEREN!)
 # --------------------------------------------------------------------
@@ -35,6 +37,8 @@ paths_to_add = [
     "/opt/homebrew/sbin",
     "/usr/local/bin",
     "/usr/local/sbin",
+    "/opt/local/bin",
+    "/opt/local/sbin",
     os.path.join(env['HOME'], "bin"),
     os.path.join(env['HOME'], ".local/bin"),
     os.path.join(env['HOME'], "go/bin"),
@@ -65,6 +69,8 @@ paths_to_add = [
     "/opt/homebrew/opt/php@8.2/bin",
     "/opt/homebrew/opt/php@8.2/sbin",
     os.path.join(env['HOME'], ".config/emacs/bin"),
+    "/opt/homebrew/opt/emacs-plus@30/bin",
+    "/opt/homebrew/opt/pnpm/bin","/opt/homebrew/opt/pnpm"
 ]
 
 # PATH sofort setzen
@@ -90,7 +96,9 @@ env['HOMEBREW_PREFIX'] = "/opt/homebrew"
 env['HOMEBREW_CELLAR'] = "/opt/homebrew/Cellar"
 env['HOMEBREW_REPOSITORY'] = "/opt/homebrew"
 env['HOMEBREW_AUTO_UPDATE_SECS'] = "1"
-env['EDITOR'] = "nvim"
+#env['EDITOR'] = "nvim"
+env["EDITOR"] = "emacsclient -c -a \"emacs\""
+env["VISUAL"] = "emacsclient -c -a \"emacs\""
 env['TERM'] = "xterm-256color"
 env['GIT_CONFIG'] = os.path.join(env['HOME'], "DEV/dotfiles-macos/.gitconfig")
 env['JAVA_HOME'] = "/opt/homebrew/opt/openjdk"
@@ -112,7 +120,7 @@ env['COMPLETIONS_CONFIRM'] = True  # Require Tab confirmation for completions
 env['COMPLETIONS_DISPLAY'] = 'multi'  # Display completions in multiple columns
 
 # Fix CPR (Cursor Position Request) warning for terminals that don't support it
-env['ENABLE_PROMPT_POS_RESET'] = False  # Disable cursor position reset to avoid CPR
+env['ENABLE_PROMPT_POS_RESET'] = True  # Disable cursor position reset to avoid CPR
 
 #starship
 env['STARSHIP_CONFIG'] = "~/.config/starship.toml"
@@ -127,6 +135,12 @@ env['SHELL'] = '/Users/mahd/.config/xonsh/start-xonsh'
 
 env['CARAPACE_BRIDGES'] = 'zsh,fish,bash,inshellisense'
 env['COMPLETIONS_CONFIRM'] = True
+
+env['CONSOLE_NINJA_ENABLED'] = True
+env['CONSOLE_NINJA_THEME'] = "dark"
+env['CONSOLE_NINJA_LOG_LEVEL'] = 'verbose'
+env['PNPM_HOME'] = '/opt/homebrew/opt/pnpm'
+
 
 # --------------------------------------------------------------------
 # 3. XONTRIBS LADEN
@@ -154,7 +168,7 @@ xontrib_list = [
     "makefile_complete", "docker_tabcomplete", "abbrevs",
     "prompt_ret_code", "prompt_starship", "cmd_done", "prompt_bar",
     "whole_word_jumping", "autoxsh",
-    "zoxide_init_cache"
+    "zoxide_init_cache" #,"nvm"
 ]
 
 # --------------------------------------------------------------------
@@ -260,6 +274,10 @@ aliases['gf2'] = '/Applications/gf2.app/Contents/MacOS/gf2'
 aliases['terminal'] = '/Applications/Ghostty.app/Contents/MacOS/ghostty'
 aliases['cd'] = 'z'
 aliases['cdi'] = 'zi'
+aliases['edit'] = 'emacsclient -c -a "emacs" '
+#aliases['emacs'] = 'emacsclient -c -a "emacs"'
+#aliases['nvm'] = """bash -c @(f'[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && nvm {" ".join($args)}')"""
+aliases['start-xonsh'] = start_xonsh
 # --------------------------------------------------------------------
 # 5. ALIASES (Funktionen)
 # --------------------------------------------------------------------
@@ -512,6 +530,8 @@ aliases['start-mDNSResponder'] = 'sudo launchctl load -w /System/Library/LaunchD
 # Tailscale
 aliases['tailscale'] = '/Applications/Tailscale.app/Contents/MacOS/Tailscale'
 
+#aliases['source'] = 'source-bash'
+
 # --------------------------------------------------------------------
 # 10. ADDITIONAL COMPLETIONS & INTEGRATIONS
 # --------------------------------------------------------------------
@@ -535,7 +555,7 @@ if is_interactive:
         except Exception:
             pass
 
-    # jj (Jujutsu) completions
+  # jj (Jujutsu) completions
     if shutil.which("jj"):
         try:
             res = subprocess.run(["jj", "util", "completion", "zsh"], capture_output=True, text=True, check=False)

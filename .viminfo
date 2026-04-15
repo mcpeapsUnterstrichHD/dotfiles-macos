@@ -11,23 +11,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<eval\>
+~MSle0~/^[[27;5;106~
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1761305237,,"q"
 :wq
-|2,0,1712560622,,"wq"
+|2,0,1770288108,,"wq"
+:qa
+|2,0,1770287213,,"qa"
+:q
+|2,0,1770287068,,"q"
 :qa!
 |2,0,1709297526,,"qa!"
-:qa
-|2,0,1709297520,,"qa"
 :.,.+1!
 |2,0,1673005494,,".,.+1!"
 :!q
 |2,0,1665493482,,"!q"
 
 # Search String History (newest to oldest):
+?/^[[27;5;106~
+|2,1,1770287911,47,"^[[27;5;106~"
 ? \<eval\>
 |2,1,1712560602,,"\\<eval\\>"
 ?/w
@@ -40,233 +42,338 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""1	LINE	0
+	1682
+<#[27;5;106~# Sample /etc/sudoers file.[27;5;106~#[27;5;106~# This file MUST be edited with the 'visudo' command as root.[27;5;106~#[27;5;106~# See the sudoers man page for the details on how to write a sudoers file.[27;5;106~[27;5;106~##[27;5;106~# Override built-in defaults[27;5;106~##[27;5;106~Defaults        env_reset[27;5;106~Defaults  insults[27;5;106~Defaults        env_keep += "BLOCKSIZE"[27;5;106~Defaults        env_keep += "COLORFGBG COLORTERM"[27;5;106~Defaults        env_keep += "__CF_USER_TEXT_ENCODING"[27;5;106~Defaults        env_keep += "CHARSET LANG LANGUAGE LC_ALL LC_COLLATE LC_CTYPE"[27;5;106~Defaults        env_keep += "LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME"[27;5;106~Defaults        env_keep += "LINES COLUMNS"[27;5;106~Defaults        env_keep += "LSCOLORS"[27;5;106~Defaults        env_keep += "SSH_AUTH_SOCK"[27;5;106~Defaults        env_keep += "TZ"[27;5;106~Defaults        env_keep += "DISPLAY XAUTHORIZATION XAUTHORITY"[27;5;106~Defaults        env_keep += "EDITOR VISUAL"[27;5;106~Defaults        env_keep += "HOME MAIL"[27;5;106~[27;5;106~Defaults        lecture_file = "/etc/sudo_lecture"[27;5;106~[27;5;106~# Remove this line to log successful sudo launches. May contain sensitive[27;5;106~# information passed as arguments to the command[27;5;106~Defaults        !log_allowed[27;5;106~[27;5;106~##[27;5;106~# User alias specification[27;5;106~##[27;5;106~# User_Alias    FULLTIMERS = millert, mikef, dowdy[27;5;106~[27;5;106~##[27;5;106~# Runas alias specification[27;5;106~##[27;5;106~# Runas_Alias   OP = root, operator[27;5;106~[27;5;106~##[27;5;106~# Host alias specification[27;5;106~##
+|3,1,1,1,1,0,1770287337,>1707
+|<"#[27;5;106~# Sample /etc/sudoers file.[27;5;106~#[27;5;106~# This file MUST be edited with the 'visudo' command as root.[27;5;106~#[27;5;106~# See the sudoers man page for the details on how to write a sudoers file.[27;5;106~[27;5;106~##[27;5;106~# Override built-in defaults[27;5;106~##[27;5;106~Defaults        env_reset[27;5;106~Defaults  insults[27;5;106~Defaults        env_keep += \"BLOCKSIZE\"[27;5;106~Defaults        env_keep += \"COLORFGBG COLORTERM\"[27;5;106~Defau
+|<lts        env_keep += \"__CF_USER_TEXT_ENCODING\"[27;5;106~Defaults        env_keep += \"CHARSET LANG LANGUAGE LC_ALL LC_COLLATE LC_CTYPE\"[27;5;106~Defaults        env_keep += \"LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME\"[27;5;106~Defaults        env_keep += \"LINES COLUMNS\"[27;5;106~Defaults        env_keep += \"LSCOLORS\"[27;5;106~Defaults        env_keep += \"SSH_AUTH_SOCK\"[27;5;106~Defaults        env_keep += \"TZ\"[27;5;106~Defaults        env_keep += \"DISPLAY XAUTHOR
+|<IZATION XAUTHORITY\"[27;5;106~Defaults        env_keep += \"EDITOR VISUAL\"[27;5;106~Defaults        env_keep += \"HOME MAIL\"[27;5;106~[27;5;106~Defaults        lecture_file = \"/etc/sudo_lecture\"[27;5;106~[27;5;106~# Remove this line to log successful sudo launches. May contain sensitive[27;5;106~# information passed as arguments to the command[27;5;106~Defaults        !log_allowed[27;5;106~[27;5;106~##[27;5;106~# User alias specification[27;5;106~##[27;5;106~# User_Ali
+|<as    FULLTIMERS = millert, mikef, dowdy[27;5;106~[27;5;106~##[27;5;106~# Runas alias specification[27;5;106~##[27;5;106~# Runas_Alias   OP = root, operator[27;5;106~[27;5;106~##[27;5;106~# Host alias specification[27;5;106~##"
+"2	LINE	0
+	1682
+<#[27;5;106~# Sample /etc/sudoers file.[27;5;106~#[27;5;106~# This file MUST be edited with the 'visudo' command as root.[27;5;106~#[27;5;106~# See the sudoers man page for the details on how to write a sudoers file.[27;5;106~[27;5;106~##[27;5;106~# Override built-in defaults[27;5;106~##[27;5;106~Defaults        env_reset[27;5;106~Defaults  insults[27;5;106~Defaults        env_keep += "BLOCKSIZE"[27;5;106~Defaults        env_keep += "COLORFGBG COLORTERM"[27;5;106~Defaults        env_keep += "__CF_USER_TEXT_ENCODING"[27;5;106~Defaults        env_keep += "CHARSET LANG LANGUAGE LC_ALL LC_COLLATE LC_CTYPE"[27;5;106~Defaults        env_keep += "LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME"[27;5;106~Defaults        env_keep += "LINES COLUMNS"[27;5;106~Defaults        env_keep += "LSCOLORS"[27;5;106~Defaults        env_keep += "SSH_AUTH_SOCK"[27;5;106~Defaults        env_keep += "TZ"[27;5;106~Defaults        env_keep += "DISPLAY XAUTHORIZATION XAUTHORITY"[27;5;106~Defaults        env_keep += "EDITOR VISUAL"[27;5;106~Defaults        env_keep += "HOME MAIL"[27;5;106~[27;5;106~Defaults        lecture_file = "/etc/sudo_lecture"[27;5;106~[27;5;106~# Remove this line to log successful sudo launches. May contain sensitive[27;5;106~# information passed as arguments to the command[27;5;106~Defaults        !log_allowed[27;5;106~[27;5;106~##[27;5;106~# User alias specification[27;5;106~##[27;5;106~# User_Alias    FULLTIMERS = millert, mikef, dowdy[27;5;106~[27;5;106~##[27;5;106~# Runas alias specification[27;5;106~##[27;5;106~# Runas_Alias   OP = root, operator[27;5;106~[27;5;106~##[27;5;106~# Host alias specification[27;5;106~##
+|3,0,2,1,1,0,1770287289,>1707
+|<"#[27;5;106~# Sample /etc/sudoers file.[27;5;106~#[27;5;106~# This file MUST be edited with the 'visudo' command as root.[27;5;106~#[27;5;106~# See the sudoers man page for the details on how to write a sudoers file.[27;5;106~[27;5;106~##[27;5;106~# Override built-in defaults[27;5;106~##[27;5;106~Defaults        env_reset[27;5;106~Defaults  insults[27;5;106~Defaults        env_keep += \"BLOCKSIZE\"[27;5;106~Defaults        env_keep += \"COLORFGBG COLORTERM\"[27;5;106~Defau
+|<lts        env_keep += \"__CF_USER_TEXT_ENCODING\"[27;5;106~Defaults        env_keep += \"CHARSET LANG LANGUAGE LC_ALL LC_COLLATE LC_CTYPE\"[27;5;106~Defaults        env_keep += \"LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME\"[27;5;106~Defaults        env_keep += \"LINES COLUMNS\"[27;5;106~Defaults        env_keep += \"LSCOLORS\"[27;5;106~Defaults        env_keep += \"SSH_AUTH_SOCK\"[27;5;106~Defaults        env_keep += \"TZ\"[27;5;106~Defaults        env_keep += \"DISPLAY XAUTHOR
+|<IZATION XAUTHORITY\"[27;5;106~Defaults        env_keep += \"EDITOR VISUAL\"[27;5;106~Defaults        env_keep += \"HOME MAIL\"[27;5;106~[27;5;106~Defaults        lecture_file = \"/etc/sudo_lecture\"[27;5;106~[27;5;106~# Remove this line to log successful sudo launches. May contain sensitive[27;5;106~# information passed as arguments to the command[27;5;106~Defaults        !log_allowed[27;5;106~[27;5;106~##[27;5;106~# User alias specification[27;5;106~##[27;5;106~# User_Ali
+|<as    FULLTIMERS = millert, mikef, dowdy[27;5;106~[27;5;106~##[27;5;106~# Runas alias specification[27;5;106~##[27;5;106~# Runas_Alias   OP = root, operator[27;5;106~[27;5;106~##[27;5;106~# Host alias specification[27;5;106~##"
+"3	LINE	0
+	##
+|3,0,3,1,1,0,1770287259,"##"
+"4	LINE	0
+	## User privilege specification
+|3,0,4,1,1,0,1770287258,"## User privilege specification"
+"5	LINE	0
+	##
+|3,0,5,1,1,0,1770287257,"##"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1770287257,""
+"7	LINE	0
+	##
+|3,0,7,1,1,0,1770287256,"##"
+"8	LINE	0
+	## Runas alias specification
+|3,0,8,1,1,0,1770287255,"## Runas alias specification"
+"9	LINE	0
+	##
+|3,0,9,1,1,0,1770287254,"##"
 "-	CHAR	0
 	#
 |3,0,36,0,1,0,1709297489,"#"
 
 # File marks:
-'0  103  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex
-|4,48,103,0,1762283657,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex"
-'1  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,49,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'2  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,50,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'3  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,51,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'4  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,52,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'5  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,53,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'6  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,54,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'7  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,55,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'8  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,56,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
-'9  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,57,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
+'0  72  1  /opt/local/etc/sudoers.tmp
+|4,48,72,1,1770288108,"/opt/local/etc/sudoers.tmp"
+'1  64  0  /private/etc/sudoers.tmp
+|4,49,64,0,1770287213,"/private/etc/sudoers.tmp"
+'2  1  0  /private/etc/sudoers.tmp
+|4,50,1,0,1770287158,"/private/etc/sudoers.tmp"
+'3  1  0  /private/etc/sudoers.tmp
+|4,51,1,0,1770287158,"/private/etc/sudoers.tmp"
+'4  65  0  /private/etc/sudoers.tmp
+|4,52,65,0,1770287068,"/private/etc/sudoers.tmp"
+'5  65  0  /private/etc/sudoers.tmp
+|4,53,65,0,1770287068,"/private/etc/sudoers.tmp"
+'6  65  0  /private/etc/sudoers.tmp
+|4,54,65,0,1770287068,"/private/etc/sudoers.tmp"
+'7  65  0  /private/etc/sudoers.tmp
+|4,55,65,0,1770287068,"/private/etc/sudoers.tmp"
+'8  65  0  /private/etc/sudoers.tmp
+|4,56,65,0,1770286956,"/private/etc/sudoers.tmp"
+'9  65  0  /private/etc/sudoers.tmp
+|4,57,65,0,1770286956,"/private/etc/sudoers.tmp"
 
 # Jumplist (newest first):
--'  103  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex
-|4,39,103,0,1762283657,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex"
--'  103  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex
-|4,39,103,0,1762283657,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex
-|4,39,1,0,1762283634,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex
-|4,39,1,0,1762283634,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305225,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761305072,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304567,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  1  0  ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute("ls")
-|4,39,1,0,1761304454,"~/DEV/TU-Berlin-repo-aps/WiSe2025-26/IntroProg/2025-10-22/execute(\"ls\")"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
--'  152  0  ~/DEV/dotfiles/.config/kitty/kitty.conf
-|4,39,152,0,1734088029,"~/DEV/dotfiles/.config/kitty/kitty.conf"
+-'  72  1  /opt/local/etc/sudoers.tmp
+|4,39,72,1,1770288108,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770287218,"/opt/local/etc/sudoers.tmp"
+-'  64  0  /private/etc/sudoers.tmp
+|4,39,64,0,1770287213,"/private/etc/sudoers.tmp"
+-'  64  0  /private/etc/sudoers.tmp
+|4,39,64,0,1770287213,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770287170,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770287170,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770287158,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770287158,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770287068,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770287068,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770287068,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770287068,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770287068,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770287068,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770287044,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770287044,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770286956,"/private/etc/sudoers.tmp"
+-'  65  0  /private/etc/sudoers.tmp
+|4,39,65,0,1770286956,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770286879,"/private/etc/sudoers.tmp"
+-'  1  0  /private/etc/sudoers.tmp
+|4,39,1,0,1770286879,"/private/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  154  0  /opt/local/etc/sudoers.tmp
+|4,39,154,0,1770286497,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286340,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  50  0  /opt/local/etc/sudoers.tmp
+|4,39,50,0,1770286335,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
+-'  1  0  /opt/local/etc/sudoers.tmp
+|4,39,1,0,1770286220,"/opt/local/etc/sudoers.tmp"
 
 # History of marks within files (newest to oldest):
+
+> /opt/local/etc/sudoers.tmp
+	*	1770288105	0
+	"	72	1
+	^	72	2
+	.	54	0
+	+	1	0
+	+	1	9
+	+	58	0
+	+	1	1679
+	+	1	1666
+	+	1	28
+	+	2	62
+	+	3	1
+	+	3	75
+	+	4	2
+	+	5	28
+	+	6	2
+	+	7	25
+	+	8	17
+	+	9	39
+	+	10	49
+	+	11	53
+	+	12	78
+	+	13	72
+	+	14	43
+	+	8	8
+	+	15	38
+	+	16	43
+	+	17	32
+	+	18	63
+	+	19	43
+	+	21	0
+	+	23	0
+	+	24	73
+	+	25	48
+	+	27	0
+	+	28	2
+	+	29	26
+	+	30	2
+	+	32	0
+	+	33	2
+	+	34	27
+	+	35	2
+	+	37	0
+	+	38	2
+	+	38	529
+	+	38	2
+	+	39	26
+	+	40	2
+	+	41	48
+	+	42	71
+	+	43	47
+	+	45	0
+	+	46	2
+	+	47	26
+	+	48	2
+	+	49	0
+	+	50	0
+	+	51	2
+	+	52	20
+	+	54	0
+
+> /private/etc/sudoers.tmp
+	*	1770287198	0
+	"	64	0
 
 > ~/DEV/TU-Berlin-repo-aps/WiSe2025-26/Ana1LinA/2025-11-03/ha_03_Felix_09.tex
 	*	1762283654	0

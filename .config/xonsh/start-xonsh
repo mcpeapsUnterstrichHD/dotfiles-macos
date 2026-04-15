@@ -1,7 +1,18 @@
 #!/bin/bash
 
 # Arguments
-XONSH_BIN="/Users/mahd/.local/xonsh-env/xbin/xonsh"
+
+# Find xonsh binary
+if command -v xonsh >/dev/null 2>&1; then
+    XONSH_BIN="$(command -v xonsh)"
+elif [ -f "/opt/homebrew/bin/xonsh" ]; then
+    XONSH_BIN="/opt/homebrew/bin/xonsh"
+elif [ -f "/usr/local/bin/xonsh" ]; then
+    XONSH_BIN="/usr/local/bin/xonsh"
+else
+    echo "Error: xonsh binary not found!" >&2
+    exit 1
+fi
 RC_FILE="/Users/mahd/DEV/dotfiles-macos/.config/xonsh/rc.d/rc.py"
 XONSHRC="/Users/mahd/DEV/dotfiles-macos/.xonshrc"
 

@@ -1,0 +1,8 @@
+package bang-bang
+package brew
+package foreign-env
+package nvm
+package pisces
+package ssh-agent
+theme agnoster
+theme default

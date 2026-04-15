@@ -1,305 +1,475 @@
-2025-12-15T17:20:24.917Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake --version
-2025-12-15T17:20:24.918Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Volumes/SD200/Library/Android/sdk","ATUIN_HISTORY_ID":"019b154c34a47333bdd20d09a857930f","ATUIN_SESSION":"019b154be8ca77129f3b8810bd17c2a0","BREW_PREFIX":"/opt/homebrew","BUN_INSTALL":"/Users/mahd/.bun","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/llvm/include: -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DEBUGGER":"/opt/homebrew/bin/gdb","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"/Applications/Emacs.app/Contents/MacOS/Emacs","ELECTRON_NO_ATTACH_CONSOLE":"1","FPATH":"/Users/mahd/.docker/completions:/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_FEATURES":"cursor,path,title","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","GUI_DEBUGGER":"/Applications/gf2.app/Contents/MacOS/gf2","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","JAVA_HOME":"/opt/homebrew/opt/openjdk","LANG":"en_US.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/llvm/lib: -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","LaunchInstanceID":"D1556C9D-11A7-489D-9E3D-3CD7E49A29B9","MANPATH":"/Users/mahd/.nvm/versions/node/v25.2.1/share/man::/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/usr/local/MacGPG2/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:","MallocNanoZone":"0","NVM_BIN":"/Users/mahd/.nvm/versions/node/v25.2.1/bin","NVM_CD_FLAGS":"-q","NVM_DIR":"/Users/mahd/.nvm","NVM_INC":"/Users/mahd/.nvm/versions/node/v25.2.1/include/node","OLDPWD":"/Users/mahd","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSLogRateLimit":"64","OSTYPE":"darwin25.0","PATH":"/Users/mahd/.antigravity/antigravity/bin:/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/Users/mahd/.nvm/versions/node/v25.2.1/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mahd/.local/share/umake/bin:/Users/mahd/.cargo/bin:/opt/homebrew/opt/openjdk/bin:/Users/mahd/.console-ninja/bin:/Users/mahd/.local/bin:/Library/TeX/texbin:/Users/mahd/.bun/bin/:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/lib/ruby/gems/3.4.7/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Applications:/Users/mahd/.lmstudio/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.dotnet/tools:/Volumes/SD200/Applications:/users/mahd/.spicetify:/Users/mahd/.lmstudio/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"58c9afd9-7c5b-4538-888e-e688badd09f2","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/mcpeapsunterstrichhd-next","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SECURITYSESSIONID":"186b6","SHELL":"/bin/zsh","SHLVL":"3","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.TFgkzcyOtz/Listeners","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"tmux","TERM_PROGRAM_VERSION":"3.5a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,16334,1","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%2","TMUX_PLUGIN_MANAGER_PATH":"/Users/mahd/.tmux/plugins","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.5a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Antigravity/CachedData/c595276fa83d83a7c3233d582e4120f92017171c","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/mcpeapsunterstrichhd-next","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Antigravity/1.10-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Antigravity.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"92307","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.google.antigravity.99802452.99819063.C46CE215-7006-47D4-81A8-86950EC8F22F","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.google.antigravity","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","VSCODE_L10N_BUNDLE_LOCATION":""}
-2025-12-15T17:20:25.220Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -E capabilities
-2025-12-15T17:20:25.221Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Volumes/SD200/Library/Android/sdk","ATUIN_HISTORY_ID":"019b154c34a47333bdd20d09a857930f","ATUIN_SESSION":"019b154be8ca77129f3b8810bd17c2a0","BREW_PREFIX":"/opt/homebrew","BUN_INSTALL":"/Users/mahd/.bun","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar:/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/llvm/include: -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DEBUGGER":"/opt/homebrew/bin/gdb","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"/Applications/Emacs.app/Contents/MacOS/Emacs","ELECTRON_NO_ATTACH_CONSOLE":"1","FPATH":"/Users/mahd/.docker/completions:/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_FEATURES":"cursor,path,title","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","GUI_DEBUGGER":"/Applications/gf2.app/Contents/MacOS/gf2","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","JAVA_HOME":"/opt/homebrew/opt/openjdk","LANG":"en_US.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/llvm/lib: -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","LaunchInstanceID":"D1556C9D-11A7-489D-9E3D-3CD7E49A29B9","MANPATH":"/Users/mahd/.nvm/versions/node/v25.2.1/share/man::/opt/homebrew/share/man:/usr/share/man:/usr/local/share/man:/usr/local/MacGPG2/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:","MallocNanoZone":"0","NVM_BIN":"/Users/mahd/.nvm/versions/node/v25.2.1/bin","NVM_CD_FLAGS":"-q","NVM_DIR":"/Users/mahd/.nvm","NVM_INC":"/Users/mahd/.nvm/versions/node/v25.2.1/include/node","OLDPWD":"/Users/mahd","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSLogRateLimit":"64","OSTYPE":"darwin25.0","PATH":"/Users/mahd/.antigravity/antigravity/bin:/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/Users/mahd/.nvm/versions/node/v25.2.1/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/opt/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mahd/.local/share/umake/bin:/Users/mahd/.cargo/bin:/opt/homebrew/opt/openjdk/bin:/Users/mahd/.console-ninja/bin:/Users/mahd/.local/bin:/Library/TeX/texbin:/Users/mahd/.bun/bin/:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/lib/ruby/gems/3.4.7/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/mahd/.rvm/bin:/Applications:/Users/mahd/.lmstudio/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.dotnet/tools:/Volumes/SD200/Applications:/users/mahd/.spicetify:/Users/mahd/.lmstudio/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"58c9afd9-7c5b-4538-888e-e688badd09f2","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/mcpeapsunterstrichhd-next","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SECURITYSESSIONID":"186b6","SHELL":"/bin/zsh","SHLVL":"3","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.TFgkzcyOtz/Listeners","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"tmux","TERM_PROGRAM_VERSION":"3.5a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,16334,1","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%2","TMUX_PLUGIN_MANAGER_PATH":"/Users/mahd/.tmux/plugins","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.5a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Antigravity/CachedData/c595276fa83d83a7c3233d582e4120f92017171c","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/mcpeapsunterstrichhd-next","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Antigravity/1.10-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Antigravity.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"92307","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.google.antigravity.99802452.99819063.C46CE215-7006-47D4-81A8-86950EC8F22F","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.google.antigravity","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","VSCODE_L10N_BUNDLE_LOCATION":""}
-2025-12-15T17:20:25.268Z [debug] [main] Sicheres Erstellen einer neuen CMakeProject-Instanz
-2025-12-15T17:20:25.268Z [debug] [variant] VariantManager wird erstellt.
-2025-12-15T17:20:25.269Z [debug] [main] Erstellen einer neuen CMakeProject-Instanz
-2025-12-15T17:20:25.269Z [debug] [main] Initialisierung der zweiten Phase von CMake Tools wird gestartet.
-2025-12-15T17:20:25.269Z [debug] [expand] ${workspaceFolder} erweitert
-2025-12-15T17:20:25.273Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-12-15T17:20:25.321Z [info] [kit] Erfolgreich geladen: 8 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-12-15T17:20:25.405Z [debug] [kit] Nicht vorhandene Kitdatei wird nicht gelesen: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/.vscode/cmake-kits.json
-2025-12-15T17:20:25.476Z [info] [variant] Neue Varianten wurden geladen.
-2025-12-15T17:20:25.482Z [debug] [main] Die Initialisierung der CMakeProject-Instanz ist abgeschlossen.
-2025-12-15T17:20:25.496Z [info] [kit] Es wurde eine Änderung der Version der Definition von Kits von undefined in 2 festgestellt. Es wird automatisch nach Kits gesucht.
-2025-12-15T17:20:25.522Z [debug] [kitsController] Es wird erneut nach Kits gesucht.
-2025-12-15T17:20:25.522Z [debug] [kit] Es wird nach Kits auf dem System gesucht.
-2025-12-15T17:20:25.526Z [debug] [kit] Verzeichnis /Users/mahd/.antigravity/antigravity/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.526Z [debug] [kit] Verzeichnis /opt/homebrew/opt/rustup/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.526Z [debug] [kit] Verzeichnis /opt/homebrew/opt/llvm/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.526Z [debug] [kit] Verzeichnis /Users/mahd/.console-ninja/.bin wird auf Compiler überprüft
-2025-12-15T17:20:25.526Z [debug] [kit] Verzeichnis /Users/mahd/.bun/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.526Z [debug] [kit] Verzeichnis /Users/mahd/.nvm/versions/node/v25.2.1/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.526Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/homebrew/opt/php@8.2/sbin
-2025-12-15T17:20:25.527Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/php@8.2/sbin
-2025-12-15T17:20:25.527Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/homebrew/opt/php@8.2/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/php@8.2/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /opt/homebrew/Cellar/zplug/2.4.2/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /opt/homebrew/opt/zplug/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /opt/homebrew/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /opt/homebrew/sbin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/bin/vim
-2025-12-15T17:20:25.527Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin/vim
-2025-12-15T17:20:25.527Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Library/Frameworks/Python.framework/Versions/3.7/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/Frameworks/Python.framework/Versions/3.7/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.local/share/umake/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.local/share/umake/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /Users/mahd/.cargo/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /opt/homebrew/opt/openjdk/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.console-ninja/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.console-ninja/bin
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /Users/mahd/.local/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /Library/TeX/texbin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /opt/homebrew/opt/ruby/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.527Z [debug] [kit] Verzeichnis /Applications/OrbStack.app/Contents/MacOS wird auf Compiler überprüft
-2025-12-15T17:20:25.528Z [debug] [kit] Verzeichnis /Applications/OrbStack.app/Contents/MacOS/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.528Z [debug] [kit] Verzeichnis /Applications/OrbStack.app/Contents/MacOS/xbin wird auf Compiler überprüft
-2025-12-15T17:20:25.528Z [debug] [kit] Verzeichnis /Users/mahd/Library/Python/3.9/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.yarn/bin
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.yarn/bin
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.config/yarn/global/node_modules/.bin
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.config/yarn/global/node_modules/.bin
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads  /opt/homebrew/opt/ccache/libexec
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis  /opt/homebrew/opt/ccache/libexec
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Applications/Kitty.app/Contents/MacOS
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/Kitty.app/Contents/MacOS
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Applications/Alacritty.app/Contents/MacOS
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/Alacritty.app/Contents/MacOS
-2025-12-15T17:20:25.528Z [debug] [kit] Verzeichnis /Users/mahd/exe/separator wird auf Compiler überprüft
-2025-12-15T17:20:25.528Z [debug] [kit] Verzeichnis /Users/mahd/exe wird auf Compiler überprüft
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/homebrew/lib/ruby/gems/3.4.7/bin
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/lib/ruby/gems/3.4.7/bin
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/bin/composer
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin/composer
-2025-12-15T17:20:25.528Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin
-2025-12-15T17:20:25.528Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin
-2025-12-15T17:20:25.528Z [debug] [kit] Verzeichnis /Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/go/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/go/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads usr/local/opt/llvm/bin/clangd
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis usr/local/opt/llvm/bin/clangd
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/Cellar/llvm/10.0.1/bin/clangd
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/Cellar/llvm/10.0.1/bin/clangd
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /opt/local/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /opt/local/sbin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /usr/local/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /usr/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /System/Cryptexes/App/usr/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /usr/sbin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /sbin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/pmk/env/global/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/pmk/env/global/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /Library/Apple/usr/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /usr/local/MacGPG2/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.529Z [debug] [kit] Verzeichnis /usr/local/share/dotnet wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Verzeichnis /Applications/VMware Fusion.app/Contents/Public wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads ~/.dotnet/tools
-2025-12-15T17:20:25.530Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis ~/.dotnet/tools
-2025-12-15T17:20:25.530Z [debug] [kit] Verzeichnis /Applications/Ghostty.app/Contents/MacOS wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Verzeichnis /Applications wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Users/mahd/.rvm/bin
-2025-12-15T17:20:25.530Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.rvm/bin
-2025-12-15T17:20:25.530Z [debug] [kit] Verzeichnis /Users/mahd/.lmstudio/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/sbin
-2025-12-15T17:20:25.530Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/sbin
-2025-12-15T17:20:25.530Z [debug] [kit] Verzeichnis /Users/mahd/.orbstack/bin wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /usr/local/go/bin
-2025-12-15T17:20:25.530Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/go/bin
-2025-12-15T17:20:25.530Z [debug] [kit] Verzeichnis /Users/mahd/.dotnet/tools wird auf Compiler überprüft
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Volumes/SD200/Applications
-2025-12-15T17:20:25.530Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Volumes/SD200/Applications
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\LLVM\bin
-2025-12-15T17:20:25.530Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\LLVM\bin
-2025-12-15T17:20:25.530Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\mingw32\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\mingw32\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\mingw64\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\mingw64\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /users/mahd/.spicetify
-2025-12-15T17:20:25.531Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /users/mahd/.spicetify
-2025-12-15T17:20:25.531Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clang32\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clang32\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clang64\bin
-2025-12-15T17:20:25.531Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clang64\bin
-2025-12-15T17:20:25.532Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clangarm64\bin
-2025-12-15T17:20:25.532Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clangarm64\bin
-2025-12-15T17:20:25.532Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\ucrt64\bin
-2025-12-15T17:20:25.532Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\ucrt64\bin
-2025-12-15T17:20:25.557Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.antigravity/antigravity/bin
-2025-12-15T17:20:25.558Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/rustup/bin
-2025-12-15T17:20:25.558Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang
-2025-12-15T17:20:25.558Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang -v
-2025-12-15T17:20:25.561Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang-21
-2025-12-15T17:20:25.561Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang-21 -v
-2025-12-15T17:20:25.563Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang-cl
-2025-12-15T17:20:25.563Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang-cl -v
-2025-12-15T17:20:25.567Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.console-ninja/.bin
-2025-12-15T17:20:25.568Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.bun/bin
-2025-12-15T17:20:25.568Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/Cellar/zplug/2.4.2/bin
-2025-12-15T17:20:25.568Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/zplug/bin
-2025-12-15T17:20:25.574Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.nvm/versions/node/v25.2.1/bin
-2025-12-15T17:20:25.575Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.cargo/bin
-2025-12-15T17:20:25.575Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.local/bin
-2025-12-15T17:20:25.575Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/sbin
-2025-12-15T17:20:25.575Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/ruby/bin
-2025-12-15T17:20:25.575Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS
-2025-12-15T17:20:25.576Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/openjdk/bin
-2025-12-15T17:20:25.576Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS/bin
-2025-12-15T17:20:25.583Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/TeX/texbin
-2025-12-15T17:20:25.584Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/exe/separator
-2025-12-15T17:20:25.584Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/exe
-2025-12-15T17:20:25.584Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/Library/Python/3.9/bin
-2025-12-15T17:20:25.584Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin
-2025-12-15T17:20:25.584Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/local/sbin
-2025-12-15T17:20:25.585Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/local/bin
-2025-12-15T17:20:25.585Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS/xbin
-2025-12-15T17:20:25.586Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /bin
-2025-12-15T17:20:25.586Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /System/Cryptexes/App/usr/bin
-2025-12-15T17:20:25.592Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/sbin
-2025-12-15T17:20:25.609Z [debug] [kit] Clang-Binärdatei wird getestet: /usr/bin/clang
-2025-12-15T17:20:25.610Z [info] [proc] Befehl wird ausgeführt: /usr/bin/clang -v
-2025-12-15T17:20:25.613Z [debug] [kit] GCC-Binärdatei wird getestet: /usr/bin/gcc
-2025-12-15T17:20:25.613Z [info] [proc] Befehl wird ausgeführt: /usr/bin/gcc -v
-2025-12-15T17:20:25.619Z [debug] [kit] GCC-Binärdatei wird getestet: /usr/bin/llvm-gcc
-2025-12-15T17:20:25.619Z [info] [proc] Befehl wird ausgeführt: /usr/bin/llvm-gcc -v
-2025-12-15T17:20:25.630Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/Apple/usr/bin
-2025-12-15T17:20:25.631Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/MacGPG2/bin
-2025-12-15T17:20:25.631Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/share/dotnet
-2025-12-15T17:20:25.632Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/VMware Fusion.app/Contents/Public
-2025-12-15T17:20:25.632Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/Ghostty.app/Contents/MacOS
-2025-12-15T17:20:25.637Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications
-2025-12-15T17:20:25.637Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.lmstudio/bin
-2025-12-15T17:20:25.637Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.orbstack/bin
-2025-12-15T17:20:25.637Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.dotnet/tools
-2025-12-15T17:20:25.639Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin
-2025-12-15T17:20:25.639Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /sbin
-2025-12-15T17:20:25.640Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/aarch64-apple-darwin25-gcc-15
-2025-12-15T17:20:25.640Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/aarch64-apple-darwin25-gcc-15 -v
-2025-12-15T17:20:25.646Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/gcc-15
-2025-12-15T17:20:25.646Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/gcc-15 -v
-2025-12-15T17:20:25.650Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/i686-w64-mingw32-gcc
-2025-12-15T17:20:25.650Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/i686-w64-mingw32-gcc -v
-2025-12-15T17:20:25.653Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/i686-w64-mingw32-gcc-15.2.0
-2025-12-15T17:20:25.653Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/i686-w64-mingw32-gcc-15.2.0 -v
-2025-12-15T17:20:25.666Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
-2025-12-15T17:20:25.666Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc -v
-2025-12-15T17:20:25.669Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/x86_64-w64-mingw32-gcc-15.2.0
-2025-12-15T17:20:25.669Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc-15.2.0 -v
-2025-12-15T17:20:26.546Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/gcc-15
-2025-12-15T17:20:26.547Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/aarch64-apple-darwin25-gcc-15
-2025-12-15T17:20:26.956Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/i686-w64-mingw32-gcc
-2025-12-15T17:20:26.960Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/i686-w64-mingw32-gcc-15.2.0
-2025-12-15T17:20:26.961Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/i686-w64-mingw32-gcc
-2025-12-15T17:20:26.963Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/i686-w64-mingw32-gcc -v
-2025-12-15T17:20:26.990Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/i686-w64-mingw32-gcc
-2025-12-15T17:20:26.995Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
-2025-12-15T17:20:27.003Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc-15.2.0
-2025-12-15T17:20:27.009Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
-2025-12-15T17:20:27.010Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc -v
-2025-12-15T17:20:27.025Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
-2025-12-15T17:20:27.027Z [debug] [kit] Gefunden: 6 Kits im Verzeichnis /opt/homebrew/bin
-2025-12-15T17:20:34.591Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang
-2025-12-15T17:20:34.591Z [debug] [kit] Erkannter Clang-Compiler: /opt/homebrew/opt/llvm/bin/clang
-2025-12-15T17:20:34.592Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang-21
-2025-12-15T17:20:34.592Z [debug] [kit] Erkannter Clang-Compiler: /opt/homebrew/opt/llvm/bin/clang-21
-2025-12-15T17:20:34.592Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang-cl
-2025-12-15T17:20:34.592Z [debug] [kit] Erkannter Clang-Compiler: /opt/homebrew/opt/llvm/bin/clang-cl
-2025-12-15T17:20:34.643Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
-2025-12-15T17:20:34.660Z [debug] [kit] Ungültige GCC Binärdatei. "/usr/bin/gcc -v" meldet Version:  Ausgabe: Apple clang version 17.0.0 (clang-1700.6.3.2)
-Target: arm64-apple-darwin25.2.0
+2026-04-12T10:42:41.995Z [info] [bookmarks] 0 Lesezeichen geladen
+2026-04-12T10:42:42.517Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake --version
+2026-04-12T10:42:42.517Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Users/mahd/Library/Android/sdk","ATUIN_SESSION":"019d7c2302fd783381efc2fc27239a69","ATUIN_SHLVL":"1","ATUIN_TMUX_POPUP":"false","BUN_INSTALL":"/Users/mahd/.bun","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/llvm/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"emacsclient -c -a \"emacs\"","ELECTRON_NO_ATTACH_CONSOLE":"1","FISH_PARENT_TERM":"ghostty","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_FEATURES":"cursor:blink,path,title","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","GOENV_SHELL":"fish","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","JAVA_HOME":"/opt/homebrew/opt/openjdk","LANG":"en_US.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/llvm/lib","LOGNAME":"mahd","MACH_PORT_RENDEZVOUS_PEER_VALDATION":"0","MANPATH":"/usr/share/man:/usr/local/share/man:/usr/local/MacGPG2/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:","MallocNanoZone":"0","NODENV_SHELL":"fish","NVM_DIR":"/Users/mahd/.nvm","OMF_CONFIG":"/Users/mahd/.config/omf","OMF_PATH":"/Users/mahd/.local/share/omf","OSLogRateLimit":"64","PATH":"/Users/mahd/.vite-plus/bin:/Users/mahd/.bun/bin:/Users/mahd/.rbenv/shims:/Users/mahd/.goenv/shims:/Users/mahd/.nodenv/shims:/Users/mahd/.pyenv/shims:/opt/homebrew/opt/pnpm:/opt/homebrew/opt/pnpm/bin:/opt/homebrew/opt/emacs-plus@30/bin:/Users/mahd/.config/emacs/bin:/Users/mahd/DEV/vcpkg:/Users/mahd/.console-ninja/.bin:/Users/mahd/.spicetify:/Users/mahd/.antigravity/antigravity/bin:/Users/mahd/.lmstudio/bin:/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.dotnet/tools:/Library/TeX/texbin:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/Ghostty.app/Contents/MacOS:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/opt/ruby/bin:/Users/mahd/.orbstack/bin:/Users/mahd/.cargo/bin:/Users/mahd/go/bin:/Users/mahd/.local/bin:/opt/local/sbin:/opt/local/bin:/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/MacGPG2/bin:/Users/mahd/.lmstudio/bin","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig","PNPM_HOME":"/opt/homebrew/opt/pnpm","POSH_SESSION_ID":"b6869167-4472-4329-8fb0-c92ec025e180","POSH_SHELL":"fish","POSH_SHELL_VERSION":"4.5.0","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/mcpeapsUnterstrichHD/mcpeapsUnterstrichHD-sveltekit","PYENV_SHELL":"fish","RBENV_SHELL":"fish","SHELL":"/opt/homebrew/bin/fish","SHLVL":"2","SSH_AGENT_PID":"1105","SSH_AUTH_SOCK":"/Users/mahd/.ssh/agent/s.gbn0V3yeXD.agent.2dEoMRVZMY","SSH_ENV":"/Users/mahd/.ssh/environment","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"ghostty","TERM_PROGRAM_VERSION":"3.6a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,1496,0","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%0","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.6a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VISUAL":"emacsclient -c -a \"emacs\"","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/41dd792b5e652393e7787322889ed5fdc58bd75b","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/mcpeapsUnterstrichHD/mcpeapsUnterstrichHD-sveltekit","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.11-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"en-us\",\"resolvedLanguage\":\"de\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"languagePack\":{\"translationsConfigFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/tcf.json\",\"messagesFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/41dd792b5e652393e7787322889ed5fdc58bd75b/nls.messages.json\",\"corruptMarkerFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/corrupted.info\"},\"locale\":\"de\",\"availableLanguages\":{\"*\":\"de\"},\"_languagePackId\":\"0f2242968a940e74f7b7df5db2df6123.de\",\"_languagePackSupport\":true,\"_translationsConfigFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/tcf.json\",\"_cacheRoot\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de\",\"_resolvedLanguagePackCoreLocation\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/41dd792b5e652393e7787322889ed5fdc58bd75b\",\"_corruptedFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/corrupted.info\"}","VSCODE_PID":"31534","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.170317752.170324363.3C391EFA-6484-4D79-A93C-47C4D0A266B9","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","ELECTRON_RUN_AS_NODE":"1","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1"}
+2026-04-12T10:42:43.531Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -E capabilities
+2026-04-12T10:42:43.531Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Users/mahd/Library/Android/sdk","ATUIN_SESSION":"019d7c2302fd783381efc2fc27239a69","ATUIN_SHLVL":"1","ATUIN_TMUX_POPUP":"false","BUN_INSTALL":"/Users/mahd/.bun","COLORTERM":"truecolor","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/ruby/include -I/opt/homebrew/opt/llvm/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"emacsclient -c -a \"emacs\"","ELECTRON_NO_ATTACH_CONSOLE":"1","FISH_PARENT_TERM":"ghostty","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GHOSTTY_BIN_DIR":"/Applications/Ghostty.app/Contents/MacOS","GHOSTTY_RESOURCES_DIR":"/Applications/Ghostty.app/Contents/Resources/ghostty","GHOSTTY_SHELL_FEATURES":"cursor:blink,path,title","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","GOENV_SHELL":"fish","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","JAVA_HOME":"/opt/homebrew/opt/openjdk","LANG":"en_US.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/ruby/lib -L/opt/homebrew/opt/llvm/lib","LOGNAME":"mahd","MACH_PORT_RENDEZVOUS_PEER_VALDATION":"0","MANPATH":"/usr/share/man:/usr/local/share/man:/usr/local/MacGPG2/share/man:/Library/TeX/Distributions/.DefaultTeX/Contents/Man:/Applications/Ghostty.app/Contents/Resources/ghostty/../man:","MallocNanoZone":"0","NODENV_SHELL":"fish","NVM_DIR":"/Users/mahd/.nvm","OMF_CONFIG":"/Users/mahd/.config/omf","OMF_PATH":"/Users/mahd/.local/share/omf","OSLogRateLimit":"64","PATH":"/Users/mahd/.vite-plus/bin:/Users/mahd/.bun/bin:/Users/mahd/.rbenv/shims:/Users/mahd/.goenv/shims:/Users/mahd/.nodenv/shims:/Users/mahd/.pyenv/shims:/opt/homebrew/opt/pnpm:/opt/homebrew/opt/pnpm/bin:/opt/homebrew/opt/emacs-plus@30/bin:/Users/mahd/.config/emacs/bin:/Users/mahd/DEV/vcpkg:/Users/mahd/.console-ninja/.bin:/Users/mahd/.spicetify:/Users/mahd/.antigravity/antigravity/bin:/Users/mahd/.lmstudio/bin:/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.dotnet/tools:/Library/TeX/texbin:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/Ghostty.app/Contents/MacOS:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/opt/ruby/bin:/Users/mahd/.orbstack/bin:/Users/mahd/.cargo/bin:/Users/mahd/go/bin:/Users/mahd/.local/bin:/opt/local/sbin:/opt/local/bin:/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/MacGPG2/bin:/Users/mahd/.lmstudio/bin","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig","PNPM_HOME":"/opt/homebrew/opt/pnpm","POSH_SESSION_ID":"b6869167-4472-4329-8fb0-c92ec025e180","POSH_SHELL":"fish","POSH_SHELL_VERSION":"4.5.0","POWERLINE_COMMAND":"oh-my-posh","PWD":"/Users/mahd/DEV/mcpeapsUnterstrichHD/mcpeapsUnterstrichHD-sveltekit","PYENV_SHELL":"fish","RBENV_SHELL":"fish","SHELL":"/opt/homebrew/bin/fish","SHLVL":"2","SSH_AGENT_PID":"1105","SSH_AUTH_SOCK":"/Users/mahd/.ssh/agent/s.gbn0V3yeXD.agent.2dEoMRVZMY","SSH_ENV":"/Users/mahd/.ssh/environment","TERM":"xterm-256color","TERMINFO":"/Applications/Ghostty.app/Contents/Resources/terminfo","TERM_PROGRAM":"ghostty","TERM_PROGRAM_VERSION":"3.6a","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","TMUX":"/private/tmp/tmux-501/default,1496,0","TMUX_CONF":"/Users/mahd/.tmux.conf","TMUX_CONF_LOCAL":"/Users/mahd/.tmux.conf.local","TMUX_PANE":"%0","TMUX_PROGRAM":"/opt/homebrew/Cellar/tmux/3.6a/bin/tmux","TMUX_SOCKET":"/private/tmp/tmux-501/default","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VISUAL":"emacsclient -c -a \"emacs\"","VSCODE_CLI":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/41dd792b5e652393e7787322889ed5fdc58bd75b","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/Users/mahd/DEV/mcpeapsUnterstrichHD/mcpeapsUnterstrichHD-sveltekit","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.11-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"en-us\",\"resolvedLanguage\":\"de\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"languagePack\":{\"translationsConfigFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/tcf.json\",\"messagesFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/41dd792b5e652393e7787322889ed5fdc58bd75b/nls.messages.json\",\"corruptMarkerFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/corrupted.info\"},\"locale\":\"de\",\"availableLanguages\":{\"*\":\"de\"},\"_languagePackId\":\"0f2242968a940e74f7b7df5db2df6123.de\",\"_languagePackSupport\":true,\"_translationsConfigFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/tcf.json\",\"_cacheRoot\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de\",\"_resolvedLanguagePackCoreLocation\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/41dd792b5e652393e7787322889ed5fdc58bd75b\",\"_corruptedFile\":\"/Users/mahd/Library/Application Support/Code/clp/0f2242968a940e74f7b7df5db2df6123.de/corrupted.info\"}","VSCODE_PID":"31534","XDG_DATA_DIRS":"/usr/local/share:/usr/share:/Applications/Ghostty.app/Contents/Resources/ghostty/..","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.170317752.170324363.3C391EFA-6484-4D79-A93C-47C4D0A266B9","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x0","ELECTRON_RUN_AS_NODE":"1","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1"}
+2026-04-12T10:42:44.176Z [debug] [main] Sicheres Erstellen einer neuen CMakeProject-Instanz
+2026-04-12T10:42:44.176Z [debug] [variant] VariantManager wird erstellt.
+2026-04-12T10:42:44.177Z [debug] [main] Erstellen einer neuen CMakeProject-Instanz
+2026-04-12T10:42:44.177Z [debug] [main] Initialisierung der zweiten Phase von CMake Tools wird gestartet
+2026-04-12T10:42:44.177Z [debug] [expand] ${workspaceFolder} erweitert
+2026-04-12T10:42:44.184Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2026-04-12T10:42:46.108Z [info] [kit] Erfolgreich geladen: 12 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2026-04-12T10:42:46.293Z [debug] [kit] Nicht vorhandene Kitdatei wird nicht gelesen: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/.vscode/cmake-kits.json
+2026-04-12T10:42:46.407Z [info] [variant] Neue Varianten wurden geladen.
+2026-04-12T10:42:46.407Z [debug] [main] Die Initialisierung der CMakeProject-Instanz ist abgeschlossen.
+2026-04-12T10:42:51.991Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:43:07.513Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:43:14.457Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:45:37.470Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:45:38.174Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:45:58.041Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:47:06.764Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:48:38.380Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:48:50.224Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:51:35.770Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T10:55:04.986Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-12T11:15:32.468Z [debug] [extension] CMakeTools deaktivieren
+6-04-11T09:08:52.850Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:11:59.066Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:12:29.684Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:12:37.577Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:13:07.558Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:14:16.520Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:14:25.955Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:16:28.723Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:16:44.719Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:16:50.271Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:16:59.672Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:17:13.057Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:17:32.839Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:21:30.009Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:22:01.735Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:26:39.191Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-11T09:29:41.884Z [debug] [extension] CMakeTools deaktivieren
+ne Kits ausgewählt.
+2026-04-06T22:31:11.250Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:15:06.577Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:21:43.442Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:26:38.422Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:29:21.632Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:35:08.679Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:40:16.744Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:40:48.527Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-04-06T23:55:01.169Z [debug] [extension] CMakeTools deaktivieren
+ft
+2026-03-09T09:04:36.720Z [debug] [kit] Verzeichnis /usr/local/bin wird auf Compiler überprüft
+2026-03-09T09:04:36.720Z [debug] [kit] Verzeichnis /usr/bin wird auf Compiler überprüft
+2026-03-09T09:04:36.720Z [debug] [kit] Verzeichnis /bin wird auf Compiler überprüft
+2026-03-09T09:04:36.720Z [debug] [kit] Verzeichnis /sbin wird auf Compiler überprüft
+2026-03-09T09:04:36.720Z [debug] [kit] Verzeichnis /usr/sbin wird auf Compiler überprüft
+2026-03-09T09:04:36.720Z [debug] [kit] Verzeichnis /System/Cryptexes/App/usr/bin wird auf Compiler überprüft
+2026-03-09T09:04:36.720Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /opt/pmk/env/global/bin
+2026-03-09T09:04:36.720Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/pmk/env/global/bin
+2026-03-09T09:04:36.720Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
+2026-03-09T09:04:36.720Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
+2026-03-09T09:04:36.720Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+2026-03-09T09:04:36.720Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+2026-03-09T09:04:36.720Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /Applications/VMware Fusion.app/Contents/Public
+2026-03-09T09:04:36.720Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/VMware Fusion.app/Contents/Public
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
+2026-03-09T09:04:36.721Z [debug] [kit] Verzeichnis /Library/Apple/usr/bin wird auf Compiler überprüft
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads ~/.dotnet/tools
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis ~/.dotnet/tools
+2026-03-09T09:04:36.721Z [debug] [kit] Verzeichnis /usr/local/share/dotnet wird auf Compiler überprüft
+2026-03-09T09:04:36.721Z [debug] [kit] Verzeichnis /usr/local/MacGPG2/bin wird auf Compiler überprüft
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\mingw64\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\mingw64\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\LLVM\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\LLVM\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\mingw32\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\mingw32\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\ucrt64\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\ucrt64\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clangarm64\bin
+2026-03-09T09:04:36.721Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clangarm64\bin
+2026-03-09T09:04:36.722Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clang32\bin
+2026-03-09T09:04:36.722Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clang32\bin
+2026-03-09T09:04:36.722Z [debug] [kit] Überprüfung überspringen des nicht vorhandenen Pfads undefined\msys64\clang64\bin
+2026-03-09T09:04:36.722Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis undefined\msys64\clang64\bin
+2026-03-09T09:04:36.731Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.goenv/shims
+2026-03-09T09:04:36.731Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.nodenv/shims
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.nvm/versions/node/v25.2.1/bin
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.rbenv/shims
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/pnpm
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/emacs-plus@30/bin
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.console-ninja/.bin
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/pnpm/bin
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.spicetify
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.pyenv/shims
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.antigravity/antigravity/bin
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.lmstudio/bin
+2026-03-09T09:04:36.732Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.config/emacs/bin
+2026-03-09T09:04:36.733Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/DEV/vcpkg
+2026-03-09T09:04:36.733Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.dotnet/tools
+2026-03-09T09:04:36.733Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/OrbStack.app/Contents/MacOS/bin
+2026-03-09T09:04:36.733Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/rustup/bin
+2026-03-09T09:04:36.733Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Applications/Ghostty.app/Contents/MacOS
+2026-03-09T09:04:36.734Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/openjdk/bin
+2026-03-09T09:04:36.734Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/opt/ruby/bin
+2026-03-09T09:04:36.734Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang
+2026-03-09T09:04:36.734Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang -v
+2026-03-09T09:04:36.736Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang-21
+2026-03-09T09:04:36.736Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang-21 -v
+2026-03-09T09:04:36.737Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang-cl
+2026-03-09T09:04:36.737Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang-cl -v
+2026-03-09T09:04:36.740Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.orbstack/bin
+2026-03-09T09:04:36.740Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.local/bin
+2026-03-09T09:04:36.740Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/.cargo/bin
+2026-03-09T09:04:36.740Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Users/mahd/go/bin
+2026-03-09T09:04:36.742Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/local/bin
+2026-03-09T09:04:36.742Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/homebrew/sbin
+2026-03-09T09:04:36.742Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/bin
+2026-03-09T09:04:36.742Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /opt/local/sbin
+2026-03-09T09:04:36.748Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/TeX/texbin
+2026-03-09T09:04:36.749Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /sbin
+2026-03-09T09:04:36.749Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /bin
+2026-03-09T09:04:36.752Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/sbin
+2026-03-09T09:04:36.752Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /Library/Apple/usr/bin
+2026-03-09T09:04:36.752Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /System/Cryptexes/App/usr/bin
+2026-03-09T09:04:36.753Z [debug] [kit] Clang-Binärdatei wird getestet: /usr/bin/clang
+2026-03-09T09:04:36.753Z [info] [proc] Befehl wird ausgeführt: /usr/bin/clang -v
+2026-03-09T09:04:36.757Z [debug] [kit] GCC-Binärdatei wird getestet: /usr/bin/gcc
+2026-03-09T09:04:36.757Z [info] [proc] Befehl wird ausgeführt: /usr/bin/gcc -v
+2026-03-09T09:04:36.762Z [debug] [kit] GCC-Binärdatei wird getestet: /usr/bin/llvm-gcc
+2026-03-09T09:04:36.762Z [info] [proc] Befehl wird ausgeführt: /usr/bin/llvm-gcc -v
+2026-03-09T09:04:36.769Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/share/dotnet
+2026-03-09T09:04:36.769Z [debug] [kit] Gefunden: 0 Kits im Verzeichnis /usr/local/MacGPG2/bin
+2026-03-09T09:04:36.779Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/aarch64-apple-darwin25-gcc-15
+2026-03-09T09:04:36.779Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/aarch64-apple-darwin25-gcc-15 -v
+2026-03-09T09:04:36.785Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/gcc-15
+2026-03-09T09:04:36.785Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/gcc-15 -v
+2026-03-09T09:04:36.793Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/i686-w64-mingw32-gcc
+2026-03-09T09:04:36.793Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/i686-w64-mingw32-gcc -v
+2026-03-09T09:04:36.798Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/i686-w64-mingw32-gcc-15.2.0
+2026-03-09T09:04:36.798Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/i686-w64-mingw32-gcc-15.2.0 -v
+2026-03-09T09:04:36.809Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
+2026-03-09T09:04:36.810Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc -v
+2026-03-09T09:04:36.812Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/x86_64-w64-mingw32-gcc-15.2.0
+2026-03-09T09:04:36.813Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc-15.2.0 -v
+2026-03-09T09:04:37.173Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/i686-w64-mingw32-gcc
+2026-03-09T09:04:37.175Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/i686-w64-mingw32-gcc-15.2.0
+2026-03-09T09:04:37.177Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/i686-w64-mingw32-gcc
+2026-03-09T09:04:37.177Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/i686-w64-mingw32-gcc -v
+2026-03-09T09:04:37.191Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
+2026-03-09T09:04:37.193Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/i686-w64-mingw32-gcc
+2026-03-09T09:04:37.193Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc-15.2.0
+2026-03-09T09:04:37.198Z [debug] [kit] GCC-Binärdatei wird getestet: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
+2026-03-09T09:04:37.198Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc -v
+2026-03-09T09:04:37.270Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/x86_64-w64-mingw32-gcc
+2026-03-09T09:04:37.366Z [debug] [kit] Clang-Compiler wurde erkannt: /usr/bin/clang
+2026-03-09T09:04:37.366Z [debug] [kit] Erkannter Clang-Compiler: /usr/bin/clang
+2026-03-09T09:04:37.366Z [debug] [kit] Ungültige GCC Binärdatei. "/usr/bin/llvm-gcc -v" meldet Version:  Ausgabe: Apple clang version 17.0.0 (clang-1700.6.4.2)
+Target: arm64-apple-darwin25.3.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 
-2025-12-15T17:20:34.660Z [debug] [kit] Clang-Compiler wurde erkannt: /usr/bin/clang
-2025-12-15T17:20:34.660Z [debug] [kit] Erkannter Clang-Compiler: /usr/bin/clang
-2025-12-15T17:20:34.660Z [debug] [kit] Ungültige GCC Binärdatei. "/usr/bin/llvm-gcc -v" meldet Version:  Ausgabe: Apple clang version 17.0.0 (clang-1700.6.3.2)
-Target: arm64-apple-darwin25.2.0
+2026-03-09T09:04:37.457Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/gcc-15
+2026-03-09T09:04:37.457Z [debug] [kit] GCC-Compiler wurde erkannt: /opt/homebrew/bin/aarch64-apple-darwin25-gcc-15
+2026-03-09T09:04:37.457Z [debug] [kit] Gefunden: 6 Kits im Verzeichnis /opt/homebrew/bin
+2026-03-09T09:04:45.375Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-03-09T09:04:45.759Z [debug] [kit] Ungültige GCC Binärdatei. "/usr/bin/gcc -v" meldet Version:  Ausgabe: Apple clang version 17.0.0 (clang-1700.6.4.2)
+Target: arm64-apple-darwin25.3.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 
-2025-12-15T17:20:43.232Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang
-2025-12-15T17:20:43.235Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang -v
-2025-12-15T17:20:43.243Z [debug] [kit] Gefunden: 1 Kits im Verzeichnis /usr/bin
-2025-12-15T17:20:45.034Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
-2025-12-15T17:20:45.792Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang
-2025-12-15T17:20:45.818Z [debug] [kit] Gefunden: 3 Kits im Verzeichnis /opt/homebrew/opt/llvm/bin
-2025-12-15T17:20:45.818Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 21.1.2 arm64-apple-darwin25.2.0
-2025-12-15T17:20:45.818Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 21.1.2 arm64-apple-darwin25.2.0
-2025-12-15T17:20:45.818Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang-cl 21.1.2 arm64-pc-windows-msvc
-2025-12-15T17:20:45.818Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 aarch64-apple-darwin25
-2025-12-15T17:20:45.819Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 aarch64-apple-darwin25
-2025-12-15T17:20:45.819Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 i686-w64-mingw32
-2025-12-15T17:20:45.819Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 i686-w64-mingw32
-2025-12-15T17:20:45.819Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 x86_64-w64-mingw32
-2025-12-15T17:20:45.819Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 x86_64-w64-mingw32
-2025-12-15T17:20:45.819Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 17.0.0 arm64-apple-darwin25.2.0
-2025-12-15T17:20:45.822Z [debug] [kitsController] Kits werden gespeichert in /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-12-15T17:20:45.822Z [debug] [kitsController] Neue Kits werden gespeichert in /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-12-15T17:20:46.229Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-12-15T17:20:46.380Z [info] [kit] Erfolgreich geladen: 10 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
-2025-12-15T17:20:46.418Z [info] [variant] Neue Varianten wurden geladen.
-2025-12-15T17:20:46.487Z [info] [variant] Neue Varianten wurden geladen.
-2025-12-15T17:20:51.083Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
-2025-12-16T09:50:27.403Z [debug] [extension] CMakeTools deaktivieren
-:"1","APPLICATION_INSIGHTS_NO_STATSBEAT":"true","CONSOLE_NINJA_WELCOME_SHOWN":"+","VSCODE_L10N_BUNDLE_LOCATION":"","VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_HOME":"/Users/mahd","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","WALLABY_PRODUCTION":"true"}
-2025-10-18T20:05:23.604Z [info] [cmake] Not searching for unused variables given on the command line.
-2025-10-18T20:05:23.605Z [info] [cmake] -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
-2025-10-18T20:05:23.630Z [info] [cmake] -- Configuring done (0.2s)
-2025-10-18T20:05:23.671Z [info] [cmake] -- Generating done (0.0s)
-2025-10-18T20:05:23.677Z [info] [cmake] -- Build files have been written to: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build
-2025-10-18T20:05:23.679Z [debug] [cmakefileapi-parser] Read reply folder: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build/.cmake/api/v1/reply
-2025-10-18T20:05:23.686Z [debug] [cmakefileapi-parser] Found index files: ["cache-v2-63cba48f5be555c429d8.json","cmakeFiles-v1-827de0c5ecec4d83d33c.json","codemodel-v2-a7c5327296f0dd6dbc78.json","directory-.-Debug-f5ebdc15457944623624.json","index-2025-10-18T20-05-23-0676.json","target-comboom_punkt_sucht_native_wallpaper-Debug-514aa9d93bf3a62561ba.json","target-comboom_punkt_sucht_native_wallpaper_autogen-Debug-a95305a9452f73b7bd74.json","target-comboom_punkt_sucht_native_wallpaper_autogen_timestamp_deps-Debug-c223a9c91b5360968f46.json","toolchains-v1-0a76e9a3e5c9e97af6dd.json"]
-2025-10-18T20:05:23.691Z [debug] [cache] CMake-Cachedatei wird gelesen: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build/CMakeCache.txt
-2025-10-18T20:05:23.692Z [debug] [cache] CMake-Cachezeichenfolge wird analysiert.
-2025-10-18T20:21:36.450Z [debug] [main] Speichern von CMakeLists.txt erkannt, automatische Neukonfiguration wird versucht...
-2025-10-18T20:21:36.453Z [info] [main] Projekt konfigurieren: comboom_punkt_sucht_native_wallpaper 
-2025-10-18T20:21:36.453Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
-2025-10-18T20:21:36.457Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-10-18T20:21:36.457Z [debug] [driver] Konfiguration starten 
-2025-10-18T20:21:36.457Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
-2025-10-18T20:21:36.458Z [debug] [driver] Compiler in Clang 21.1.2 arm64-apple-darwin25.0.0 werden zur Konfiguration verwendet
-2025-10-18T20:21:36.460Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-10-18T20:21:36.461Z [debug] [cmakefileapi-driver] Configuring using kit
-2025-10-18T20:21:36.461Z [debug] [cmakefileapi-driver] Invoking CMake /opt/homebrew/bin/cmake with arguments ["-DCMAKE_BUILD_TYPE:STRING=Debug","-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE","-DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang","-DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++","--no-warn-unused-cli","-S","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper","-B","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build","-G","Ninja"]
-2025-10-18T20:21:36.462Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++ --no-warn-unused-cli -S /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper -B /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build -G Ninja
-2025-10-18T20:21:36.463Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Volumes/SD200/Library/Android/sdk","ATUIN_SESSION":"0199f8e1ad727710b017b3807c1283db","BREW_PREFIX":"/opt/homebrew","BUN_INSTALL":"/Users/mahd/.bun","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/llvm/include: -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"/Applications/Emacs.app/Contents/MacOS/Emacs","FPATH":"/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","LANG":"C.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/llvm/lib: -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","MANPATH":":/opt/homebrew/share/man:","MallocNanoZone":"0","NVM_CD_FLAGS":"-q","NVM_DIR":"/Users/mahd/.nvm","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSLogRateLimit":"64","OSTYPE":"darwin25.0","PATH":"/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mahd/.bun/bin/:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mahd/.rvm/bin:/Applications:/Users/mahd/.lmstudio/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.dotnet/tools:/Volumes/SD200/Applications:/users/mahd/.spicetify:/Users/mahd/.lmstudio/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"45fdd04f-5484-4e01-8190-9445d57bcbf8","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POWERLINE_COMMAND":"oh-my-posh","PWD":"/","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SHELL":"/bin/zsh","SHLVL":"0","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.eiPTMnNvDk/Listeners","TERM":"xterm-256color","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/7d842fb85a0275a4a8e4d7e040d2625abbf7f084","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.10-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"89596","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.73308500.73312048","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_":"/Applications/Visual Studio Code.app/Contents/MacOS/Electron","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","APPLICATION_INSIGHTS_NO_STATSBEAT":"true","CONSOLE_NINJA_WELCOME_SHOWN":"+","VSCODE_L10N_BUNDLE_LOCATION":"","VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_HOME":"/Users/mahd","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","WALLABY_PRODUCTION":"true"}
-2025-10-18T20:21:37.065Z [info] [cmake] Not searching for unused variables given on the command line.
-2025-10-18T20:21:37.065Z [info] [cmake] -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
-2025-10-18T20:21:37.103Z [info] [cmake] -- Configuring done (0.6s)
-2025-10-18T20:21:37.183Z [info] [cmake] -- Generating done (0.1s)
-2025-10-18T20:21:37.191Z [info] [cmake] -- Build files have been written to: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build
-2025-10-18T20:21:37.193Z [debug] [cmakefileapi-parser] Read reply folder: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build/.cmake/api/v1/reply
-2025-10-18T20:21:37.193Z [debug] [cmakefileapi-parser] Found index files: ["cache-v2-63cba48f5be555c429d8.json","cmakeFiles-v1-827de0c5ecec4d83d33c.json","codemodel-v2-4e152d491f371ac39bf9.json","directory-.-Debug-f5ebdc15457944623624.json","index-2025-10-18T20-21-37-0188.json","target-comboom_punkt_sucht_native_wallpaper-Debug-24b32e006ebfaca470d7.json","target-comboom_punkt_sucht_native_wallpaper_autogen-Debug-a95305a9452f73b7bd74.json","target-comboom_punkt_sucht_native_wallpaper_autogen_timestamp_deps-Debug-c223a9c91b5360968f46.json","toolchains-v1-0a76e9a3e5c9e97af6dd.json"]
-2025-10-18T20:21:37.204Z [debug] [cache] CMake-Cachedatei wird gelesen: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build/CMakeCache.txt
-2025-10-18T20:21:37.205Z [debug] [cache] CMake-Cachezeichenfolge wird analysiert.
-2025-10-18T20:21:46.452Z [debug] [main] Speichern von CMakeLists.txt erkannt, automatische Neukonfiguration wird versucht...
-2025-10-18T20:21:46.462Z [info] [main] Projekt konfigurieren: comboom_punkt_sucht_native_wallpaper 
-2025-10-18T20:21:46.463Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
-2025-10-18T20:21:46.479Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-10-18T20:21:46.479Z [debug] [driver] Konfiguration starten 
-2025-10-18T20:21:46.479Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
-2025-10-18T20:21:46.501Z [debug] [driver] Compiler in Clang 21.1.2 arm64-apple-darwin25.0.0 werden zur Konfiguration verwendet
-2025-10-18T20:21:46.506Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-10-18T20:21:46.508Z [debug] [cmakefileapi-driver] Configuring using kit
-2025-10-18T20:21:46.509Z [debug] [cmakefileapi-driver] Invoking CMake /opt/homebrew/bin/cmake with arguments ["-DCMAKE_BUILD_TYPE:STRING=Debug","-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE","-DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang","-DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++","--no-warn-unused-cli","-S","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper","-B","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build","-G","Ninja"]
-2025-10-18T20:21:46.511Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++ --no-warn-unused-cli -S /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper -B /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build -G Ninja
-2025-10-18T20:21:46.511Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Volumes/SD200/Library/Android/sdk","ATUIN_SESSION":"0199f8e1ad727710b017b3807c1283db","BREW_PREFIX":"/opt/homebrew","BUN_INSTALL":"/Users/mahd/.bun","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/llvm/include: -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"/Applications/Emacs.app/Contents/MacOS/Emacs","FPATH":"/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","LANG":"C.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/llvm/lib: -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","MANPATH":":/opt/homebrew/share/man:","MallocNanoZone":"0","NVM_CD_FLAGS":"-q","NVM_DIR":"/Users/mahd/.nvm","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSLogRateLimit":"64","OSTYPE":"darwin25.0","PATH":"/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mahd/.bun/bin/:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mahd/.rvm/bin:/Applications:/Users/mahd/.lmstudio/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.dotnet/tools:/Volumes/SD200/Applications:/users/mahd/.spicetify:/Users/mahd/.lmstudio/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"45fdd04f-5484-4e01-8190-9445d57bcbf8","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POWERLINE_COMMAND":"oh-my-posh","PWD":"/","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SHELL":"/bin/zsh","SHLVL":"0","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.eiPTMnNvDk/Listeners","TERM":"xterm-256color","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/7d842fb85a0275a4a8e4d7e040d2625abbf7f084","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.10-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"89596","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.73308500.73312048","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_":"/Applications/Visual Studio Code.app/Contents/MacOS/Electron","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","APPLICATION_INSIGHTS_NO_STATSBEAT":"true","CONSOLE_NINJA_WELCOME_SHOWN":"+","VSCODE_L10N_BUNDLE_LOCATION":"","VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_HOME":"/Users/mahd","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","WALLABY_PRODUCTION":"true"}
-2025-10-18T20:21:46.859Z [info] [cmake] Not searching for unused variables given on the command line.
-2025-10-18T20:21:46.859Z [info] [cmake] -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
-2025-10-18T20:21:46.923Z [info] [cmake] -- Configuring done (0.4s)
-2025-10-18T20:21:47.019Z [info] [cmake] -- Generating done (0.1s)
-2025-10-18T20:21:47.043Z [info] [cmake] -- Build files have been written to: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build
-2025-10-18T20:21:47.046Z [debug] [cmakefileapi-parser] Read reply folder: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build/.cmake/api/v1/reply
-2025-10-18T20:21:47.047Z [debug] [cmakefileapi-parser] Found index files: ["cache-v2-63cba48f5be555c429d8.json","cmakeFiles-v1-827de0c5ecec4d83d33c.json","codemodel-v2-4e152d491f371ac39bf9.json","directory-.-Debug-f5ebdc15457944623624.json","index-2025-10-18T20-21-47-0040.json","target-comboom_punkt_sucht_native_wallpaper-Debug-24b32e006ebfaca470d7.json","target-comboom_punkt_sucht_native_wallpaper_autogen-Debug-a95305a9452f73b7bd74.json","target-comboom_punkt_sucht_native_wallpaper_autogen_timestamp_deps-Debug-c223a9c91b5360968f46.json","toolchains-v1-0a76e9a3e5c9e97af6dd.json"]
-2025-10-18T20:21:47.054Z [debug] [cache] CMake-Cachedatei wird gelesen: /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build/CMakeCache.txt
-2025-10-18T20:21:47.054Z [debug] [cache] CMake-Cachezeichenfolge wird analysiert.
-2025-10-18T20:22:05.192Z [debug] [main] Speichern von CMakeLists.txt erkannt, automatische Neukonfiguration wird versucht...
-2025-10-18T20:22:05.215Z [info] [main] Projekt konfigurieren: comboom_punkt_sucht_native_wallpaper 
-2025-10-18T20:22:05.215Z [debug] [main] Geöffnete Dateien werden vor dem Konfigurieren/Erstellen gespeichert.
-2025-10-18T20:22:05.282Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-10-18T20:22:05.283Z [debug] [driver] Konfiguration starten 
-2025-10-18T20:22:05.283Z [debug] [driver] Prüfungen und Schritte vor der Konfiguration werden ausgeführt
-2025-10-18T20:22:05.291Z [debug] [driver] Compiler in Clang 21.1.2 arm64-apple-darwin25.0.0 werden zur Konfiguration verwendet
-2025-10-18T20:22:05.308Z [debug] [expand] ${workspaceFolder}/build erweitert
-2025-10-18T20:22:05.312Z [debug] [cmakefileapi-driver] Configuring using kit
-2025-10-18T20:22:05.312Z [debug] [cmakefileapi-driver] Invoking CMake /opt/homebrew/bin/cmake with arguments ["-DCMAKE_BUILD_TYPE:STRING=Debug","-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE","-DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang","-DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++","--no-warn-unused-cli","-S","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper","-B","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build","-G","Ninja"]
+2026-03-09T09:04:45.760Z [debug] [kit] Gefunden: 1 Kits im Verzeichnis /usr/bin
+2026-03-09T09:04:45.760Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang-21
+2026-03-09T09:04:45.760Z [debug] [kit] Erkannter Clang-Compiler: /opt/homebrew/opt/llvm/bin/clang-21
+2026-03-09T09:04:45.760Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang
+2026-03-09T09:04:45.760Z [debug] [kit] Erkannter Clang-Compiler: /opt/homebrew/opt/llvm/bin/clang
+2026-03-09T09:04:45.760Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang-cl
+2026-03-09T09:04:45.760Z [debug] [kit] Erkannter Clang-Compiler: /opt/homebrew/opt/llvm/bin/clang-cl
+2026-03-09T09:04:45.920Z [debug] [kit] Clang-Binärdatei wird getestet: /opt/homebrew/opt/llvm/bin/clang
+2026-03-09T09:04:45.921Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/opt/llvm/bin/clang -v
+2026-03-09T09:04:46.161Z [debug] [kit] Clang-Compiler wurde erkannt: /opt/homebrew/opt/llvm/bin/clang
+2026-03-09T09:04:46.165Z [debug] [kit] Gefunden: 3 Kits im Verzeichnis /opt/homebrew/opt/llvm/bin
+2026-03-09T09:04:46.165Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 21.1.2 arm64-apple-darwin25.3.0
+2026-03-09T09:04:46.165Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 21.1.2 arm64-apple-darwin25.3.0
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang-cl 21.1.2 arm64-pc-windows-msvc
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 aarch64-apple-darwin25
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 aarch64-apple-darwin25
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 i686-w64-mingw32
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 i686-w64-mingw32
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 x86_64-w64-mingw32
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): GCC 15.2.0 x86_64-w64-mingw32
+2026-03-09T09:04:46.166Z [info] [kit] Gefundenes Kit (Vertrauenswürdig): Clang 17.0.0 arm64-apple-darwin25.3.0
+2026-03-09T09:04:46.166Z [debug] [kitsController] Kits werden gespeichert in /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2026-03-09T09:04:46.166Z [debug] [kitsController] Neue Kits werden gespeichert in /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2026-03-09T09:04:46.272Z [debug] [kit] Kitdatei wird gelesen: /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2026-03-09T09:04:46.330Z [info] [kit] Erfolgreich geladen: 12 Kits von /Users/mahd/.local/share/CMakeTools/cmake-tools-kits.json
+2026-03-09T09:05:27.507Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-03-09T09:05:47.759Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-03-09T09:05:56.687Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-03-09T09:09:05.462Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-03-09T09:09:24.627Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-03-09T10:27:14.561Z [debug] [extension] CMakeTools deaktivieren
+9Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:52:03.881Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:53:16.993Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:53:49.068Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:54:15.317Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:54:39.030Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:54:51.866Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:55:35.130Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:56:08.795Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:56:45.402Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:57:41.250Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:58:52.173Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:59:02.671Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:59:11.700Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T14:59:44.942Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:00:33.391Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:02:49.959Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:05:31.596Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:05:38.917Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:06:18.615Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:09:25.765Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:13:37.574Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:14:03.674Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:14:34.685Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:17:27.087Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:20:33.831Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:24:55.171Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:26:06.995Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:27:01.698Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:27:39.692Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:28:09.958Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:29:09.097Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:30:18.811Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:31:57.214Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:34:01.489Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:35:02.080Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:36:13.489Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:39:39.483Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:40:28.057Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:42:15.077Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:42:42.626Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:43:49.882Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:44:18.840Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:46:44.298Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:47:16.844Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:47:50.889Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:48:44.448Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:49:51.165Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:49:59.563Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:52:31.272Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:53:31.264Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:54:20.918Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:54:34.560Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:56:28.678Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:56:49.123Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:57:02.966Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:07.640Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:09.830Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:17.145Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:17.701Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:17.996Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:18.251Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:18.514Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:58:47.383Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:59:08.015Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:59:13.716Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T15:59:36.527Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:01:43.392Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:03:52.341Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:05:16.898Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:05:31.038Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:07:07.110Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:09:59.928Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:11:55.090Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:12:18.286Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:13:44.632Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:14:14.356Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:14:39.299Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:16:06.310Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:17:38.533Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:18:43.064Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:19:57.648Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:22:00.841Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:24:35.979Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:26:40.645Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:27:48.582Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:28:55.515Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:30:13.114Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:30:26.730Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:31:18.800Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:31:41.926Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:34:14.032Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:35:19.977Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:38:05.196Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:39:18.764Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:39:40.402Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:40:22.246Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:43:10.549Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:43:27.272Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:45:06.683Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:45:15.727Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:46:31.943Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:46:32.978Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:46:34.483Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:46:53.394Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:47:05.850Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:47:16.190Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:47:45.324Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:47:53.307Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:50:21.349Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:50:55.575Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:52:45.618Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:54:13.125Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:54:31.058Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:54:47.909Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:55:14.918Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:56:04.131Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T16:59:59.091Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:00:01.219Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:07:33.179Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:08:19.480Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:11:27.716Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:12:55.860Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:13:06.375Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:13:56.395Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:18:11.001Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:19:28.014Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:20:03.549Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:20:06.457Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:21:08.708Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:21:57.471Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:22:58.164Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:23:28.677Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:25:56.321Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:26:46.874Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:27:19.354Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:29:32.889Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:29:40.636Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:32:40.356Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:34:09.625Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:40:07.229Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:40:34.647Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:44:04.188Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:44:53.710Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:45:21.043Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:46:52.334Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:48:08.457Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:49:05.068Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:51:58.695Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:52:34.966Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:53:29.361Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:54:20.721Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:55:16.218Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:56:12.776Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:57:18.152Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:58:14.091Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T17:59:34.721Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:00:56.419Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:01:15.954Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:01:39.118Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:02:31.188Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:03:26.354Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:04:01.594Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:04:33.230Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:06:01.394Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:06:50.364Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:07:01.873Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:07:29.714Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:08:16.126Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:08:45.006Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:10:05.569Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:10:37.691Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:11:15.813Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:19:16.717Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:19:50.054Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:20:17.596Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:22:31.256Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:23:44.304Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:23:58.778Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:37:55.593Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:41:22.924Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:41:44.759Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:42:09.160Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:42:36.837Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:43:44.545Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:44:40.844Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:45:12.113Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:46:45.267Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:46:55.603Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:47:07.464Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:47:27.350Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:47:33.866Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:47:45.818Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:48:54.216Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:49:20.517Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:50:02.234Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:50:19.449Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:50:44.756Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:51:05.078Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:51:13.875Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:02.179Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:17.075Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:24.986Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:26.492Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:35.416Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:58.434Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:52:58.575Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:55:12.584Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:55:22.648Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:55:33.998Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:56:03.736Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:56:12.760Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:56:45.634Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:58:14.206Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:58:26.706Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:59:03.682Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:59:23.868Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T18:59:47.717Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:00:25.059Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:02:04.798Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:02:35.180Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:05:50.467Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:07:26.364Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:08:13.207Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:08:55.663Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:10:16.587Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:10:39.414Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:10:59.120Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:12:57.683Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:13:47.457Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:15:35.894Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:16:55.182Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:17:06.033Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:17:32.437Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:17:33.465Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:17:49.511Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:18:01.652Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:19:46.997Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:19:55.833Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:22:40.079Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:22:48.887Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:24:19.606Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:27:20.698Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:28:13.502Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:31:24.044Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:32:57.176Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:35:19.259Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:35:42.104Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:36:03.136Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:37:29.005Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:38:06.676Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:38:53.281Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:39:43.241Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:41:02.912Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:42:14.095Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:42:15.061Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:43:05.142Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:44:54.941Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:46:12.879Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:47:27.274Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:49:35.161Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:53:03.158Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T19:58:28.878Z [debug] [main] Der CMake-Treiber wird nicht gestartet: Es wurden keine Kits ausgewählt.
+2026-02-02T20:14:19.807Z [debug] [extension] CMakeTools deaktivieren
+LE_COMMANDS:BOOL=TRUE","-DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang","-DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++","--no-warn-unused-cli","-S","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper","-B","/Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build","-G","Ninja"]
 2025-10-18T20:22:05.315Z [info] [proc] Befehl wird ausgeführt: /opt/homebrew/bin/cmake -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_C_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/opt/homebrew/opt/llvm/bin/clang++ --no-warn-unused-cli -S /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper -B /Users/mahd/DEV/comboom_punkt_sucht_native_wallpaper/build -G Ninja
 2025-10-18T20:22:05.315Z [debug] [proc]   mit Umgebung: {"ANDROID_HOME":"/Volumes/SD200/Library/Android/sdk","ATUIN_SESSION":"0199f8e1ad727710b017b3807c1283db","BREW_PREFIX":"/opt/homebrew","BUN_INSTALL":"/Users/mahd/.bun","CLASSPATH":":/Library/Java/Extensions/mariadb-java-client-2.2.6.jar","COMMAND_MODE":"unix2003","CONDA_PROMPT_MODIFIER":"false","CPPFLAGS":"-I/opt/homebrew/opt/llvm/include: -I/opt/homebrew/opt/ruby/include","CRYPTOGRAPHY_OPENSSL_NO_LEGACY":"1","DOCKER_HOST":"unix:///var/run/docker.sock","DOTNET_ROOT":"/opt/homebrew/opt/dotnet/libexec","EDITOR":"/Applications/Emacs.app/Contents/MacOS/Emacs","FPATH":"/opt/homebrew/lib/ruby/gems/3.4.0/gems/colorls-1.5.0/zsh:/opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh","FZF_DEFAULT_COMMAND":"rg --files --hidden --follow --no-ignore-vcs","FZF_DEFAULT_OPTS":"--height 40% --layout=reverse --border","GIT_CONFIG":"/Users/mahd/DEV/dotfiles-macos/.gitconfig","HOME":"/Users/mahd","HOMEBREW_AUTO_UPDATE_SECS":"1","HOMEBREW_CELLAR":"/opt/homebrew/Cellar","HOMEBREW_PREFIX":"/opt/homebrew","HOMEBREW_REPOSITORY":"/opt/homebrew","INFOPATH":"/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:","LANG":"C.UTF-8","LDFLAGS":"-L/opt/homebrew/opt/llvm/lib: -L/opt/homebrew/opt/ruby/lib","LOGNAME":"mahd","MANPATH":":/opt/homebrew/share/man:","MallocNanoZone":"0","NVM_CD_FLAGS":"-q","NVM_DIR":"/Users/mahd/.nvm","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OSLogRateLimit":"64","OSTYPE":"darwin25.0","PATH":"/opt/homebrew/opt/rustup/bin:/opt/homebrew/opt/llvm/bin:/Users/mahd/.console-ninja/.bin:/Users/mahd/.bun/bin:/opt/homebrew/opt/php@8.2/sbin:/opt/homebrew/opt/php@8.2/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin/vim:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/mahd/.bun/bin/:/opt/homebrew/opt/ruby/bin:/Applications/OrbStack.app/Contents/MacOS:/Applications/OrbStack.app/Contents/MacOS/bin:/Applications/OrbStack.app/Contents/MacOS/xbin:/Users/mahd/Library/Python/3.9/bin:/Users/mahd/.yarn/bin:/Users/mahd/.config/yarn/global/node_modules/.bin: /opt/homebrew/opt/ccache/libexec:/Applications/Kitty.app/Contents/MacOS:/Applications/Alacritty.app/Contents/MacOS:/Users/mahd/exe/separator:/Users/mahd/exe:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:/usr/local/bin/composer:/Users/mahd/.config/tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/.tmux/plugins/t-smart-tmux-session-manager/bin:/Users/mahd/go/bin:usr/local/opt/llvm/bin/clangd:/usr/local/Cellar/llvm/10.0.1/bin/clangd:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Users/mahd/.rvm/bin:/Applications:/Users/mahd/.lmstudio/bin:/Users/mahd/.orbstack/bin:/usr/local/sbin:/usr/local/go/bin:/Users/mahd/.dotnet/tools:/Volumes/SD200/Applications:/users/mahd/.spicetify:/Users/mahd/.lmstudio/bin","PERIOD":"30","PKG_CONFIG_PATH":"/opt/homebrew/opt/ruby/lib/pkgconfig:","POSH_SESSION_ID":"45fdd04f-5484-4e01-8190-9445d57bcbf8","POSH_SHELL":"zsh","POSH_SHELL_VERSION":"5.9","POWERLINE_COMMAND":"oh-my-posh","PWD":"/","PYENV_VIRTUALENV_DISABLE_PROMPT":"1","SHELL":"/bin/zsh","SHLVL":"0","SSH_AUTH_SOCK":"/private/tmp/com.apple.launchd.eiPTMnNvDk/Listeners","TERM":"xterm-256color","TMPDIR":"/var/folders/72/vsmmq0hj6ml8n55h_rfwypd00000gn/T/","USER":"mahd","VCPKG_ROOT":"/Users/mahd/DEV/vcpkg","VIRTUAL_ENV_DISABLE_PROMPT":"1","VSCODE_CODE_CACHE_PATH":"/Users/mahd/Library/Application Support/Code/CachedData/7d842fb85a0275a4a8e4d7e040d2625abbf7f084","VSCODE_CRASH_REPORTER_PROCESS_TYPE":"extensionHost","VSCODE_CWD":"/","VSCODE_ESM_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","VSCODE_IPC_HOOK":"/Users/mahd/Library/Application Support/Code/1.10-main.sock","VSCODE_NLS_CONFIG":"{\"userLocale\":\"de\",\"osLocale\":\"de-de\",\"resolvedLanguage\":\"en\",\"defaultMessagesFile\":\"/Applications/Visual Studio Code.app/Contents/Resources/app/out/nls.messages.json\",\"locale\":\"de\",\"availableLanguages\":{}}","VSCODE_PID":"89596","XPC_FLAGS":"0x0","XPC_SERVICE_NAME":"application.com.microsoft.VSCode.73308500.73312048","ZLE_RPROMPT_INDENT":"0","ZPLUG_BIN":"/opt/homebrew/opt/zplug/bin","ZPLUG_CACHE_DIR":"/opt/homebrew/opt/zplug/cache","ZPLUG_ERROR_LOG":"/opt/homebrew/opt/zplug/.error_log","ZPLUG_FILTER":"fzf-tmux:fzf:peco:percol:fzy:zaw","ZPLUG_HOME":"/opt/homebrew/opt/zplug","ZPLUG_LOADFILE":"/opt/homebrew/opt/zplug/packages.zsh","ZPLUG_PROTOCOL":"HTTPS","ZPLUG_REPOS":"/opt/homebrew/opt/zplug/repos","ZPLUG_ROOT":"/opt/homebrew/Cellar/zplug/2.4.2","ZPLUG_THREADS":"16","ZPLUG_USE_CACHE":"true","_":"/Applications/Visual Studio Code.app/Contents/MacOS/Electron","_ZPLUG_AWKPATH":"/opt/homebrew/Cellar/zplug/2.4.2/misc/contrib","_ZPLUG_CONFIG_SUBSHELL":":","_ZPLUG_OHMYZSH":"robbyrussell/oh-my-zsh","_ZPLUG_PREZTO":"sorin-ionescu/prezto","_ZPLUG_URL":"https://github.com/zplug/zplug","_ZPLUG_VERSION":"2.4.2","__CFBundleIdentifier":"com.microsoft.VSCode","__CF_USER_TEXT_ENCODING":"0x1F5:0x0:0x3","ELECTRON_RUN_AS_NODE":"1","APPLICATION_INSIGHTS_NO_STATSBEAT":"true","CONSOLE_NINJA_WELCOME_SHOWN":"+","VSCODE_L10N_BUNDLE_LOCATION":"","VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_HOME":"/Users/mahd","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"1","APPLICATIONINSIGHTS_CONFIGURATION_CONTENT":"{}","NODE_TLS_REJECT_UNAUTHORIZED":"undefined","WALLABY_PRODUCTION":"true"}
 2025-10-18T20:22:05.618Z [info] [cmake] Not searching for unused variables given on the command line.

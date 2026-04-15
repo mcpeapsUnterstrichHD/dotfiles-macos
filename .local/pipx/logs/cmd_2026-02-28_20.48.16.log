@@ -1,0 +1,34 @@
+   218.9ms (setup:1113): 2026-02-28 20:48:16
+   218.9ms (setup:1114): /opt/homebrew/bin/pipx install python-lsp-server[all]
+   218.9ms (setup:1115): pipx version is 1.8.0
+   219.0ms (setup:1116): Default python interpreter is '/opt/homebrew/opt/python@3.13/libexec/bin/python'
+   219.7ms (package_name_from_spec:381): Determined package name: python-lsp-server
+   219.7ms (package_name_from_spec:382): Package name determined in 0.0s
+   219.8ms (create_venv:164): Creating virtual environment
+   219.9ms (run_subprocess:175): running /opt/homebrew/opt/python@3.13/libexec/bin/python -m venv --without-pip /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/python-lsp-server
+   256.5ms (run_subprocess:195): stdout:
+   256.6ms (run_subprocess:197): stderr:
+   256.6ms (run_subprocess:198): returncode: 0
+   257.2ms (run_subprocess:175): running <checking pip's availability>
+   274.9ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x109466530>, origin='/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip/__init__.py', submodule_search_locations=['/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages/pip'])
+   275.0ms (run_subprocess:198): returncode: 0
+   275.5ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/python-lsp-server/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   294.9ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/python-lsp-server/lib/python3.13/site-packages
+   295.0ms (run_subprocess:198): returncode: 0
+   295.3ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+   313.1ms (run_subprocess:195): stdout: /Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages
+   313.2ms (run_subprocess:198): returncode: 0
+   313.8ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/python-lsp-server/bin/python --version
+   321.3ms (run_subprocess:195): stdout: Python 3.13.7
+   321.4ms (run_subprocess:197): stderr:
+   321.4ms (run_subprocess:198): returncode: 0
+   321.6ms (_parsed_package_to_package_or_url:139): cleaned package spec: python-lsp-server[all]
+   321.6ms (install_package:247): Installing python-lsp-server from spec 'python-lsp-server[all]'
+   321.8ms (run_subprocess:175): running /Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/python-lsp-server/bin/python -m pip --no-input install python-lsp-server[all]
+  6947.1ms (run_subprocess:198): returncode: 0
+  6948.4ms (run_subprocess:175): running <fetch_info_in_venv commands>
+  6969.5ms (run_subprocess:195): stdout: {"sys_path": ["/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python313.zip", "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13", "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload", "/Users/mahd/DEV/dotfiles-macos/.local/pipx/venvs/python-lsp-server/lib/python3.13/site-packages", "/Users/mahd/DEV/dotfiles-macos/.local/pipx/shared/lib/python3.13/site-packages"], "python_version": "3.13.7", "environment": {"implementation_name": "cpython", "implementation_version": "3.13.7", "os_name": "posix", "platform_machine": "arm64", "platform_release": "25.3.0", "platform_system": "Darwin", "platform_version": "Darwin Kernel Version 25.3.0: Wed Jan 28 20:49:24 PST 2026; root:xnu-12377.81.4~5/RELEASE_ARM64_T8132", "python_full_version": "3.13.7", "platform_python_implementation": "CPython", "python_version": "3.13", "sys_platform": "darwin"}}
+  6969.6ms (run_subprocess:198): returncode: 0
+  7113.7ms (get_venv_metadata_for_package:351): get_venv_metadata_for_package: 165ms
+  7113.8ms (_parsed_package_to_package_or_url:139): cleaned package spec: python-lsp-server[all]
+  7122.4ms (cli:1192): pipx finished.

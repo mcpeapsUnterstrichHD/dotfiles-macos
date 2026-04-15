@@ -32,6 +32,14 @@
     "isTrusted": true
   },
   {
+    "name": "Clang 17.0.0 arm64-apple-darwin25.3.0",
+    "compilers": {
+      "C": "/usr/bin/clang",
+      "CXX": "/usr/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
     "name": "Clang 21.1.2 arm64-apple-darwin25.0.0",
     "compilers": {
       "C": "/opt/homebrew/opt/llvm/bin/clang",
@@ -41,6 +49,14 @@
   },
   {
     "name": "Clang 21.1.2 arm64-apple-darwin25.2.0",
+    "compilers": {
+      "C": "/opt/homebrew/opt/llvm/bin/clang",
+      "CXX": "/opt/homebrew/opt/llvm/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "Clang 21.1.2 arm64-apple-darwin25.3.0",
     "compilers": {
       "C": "/opt/homebrew/opt/llvm/bin/clang",
       "CXX": "/opt/homebrew/opt/llvm/bin/clang++"

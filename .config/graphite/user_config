@@ -1,0 +1,9 @@
+{
+  "updateAutomatically": true,
+  "gtiConfigs": [
+    {
+      "key": "gti.install-uuid",
+      "value": "b2032b6c-7aea-4da9-9a65-752a2a4b3914"
+    }
+  ]
+}

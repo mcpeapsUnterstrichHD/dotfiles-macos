@@ -32,7 +32,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = mcpeapsUnterstrichHD
-	email = mcpeaps_HD@outlook.com
+	name = CBPS Engine
+	email = engine@comboomsucht.dev
 [lfs]
 	repositoryformatversion = 0
