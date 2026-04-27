@@ -1423,3 +1423,4 @@ bash: line 3: mvn: command not found
 [ERROR Mon Apr 13 11:19:19 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
 [ERROR Mon Apr 13 11:29:58 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
 [ERROR Wed Apr 15 10:33:23 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
+[ERROR Fri Apr 24 12:11:27 2026] ...l/share/nvim/lazy/mason.nvim/lua/mason-registry/init.lua:31: Cannot find package "\"rustfmt\"".
