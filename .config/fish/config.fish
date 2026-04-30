@@ -74,7 +74,7 @@ set -gx EDITOR "emacsclient -c -a \"emacs\""
 set -gx VISUAL "emacsclient -c -a \"emacs\""
 set -gx TERM xterm-256color
 set -gx GIT_CONFIG $HOME/DEV/dotfiles-macos/.gitconfig
-set -gx JAVA_HOME /opt/homebrew/opt/openjdk
+set -gx JAVA_HOME $(brew --prefix openjdk)
 set -gx BUN_INSTALL $HOME/.bun
 set -gx NVM_DIR $HOME/.nvm
 set -gx VCPKG_ROOT $HOME/DEV/vcpkg

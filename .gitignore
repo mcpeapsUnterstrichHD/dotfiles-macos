@@ -161,3 +161,5 @@ node_modules/
 .local/bin/
 .local/claude
 .vorg.db
+
+.vscode/cli/serve-web/**/*
