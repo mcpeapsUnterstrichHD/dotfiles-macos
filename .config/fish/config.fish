@@ -233,7 +233,7 @@ if status is-interactive
         functions -e _auto_tmux
 
         # Prüfen, ob wir tmux starten sollen (Überspringen in VSCode, Emacs, als Root etc.)
-        if set -q TMUX; or set -q INSIDE_EMACS; or set -q VSCODE_PID; or test "$USER" = root
+        if set -q TMUX; or set -q INSIDE_EMACS; or set -q VSCODE_PID; or test "$USER" = root; or test "$TERM_PROGRAM" = emacs; or test "$TERM_PROGRAM" = vscode; or test "$TERM_PROGRAM" = agy; or test "$TERM_PROGRAM" = antigravity; or test -n "$SSH_CONNECTION"; or test "$TERM_PROGRAM" = WarpTerminal; or test "$TERM_PROGRAM" = cmux
             return
         end
 
